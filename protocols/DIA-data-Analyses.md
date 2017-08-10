@@ -12,7 +12,7 @@ Data-Independent Mass Spectrometry is a bottom-up proteomics method that separat
 
 This wiki is based partly on the following [Evernote entry](https://www.evernote.com/shard/s347/sh/edcb06ab-d008-418f-b28f-52f6614f1c39/2984ab55f427fcfe). 
 
-Note: this might be a little less intuitive than the [DDA pipeline](https://github.com/sr320/LabDocs/wiki/DDA-data-Analyses). Additionally, the pipeline relies on Windows-based programs.
+Note: this might be a little less intuitive than the [DDA pipeline](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md). Additionally, the pipeline relies on Windows-based programs.
 
 ---
 
