@@ -10,4 +10,4 @@ Listed as link to images and brief description.
 
 [*C. gigas* oyster seed morphology](https://drive.google.com/drive/folders/0B_Kednl1tNImN0ZvM0FYLWxXYVk?usp=sharing) sampled on separate days from Rhonda Elliot's oysters. Images are separated into folders by silo number and day number. Within the folders, images are labeled according to silo number, day number, and oyster individual numbers. Images were used to measure length of oyster seed using ImageJ, and measured oysters are labeled with numbers. 
 
-[Geoduck *Panopea generosa* gonad histology](https://figshare.com/articles/Reproductive_Maturation_in_Geoduck_clams_Panopea_generosa_/3205975) and reproductive maturation stages from Grace Crandall's capstone project. 
+[Geoduck, *Panopea generosa*, gonad histology](https://figshare.com/articles/Reproductive_Maturation_in_Geoduck_clams_Panopea_generosa_/3205975) and reproductive maturation stages from Grace Crandall's capstone project. 
