@@ -29,7 +29,7 @@ Written 20150702 by Sam White.
 3. Verify sufficient quantities of reagents and samples before beginning.
 3. Wear clean gloves.
 3. Thaw all RNA and reagents on ice. Prepare all reactions on ice.
-3. Transfer 100ng of RNA to 0.5mL snap cap tubes or PCR plate. Adjust volumes of individual samples to 17.75uL with H2O.
+3. Transfer 1ug of RNA to 0.5mL snap cap tubes or PCR plate. Adjust volumes of individual samples to 17.75uL with H2O.
 4. Add 0.25ug primer per 1ug of RNA in sample (= 0.5uL of Promega oligo dT Cat#C1101 in this example). Total volume (RNA + primers) should equal 18.25uL.
 5. Heat samples at 70C for 5 min in thermal cycler, heating block, or water bath.
 6. Place samples on ice IMMEDIATELY.
