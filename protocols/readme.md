@@ -6,6 +6,8 @@ BSseq.md -
 
 BSseq-Nov-2015.md - 
 
+dnase_rna.md - DNase procedure using the Turbo DNA-free Kit.
+
 MassSpec_Tutorial.txt - 
 
 ProteinprepforMSMS.md - 
