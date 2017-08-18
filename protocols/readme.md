@@ -8,6 +8,8 @@ BSseq-Nov-2015.md -
 
 dnase_rna.md - DNase procedure using the Turbo DNA-free Kit.
 
+medip.md - Protocol for methylated DNA immunoprecipitated.
+
 MassSpec_Tutorial.txt - 
 
 ProteinprepforMSMS.md - 
