@@ -12,6 +12,8 @@ MassSpec_Tutorial.txt -
 
 ProteinprepforMSMS.md - 
 
+qpcr.md - Quantitative PCR protocol using SsoFast EvaGreen master mix.
+
 RADseq.md - 
 
 readme.md - 
