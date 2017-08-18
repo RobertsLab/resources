@@ -22,4 +22,6 @@ readme.md -
 
 reverse_transcription.md - Reverse transcription using Promega M-MMLV Reverse Transcriptase.
 
+rna_isolation_rnazol_rt.md - Total RNA isolation using RNAzol.
+
 setting_larvae.md -
