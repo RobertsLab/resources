@@ -22,6 +22,8 @@ qpcr.md - Quantitative PCR protocol using SsoFast EvaGreen master mix.
 
 RADseq.md - 
 
+SRM-data-Analyses.md - 
+
 readme.md - 
 
 reverse_transcription.md - Reverse transcription using Promega M-MMLV Reverse Transcriptase.
