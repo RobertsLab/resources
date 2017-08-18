@@ -4,6 +4,10 @@ Brief description of repo files are below:
 
 BSseq.md -
 
+DDA-data-Analyses.md -
+
+DIA-data-Analyses.md - 
+
 BSseq-Nov-2015.md - 
 
 dnase_rna.md - DNase procedure using the Turbo DNA-free Kit.
