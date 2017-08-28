@@ -2,32 +2,32 @@
 
 Brief description of repo files are below:
 
-**BSseq.md** -
+**[BSseq-Nov-2015.md](https://github.com/RobertsLab/resources/blob/master/protocols/BSseq-Nov-2015.md)** -
 
-**DDA-data-Analyses.md** -
+**[BSseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/BSseq.md)** -
 
-**DIA-data-Analyses.md** - 
+**[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** -
 
-**BSseq-Nov-2015.md** - 
+**[DIA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md)** - 
 
-**dnase_rna.md** - DNase procedure using the Turbo DNA-free Kit.
+**[MassSpec_Tutorial.txt](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.txt)** - 
 
-**medip.md** - Protocol for methylated DNA immunoprecipitated.
+**[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - 
 
-**MassSpec_Tutorial.txt** - 
+**[RADseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/RADseq.md)** - 
 
-**ProteinprepforMSMS.md** - 
+**[SRM-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md)** - 
 
-**qpcr.md** - Quantitative PCR protocol using SsoFast EvaGreen master mix.
+**[dnase_rna.md](https://github.com/RobertsLab/resources/blob/master/protocols/dnase_rna.md)** - DNase procedure using the Turbo DNA-free Kit.
 
-**RADseq.md** - 
+**[medip.md](https://github.com/RobertsLab/resources/blob/master/protocols/medip.md)** - Protocol for methylated DNA immunoprecipitated.
 
-**SRM-data-Analyses.md** - 
+**[qpcr.md](https://github.com/RobertsLab/resources/blob/master/protocols/qpcr.md)** - Quantitative PCR protocol using SsoFast EvaGreen master mix.
 
 **readme.md** - 
 
-**reverse_transcription.md** - Reverse transcription using Promega M-MMLV Reverse Transcriptase.
+**[reverse_transcription.md](https://github.com/RobertsLab/resources/blob/master/protocols/reverse_transcription.md)** - Reverse transcription using Promega M-MMLV Reverse Transcriptase.
 
-**rna_isolation_rnazol_rt.md** - Total RNA isolation using RNAzol RT.
+**[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT.
 
-**setting_larvae.md** -
+**[setting_larvae.md](https://github.com/RobertsLab/resources/blob/master/protocols/setting_larvae.md)** -
