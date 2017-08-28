@@ -31,8 +31,8 @@ Written 20150616 by Sam White.
 7. Transfer desired quantity of RNA to a 0.5mL tube, but no more than 2ug and no more than 44uL.
 8. Adjust RNA volume in 0.5mL tube to 44uL with nuclease-free H2O (supplied in kit).
 9. Add 0.1 volumes (5uL) of 10x Turbo DNase Buffer.
-10. Add 1uL of Turbo DNase. Mix by <em>gently</em> flicking tube. If needed, spot spin for no more than 2s to collect liquid from sides of tube.
-11. Incubate @ 37C for 1hr.
+10. Add 0.5uL of Turbo DNase. Mix by <em>gently</em> flicking tube. If needed, spot spin for no more than 2s to collect liquid from sides of tube.
+11. Incubate @ 37C for 30mins.
 12. Repeat steps 10 & 11.
 13. Vortex DNase Inactivation reagent for 10s.
 14. Add 0.2 volumes (10.2uL) of DNase Inactivation to the RNA.
