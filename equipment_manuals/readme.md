@@ -13,3 +13,5 @@ low_high_water_alarm_manual.pdf -
 NanoDrop_ND1000-Cleaning-and-Reconditioning.pdf -
 
 sensaphone_1104_manual_20170807.pdf -
+
+MasterFlex_L-S_Precision.pdf - 
