@@ -5,7 +5,8 @@ Selected Reaction Monitoring, or SRM, assays quantify abundance of targets ident
 ### **Basic overview of the SRM pipeline**:
 
 1. Identify SRM targets
-2. Analyze data 
+2. Clean data in Skyline
+3. Analyze data with multivariate methods
 
 ---
 
@@ -91,4 +92,61 @@ An example of a noisy transition (highlighted in red) that should be deleted:
 
 <img width="343" alt="screen shot 2017-07-21 at 10 59 18 am" src="https://user-images.githubusercontent.com/22335838/28476131-b755319e-6e03-11e7-80d4-d8b7c56213c7.png">
 
-## Analyze data
+## Step 2: Data Cleaning in Skyline
+
+### Step 2a: Collect necessary materials
+
+Refer to [DIA analysis protocol](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md) for specifics regarding materials.
+
+- Skyline (preferably Skyline daily, but you need to get permission to download it)
+- Skyline document used for DIA analysis
+
+OR
+
+- .blib file from `pecanpie`
+- Undigested FASTA background proteome, including QC protein sequence
+- RAW files from mass spectrometer (Demultiplexing is not necessary for SRM analysis since discrete m/z windows were provided in the isolation scheme)
+
+### Step 2b: Create a new Skyline document
+
+Create a copy of your [DIA Analysis Skyline Document](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md), then consolidate with the settings below. Be sure to delete proteins from the analyte tree that are not used for target analysis. If making a Skyline document from scratch, see specifics on document creation in the DIA data Analysis protocol.
+
+**Peptide settings**:
+
+<img width="270" alt="screen shot 2017-09-13 at 2 01 25 am" src="https://user-images.githubusercontent.com/22335838/30981331-e377cc3a-a438-11e7-88b0-2921d41fec11.png">
+
+<img width="271" alt="screen shot 2017-09-13 at 2 01 30 am" src="https://user-images.githubusercontent.com/22335838/30981335-e38efaa4-a438-11e7-9ab9-c67296e5e838.png">
+
+<img width="268" alt="screen shot 2017-09-13 at 2 01 32 am" src="https://user-images.githubusercontent.com/22335838/30981333-e3849cd0-a438-11e7-8511-668b8dca4510.png">
+
+<img width="271" alt="screen shot 2017-09-13 at 2 01 34 am" src="https://user-images.githubusercontent.com/22335838/30981332-e3817fa0-a438-11e7-93f7-4400021ad5aa.png">
+
+<img width="271" alt="screen shot 2017-09-13 at 2 01 36 am" src="https://user-images.githubusercontent.com/22335838/30981334-e3864030-a438-11e7-9a13-56b0b774f9bc.png">
+
+<img width="273" alt="screen shot 2017-09-13 at 2 01 37 am" src="https://user-images.githubusercontent.com/22335838/30981336-e3a0a9b6-a438-11e7-9a31-4e9b52f8f889.png">
+
+**Transition settings**:
+
+<img width="273" alt="screen shot 2017-09-13 at 2 01 52 am" src="https://user-images.githubusercontent.com/22335838/30981382-0ab2f784-a439-11e7-9123-23ffa406bae3.png">
+
+<img width="271" alt="screen shot 2017-09-13 at 2 01 53 am" src="https://user-images.githubusercontent.com/22335838/30981383-0ab40d2c-a439-11e7-9ace-61871fb3efbd.png">
+
+<img width="275" alt="screen shot 2017-09-13 at 2 01 55 am" src="https://user-images.githubusercontent.com/22335838/30981384-0ab70b4e-a439-11e7-8680-349a1fd18f16.png">
+
+<img width="272" alt="screen shot 2017-09-13 at 2 01 57 am" src="https://user-images.githubusercontent.com/22335838/30981381-0ab24366-a439-11e7-9f37-23846c8cd2e9.png">
+
+<img width="271" alt="screen shot 2017-09-13 at 2 01 58 am" src="https://user-images.githubusercontent.com/22335838/30981385-0ac3940e-a439-11e7-9c9a-095a1ea84fcd.png">
+
+Under File > Import > Results, select "Add single-injection replicates in files". Navigate to the directory with RAW files. Select files to import and click "Open". Skyline gives you the option to remove common prefixes from file names when importing into Skyline. Removing these prefixes makes it easier to view filenames in Skyline, but it is not necessary.
+
+### Step 2c: Examine dilution curve (optional)
+
+### Step 2d: Check peaks in Skyline
+
+### Step 2e: Export Data
+
+## Step 3: Analyze data
+
+### Step 3a: Check technical replication
+
+### Step 3b: Analyze data as appropriate
