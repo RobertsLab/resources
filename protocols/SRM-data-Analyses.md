@@ -177,4 +177,4 @@ Create a nonmetric multidimentional scaling (NMDS) plot using data from all non-
 
 ### Step 3b: Analyze data as appropriate
 
-Analysis methods will vary based on project.
+Analysis methods will vary based on project. Similar projects have used NMDS, ANOSIM and ROC curves as outputs.
