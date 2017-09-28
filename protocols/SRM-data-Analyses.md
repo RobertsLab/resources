@@ -1,6 +1,6 @@
 # SRM Analyses
 
-Selected Reaction Monitoring, or SRM, assays quantify abundance of targets identified from a previous [DIA](https://github.com/sr320/LabDocs/wiki/DIA-data-Analyses) mass spectrometer run, as opposed to a full proteome scan. This provides higher resolution data for proteins and peptides of interest.
+Selected Reaction Monitoring, or SRM, assays quantify abundance of protein targets identified from a previous [DIA](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md) mass spectrometer run, as opposed to a full proteome scan. This provides higher resolution data for proteins and peptides of interest.
 
 ### **Basic overview of the SRM pipeline**:
 
@@ -141,12 +141,40 @@ Under File > Import > Results, select "Add single-injection replicates in files"
 
 ### Step 2c: Examine dilution curve (optional)
 
+If time permits, it is ideal to create a dilution curve with protein samples. The purpose of this is to verify the mass spectrometer methods are detecting the specific proteins desired. Peptide detection should decrease as the concentration of protein loaded decreases, and vice versa. If this is not the case, then the machine is not properly detecting the specific peptide, and that peptide should be removed from analysis.
+
+Using the same Skyline settings as the SRM document in [Step 2b](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md#step-2b-create-a-new-skyline-document), create a separate Skyline document for dilution curve analysis. Use predicted retention times from DIA data to identify the correct peptide peak in each sample. To select the proper peak, simply click on it. If the peak is not recognized as a peak, use the crosshair to select the peak on the x-axis (retention time). After selecting the correct peak, right click and select "Apply Peak to All." This may not correctly identify the proper peak for all samples, but for a good majority.
+
+Once the proper peaks are selected, examine peak areas across the dilution curve. As the concentration of protein loaded decreases, so should peak area:
+
+![30131820-0838676a-9303-11e7-9068-f5f26c802bd0](https://user-images.githubusercontent.com/22335838/30982905-abf5a318-a43d-11e7-97a1-aa166e0a6e67.png)
+
+If this is not the case, then remove the peptide from the analysis. After checking the curve, all target proteins should have at least two associated peptides before proceeding. If not, the entire protein needs to be excluded.
+
 ### Step 2d: Check peaks in Skyline
 
+*If [Step 2c](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md#step-2c-examine-dilution-curve-optional) completed: Remove peptides and proteins from analyte tree if they do not meet the criteria outllined above*
+
+Use predicted retention times from DIA data to identify the correct peptide peak in each sample. To select the proper peak, simply click on it. If the peak is not recognized as a peak, use the crosshair to select the peak on the x-axis (retention time). After selecting the correct peak, right click and select "Apply Peak to All." This may not correctly identify the proper peak for all samples, but for a good majority.
+
+While checking every peptide peak is correctly selected for each sample, modify the peak boundaries so they properly encompass the entirety of the peak. If there is no peptide peak present in a sample, simply right click and select "Remove Peak." If there is no chromatogram present for any peptide in a sample, remove that sample from analysis. 
+
 ### Step 2e: Export Data
+
+Under File > Export > Report, use the following settings to export Skyline data as a .csv.
+
+![30132381-03f87a94-9305-11e7-8dfa-812e738abbd0](https://user-images.githubusercontent.com/22335838/30983237-ad0f3056-a43e-11e7-8d51-d99207d262e1.png)
+
+Under File > Share, save the Skyline document as a "Complete" document and upload to OWL.
 
 ## Step 3: Analyze data
 
 ### Step 3a: Check technical replication
 
+Create a nonmetric multidimentional scaling (NMDS) plot using data from all non-PRTC peptides to see if technical replicates from the mass spectrometer cluster together. If they do, the technical replication is sound, and replicates can be averaged for analyses.
+
+[Sample R Code](https://github.com/RobertsLab/project-oyster-oa/blob/master/analyses/DNR_SRM_20170902/2017-09-06-NMDS-for-Technical-Replication.R)
+
 ### Step 3b: Analyze data as appropriate
+
+Analysis methods will vary based on project.
