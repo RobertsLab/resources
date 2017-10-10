@@ -184,8 +184,8 @@ Remember, this background is the fast version of the background proteome from `p
 
 ### Step 4d: Populate the target analyze tree
 
-1. Open the background proteome fast file and copy all of the protein sequences
-2. Paste the sequences into the lefthand, long window in the main Skyline view
+1. Under File >> Import, select "FASTA"
+2. Import the FASTA file used in Step 4c.
 
 Skyline will keep the proteins, peptides, and transitions that match what it finds in the library provided in Step 4b.
 
