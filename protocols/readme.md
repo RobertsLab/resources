@@ -31,3 +31,5 @@ Brief description of repo files are below:
 **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT.
 
 **[setting_larvae.md](https://github.com/RobertsLab/resources/blob/master/protocols/setting_larvae.md)** -
+
+**[Titrator.SOP.md](https://github.com/RobertsLab/resources/blob/master/protocols/Titrator.SOP.md)** - 
