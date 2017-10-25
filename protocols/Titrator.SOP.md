@@ -1,8 +1,8 @@
-Titrator SOP
+## Titrator SOP
 
-By Genevieve Bernatchez and Nyssa Silbiger
+Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
-07/18/2016
+---
 
 *Putting on your PPE first, lab coat, protective glasses and gloves*
 
@@ -10,7 +10,7 @@ By Genevieve Bernatchez and Nyssa Silbiger
 
 Starting the instrument
 
-1. 1)Turn on the Laptop next to the titrator, password: Titrator387
+1. 1)Turn on the Laptop next to the titrator, 
 2. 2)Turn the titrator ON (front switch)
 3. 3)Turn the Rondolino (arm) ON (back switch)
 4. 4)Press the left blue button on top of the Rondolino arm
