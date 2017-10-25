@@ -4,9 +4,9 @@ By Genevieve Bernatchez and Nyssa Silbiger
 
 07/18/2016
 
-\*Putting on your PPE first, lab coat, protective glasses and gloves\*
+*Putting on your PPE first, lab coat, protective glasses and gloves*
 
-\*Put the waste container in the sink next to the instrument\*
+*Put the waste container in the sink next to the instrument*
 
 Starting the instrument
 
