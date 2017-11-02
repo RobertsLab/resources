@@ -1,5 +1,9 @@
 ## Collection of Roberts Lab Eqiupment Manuals
 
+#### File naming convention should follow: manufacturer_model_descriptor.pdf
+
+---
+
 CXR100_LN2_dewar_dry_shipper_instructions.pdf -
 
 Invitrogen_qubit_3.0_manual.pdf -
