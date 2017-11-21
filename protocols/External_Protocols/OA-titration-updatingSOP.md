@@ -61,12 +61,12 @@ Calculation and recording data
 11. In the TitrationFiles folder you will put the results from the titrator for each samples always save the files as CSV
 12. Open R, you only need to change the files name for the path and massfile (row 20 and 21)   the date (row 23)  and the values for pH 3.5 and pH 3 (row 26 and 27) DO NOT CHANGE ANYTHING ELSE and at the end of the day DO NOT SAVE THE R file
 
-Measuring the CRM sample
+Measuring the CRM (CO2 Reference Materials) sample
 
-1. Using the serological pipet, measured between 99.5 and 100.5 g of CRM in a cup
+1. Using the serological pipet, measure between 99.5 and 100.5 g of CRM in a cup
 2. Record the mass on the logging sheet
-3. Insert the cup in the position 1 in the roulette
-4. On the LABX mainsheet highlight the CSUN option, this is the correct method to measure samples
+3. Place the cup in position 1
+4. On the LABX mainsheet, highlight the CSUN method option, this is the correct method to measure samples
 5. Click on start
 6. Click on TitratorSorte
 7. On the next page enter the number of samples you are running, in this case 1
@@ -75,23 +75,23 @@ Measuring the CRM sample
 10. Open the workbench sheet to see the sample being measured
 11. Enter the time of the beginning of the analysis on the logging sheet
 12. It will take about 12 minutes
-13. At the end, on the main page open the results and click on the most recent result sets
+13. At the end, on the main page, open the results and click on the most recent result sets
 14. Under the measured values, close the graph and open the sheet with the values, click on the second set of double values
 15. Right click on the mouse and copy all as a text
-16. Open a new excel sheet, paste the values and save it as a CSV file in the TitrationFiles folder with the name of the sample, it would be like CRM.csv
-17. In the Mass folder in your current mass excel spreadsheet ex: Mass08012016 enter the weight of the CRM samples
+16. Open a new excel sheet, paste the values and save it as a CSV file in the TitrationFiles folder with the name of the sample, example, CRM.csv
+17. In the Mass folder in your current mass excel spreadsheet, ex: Mass08012016, enter the weight of the CRM samples
 18. In the R program click on source and a new excel sheet will appear in your data folder of the day
 19. In the excel sheet you will have the TA value of the CRM
 20. Enter the CRM value on the logging sheet
-21. Enter the CRM value on the pHCalibration excel sheet in the CRMsheet, calculate the %off, anything less than +/- 1% it is acceptable between the measured value and the actual value of the CRM batch
-22. You are now ready to start processing samples
-23. The samples are processed the same way as the CRM, refer to steps 1 through 18 in the measuring the CRM sample section
-24. The only difference is you can add up to 9 samples
-25. Once the samples have been analyzed, dump the waste in the waste container in the sink
-26. Rinse all the cups with DI water and let them dry on the hanging rack above the sink
-27. All the solid waste (serological pipet, and paper towels used to soak a big spill from a samples or CRM) can be dumped in the cardboard box next to fume hood
+21. Enter the CRM value on the pHCalibration excel sheet in the CRMsheet, calculate the % off, anything less than +/- 1% it is acceptable between the measured value and the actual value of the CRM batch
+
+You are now ready to start processing samples
+The samples are processed the same way as the CRM, refer to steps 1 through 18 in the measuring the CRM sample section
+The only difference is you can add up to 9 samples
+Once the samples have been analyzed, dump the waste in the waste container in the sink
+Rinse all the cups with DI water and let them dry 
+All the solid waste (serological pipet, and paper towels used to soak a big spill from samples or CRM) can be dumped in the cardboard box next to fume hood
 
 Recommendations
 
-1. When beginning a new series of samples, doing duplicate of the first 5 samples is recommended
-2. When unsure please ask G or Nyssa for help
+When beginning a new series of samples, doing duplicate of the first 5 samples is recommended
