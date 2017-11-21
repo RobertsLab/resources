@@ -6,8 +6,6 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 *Put on your PPE: lab coat, protective glasses, and gloves*
 
-Rondolino: Have the right blue dial on top of the Rondolino turned to position 1. This will not condition, but will rinse with DI water for 2 sec.
-
 ## Starting the instrument (purging acid line)
 
 1. Turn on the Computer next to the Titrator and open LabX
@@ -27,6 +25,8 @@ Rondolino: Have the right blue dial on top of the Rondolino turned to position 1
 
 ## pH Calibration
 
+Rondolino: Have the right blue dial on top of the Rondolino turned to position 1. This will not condition, but will rinse with DI water for 2 sec.
+
 *pH Probe Storage Procedures:*
 - Temporary (No longer than a week) - can stay in the Rondolino in DI water
 - Medium-term (No longer than a month) - move to the pH probe holder on the titrator, close gray cap
@@ -45,8 +45,6 @@ Rondolino: Have the right blue dial on top of the Rondolino turned to position 1
 9. In the measured values section you will have the results pH 4.01, 7.00, 9.21 record these values on the logging sheet
 10. Record the temperature of the buffers measured during the calibration
 11. Refer to the calculation and recording data section before going any further
-12. Remove the buffers and put them back in their respective containers
-13. Put the empty cups in the sink
 
 ## Calculation and recording data
 
