@@ -228,7 +228,7 @@ Remember, this background is the fast version of the background proteome from `p
 1. Settings >> Peptide Settings >> Digestion
 2. Select "Add" under "Background proteome"
 3. Name background
-4. Click "Create" under "Proteome file" to choose where to save the background
+4. Click "Create" under "Proteome file" to choose where to save the background, creating/renaming it as a .protb
 5. Click "Add file" under "FASTA files", and select your background proteome fasta file
 6. Under Prediction tab, make sure "none" is selected for retention time predictor
 
