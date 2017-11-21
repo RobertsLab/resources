@@ -1,4 +1,4 @@
-## Titrator SOP
+# Titrator SOP
 
 Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
@@ -8,7 +8,7 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 Rondolino: Have the right blue dial on top of the Rondolino turned to position 1. This will not condition, but will rinse with DI water for 2 sec.
 
-Starting the instrument (purging acid line)
+## Starting the instrument (purging acid line)
 
 1. Turn on the Computer next to the Titrator and open LabX
 2. Turn the titrator ON (front button)
@@ -22,14 +22,16 @@ Starting the instrument (purging acid line)
 9. After the purging cycle, press the button to turn 180˚ and remove the acid cup
 10. PUT THE ACID BACK in the brown bottle - open the cap and carefully dump the acid
 11. ADD fresh DI water to the DI cup and place in position zero. Turn 180˚ again
-12. Prepare the logging sheet of the day; enter the date, ...
+12. Prepare the logging sheet of the day; enter the date, ...\
+---
 
-pH Calibration
+## pH Calibration
 
-pH Probe Storage Procedures:
+*pH Probe Storage Procedures:*
 - Temporary (No longer than a week) - can stay in the Rondolino in DI water
 - Medium-term (No longer than a month) - move to the pH probe holder on the titrator, close gray cap
 - Long-term (Longer than a month) - move to the pH probe holder on the titrator and place clear cap over the end containing KCl, close gray cap
+
 
 1. Place each buffer (Mettler Toledo Technical buffers: 4.01, 7.00, 9.21) in cups and place the cups in positions 1, 2, and 3 respectively
 2. CAREFULLY open the small gray cap on the pH probe, add KCl if needed
@@ -46,7 +48,7 @@ pH Probe Storage Procedures:
 12. Remove the buffers and put them back in their respective containers
 13. Put the empty cups in the sink
 
-Calculation and recording data
+## Calculation and recording data
 
 1. On the desktop open the pH calibration excel sheet
 2. On the CALIBRATION sheet, Highlight from the date row all the way to the end of the graph, COPY and PASTE lower
@@ -61,7 +63,7 @@ Calculation and recording data
 11. In the TitrationFiles folder you will put the results from the titrator for each samples always save the files as CSV
 12. Open R, you only need to change the files name for the path and massfile (row 20 and 21)   the date (row 23)  and the values for pH 3.5 and pH 3 (row 26 and 27) DO NOT CHANGE ANYTHING ELSE and at the end of the day DO NOT SAVE THE R file
 
-Measuring the CRM (CO2 Reference Materials) sample
+## Measuring the CRM (CO2 Reference Materials) sample
 
 1. Using the serological pipet, measure between 99.5 and 100.5 g of CRM in a cup
 2. Record the mass on the logging sheet
