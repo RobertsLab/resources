@@ -86,8 +86,8 @@ Measuring the CRM (CO2 Reference Materials) sample
 21. Enter the CRM value on the pHCalibration excel sheet in the CRMsheet, calculate the % off, anything less than +/- 1% it is acceptable between the measured value and the actual value of the CRM batch
 
 You are now ready to start processing samples.
-The samples are processed the same way as the CRM, *refer to steps 1 through 18* in the measuring the CRM sample section.
-The only difference is you can add up to 9 samples.
+The samples are processed the same way as the CRM, **refer to steps 1 through 18** in the measuring the CRM sample section.
+The only difference is you **can add up to 9 samples**.
 Once the samples have been analyzed, dump the waste in the waste container in the sink,
 rinse all the cups with DI water and let them dry, and 
 all the solid waste (serological pipet, and paper towels used to soak a big spill from samples or CRM) can be dumped in the cardboard box next to fume hood
