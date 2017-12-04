@@ -70,10 +70,10 @@ DAY 3
 1. Add a volume of phenol:chloroform:IAA (25:24:1) equal to your sample volume, vortex thoroughly, and spin 16,000g, 10mins, RT.
 2. Transfer aqueous phase to clean tube. If sample had cloudy interphase repeat Step 1 until interphase is no longer cloudy.
 3. Precipitate your various DNAs. 
-  1. Add 1/10th volume of 3M sodium acetate (pH = 5.2), 2.5 volumes of ice cold 100% ethanol, mix thoroughly, and incubate @ -20C for at least 20mins. Note: If expecting low yields, addition of 20ug of glycogen can help improve recovery.
-4. Pellet DNA by spinning samples at 16,000g, 20mins, 4C.
-5. Discard supernatant and wash pellet with 1000uL 70% EtOH.
-6. Re-pellet DNA by spinning samples at 16,000g, 20mins, 4C.
-7. Discard supernatant, pulse spin, remove residual supernatant, and briefly air dry pellet for 5mins at RT.
-8. Resuspend methylated DNA in 50uL TE. Resuspend each unmethylated DNA fraction in 25uL and then pool.
-9. Quantify DNAs.
+    1. Add 1/10th volume of 3M sodium acetate (pH = 5.2), 2.5 volumes of ice cold 100% ethanol, mix thoroughly, and incubate @ -20C for at least 20mins. Note: If expecting low yields, addition of 20ug of glycogen can help improve recovery.
+    2. Pellet DNA by spinning samples at 16,000g, 20mins, 4C.
+    3. Discard supernatant and wash pellet with 1000uL 70% EtOH.
+    4. Re-pellet DNA by spinning samples at 16,000g, 20mins, 4C.
+    5. Discard supernatant, pulse spin, remove residual supernatant, and briefly air dry pellet for 5mins at RT.
+    6. Resuspend methylated DNA in 50uL TE. Resuspend each unmethylated DNA fraction in 25uL and then pool.
+4. Quantify DNAs.
