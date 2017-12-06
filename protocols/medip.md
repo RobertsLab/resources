@@ -15,7 +15,7 @@ http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0013100
 - 70% ethanol [(SOP)](https://github.com/sr320/LabDocs/wiki/Chemical-Standard-Operating-Protocols-(SOP)#ethanol)
 - phenol:chloroform:IAA (25:24:1) [(SOP)](https://github.com/sr320/LabDocs/wiki/Chemical-Standard-Operating-Protocols-(SOP)#phenol_chloroform_IAA)
 - 5x MeDIP Buffer (50mM Na2HPO4, 700mM NaCl, 0.25% Triton-X 100)
-- anti-methyl cytidine antibody, mouse IgG1 (Diagenode; 5-mC monoclonal antibody cl. b; Cat.  [MAb-006-100](https://www.diagenode.com/en/p/5-mc-monoclonal-antibody-cl-b-classic-100-ug-50-ul))
+- anti-methyl cytidine antibody, mouse IgG1 ([Diagenode; 5-mC monoclonal antibody cl. b](https://github.com/RobertsLab/resources/blob/master/protocols/Commercial_Protocols/Diagenode_anti-5-methyl_Cytidine.jpg); Cat.  [MAb-006-100](https://www.diagenode.com/en/p/5-mc-monoclonal-antibody-cl-b-classic-100-ug-50-ul))
 - Protein A/G Plus Agarose beads (Santa Cruz Biotech)
 - 3M sodium acetate (pH = 5.2)
 - MeDIP Digestion Buffer (50mM Tris-HCl, pH=8.0, 10mM EDTA, pH=8.0, 0.5% SDS)
