@@ -20,7 +20,7 @@ Brief description of repo files are below:
 
 **[dnase_rna.md](https://github.com/RobertsLab/resources/blob/master/protocols/dnase_rna.md)** - DNase procedure using the Turbo DNA-free Kit.
 
-**[ethanol_precipitation_DNA.md](https://github.com/RobertsLab/resources/blob/master/protocols/ethanol_precipitation_DNA.md)
+**[ethanol_precipitation_DNA.md](https://github.com/RobertsLab/resources/blob/master/protocols/ethanol_precipitation_DNA.md)** - Ethanol precipitation of DNA
 
 **[medip.md](https://github.com/RobertsLab/resources/blob/master/protocols/medip.md)** - Protocol for methylated DNA immunoprecipitated.
 
