@@ -4,7 +4,12 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 ---
 
-*Put on your PPE: lab coat, protective glasses, and gloves*
+##### Reagents:
+
+##### Personal Protective Equipment (PPE):
+
+##### Equipment:
+
 
 ## Starting the instrument (purging acid line)
 
