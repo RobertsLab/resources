@@ -25,21 +25,19 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 - Hazardous waster jug
 
 
-## Starting the instrument (purging acid line)
+## 1. PURGING ACID LINE
 
 1. Turn on the Computer next to the Titrator and open LabX
-2. Turn the titrator ON (front button)
-3. Turn the Rondolino ON (back switch)
-4. Press the left blue button on top of the Rondolino arm (turns sample changer 180˚)
-5. Take the DI water cup out from position zero
-6. Place an empty cup in position zero
-7. Press the left blue button to turn 180˚ back to position zero
-      We want to purge the line from the acid bottle to the instrument of air bubbles
-8. To purge, on the touchscreen of the instrument, click Burette Rinse, click START. Repeat this process 3 times and be certain that there are no bubbles left in the line
-9. After the purging cycle, press the button to turn 180˚ and remove the acid cup
-10. PUT THE ACID BACK in the brown bottle - open the cap and carefully dump the acid
-11. ADD fresh DI water to the DI cup and place in position zero. Turn 180˚ again
-12. Prepare the logging sheet of the day; enter the date, ...\
+2. Turn the titrator ON (front button).
+3. Turn the Rondolino ON (back switch).
+4. Press the left blue button on top of the Rondolino (turns sample changer 180˚)
+5. Place an empty cup in position zero.
+6. Press the left blue button on top of the Rondolino to turn 180˚ back to position zero.
+7. To purge, on the touchscreen of the instrument, click PURGE 3x, click START.
+8. After the purging cycle, press the button to turn 180˚ and remove the acid cup.
+9. PUT THE ACID BACK in the brown bottle.
+10. ADD 60mL of fresh DI water to the DI cup and place in position zero. 
+11. Press the left blue button on top of the Rondolino to turn 180˚ back to position zero.
 ---
 
 ## pH Calibration
