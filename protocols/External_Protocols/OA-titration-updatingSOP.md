@@ -9,7 +9,7 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 - pH Buffer 4.0 ()
 - pH Buffer 7.0 ()
 - pH buffer 10.0 ()
-- Hydrochloric acid from Dickson Lab ()
+- 0.1M Hydrochloric acid from Dickson Lab ()
 - CO<sub>2</sub> Reference Materials from Dickson Lab (CRMs)
 
 ##### Personal Protective Equipment (PPE):
@@ -21,6 +21,7 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 - Rondolino (Mettler-Toledo)
 - Scale - Mettler AC100 (Mettler-Toledo)
 - Sample cups (Mettler-Toledo)
+- Serological pipettes & pipettor
 - Hazardous waster jug
 
 
