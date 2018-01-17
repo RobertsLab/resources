@@ -5,10 +5,23 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 ---
 
 ##### Reagents:
+- Distilled (DI) water
+- pH Buffer 4.0 ()
+- pH Buffer 7.0 ()
+- pH buffer 10.0 ()
+- Hydrochloric acid from Dickson Lab ()
+- CO<sub>2</sub> Reference Materials from Dickson Lab (CRMs)
 
 ##### Personal Protective Equipment (PPE):
+- gloves
+- lab coat
 
 ##### Equipment:
+- Excellence Titrator T5 (Mettler-Toledo)
+- Rondolino (Mettler-Toledo)
+- Scale - Mettler AC100 (Mettler-Toledo)
+- Sample cups (Mettler-Toledo)
+- Hazardous waster jug
 
 
 ## Starting the instrument (purging acid line)
