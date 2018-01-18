@@ -36,7 +36,8 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 #### Start LabX Software, Titrator, and Rondolino
 1. Login in to the ```srlab``` acount on the computer next to the titrator and open LabX.
 2. Turn the titrator on (button on front of cube).
-3. Turn the Rondolino on (switch on rear, lower right).
+3. Turn the Rondolino on (switch on rear, lower right). It will perform a brief system check, where the probes will raise and the carousel will rotate, before returning the probes and carousel to their original positions.
+4. Ensure the right blue dial on top of the Rondolino is turned to position 1. This enables the probe-rinsing feature.
 4. Press the left blue button on top of the Rondolino (rotates carousel 180˚)
 5. Place an empty cup in position zero.
 6. Press the left blue button on top of the Rondolino to turn carousel 180˚ back to position zero.
@@ -53,7 +54,7 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 ## 2. pH CALIBRATION
 
-Rondolino: Have the right blue dial on top of the Rondolino turned to position 1. This will not condition, but will rinse with DI water for 2 sec.
+Rondolino:
 
 *pH Probe Storage Procedures:*
 - Temporary (No longer than a week) - can stay in the Rondolino in DI water
