@@ -22,25 +22,36 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 - Scale - Mettler AC100 (Mettler-Toledo)
 - Sample cups (Mettler-Toledo)
 - Serological pipettes & pipettor
-- Hazardous waster jug
+- Hazardous waste jug
 
+## 1. DAILY STARTUP PROCEDURES
 
-## 1. PURGING ACID LINE
+#### Check Reagents
+1. Check the volume of DI water in the rinse bottle. You need at least 300mL to process a full carousel of samples.
+2. Check the hose in the rinse bottle to ensure it reaches the bottom of the bottle.
+3. Check the volume of HCl in the amber bottle. You will need at least 50mL to process a single sample (30mL for initial purging procedure and ~5mL for each subsequent sample).
 
-1. Turn on the Computer next to the Titrator and open LabX
-2. Turn the titrator ON (front button).
-3. Turn the Rondolino ON (back switch).
-4. Press the left blue button on top of the Rondolino (turns sample changer 180˚)
+*__IMPORTANT__*: If the volume of HCl is below the halfway mark, please submit a purchase request for more acid, as there is significant lead time for receiving new orders of HCl.
+
+#### Start LabX Software, Titrator, and Rondolino
+1. Login in to the ```srlab``` acount on the computer next to the titrator and open LabX.
+2. Turn the titrator on (button on front of cube).
+3. Turn the Rondolino on (switch on rear, lower right).
+4. Press the left blue button on top of the Rondolino (rotates carousel 180˚)
 5. Place an empty cup in position zero.
-6. Press the left blue button on top of the Rondolino to turn 180˚ back to position zero.
-7. To purge, on the touchscreen of the instrument, click PURGE 3x, click START.
-8. After the purging cycle, press the button to turn 180˚ and remove the acid cup.
-9. PUT THE ACID BACK in the brown bottle.
-10. ADD 60mL of fresh DI water to the DI cup and place in position zero. 
-11. Press the left blue button on top of the Rondolino to turn 180˚ back to position zero.
+6. Press the left blue button on top of the Rondolino to turn carousel 180˚ back to position zero.
+
+#### Purge Acid Line
+
+1. On the touchscreen of the titrator, press ```PURGE 3x```, press ```START```.
+2. After the purging cycle, press the left blue button on top of the Rondolino to turn carousel 180˚and remove the acid cup.
+3. Discard the acid in the hazardous waste jug.
+4. Rinse the acid cup with DI water and leave inverted on drying rack above sink.
+5. Add 60mL of fresh DI water to the DI cup and place in position zero.
+6. Press the left blue button on top of the Rondolino to rotate carousel 180˚ back to position zero.
 ---
 
-## pH Calibration
+## 2. pH CALIBRATION
 
 Rondolino: Have the right blue dial on top of the Rondolino turned to position 1. This will not condition, but will rinse with DI water for 2 sec.
 
@@ -106,7 +117,7 @@ You are now ready to start processing samples.
 The samples are processed the same way as the CRM, **refer to steps 1 through 18** in the measuring the CRM sample section.
 The only difference is you **can add up to 9 samples**.
 Once the samples have been analyzed, dump the waste in the waste container in the sink,
-rinse all the cups with DI water and let them dry, and 
+rinse all the cups with DI water and let them dry, and
 all the solid waste (serological pipet, and paper towels used to soak a big spill from samples or CRM) can be dumped in the cardboard box next to fume hood
 
 Recommendations
