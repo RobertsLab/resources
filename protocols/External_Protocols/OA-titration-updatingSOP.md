@@ -42,14 +42,6 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 5. Place an empty cup in position zero.
 6. Press the left blue button on top of the Rondolino to turn carousel 180˚ back to position zero.
 
-#### Purge Acid Line
-
-1. On the touchscreen of the titrator, press ```PURGE 3x```, press ```START```.
-2. After the purging cycle, press the left blue button on top of the Rondolino to turn carousel 180˚and remove the acid cup.
-3. Discard the acid in the hazardous waste jug.
-4. Rinse the acid cup with DI water and leave inverted on drying rack above sink.
-5. Add 60mL of fresh DI water to the DI cup and place in position zero.
-6. Press the left blue button on top of the Rondolino to rotate carousel 180˚ back to position zero.
 ---
 
 ## 2. pH CALIBRATION
@@ -89,6 +81,17 @@ Rondolino:
 10. In the Mass folder create an excel spreadsheet with two columns, in column A you will enter the sample names and column B titled Mass you will enter the weight of the samples. Save it as an CSV file, this is really important and named: Mass08012016 for example (Mass plus the date without any space in the name)
 11. In the TitrationFiles folder you will put the results from the titrator for each samples always save the files as CSV
 12. Open R, you only need to change the files name for the path and massfile (row 20 and 21)   the date (row 23)  and the values for pH 3.5 and pH 3 (row 26 and 27) DO NOT CHANGE ANYTHING ELSE and at the end of the day DO NOT SAVE THE R file
+
+## Measuring the CRM (CO2 Reference Materials) sample
+
+#### Purge Acid Line
+
+1. On the touchscreen of the titrator, press ```PURGE 3x```, press ```START```.
+2. After the purging cycle, press the left blue button on top of the Rondolino to turn carousel 180˚and remove the acid cup.
+3. Discard the acid in the hazardous waste jug.
+4. Rinse the acid cup with DI water and leave inverted on drying rack above sink.
+5. Add 60mL of fresh DI water to the DI cup and place in position zero.
+6. Press the left blue button on top of the Rondolino to rotate carousel 180˚ back to position zero.
 
 ## Measuring the CRM (CO2 Reference Materials) sample
 
