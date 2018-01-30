@@ -18,9 +18,9 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 ##### Equipment:
 - Excellence Titrator T5 (Mettler-Toledo)
-- Rondolino (Mettler-Toledo)
-- Scale - Mettler AC100 (Mettler-Toledo)
-- Sample cups (Mettler-Toledo)
+- Rondolino Sample Changer (Mettler-Toledo)
+- Scale: Capable of measuring to 0.0001g
+- Rondolino Sample cups (Mettler-Toledo)
 - Serological pipettes & pipettor
 - Hazardous waste jug
 - Aquarium air pump
@@ -77,7 +77,7 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 11. In the TitrationFiles folder you will put the results from the titrator for each samples always save the files as CSV
 12. Open R, you only need to change the files name for the path and massfile (row 20 and 21)   the date (row 23)  and the values for pH 3.5 and pH 3 (row 26 and 27) DO NOT CHANGE ANYTHING ELSE and at the end of the day DO NOT SAVE THE R file
 
-## Measuring the CRM (CO2 Reference Materials) sample
+## 3. Measuring the CRM (CO2 Reference Materials) sample
 
 #### Purge Acid Line
 
