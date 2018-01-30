@@ -6,9 +6,9 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 ##### Reagents:
 - Distilled (DI) water
-- pH Buffer 4.0 ()
-- pH Buffer 7.0 ()
-- pH buffer 10.0 ()
+- pH Buffer 4.0 (Fisher SB101-4)
+- pH Buffer 7.0 (Fisher SB107-4)
+- pH buffer 10.0 (Fisher SB115-4)
 - 0.1M Hydrochloric acid from Dickson Lab ()
 - CO<sub>2</sub> Reference Materials from Dickson Lab (CRMs)
 
@@ -23,6 +23,8 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 - Sample cups (Mettler-Toledo)
 - Serological pipettes & pipettor
 - Hazardous waste jug
+- Aquarium air pump
+- Rotameter (Omega  FL-2010-SS; 0.04-0.5LPM)
 
 ## 1. DAILY STARTUP PROCEDURES
 
