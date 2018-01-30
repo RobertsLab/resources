@@ -48,13 +48,6 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 ## 2. pH CALIBRATION
 
-Rondolino:
-
-*pH Probe Storage Procedures:*
-- Temporary (No longer than a week) - can stay in the Rondolino in DI water
-- Medium-term (No longer than a month) - move to the pH probe holder on the titrator, close gray cap
-- Long-term (Longer than a month) - move to the pH probe holder on the titrator and place clear cap over the end containing KCl, close gray cap
-
 
 1. Place each buffer (Mettler Toledo Technical buffers: 4.01, 7.00, 9.21) in cups and place the cups in positions 1, 2, and 3 respectively
 2. CAREFULLY open the small gray cap on the pH probe, add KCl if needed
@@ -129,3 +122,10 @@ all the solid waste (serological pipet, and paper towels used to soak a big spil
 Recommendations
 
 When beginning a new series of samples, doing duplicate of the first 5 samples is recommended
+
+Rondolino:
+
+*pH Probe Storage Procedures:*
+- Temporary (No longer than a week) - can stay in the Rondolino in pH 4.0 Buffer
+- Medium-term (No longer than a month) - move to the pH probe holder on the titrator, close gray cap
+- Long-term (Longer than a month) - move to the pH probe holder on the titrator and place clear cap over the end containing KCl, close gray cap
