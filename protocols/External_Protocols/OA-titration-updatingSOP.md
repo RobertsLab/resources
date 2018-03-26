@@ -4,33 +4,49 @@ Orginally developed by Genevieve Bernatchez and Nyssa Silbiger 07/18/2016
 
 ---
 
-*Put on your PPE: lab coat, protective glasses, and gloves*
+##### Reagents:
+- Distilled (DI) water
+- pH Buffer 4.0 (Fisher SB101-4)
+- pH Buffer 7.0 (Fisher SB107-4)
+- pH buffer 10.0 (Fisher SB115-4)
+- 0.1M Hydrochloric acid from Dickson Lab ()
+- CO<sub>2</sub> Reference Materials from Dickson Lab (CRMs)
 
-## Starting the instrument (purging acid line)
+##### Personal Protective Equipment (PPE):
+- gloves
+- lab coat
 
-1. Turn on the Computer next to the Titrator and open LabX
-2. Turn the titrator ON (front button)
-3. Turn the Rondolino ON (back switch)
-4. Press the left blue button on top of the Rondolino arm (turns sample changer 180˚)
-5. Take the DI water cup out from position zero
-6. Place an empty cup in position zero
-7. Press the left blue button to turn 180˚ back to position zero
-      We want to purge the line from the acid bottle to the instrument of air bubbles
-8. To purge, on the touchscreen of the instrument, click Burette Rinse, click START. Repeat this process 3 times and be certain that there are no bubbles left in the line
-9. After the purging cycle, press the button to turn 180˚ and remove the acid cup
-10. PUT THE ACID BACK in the brown bottle - open the cap and carefully dump the acid
-11. ADD fresh DI water to the DI cup and place in position zero. Turn 180˚ again
-12. Prepare the logging sheet of the day; enter the date, ...\
+##### Equipment:
+- Excellence Titrator T5 (Mettler-Toledo)
+- Rondolino Sample Changer (Mettler-Toledo)
+- Scale: Capable of measuring to 0.0001g
+- Rondolino Sample cups (Mettler-Toledo)
+- Serological pipettes & pipettor
+- Hazardous waste jug
+- Aquarium air pump
+- Rotameter (Omega  FL-2010-SS; 0.04-0.5LPM)
+
+## 1. DAILY STARTUP PROCEDURES
+
+#### Check Reagents
+1. Check the volume of DI water in the rinse bottle. You need at least 300mL to process a full carousel of samples.
+2. Check the hose in the rinse bottle to ensure it reaches the bottom of the bottle.
+3. Check the volume of HCl in the amber bottle. You will need at least 50mL to process a single sample (30mL for initial purging procedure and ~5mL for each subsequent sample).
+
+*__IMPORTANT__*: If the volume of HCl is below the halfway mark, please submit a purchase request for more acid, as there is significant lead time for receiving new orders of HCl.
+
+#### Start LabX Software, Titrator, and Rondolino
+1. Login in to the ```srlab``` acount on the computer next to the titrator and open LabX.
+2. Turn the titrator on (button on front of cube).
+3. Turn the Rondolino on (switch on rear, lower right). It will perform a brief system check, where the probes will raise and the carousel will rotate, before returning the probes and carousel to their original positions.
+4. Ensure the right blue dial on top of the Rondolino is turned to position 1. This enables the probe-rinsing feature.
+4. Press the left blue button on top of the Rondolino (rotates carousel 180˚)
+5. Place an empty cup in position zero.
+6. Press the left blue button on top of the Rondolino to turn carousel 180˚ back to position zero.
+
 ---
 
-## pH Calibration
-
-Rondolino: Have the right blue dial on top of the Rondolino turned to position 1. This will not condition, but will rinse with DI water for 2 sec.
-
-*pH Probe Storage Procedures:*
-- Temporary (No longer than a week) - can stay in the Rondolino in DI water
-- Medium-term (No longer than a month) - move to the pH probe holder on the titrator, close gray cap
-- Long-term (Longer than a month) - move to the pH probe holder on the titrator and place clear cap over the end containing KCl, close gray cap
+## 2. pH CALIBRATION
 
 
 1. Place each buffer (Mettler Toledo Technical buffers: 4.01, 7.00, 9.21) in cups and place the cups in positions 1, 2, and 3 respectively
@@ -61,6 +77,17 @@ Rondolino: Have the right blue dial on top of the Rondolino turned to position 1
 11. In the TitrationFiles folder you will put the results from the titrator for each samples always save the files as CSV
 12. Open R, you only need to change the files name for the path and massfile (row 20 and 21)   the date (row 23)  and the values for pH 3.5 and pH 3 (row 26 and 27) DO NOT CHANGE ANYTHING ELSE and at the end of the day DO NOT SAVE THE R file
 
+## 3. Measuring the CRM (CO2 Reference Materials) sample
+
+#### Purge Acid Line
+
+1. On the touchscreen of the titrator, press ```PURGE 3x```, press ```START```.
+2. After the purging cycle, press the left blue button on top of the Rondolino to turn carousel 180˚and remove the acid cup.
+3. Discard the acid in the hazardous waste jug.
+4. Rinse the acid cup with DI water and leave inverted on drying rack above sink.
+5. Add 60mL of fresh DI water to the DI cup and place in position zero.
+6. Press the left blue button on top of the Rondolino to rotate carousel 180˚ back to position zero.
+
 ## Measuring the CRM (CO2 Reference Materials) sample
 
 1. Using the serological pipet, measure between 99.5 and 100.5 g of CRM in a cup
@@ -89,9 +116,16 @@ You are now ready to start processing samples.
 The samples are processed the same way as the CRM, **refer to steps 1 through 18** in the measuring the CRM sample section.
 The only difference is you **can add up to 9 samples**.
 Once the samples have been analyzed, dump the waste in the waste container in the sink,
-rinse all the cups with DI water and let them dry, and 
+rinse all the cups with DI water and let them dry, and
 all the solid waste (serological pipet, and paper towels used to soak a big spill from samples or CRM) can be dumped in the cardboard box next to fume hood
 
 Recommendations
 
 When beginning a new series of samples, doing duplicate of the first 5 samples is recommended
+
+Rondolino:
+
+*pH Probe Storage Procedures:*
+- Temporary (No longer than a week) - can stay in the Rondolino in pH 4.0 Buffer
+- Medium-term (No longer than a month) - move to the pH probe holder on the titrator, close gray cap
+- Long-term (Longer than a month) - move to the pH probe holder on the titrator and place clear cap over the end containing KCl, close gray cap
