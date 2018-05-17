@@ -316,27 +316,36 @@ Then, go to View >> Results Grid and add Condition and BioReplicate information.
 
 ### Step 5b: Spot check peptides
 
-1. Randomly select about 100 peptides
-2. See if Skyline chose the correct peak for all samples. The peak Skyline chose has a black arrow next to it.
-3. If the wrong peak was chosen, select the correct peak
-  - Click on the correct peak
-  - Right click, the select "Apply peak to all"
-4. Shift peak boundaries so the entire peak is selected
-  - Select the dashed lines around the peak, and drag to the correct location
+1. Set up an Excel document for protein and peptide names as rows, and data file names as columns. An example can be found [here](https://github.com/RobertsLab/project-oyster-oa/blob/master/analyses/DNR_Skyline_20170524/error-checking/2017-06-10-error-checking.xlsx).
+2. Randomly select about 100 peptides. Fill in the protein and peptide names in the Excel document.
+3. For each peptide:
+  - Identify the peak Skyline chose. The peak Skyline chose has a black arrow next to it.
+  - If the correct peak was chosen, mark "1" in the Excel document.
+  - If the wrong peak was chosen, or if Skyline identified noise as a peak, mark "0" in the Excel document. Then, select the correct peak in Skyline
+    - Click on the correct peak
+    - Right click, then select "Apply peak to all"
+  - Shift peak boundaries so the entire peak is selected
+    - Select the dashed lines around the peak, and drag to the correct location
 
-Skyline picked the right peak:
+Examples of correct and incorrect peaks can be found below.
+
+Skyline picked the right peak (indicate with "1"):
 
 ![right-peak](https://cloud.githubusercontent.com/assets/22335838/26095588/fe990ed2-39d2-11e7-884e-47ad4eb78e2f.png)
 
-Skyline chose the wrong peak:
+Skyline chose the wrong peak (indicate with "0"):
 
 ![wrong-peak](https://cloud.githubusercontent.com/assets/22335838/26095636/26fcdaca-39d3-11e7-8421-4978949643e6.png)
 
-Skyline identified noise as a peak:
+Skyline identified noise as a peak (indicate with "0"):
 
 ![noise](https://cloud.githubusercontent.com/assets/22335838/26095664/3d39dcc0-39d3-11e7-9509-812cea8e71b2.png)
 
-5. Using this information, generate per-peptide and per-sample error rates.
+4. In the Excel document, calculate the following metrics:
+  - Per-peptide success rate: Sum all "1" and "0" for each peptide (row), then divide by the number of samples in Skyline
+  - Per-peptide error rate: 1 - success rate
+  - Per-sample success rate: Sum all "1" and "0" for each sample (column), then divide by the number of peptides
+  - Per-sample error rate: 1 - success rate
 
 ### Step 5c: Export Skyline data
 
