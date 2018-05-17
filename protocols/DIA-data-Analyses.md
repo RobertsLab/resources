@@ -346,6 +346,7 @@ Skyline identified noise as a peak (indicate with "0"):
   - Per-peptide error rate: 1 - success rate
   - Per-sample success rate: Sum all "1" and "0" for each sample (column), then divide by the number of peptides
   - Per-sample error rate: 1 - success rate
+5. Send the spreadsheet to Emma Timmins-Schiffman for clearance before proceeding.
 
 ### Step 5c: Export Skyline data
 
