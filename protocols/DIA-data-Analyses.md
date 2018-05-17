@@ -333,13 +333,19 @@ Skyline picked the right peak (indicate with "1"):
 
 ![right-peak](https://cloud.githubusercontent.com/assets/22335838/26095588/fe990ed2-39d2-11e7-884e-47ad4eb78e2f.png)
 
+This is the right peak because all of the transitions are eluting at the same retention time.
+
 Skyline chose the wrong peak (indicate with "0"):
 
 ![wrong-peak](https://cloud.githubusercontent.com/assets/22335838/26095636/26fcdaca-39d3-11e7-8421-4978949643e6.png)
 
+This is the wrong peak because only some of the transitions are eluting at that retention time. The correct peak would be the one on the right, in which all transitions are eluting at the same retention time.
+
 Skyline identified noise as a peak (indicate with "0"):
 
 ![noise](https://cloud.githubusercontent.com/assets/22335838/26095664/3d39dcc0-39d3-11e7-9509-812cea8e71b2.png)
+
+This is not a peak because there is only one transition eluting at that particular retention time, and all other transitions are not present (or are present at exremely low levels).
 
 4. In the Excel document, calculate the following metrics:
   - Per-peptide success rate: Sum all "1" and "0" for each peptide (row), then divide by the number of samples in Skyline
