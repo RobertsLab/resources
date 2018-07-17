@@ -4,7 +4,7 @@
 
 ---
 
-CXR100_LN2_dewar_dry_shipper_instructions.pdf -
+CXR100_LN2_dewar_dry_shipper_instructions.pdf - Liquid nitrogen dry shipper. _Holding times: Static 16 days; Working 11 days_
 
 Invitrogen_qubit_3.0_manual.pdf -
 
