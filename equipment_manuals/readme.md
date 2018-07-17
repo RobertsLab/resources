@@ -4,18 +4,20 @@
 
 ---
 
-CXR100_LN2_dewar_dry_shipper_instructions.pdf - Liquid nitrogen dry shipper. _Holding times: Static 16 days; Working 11 days_
+- CXR100_LN2_dewar_dry_shipper_instructions.pdf - Instructions on using/filling dry shipper.
 
-Invitrogen_qubit_3.0_manual.pdf -
+- cryoscience_CXR100_LN2_dewar_dry_shipper_specs.pdf - Spec sheet for CXR100 liquid nitrogen dry shipper. Has info on storage times and tube storage capacities.
 
-Invitrogen_Xcell_SureLock_Mini_System.pdf -
+- Invitrogen_qubit_3.0_manual.pdf -
 
-LabCon_WasherManual.pdf -
+- Invitrogen_Xcell_SureLock_Mini_System.pdf -
 
-low_high_water_alarm_manual.pdf -
+- LabCon_WasherManual.pdf -
 
-NanoDrop_ND1000-Cleaning-and-Reconditioning.pdf -
+- low_high_water_alarm_manual.pdf -
 
-sensaphone_1104_manual_20170807.pdf -
+- NanoDrop_ND1000-Cleaning-and-Reconditioning.pdf -
 
-MasterFlex_L-S_Precision.pdf - 
+- sensaphone_1104_manual_20170807.pdf -
+
+- MasterFlex_L-S_Precision.pdf - 
