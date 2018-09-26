@@ -33,7 +33,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 **Step 1**: Cut a tissue sample from the parrafin block
 
 - Tare a scale with a piece of weigh paper
-- Use a scalpel to cut and scoop out parrafin-embedded tissue
+- Use a scalpel to cut and scoop out parrafin-embedded tissue. Avoid any area with blue ink staining.
 - Set the tissue on the weigh paper until there is 0.02 g of tissue
 
 **Step 2**: Cut the block into smaller pieces and place them into a 2 mL round-bottomed processing tube
