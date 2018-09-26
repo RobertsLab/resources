@@ -16,8 +16,9 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 7. Centrifuge
 8. Heat Block
 9. Vortex
-10. Qubit and Assay Tubes
-11. dsDNA Broad Range Kit
+10. Tissue Tearor
+11. Qubit and Assay Tubes
+12. dsDNA Broad Range Kit
 
 ## Protocol
 
@@ -56,9 +57,9 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 ### Tissue Lysis and Incubation
 
-**Step 11**: TBD
+**Step 11**: Clean the TissueTearor by running for 20 seconds in ethanol, 20 seconds in one nanopure water bath, then 20 seconds in a second nanopure water bath. Wipe the TissueTearor with a kim wipe.
 
-**Step 12**: TBD
+**Step 12**: Use the TissueTearor at setting 1 for 10 seconds to lyse samples. After each sample, repeat Step 11.
 
 **Step 13**: Carefully pipet lysates into new 1.5 mL microcentrifuge-safelock tubes
 
