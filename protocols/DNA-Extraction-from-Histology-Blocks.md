@@ -63,7 +63,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 **Step 15**: Incubate for 60 minutes at 56ºC using a heat block. Cover samples with foil to keep warm. Every ten minutes, vortex samples at maximum speed for one minute.
 
-**Step 16**: Briefly centrifuge the microcentrifuge-safelock tube to remove drops from the inside of the lid
+**Step 16**: After the sixth and final incubation-vortex combination, briefly centrifuge the microcentrifuge-safelock tube to remove drops from the inside of the lid. Set heat block to 80ºC.
 
 **Step 17**: Add 4 µL RNase A (100 mg/mL), mix by vortexing at maximum speed for 20 s, and incubate for 2 min at room temperature. This step is necessary to obtain RNA-free genomic DNA.
 
