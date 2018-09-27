@@ -53,7 +53,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 ### Tissue Lysis and Incubation
 
-**Step 11**: Clean the TissueTearor by running for 20 seconds in 10% bleach solution, 20 seconds in one nanopure water bath, then 20 seconds in a second nanopure water bath. Wipe the TissueTearor with a kim wipe.
+**Step 11**: Clean the TissueTearor by running for 20 seconds in 10% bleach solution, 20 seconds in one DI water bath, then 20 seconds in a second DI water bath. Wipe the TissueTearor with a kim wipe.
 
 **Step 12**: Use the TissueTearor at setting 1 for 10 seconds to lyse samples. After each sample, repeat Step 11.
 
