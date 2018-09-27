@@ -31,11 +31,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 - Label tubes for extractions
 - Clean scalpel in 10% bleach solution
 
-**Step 1**: Cut a tissue sample from the parrafin block
-
-- Tare a scale with a piece of weigh paper
-- Use a scalpel to cut and scoop out parrafin-embedded tissue. Avoid any area with blue ink staining.
-- Set the tissue on the weigh paper until there is 0.02 g of tissue
+**Step 1**: Cut a tissue sample from the parrafin block and weigh on a scale. Use up to, but no more than, 0.02 g of tissue per sample. Using more than 0.02 g of tissue could clog the spin column and lead to poor DNA yield downstream.
 
 **Step 2**: Cut the block into smaller pieces and place them into a 2 mL round-bottomed processing tube
 
@@ -57,7 +53,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 ### Tissue Lysis and Incubation
 
-**Step 11**: Clean the TissueTearor by running for 20 seconds in ethanol, 20 seconds in one nanopure water bath, then 20 seconds in a second nanopure water bath. Wipe the TissueTearor with a kim wipe.
+**Step 11**: Clean the TissueTearor by running for 20 seconds in 10% bleach solution, 20 seconds in one nanopure water bath, then 20 seconds in a second nanopure water bath. Wipe the TissueTearor with a kim wipe.
 
 **Step 12**: Use the TissueTearor at setting 1 for 10 seconds to lyse samples. After each sample, repeat Step 11.
 
