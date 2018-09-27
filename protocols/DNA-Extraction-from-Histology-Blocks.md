@@ -33,7 +33,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 **Step 1**: Cut a tissue sample from the parrafin block and weigh on a scale. Use up to, but no more than, 0.02 g of tissue per sample. Using more than 0.02 g of tissue could clog the spin column and lead to poor DNA yield downstream.
 
-**Step 2**: Cut the block into smaller pieces and place them into a 2 mL round-bottomed processing tube
+**Step 2**: Place the tissue sample embedded in parrafin in a 2 mL round-bottomed tube. Cut or squish the tissue into smaller pieces in the tube itself to minimize tissue loss.
 
 **Step 3**: Add 1 mL xylene to the sample. Vortex vigorously for 20 s, and incubate for 3 min on the benchtop
 
