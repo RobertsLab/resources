@@ -81,7 +81,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 ### DNA Isolation
 
-**Step 23**: Pipet the sample, including any precipitate that may have formed, into the PAXgene DNA spin column placed in a 2 mL processing tube, and centrifuge for 1 min at 6000 x g. Plae the spin column in a new 2 mL procesing tube, and discard the old processing tube containing flow-through.
+**Step 23**: Pipet the sample, including any precipitate that may have formed, into the PAXgene DNA spin column placed in a 2 mL processing tube, and centrifuge for 1 min at 6000 x g. Place the spin column in a new 2 mL procesing tube, and discard the old processing tube containing flow-through.
 
 **Step 24**: Pipet 500 µL Buffer TD3 into the PAXgene DNA spin column, and centrifuge for 1 min at 6,000 x g. Place the spin column in a new 2 mL processing tube, and discard the old processing tube containing flow-through.
 
@@ -97,7 +97,7 @@ This protocol is modified from the [PAXgene Tissue DNA Kit](https://www.preanaly
 
 **Step 29**: For each standard's designated Qubit assay tube, add 10 µL of the correct standard and 190 µL of the master solution.
 
-**Step 30**: For each sample's designated Qubit assay tube, add 1 µL of the sample and 199 µL of the master solution.
+**Step 30**: For each sample's designated Qubit assay tube, add 1 µL of the sample and 199 µL of the master solution. Be sure to vortex the sample before adding it to the assay tube.
 
 **Step 31**: Vortex all Qubit assay tube for 2-3 seconds at maximum speed. Incubate tubes at room temperature for two minutes.
 
