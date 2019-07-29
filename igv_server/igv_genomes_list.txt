@@ -1,0 +1,2 @@
+<Roberts Lab Server-side Genome Lis>
+Ostrea lurida Olurida_v081	http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.genome	Olurida_v081
