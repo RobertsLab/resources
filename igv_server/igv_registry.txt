@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Global name="Genomes"  infolink="https://github.com/RobertsLab/resources/wiki/Genomic-Resources" version="1">
+    <Category name="P.generosa">
+        <Resource name="Pgenerosa_v070"
+                  path="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.genome" />
+        <Resource name="Pgenerosa_v071"
+                  path="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.genome" />
+    </Category>
+</Global>
