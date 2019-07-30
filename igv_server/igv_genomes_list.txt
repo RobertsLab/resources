@@ -1,7 +1,7 @@
 <Roberts Lab Server-side Genome Lis>
 Crassostrea gigas Crassostrea_gigas.oyster_v9.dna_sm.toplevel	http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.genome	Crassostrea_gigas.oyster_v9.dna_sm.toplevel
 Crassostrea virginica Cvirginica_v300	http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.genome	Cvirginica_v300
-Crassostrea virginica GCF_002022765.2_C_virginica-3.0_genomic
+Crassostrea virginica GCF_002022765.2_C_virginica-3.0_genomic	http://owl.fish.washington.edu/halfshell/genomic-databank/GCF_002022765.2_C_virginica-3.0_genomic.genome	GCF_002022765.2_C_virginica-3.0_genomic
 Ostrea lurida Olurida_v081	http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.genome	Olurida_v081
 Panopea generosa Pgenerosa_v070	http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.genome	Pgenerosa_v070
 Panopea generosa Pgenerosa_v071	http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.genome	Pgenerosa_v071
