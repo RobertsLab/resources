@@ -1,21 +1,26 @@
 ### Mass Spec Tutorial for the Roberts Lab
 
-1. Different types of mass spec (MS) experiments - summary
-   1. Data dependent acquisition (DDA), also called shotgun proteomics
-      1. DDA data are considered to be a broad survey of the sequenced proteome. All ionized peptides are analyzed in the MS1 scan and the top 5-20 of these peptides are further analyzed in the MS2 scan. The MS1 scan gives information on the peptide’s mass (m) to charge (z) ratio. The MS2 scan gives information on peptide fragment’s m/z, allowing for peptide sequence inference.
-      2. Considered to be relatively low resolution, although broad, data sets. This is because only the top 5-20 peptides for each MS1 scan are fragmented for characterization.
-      3. Analytical pipelines are well established and straightforward. Data are searched against a database of known protein sequences or de novo sequencing can be performed. Database searches perform considerably better with a proteome from the same species.
-   1. Data independent acquisition (DIA)
-      1. DIA also broadly surveys the proteome, but does a much deeper sequencing than DDA, retaining the dynamic range of peptides.
-      2. Essentially, the MS1 scan of the data is skipped and “all” ionized peptides within a desired scan window (e.g., 500-502 m/z) are fragmented, yielding a MS2 spectra.
-      3. To sequence even more deeply, sample injections can be divided into shorter m/z scan windows. For example, a typical experiment will analyze all the data between 400-1000 m/z, but this could be divided into 3 injections of windows 400-600, 600-800, 800-1000 m/z. Using an instrument with a cycle time of 20Hz (i.e., 20 MS2 scans can be completed per second), each tandem MS2 produced would result from ions in a  10 m/z range fragmented at one time.
-      4. Analytical pipelines are onerous for discovery-driven proteomics when the width of the window is wide.  Narrow windows that only isolate 2 m/z at a time, are standard searches because typically within a 2m/z wide window, only 1 peptide resides.
-      5. Becuase DIA does not exclude any ion,  SRM assay development is easier from DIA data because it yields a higher resolution library, generating more peptides and transitions to choose from for the assay.
-   1. Selected reaction monitoring (SRM), also called targeted proteomics or parallel reaction monitoring
-      1. SRM fully characterizes specific peptides that are provided in the instrument method.
-      2. Analysis is executed on a triple quadrupole instrument. The MS is programmed to monitor specific peptide fragments, or transitions, that are diagnostic of a peptide or protein of interest. In a given chromatography gradient for a sample, the instrument will dwell on a peptide transition for the amount of time it has divided by the number of transitions in the method. Thus, fewer transitions results in higher resolution peptide measurements.
-      3. Analytical pipelines are straightforward, but can be tedious given problems with Skyline’s automated peak picking.
-1. Pipeline for creating SRM assays (details for C and D can be found in this document)
+Different types of mass spec (MS) experiments - summary
+
+#### Data dependent acquisition (DDA), also called shotgun proteomics
+
+   1. DDA data are considered to be a broad survey of the sequenced proteome. All ionized peptides are analyzed in the MS1 scan and the top 5-20 of these peptides are further analyzed in the MS2 scan. The MS1 scan gives information on the peptide’s mass (m) to charge (z) ratio. The MS2 scan gives information on peptide fragment’s m/z, allowing for peptide sequence inference.
+   2. Considered to be relatively low resolution, although broad, data sets. This is because only the top 5-20 peptides for each MS1 scan are fragmented for characterization.
+   3. Analytical pipelines are well established and straightforward. Data are searched against a database of known protein sequences or de novo sequencing can be performed. Database searches perform considerably better with a proteome from the same species.
+      
+#### Data independent acquisition (DIA)
+   1. DIA also broadly surveys the proteome, but does a much deeper sequencing than DDA, retaining the dynamic range of peptides.
+   2. Essentially, the MS1 scan of the data is skipped and “all” ionized peptides within a desired scan window (e.g., 500-502 m/z) are fragmented, yielding a MS2 spectra.
+   3. To sequence even more deeply, sample injections can be divided into shorter m/z scan windows. For example, a typical experiment will analyze all the data between 400-1000 m/z, but this could be divided into 3 injections of windows 400-600, 600-800, 800-1000 m/z. Using an instrument with a cycle time of 20Hz (i.e., 20 MS2 scans can be completed per second), each tandem MS2 produced would result from ions in a  10 m/z range fragmented at one time.
+   4. Analytical pipelines are onerous for discovery-driven proteomics when the width of the window is wide.  Narrow windows that only isolate 2 m/z at a time, are standard searches because typically within a 2m/z wide window, only 1 peptide resides.
+   5. Becuase DIA does not exclude any ion,  SRM assay development is easier from DIA data because it yields a higher resolution library, generating more peptides and transitions to choose from for the assay.
+
+#### Selected reaction monitoring (SRM), also called targeted proteomics or parallel reaction monitoring
+   1. SRM fully characterizes specific peptides that are provided in the instrument method.
+   2. Analysis is executed on a triple quadrupole instrument. The MS is programmed to monitor specific peptide fragments, or transitions, that are diagnostic of a peptide or protein of interest. In a given chromatography gradient for a sample, the instrument will dwell on a peptide transition for the amount of time it has divided by the number of transitions in the method. Thus, fewer transitions results in higher resolution peptide measurements.
+   3. Analytical pipelines are straightforward, but can be tedious given problems with Skyline’s automated peak picking.
+
+### Pipeline for creating SRM assays (details for C and D can be found in this document) 
    1. Select proteins/peptides of interest
       1. This can be based on previous experimental data, literature reviews, or interest in specific pathways.
    1. Choose a library for instrument method development
