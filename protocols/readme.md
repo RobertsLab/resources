@@ -32,9 +32,9 @@ Brief description of repo files are below
 
 ## Protein
 
-- **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - 
+- **[MassSpec_Tutorial.md](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.md)** - Explanation of the different types of mass spectrometry (MS, or "mass spec") experiments one could use to measure protein abundances via "proteomics" 
 
-- **[MassSpec_Tutorial.txt](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.md)** - Explanation of the different types of mass spectrometry (MS, or "mass spec") experiments one could use to measure protein abundances via "proteomics" 
+- **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - 
 
 - **[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** -
 
