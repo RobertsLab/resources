@@ -23,7 +23,7 @@ Brief description of repo files are below
 
 ## RNA
 
-- **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT. Reliably isolates RNA from frozen tissues of relatively large size that have been properly preserved (by flash-freezing or using RNAlater), and tissues that can be homogenized thoroughly prior to processing with RNAzol. Not recommended for hemolymph, or very small amounts of tissue.  
+- **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT. Reliably isolates Total RNA from frozen tissues of relatively large size that have been properly preserved (by flash-freezing or using RNAlater), and tissues that can be homogenized thoroughly prior to processing with RNAzol. Not recommended for hemolymph, or very small amounts of tissue.  Protocol can also be used to isolate mRNA and micro RNA. 
 
 - **[dnase_rna.md](https://github.com/RobertsLab/resources/blob/master/protocols/dnase_rna.md)** - DNase procedure using the Turbo DNA-free Kit.  This is commonly used to remove DNA contamination from isolated RNA, prior to generating cDNA. 
 
