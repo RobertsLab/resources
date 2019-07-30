@@ -4,11 +4,11 @@ Brief description of repo files are below
 
 - **readme.md** - 
 
-- **Homogenization of tissues:** - 
+- **Homogenization of tissues:** - NEED TO CREATE PROTOCOL 
 
 ## DNA
 
-- **[ethanol_precipitation_DNA.md](https://github.com/RobertsLab/resources/blob/master/protocols/ethanol_precipitation_DNA.md)** - Ethanol precipitation of DNA
+- **[ethanol_precipitation_DNA.md](https://github.com/RobertsLab/resources/blob/master/protocols/ethanol_precipitation_DNA.md)** - Ethanol precipitation of DNA. Recommended for X and Y tissues.  Not recommended for Z. 
 
 - **[RADseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/RADseq.md)** - Preparing tissue for DNA sequencing using RADseq, which is commonly used for genetics experiments, such as identification of genetic variants (SNPs), phylogenetics, population structure, linkage and quantitative trait locus mapping, genome wide association studies, etc. 
 
@@ -23,7 +23,7 @@ Brief description of repo files are below
 
 ## RNA
 
-- **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT. Not recommended for hemolymph, or very small amounts of tissue. 
+- **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT. Reliably isolates RNA from frozen tissues of relatively large size that have been properly preserved (by flash-freezing or using RNAlater), and tissues that can be homogenized thoroughly prior to processing with RNAzol. Not recommended for hemolymph, or very small amounts of tissue.  
 
 - **[dnase_rna.md](https://github.com/RobertsLab/resources/blob/master/protocols/dnase_rna.md)** - DNase procedure using the Turbo DNA-free Kit.  This is commonly used to remove DNA contamination from isolated RNA, prior to generating cDNA. 
 
