@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Global name="Genomes"  infolink="https://github.com/RobertsLab/resources/wiki/Genomic-Resources" version="1">
+<Global name="Annotations"  infolink="https://github.com/RobertsLab/resources/wiki/Genomic-Resources" version="1">
     <Category name="P.generosa">
-        <Resource name="Pgenerosa_v070"
-                  path="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.genome" />
-        <Resource name="Pgenerosa_v071"
-                  path="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.genome" />
+			<Category name="Pgenerosa_v070" infolink="https://github.com/RobertsLab/resources/wiki/Genomic-Resources#genome-feature-tracks-3">
+        <Resource name="CDS"
+                  path="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.CDS.gff" />
+        <Resource name="exons"
+                  path="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.exon.gff" />
+			</Category>
     </Category>
 </Global>
