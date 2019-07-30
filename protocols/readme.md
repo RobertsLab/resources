@@ -34,13 +34,13 @@ Brief description of repo files are below
 
 - **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - 
 
-- **[MassSpec_Tutorial.txt](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.txt)** - 
+- **[MassSpec_Tutorial.txt](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.md)** - Explanation of the different types of mass spectrometry (MS, or "mass spec") experiments one could use to measure protein abundances via "proteomics" 
 
 - **[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** -
 
-- **[DIA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md)** - 
+- **[DIA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md)** - Steps to analyze data derived from Data Independent Acquisition (DIA) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio). 
 
-- **[SRM-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md)** - 
+- **[SRM-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md)** -  Steps to analyze data derived from Selected Reaction Monitoring (SRM) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio). 
 
 ## Miscellaneous 
 
