@@ -34,7 +34,7 @@ Brief description of repo files are below
 
 - **[MassSpec_Tutorial.md](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.md)** - Explanation of the different types of mass spectrometry (MS, or "mass spec") experiments one could use to measure protein abundances via "proteomics" 
 
-- **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - 
+- **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - Bench protocol for taking tissues that have been flash frozen, and extracting protein for proteomics experiments. 
 
 - **[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** -
 
