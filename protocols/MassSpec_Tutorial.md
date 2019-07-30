@@ -1,5 +1,4 @@
-﻿Mass Spec Tutorial for the Roberts Lab
-
+### Mass Spec Tutorial for the Roberts Lab
 
 1. Different types of mass spec (MS) experiments - summary
    1. Data dependent acquisition (DDA), also called shotgun proteomics
