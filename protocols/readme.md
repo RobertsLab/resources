@@ -10,7 +10,7 @@ Brief description of repo files are below
 
 - **[ethanol_precipitation_DNA.md](https://github.com/RobertsLab/resources/blob/master/protocols/ethanol_precipitation_DNA.md)** - Ethanol precipitation of DNA. Recommended for X and Y tissues.  Not recommended for Z. 
 
-- **[RADseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/RADseq.md)** - Preparing tissue for DNA sequencing using RADseq, which is commonly used for genetics experiments, such as identification of genetic variants (SNPs), phylogenetics, population structure, linkage and quantitative trait locus mapping, genome wide association studies, etc. 
+- **[RADseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/RADseq.md)** - Preparing tissue for DNA sequencing using RADseq, which is commonly used for genetics experiments, such as identification of genetic variants (SNPs), phylogenetics, population structure, linkage and quantitative trait locus mapping, genome wide association studies, etc. COULD BE IMPROVED / UPDATED
 
 
 ## DNA methylation 
