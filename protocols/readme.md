@@ -10,25 +10,26 @@ Brief description of repo files are below
 
 - **[ethanol_precipitation_DNA.md](https://github.com/RobertsLab/resources/blob/master/protocols/ethanol_precipitation_DNA.md)** - Ethanol precipitation of DNA
 
+- **[RADseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/RADseq.md)** - Preparing tissue for DNA sequencing using RADseq, which is commonly used for genetics experiments, such as identification of genetic variants (SNPs), phylogenetics, population structure, linkage and quantitative trait locus mapping, genome wide association studies, etc. 
+
+
 ## DNA methylation 
 
 - **[medip.md](https://github.com/RobertsLab/resources/blob/master/protocols/medip.md)** - Protocol for methylated DNA immunoprecipitated.
 
 - **[BSseq-Nov-2015.md](https://github.com/RobertsLab/resources/blob/master/protocols/BSseq-Nov-2015.md)** -
 
-**[BSseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/BSseq.md)** -
+- **[BSseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/BSseq.md)** -
 
 ## RNA
 
-- **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT.
+- **[rna_isolation_rnazol_rt.md](https://github.com/RobertsLab/resources/blob/master/protocols/rna_isolation_rnazol_rt.md)** - Total RNA isolation using RNAzol RT. Not recommended for hemolymph, or very small amounts of tissue. 
 
-- **[dnase_rna.md](https://github.com/RobertsLab/resources/blob/master/protocols/dnase_rna.md)** - DNase procedure using the Turbo DNA-free Kit.
+- **[dnase_rna.md](https://github.com/RobertsLab/resources/blob/master/protocols/dnase_rna.md)** - DNase procedure using the Turbo DNA-free Kit.  This is commonly used to remove DNA contamination from isolated RNA, prior to generating cDNA. 
 
-- **[reverse_transcription.md](https://github.com/RobertsLab/resources/blob/master/protocols/reverse_transcription.md)** - Reverse transcription using Promega M-MMLV Reverse Transcriptase.
+- **[reverse_transcription.md](https://github.com/RobertsLab/resources/blob/master/protocols/reverse_transcription.md)** - Reverse transcription using Promega M-MMLV Reverse Transcriptase. Used when 
 
 - **[qpcr.md](https://github.com/RobertsLab/resources/blob/master/protocols/qpcr.md)** - Quantitative PCR protocol using SsoFast EvaGreen master mix. 
-
-- **[RADseq.md](https://github.com/RobertsLab/resources/blob/master/protocols/RADseq.md)** - 
 
 ## Protein
 
@@ -36,7 +37,7 @@ Brief description of repo files are below
 
 - **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - Bench protocol for taking tissues that have been flash frozen, and extracting protein for proteomics experiments. 
 
-- **[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** -
+- **[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** - TBD
 
 - **[DIA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md)** - Steps to analyze data derived from Data Independent Acquisition (DIA) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio). 
 
