@@ -44,6 +44,6 @@ Brief description of repo files are below
 
 ## Miscellaneous 
 
-- **[setting_larvae.md](https://github.com/RobertsLab/resources/blob/master/protocols/setting_larvae.md)** -
+- **[setting_larvae.md](https://github.com/RobertsLab/resources/blob/master/protocols/setting_larvae.md)** - How to induce Pacific oyster larvae to metamorphose 
 
-- **[Titrator.SOP.md](https://github.com/RobertsLab/resources/blob/master/protocols/Titrator.SOP.md)** - 
+- **[Titrator.SOP.md](https://github.com/RobertsLab/resources/blob/master/protocols/Titrator.SOP.md)** Protocol for meauring total alkalinity in water samples, typically needed for studies that manipulate pCO2 or pH.  LINK BROKEN
