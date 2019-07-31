@@ -1,0 +1,8 @@
+<Roberts Lab Server-side Genome List>
+C.gigas Crassostrea_gigas.oyster_v9.dna_sm.toplevel	http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.genome	Crassostrea_gigas.oyster_v9.dna_sm.toplevel
+C.virginica Cvirginica_v300	http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.genome	Cvirginica_v300
+C.virginica GCF_002022765.2_C_virginica-3.0_genomic	http://owl.fish.washington.edu/halfshell/genomic-databank/GCF_002022765.2_C_virginica-3.0_genomic.genome	GCF_002022765.2_C_virginica-3.0_genomic
+O.lurida Olurida_v081	http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.genome	Olurida_v081
+P.generosa Pgenerosa_v070	http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.genome	Pgenerosa_v070
+P.generosa Pgenerosa_v071	http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.genome	Pgenerosa_v071
+P.generosa Pgenerosa_v074	http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.genome	Pgenerosa_v074

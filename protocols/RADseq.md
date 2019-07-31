@@ -1,4 +1,4 @@
-#RAD PROTOCOL 
+# RAD PROTOCOL 
 >Olympia Oyster - **Initial outplant**    
 >32 samples from three populations    
 >Layout:
@@ -7,7 +7,7 @@
 _use filter tip pipette tips at all times, to avoid cross-contamination between libraries_
 
 
-##Extract DNA
+## Extract DNA
 
 > Samples taken from field August 2013    
 > ![bag](http://eagle.fish.washington.edu/cnidarian/skitch/olyo_-_August_2013_outplanting_1A01889A.png)   
@@ -53,7 +53,7 @@ _use filter tip pipette tips at all times, to avoid cross-contamination between 
 * Resuspend DNA in a total volume of 20 µL of water.   
      
 
-##Restriction enzyme digestion 
+## Restriction enzyme digestion 
 
 Reageant   | amount
 ------------ | ------------- 
@@ -76,7 +76,7 @@ _note that PstI will also work with adaptors_
 
 _Note:  now is a good time to turn on the sonicator to bring it down to temperature._
 
-##Ligation 
+## Ligation 
 
 Reageant   | amount
 ------------ | ------------- 
@@ -198,7 +198,7 @@ Add 3 µL to each sample.
 
 
 
-##Library Preparation
+## Library Preparation
 >Used gel-purified, size-selected DNA from yesterday to prepare the RAD library using the [Kappa LTP Kit](http://eagle.fish.washington.edu/trilobite/Sites_genefish_100112/Steven/Commercial%20Protocols/KAPA_Biosystems%20-%20KAPA_LTP_Library_Preparation_Kit_TDS.pdf)
 
 >The protocol was followed with the following changes:
