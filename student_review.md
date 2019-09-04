@@ -65,7 +65,7 @@ For last year&#39;s goals that were not met, why do you think this might be? Wha
 
 ## F. Comments for Advisor 
 
-Provide feedback for advisor, including what helped you succeed and what the advisor can do in the next year to help you succeed.  
+Provide feedback for advisor, including what worked well and what the advisor can do in the next year to help you succeed.  
 
 _**Not sure if this section is too on-the-nose, but i think it's important to provide this space**_
 
