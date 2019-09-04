@@ -1,42 +1,37 @@
-# Graduate Student Annual Academic Review
+# Graduate Student & Advisor Annual Review   
 
 School of Aquatic and Fishery Sciences
 
 # Purpose and Scope
 
-The purpose of this form is to provide guidelines for annual review meetings with graduate students, and to harmonize the system across different faculty. The first two forms mainly serve to facilitate communication between student and advisor and can be adjusted to the needs of specific research groups. They should be made available to the committee for its annual meeting and kept on file by the advisor of the student. The third and final form is filled in by the committee and will be included in the student&#39;s file held at SAFS.
+The purpose of these form (3) is to provide guidelines for annual meetings between graduate students and their academic advisors, and to harmonize the system across different faculty. The first two forms (Student & Advisor Annual Review) mainly serve to facilitate communication between student and advisor and can be adjusted to the needs of specific research groups. They should be made available to the student's committee for its annual meeting and kept on file by the advisor of the student. The third and final form is filled in by the committee and will be included in the student&#39;s file held at SAFS.
 
-These annual review should consist of three steps (with a form each):
+These **annual** check-ins should consist of three steps:
 
-1. Written annual report and self-evaluation by the student
-2. Student advisor meeting
-  1. Discussion of that self-evaluation
-  2. Evaluation of the student&#39;s progress by advisor
-  3. Definition of specific goals for the next academic year
-3. Committee meeting to revise or approve those goals
-
-
+1. Independent reports  
+  - Student and Advisor both complete Annual Reports independently, then exchange  
+2. Student / Advisor meeting
+  - Meet to discuss independent reports  
+  - Define specific goals for the next academic year  
+  - After meeting, distribute both reports to Committee  
+3. Committee meeting 
+  - Meet to discuss independent reports  
+  - Revise and/or approve goals for next academic year 
+  - Commitee discusses and completes Annual Committee Meeting Report, and sends to Student for response.  
+  - Advisor files completed Committee Report with SAFS. 
 
 ---
 
 
-# 1. Annual Report and Self Evaluation Form
+# 1. Annual Student Report 
+_To be completed by the student independently_ 
 
-## A. Prior Goals and Objectives
+## A. Coursework completion
 
-What were your goals for last year?
+List courses completed last year
 
-Which goals were met, which have not?
 
-## B. Professional Accomplishments
-
-Very briefly summarize your research activities from the past year.
-
-List peer reviewed publications, oral, and poster presentations.
-
-List outreach, service, and professional development activities.
-
-## C. Degree Progress
+## B. Degree Progress  
 
 What is your progress relative to program milestones (including class requirements and exams completed, if applicable)?
 
@@ -44,13 +39,37 @@ M.S. Degree:  Form Committee.  Plan of Study.   Committee Meeting.  Thesis Propo
 
 Ph.D. Degree: Form Committee.  Plan of Study.   Committee Meeting.  Qualifying Exam. Dissertation Proposal. General Exam.
 
-## D. Self Evaluation
+## C. Professional Accomplishments
+
+Very briefly summarize your research activities from the past year.
+
+List experiments completed and data collected  
+
+List peer reviewed publications, oral, and poster presentations.
+
+List teaching, outreach, service, and professional development activities.
+
+List awards. 
+
+## D. Prior Goals and Objectives
+
+What were your goals for last year?
+
+Which goals were met, which have not?
+
+## E. Self-Evaluation 
 
 For last year&#39;s goals that were met, please mention any specific things that you feel were important to this success.
 
 For last year&#39;s goals that were not met, why do you think this might be? What could help remove these barriers?
 
-## E. Future Goals and Objectives
+## F. Comments for Advisor 
+
+Provide feedback for advisor, including what helped you succeed and what the advisor can do in the next year to help you succeed.  
+
+_**Not sure if this section is too on-the-nose, but i think it's important to provide this space**_
+
+## G. Future Goals and Objectives
 
 Summarize your goals for each quarter of the coming year.
 
@@ -61,7 +80,8 @@ For the coming year, list any planned courses, exams, research proposals, manusc
 
 ---
 
-# 2. Annual Student Advisor Review Meeting
+# 2. Annual Advisor Report 
+_To be completed by the advisor independently_ 
 
 Student Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -73,25 +93,11 @@ Degree Program: PhD \_\_\_  MS \_\_\_\_\_\_
 
 Have milestones been reached, and if not, why not?
 
-## B. Coursework completion
-
-List courses completed last year
-
-## Professional Accomplishments
-
-Publications, presentations
-
-Teaching
-
-Outreach
-
-Awards
-
 ## C. Achievement of past year&#39;s goals
 
 List last year&#39;s goals, indicating their achievement and any obstacles
 
-## D. Summary evaluation
+## D. Summary evaluation for student 
 
 Is the student making satisfactory progress?
 
@@ -105,13 +111,18 @@ No. Provide comments/reasons on back. Student should set up a time to meet with 
 
 List goals by quarter: research, course work, teaching, outreach, dissemination
 
+--- 
+**This section is to be completed by the Student prior to distributing to the Committee**  
+
 ## F. Student response
+
 
 
 ---
 
 
-# 3. Annual Committee Meeting
+# 3. Annual Committee Meeting Report 
+_To be completed by committe members (including advisor) after annual meeting, provided to student for their response, and then submitted to SAFS by the advisor_ 
 
 Student Name: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_  Date: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
@@ -121,8 +132,8 @@ Degree Program: PhD \_\_\_  MS \_\_\_\_\_\_
 
 ## A. Forms available to the committee
 
-- Self evaluation
-- Advisor evaluation
+- Annual Student Report 
+- Annual Advisor Report 
 
 ## B.  Goals for past year
 
@@ -148,7 +159,7 @@ Comments by committee (with suggestions).
 
 □ yes □ yes, with reservations (please specify) □ no (please provide reasons)
 
-### We recommend the student to proceed?
+### We recommend the student to proceed? <-- _this is scary! Necessary?_   
 
 □ yes □ yes, with reservations (please specify) □ no (please provide reasons)
 
@@ -175,3 +186,5 @@ Member \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 Member \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
 ## Student response:
+
+_**If student has a chance to respond, when/how does this happen? Can it all happen at the committee meeting, or should it be completed independently by the committee, without student being present?**_ 
