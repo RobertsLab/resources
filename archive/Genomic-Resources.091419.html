@@ -1,0 +1,955 @@
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Genomic-Resources</title>
+            <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(85, 85, 85); background-color: white; overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(3, 3, 3); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(3, 3, 3); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(126, 126, 126); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: black; }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(126, 126, 126); border-color: rgb(214, 214, 214); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(214, 214, 214); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(3, 3, 3); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(214, 214, 214); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(3, 3, 3); background-color: rgb(240, 240, 240); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(245, 245, 245); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(3, 3, 3); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(214, 214, 214) rgb(214, 214, 214) rgb(199, 199, 199); border-image: initial; background-color: rgb(240, 240, 240); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item input[type="checkbox"] { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview .task-list-item { list-style-type: none; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+.line-number.bracket-matcher.bracket-matcher {
+  color: #555;
+  background-color: rgba(255, 255, 134, 0.34);
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: white;
+  color: #555;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .gutter {
+  color: #555;
+  background: white;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #e87b00;
+}
+pre.editor-colors .invisible {
+  color: #555;
+}
+pre.editor-colors .selection .region {
+  background-color: #e1e1e1;
+}
+pre.editor-colors .bracket-matcher .region {
+  background-color: #C9C9C9;
+  opacity: .7;
+  border-bottom: 0 none;
+}
+pre.editor-colors.is-focused .cursor {
+  border-color: black;
+}
+pre.editor-colors.is-focused .selection .region {
+  background-color: #afc4da;
+}
+pre.editor-colors.is-focused .line-number.cursor-line-no-selection,
+pre.editor-colors.is-focused .line.cursor-line {
+  background-color: rgba(255, 255, 134, 0.34);
+}
+.syntax--comment {
+  color: #999988;
+  font-style: italic;
+}
+.syntax--string {
+  color: #D14;
+}
+.syntax--string .syntax--source,
+.syntax--string .syntax--meta.syntax--embedded.syntax--line {
+  color: #5A5A5A;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded {
+  color: #920B2D;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded .syntax--source {
+  color: #920B2D;
+}
+.syntax--constant.syntax--numeric {
+  color: #D14;
+}
+.syntax--constant.syntax--language {
+  color: #606aa1;
+}
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
+  color: #606aa1;
+}
+.syntax--constant.syntax--symbol {
+  color: #990073;
+}
+.syntax--constant.syntax--numeric.syntax--line-number.syntax--find-in-files .syntax--match {
+  color: rgba(143, 190, 0, 0.63);
+}
+.syntax--variable {
+  color: #008080;
+}
+.syntax--variable.syntax--parameter {
+  color: #606aa1;
+}
+.syntax--keyword {
+  color: #222;
+  font-weight: bold;
+}
+.syntax--keyword.syntax--unit {
+  color: #445588;
+}
+.syntax--keyword.syntax--special-method {
+  color: #0086B3;
+}
+.syntax--storage {
+  color: #222;
+}
+.syntax--storage.syntax--type {
+  color: #222;
+}
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: #606aa1;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  text-decoration: underline;
+  color: #606aa1;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #900;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #008080;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #458;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--filename.syntax--find-in-files {
+  color: #E6DB74;
+}
+.syntax--support.syntax--constant,
+.syntax--support.syntax--function,
+.syntax--support.syntax--type {
+  color: #458;
+}
+.syntax--support.syntax--class {
+  color: #008080;
+}
+.syntax--invalid {
+  color: #F8F8F0;
+  background-color: #00A8C6;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #F8F8F0;
+  background-color: #8FBE00;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json .syntax--punctuation.syntax--string {
+  color: #000080;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: #d14;
+}
+.syntax--meta.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header {
+  color: #75715E;
+}
+.syntax--css.syntax--support.syntax--property-name {
+  font-weight: bold;
+  color: #333;
+}
+.syntax--css.syntax--constant {
+  color: #099;
+}
+.syntax--source.syntax--gfm {
+  color: #444;
+}
+.syntax--gfm .syntax--markup.syntax--heading {
+  color: #111;
+}
+.syntax--gfm .syntax--link {
+  color: #888;
+}
+.syntax--gfm .syntax--variable.syntax--list {
+  color: #888;
+}
+.syntax--markdown .syntax--paragraph {
+  color: #444;
+}
+.syntax--markdown .syntax--heading {
+  color: #111;
+}
+.syntax--markdown .syntax--link {
+  color: #888;
+}
+.syntax--markdown .syntax--link .syntax--string {
+  color: #888;
+}
+</style>
+        </head>
+        <body class='markdown-preview' data-use-github-style><p>Here we try to compile genomic resources such that they are readily available and somewhat described. An effort will be made to keep respective index files alongside so these files can be directly used in IGV <em>etc</em>.</p>
+<h5 id="related-resources">Related Resources</h5>
+<ul>
+<li><p><a href="https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit?usp=sharing">Nightingales (Google Sheet)</a> : Database of all raw high-throughput sequencing data</p>
+</li>
+<li><p><a href="https://figshare.com/articles/Compilation_of_DNA_Methylation_Genome_Feature_Tracks_Crassostrea_gigas_/1456226">Compilation of DNA Methylation Genome Feature Tracks (<em>Crassostrea gigas</em>)</a> <em>circa 2015</em></p>
+</li>
+</ul>
+<h1 id="crassostrea-gigas"><em>Crassostrea gigas</em></h1>
+<h2 id="genome">Genome:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa">Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa</code></p>
+<ul>
+<li><p>MD5 = 6de9d1239eb10ea0545bed6c4e746d6c</p>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa.fai">Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="bisulfite-genome">Bisulfite Genome:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz">Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz</code></p>
+<ul>
+<li>Gzipped tarball of bisulfite genome for use with Bismark</li>
+<li>Creation details <a href="https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html">here</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="genome-feature-tracks">Genome Feature Tracks</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.40.gff3">Crassostrea_gigas.oyster_v9.40.gff3</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.40.gff3</code></p>
+<ul>
+<li>MD5 = 90a747fbc94a0a9225c43f75cc40b9db</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.40.abinitio.gff3">Crassostrea_gigas.oyster_v9.40.abinitio.gff3</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.40.abinitio.gff3</code></p>
+<ul>
+<li>MD5 = c2a8c388f5a8afb22a115d61dee3dda0</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.40_mRNA.gff3">Crassostrea_gigas.oyster_v9.40_mRNA.gff3</a></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">grep "mRNA" Crassostrea_gigas.oyster_v9.40.gff3 &gt; Crassostrea_gigas.oyster_v9.40_mRNA.gff3</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="crassostrea-virginica"><em>Crassostrea virginica</em></h1>
+<p><a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/022/765/GCF_002022765.2_C_virginica-3.0/">NCBI FTP</a></p>
+<h2 id="genomes">Genomes:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.fa">Cvirginica_v300.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.fa</code></p>
+<ul>
+<li><p>MD5 = f9135e323583dc77fc726e9df2677a32</p>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.fa.fai">Cvirginica_v300.fa.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.fa.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/022/765/GCF_002022765.2_C_virginica-3.0/GCF_002022765.2_C_virginica-3.0_genomic.fna.gz">GCF_002022765.2_C_virginica-3.0_genomic.fna</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/022/765/GCF_002022765.2_C_virginica-3.0/GCF_002022765.2_C_virginica-3.0_genomic.fna.gz</code></p>
+<ul>
+<li>compressed version of <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Cvirginica_v300.fa</code> (same files)</li>
+</ul>
+</li>
+</ul>
+<h2 id="bisulfite-genomes">Bisulfite Genomes:</h2>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300_bisulfite.tar.gz">Cvirginica_v300_bisulfite.tar.gz</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300_bisulfite.tar.gz</code><ul>
+<li>Gzipped tarball of bisulfite genome for use with Bismark</li>
+<li>Creation details <a href="https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.virginica-Bisulfite-Genome-wit-Bismark-on-Mox.html">here</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="genome-feature-tracks-1">Genome Feature Tracks</h2>
+<ul>
+<li><a href="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_mRNA.gff3">C_virginica-3.0_Gnomon_mRNA.gff3</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_mRNA.gff3</code></li>
+</ul>
+<ul>
+<li><p><a href="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_exon.bed">C_virginica-3.0_Gnomon_exon.bed</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_exon.bed</code></p>
+</li>
+<li><p><a href="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_intron.bed">C_virginica-3.0_intron.bed</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_intron.bed</code></p>
+</li>
+<li><p><a href="http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_CG-motif.bed">C_virginica-3.0_CG-motif.bed</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_CG-motif.bed</code></p>
+<ul>
+<li><p>MD5 = f88c171bccf45a6f3afcf455b6be810f</p>
+</li>
+<li><p>Dead link in this Jupyter Notebook obscures details on how this was generated (via Galaxy):</p>
+<ul>
+<li><a href="https://github.com/sr320/nb-2018/blob/master/C_virginica/22-CG-track.ipynb">https://github.com/sr320/nb-2018/blob/master/C_virginica/22-CG-track.ipynb</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-all.gff">C_virginica-3.0_TE-all.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-all.gff</code>      </p>
+<ul>
+<li><p>MD5 = d0d81fc6cf7525bc2c61984bee23521b    </p>
+</li>
+<li><p><a href="http://onsnetwork.org/kubu4/2018/08/28/transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/">Details</a></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff">C_virginica-3.0_TE-Cg.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff</code>      </p>
+<ul>
+<li><p>MD5 = 83cd753c171076464fee1165b7e1c6ba</p>
+</li>
+<li><p><a href="http://onsnetwork.org/kubu4/2018/08/28/transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/">Details</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="ostrea-lurida"><em>Ostrea lurida</em></h1>
+<h2 id="genome-1">Genome:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa">Olurida_v081.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa</code></p>
+<ul>
+<li><p>MD5 = 3ac56372bd62038f264d27eef0883bd3</p>
+</li>
+<li><p>This is <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">v080</code> with only contigs &gt; 1000bp. Details of how <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">v080</code> was reduced found <a href="https://github.com/sr320/nb-2018/blob/master/O_lurida/04-Pbjelly-10k-mapping.ipynb">here</a>.</p>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa.fai">Olurida_v081.fa.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa">Olurida_v080.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa</code></p>
+<ul>
+<li><p>MD5 = 9258398f554493e08fdc30e9c1409864</p>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa.fai">Olurida_v080.fa.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa.fai</code></li>
+</ul>
+</li>
+<li><p>Also known as <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">pbjelly_sjw_01</code>. Details found <a href="https://github.com/sr320/LabDocs/blob/master/jupyter_nbs/sam/20171130_emu_pbjelly.ipynb">here</a>, though confirmation would be good.</p>
+</li>
+</ul>
+<h2 id="bisulfite-genomes-1">Bisulfite Genomes:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz">Olurida_v080_bisulfite.tar.gz</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080_bisulfite.tar.gz</code></p>
+<ul>
+<li>Gzipped tarball of bisulfite genome for use with Bismark</li>
+<li>Creation details <a href="https://robertslab.github.io/sams-notebook/2018/05/08/bs-seq-mapping-olympia-oyster-bisulfite-sequencing-trimgalore-fastqc-bismark.html">here</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="transcriptome">Transcriptome:</h2>
+<ul>
+<li><p><a href="http://eagle.fish.washington.edu/cnidarian/Olurida_transcriptome_v3.fasta">Olurida_transcriptome_v3.fasta</a></p>
+<ul>
+<li>MD5 = 9da3242af2be0463051ec7e1f39b2593</li>
+</ul>
+</li>
+</ul>
+<h2 id="genome-feature-tracks-2">Genome Feature Tracks</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.mRNA.gff">Olurida_v081.mRNA.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.mRNA.gff</code></p>
+<ul>
+<li><p>MD5 = a77fb84e50b418302254fb1ce46e035f</p>
+</li>
+<li><p>Derived from fully annotated genome: <a href="http://gannet.fish.washington.edu/Atumefaciens/20190109_oly_maker_functional_annotation/20181127_oly_genome_snap02.all.renamed.putative_function.domain_added.gff">20181127_oly_genome_snap02.all.renamed.putative_function.domain_added.gff</a></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk '$3 == "mRNA" {print}' 20181127_oly_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Olurida_v081.mRNA.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081-ks-blastn.gff">Olurida_v081-ks-blastn</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081-ks-blastn.gff</code></p>
+<ul>
+<li><p>MD5 = 9f8f0e3e7a69ba15c14eef9b74849a34</p>
+</li>
+<li><p>Gene track developed from blasting Silliman big transcriptome to genome.</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http:/owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_TE-Cg.gff">Olurida_v081_TE-Cg.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_TE-Cg.gff</code></p>
+<ul>
+<li><p>MD5 = 977fd7cdb460cd0b9df5e875e1e880ea</p>
+</li>
+<li><p>Transposable Element track - more details in <a href="http://onsnetwork.org/kubu4/2018/07/03/transposable-element-mapping-olympia-oyster-genome-assembly-olurida_v081-using-repeatmasker-4-07/">Sam's Notebook</a>, including a <a href="http://owl.fish.washington.edu/Athaliana/20180702_oly_repeatmasker_Cgigas/Olurida_v081.fa.tbl">summary table</a>.</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="panopea-generosa"><em>Panopea generosa</em></h1>
+<h2 id="genome-2">Genome:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.fa">Pgenerosa_v070.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.fa</code></p>
+<ul>
+<li><p>Version of genome provided by Phase Genomics, with Hi-C added to 10X. Further improved with 10k Mate-Pair library alignment.</p>
+</li>
+<li><p>MD5 = de0958fec4b9f8845babf3717ce7168c</p>
+</li>
+<li><p>BUSCO scores:</p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">C:84.2%[S:78.5%,D:5.7%],F:9.4%,M:6.4%,n:978</code></li>
+<li><a href="https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Assessment-BUSCO-Metazoa-on-Pgenerosa_v070-on-Mox.html">Notebook entry</a></li>
+</ul>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.fa.fai">Pgenerosa_v070.fa.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.fa.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.fasta">Pgenerosa_v071.fasta</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.fasta</code></p>
+<ul>
+<li><p>Version of 070 containing contigs &gt;10Kbp (<a href="https://robertslab.github.io/sams-notebook/2019/02/11/Sequence-Subsetting-Pgenerosa_v70-Genome-Assembly-with-faidx.html">details on subsetting</a>)</p>
+</li>
+<li><p>MD5 = 35b6b653b543ebb7f3631e68523ab595</p>
+</li>
+<li><p>BUSCO scores:</p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">C:76.6%[S:73.3%,D:3.3%],F:5.2%,M:18.2%,n:978</code></li>
+<li><a href="https://robertslab.github.io/sams-notebook/2019/03/02/Genome-Assessment-BUSCO-Metazoa-on-P.generosa-v071-on-Mox.html">Notebook entry</a></li>
+</ul>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.fasta.fai">Pgenerosa_v071.fasta.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071.fasta.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v073.fasta">Pgenerosa_v073.fasta</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v073.fasta</code></p>
+<ul>
+<li><p>Version of 070 containing contigs &gt;30Kbp (<a href="https://robertslab.github.io/sams-notebook/2019/02/11/Sequence-Subsetting-Pgenerosa_v70-Genome-Assembly-with-faidx.html">details on subsetting</a>)</p>
+</li>
+<li><p>MD5 = ce81a0fc127e6cc0cbf216eb85b87749</p>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v073.fasta.fai">Pgenerosa_v073.fasta.fai</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v073.fasta.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa">Pgenerosa_v074.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa</code></p>
+<ul>
+<li><p>Version of 070 containing 18 largest scaffolds (<a href="https://robertslab.github.io/sams-notebook/2019/06/25/Data-Wrangling-FastA-Subsetting-of-Pgenerosa_v070.fa-Using-samtools-faidx.html">details on subsetting</a>)</p>
+</li>
+<li><p>MD5 = 32976550b9030126c07920d5f2db179c</p>
+</li>
+<li><p>BUSCO scores:</p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">C:71.6%[S:70.7%,D:0.9%],F:4.7%,M:23.7%,n:978</code></li>
+<li><a href="https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Assessment-BUSCO-Metazoa-on-Pgenerosa_v074-on-Mox.html">Notebook entry</a></li>
+</ul>
+</li>
+<li><p>FastA index (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">samtools faidx</code>)</p>
+<ul>
+<li><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa.fai">Pgenerosa_v074.fa.fai</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa.fai</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v060.fa">Pgenerosa_v060.fa</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v060.fa</code></p>
+<ul>
+<li><p>MD5 = cd5fa3821e7ce54541320d5b26ad324b</p>
+</li>
+<li><p>Version of genome provided by Phase Genomics, with Hi-C added to 10X.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="bisulfite-genome-1">Bisulfite Genome:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_bisulfite.tar.gz">Pgenerosa_v070_bisulfite.tar.gz</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_bisulfite.tar.gz</code></p>
+<ul>
+<li>Gzipped tarball of bisulfite genome for use with Bismark</li>
+<li>Creation details <a href="https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-Geoduck-Bisulfite-Genomes-with-Bismark-on-Mox.html">here</a></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071_bisulfite.tar.gz">Pgenerosa_v071_bisulfite.tar.gz</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071_bisulfite.tar.gz</code></p>
+<ul>
+<li>Gzipped tarball of bisulfite genome for use with Bismark</li>
+<li>Creation details <a href="https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-Geoduck-Bisulfite-Genomes-with-Bismark-on-Mox.html">here</a></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v073_bisulfite.tar.gz">Pgenerosa_v073_bisulfite.tar.gz</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v073_bisulfite.tar.gz</code></p>
+<ul>
+<li>Gzipped tarball of bisulfite genome for use with Bismark</li>
+<li>Creation details <a href="">here</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="genome-feature-tracks-3">Genome Feature Tracks</h2>
+<h4 id="panopea-generosa-vv074a3">Panopea-generosa-vv0.74.a3</h4>
+<ul>
+<li><p><em>These originate from <a href="https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Annotation-Pgenerosa_v074-Using-GenSAS.html">GenSAS annotation on 20190710</a></em></p>
+</li>
+<li><p>BUSCO:</p>
+<ul>
+<li>68.4% complete BUSCOs</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3">Panopea-generosa-vv0.74.a3.CDS.gff3</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3</code></p>
+<ul>
+<li><pre class="editor-colors lang-shell"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">features_array</span>=(CDS exon gene mRNA)</span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">for</span> <span class="syntax--variable syntax--other syntax--member">feature</span> <span class="syntax--keyword syntax--control">in</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">features_array</span>[@]<span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">do</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">output</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3.<span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">feature</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span>.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">input</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">head</span> <span class="syntax--entity syntax--other syntax--attribute-name">-n</span> 3 Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3 \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">awk</span> <span class="syntax--entity syntax--other syntax--attribute-name">-v</span> feature=<span class="syntax--string">"<span class="syntax--punctuation syntax--section syntax--embedded">$</span><span class="syntax--variable syntax--other syntax--member">feature</span>"</span> <span class="syntax--string">'$3 == feature {print}'</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">input</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span> \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">done</span></span></div></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3">Panopea-generosa-vv0.74.a3.exon.gff3</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3</code></p>
+<ul>
+<li><pre class="editor-colors lang-shell"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">features_array</span>=(CDS exon gene mRNA)</span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">for</span> <span class="syntax--variable syntax--other syntax--member">feature</span> <span class="syntax--keyword syntax--control">in</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">features_array</span>[@]<span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">do</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">output</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3.<span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">feature</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span>.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">input</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">head</span> <span class="syntax--entity syntax--other syntax--attribute-name">-n</span> 3 Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3 \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">awk</span> <span class="syntax--entity syntax--other syntax--attribute-name">-v</span> feature=<span class="syntax--string">"<span class="syntax--punctuation syntax--section syntax--embedded">$</span><span class="syntax--variable syntax--other syntax--member">feature</span>"</span> <span class="syntax--string">'$3 == feature {print}'</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">input</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span> \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">done</span></span></div></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3">Panopea-generosa-vv0.74.a3.gene.gff3</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3</code></p>
+<ul>
+<li><pre class="editor-colors lang-shell"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">features_array</span>=(CDS exon gene mRNA)</span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">for</span> <span class="syntax--variable syntax--other syntax--member">feature</span> <span class="syntax--keyword syntax--control">in</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">features_array</span>[@]<span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">do</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">output</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3.<span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">feature</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span>.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">input</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">head</span> <span class="syntax--entity syntax--other syntax--attribute-name">-n</span> 3 Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3 \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">awk</span> <span class="syntax--entity syntax--other syntax--attribute-name">-v</span> feature=<span class="syntax--string">"<span class="syntax--punctuation syntax--section syntax--embedded">$</span><span class="syntax--variable syntax--other syntax--member">feature</span>"</span> <span class="syntax--string">'$3 == feature {print}'</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">input</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span> \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">done</span></span></div></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3">Panopea-generosa-vv0.74.a3.mRNA.gff3</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3</code></p>
+<ul>
+<li><pre class="editor-colors lang-shell"><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">features_array</span>=(CDS exon gene mRNA)</span></div><div class="line"></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">for</span> <span class="syntax--variable syntax--other syntax--member">feature</span> <span class="syntax--keyword syntax--control">in</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">features_array</span>[@]<span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">do</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">output</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3.<span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">feature</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span>.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--variable syntax--other syntax--member">input</span>=<span class="syntax--string">"Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3"</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">head</span> <span class="syntax--entity syntax--other syntax--attribute-name">-n</span> 3 Panopea-generosa-vv0.74.a3-merged-2019-09-03-6-14-33.gff3 \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--entity syntax--name syntax--function">awk</span> <span class="syntax--entity syntax--other syntax--attribute-name">-v</span> feature=<span class="syntax--string">"<span class="syntax--punctuation syntax--section syntax--embedded">$</span><span class="syntax--variable syntax--other syntax--member">feature</span>"</span> <span class="syntax--string">'$3 == feature {print}'</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">input</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span> \</span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--operator">&gt;&gt;</span> <span class="syntax--punctuation syntax--section syntax--embedded">${</span><span class="syntax--variable syntax--other syntax--member">output</span><span class="syntax--punctuation syntax--section syntax--embedded">}</span></span></div><div class="line"><span class="syntax--source syntax--shell"><span class="syntax--keyword syntax--control">done</span></span></div></pre>
+</li>
+</ul>
+</li>
+<li><p><a href="https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.TE.gff3">Panopea-generosa-vv0.74.a3.TE.gff3</a></p>
+<ul>
+<li><p>Transposable elements via RepeatMasker</p>
+</li>
+<li><p>Original filename: <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">t_5d25021b0d20b-5d250896def4c-repeatmasker.gensas.gff3</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="pgenerosa_v0741">Pgenerosa_v074.1</h4>
+<ul>
+<li><p><em>These originate from <a href="https://robertslab.github.io/sams-notebook/2019/08/19/Genome-Annotation-Pgenerosa_v074-MAKER-on-Mox-with-Stringtie-Transcripts-GFF.html">MAKER annotation with Stringtie on 20190819</a></em></p>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.CDS.gff">Pgenerosa_v074.1.CDS.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.CDS.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "CDS" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.1.CDS.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.exon.gff">Pgenerosa_v074.1.exon.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.exon.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "CDS" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.1.exon.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.five_prime_UTR.gff">Pgenerosa_v074.1.five_prime_UTR.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.five_prime_UTR.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "three_prime_UTR" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.1.three_prime_UTR.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.gene.gff">Pgenerosa_v074.1.gene.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.gene.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "gene" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.1.gene.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.three_prime_UTR.gff">Pgenerosa_v074.1.three_prime_UTR.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.1.three_prime_UTR.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "three_prime_UTR" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.1.three_prime_UTR.gff</code></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p><em>These originate from <a href="https://robertslab.github.io/sams-notebook/2019/07/01/Genome-Annotation-Pgenerosa_v074-MAKER-on-Mox.html">MAKER annotation on 20190709</a></em></p>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.CDS.gff">Pgenerosa_v074.CDS.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.CDS.gff</code></p>
+<ul>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "CDS" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.CDS.gff</code></p>
+<ul>
+<li><p><a href="https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.CpG.gff">Pgenerosa_v074.CpG.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.CpG.gff</code></p>
+<ul>
+<li><p>GFF of all CpGs in the Pgenerosa_v074 assembly.</p>
+</li>
+<li><p><a href="https://robertslab.github.io/sams-notebook/2019/08/21/Data-Wrangling-Create-a-CpG-GFF-from-Pgenerosa_v074-using-EMBOSS-fuzznuc-on-Swoose.html">Notebook entry</a></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.exon.gff">Pgenerosa_v074.exon.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.exon.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "CDS" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.exon.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.five_prime_UTR.gff">Pgenerosa_v074.five_prime_UTR.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.five_prime_UTR.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "three_prime_UTR" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.three_prime_UTR.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.gene.gff">Pgenerosa_v074.gene.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.gene.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "gene" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.gene.gff</code></li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.three_prime_UTR.gff">Pgenerosa_v074.three_prime_UTR.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.three_prime_UTR.gff</code></p>
+<ul>
+<li><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "three_prime_UTR" {print}' Pgenerosa_v074_genome_snap02.all.renamed.putative_function.domain_added.gff &gt; Pgenerosa_v074.three_prime_UTR.gff</code></li>
+</ul>
+</li>
+<li><p><a href="https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.stringtie.gtf">Pgenerosa_v074.stringtie.gtf</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.stringtie.gtf</code></p>
+<ul>
+<li><p>GTF of all transcripts and isoforms in Pgenerosa_v074 assembly.</p>
+<ul>
+<li><p>Sorted BAM (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">*sorted.bam</code>) and corresponding BAM index files (<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">*sorted.bam.bai</code>) are here:</p>
+<ul>
+<li><a href="https://gannet.fish.washington.edu/Atumefaciens/20190723_stringtie_pgen_v074/">https://gannet.fish.washington.edu/Atumefaciens/20190723_stringtie_pgen_v074/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="https://robertslab.github.io/sams-notebook/2019/07/23/Genome-Annotation-Pgenerosa_v074-Transcript-Isoform-ID-with-Stringtie-on-Mox.html">Notebook entry</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa.out.gff">Pgenerosa_v074.fa.out.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa.out.gff</code></p>
+<ul>
+<li><p>Transposable elements (TE) via repeatmasker</p>
+</li>
+<li><p><a href="https://robertslab.github.io/sams-notebook/2019/06/26/RepeatMasker-Pgenerosa_v074-for-Transposable-Element-ID-on-Roadrunner.html">Notebook entry</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="pgenerosa_v070_top18_scaffolds">Pgenerosa_v070_top18_scaffolds</h5>
+<ul>
+<li><p><em>These originate from the top 18 scaffolds of the <a href="https://robertslab.github.io/sams-notebook/2019/02/28/Genome-Annotation-Pgenerosa_v070-MAKER-on-Mox.html">Pgenerosa_v70 MAKER annotation from 20190228</a></em></p>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.CDS.gff">Pgenerosa_v070_top18_scaffolds.CDS.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.CDS.gff</code></p>
+<ul>
+<li><p>The longest 18 scaffolds from <a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.CDS.gff">Pgenerosa_v070.CDS.gff</a> :</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sort -k1,1 Pgenerosa_v074.fa.fai | uniq | awk '{print $1}' &gt; scaffold.list</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">echo "##gff-version 3" &gt; Pgenerosa_v070_top18_scaffolds.CDS.gff</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">while read -r line; do grep ${line} Pgenerosa_v070.CDS.gff;  done &lt; scaffold.list &gt;&gt; Pgenerosa_v070_top18_scaffolds.CDS.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.exon.gff">Pgenerosa_v070_top18_scaffolds.exon.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.exon.gff</code></p>
+<ul>
+<li><p>The longest 18 scaffolds from <a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.exon.gff">Pgenerosa_v070.exon.gff</a> :</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sort -k1,1 Pgenerosa_v074.fa.fai | uniq | awk '{print $1}' &gt; scaffold.list</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">echo "##gff-version 3" &gt; Pgenerosa_v070_top18_scaffolds.exon.gff</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">while read -r line; do grep ${line} Pgenerosa_v070.exon.gff;  done &lt; scaffold.list &gt;&gt; Pgenerosa_v070_top18_scaffolds.exon.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.five_prime_UTR.gff">Pgenerosa_v070_top18_scaffolds.five_prime_UTR.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">Pgenerosa_v070_top18_scaffolds.five_prime_UTR.gff</code></p>
+<ul>
+<li><p>The longest 18 scaffolds from <a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.five_prime_UTR.gff">Pgenerosa_v070.five_prime_UTR.gff</a> :</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sort -k1,1 Pgenerosa_v074.fa.fai | uniq | awk '{print $1}' &gt; scaffold.list</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">echo "##gff-version 3" &gt; Pgenerosa_v070_top18_scaffolds.five_prime_UTR.gff</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">while read -r line; do grep ${line} Pgenerosa_v070.five_prime_UTR.gff;  done &lt; scaffold.list &gt;&gt; Pgenerosa_v070_top18_scaffolds.five_prime_UTR.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.gene.gff">Pgenerosa_v070_top18_scaffolds.gene.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.gene.gff</code></p>
+<ul>
+<li><p>The longest 18 scaffolds from <a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.gene.gff">Pgenerosa_v070.gene.gff</a></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sort -k1,1 Pgenerosa_v074.fa.fai | uniq | awk '{print $1}' &gt; scaffold.list</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">echo "##gff-version 3" &gt; Pgenerosa_v070_top18_scaffolds.gene.gff</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">while read -r line; do grep ${line} Pgenerosa_v070.gene.gff;  done &lt; scaffold.list &gt;&gt; Pgenerosa_v070_top18_scaffolds.gene.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.mRNA.gff">Pgenerosa_v070_top18_scaffolds.mRNA.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.mRNA.gff</code></p>
+<ul>
+<li><p>The longest 18 scaffolds from <a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.mRNA.gff">Pgenerosa_v070.mRNA.gff</a></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sort -k1,1 Pgenerosa_v074.fa.fai | uniq | awk '{print $1}' &gt; scaffold.list</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">echo "##gff-version 3" &gt; Pgenerosa_v070_top18_scaffolds.mRNA.gff</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">while read -r line; do grep ${line} Pgenerosa_v070.mRNA.gff;  done &lt; scaffold.list &gt;&gt; Pgenerosa_v070_top18_scaffolds.mRNA.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.three_prime_UTR.gff">Pgenerosa_v070_top18_scaffolds.three_prime_UTR.gff</a> :
+<code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070_top18_scaffolds.three_prime_UTR.gff</code></p>
+<ul>
+<li><p>The longest 18 scaffolds from <a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.three_prime_UTR.gff">Pgenerosa_v070.three_prime_UTR.gff</a></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">sort -k1,1 Pgenerosa_v074.fa.fai | uniq | awk '{print $1}' &gt; scaffold.list</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">echo "##gff-version 3" &gt; Pgenerosa_v070_top18_scaffolds.three_prime_UTR.gff</code></p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">while read -r line; do grep ${line} Pgenerosa_v070.three_prime_UTR.gff;  done &lt; scaffold.list &gt;&gt; Pgenerosa_v070_top18_scaffolds.three_prime_UTR.gff</code></p>
+<h5 id="pgenerosa_v070">Pgenerosa_v070</h5>
+<ul>
+<li><em>These originate from the <a href="https://robertslab.github.io/sams-notebook/2019/02/28/Genome-Annotation-Pgenerosa_v070-MAKER-on-Mox.html">Pgenerosa_v70 MAKER annotation from 20190228</a></em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.CDS.gff">Pgenerosa_v070.CDS.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.CDS.gff</code></p>
+<ul>
+<li><p>MD5 = 1c4e0bd30579798948c8e1e32c7052e3</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "CDS" {print}' Pgenerosa_v070_genome_snap02.all.renamed.putative_function.gff &gt; Pgenerosa_v070.CDS.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.exon.gff">Pgenerosa_v070.exon.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.exon.gff</code></p>
+<ul>
+<li><p>MD5 = 6ea9360ea24ddfc4ed07486547c3319e</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "exon" {print}' Pgenerosa_v070_genome_snap02.all.renamed.putative_function.gff &gt; Pgenerosa_v070.exon.gff</code></p>
+</li>
+</ul>
+</li>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.gene.gff">Pgenerosa_v070.gene.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.gene.gff</code></p>
+<ul>
+<li><p>MD5 = cdb2fff32712dd4d9223dd8674b03a92</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "gene" {print}' Pgenerosa_v070_genome_snap02.all.renamed.putative_function.gff &gt; Pgenerosa_v070.gene.gff</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.mRNA.gff">Pgenerosa_v070.mRNA.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v070.mRNA.gff</code></p>
+<ul>
+<li><p>MD5 = 1a6e0f4d9e515fa2b7d84c07f66cd8da</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk 'BEGIN { print "##gff-version 3" ; } $3 == "mRNA" {print}' Pgenerosa_v070_genome_snap02.all.renamed.putative_function.gff &gt; Pgenerosa_v070.mRNA.gff</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071_snap02.renamed.mRNA.gff">Pgenerosa_v071_snap02.renamed.mRNA.gff</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v071_snap02.renamed.mRNA.gff</code></p>
+<ul>
+<li><p>MD5 = 2778a3f268040a0b533fa086c6979fd2</p>
+</li>
+<li><p><code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">awk '$3 == "mRNA" {print}' Pgenerosa_v071_snap02.all.renamed.gff &gt; Pgenerosa_v071_snap02.renamed.mRNA.gff</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="transcriptome-1">Transcriptome:</h2>
+<ul>
+<li><p><a href="http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta">Pgenerosa_transcriptome_v5.fasta</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta</code></p>
+<ul>
+<li>MD5 = 5a21424ecbc88c3b01daefe56bed79da</li>
+</ul>
+</li>
+</ul>
+<p>Transcriptome generated from various libaries - details <a href="https://robertslab.github.io/sams-notebook/2018/09/04/transcriptome-assembly-geoduck-rnaseq-data.html">here</a></p>
+<hr>
+<h1 id="qpx"><em>QPX</em></h1>
+<h2 id="genome-3">Genome:</h2>
+<ul>
+<li><a href="http://eagle.fish.washington.edu/QPX_genome/QPX_v017.fasta">QPX_v017.fasta</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">http://eagle.fish.washington.edu/QPX_genome/QPX_v017.fasta</code></li>
+</ul>
+<p>CLC v5.1 Mismatch cost = 2; Perform scaffolding = Yes; Mapping mode = Map reads back to contigs (slow); Deletion cost = 3; Similarity fraction = 0.9; Length fraction = 0.8; Insertion cost = 3; Update contigs = Yes; Automatic word size = Yes; Minimum contig length = 10000; Automatic bubble size = Yes; input: filtered_QPX_DNA_GTGAAA_L001_R1 trimmed.</p>
+<ul>
+<li><a href="https://ndownloader.figshare.com/files/3085550">QPX_v017.fasta</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://ndownloader.figshare.com/files/3085550</code></li>
+</ul>
+<p>CLC v5.1 Mismatch cost = 2; Perform scaffolding = Yes; Mapping mode = Map reads back to contigs (slow); Deletion cost = 3; Similarity fraction = 0.9; Length fraction = 0.8; Insertion cost = 3; Update contigs = Yes; Automatic word size = Yes; Minimum contig length = 10000; Automatic bubble size = Yes; input: filtered_QPX_DNA_GTGAAA_L001_R1 trimmed.</p>
+<ul>
+<li><a href="https://doi.org/10.1371/journal.pone.0074196.s001">QPX_v015.fasta</a> : <code style="font-family: Menlo, Consolas, &quot;DejaVu Sans Mono&quot;, monospace;">https://doi.org/10.1371/journal.pone.0074196.s001</code></li>
+</ul>
+<blockquote>
+<p>De novo assembly was performed with Genomics Workbench v. 5.0 (CLC Bio, Germany) on quality trimmed sequences with the following parameters: mismatch cost = 2, deletion cost = 3, similarity fraction = 0.9, insertion cost = 3, length fraction = 0.8 and minimum contig size of 100 bp for genomic data and 200 bp for transcriptomic data. In order to remove ribosomal RNA sequences from the transcriptome data, consensus sequences were compared to the NCBI nt database using the BLASTn algorithm [59]. Sequences with significant matches (9) were removed and not considered in subsequent analyses.</p>
+</blockquote>
+<p>Manuscript: <a href="https://doi.org/10.1371/journal.pone.0074196">https://doi.org/10.1371/journal.pone.0074196</a></p>
+<h2 id="transcriptome-2">Transcriptome:</h2>
+<p> <a href="http://eagle.fish.washington.edu/cnidarian/QPX_transcriptome_v1_clean.fasta">QPX_transcriptome_v1_clean.fasta</a></p>
+<p>QPX_Transcriptome v2.1</p>
+<p>Subset of version 1 (v1) that only includes sequences with e-value &lt; 1E-20. Based on Swiss-Prot blastx output, all sequences are oriented 5' - 3'. nucleotides between stop codons; minimum size 200.</p></body>
+      </html>
