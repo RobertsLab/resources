@@ -23,7 +23,7 @@ Written 20150702 by Sam White.
 ##### Total Time: ~ 2.0 - 4.0hrs
 ##### Cost/sample: ~ $0.42
 
-1. Read the [manufacturer's protocol](https://github.com/sr320/LabDocs/blob/master/protocols/Commercial_Protocols/Promega_MMLV_RT.pdf).
+1. Read the [manufacturer's protocol](https://github.com/sr320/LabDocs/blob/master/protocols/Commercial_Protocols/BioRad_Sso_Fast_EvaGreen_Supermix.pdf).
 2. Read <em>this</em> protocol.
 3. Verify sufficient quantities of reagents and samples before beginning.
 4. Wear clean gloves.
