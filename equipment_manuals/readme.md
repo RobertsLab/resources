@@ -4,20 +4,37 @@
 
 ---
 
-- <code>CXR100_LN2_dewar_dry_shipper_instructions.pdf</code> - Instructions on using/filling dry shipper.
 
-- <code>cryoscience_CXR100_LN2_dewar_dry_shipper_specs.pdf</code> - Spec sheet for CXR100 liquid nitrogen dry shipper. Has info on storage times and tube storage capacities.
+- `Agilent 2100-Bioanalyzer_Maintenance-Troubleshooting_USR_ENG.pdf`:
 
-- <code>Invitrogen_qubit_3.0_manual.pdf</code> -
+- `Agilent 2100 Bioanalyzer user guide.pdf`:
 
-- <code>Invitrogen_Xcell_SureLock_Mini_System.pdf</code> -
+- `cryoscience_CXR100_LN2_dewar_dry_shipper_instructions.pdf`: Instructions on using/filling dry shipper.
 
-- <code>LabCon_WasherManual.pdf</code> -
+- `cryoscience_CXR100_LN2_dewar_dry_shipper_specs.pdf`: Spec sheet for CXR100 liquid nitrogen dry shipper. Has info on storage times and tube storage capacities.
 
-- <code>low_high_water_alarm_manual.pdf</code> -
+- `csh_WA9-04_low_high_water_alarm_manual.pdf`:
 
-- <code>NanoDrop_ND1000-Cleaning-and-Reconditioning.pdf</code> -
+- `Invitrogen_qubit_3.0_manual.pdf`:
 
-- <code>sensaphone_1104_manual_20170807.pdf</code> -
+- `Invitrogen_Xcell_SureLock_Mini_System.pdf`:
 
-- <code>MasterFlex_L-S_Precision.pdf</code> - 
+- `LabCon_WasherManual.pdf`:
+
+- `MasterFlex_L-S_Precision.pdf`:
+
+- `MettlerToledo_balance_me1002e_manual.pdf`:
+
+- `MettlerToledo_titration_excellence_t5_titrator_operating_instructions.pdf`:
+
+- `MettlerToledo_titration_excellence_t5_titrator.pdf`:
+
+- `NanoDrop_ND1000-Cleaning-and-Reconditioning.pdf`:
+
+- `Perkin-Elmer_plate-reader_Wallac-Victor-1420-User-Manual.pdf`:
+
+- `readme.md`:
+
+- `sensaphone_1104_manual_20170807.pdf`:
+
+- `synology_RS3618xs_hardware_install_guide_20180430.pdf`:
