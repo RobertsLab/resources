@@ -29,6 +29,8 @@
 
 - `MettlerToledo_titration_excellence_t5_titrator.pdf`:
 
+- `mj-research_ptc-200_thermal-cycler_manual.pdf`:
+
 - `NanoDrop_ND1000-Cleaning-and-Reconditioning.pdf`:
 
 - `Perkin-Elmer_plate-reader_Wallac-Victor-1420-User-Manual.pdf`:
