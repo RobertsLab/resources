@@ -7,7 +7,7 @@ Data must be 1) adequately described via metadata, 2) managed for data quality, 
 # Metadata     
 All research data must be accompanied with a thorough description of that data from the beginning of the work. Metadata describes information about a dataset, such that a dataset can be understood, reused, and integrated with other datasets. Information described in a metadata record includes where the data were collected, who is responsible for the dataset, why the dataset was created, and how the data are organized.   
 
-# Data Quality Standards.     
+# Data Quality Standards     
 Students must take care that protocols and methods are employed to ensure that data are properly collected, handled, processed, used, and maintained, and that this process is documented in the metadata.
 
 
