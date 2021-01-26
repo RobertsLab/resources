@@ -35,3 +35,6 @@ nav:
      - Lab Protocols: 'Lab-Protocols.md'
      - Chemical SOPs: 'Chemical-Standard-Operating-Protocols.md'
      - Alarm Information: 'Alarm-Information.md'
+
+   - 'Bioinformatic Workflows':
+     - DNA Methylation Analysis: 'DNA-methylation.md'
