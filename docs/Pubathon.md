@@ -1,3 +1,56 @@
+# Pub-a-thon 2021
+
+1) **Geoduck Env Memory Genome Paper** - Hollie et al    
+[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
+[OSF](https://osf.io/yem8n/)    
+[GitHub](https://github.com/hputnam/Geoduck_Meth)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:
+
+2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
+https://www.researchsquare.com/article/rs-90268/v1    
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)   
+
+3) **Geoduck OA and reproductive development** - Shelly et al  
+[Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
+[Paper repo](https://github.com/shellytrigg/paper-GeoduckReproDev_pH)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:
+
+4) **Geoduck OA transgenerational effects** - Shelly et al  
+[Working draft](https://docs.google.com/document/d/1aIho7R27-cXpDpuRKlQY_p-3Bi7-HlZMNQcTtH_bigI/edit)  
+[Paper repo](https://github.com/shellytrigg/paper-GeoduckTransgen_var.pH)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:
+
+5) **Temp and Salinity effects on Salmon with sea lice** - Shelly et al  
+[Working draft](https://docs.google.com/document/d/1BJiqCxBNu4nk1PmfB3TC9gjyU5WTciRStQPSKUYVnug/edit)  
+[Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:
+
+6) **Oly larvae food and temp** - _Laura_     
+[draft](https://docs.google.com/document/d/1ELHOIK-iJ1UgnKi9aF_SdoqmLVe2UM9bi2G-fOuQ3RA/edit?usp=sharing)     
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal: TBD  
+
+7) **Oly epigenetics by population** - _Laura, Katherine, Steven_     
+[Working Draft](https://docs.google.com/document/d/1HKIAAIzJ2-t86US8GY5PD12z7aNsKZSnt25u8QJOiaY/edit?usp=sharing)     
+[GitHub](https://github.com/sr320/paper-oly-mbdbs-gen)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+8) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_  
+[DRAFT LINK COMING SOON]()  
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
+
+9) **Single cell RNA-seq** - _Mac_    
+[Working Draft](https://docs.google.com/document/d/1GCqD_4S4TlIMhTGUpCOzE29-FqbBzPrJ3yyT4V2ONb0/edit)     
+[GitHub](cccc)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
+
+---
+
 # Pub-a-thon 2020
 
 1) **Oyster larval proteomics - 2015**  -   _Grace_            
