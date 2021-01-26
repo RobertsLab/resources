@@ -5,8 +5,14 @@ theme:
     scheme: slate
 nav:
    - Home: 'index.md'
+
    - 'Databases and Catalogs':
      - Pubathon: 'Pubathon.md'
+     - Digital Media: 'Digital-Media.md'
+     - Experiment Database: ''
+     - Experiment Database: ''
+
+
    - Alarm-Information.md
    - Chemical-Standard-Operating-Protocols.md
    - Code-of-Conduct.md
@@ -14,13 +20,12 @@ nav:
    - COVID-Health-and-Safety-Plan.md
    - Data-Management.md
    - DEI-Resources.md
-   - Digital-Media.md
+
    - Environment-and-Expectations.md
    - Experiment-Database.md
    - External-Communication-and-Funding.md
    - Genomic-Resources.md
    - Graduate-Research-Plan.md
-   - index.md
    - Lab-Communication.md
    - Lab-Inventory.md
    - Lab-Notebooks.md
