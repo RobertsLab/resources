@@ -10,19 +10,23 @@ nav:
    - Home: 'index.md'
 
    - 'Lab Culture':
+     - Onboarding: 'Onboarding.md'
      - Code of Conduct: 'Code-of-Conduct.md'
      - Environment and Expectations: 'Environment-and-Expectations.md'
      - Lab Communication: 'Lab-Communication.md'
+     - Lab Notebooks: 'Lab-Notebooks.md'
      - DEI Resources: 'DEI-Resources.md'
      - External Communication: 'External-Communication-and-Funding.md'
      - COVID Plan: 'COVID-Health-and-Safety-Plan.md'
 
    - 'Databases and Catalogs':
+     - Lab Inventory: 'Lab-Inventory.md'
+     - Lab Sofware: 'Lab-Software.md'
      - Pubathon: 'Pubathon.md'
      - Digital Media: 'Digital-Media.md'
      - Experiment Database: 'Experiment-Database.md'
 
-
+   - 'Protocols':
 
    - Alarm-Information.md
    - Chemical-Standard-Operating-Protocols.md
@@ -33,12 +37,10 @@ nav:
    - Genomic-Resources.md
 
 
-   - Lab-Inventory.md
-   - Lab-Notebooks.md
+   -
    - Lab-Protocols.md
    - Lab-Safety.md
-   - Lab-Software.md
-   - Onboarding.md
+
 
    - Purchasing-and-Reimbursement.md
    - Undergraduate-contract.md
