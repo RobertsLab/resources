@@ -1,41 +1,56 @@
+# Data Management
+
 This page is intended to document all aspects of data management, from the day-to-day, formal NGS and proteomics plans, and general archiving options. Inspiration for this has been provided by Tim Essington and Gordon Holtgrieve who have developed similar documentation.
 
 
 
-Data must be 1) adequately described via metadata, 2) managed for data quality, 3) backed up in a secure manner, and 4) archived in an easily reproducible format.
+Data must be:
 
-# Metadata     
+1. Adequately described via metadata.
+
+2. Managed for data quality.
+
+3. Backed up in a secure manner.
+
+4. Archived in an easily reproducible format.
+
+## Metadata
+
 All research data must be accompanied with a thorough description of that data from the beginning of the work. Metadata describes information about a dataset, such that a dataset can be understood, reused, and integrated with other datasets. Information described in a metadata record includes where the data were collected, who is responsible for the dataset, why the dataset was created, and how the data are organized.   
 
-# Data Quality Standards     
+## Data Quality Standards
+
 Students must take care that protocols and methods are employed to ensure that data are properly collected, handled, processed, used, and maintained, and that this process is documented in the metadata.
 
 
-# Backup and Storage     
+## Backup and Storage
+
 Primary should be stored in several locations with canonical versions on Gannet (see below).
 
 Data, including intermediate analysis, needs to have a url. This most often means it will live on a Network Attached Storage Device (NAS; aka a server).
+
+### Gannet
 
 Gannet is a Synology RS3618xs NAS :
 
 - RS3618xs uses 16TB HDDs (n = 12)
 
-## Data on Gannet is backed up in the following ways:
+Data on Gannet is backed up in the following ways:
 
-- #### Synology Hybrid RAID
+- Synology Hybrid RAID
 
     - Mirrors data across HDDs, which reduces total storage capacity by 50%
     - Allows for up to two concurrent HDD failures before data loss occurs
 
 
-- #### Gannet/web folder
+- Gannet/web folder
 
     - One-way sync from Gannet to [UW Google Drive](https://drive.google.com/open?id=1l0jc1Pj7gldNJRrfrM_Ld-T0it5LFyJG) via the Synology Cloud Sync app.
     - Backup frequency: Daily
     - Access: Public (read-only)
 
 
-## Daily Data on Gannet
+#### Daily Data on Gannet
 
 
 Using the Gannet NAS to store your data:
@@ -53,7 +68,7 @@ Files that you have uploaded to your_folder are publicly viewable: http://gannet
 
 You can use the URLs for your files for linking in your notebook.
 
-### IMPORTANT!
+_IMPORTANT!_
 
 _All folders need to contain a readme file._
 
@@ -65,7 +80,8 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 
 ## NGS Data Management Plan
 
-**Raw Data**    
+**Raw Data**
+
 1. As sequencing facility provides data, files are downloaded to our local NAS (owl), in the correct species subdirectory within `nightingales`.  http://owl.fish.washington.edu/nightingales/
 
 2. MD5 checksums are generated and compared to those supplied by the sequencing facility.
@@ -80,14 +96,15 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
   3. Each library receives a `Library_name`; this may or may not be unique.
 
 
-**Backup**    
+**Backup**   
+
 * The Google Docs spreadsheet [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit) is backed up on a regular basis? by downloading tab-delimited file and pushing to LabDocs Repository, with the file name `Nightingales.tsv`
 
 * `owl/nightingales` is automatically backed up to two locations, both managed by Synology apps:
 
-  - Amazon Glacier: Backup task occurs weekly on Mondays at 00:00.
+- Amazon Glacier: Backup task occurs weekly on Mondays at 00:00.
 
-  - CloudSync to [UW Google Drive](https://drive.google.com/drive/folders/0BzKkDWZ6tIK4STQ5d2xQYVdyN28?usp=sharing): Backup occurs in real-time any time new files, or changes to existing files, are detected.
+- CloudSync to [UW Google Drive](https://drive.google.com/drive/folders/0BzKkDWZ6tIK4STQ5d2xQYVdyN28?usp=sharing): Backup occurs in real-time any time new files, or changes to existing files, are detected.
 
 
 
@@ -100,10 +117,11 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 
 ## Proteomics Data Management Plan
 
-**Raw Data**    
-1) As sequencing facility provides data, files are downloaded to our local NAS (owl), in the root `phainopepla` directory.  http://owl.fish.washington.edu/phainopepla/ These data are organized by species, then by mass spectrometer run date (e.g. YYYY-MM-DD). For each run date, all `RAW` files (including blanks, sample, and QC files) should be included in the directory with their original names. Inside of the YYYY-MM-DD directory there **should be a Readme file with the following information**: Description of each file (eg. treatment, blank, etc), experimental design, link to more information.
+**Raw Data**
 
-2) The [Spreadsheet](https://docs.google.com/spreadsheets/d/151KPj22gf1M11otKwLfFbSjfZrY2zXDKUE1N3_mopyw/edit?usp=sharing) is then updated. Each "mass spectrometer run date" will be a new row in the sheet.
+1. As sequencing facility provides data, files are downloaded to our local NAS (owl), in the root `phainopepla` directory.  http://owl.fish.washington.edu/phainopepla/ These data are organized by species, then by mass spectrometer run date (e.g. YYYY-MM-DD). For each run date, all `RAW` files (including blanks, sample, and QC files) should be included in the directory with their original names. Inside of the YYYY-MM-DD directory there **should be a Readme file with the following information**: Description of each file (eg. treatment, blank, etc), experimental design, link to more information.
+
+2. The [Spreadsheet](https://docs.google.com/spreadsheets/d/151KPj22gf1M11otKwLfFbSjfZrY2zXDKUE1N3_mopyw/edit?usp=sharing) is then updated. Each "mass spectrometer run date" will be a new row in the sheet.
 
 
 
