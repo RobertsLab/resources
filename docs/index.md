@@ -1,6 +1,6 @@
 # Welcome to the Roberts Lab Handbook!
 
-Our hope is this is a one-stop locale for relavant information. You can use navigation at the left, the search function, and a few quick pages of interested highlighted below. If you see something needing updating, you should be able to click on the :pencil: and go directly to the source to edit.
+Our hope is this is a one-stop locale for relavant information. You can use navigation at the left, the search function, and a few quick pages of interested are highlighted below. If you see something needing updating, you should be able to click on the pencil on each page and go directly to the source to edit, or simply [submit an issue](https://github.com/RobertsLab/resources/issues/new).
 
 ## Just Getting Started?
 
