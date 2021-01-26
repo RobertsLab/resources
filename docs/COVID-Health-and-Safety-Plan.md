@@ -70,7 +70,7 @@ and DAILY...
 
 The [lab calendar](https://d.pr/WYJr2i) will be used to schedule time and location of individuals. In addition, the [lab-safety Slack channel](https://genefish.slack.com/archives/C016MSZ4S4F) will be used to communicate when individuals arrive in lab spaces, are actively using them, and when they leave.
 
-## Safety and security in the lab during “Stay Home, Stay Healthy”
+## Safety and security in the lab 
 
 With reduced population density in academic buildings, we need to be extra vigilant about safety and security. If you are essential personnel and you will be working in a campus building, please:
 
@@ -95,7 +95,7 @@ The UW will respond as described in [https://www.washington.edu/coronavirus/#hea
 - Roberts lab email list
 - Roberts lab Slack group
 
-## Personal hygiene and safety in the lab during “Stay Home, Stay Healthy”
+## Personal hygiene and safety
 
 - Wash your hands often with soap and water, for at least 20 seconds, or use hand sanitizer that contains at least 60% alcohol if soap and water are not available.
 
@@ -110,7 +110,7 @@ The UW will respond as described in [https://www.washington.edu/coronavirus/#hea
 - Communicate when you will not be working. Individuals do not have to share private health information, but you do need to tell your supervisor and employees if you will not be working as you would under normal circumstances to ensure essential services are covered.
 
 
-## Lab hygiene and safety during “Stay Home, Stay Healthy”
+## Lab hygiene and safety
 
 - Lab benchtops should remain as uncluttered as possible to ensure that surfaces can be bleached thoroughly.
 
