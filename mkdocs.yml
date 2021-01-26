@@ -3,7 +3,7 @@ theme:
   name: material
   palette:
     scheme: slate
-repo_url: https://github.com/RobertsLab/resources/   
+repo_url: https://github.com/RobertsLab/resources/
 nav:
    - Home: 'index.md'
 
@@ -19,7 +19,7 @@ nav:
      - Pubathon: 'Pubathon.md'
      - Digital Media: 'Digital-Media.md'
      - Experiment Database: 'Experiment-Database.md'
-     - Experiment Database: ''
+
 
 
    - Alarm-Information.md
@@ -27,16 +27,16 @@ nav:
    - Computing-Hardware.md
    - Data-Management.md
 
-   - Experiment-Database.md
+
    - Genomic-Resources.md
-   - Graduate-Research-Plan.md
-   -
+
+
    - Lab-Inventory.md
    - Lab-Notebooks.md
    - Lab-Protocols.md
    - Lab-Safety.md
    - Lab-Software.md
    - Onboarding.md
-   - Pubathon.md
+
    - Purchasing-and-Reimbursement.md
    - Undergraduate-contract.md
