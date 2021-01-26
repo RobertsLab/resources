@@ -5,6 +5,16 @@ Here we try to compile genomic resources such that they are readily available an
 
 - [Nightingales (Google Sheet)](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit?usp=sharing) : Database of all raw high-throughput sequencing data
 
+---
+**_Species list_**
+
+| <!-- -->    | <!-- -->    |<!-- -->    | <!-- -->    | <!-- -->    |<!-- -->    | <!-- -->    |<!-- -->    |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| [_C bairdi_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#chionoecetes-bairdi) |         [_C gigas_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#crassostrea-gigas)  | [_C virginica_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#crassostrea-virginica)  |  [_Hematodinium_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#hematodinium-sp-host-chionoecetes-bairdi)   | [_M magister_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#metacarcinus-magister-cancer-magister)    |   [_O lurida_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#ostrea-lurida)    |  [_P generosa_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#panopea-generosa)    |  [_QPX_](https://github.com/RobertsLab/resources/wiki/Genomic-Resources#qpx)        |  
+
+
+
+
 
 # _Chionoecetes bairdi_
 
