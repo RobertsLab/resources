@@ -9,8 +9,10 @@ nav:
    - 'Lab Culture':
      - Code of Conduct: 'Code-of-Conduct.md'
      - Environment and Expectations: 'Environment-and-Expectations.md'
+     - Lab Communication: 'Lab-Communication.md'
      - DEI Resources: 'DEI-Resources.md'
      - External Communication: 'External-Communication-and-Funding.md'
+     - COVID Plan: 'COVID-Health-and-Safety-Plan.md'
 
    - 'Databases and Catalogs':
      - Pubathon: 'Pubathon.md'
@@ -22,14 +24,12 @@ nav:
    - Alarm-Information.md
    - Chemical-Standard-Operating-Protocols.md
    - Computing-Hardware.md
-   - COVID-Health-and-Safety-Plan.md
    - Data-Management.md
 
    - Experiment-Database.md
-   - External-Communication-and-Funding.md
    - Genomic-Resources.md
    - Graduate-Research-Plan.md
-   - Lab-Communication.md
+   -
    - Lab-Inventory.md
    - Lab-Notebooks.md
    - Lab-Protocols.md
