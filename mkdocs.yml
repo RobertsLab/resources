@@ -3,6 +3,7 @@ theme:
   name: material
   palette:
     scheme: slate
+repo_url: https://github.com/RobertsLab/resources/   
 nav:
    - Home: 'index.md'
 
