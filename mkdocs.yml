@@ -1,0 +1,31 @@
+site_name: Roberts Lab Handbook
+theme:
+  name: material
+  palette:
+    scheme: slate
+nav:
+   - Alarm-Information.md
+   - Chemical-Standard-Operating-Protocols.md
+   - Code-of-Conduct.md
+   - Computing-Hardware.md
+   - COVID-Health-and-Safety-Plan.md
+   - Data-Management.md
+   - DEI-Resources.md
+   - Digital-Media.md
+   - Environment-and-Expectations.md
+   - Experiment-Database.md
+   - External-Communication-and-Funding.md
+   - Genomic-Resources.md
+   - Graduate-Research-Plan.md
+   - Home.md
+   - index.md
+   - Lab-Communication.md
+   - Lab-Inventory.md
+   - Lab-Notebooks.md
+   - Lab-Protocols.md
+   - Lab-Safety.md
+   - Lab-Software.md
+   - Onboarding.md
+   - Pubathon.md
+   - Purchasing-and-Reimbursement.md
+   - Undergraduate-contract.md
