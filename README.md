@@ -16,9 +16,13 @@ This repository is designed to serve as the core repository for existing [Robert
 
 #### Directories and files:
 
+- ```docs/```: Folder for markdown files used for the readthedocs Roberts Lab Handbook.
+
 - ```equipment_manuals/```: Manuals for lab equipment.
 
 - ```protocols/```: Lab protocols, including commercial kit manuals/protocols.
+
+- ```.readthedocs.yml```: Configuration file for readthedocs Roberts Lab Handbook.
 
 - ```histology_request_form_2019.pdf```: Histology sample submission form for Histology Consulation Services.
 
