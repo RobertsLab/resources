@@ -15,7 +15,7 @@ For two factor authentication, you can either sign up for Duo [here](https://ide
 
 ---
 
-For the Technical contact: 
+For the designated Technical contact (i.e. Steven or Sam):
 
 1. Proceed to the [UW-IT Groups Service](https://groups.uw.edu/).
 2. Click the "Find my groups" link in the "Find groups" section.
