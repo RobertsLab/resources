@@ -4,6 +4,8 @@ theme:
   palette:
     scheme: slate
 repo_url: https://github.com/RobertsLab/resources/
+features:
+    - navigation.tabs
 nav:
    - Home: 'index.md'
 
