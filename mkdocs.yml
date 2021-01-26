@@ -15,7 +15,9 @@ nav:
      - Lab Notebooks: 'Lab-Notebooks.md'
      - DEI Resources: 'DEI-Resources.md'
      - External Communication: 'External-Communication-and-Funding.md'
+     - Lab Safety: 'Lab-Safety.md'
      - COVID Plan: 'COVID-Health-and-Safety-Plan.md'
+     - Undergraduate Contract: 'Undergraduate-contract.md'
 
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
@@ -23,22 +25,18 @@ nav:
      - Pubathon: 'Pubathon.md'
      - Digital Media: 'Digital-Media.md'
      - Experiment Database: 'Experiment-Database.md'
+     - Computing Hardware: 'Computing-Hardware.md'
+     - Experiment Database: 'Experiment-Database.md'
+     - Genomic Resources: 'Genomic-Resources.md'
 
    - 'Protocols':
+     - Purchasing and Reimbursement: 'Purchasing-and-Reimbursement.md'
+     - Data-Management: 'Data-Management.md'
+     - Alarm Information: 'Alarm-Information.md'
 
-   - Alarm-Information.md
    - Chemical-Standard-Operating-Protocols.md
-   - Computing-Hardware.md
-   - Data-Management.md
 
-
-   - Genomic-Resources.md
-
-
-   -
    - Lab-Protocols.md
-   - Lab-Safety.md
 
 
-   - Purchasing-and-Reimbursement.md
    - Undergraduate-contract.md
