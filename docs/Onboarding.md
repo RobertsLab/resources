@@ -6,22 +6,22 @@ For newcomers, please read the following pages. Please read carefully, complete 
 
 1. [Code of Conduct](Code-of-Conduct.md)
 
-2. [Lab Safety](https://github.com/RobertsLab/resources/wiki/Lab-Safety)
+2. [Lab Safety](Lab-Safety.md)
 
-3. [Lab Notebooks](https://github.com/RobertsLab/resources/wiki/Lab-Notebooks)
+3. [Lab Notebooks](Lab-Notebooks.md)
 
-4. [Data Management](https://github.com/RobertsLab/resources/wiki/Data-Management)
+4. [Data Management](Data-Management.md)
 
-5. [Lab Communication](https://github.com/RobertsLab/resources/wiki/Lab-Communication)
+5. [Lab Communication](Lab-Communication.md)
 
-6. [Computing](https://github.com/RobertsLab/resources/wiki/Computing)
+6. [Computing](Computing.md)
 
 ### Getting connected at the University of Washington
 
 At the University of Washington, there are a number of departments, schools, programs, institutes, and people that you may find beneficial to connect with. Below are some resources to help get you connected.
 
 #### DEI Groups, Committees, Centers, and Resources
-This is a list (non-exhaustive) of DEI groups, committees, centers, and resources available to you at UW and beyond: [https://github.com/RobertsLab/resources/wiki/DEI-Resources](https://github.com/RobertsLab/resources/wiki/DEI-Resources)
+This is a list (non-exhaustive) of DEI groups, committees, centers, and resources available to you at UW and beyond: [Our DEI page](DEI-Resources.md)
 
 #### Listservs
 
