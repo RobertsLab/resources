@@ -16,8 +16,10 @@ This repository is designed to serve as the core repository for existing [Robert
 
 #### Directories and files:
 
-- ```equipment_manuals```: Manuals for lab equipment.
+- ```equipment_manuals/```: Manuals for lab equipment.
 
-- ```protocols```: Lab protocols, including commercial kit manuals/protocols.
+- ```protocols/```: Lab protocols, including commercial kit manuals/protocols.
 
 - ```histology_request_form_2019.pdf```: Histology sample submission form for Histology Consulation Services.
+
+- ```mkdocs.yml```: YML config file for using [MkDocs](https://www.mkdocs.org/) for the [Roberts Lab Handbook](https://roberts-lab-resources.readthedocs.io/en/latest/).
