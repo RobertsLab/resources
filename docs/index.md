@@ -1,5 +1,7 @@
 # Welcome to the Roberts Lab Handbook!
 
+Our hope is this is a one-stop locale for relavant information. You can use navigation at the left, the search function, and a few quick pages of interested highlighted below. If you see something needing updating, you should be able to click on the :pencil: and go directly to the source to edit.
+
 ## Just Getting Started?
 
 Be sure have a look at the following:
