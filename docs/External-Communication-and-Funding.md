@@ -1,6 +1,6 @@
 This is a living document that lists conferences, community outreach, and funding sources that past and present lab members recommend.  
 
-# Conferences & pertinent travel grants 
+## Conferences & pertinent travel grants 
 
 1. [National Shellfisheries Association (NSA) annual meeting](https://www.shellfish.org/annual-meeting). March, USA, location changes annually.  Travel grant: [NSA Student Endowment Fund](https://www.shellfish.org/sef-student-presentation-and-travel-awards) 
 
@@ -27,16 +27,16 @@ This is a living document that lists conferences, community outreach, and fundin
 - [UW Graduate School](https://grad.uw.edu/graduate-student-funding/funding-information-for-departments/awards-and-funding-resources/graduate-student-conference-travel-awards/): $300 for domestic, $500 for international.  SAFS provides matching funds.
 - [Fisheries Interdisciplinary Network of Students](https://safsfins.wordpress.com/travel-awards/): Funding for SAFS-affiliated graduate students for travel and/or poster printing and publication costs. Awards preferentially given to individuals who have not received it previously and those that are involved in the department.
 
-# Posters 
+## Posters 
 - [How to print a poster](https://github.com/RobertsLab/resources/blob/master/protocols/poster-printing.md)
 - Traditional poster example
 - [Poster 2.0 example](https://osf.io/ef53g/)
 
-# Community Outreach & Education 
+## Community Outreach & Education 
 - [Students Explore Aquatic Sciences](https://sites.uw.edu/seasafs/): SEAS is an outreach program at UW. The program provides project-based learning activities, free of charge, for K-12 students in the Seattle area.
 - Ocean Inquiry Project 
 
-# Fellowships & Research Grants 
+## Fellowships & Research Grants 
 The following are sources of funding, and people in the Roberts Lab who previously received them (with year)  
 
 ## Graduate Student Funding
