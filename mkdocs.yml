@@ -32,11 +32,6 @@ nav:
    - 'Protocols':
      - Purchasing and Reimbursement: 'Purchasing-and-Reimbursement.md'
      - Data-Management: 'Data-Management.md'
+     - Lab Protocols: 'Lab-Protocols.md'
+     - Chemical SOPs: 'Chemical-Standard-Operating-Protocols.md'
      - Alarm Information: 'Alarm-Information.md'
-
-   - Chemical-Standard-Operating-Protocols.md
-
-   - Lab-Protocols.md
-
-
-   - Undergraduate-contract.md
