@@ -21,7 +21,7 @@ nav:
 
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
-     - Lab Sofware: 'Lab-Software.md'
+     - Lab Software: 'Lab-Software.md'
      - Pubathon: 'Pubathon.md'
      - Digital Media: 'Digital-Media.md'
      - Experiment Database: 'Experiment-Database.md'
