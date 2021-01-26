@@ -4,6 +4,9 @@ theme:
   palette:
     scheme: slate
 nav:
+   - Home: 'index.md'
+   - 'Databases and Catalogs':
+        - Pubathon.md
    - Alarm-Information.md
    - Chemical-Standard-Operating-Protocols.md
    - Code-of-Conduct.md
