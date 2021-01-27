@@ -1,6 +1,6 @@
 Here we try to compile genomic resources such that they are readily available and somewhat described. An effort will be made to keep respective index files alongside so these files can be directly used in IGV _etc_.
 
-##### Related Resources
+**Related Resources**
 - Archived Versions of this page - [091319](http://htmlpreview.github.io/?https://github.com/RobertsLab/resources/blob/master/archive/Genomic-Resources.091419.html);  
 
 - [Nightingales (Google Sheet)](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit?usp=sharing) : Database of all raw high-throughput sequencing data
@@ -16,9 +16,9 @@ Here we try to compile genomic resources such that they are readily available an
 
 
 
-# _Chionoecetes bairdi_
+## _Chionoecetes bairdi_
 
-## Genomes
+### Genomes
 
 * [cbai_genome_v1.01.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta) (18MB)
 
