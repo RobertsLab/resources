@@ -49,4 +49,5 @@ nav:
      - Alarm Information: 'Alarm-Information.md'
 
    - 'Bioinformatic Workflows':
+     - Basics: 'bio_Basics.md'
      - DNA Methylation Analysis: 'bio_DNA-methylation.md'
