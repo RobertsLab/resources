@@ -49,4 +49,4 @@ nav:
      - Alarm Information: 'Alarm-Information.md'
 
    - 'Bioinformatic Workflows':
-     - DNA Methylation Analysis: 'DNA-methylation.md'
+     - DNA Methylation Analysis: 'bio_DNA-methylation.md'
