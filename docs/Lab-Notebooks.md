@@ -1,10 +1,9 @@
 We have been using online lab notebooks since 2007 and the platforms and workflows have certainly changed over the years. Below is a compendium of best practices based on our experience and the particular research we do. This is intended for those in our lab group, however [comments and suggestions are welcome](https://github.com/RobertsLab/resources/issues).
 
-### Lab Notebooks
 
 An online lab notebook is required of all lab members. Entries need to be organized by date and in reverse chronological order.
 
-#### Platforms
+## Platforms
 
 The preferred platform is GitHub. See [Laura's Notebook](laurahspencer.github.io/LabNotebook/), [Steven's Notebook](sr320.github.io), or [Yaamini's Notebook](yaaminiv.github.io).
 
@@ -51,7 +50,7 @@ Periodically, you will be asked to show where your backup is and demonstrate tha
 
 ---
 
-## Archive
+**Archive**
 
 #### 2020 snapshots
 
