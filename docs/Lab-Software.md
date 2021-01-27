@@ -1,11 +1,3 @@
-TOC   
-* [hummingbird](https://github.com/RobertsLab/resources/wiki/Lab-Software#computer-hummingbird)    
-* [roadrunner](https://github.com/RobertsLab/resources/wiki/Lab-Software/#computer-roadrunner)
-* [ostrich](https://github.com/RobertsLab/resources/wiki/Lab-Software#computer-ostrich)
-* [emu](https://github.com/RobertsLab/resources/wiki/Lab-Software/#computer-emu)
-* [woodpecker](https://github.com/RobertsLab/resources/wiki/Lab-Software#computer-woodpecker)
-* [Mox](https://github.com/RobertsLab/resources/wiki/Lab-Software#computer-mox-hyak)
-* [swan](https://github.com/RobertsLab/resources/wiki/Lab-Software#computer-swan)
 
 ---
 
