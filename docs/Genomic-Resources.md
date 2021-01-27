@@ -16,7 +16,7 @@ Here we try to compile genomic resources such that they are readily available an
 ---
 ## _Chionoecetes bairdi_
 
-### Genomes
+**Genomes**
 
 * [cbai_genome_v1.01.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta) (18MB)
 
@@ -50,7 +50,7 @@ Here we try to compile genomic resources such that they are readily available an
 
     - Q7-filtered NanoPore data. Includes _Hematodinium_-infected sample.
 
-## Transcriptomes
+Transcriptomes
 
 * [RNA-seq sample list](https://docs.google.com/spreadsheets/d/1d17yg5F5gKKC66O8QkTIlPxljJeuX7ZsG46pkBr1lNQ/edit#gid=0)
 
@@ -201,9 +201,9 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 ---
 
-# _Crassostrea gigas_
+## _Crassostrea gigas_
 
-##### Related Resources
+**Related Resources**
 - [Compilation of DNA Methylation Genome Feature Tracks (_Crassostrea gigas_)](https://figshare.com/articles/Compilation_of_DNA_Methylation_Genome_Feature_Tracks_Crassostrea_gigas_/1456226) _circa 2015_
 
 - [Re-defining Cgigas Canonical features](http://onsnetwork.org/halfshell/2015/02/27/re-defining-cgigas-canonical-features/) _circa 2015_
@@ -212,7 +212,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 - [TJGR](https://github.com/RobertsLab/resources/blob/master/html/tjgr.markdown)
 
-## Genome:
+Genome:
 
 * [Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa`
 
@@ -221,7 +221,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
   - FastA index (```samtools faidx```) :
     `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa.fai`
 
-## Bisulfite Genome:
+Bisulfite Genome:
 
   - [Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz) :
   `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz`
@@ -230,7 +230,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
     - Creation details [here](https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html)
 
 
-## Genome Feature Tracks
+Genome Feature Tracks
 
 * [Cgigas_v9_gene.gff](https://eagle.fish.washington.edu/trilobite/Crassostrea_gigas_v9_tracks/Cgigas_v9_gene.gff) : `https://eagle.fish.washington.edu/trilobite/Crassostrea_gigas_v9_tracks/Cgigas_v9_gene.gff`
 
@@ -265,11 +265,11 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 ---
 
-# _Crassostrea virginica_
+## _Crassostrea virginica_
 
 [NCBI FTP](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/022/765/GCF_002022765.2_C_virginica-3.0/)
 
-## Genomes:
+Genomes:
 
 * [Cvirginica_v300.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300.fa`
 
@@ -286,7 +286,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
     - compressed version of `Cvirginica_v300.fa` (same files)
 
-## Bisulfite Genomes:
+Bisulfite Genomes:
 
 - [Cvirginica_v300_bisulfite.tar.gz](http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300_bisulfite.tar.gz) :
 `http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300_bisulfite.tar.gz`
@@ -295,7 +295,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 
 
-## Genome Feature Tracks
+Genome Feature Tracks
 
 
 
@@ -330,9 +330,9 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 ---
 
-# _Hematodinium sp._ (Host: _Chionoecetes bairdi_)
+## _Hematodinium sp._ (Host: _Chionoecetes bairdi_)
 
-## Transcriptomes
+Transcriptomes
 
 * [hemat_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta)
 
@@ -374,9 +374,9 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 ---
 
-# _Metacarcinus magister_ (_Cancer magister_)
+## _Metacarcinus magister_ (_Cancer magister_)
 
-## Genome:
+Genome:
 
 * `mmag_pilon_scaffolds.fasta`
 
@@ -394,9 +394,9 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 ---
 
-# _Ostrea lurida_
+## _Ostrea lurida_
 
-## Genome:
+Genome:
 
 * [Olurida_v081.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa`
 
@@ -421,7 +421,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
   - Also known as `pbjelly_sjw_01`. Details found [here](https://github.com/sr320/LabDocs/blob/master/jupyter_nbs/sam/20171130_emu_pbjelly.ipynb), though confirmation would be good.
 
-  ## Bisulfite Genomes:
+Bisulfite Genomes:
 
     - [Olurida_v080_bisulfite.tar.gz](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz) :
     `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080_bisulfite.tar.gz`
@@ -429,13 +429,13 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
       - Gzipped tarball of bisulfite genome for use with Bismark
       - Creation details [here](https://robertslab.github.io/sams-notebook/2018/05/08/bs-seq-mapping-olympia-oyster-bisulfite-sequencing-trimgalore-fastqc-bismark.html)
 
-## Transcriptomes:
+Transcriptomes:
 
 * [Olurida_transcriptome_v3.fasta](http://eagle.fish.washington.edu/cnidarian/Olurida_transcriptome_v3.fasta)
 
   - MD5 = 9da3242af2be0463051ec7e1f39b2593
 
-#### Tissue-specific transcriptomes generated by Katherine Silliman
+**Tissue-specific transcriptomes generated by Katherine Silliman**
 
 - [Olurida_CA_adductor_Trinity.fasta.gz](https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_CA_adductor_Trinity.fasta.gz)
 
@@ -446,7 +446,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 - [Olurida_gonad_Trinity.fasta.gz](https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_gonad_Trinity.fasta.gz)
 
 
-## Genome Feature Tracks
+**Genome Feature Tracks**
 
 * [Olurida_v081_genome_snap02.all.renamed.putative_function.domain_added.gff](https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_genome_snap02.all.renamed.putative_function.domain_added.gff) (2.9GB) : `https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_genome_snap02.all.renamed.putative_function.domain_added.gff`
 
@@ -470,9 +470,9 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 ---
 
-# _Panopea generosa_
+## _Panopea generosa_
 
-## Genome:    
+Genome:    
 
 * [Pgenerosa_v074.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa`
 
@@ -490,12 +490,12 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
   - FastA index (```samtools faidx```) - `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa.fai`
 
 
-## Bisulfite Genome
+Bisulfite Genome
 
 
-## Genome Feature Tracks
+Genome Feature Tracks
 
-#### Panopea-generosa-vv0.74.a3
+Panopea-generosa-vv0.74.a3
 
 - _These originate from [GenSAS annotation on 20190710](https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Annotation-Pgenerosa_v074-Using-GenSAS.html)_
 
@@ -538,7 +538,7 @@ https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcri
 
 
 
-## Transcriptome:
+Transcriptome:
 
 * [Pgenerosa_transcriptome_v5.fasta](http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta`
 
@@ -548,9 +548,9 @@ Transcriptome generated from various libaries - details [here](https://robertsla
 
 ---
 
-# _QPX_
+## _QPX_
 
-## Genome:
+Genome:
 
  * [QPX_v017.fasta](http://eagle.fish.washington.edu/QPX_genome/QPX_v017.fasta) : `http://eagle.fish.washington.edu/QPX_genome/QPX_v017.fasta`
 
@@ -570,7 +570,7 @@ Manuscript: https://doi.org/10.1371/journal.pone.0074196
 
 
 
-## Transcriptome:
+Transcriptome:
 
 * [QPX_transcriptome_v1_clean.fasta](http://eagle.fish.washington.edu/cnidarian/QPX_transcriptome_v1_clean.fasta)
 
