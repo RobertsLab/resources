@@ -50,102 +50,70 @@ Periodically, you will be asked to show where your backup is and demonstrate tha
 
 ---
 
-**Archive**
-
-#### 2020 snapshots
+## Archive
 
 Aidan:
 
 - github.io:
-  - `https://github.com/afcoyle/afcoyle.github.io/archive/v2020.zip`
+  - 2020: `https://github.com/afcoyle/afcoyle.github.io/archive/v2020.zip`
 
 Grace:
 
 - github.io:
-  - `https://github.com/grace-ac/grace-ac.github.io/archive/v2020.zip`
+  - 2020: `https://github.com/grace-ac/grace-ac.github.io/archive/v2020.zip`
+
+Jay:
+
+- ONS:
+  - 2018: `https://eagle.fish.washington.edu/trilobite/notebooks/jay.zip`
+
+Jake:
+
+- Blogspot:
+  - 2015: `https://eagle.fish.washington.edu/trilobite/notebooks/jake.zip`
 
 Laura:
 
 - github.io:
-  - `https://github.com/laurahspencer/LabNotebook/archive/v2020.zip`
+  - 2020: `https://github.com/laurahspencer/LabNotebook/archive/v2021.zip`
+  - 2019: `https://github.com/laurahspencer/LabNotebook/archive/v2019.zip`
+
+Matt:
+
+- github.io:
+  - 2020: `https://github.com/mattgeorgephd/mattgeorgephd.github.io/archive/v2020.zip`
 
 Megan:
 
 - github.io:
-  - `https://github.com/meganewing/meganewing.github.io/archive/v2020.zip`
+  - 2020: `https://github.com/meganewing/meganewing.github.io/archive/v2020.zip`
 
 Sam:
 
 - github.io:
-  - `https://github.com/RobertsLab/sams-notebook/archive/v2020.zip`
-
+  - 2020: `https://github.com/RobertsLab/sams-notebook/archive/v2020.zip`
+  - 2019: `https://github.com/RobertsLab/sams-notebook/archive/v2019.zip`
 - Jupyter notebooks and R Projects:
-  - `https://github.com/RobertsLab/code/archive/v2020.zip`
+  - 2020: `https://github.com/RobertsLab/code/archive/v2020.zip`
+  - 2019: `https://github.com/RobertsLab/code/archive/v2019.zip`
 
 Shelly:
 
 - github.io:
-  - `https://github.com/shellytrigg/shellytrigg.github.io/archive/v2020.zip`
+  - 2020: `https://github.com/shellytrigg/shellytrigg.github.io/archive/v2020.zip`
+
 
 Steven:
 
 - github.io:
-  - `https://github.com/RobertsLab/resources/blob/master/archive/sr320.github.io-2019.zip`    
-
-Yaamini:
-
--  github.io:
-  - `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2020.zip`
-
-
-
-
-
-#### 2019 snapshots
-Steven:
-
-- github.io:
-  - `https://github.com/RobertsLab/resources/blob/master/archive/sr320.github.io-2019.zip`    
+  - 2020: `https://github.com/sr320/nb-2020/archive/v1.0.zip`
+  - 2019: `https://github.com/RobertsLab/resources/blob/master/archive/sr320.github.io-2019.zip`
+- ONS:
+  - 2016: `https://eagle.fish.washington.edu/trilobite/notebooks/steven.zip`
 
 
 Yaamini:
 
 -  github.io:
-  - `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2020.zip`
-  - `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2019.zip`
-
-Sam:
-
-- github.io:
-  - `https://github.com/RobertsLab/sams-notebook/archive/v2020.zip`
-  - `https://github.com/RobertsLab/sams-notebook/archive/v2019.zip`
-
-- Jupyter notebooks and R Projects:
-  - `https://github.com/RobertsLab/code/archive/v2019.zip`
-
-Laura:
-
-- github.io:
-  - `https://github.com/laurahspencer/LabNotebook/archive/v2020.zip`
-  - `https://github.com/laurahspencer/LabNotebook/archive/v2019.zip`
-
-#### 2018 snapshots
-
-Jay
-
-- ONS:
-  - `https://eagle.fish.washington.edu/trilobite/notebooks/jay.zip`
-
-#### 2016 snapshots
-
-Steven:
-
-- ONS:
-  - `https://eagle.fish.washington.edu/trilobite/notebooks/steven.zip`   
-
-#### 2015 snapshots
-
-Jake
-
-- Blogspot:
-  - `https://eagle.fish.washington.edu/trilobite/notebooks/jake.zip`
+  - 2020: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2020.zip`
+  - 2019: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2019.zip`
