@@ -17,7 +17,7 @@ You will need accounts with the following services in order to minimally functio
 ## Computers
 You're free to use your own computer for any computing task that you wish. However, some of the computing work that you will perform will require lengthy run times. As such, we have computers available for you to use. Plus, Roberts Lab computers have better processors and much more RAM, which will allow you to keep your computer free for doing fun stuff, like reading Facebook (or scientific papers).
 
-### Local (i.e. in lab) Computers
+### Local Computers
 
 Here is a link to a list of computers we have in the lab that are available for use (Google Sheet): [Roberts Lab Computers](https://docs.google.com/spreadsheets/d/1mtIITcjqZVEQtynYZFdOdx51uXTiXP7Jvvzv_SnWCDY/edit?usp=sharing)
 
@@ -29,7 +29,9 @@ The Xserve computers are suitable for most tasks.
 
 The Dell T5500 is dedicated for Windows-only programs.
 
-### Remote Computers
+### Remote Services
+
+
 
 ## Mox (Hyak)
 
@@ -43,7 +45,7 @@ Computer specs:
 | Lenovo NextScale | E5-2680 v4 | 28 | 128 |
 
 Due to the initial steep learning curve, we have a dedicated wiki to document how to use Mox:
-- [Mox Wiki](https://github.com/RobertsLab/hyak_mox/wiki)
+- [Mox Wiki](https://robertslab.github.io/resources/mox_Adding-a-User/)
 
 ## Printers
 You can send print jobs wirelessly to the Brother MFC7460DN printer in rm 209.
@@ -62,7 +64,7 @@ For Macs, you may need to change the 'Use' drop down menu:
 
 To limit clutter on this page, we've assembled a list of software currently installed on each lab computer (including our Mox node):
 
-- [Lab Software](https://github.com/RobertsLab/resources/wiki/Lab-Software)
+- [Lab Software](https://robertslab.github.io/resources/Lab-Software/)
 
 If you need/want any particular software installed that isn't on the list, please submit a [GitHub Issue](https://github.com/RobertsLab/resources/issues). Please consider that we prefer to use free, open-source software.
 
