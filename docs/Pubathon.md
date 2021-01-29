@@ -48,6 +48,15 @@ Journal: TBD
 [GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
+10) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
+[Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)        
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+11) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grace_      
+[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)      
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
+
+
 
 ---
 
