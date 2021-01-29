@@ -3,6 +3,9 @@ theme:
   name: material
   palette:
     scheme: slate
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
 repo_url: https://github.com/RobertsLab/resources/
 nav:
    - Home: 'index.md'
