@@ -49,12 +49,14 @@ Journal: TBD
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 10) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
-[Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)        
+[Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)   
+[GitHub](https://github.com/RobertsLab/paper-tanner-crab)           
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 11) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grace_      
-[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)      
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
+[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
+[GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 12) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_
 Draft link coming soon!
