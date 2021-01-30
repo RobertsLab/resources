@@ -1,5 +1,71 @@
+## Program locations
+
+The majority of programs can be found in:
+
+`$/gscratch/srlab/programs/`
+
+(Ana) conda programs are a bit more difficult to track down, but try looking in these two locations:
+
+`/gscratch/srlab/programs/anaconda3/bin/`
+
+## Modules
+
+Modules are a relatively simply way to add programs to your system `$PATH`
+
+A module is a text file. Here's an example from `cat /gscratch/srlab/programs/modules/maker-3.01.03.module`:
+
 ```
-$/gscratch/srlab/programs 
+#%Module1.0
+proc ModulesHelp { } {
+        puts stderr "\tAdds MAKER dependencies to environment."
+}
+
+module-whatis "Adds MAKER dependencies to environment."
+
+setenv          ZOE             /gscratch/srlab/programs/snap-2013-11-29/Zoe
+setenv          AUGUSTUS_CONFIG_PATH             /gscratch/srlab/programs/Augustus-3.3.2/config
+prepend-path    PATH            /gscratch/srlab/programs/exonerate-2.2.0-x86_64/bin
+prepend-path    PATH            /gscratch/srlab/programs/ncbi-blast-2.10.1+/bin
+prepend-path    PATH            /gscratch/srlab/programs/snap-2013-11-29
+prepend-path    PATH            /gscratch/srlab/programs/RepeatMasker-4.1.0
+```
+
+There are two lines that describe what the module does (e.g. `Adds MAKER dependencies to environment.`)
+
+Those are followed by setting some environmental variables and adding other programs to the system `$PATH`
+needed by the MAKER program.
+
+### Loading modules
+
+There are many pre-made modules available for anyone to use at any time. List them like so:
+
+  `module avail`
+
+Modules preceded by `contrib/` are modules created by other Mox users outside of the Roberts Lab.
+
+The remaining modules are those created by Mox UW-IT staff and primarily utility applications.
+
+To run (i.e. load) a module (replace `<module_name>` with the module name or _full path to module file_):
+
+  `module load <module_name>`
+
+You can add our custom modules directory to your `~/.bashrc` file. This will allow you to load a module by calling just the the name of the module file without the need to call the full module paht. See the modules directory for more info on what custom modules are available (`/gscratch/srlab/programs/modules`).
+
+```
+printf "\n%s\n%s\n%s" "# Prepend custom modules to system ${MODULEPATH}" "MODULEPATH=/gscratch/srlab/programs/modules:${MODULEPATH}" "export MODULEPATH" \
+>> ~/.bashrc
+```
+
+<em>To make the above command active, type ```bash``` at the command prompt (you only need to do this one time; your changes will be loaded each time you login).</em>
+
+## Available Programs
+
+Below is the current list of programs available on Mox. It's very dynamic, so please
+check the contents of `$/gscratch/srlab/programs` periodically. If you need some
+other/new programs, please refer to [the program installation instructions](mox_Installing-Programs.md) or feel free to ask Sam.
+
+```
+$/gscratch/srlab/programs
 2bRAD_GATK		      DRAP				     macau				      perl			    smrtanalysis_2.3.0.140936.run
 anaconda3		      exonerate-2.2.0-x86_64		     maker-2.31.10			      picard_2.18.4		    snap-2013-11-29
 argparse-1.4.0		      express-1.5.1-linux_x86_64	     maker-3.01.03			      picard-2.9.1		    SOAPdenovo2
@@ -36,29 +102,3 @@ diamond-0.9.26		      krakenuniq-0.5.8			     PBSuite				      signalp-4.1		    
 diamond-0.9.29		      last-852				     pear-0.9.11-linux-x86_64		      signalp-5.0b		    wtdbg-2.1_x64-linux
 diamond-2.0.4		      likelybin-0.1.0			     pecan				      simuPOP-1.1.10.9
 ```
-
----
-
-```
-$/gscratch/srlab/programs/bin
-argparse.py  bowtie2  bsmap  cutadapt  fastqc  multiqc	quast.py  README.txt  samtools	trim_galore
-```
-
-This directory  contains symlinks (i.e. shortcuts) to various programs and will simplify adding programs to your "system" $PATH (for many programs, this is not necessary, so you may not need/want to bother).
-
-To add this directory (and it's programs) to your system $PATH, type the following in your Mox login node command prompt:
-
-```printf "%s\n%s" "# Prepend bioinformatics stuff to PATH" "PATH=/gscratch/srlab/programs/bin:$PATH" >> ~/.bash_profile```
-
-<em>To make the above command active, type ```bash``` at the command prompt (you only need to do this one time; your changes will be loaded each time you login).</em>
-
----
-
-You should also add our custom modules directory to your `~/.bashrc` file. Modules are useful for certain software that has specific $PATH requirements. See the modules directory for more info on what custom modules are available (`/gscratch/srlab/programs/modules`).
-
-```
-printf "\n%s\n%s\n%s" "# Prepend custom modules to system ${MODULEPATH}" "MODULEPATH=/gscratch/srlab/programs/modules:${MODULEPATH}" "export MODULEPATH" \
->> ~/.bashrc
-```
-
-<em>To make the above command active, type ```bash``` at the command prompt (you only need to do this one time; your changes will be loaded each time you login).</em>
