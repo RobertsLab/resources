@@ -9,7 +9,7 @@ Journal:
 
 2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
 https://www.researchsquare.com/article/rs-90268/v1    
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)   
 
 3) **Geoduck OA and reproductive development** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
