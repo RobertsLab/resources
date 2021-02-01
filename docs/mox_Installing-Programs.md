@@ -29,21 +29,19 @@ _All program installations should be performed with a Build node._
 
 1. Activate the default (base) conda environment:
 
-  ```shell
-  /gscratch/srlab/programs/anaconda3/condabin/conda activate
-  ```
+    `/gscratch/srlab/programs/anaconda3/condabin/conda activate`
 
 2. Install your desired package (replace `<package>` with your package name):
 
-- `conda install <package>`
+    `conda install <package>`
 
 3. Deactivate the conda environment:
 
-- `conda deactivate`
+    `conda deactivate`
 
 4. The program should now be available in this directory:
 
-- `/gscratch/srlab/programs/anaconda3/bin/<program_name>`
+    `/gscratch/srlab/programs/anaconda3/bin/<program_name>`
 
 
 ## Installing R Packages
@@ -52,26 +50,26 @@ This is a guide to change the default R library install location to avoid runnin
 
 1. Make a designated directory for your R packages, e.g.:
 
-  `mkdir --parents /gscratch/srlab/${USER}/R_libs`
+    `mkdir --parents /gscratch/srlab/${USER}/R_libs`
 
 2. Create an `.Renviron` file in your home directory, defining the `R_USER_LIB` location established in Step 1:
 
-  ```shell
-  echo "# Set local library installation path
-  R_LIBS_USER=/gscratch/srlab/${USER}/R_libs" > ~/.Renviron
-  ```
+    ```shell
+    echo "# Set local library installation path
+    R_LIBS_USER=/gscratch/srlab/${USER}/R_libs" > ~/.Renviron
+    ```
 
 3. Confirm success:
 
-  ```shell
-  # Start R
-  /gscratch/srlab/programs/R-3.6.2/bin/R
-  ```
+    ```shell
+    # Start R
+    /gscratch/srlab/programs/R-3.6.2/bin/R
+    ```  
 
-  ```R
-  # Check library paths
-  .libPaths()
-  ```
+    ```R
+    # Check library paths
+    .libPaths()
+    ```
 
   - The output should look something like this:
 
