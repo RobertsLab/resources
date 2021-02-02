@@ -5,11 +5,12 @@
 [OSF](https://osf.io/yem8n/)    
 [GitHub](https://github.com/hputnam/Geoduck_Meth)   
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
-Journal:
+Journal: Enivronmental Microbiome      
 
 2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
 [https://www.researchsquare.com/article/rs-90268/v1](https://www.researchsquare.com/article/rs-90268/v1)    
-![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
+
 
 3) **Geoduck OA and reproductive development** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
