@@ -1,3 +1,4 @@
+A few useful code chunks.
 
 ## Shell Basics
 
