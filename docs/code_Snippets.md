@@ -34,7 +34,7 @@ Applications/bioinfo/ncbi-blast-2.11.0+/bin/blastx \
 -db ../blastdb/Caenorhabditis_elegans.WBcel235.pep  \
 -out ../analyses/Cg-WBcel235_blastx.tab \
 -evalue 1E-05 \
--num_threads s \
+-num_threads 4 \
 -max_target_seqs 1 \
 -max_hsps 1 \
 -outfmt "6 qaccver saccver evalue"
