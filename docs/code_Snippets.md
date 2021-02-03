@@ -8,7 +8,9 @@ A few useful code chunks.
 ## File Transfers
 
 
-`gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2GSxP`
+```
+gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2GSxP
+```
 
 
 
