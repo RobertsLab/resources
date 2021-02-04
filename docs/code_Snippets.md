@@ -9,6 +9,13 @@ A few useful code chunks.
 
 
 ```
+wget -r \
+--no-directories --no-parent \
+-P . \
+-A _001_val_1.fq.gz https://gannet.fish.washington.edu/metacarcinus/Salmo_Calig/analyses/20190806_TrimGalore/
+```
+
+```
 gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2GSxP
 ```
 
