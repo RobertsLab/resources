@@ -65,14 +65,14 @@ Journal: TBD
 [GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-13) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_
-Draft link coming soon!
-[Github](https://github.com/RobertsLab/project-oyster-oa)
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
+13) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_        
+Draft link coming soon!         
+[Github](https://github.com/RobertsLab/project-oyster-oa)         
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)      
 
-14) **Differential gonad methylation in female oysters** - _Yaamini_
-Draft link coming soon!        
-[Github](https://github.com/RobertsLab/project-gigas-oa-meth)     
+14) **Differential gonad methylation in female oysters** - _Yaamini_        
+Draft link coming soon!          
+[Github](https://github.com/RobertsLab/project-gigas-oa-meth)      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 15) **Harnessing the Power of Single-cell RNA Sequencing to Control Reproductive Development in Bivalves** - _Mac_    
