@@ -1,7 +1,7 @@
 Here we try to compile genomic resources such that they are readily available and somewhat described. An effort will be made to keep respective index files alongside so these files can be directly used in IGV _etc_.
 
 **Related Resources**
-- Archived Versions of this page - [091319](http://htmlpreview.github.io/?https://github.com/RobertsLab/resources/blob/master/archive/Genomic-Resources.091419.html);  
+- Archived Versions of this page - [091319](http://htmlpreview.github.io/?https://github.com/RobertsLab/resources/blob/master/archive/Genomic-Resources.091419.html);
 
 - [Nightingales (Google Sheet)](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit?usp=sharing) : Database of all raw high-throughput sequencing data
 
@@ -13,18 +13,18 @@ Here we try to compile genomic resources such that they are readily available an
 
 * [cbai_genome_v1.01.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta) (18MB)
 
-    - MD5 = `5a08d8b0651484e3ff75fcf032804596`  
+    - MD5 = `5a08d8b0651484e3ff75fcf032804596`
 
     - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/09/24/Assembly-Assessment-BUSCO-C.bairdi-Genome-v1.01-on-Mox.html):
-    `C:0.4%[S:0.3%,D:0.1%],F:0.2%,M:99.4%,n:978`  
+    `C:0.4%[S:0.3%,D:0.1%],F:0.2%,M:99.4%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
-        - [cbai_genome_v1.01.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta.fai)  
+        - [cbai_genome_v1.01.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta.fai)
 
-    - Assembly from [20200923](https://robertslab.github.io/sams-notebook/2020/09/23/Data-Wrangling-Subsetting-cbai_genome_v1.0-Assembly-with-faidx.html)  
+    - Assembly from [20200923](https://robertslab.github.io/sams-notebook/2020/09/23/Data-Wrangling-Subsetting-cbai_genome_v1.0-Assembly-with-faidx.html)
 
-        - Q7-filtered NanoPore data. Includes _Hematodinium_-infected sample.  
+        - Q7-filtered NanoPore data. Includes _Hematodinium_-infected sample.
 
         - Subset of `cbai_genome_v1.0.fasta` with contigs >1000bp
 
@@ -49,146 +49,146 @@ Transcriptomes
 
 * [cbai_transcriptome_v3.1.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.1.fasta)
 
-    - MD5 = `aeec8ffbf8fa44fb1750caee6abaf68a`  
+    - MD5 = `aeec8ffbf8fa44fb1750caee6abaf68a`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/06/05/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v3.1.html): `C:96.5%[S:40.3%,D:56.2%],F:2.2%,M:1.3%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/06/05/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v3.1.html): `C:96.5%[S:40.3%,D:56.2%],F:2.2%,M:1.3%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
-        - [cbai_transcriptome_v3.1.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.1.fasta.fai)  
+        - [cbai_transcriptome_v3.1.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.1.fasta.fai)
 
-    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200608_cbai_diamond_blastx_v2.1_v3.1/cbai_transcriptome_v3.1.blastx.outfmt6) (outfmt6)  
+    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200608_cbai_diamond_blastx_v2.1_v3.1/cbai_transcriptome_v3.1.blastx.outfmt6) (outfmt6)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200828_cbai_trinotate_transcriptome-v3.1/20200828.cbai_transcriptome_v3.1.fasta.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200828_cbai_trinotate_transcriptome-v3.1/20200828.cbai_transcriptome_v3.1.fasta.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-UW with _non_Alveolata_. [Derived from `cbai_transcriptome_v3.0.fasta`](https://robertslab.github.io/sams-notebook/2020/06/05/Sequence-Extractions-C.bairdi-Transcriptomes-v2.0-and-v3.0-Excluding-Alveolata-with-MEGAN6-on-Swoose.html)
 
 * [cbai_transcriptome_v3.0.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.0.fasta)
 
-    - Assembly from [20200518](https://robertslab.github.io/sams-notebook/2020/05/18/Transcriptome-Assembly-C.bairdi-All-Pooled-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox.html)  
+    - Assembly from [20200518](https://robertslab.github.io/sams-notebook/2020/05/18/Transcriptome-Assembly-C.bairdi-All-Pooled-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox.html)
 
-    - MD5 = `5516789cbad5fa9009c3566003557875`  
+    - MD5 = `5516789cbad5fa9009c3566003557875`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/19/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v3.0.html): `C:97.6%[S:39.1%,D:58.5%],F:1.6%,M:0.8%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/19/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v3.0.html): `C:97.6%[S:39.1%,D:58.5%],F:1.6%,M:0.8%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
-        - [cbai_transcriptome_v3.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.0.fasta.fai)  
+        - [cbai_transcriptome_v3.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.0.fasta.fai)
 
-    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200519_cbai_diamond_blastx_transcriptome_v3.0/20200518.C_bairdi.Trinity.blastx.outfmt6) (outfmt6)  
+    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200519_cbai_diamond_blastx_transcriptome_v3.0/20200518.C_bairdi.Trinity.blastx.outfmt6) (outfmt6)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcriptome-v3.0/20200526.cbai_transcriptome_v3.0.fasta.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcriptome-v3.0/20200526.cbai_transcriptome_v3.0.fasta.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-UW with _no taxonomic filter_.
 
 * [cbai_transcriptome_v2.1.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v2.1.fasta)
 
-    - MD5 = `1fb788175f9bb7cd5145370a399ae857`  
+    - MD5 = `1fb788175f9bb7cd5145370a399ae857`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/06/05/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v2.1.html): `C:98.3%[S:25.2%,D:73.1%],F:1.4%,M:0.3%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/06/05/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v2.1.html): `C:98.3%[S:25.2%,D:73.1%],F:1.4%,M:0.3%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
-        - [cbai_transcriptome_v2.1.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v2.1.fasta.fai)  
+        - [cbai_transcriptome_v2.1.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v2.1.fasta.fai)
 
-    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200608_cbai_diamond_blastx_v2.1_v3.1/cbai_transcriptome_v2.1.blastx.outfmt6)  
+    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200608_cbai_diamond_blastx_v2.1_v3.1/cbai_transcriptome_v2.1.blastx.outfmt6)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200831_cbai_trinotate_transcriptome-v2.1/20200831.cbai_transcriptome_v2.1.fasta.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200831_cbai_trinotate_transcriptome-v2.1/20200831.cbai_transcriptome_v2.1.fasta.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _non_Alveolata_. [Derived from `cbai_transcriptome_v2.0.fasta`](https://robertslab.github.io/sams-notebook/2020/06/05/Sequence-Extractions-C.bairdi-Transcriptomes-v2.0-and-v3.0-Excluding-Alveolata-with-MEGAN6-on-Swoose.html)
 
 * [cbai_transcriptome_v2.0.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v2.0.fasta)
 
-    - Also referred to as [`20200507.C_bairdi.Trinity.fasta`](https://robertslab.github.io/sams-notebook/2020/05/02/Transcriptome-Assembly-C.bairdi-All-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox.html).  
+    - Also referred to as [`20200507.C_bairdi.Trinity.fasta`](https://robertslab.github.io/sams-notebook/2020/05/02/Transcriptome-Assembly-C.bairdi-All-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox.html).
 
     - MD5 = `01adbd54298495c147767b19ee5c0de9`
   https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcriptome-v3.0/20200526.cbai.trinotate.go_annotations.txt
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/08/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-v2.0-Transcriptome.html): `C:98.8%[S:24.9%,D:73.9%],F:0.9%,M:0.3%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/08/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-v2.0-Transcriptome.html): `C:98.8%[S:24.9%,D:73.9%],F:0.9%,M:0.3%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
-        - [cbai_transcriptome_v2.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v2.0.fasta.fai)  
+        - [cbai_transcriptome_v2.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v2.0.fasta.fai)
 
-    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200508_cbai_diamond_blastx_transcriptome-v2.0/20200507.C_bairdi.Trinity.blastx.outfmt6)  
+    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200508_cbai_diamond_blastx_transcriptome-v2.0/20200507.C_bairdi.Trinity.blastx.outfmt6)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200513_cbai_trinotate_transcriptome-v2.0/20200513.cbai.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200513_cbai_trinotate_transcriptome-v2.0/20200513.cbai.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _no taxonomic filter_.
 
 * [cbai_transcriptome_v1.7.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.7.fasta)
 
-    - MD5 = `032d1f81c7744736ebeefe7f63ed6d95`  
+    - MD5 = `032d1f81c7744736ebeefe7f63ed6d95`
 
-    - Assembly from [20200527](https://robertslab.github.io/sams-notebook/2020/05/27/Transcriptome-Assembly-C.bairdi-All-Pooled-Arthropoda-only-RNAseq-Data-with-Trinity-on-Mox.html)  
+    - Assembly from [20200527](https://robertslab.github.io/sams-notebook/2020/05/27/Transcriptome-Assembly-C.bairdi-All-Pooled-Arthropoda-only-RNAseq-Data-with-Trinity-on-Mox.html)
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [cbai_transcriptome_v1.7.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.7.fasta.fai) :
-          `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.7.fasta.fai`  
+          `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.7.fasta.fai`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/27/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.7.html): `C:86.7%[S:66.5%,D:20.2%],F:8.2%,M:5.1%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/27/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.7.html): `C:86.7%[S:66.5%,D:20.2%],F:8.2%,M:5.1%,n:978`
 
-    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200527_cbai_diamond_blastx_transcriptome_v1.7/cbai_transcriptome_v1.7.blastx.outfmt6) (outfmt6)  
+    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200527_cbai_diamond_blastx_transcriptome_v1.7/cbai_transcriptome_v1.7.blastx.outfmt6) (outfmt6)
 
-    - [GO Terms Annotation] (Trinotate)  
+    - [GO Terms Annotation] (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-UW with _Arthropoda_ only reads.
 
 
 * [cbai_transcriptome_v1.6.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.6.fasta)
 
-    - MD5 = `46d77ce86cdbbcac26bf1a6cb820651e`  
+    - MD5 = `46d77ce86cdbbcac26bf1a6cb820651e`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [cbai_transcriptome_v1.6.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.6.fasta.fai) :
-        `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.6.fasta.fai`  
+        `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.6.fasta.fai`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/19/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.6.html): `C:91.7%[S:62.6%,D:29.1%],F:6.2%,M:2.1%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/19/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.6.html): `C:91.7%[S:62.6%,D:29.1%],F:6.2%,M:2.1%,n:978`
 
-    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200519_cbai_diamond_blastx_transcriptome_v1.6/cbai_transcriptome_v1.6.blastx.outfmt6) (outfmt6)  
+    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200519_cbai_diamond_blastx_transcriptome_v1.6/cbai_transcriptome_v1.6.blastx.outfmt6) (outfmt6)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200520_cbai_trinotate_transcriptome-v1.6/20200520.cbai_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200520_cbai_trinotate_transcriptome-v1.6/20200520.cbai_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _Arthropoda_ only reads.
 
 
 * [cbai_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta)
 
-    - MD5 = `e61d68c45728ffbb91e3d34c087d9aa9`  
+    - MD5 = `e61d68c45728ffbb91e3d34c087d9aa9`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/04/07/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome.html): C:91.8%[S:64.0%,D:27.8%],F:5.9%,M:2.3%,n:978  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/04/07/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome.html): C:91.8%[S:64.0%,D:27.8%],F:5.9%,M:2.3%,n:978
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [cbai_transcriptome_v1.5.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta.fai) :
-      `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta.fai`  
+      `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta.fai`
 
-    - Updated assembly from [20200330](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html). Also referred to as `20200408.C_bairdi.megan.Trinity.fasta`  
+    - Updated assembly from [20200330](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html). Also referred to as `20200408.C_bairdi.megan.Trinity.fasta`
 
-    - [BLASTx Annotation](https://robertslab.github.io/sams-notebook/2020/04/08/Transcriptome-Annotation-C.bairdi-MEGAN-Trinity-Assembly-Using-DIAMOND-BLASTx-on-Mox.html)  
+    - [BLASTx Annotation](https://robertslab.github.io/sams-notebook/2020/04/08/Transcriptome-Annotation-C.bairdi-MEGAN-Trinity-Assembly-Using-DIAMOND-BLASTx-on-Mox.html)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200409_cbai_trinotate_megan/20200409.cbai.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200409_cbai_trinotate_megan/20200409.cbai.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-GW with Arthropoda only reads.
 
 
 * [cbai_transcriptome_v1.0.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.0.fasta)
 
-    - MD5 = `fb28a203154b44b67ec2e2476d96d326`  
+    - MD5 = `fb28a203154b44b67ec2e2476d96d326`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/02/07/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome.html): `C:85.5%[S:64.7%,D:20.8%],F:9.3%,M:5.2%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/02/07/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome.html): `C:85.5%[S:64.7%,D:20.8%],F:9.3%,M:5.2%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [cbai_transcriptome_v1.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.0.fasta.fai) :
-      `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.0.fasta.fasta.fai`  
+      `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.0.fasta.fasta.fai`
 
-    - Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)  
+    - Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
 
-    - [BLASTx Annotation](https://robertslab.github.io/sams-notebook/2020/01/23/Transcriptome-Annotation-C.bairdi-MEGAN-Trinity-Assembly-Using-DIAMOND-BLASTx-on-Mox.html)  
+    - [BLASTx Annotation](https://robertslab.github.io/sams-notebook/2020/01/23/Transcriptome-Annotation-C.bairdi-MEGAN-Trinity-Assembly-Using-DIAMOND-BLASTx-on-Mox.html)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200126_cbai_trinotate_megan/20200126.cbai.trinotate.go_annotations.txt) (Trinotate)  
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200126_cbai_trinotate_megan/20200126.cbai.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019 with _Arthropoda_ only reads.
 
@@ -209,18 +209,19 @@ Genome:
 
 * [Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa`
 
-    - MD5 = 6de9d1239eb10ea0545bed6c4e746d6c  
+    - MD5 = 6de9d1239eb10ea0545bed6c4e746d6c
 
     - FastA index (```samtools faidx```) :
-      `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa.fai`  
+      `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa.fai`
 
-  Bisulfite Genome:  
+Bisulfite Genome:
 
-    - [Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz) :
-    `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz`  
+  - [Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz) :
+    `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel_bisulfite.tar.gz`
 
-        - Gzipped tarball of bisulfite genome for use with Bismark
-        - Creation details [here](https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html)
+      - Gzipped tarball of bisulfite genome for use with Bismark
+
+      - Creation details [here](https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html)
 
 
 Genome Feature Tracks
@@ -310,13 +311,13 @@ Genome Feature Tracks
         - https://github.com/sr320/nb-2018/blob/master/C_virginica/22-CG-track.ipynb
 
 
-* [C_virginica-3.0_TE-all.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-all.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-all.gff`      
+* [C_virginica-3.0_TE-all.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-all.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-all.gff`
 
-    - MD5 = d0d81fc6cf7525bc2c61984bee23521b    
+    - MD5 = d0d81fc6cf7525bc2c61984bee23521b
 
     - [Details](http://onsnetwork.org/kubu4/2018/08/28/transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/)
 
-* [C_virginica-3.0_TE-Cg.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff`      
+* [C_virginica-3.0_TE-Cg.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff`
 
     - MD5 = 83cd753c171076464fee1165b7e1c6ba
 
@@ -331,39 +332,39 @@ Transcriptomes
 
 * [hemat_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta)
 
-    - MD5 = `b8d4a3c1bad2e07da8431bf70bdabfdd`  
+    - MD5 = `b8d4a3c1bad2e07da8431bf70bdabfdd`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/03/31/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-MEGAN-Transcriptome.html): `C:25.6%[S:20.7%,D:4.9%],F:11.7%,M:62.7%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/03/31/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-MEGAN-Transcriptome.html): `C:25.6%[S:20.7%,D:4.9%],F:11.7%,M:62.7%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [hemat_transcriptome_v1.5.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta.fai) :
-      `https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta.fai`  
+      `https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta.fai`
 
-    - Updated assembly from [20200330](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html).  
+    - Updated assembly from [20200330](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html).
 
-    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200331_hemat_diamond_blastx_megan/20200408.hemat.megan.Trinity.fasta.blastx.outfmt6) (txt; 355KB)  
+    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200331_hemat_diamond_blastx_megan/20200408.hemat.megan.Trinity.fasta.blastx.outfmt6) (txt; 355KB)
 
-    - [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200408_hemat_trinotate_megan/20200408.hemat.trinotate.go_annotations.txt) (txt; 2.3MB)  
+    - [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200408_hemat_trinotate_megan/20200408.hemat.trinotate.go_annotations.txt) (txt; 2.3MB)
 
     - internal short-hand: includes 2018, 2019, 2020-GW with _Alveolata_ only reads.
 
 * [hemat_transcriptome_v1.0.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.0.fasta) (3.9MB)
 
-    - MD5 = `fa5eb74767d180af5265d2d1f80b6430`  
+    - MD5 = `fa5eb74767d180af5265d2d1f80b6430`
 
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/02/07/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-MEGAN-Transcriptome.html): `C:25.1%[S:19.2%,D:5.9%],F:9.5%,M:65.4%,n:978`  
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/02/07/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-MEGAN-Transcriptome.html): `C:25.1%[S:19.2%,D:5.9%],F:9.5%,M:65.4%,n:978`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [hemat_transcriptome_v1.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.0.fasta.fai) :
-      `https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.0.fasta.fai`  
+      `https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.0.fasta.fai`
 
-    - Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)  
+    - Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
 
-    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200123_hemat_diamond_blastx_megan/20200122.hemat.megan.Trinity.blastx.outfmt6) (txt; 308KB)  
+    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200123_hemat_diamond_blastx_megan/20200122.hemat.megan.Trinity.blastx.outfmt6) (txt; 308KB)
 
-    - [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200126_hemat_trinotate_megan/20200126.hemat.trinotate.go_annotations.txt) (txt; 2.1MB)  
+    - [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200126_hemat_trinotate_megan/20200126.hemat.trinotate.go_annotations.txt) (txt; 2.1MB)
 
     - internal short-hand: includes 2018, 2019 with _Alveolata_ only reads.
 
@@ -375,15 +376,15 @@ Genome:
 
 * `mmag_pilon_scaffolds.fasta`
 
-    - MD5 = 5dfa2ba11edf0ff8191f112e0b1378d1  
+    - MD5 = 5dfa2ba11edf0ff8191f112e0b1378d1
 
-    - Not shared publicly until permission received from NOAA.  
+    - Not shared publicly until permission received from NOAA.
 
-    - Roberts Lab members can access on Owl: `/web/halfshell/genomic-databank/mmag_pilon_scaffolds.fasta`  
+    - Roberts Lab members can access on Owl: `/web/halfshell/genomic-databank/mmag_pilon_scaffolds.fasta`
 
-    - Original filename: `pilon_scaffolds.fasta`  
+    - Original filename: `pilon_scaffolds.fasta`
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - `mmag_pilon_scaffolds.fasta.fai`
 
@@ -395,11 +396,11 @@ Genome:
 
 * [Olurida_v081.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa`
 
-    - MD5 = 3ac56372bd62038f264d27eef0883bd3  
+    - MD5 = 3ac56372bd62038f264d27eef0883bd3
 
-    - This is `v080` with only contigs > 1000bp. Details of how `v080` was reduced found [here](https://github.com/sr320/nb-2018/blob/master/O_lurida/04-Pbjelly-10k-mapping.ipynb).  
+    - This is `v080` with only contigs > 1000bp. Details of how `v080` was reduced found [here](https://github.com/sr320/nb-2018/blob/master/O_lurida/04-Pbjelly-10k-mapping.ipynb).
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [Olurida_v081.fa.fai](http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa.fai) :
       `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081.fa.fai`
@@ -407,12 +408,12 @@ Genome:
 
 * [Olurida_v080.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa`
 
-    - MD5 = 9258398f554493e08fdc30e9c1409864  
+    - MD5 = 9258398f554493e08fdc30e9c1409864
 
-    - FastA index (```samtools faidx```)  
+    - FastA index (```samtools faidx```)
 
         - [Olurida_v080.fa.fai](http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa.fai) :
-      `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa.fai`  
+      `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v080.fa.fai`
 
     - Also known as `pbjelly_sjw_01`. Details found [here](https://github.com/sr320/LabDocs/blob/master/jupyter_nbs/sam/20171130_emu_pbjelly.ipynb), though confirmation would be good.
 
@@ -468,7 +469,7 @@ Transcriptomes:
 
 ## _Panopea generosa_
 
-Genome:    
+Genome:
 
 * [Pgenerosa_v074.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa`
 
@@ -494,35 +495,35 @@ Genome Feature Tracks:
 
    - Panopea-generosa-vv0.74.a3
 
-     _These originate from [GenSAS annotation on 20190710](https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Annotation-Pgenerosa_v074-Using-GenSAS.html)_   
+     _These originate from [GenSAS annotation on 20190710](https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Annotation-Pgenerosa_v074-Using-GenSAS.html)_
 
      * [Panopea-generosa-vv0.74.a3.gene.gff3](http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3) :
-     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3`   
+     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3`
 
-         - [code](https://d.pr/n/RHThn4)   
+         - [code](https://d.pr/n/RHThn4)
 
      * [Panopea-generosa-vv0.74.a3.exon.gff3](http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3) :
-     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3`     
+     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3`
 
-         - [code](https://d.pr/n/RHThn4)     
+         - [code](https://d.pr/n/RHThn4)
 
-     * [Panopea-generosa-vv0.74.a3.intragenic.bed](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intragenic.bed) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intragenic.bed`     
+     * [Panopea-generosa-vv0.74.a3.intragenic.bed](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intragenic.bed) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intragenic.bed`
 
-     * [Panopea-generosa-vv0.74.a3.intron.bed](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intron.bed) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intron.bed`     
+     * [Panopea-generosa-vv0.74.a3.intron.bed](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intron.bed) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intron.bed`
 
-     * [Panopea-generosa-vv0.74.a3.rm.gff3](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3`     
+     * [Panopea-generosa-vv0.74.a3.rm.gff3](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3`
 
-         - index: `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3.idx`     
+         - index: `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3.idx`
 
-     * [Pgenerosa_v074.CpG.gff](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Pgenerosa_v074.CpG.gff) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Pgenerosa_v074.CpG.gff`     
+     * [Pgenerosa_v074.CpG.gff](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Pgenerosa_v074.CpG.gff) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Pgenerosa_v074.CpG.gff`
 
      * [Panopea-generosa-vv0.74.a3.CDS.gff3](http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3) :
-       `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3`     
+       `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3`
 
-         - [code](https://d.pr/n/RHThn4)     
+         - [code](https://d.pr/n/RHThn4)
 
      * [Panopea-generosa-vv0.74.a3.mRNA.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3) :
-     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3`     
+     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3`
 
          - [code](https://d.pr/n/RHThn4)
 
