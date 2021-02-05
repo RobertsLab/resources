@@ -80,6 +80,13 @@ Draft link coming soon!
 [GitHub]()      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)     
 
+16) **DNA METHYLATION PROFILING OF A CNIDARIAN-ALGAL SYMBIOSIS USING NANOPORE SEQUENCING** - _Jay_     
+https://www.biorxiv.org/content/10.1101/2021.02.01.429278v1     
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
+Journal: G3
+
+
+
 
 ---
 
