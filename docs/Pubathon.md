@@ -13,8 +13,8 @@
 Journal: Environmental Microbiome      
 
 3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the mehtylation landscape** - Shelly and Yaamini et al  
-[https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)
-[https://github.com/hputnam/Meth_Compare](https://github.com/hputnam/Meth_Compare)
+[https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)  
+[https://github.com/hputnam/Meth_Compare](https://github.com/hputnam/Meth_Compare)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:  Methods in Ecology and Evolution
 
