@@ -71,9 +71,15 @@ Draft link coming soon!
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 14) **Differential gonad methylation in female oysters** - _Yaamini_
-Draft link coming soon!
-[Github](https://github.com/RobertsLab/project-gigas-oa-meth)
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+Draft link coming soon!        
+[Github](https://github.com/RobertsLab/project-gigas-oa-meth)     
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
+
+15) **Harnessing the Power of Single-cell RNA Sequencing to Control Reproductive Development in Bivalves** - _Mac_    
+[Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)    
+[GitHub]()      
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)     
+
 
 ---
 
