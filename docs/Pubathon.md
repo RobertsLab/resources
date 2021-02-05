@@ -12,59 +12,65 @@
 ![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
 Journal: Environmental Microbiome      
 
-3) **Geoduck OA and reproductive development** - Shelly et al  
+3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the mehtylation landscape** - Shelly and Yaamini et al  
+[https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)
+[https://github.com/hputnam/Meth_Compare](https://github.com/hputnam/Meth_Compare)
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:  Methods in Ecology and Evolution
+
+4) **Geoduck OA and reproductive development** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
 [Paper repo](https://github.com/shellytrigg/paper-GeoduckReproDev_pH)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
 
-4) **Geoduck OA transgenerational effects** - Shelly et al  
+5) **Geoduck OA transgenerational effects** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1aIho7R27-cXpDpuRKlQY_p-3Bi7-HlZMNQcTtH_bigI/edit)  
 [Paper repo](https://github.com/shellytrigg/paper-GeoduckTransgen_var.pH)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
 
-5) **Temp and Salinity effects on Salmon with sea lice** - Shelly et al  
+6) **Temp and Salinity effects on Salmon with sea lice** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1BJiqCxBNu4nk1PmfB3TC9gjyU5WTciRStQPSKUYVnug/edit)  
 [Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
 
-6) **Oly larvae food and temp** - _Laura_     
+7) **Oly larvae food and temp** - _Laura_     
 [draft](https://docs.google.com/document/d/1ELHOIK-iJ1UgnKi9aF_SdoqmLVe2UM9bi2G-fOuQ3RA/edit?usp=sharing)     
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal: TBD  
 
-7) **Oly epigenetics by population** - _Laura, Katherine, Steven_     
+8) **Oly epigenetics by population** - _Laura, Katherine, Steven_     
 [Working Draft](https://docs.google.com/document/d/1HKIAAIzJ2-t86US8GY5PD12z7aNsKZSnt25u8QJOiaY/edit?usp=sharing)     
 [GitHub](https://github.com/sr320/paper-oly-mbdbs-gen)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-8) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_  
+9) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_  
 [DRAFT LINK COMING SOON]()  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
-9) **Single cell RNA-seq** - _Mac_    
+10) **Single cell RNA-seq** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1GCqD_4S4TlIMhTGUpCOzE29-FqbBzPrJ3yyT4V2ONb0/edit)     
 [GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-10) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
+11) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
 [Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)   
 [GitHub](https://github.com/RobertsLab/paper-tanner-crab)           
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-11) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grace_      
+12) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grace_      
 [Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
 [GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-12) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_
+13) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_
 Draft link coming soon!
 [Github](https://github.com/RobertsLab/project-oyster-oa)
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
-13) **Differential gonad methylation in female oysters** - _Yaamini_
+14) **Differential gonad methylation in female oysters** - _Yaamini_
 Draft link coming soon!
 [Github](https://github.com/RobertsLab/project-gigas-oa-meth)
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
