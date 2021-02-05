@@ -46,8 +46,8 @@ Journal: TBD
 [GitHub](https://github.com/sr320/paper-oly-mbdbs-gen)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-9) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_  
-[DRAFT LINK COMING SOON]()  
+9) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_     
+[DRAFT LINK COMING SOON]()       
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 10) **Single cell RNA-seq** - _Mac_    
