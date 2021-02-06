@@ -4,7 +4,7 @@
 <iframe width="682" height="422" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3k1Br4DkiJyzH2nou51H-nORE9dVCgiwjD_nchL4CCsWcFBwSB-I562XG0ns2p32IROzNZ_PSFIqO/pubchart?oid=1356993868&amp;format=interactive"></iframe>
 
 ---
-Not able to make the call? You can [register your goals here.](https://docs.google.com/forms/d/e/1FAIpQLSecodL5dAgPhjTa_B5B2jRhwKgPlCKoPztPHrW1Cziq0vliTg/viewform)
+Not able to make the call? You can [register your goals here.](https://docs.google.com/forms/d/e/1FAIpQLSecodL5dAgPhjTa_B5B2jRhwKgPlCKoPztPHrW1Cziq0vliTg/viewform) (and see what folks register [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTGJFZPOW0nLYY8DBxHxIsdTuBc5R7Yyr9lIk_iuT2dc_SNFaxOWGmGCQIwcOzZQvHC2vtZ-B2oOLFV/pubhtml?gid=296481310&single=true)
 
 --- 
 
