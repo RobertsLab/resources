@@ -94,8 +94,10 @@ https://www.biorxiv.org/content/10.1101/2021.02.01.429278v1
 [GitHub](https://github.com/jldimond/Ae_meth)     
 Journal: G3
 
-
-
+17) **Oly WGBS** - _Steven_    
+[Working Draft](https://github.com/sr320/paper-oly-wgbs/blob/master/submission/Narrative.Rmd)    
+[GitHub](https://github.com/sr320/paper-oly-wgbs)    
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 ---
 
