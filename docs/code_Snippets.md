@@ -102,6 +102,26 @@ gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2
 ../data/GCF_000297895.1_oyster_v9_cds_from_genomic.fna > ../analyses/GCF_000297895.1_oyster_v9_cds_from_genomic.tab
 ```
 
+## FastQC
+
+Pass space-delimited list of FastQ files to FastQC
+```shell
+# Set CPU threads to use
+threads=20
+
+# Populate array with FastQ files
+fastq_array=(*.fq.gz)
+
+# Pass array contents to new variable
+fastqc_list=$(echo "${fastq_array[*]}")
+
+# Run FastQC
+# NOTE: Do NOT quote ${fastqc_list}
+fastqc \
+--threads ${threads} \
+--outdir ${output_dir} \
+${fastqc_list}
+```
 
 
 ##  Blast
