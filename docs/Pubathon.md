@@ -99,6 +99,10 @@ Journal: G3
 [GitHub](https://github.com/sr320/paper-oly-wgbs)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
+18) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and methylation landscape** -      
+[Working Draft](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)   
+[status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
+
 ---
 
 # Pub-a-thon 2020
