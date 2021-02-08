@@ -2,7 +2,78 @@ A few useful code chunks.
 
 ## Shell Basics
 
+Most commands are for bash (shell) scripts.
 
+Also, assumes usage of bash >=4.0.
+
+---
+
+### Handling paired end FastQ files
+
+- Create separate arrays for R1 and R2 reads
+
+    With a for loop
+    ```shell
+    # Declare arrays
+    R1_array=()
+    R2_array=()
+
+    # Populate arrays
+    for fastq in *R1.fq
+    do
+      R1_array+=(${fastq})
+    done
+
+    for fastq in *R2.fq
+    do
+      R2_array+=(${fastq})
+    done
+    ```
+
+    Using "globbing"
+    ```shell
+    # Declare arrays
+    R1_array=()
+    R2_array=()
+
+    # Populate arrays
+    R1_array=(*R1.fq)
+    R2_array=(*R2.fq)
+    ```
+
+- Creating single array with paired reads
+
+    ```shell
+    ## Assumes there is only a single set of paired reads per sample
+
+    # Declare array
+    reads_array=()
+
+    # Populate array
+    # Corresponding reads will be placed next to each other in array
+    # (e.g. sample01_R1.fq sample01_R2.fq sample02_R1.fq samples02_R2.fq)
+    reads_array=(*.fq)
+    ```
+
+- Loop through single array of paired reads
+
+    ```shell
+    ## Assumes there is only a single set of paired reads per sample
+
+    # Declare array
+    reads_array=()
+
+    # Populate array
+    reads_array=(*.fq)
+
+    # Loop through read pairs
+    # Increment by 2 to process next pair of FastQ files
+    for (( i=0; i<${#reads_array[@]} ; i+=2 ))
+      do
+      echo "Read 1: ${reads_array[i]}"
+      echo "Read 2: ${reads_array[i+1]}"
+    done
+    ```
 
 
 ## File Transfers
