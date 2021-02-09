@@ -77,7 +77,8 @@ Also, assumes usage of bash >=4.0.
 
 - Create comma-separated lists of FastQ reads
 
-  (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2))
+    (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2))
+
     ```bash
     R1_list=$(echo "${R1_array[@]}" | tr " " ",")
     R2_list=$(echo "${R2_array[@]}" | tr " " ",")
