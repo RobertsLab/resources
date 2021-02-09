@@ -11,6 +11,7 @@ sbatch shell.script
 ## The Header
 
 <pre>
+<code>
 #!/bin/bash
 ## Job Name
 #SBATCH --job-name=<b>myjob</b>
@@ -18,7 +19,7 @@ sbatch shell.script
 #SBATCH --account=srlab
 #SBATCH --partition=srlab
 ## Nodes
-#SBATCH --nodes=<b>n</b>   
+#SBATCH --nodes=<b>n</b>
 ## Walltime (days-hours:minutes:seconds format)
 #SBATCH --time=<b>dd-hh:mm:ss</b>
 ## Memory per node
@@ -28,11 +29,13 @@ sbatch shell.script
 #SBATCH --mail-user=$USER
 ## Specify the working directory for this job
 #SBATCH --chdir=<b>/gscratch/srlab/path/to/your/desired/directory</b>
+</code>
 </pre>
+
 
 <b>Bolded sections must be changed prior to execution.</b>
 
-- `--job-name=`**`myjob`** is just an identifier for the system. It's what shows up in `scontrol` and `squeue` calls.  
+- `--job-name=`**`myjob`** is just an identifier for the system. It's what shows up in `scontrol` and `squeue` calls.
 
 - `--nodes=`<b>`n`</b> Replace `n` with the number of nodes (maximum 2).
 
