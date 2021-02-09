@@ -61,7 +61,7 @@ The actual jobs that follow the ```sbatch``` header loads the Anaconda module (w
 To run the script below, one would enter the following in a login node:
 ```sbatch -p srlab -A srlab Plat_Illu_Run2.sh```
 
-```
+```bash
 #!/bin/bash
 ## Job Name
 #SBATCH --job-name=Oly_Platanus_Illu
@@ -83,4 +83,123 @@ mkdir -p /scr/srlab/seanb80/plat_illu_tmp
 
 /gscratch/srlab/programs/redundans/redundans.py -t 28 -v -l /gscratch/srlab/data/OlyData/PacBio/170210_PCB-CC_MS_EEE_20kb_P6v2_D01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_C01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_D01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_E01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170307_PCB-CC_AL_20kb_P6v2_C01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170307_PCB-CC_AL_20kb_P6v2_C02_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A02_1_filtered_subreads.fastq  /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A03_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A04_1_filtered_subreads.fastq -f /gscratch/srlab/data/Oly_Plat_Illu/Oly_Out__contig.fa -o /gscratch/srlab/data/Oly_Redundans_Run2
 
+```
+
+## SBATCH Script Template/Example
+
+```bash
+#!/bin/bash
+## Job Name
+#SBATCH --job-name=DESCRIPTIVE_JOB_NAME
+## Allocation Definition
+#SBATCH --account=srlab
+#SBATCH --partition=srlab
+## Resources
+## Nodes
+#SBATCH --nodes=1
+## Walltime (days-hours:minutes:seconds format)
+#SBATCH --time=10-00:00:00
+## Memory per node
+#SBATCH --mem=120G
+##turn on e-mail notification
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=YOUR_UW_NET_ID@uw.edu
+## Specify the working directory for this job
+#SBATCH --chdir=/gscratch/scrubbed/path/to/your/desired/directory
+
+# Requires Bash >=4.0, as script uses associative arrays.
+
+###################################################################################
+# These variables need to be set by user
+
+## Number of CPU threads to use for programs (if applicable)
+threads=28
+
+## Program paths
+bowtie2_dir="/gscratch/srlab/programs/bowtie2-2.4.2-linux-x86_64"
+samtools="/gscratch/srlab/programs/samtools-1.10/samtools"
+
+## Programs associative array
+## Using array is useful for logging program options (see end of script)
+declare -A programs_array
+
+programs_array=(
+[bowtie2]="${bowtie2_dir}/bowtie2" \
+[bowtie2_build]="${bowtie2_dir}/bowtie2-build" \
+[samtools_index]="${samtools} index" \
+[samtools_sort]="${samtools} sort" \
+[samtools_view]="${samtools} view"
+)
+
+
+
+###################################################################################
+
+# Exit script if any command fails
+set -e
+
+# Load Python Mox module for Python module availability
+module load intel-python3_2017
+
+
+## PUT COMMANDS IN THIS SECTION
+
+## CALL PROGRAMS FROM ARRAY
+${programs_array[bowtie2_build]} \
+--threads ${threads} \
+${transcriptomes_array[$transcriptome]} \
+${transcriptome_name}
+
+
+###################################################################################
+
+## Capture program options
+## Expects program options to be accessible via an "-h" argument,
+## but has exceptions for some other commonly used programs (e.g. samtools, multiqc)
+echo "Logging program options..."
+for program in "${!programs_array[@]}"
+do
+	{
+  echo "Program options for ${program}: "
+	echo ""
+
+  # Handle samtools help menus
+  if [[ "${program}" == "samtools_index" ]] \
+  || [[ "${program}" == "samtools_sort" ]] \
+  || [[ "${program}" == "samtools_view" ]]
+  then
+    ${programs_array[$program]}
+  fi
+	${programs_array[$program]} -h
+	echo ""
+	echo ""
+	echo "----------------------------------------------"
+	echo ""
+	echo ""
+} &>> program_options.log || true
+
+  # If MultiQC is in programs_array, copy the config file to this directory.
+  if [[ "${program}" == "multiqc" ]]; then
+  	cp --preserve ~/.multiqc_config.yaml multiqc_config.yaml
+  fi
+done
+
+echo ""
+echo "Finished logging program options."
+echo ""
+
+echo ""
+echo "Logging system PATH."
+
+# Document programs in PATH (primarily for program version ID)
+{
+date
+echo ""
+echo "System PATH for $SLURM_JOB_ID"
+echo ""
+printf "%0.s-" {1..10}
+echo "${PATH}" | tr : \\n
+} >> system_path.log
+
+echo "Finished logging system PATH"
 ```
