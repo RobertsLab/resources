@@ -59,7 +59,8 @@ _NOTE: Since only a single node is requested, another job could be submitted and
 The actual jobs that follow the ```sbatch``` header loads the Anaconda module (which is used to load a Python environment), makes a new directory in ```/scr/srlab/seanb80/plat_illu_tmp```, runs the ```platanus``` program on a set of files, and then runs the ```redundans``` programm on a set of files.
 
 To run the script below, one would enter the following in a login node:
-```sbatch -p srlab -A srlab Plat_Illu_Run2.sh```
+
+```sbatch Plat_Illu_Run2.sh```
 
 ```bash
 #!/bin/bash
@@ -79,9 +80,20 @@ module load anaconda2_4.3.1
 
 mkdir -p /scr/srlab/seanb80/plat_illu_tmp
 
-/gscratch/srlab/programs/platanus_1.2.4/platanus assemble -f /gscratch/srlab/data/OlyData/Illumina/trimmed/*.fq.fq -t 28 -k 20 -u 0.2 -o Oly_Out_ -m 500
+/gscratch/srlab/programs/platanus_1.2.4/platanus assemble \
+-f /gscratch/srlab/data/OlyData/Illumina/trimmed/*.fq.fq \
+-t 28 \
+-k 20 \
+-u 0.2 \
+-o Oly_Out_ \
+-m 500
 
-/gscratch/srlab/programs/redundans/redundans.py -t 28 -v -l /gscratch/srlab/data/OlyData/PacBio/170210_PCB-CC_MS_EEE_20kb_P6v2_D01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_C01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_D01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_E01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170307_PCB-CC_AL_20kb_P6v2_C01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170307_PCB-CC_AL_20kb_P6v2_C02_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A02_1_filtered_subreads.fastq  /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A03_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A04_1_filtered_subreads.fastq -f /gscratch/srlab/data/Oly_Plat_Illu/Oly_Out__contig.fa -o /gscratch/srlab/data/Oly_Redundans_Run2
+/gscratch/srlab/programs/redundans/redundans.py \
+-t 28 \
+-v \
+-l /gscratch/srlab/data/OlyData/PacBio/170210_PCB-CC_MS_EEE_20kb_P6v2_D01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_C01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_D01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170228_PCB-CC_AL_20kb_P6v2_E01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170307_PCB-CC_AL_20kb_P6v2_C01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170307_PCB-CC_AL_20kb_P6v2_C02_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A01_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A02_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A03_1_filtered_subreads.fastq /gscratch/srlab/data/OlyData/PacBio/170314_PCB-CC_20kb_P6v2_A04_1_filtered_subreads.fastq \
+-f /gscratch/srlab/data/Oly_Plat_Illu/Oly_Out__contig.fa \
+-o /gscratch/srlab/data/Oly_Redundans_Run2
 
 ```
 
