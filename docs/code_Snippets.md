@@ -75,6 +75,7 @@ Also, assumes usage of bash >=4.0.
     done
     ```
 
+---
 
 ## File Transfers
 
@@ -98,7 +99,7 @@ gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2
 ```
 
 
-
+---
 
 ## FastA
 
@@ -134,9 +135,12 @@ gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2
 ../data/GCF_000297895.1_oyster_v9_cds_from_genomic.fna > ../analyses/GCF_000297895.1_oyster_v9_cds_from_genomic.tab
 ```
 
-## FastQC
+---
 
-Pass space-delimited list of FastQ files to FastQC
+## [`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
+### Pass space-delimited list of FastQ files to FastQC
+
 ```shell
 # Set CPU threads to use
 threads=20
@@ -156,7 +160,7 @@ ${fastqc_list}
 ```
 
 
-##  Blast
+## [`BLAST`](https://www.ncbi.nlm.nih.gov/books/NBK279690/)
 
 ```
 Applications/bioinfo/ncbi-blast-2.11.0+/bin/blastx \
