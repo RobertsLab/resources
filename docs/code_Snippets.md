@@ -86,6 +86,13 @@ wget -r \
 -A _001_val_1.fq.gz https://gannet.fish.washington.edu/metacarcinus/Salmo_Calig/analyses/20190806_TrimGalore/
 ```
 
+### Download file from Google Drive
+
+Install [`gdown`](https://github.com/wkentaro/gdown).
+
+Ideally, a checksum for the file hosted on Google Drive exists and be can be
+subsequently verified after downloading.
+
 ```
 gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2GSxP
 ```
