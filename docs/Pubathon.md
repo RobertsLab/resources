@@ -20,11 +20,11 @@ Not able to make the call? You can [register your goals here.](https://docs.goog
 ![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
 Journal: Environmental Microbiome      
 
-3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the mehtylation landscape** - Shelly and Yaamini et al  
+3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the methylation landscape** - Shelly and Yaamini et al  
 [Working draft](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)  
 [Paper repo](https://github.com/hputnam/Meth_Compare)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
-Journal:  Methods in Ecology and Evolution
+Journal:  BMC Genome Biology
 
 4) **Geoduck OA and reproductive development** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
