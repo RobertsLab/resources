@@ -103,6 +103,12 @@ Journal: G3
 [Working Draft](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)   
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
 
+19) **Chromosome-scale genome assembly of the sea louse Caligus rogercresseyi by SMRT sequencing and Hi-C analysis**     
+https://doi.org/10.1038/s41597-021-00842-w    
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED-blue.svg)    
+[Figshare](https://figshare.com/articles/dataset/Additional_annotation_files_GenSAS/12847493)
+
+
 ---
 
 # Pub-a-thon 2020
