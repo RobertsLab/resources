@@ -109,7 +109,8 @@ https://doi.org/10.1038/s41597-021-00842-w
 [Figshare](https://figshare.com/articles/dataset/Additional_annotation_files_GenSAS/12847493)
 
 20) **Differential gene expression in Hematodinium**  - _Aidan_      
-[Working Draft](https://github.com/afcoyle/hemat_bairdii_transcriptome/tree/main/paper)   
+[Working Draft](https://github.com/afcoyle/hemat_bairdii_transcriptome/tree/main/paper) 
+[GitHub](https://github.com/afcoyle/hemat_bairdii_transcriptome)
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
 
 
