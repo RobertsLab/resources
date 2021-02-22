@@ -493,39 +493,45 @@ Bisulfite Genome:
 
 Genome Feature Tracks:
 
-   - Panopea-generosa-vv0.74.a3
+   - Panopea-generosa-vv0.74.a4
 
-     _These originate from [GenSAS annotation on 20190710](https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Annotation-Pgenerosa_v074-Using-GenSAS.html)_
+     _These originate from [GenSAS annotation on 20190928](https://robertslab.github.io/sams-notebook/2019/09/28/Genome-Annotation-Pgenerosa_v074-a4-Using-GenSAS.html)_
 
-     * [Panopea-generosa-vv0.74.a3.gene.gff3](http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3) :
-     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.gene.gff3`
+     Individual feature GFFs were made with the following shell commands:
 
-         - [code](https://d.pr/n/RHThn4)
+    ```bash
 
-     * [Panopea-generosa-vv0.74.a3.exon.gff3](http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3) :
-     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.exon.gff3`
+    features_array=(CDS exon gene mRNA repeat_region rRNA tRNA)
 
-         - [code](https://d.pr/n/RHThn4)
+    input="Panopea-generosa-vv0.74.a4-merged-2019-10-07-4-46-46.gff3"
 
-     * [Panopea-generosa-vv0.74.a3.intragenic.bed](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intragenic.bed) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intragenic.bed`
+    for feature in ${features_array[@]}
+      do
+      output="Panopea-generosa-vv0.74.a4.${feature}.gff3"
+      head -n 3 ${input} \
+      >> ${output}
+      awk -v feature="$feature" '$3 == feature {print}' ${input} \
+      >> ${output}
+    done
+    ```
 
-     * [Panopea-generosa-vv0.74.a3.intron.bed](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intron.bed) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.intron.bed`
+     - [Panopea-generosa-vv0.74.a4-merged-2019-10-07-4-46-46.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4-merged-2019-10-07-4-46-46.gff3)
 
-     * [Panopea-generosa-vv0.74.a3.rm.gff3](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3`
+         - Primary GFF containing all features.
 
-         - index: `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Panopea-generosa-vv0.74.a3.rm.gff3.idx`
+     - [Panopea-generosa-vv0.74.a4.rRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.rRNA.gff3)
 
-     * [Pgenerosa_v074.CpG.gff](https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Pgenerosa_v074.CpG.gff) : `https://gannet.fish.washington.edu/seashell/wd/091319/tracks/Pgenerosa_v074.CpG.gff`
+     - [Panopea-generosa-vv0.74.a4.gene.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.gene.gff3)
 
-     * [Panopea-generosa-vv0.74.a3.CDS.gff3](http://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3) :
-       `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.CDS.gff3`
+     - [Panopea-generosa-vv0.74.a4.CDS.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.CDS.gff3)
 
-         - [code](https://d.pr/n/RHThn4)
+     - [Panopea-generosa-vv0.74.a4.mRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.mRNA.gff3)
 
-     * [Panopea-generosa-vv0.74.a3.mRNA.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3) :
-     `https://owl.fish.washington.edu/halfshell/genomic-databank/Panopea-generosa-vv0.74.a3.mRNA.gff3`
+     - [Panopea-generosa-vv0.74.a4.exon.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.exon.gff3)
 
-         - [code](https://d.pr/n/RHThn4)
+     - [Panopea-generosa-vv0.74.a4.tRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.tRNA.gff3)
+
+     - [Panopea-generosa-vv0.74.a4.repeat_region.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.repeat_region.gff3)
 
 ---
 
