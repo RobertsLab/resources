@@ -46,8 +46,8 @@ Journal:
 
 7) **Oly larvae food and temp** - _Laura_     
 [draft](https://docs.google.com/document/d/1ELHOIK-iJ1UgnKi9aF_SdoqmLVe2UM9bi2G-fOuQ3RA/edit?usp=sharing)     
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
-Journal: TBD  
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
+Journal: Ecological Applications
 
 8) **Oly epigenetics by population** - _Laura, Katherine, Steven_     
 [Working Draft](https://docs.google.com/document/d/1HKIAAIzJ2-t86US8GY5PD12z7aNsKZSnt25u8QJOiaY/edit?usp=sharing)     
