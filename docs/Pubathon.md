@@ -55,7 +55,7 @@ Journal: TBD
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 9) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_     
-[DRAFT LINK COMING SOON]()       
+[Working Draft](https://docs.google.com/document/d/1Ccr1R8VcWDKP-ScJo0lCpHHlxpMRm0Thso1cMA577Mo/edit?usp=sharing)       
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 10) **Single cell RNA-seq** - _Mac_    
