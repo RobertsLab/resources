@@ -45,7 +45,8 @@ Journal:
 Journal:
 
 7) **Oly larvae food and temp** - _Laura_     
-[draft](https://docs.google.com/document/d/1ELHOIK-iJ1UgnKi9aF_SdoqmLVe2UM9bi2G-fOuQ3RA/edit?usp=sharing)     
+[Working Draft](https://docs.google.com/document/d/1ELHOIK-iJ1UgnKi9aF_SdoqmLVe2UM9bi2G-fOuQ3RA/edit?usp=sharing)     
+[GitHub](https://github.com/laurahspencer/O.lurida_Temperature) (not cleaned up yet, though)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
 Journal: Ecological Applications
 
@@ -56,6 +57,7 @@ Journal: Ecological Applications
 
 9) **Oly pCO2 Carryover Gene Expression via QuantSeq** - _Laura_     
 [Working Draft](https://docs.google.com/document/d/1Ccr1R8VcWDKP-ScJo0lCpHHlxpMRm0Thso1cMA577Mo/edit?usp=sharing)       
+[GitHub](https://github.com/laurahspencer/O.lurida_QuantSeq-2020)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 10) **Single cell RNA-seq** - _Mac_    
