@@ -76,7 +76,7 @@ Journal: Ecological Applications
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 13) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_        
-Draft link coming soon!         
+[Working Draft](https://docs.google.com/document/d/1uqPDX2BWuWlEeS_d5JMTATvJFaEJOZED2SOVpqkLOJM/edit#heading=h.6ddhvfvd1oh3)  
 [Github](https://github.com/RobertsLab/project-oyster-oa)         
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)      
 
