@@ -111,6 +111,10 @@ https://doi.org/10.1038/s41597-021-00842-w
 [GitHub](https://github.com/afcoyle/hemat_bairdii_transcriptome)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
 
+21) **OA impact on invertebrate reproduction* - _Laura and Yaamini_
+[Workding Draft](https://docs.google.com/document/d/1CMcxD_Hu66jx4utSQHsw9W_xg338QHCj1Gg914szHjg/edit#)
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
 
 ---
 
