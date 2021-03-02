@@ -12,7 +12,7 @@ For newcomers, please read the following pages. Please read carefully, complete 
 
 5. [Lab Communication](Lab-Communication.md)
 
-6. [Computing](Computing.md)
+6. [Computing](Computing-Hardware.md)
 
 ### Getting connected at the University of Washington
 
@@ -57,14 +57,14 @@ If you experience any problems in joining these listservs, email SAFS computing 
 #### Postdocs
 
 - [UW Office of Postdoctoral Affairs](https://grad.uw.edu/for-students-and-post-docs/office-of-postdoctoral-affairs/)
-	- UW Office of Postdoctoral Affairs listserv: to join, send an email request to [uwopa@uw.edu](uwopa@uw.edu) 
+	- UW Office of Postdoctoral Affairs listserv: to join, send an email request to [uwopa@uw.edu](uwopa@uw.edu)
 	- UW Postdoc Association Twitter: [@UWPostDocs](https://twitter.com/uwpostdocs?lang=en)
 	- UW Postdoc Association Slack channel: to join, send an email request to [uwpa@uw.edu](uwpa@uw.edu)
 	- [Postdoc Parenting Group](uwpa@uw.edu)
-	- [Postdoc Diversity Alliance](https://sites.uw.edu/uwpda) 
+	- [Postdoc Diversity Alliance](https://sites.uw.edu/uwpda)
 
 - [UW College of the Envrionment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/)
-	- more CoEnv Postdoc resources: [https://environment.uw.edu/intranet/academics/postdoctoral-resources/](https://environment.uw.edu/intranet/academics/postdoctoral-resources/) 
+	- more CoEnv Postdoc resources: [https://environment.uw.edu/intranet/academics/postdoctoral-resources/](https://environment.uw.edu/intranet/academics/postdoctoral-resources/)
 	- listserv environment_postdocs@uw.edu : Stay in the loop on career preparation seminars, career panels, opportunities to give practice talks, etc. To join, email the CoEnv Graduate Student and Postdoctoral Services Specialist, Anthony Salazar (asalazar@uw.edu)
 	- [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
 
