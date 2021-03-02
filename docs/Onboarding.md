@@ -1,6 +1,6 @@
 Onboarding to the [Roberts Lab](https://faculty.washington.edu/sr320) at the [University of Washington](https://www.washington.edu/).
 
-For newcomers, please read the following pages. Please read carefully, complete any required tasks (e.g. safety documentation), and bookmark important pages that you will need to refer to in the future.
+For newcomers, please read the following pages. Please read carefully, complete any required tasks (e.g. safety documentation).
 
 1. [Code of Conduct](Code-of-Conduct.md)
 
