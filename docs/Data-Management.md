@@ -148,12 +148,12 @@ All images should be stored in the proper species directory at http://owl.fish.w
 
 ---
 
-# Data Archiving
+## Data Archiving
 The goal for data archiving is to make your research easily understandable and reproducible in the future. It is therefore incumbent upon the researcher that, by the end of a project, care and effort is given to providing a highly organized and traceable accounting of the research that is archived in perpetuity.  At a minimum, this archive should include: raw and full processed data, complete metadata, all computer code, and any research products (manuscripts, published articles, figures, etc.).
 You will find that creating a usable data archive is much easier to do as you go, rather than waiting until the end of your project!
 
 
-## Options include     
+### Options include     
 - GitHub -> Zenodo.     
 - Figshare
 - UW ResearchWorks
