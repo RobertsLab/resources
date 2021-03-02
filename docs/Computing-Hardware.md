@@ -94,11 +94,3 @@ If you are new to using the command line (and/or other languages like R and Pyth
 - [Software Carpentry Introduction to Python](http://swcarpentry.github.io/python-novice-inflammation)
 
 - [Software Carpentry Introduction to Python](http://swcarpentry.github.io/r-novice-inflammation)
-
-### Roberts Lab Resources
-
-We have also compiled our own sets of useful bits of code (mostly "one-liners") for common tasks in our dedicated [code repo](https://github.com/RobertsLab/code).
-
-This is a particularly handy resource if you're getting stuck trying to manipulate a file and/or extract some basic info from the file (decompressing, compressing, and counting words/lines/sequences).
-
-Additionally, the [code Wiki](https://github.com/RobertsLab/code/wiki) has in-depth guides on more complex, but commonly used, computing topics.
