@@ -8,7 +8,7 @@
 
 ##### Read the entirety of:
 
-- [Roberts Lab COVID-19 Health and Safety Plan](https://github.com/RobertsLab/resources/wiki/COVID-Health-and-Safety-Plan).
+- [Roberts Lab COVID-19 Health and Safety Plan](COVID-Health-and-Safety-Plan.md).
 
 In addition to required safety protocols, it also has links to other mental health and safety resources that may be useful.
 
@@ -40,7 +40,7 @@ In addition to required safety protocols, it also has links to other mental heal
 
 5. Review our Standard Operating Protocols (SOPs) for chemical handling and disposal:
 
-    - [Roberts Lab SOPs](https://github.com/RobertsLab/resources/wiki/Chemical-Standard-Operating-Protocols-(SOP))
+    - [Roberts Lab SOPs](Chemical-Standard-Operating-Protocols.md))
 
 6. Schedule a time with Sam to tour the labs to learn the locations of phones, eye wash stations, fire extinguishers, first aid kits, emergency showers, other lab-specific points of emphasis.
 
@@ -60,7 +60,7 @@ In addition to required safety protocols, it also has links to other mental heal
 
 - [UW MyChem](https://cspc.admin.uw.edu/mychem/default.aspx)
 
-- [Roberts Lab SOPs](https://github.com/RobertsLab/resources/wiki/Chemical-Standard-Operating-Protocols-(SOP))
+- [Roberts Lab SOPs](Chemical-Standard-Operating-Protocols.md)
 
 
 ---
