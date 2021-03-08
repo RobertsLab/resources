@@ -330,6 +330,10 @@ Genome Feature Tracks
 
 Transcriptomes
 
+### [Assembly Stats Table (Google Sheet)](https://docs.google.com/spreadsheets/d/1A81cFdFw5Mlks5DWMmq0-8eVqyTXqmoCsHNWs95N_p4/edit?usp=sharing)
+
+
+
 * [hemat_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta)
 
     - MD5 = `b8d4a3c1bad2e07da8431bf70bdabfdd`
