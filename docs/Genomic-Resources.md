@@ -332,49 +332,7 @@ Transcriptomes
 
 [Assembly Stats Table (Google Sheet)](https://docs.google.com/spreadsheets/d/1A81cFdFw5Mlks5DWMmq0-8eVqyTXqmoCsHNWs95N_p4/edit?usp=sharing)
 
-* [hemat_transcriptome_v1.7.fasta](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.7.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta) (22MB)
 
-    - [Asesmbly notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html) (20200814)
-
-    - MD5 = [`24f8a515df246daaa7aafd0f671097ec`](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.7.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta.checksum.md5)
-
-    - Trinity Gene Trans Map (txt)
-
-        - [hemat_transcriptome_v1.7.fasta.gene_trans_map](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.7.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta.gene_trans_map)
-
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html): `C:86.5%[S:65.5%,D:21.0%],F:8.3%,M:5.2%,n:978`
-
-    - FastA index (```samtools faidx```)
-
-        - [hemat_transcriptome_v1.7.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta.fai)
-
-    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_diamond_blastx_v1.6_v1.7_v2.1_v3.1/hemat_transcriptome_v1.7.fasta.blastx.outfmt6) (txt; 1.3MB)
-
-    - [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200826_hemat_trinotate_transcriptome-v1.7/20200826.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (txt; 7.9MB)
-
-    - internal short-hand: includes 2018, 2019, 2020-UW with _Alveolata_ only reads.
-
-* [hemat_transcriptome_v1.6.fasta](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta) (38MB)
-
-    - [Asesmbly notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html) (20200814)
-
-    - MD5 = [`ceda90d8029ca3323d0aae8cca823c7c`](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta.checksum.md5)
-
-    - Trinity Gene Trans Map (txt)
-
-        - [hemat_transcriptome_v1.6.fasta.gene_trans_map](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta.gene_trans_map)
-
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html): `C:91.8%[S:64.9%,D:26.9%],F:6.0%,M:2.2%,n:978`
-
-    - FastA index (```samtools faidx```)
-
-        - [hemat_transcriptome_v1.6.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta.fai)
-
-    - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_diamond_blastx_v1.6_v1.7_v2.1_v3.1/hemat_transcriptome_v1.6.fasta.blastx.outfmt6) (txt; 2.0MB)
-
-    - [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200826_hemat_trinotate_transcriptome-v1.6/20200826.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (txt; 9.4MB)
-
-    - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _Alveolata_ only reads.
 
 * [hemat_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta)
 
