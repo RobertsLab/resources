@@ -1,6 +1,6 @@
 Protocols for benchwork in the lab (e.g. RNA isolation), for commonly used instruments and software (e.g. proteomics data analysis in Skyline), and for commonly performed hatchery practices and tissue sampling.
 
-Foundational protocols can be found here: <https://github.com/RobertsLab/resources/tree/master/protocols>. As they become prominent, they will be migrated here for posterity.
+Foundational protocols can be found [here](https://github.com/RobertsLab/resources/tree/master/protocols). As they become prominent, they will be migrated here for posterity.
 
 
 ## Common Physiological Assays of Interest
