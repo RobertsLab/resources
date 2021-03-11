@@ -334,61 +334,61 @@ Transcriptomes
 
 * [hemat_transcriptome_v1.7.fasta](https://gannet.fish.washington.edu/Atumefaciens/20210308_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta)
 
-  - internal short-hand: includes 2018, 2019, 2020-UW with _Alveolata_ only reads.
+      - internal short-hand: includes 2018, 2019, 2020-UW with _Alveolata_ only reads.
 
-  - MD5 = `f9c8f96a49506e1810ff4004426160d8`
+      - MD5 = `f9c8f96a49506e1810ff4004426160d8`
 
-  - FastA index (```samtools faidx```)
+      - FastA index (```samtools faidx```)
 
-      - [hemat_transcriptome_v1.7.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20210308_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.7.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta.fai)
+          - [hemat_transcriptome_v1.7.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20210308_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.7.fasta_trinity_out_dir/hemat_transcriptome_v1.7.fasta.fai)
 
-  - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/08/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html)
+      - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/08/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html)
 
-  - BUSCOs: `C:15.0%[S:12.2%,D:2.8%],F:12.3%,M:72.7%,n:978`
+      - BUSCOs: `C:15.0%[S:12.2%,D:2.8%],F:12.3%,M:72.7%,n:978`
 
-    - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html)
+          - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html)
 
-  - BLASTx Annotation
+      - BLASTx Annotation
 
-    - [hemat_transcriptome_v1.7.fasta.blastx.outfmt6](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_diamond_blastx_v1.6_v1.7_v2.1_v3.1/hemat_transcriptome_v1.7.fasta.blastx.outfmt6)
+        - [hemat_transcriptome_v1.7.fasta.blastx.outfmt6](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_diamond_blastx_v1.6_v1.7_v2.1_v3.1/hemat_transcriptome_v1.7.fasta.blastx.outfmt6)
 
-    - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Annotation-Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox.html)
+        - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Annotation-Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox.html)
 
-  - GO Terms Annotation
+      - GO Terms Annotation
 
-    - [20210310.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.7/20210309.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (Trinotate)
+        - [20210310.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.7/20210309.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (Trinotate)
 
-    - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/09/Transcriptome-Annotation-Trinotate-Hematodinium-v1.7-on-Mox.html)
+        - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/09/Transcriptome-Annotation-Trinotate-Hematodinium-v1.7-on-Mox.html)
 
 
 
 * [hemat_transcriptome_v1.6.fasta](https://gannet.fish.washington.edu/Atumefaciens/20210308_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta)
 
-  - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _Alveolata_ only reads.
+      - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _Alveolata_ only reads.
 
-  - MD5 = `f9c8f96a49506e1810ff4004426160d8`
+      - MD5 = `f9c8f96a49506e1810ff4004426160d8`
 
-  - FastA index (```samtools faidx```)
+      - FastA index (```samtools faidx```)
 
-      - [hemat_transcriptome_v1.6.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20210308_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta.fai)
+          - [hemat_transcriptome_v1.6.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20210308_hemat_trinity_v1.6_v1.7/hemat_transcriptome_v1.6.fasta_trinity_out_dir/hemat_transcriptome_v1.6.fasta.fai)
 
-  - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/08/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html)
+      - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/08/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html)
 
-  - BUSCOs: `C:26.5%[S:20.7%,D:5.8%],F:11.2%,M:62.3%,n:978`
+      - BUSCOs: `C:26.5%[S:20.7%,D:5.8%],F:11.2%,M:62.3%,n:978`
 
-    - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html)
+        - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html)
 
-  - BLASTx Annotation
+      - BLASTx Annotation
 
-    - [hemat_transcriptome_v1.6.fasta.blastx.outfmt6](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_diamond_blastx_v1.6_v1.7_v2.1_v3.1/hemat_transcriptome_v1.6.fasta.blastx.outfmt6)
+        - [hemat_transcriptome_v1.6.fasta.blastx.outfmt6](https://gannet.fish.washington.edu/Atumefaciens/20200814_hemat_diamond_blastx_v1.6_v1.7_v2.1_v3.1/hemat_transcriptome_v1.6.fasta.blastx.outfmt6)
 
-    - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Annotation-Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox.html)
+        - [Notebook entry](https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Annotation-Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox.html)
 
-  - GO Terms Annotation
+      - GO Terms Annotation
 
-    - [20210309.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.6/20210309.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)
+        - [20210309.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.6/20210309.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)
 
-    - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/09/Transcriptome-Annotation-Trinotate-Hematodinium-v1.6-on-Mox.html)
+        - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/09/Transcriptome-Annotation-Trinotate-Hematodinium-v1.6-on-Mox.html)
 
 
 * [hemat_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta)
