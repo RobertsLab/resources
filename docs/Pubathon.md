@@ -10,9 +10,9 @@ Not able to make the call? You can [register your goals here.](https://docs.goog
 
 1) **Geoduck Env Memory Genome Paper** - Hollie et al    
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
-[OSF](https://osf.io/yem8n/)    
-[GitHub](https://github.com/hputnam/Geoduck_Meth)   
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+[OSF](https://osf.io/yem8n/)
+[GitHub](https://github.com/hputnam/Geoduck_Meth)
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 
 2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
@@ -113,8 +113,13 @@ https://doi.org/10.1038/s41597-021-00842-w
 
 21) **OA impact on invertebrate reproduction* - _Laura and Yaamini_
 [Workding Draft](https://docs.google.com/document/d/1CMcxD_Hu66jx4utSQHsw9W_xg338QHCj1Gg914szHjg/edit#)
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
+22) **Epigenetic response of diploidy and triploid Pacific Oysters to desiccation stress* - _Matt_
+[Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
+[GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy)
+[Ronits Project](https://github.com/ronitjain31/gigas_ploidy)
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
 
 ---
 
