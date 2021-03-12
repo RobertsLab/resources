@@ -1,0 +1,1349 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.0.5">
+    
+    
+      
+        <title>Code Snippets - Roberts Lab Handbook</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.77f3fd56.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.7fa14f5b.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#shell-basics" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Roberts Lab Handbook" class="md-header__button md-logo" aria-label="Roberts Lab Handbook">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Roberts Lab Handbook
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code Snippets
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/RobertsLab/resources/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Roberts Lab Handbook" class="md-nav__button md-logo" aria-label="Roberts Lab Handbook">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Roberts Lab Handbook
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/RobertsLab/resources/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Lab Culture
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Lab Culture" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Lab Culture
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Onboarding/" class="md-nav__link">
+        Onboarding
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Code-of-Conduct/" class="md-nav__link">
+        Code of Conduct
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Environment-and-Expectations/" class="md-nav__link">
+        Environment and Expectations
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab-Communication/" class="md-nav__link">
+        Lab Communication
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab-Notebooks/" class="md-nav__link">
+        Lab Notebooks
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DEI-Resources/" class="md-nav__link">
+        DEI Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../External-Communication-and-Funding/" class="md-nav__link">
+        External Communication
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab-Safety/" class="md-nav__link">
+        Lab Safety
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../COVID-Health-and-Safety-Plan/" class="md-nav__link">
+        COVID Plan
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Undergraduate-contract/" class="md-nav__link">
+        Undergraduate Contract
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        Computing and Code
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Computing and Code" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Computing and Code
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Code Snippets
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Code Snippets
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shell-basics" class="md-nav__link">
+    Shell Basics
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-paired-end-fastq-files" class="md-nav__link">
+    Handling paired end FastQ files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-transfers" class="md-nav__link">
+    File Transfers
+  </a>
+  
+    <nav class="md-nav" aria-label="File Transfers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-file-from-google-drive" class="md-nav__link">
+    Download file from Google Drive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fasta" class="md-nav__link">
+    FastA
+  </a>
+  
+    <nav class="md-nav" aria-label="FastA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-fasta-file-by-minimum-sequence-length" class="md-nav__link">
+    Filter FastA File by Minimum Sequence Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fasta-to-tab-delimited" class="md-nav__link">
+    fasta to tab-delimited
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastqc" class="md-nav__link">
+    FastQC
+  </a>
+  
+    <nav class="md-nav" aria-label="FastQC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pass-space-delimited-list-of-fastq-files-to-fastqc" class="md-nav__link">
+    Pass space-delimited list of FastQ files to FastQC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blast" class="md-nav__link">
+    BLAST
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-tricks" class="md-nav__link">
+    Tips &amp; Tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips &amp; Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remove-spaces-from-filenames-in-a-directory" class="md-nav__link">
+    Remove spaces from filenames in a directory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Computing-Hardware/" class="md-nav__link">
+        Computing Hardware
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab-Software/" class="md-nav__link">
+        Lab Software
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      <label class="md-nav__link" for="__nav_3_4">
+        Mox Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Mox Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Mox Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Adding-a-User/" class="md-nav__link">
+        New User
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Logging-In/" class="md-nav__link">
+        Logging in
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Node-Types/" class="md-nav__link">
+        Node Types
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Data-Storage-and-System-Organization/" class="md-nav__link">
+        Data Storage and System Organization
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Running-a-Job/" class="md-nav__link">
+        Running a job
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Viewing-and-Interacting-with-Jobs/" class="md-nav__link">
+        Viewing and interacting with jobs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_File-Transfers/" class="md-nav__link">
+        File Transfers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Software/" class="md-nav__link">
+        Software
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Installing-Programs/" class="md-nav__link">
+        Installing software
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mox_Jupyter-Notebooks/" class="md-nav__link">
+        Jupyter Notebooks
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Databases and Catalogs
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Databases and Catalogs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Databases and Catalogs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab-Inventory/" class="md-nav__link">
+        Lab Inventory
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Pubathon/" class="md-nav__link">
+        Pubathon
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Digital-Media/" class="md-nav__link">
+        Digital Media
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Experiment-Database/" class="md-nav__link">
+        Experiment Database
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Genomic-Resources/" class="md-nav__link">
+        Genomic Resources
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../music/" class="md-nav__link">
+        Spotify Playlists
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Protocols
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Protocols" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Protocols
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Purchasing-and-Reimbursement/" class="md-nav__link">
+        Purchasing and Reimbursement
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Data-Management/" class="md-nav__link">
+        Data-Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Lab-Protocols/" class="md-nav__link">
+        Lab Protocols
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Chemical-Standard-Operating-Protocols/" class="md-nav__link">
+        Chemical SOPs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Alarm-Information/" class="md-nav__link">
+        Alarm Information
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Bioinformatic Workflows
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Bioinformatic Workflows" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Bioinformatic Workflows
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bio_Basics/" class="md-nav__link">
+        Basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bio_DNA-methylation.md" class="md-nav__link">
+        DNA Methylation Analysis
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shell-basics" class="md-nav__link">
+    Shell Basics
+  </a>
+  
+    <nav class="md-nav" aria-label="Shell Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-paired-end-fastq-files" class="md-nav__link">
+    Handling paired end FastQ files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-transfers" class="md-nav__link">
+    File Transfers
+  </a>
+  
+    <nav class="md-nav" aria-label="File Transfers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download-file-from-google-drive" class="md-nav__link">
+    Download file from Google Drive
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fasta" class="md-nav__link">
+    FastA
+  </a>
+  
+    <nav class="md-nav" aria-label="FastA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-fasta-file-by-minimum-sequence-length" class="md-nav__link">
+    Filter FastA File by Minimum Sequence Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fasta-to-tab-delimited" class="md-nav__link">
+    fasta to tab-delimited
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fastqc" class="md-nav__link">
+    FastQC
+  </a>
+  
+    <nav class="md-nav" aria-label="FastQC">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pass-space-delimited-list-of-fastq-files-to-fastqc" class="md-nav__link">
+    Pass space-delimited list of FastQ files to FastQC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blast" class="md-nav__link">
+    BLAST
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-tricks" class="md-nav__link">
+    Tips &amp; Tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Tips &amp; Tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remove-spaces-from-filenames-in-a-directory" class="md-nav__link">
+    Remove spaces from filenames in a directory
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/RobertsLab/resources/edit/master/docs/code_Snippets.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Code Snippets</h1>
+                
+                <p>A few useful code chunks.</p>
+<h2 id="shell-basics">Shell Basics</h2>
+<p>Most commands are for bash (shell) scripts.</p>
+<p>Also, assumes usage of bash &gt;=4.0.</p>
+<hr />
+<h3 id="handling-paired-end-fastq-files">Handling paired end FastQ files</h3>
+<ul>
+<li>
+<p>Create separate arrays for R1 and R2 reads</p>
+<p>With a for loop
+<div class="highlight"><pre><span></span><code><span class="c1"># Declare arrays</span>
+<span class="nv">R1_array</span><span class="o">=()</span>
+<span class="nv">R2_array</span><span class="o">=()</span>
+
+<span class="c1"># Populate arrays</span>
+<span class="k">for</span> fastq <span class="k">in</span> *R1.fq
+<span class="k">do</span>
+  <span class="nv">R1_array</span><span class="o">+=(</span><span class="si">${</span><span class="nv">fastq</span><span class="si">}</span><span class="o">)</span>
+<span class="k">done</span>
+
+<span class="k">for</span> fastq <span class="k">in</span> *R2.fq
+<span class="k">do</span>
+  <span class="nv">R2_array</span><span class="o">+=(</span><span class="si">${</span><span class="nv">fastq</span><span class="si">}</span><span class="o">)</span>
+<span class="k">done</span>
+</code></pre></div></p>
+<p>Using "globbing"
+<div class="highlight"><pre><span></span><code><span class="c1"># Declare arrays</span>
+<span class="nv">R1_array</span><span class="o">=()</span>
+<span class="nv">R2_array</span><span class="o">=()</span>
+
+<span class="c1"># Populate arrays</span>
+<span class="nv">R1_array</span><span class="o">=(</span>*R1.fq<span class="o">)</span>
+<span class="nv">R2_array</span><span class="o">=(</span>*R2.fq<span class="o">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Creating single array with paired reads</p>
+<div class="highlight"><pre><span></span><code><span class="c1">## Assumes there is only a single set of paired reads per sample</span>
+
+<span class="c1"># Declare array</span>
+<span class="nv">reads_array</span><span class="o">=()</span>
+
+<span class="c1"># Populate array</span>
+<span class="c1"># Corresponding reads will be placed next to each other in array</span>
+<span class="c1"># (e.g. sample01_R1.fq sample01_R2.fq sample02_R1.fq samples02_R2.fq)</span>
+<span class="nv">reads_array</span><span class="o">=(</span>*.fq<span class="o">)</span>
+</code></pre></div>
+</li>
+<li>
+<p>Loop through single array of paired reads</p>
+<div class="highlight"><pre><span></span><code><span class="c1">## Assumes there is only a single set of paired reads per sample</span>
+
+<span class="c1"># Declare array</span>
+<span class="nv">reads_array</span><span class="o">=()</span>
+
+<span class="c1"># Populate array</span>
+<span class="nv">reads_array</span><span class="o">=(</span>*.fq<span class="o">)</span>
+
+<span class="c1"># Loop through read pairs</span>
+<span class="c1"># Increment by 2 to process next pair of FastQ files</span>
+<span class="k">for</span> <span class="o">((</span> <span class="nv">i</span><span class="o">=</span><span class="m">0</span><span class="p">;</span> i&lt;<span class="si">${#</span><span class="nv">reads_array</span><span class="p">[@]</span><span class="si">}</span> <span class="p">;</span> <span class="nv">i</span><span class="o">+=</span><span class="m">2</span> <span class="o">))</span>
+  <span class="k">do</span>
+  <span class="nb">echo</span> <span class="s2">&quot;Read 1: </span><span class="si">${</span><span class="nv">reads_array</span><span class="p">[i]</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="nb">echo</span> <span class="s2">&quot;Read 2: </span><span class="si">${</span><span class="nv">reads_array</span><span class="p">[i+1]</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">done</span>
+</code></pre></div>
+</li>
+<li>
+<p>Create comma-separated lists of FastQ reads</p>
+<p>(E.g. This is useful when running <a href="https://github.com/BenLangmead/bowtie2"><code>bowtie2</code></a>)</p>
+<div class="highlight"><pre><span></span><code><span class="nv">R1_list</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">R1_array</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">|</span> tr <span class="s2">&quot; &quot;</span> <span class="s2">&quot;,&quot;</span><span class="k">)</span>
+<span class="nv">R2_list</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">R2_array</span><span class="p">[@]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">|</span> tr <span class="s2">&quot; &quot;</span> <span class="s2">&quot;,&quot;</span><span class="k">)</span>
+</code></pre></div>
+</li>
+</ul>
+<hr />
+<h2 id="file-transfers">File Transfers</h2>
+<div class="highlight"><pre><span></span><code>wget -r \
+--no-directories --no-parent \
+-P . \
+-A _001_val_1.fq.gz https://gannet.fish.washington.edu/metacarcinus/Salmo_Calig/analyses/20190806_TrimGalore/
+</code></pre></div>
+<h3 id="download-file-from-google-drive">Download file from Google Drive</h3>
+<p>Install <a href="https://github.com/wkentaro/gdown"><code>gdown</code></a>.</p>
+<p>Ideally, a checksum for the file hosted on Google Drive exists and be can be
+subsequently verified after downloading.</p>
+<div class="highlight"><pre><span></span><code>gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2GSxP
+</code></pre></div>
+<hr />
+<h2 id="fasta">FastA</h2>
+<h3 id="filter-fasta-file-by-minimum-sequence-length">Filter FastA File by Minimum Sequence Length</h3>
+<p>Just change the number "200" in the code below to your desired minimum sequence length.</p>
+<div class="highlight"><pre><span></span><code>$ awk <span class="s1">&#39;!/^&gt;/ { next } { getline seq } length(seq) &gt;= 200 { print $0 &quot;\n&quot; seq }&#39;</span> InputFastaFile.fasta
+</code></pre></div>
+<p>Code explanation:</p>
+<p><code>!/^&gt;/ { next }</code>:</p>
+<ul>
+<li>If a line (i.e. record) begins with a “&gt;”, go to the next line (record). The "!" tells awk to skip the regular expression that immediatley follows. The "^" tells awk that the regular expression it's looking for should only match if it's at the beginning of a line. Finally, the regular expression we're looking for in this example is the "&gt;", which denotes the sequence descriptor portion of FASTA files.</li>
+</ul>
+<p><code>{ getline seq }</code>:</p>
+<ul>
+<li>“getline” reads the next record and assigns the entire record to a variable called “seq”</li>
+</ul>
+<p><code>length(seq) &gt;=200</code>:</p>
+<ul>
+<li>If the length of the “seq” record is greater than, or equal to, 200 then…</li>
+</ul>
+<p><code>{print $0 "\n" seq&gt;}</code>:</p>
+<ul>
+<li>Print all records (<code>$0</code>) of the variable “seq” in the file that matched our conditions, each on a new line (“\n”)</li>
+</ul>
+<h3 id="fasta-to-tab-delimited">fasta to tab-delimited</h3>
+<div class="highlight"><pre><span></span><code>!perl -e &#39;$count=0; $len=0; while(&lt;&gt;) {s/\r?\n//; s/\t/ /g; if (s/^&gt;//) { if ($. != 1) {print &quot;\n&quot;} s/ |$/\t/; $count++; $_ .= &quot;\t&quot;;} else {s/ //g; $len += length($_)} print $_;} print &quot;\n&quot;; warn &quot;\nConverted $count FASTA records in $. lines to tabular format\nTotal sequence length: $len\n\n&quot;;&#39; \
+../data/GCF_000297895.1_oyster_v9_cds_from_genomic.fna &gt; ../analyses/GCF_000297895.1_oyster_v9_cds_from_genomic.tab
+</code></pre></div>
+<hr />
+<h2 id="fastqc"><a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/"><code>FastQC</code></a></h2>
+<h3 id="pass-space-delimited-list-of-fastq-files-to-fastqc">Pass space-delimited list of FastQ files to FastQC</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Set CPU threads to use</span>
+<span class="nv">threads</span><span class="o">=</span><span class="m">20</span>
+
+<span class="c1"># Populate array with FastQ files</span>
+<span class="nv">fastq_array</span><span class="o">=(</span>*.fq.gz<span class="o">)</span>
+
+<span class="c1"># Pass array contents to new variable</span>
+<span class="nv">fastqc_list</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="si">${</span><span class="nv">fastq_array</span><span class="p">[*]</span><span class="si">}</span><span class="s2">&quot;</span><span class="k">)</span>
+
+<span class="c1"># Run FastQC</span>
+<span class="c1"># NOTE: Do NOT quote ${fastqc_list}</span>
+fastqc <span class="se">\</span>
+--threads <span class="si">${</span><span class="nv">threads</span><span class="si">}</span> <span class="se">\</span>
+--outdir <span class="si">${</span><span class="nv">output_dir</span><span class="si">}</span> <span class="se">\</span>
+<span class="si">${</span><span class="nv">fastqc_list</span><span class="si">}</span>
+</code></pre></div>
+<h2 id="blast"><a href="https://www.ncbi.nlm.nih.gov/books/NBK279690/"><code>BLAST</code></a></h2>
+<div class="highlight"><pre><span></span><code>Applications/bioinfo/ncbi-blast-2.11.0+/bin/blastx \
+-query ../data/GCF_000297895.1_oyster_v9_cds_from_genomic.fna \
+-db ../blastdb/Caenorhabditis_elegans.WBcel235.pep  \
+-out ../analyses/Cg-WBcel235_blastx.tab \
+-evalue 1E-05 \
+-num_threads 4 \
+-max_target_seqs 1 \
+-max_hsps 1 \
+-outfmt &quot;6 qaccver saccver evalue&quot;
+</code></pre></div>
+<h2 id="tips-tricks">Tips &amp; Tricks</h2>
+<h3 id="remove-spaces-from-filenames-in-a-directory">Remove spaces from filenames in a directory</h3>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> file <span class="k">in</span> *<span class="p">;</span> <span class="k">do</span> mv <span class="s2">&quot;</span><span class="nv">$file</span><span class="s2">&quot;</span> <span class="si">${</span><span class="nv">file</span><span class="p">// /</span><span class="si">}</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div>
+<p><code>for file in *;</code></p>
+<ul>
+<li>A for loop that looks at all files in the current directory. The word <code>file</code> is a variable that takes on the value of each file name in the directory (one file name per loop). The <code>;</code> is needed for bash for loop formatting.</li>
+</ul>
+<p><code>do mv "$file" ${file// /};</code></p>
+<ul>
+<li>Tells bash to use the move command (<code>mv</code>) and use the current contents of the variable <code>$file</code> as the initial filename. The <code>${file// /}</code> is a substitution command that tells bash to use the contents of the <code>file</code> variable and replace all spaces (<code>//</code> ; note - there should be a space after the last slash here) with nothing (<code>/</code> - you can add text after this slash to replace with information of your choice). The The <code>;</code> is needed for bash for loop formatting.</li>
+</ul>
+<p><code>done</code>
+ - Ends the for loop</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../Undergraduate-contract/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Undergraduate Contract
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../Computing-Hardware/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Computing Hardware
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fb4a9340.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5cf3e710.min.js"></script>
+      
+    
+  </body>
+</html>
