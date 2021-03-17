@@ -1,6 +1,6 @@
 site_name: Roberts Lab Handbook
 theme:
-  name: mkdocs
+  name: material
   palette:
     scheme: slate
 markdown_extensions:
