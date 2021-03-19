@@ -146,7 +146,7 @@ Transcriptomes
 
     - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200527_cbai_diamond_blastx_transcriptome_v1.7/cbai_transcriptome_v1.7.blastx.outfmt6) (outfmt6)
 
-    - [GO Terms Annotation] (Trinotate)
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200529_cbai_trinotate_transcriptome-v1.7/20200616.cbai_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-UW with _Arthropoda_ only reads.
 
