@@ -47,6 +47,22 @@ Transcriptomes
 
 * [RNA-seq sample list](https://docs.google.com/spreadsheets/d/1d17yg5F5gKKC66O8QkTIlPxljJeuX7ZsG46pkBr1lNQ/edit#gid=0)
 
+* [cbai_transcriptome_v4.0.fasta](https://gannet.fish.washington.edu/Atumefaciens/20210317_cbai_trinity_RNAseq_transcriptome-v4.0/cbai_transcriptome_v4.0.fasta_trinity_out_dir/cbai_transcriptome_v4.0.fasta)
+
+    - MD5 = `6450d6f5650bfb5f910a5f42eef94913`
+
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/2021/03/17/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v4.0-on-Mox.html): `C:73.8%[S:45.8%,D:28.0%],F:7.9%,M:18.3%,n:978`
+
+    - FastA index (```samtools faidx```)
+
+        - [cbai_transcriptome_v4.0.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20210317_cbai_trinity_RNAseq_transcriptome-v4.0/cbai_transcriptome_v4.0.fasta_trinity_out_dir/cbai_transcriptome_v4.0.fasta.fai)
+
+    - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20210318_cbai_diamond_blastx_transcriptome-v4.0/cbai_transcriptome_v4.0.blastx.outfmt6) (outfmt6)
+
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20210318_cbai_trinotate_transcriptome-v4.0/20210318.cbai_transcriptome_v4.0.fasta.trinotate.go_annotations.txt) (Trinotate)
+
+    - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW BLASTx against NCBI _C.opilio_ genome.
+
 * [cbai_transcriptome_v3.1.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.1.fasta)
 
     - MD5 = `aeec8ffbf8fa44fb1750caee6abaf68a`
