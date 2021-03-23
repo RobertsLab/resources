@@ -8,7 +8,7 @@ Also, assumes usage of bash >=4.0.
 
 ---
 
-### Handling paired end FastQ files
+### FastQ files
 
 - Create separate arrays for R1 and R2 reads
 
@@ -41,6 +41,15 @@ Also, assumes usage of bash >=4.0.
     R2_array=(*R2.fq)
     ```
 
+    - Create comma-separated lists of FastQ reads
+
+        (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
+
+        ```bash
+        R1_list=$(echo "${R1_array[@]}" | tr " " ",")
+        R2_list=$(echo "${R2_array[@]}" | tr " " ",")
+        ```
+
 - Creating single array with paired reads
 
     ```shell
@@ -55,34 +64,50 @@ Also, assumes usage of bash >=4.0.
     reads_array=(*.fq)
     ```
 
-- Loop through single array of paired reads
+    - Loop through single array of paired reads
 
-    ```shell
-    ## Assumes there is only a single set of paired reads per sample
+        ```shell
+        ## Assumes there is only a single set of paired reads per sample
 
-    # Declare array
-    reads_array=()
+        # Declare array
+        reads_array=()
 
-    # Populate array
-    reads_array=(*.fq)
+        # Populate array
+        reads_array=(*.fq)
 
-    # Loop through read pairs
-    # Increment by 2 to process next pair of FastQ files
-    for (( i=0; i<${#reads_array[@]} ; i+=2 ))
-      do
-      echo "Read 1: ${reads_array[i]}"
-      echo "Read 2: ${reads_array[i+1]}"
-    done
-    ```
+        # Loop through read pairs
+        # Increment by 2 to process next pair of FastQ files
+        for (( i=0; i<${#reads_array[@]} ; i+=2 ))
+          do
+          echo "Read 1: ${reads_array[i]}"
+          echo "Read 2: ${reads_array[i+1]}"
+        done
+        ```
 
-- Create comma-separated lists of FastQ reads
+    - Create comma-separated lists of paired FastQ reads
 
-    (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2))
+        (E.g This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
 
-    ```bash
-    R1_list=$(echo "${R1_array[@]}" | tr " " ",")
-    R2_list=$(echo "${R2_array[@]}" | tr " " ",")
-    ```
+        ```shell
+        # Create comma-separated lists of FastQ reads
+        # Loop through read pairs
+        # Increment by 2 to process next pair of FastQ files
+        for (( i=0; i<${#fastq_array[@]} ; i+=2 ))
+        do
+          # Handle "fence post" problem
+          # associated with comma placement
+          if [[ ${i} -eq 0 ]]; then
+            R1_list="${fastq_array[${i}]},"
+            R2_list="${fastq_array[${i}+1]},"
+          elif [[ ${i} -eq $(( ${#fastq_array[@]} - 1 )) ]]; then
+            R1_list="${R1_list}${fastq_array[${i}]}"
+            R2_list="${R2_list}${fastq_array[${i}+1]}"
+          else
+            R1_list="${R1_list}${fastq_array[${i}]},"
+            R2_list="${R2_list}${fastq_array[${i}+1]},"
+          fi
+        done
+        ```
 
 ---
 
@@ -198,7 +223,7 @@ Applications/bioinfo/ncbi-blast-2.11.0+/bin/blastx \
 
 `do mv "$file" ${file// /};`
 
- - Tells bash to use the move command (`mv`) and use the current contents of the variable `$file` as the initial filename. The `${file// /}` is a substitution command that tells bash to use the contents of the `file` variable and replace all spaces (`//` ; note - there should be a space after the last slash here) with nothing (`/` - you can add text after this slash to replace with information of your choice). The The `;` is needed for bash for loop formatting.
+ - Tells bash to use the move command (`mv`) and use the current contents of the variable `$file` as the initial filename. The `${file// /}` is a substitution command that tells bash to use the contents of the `file` variable and replace all spaces (`//` ; note - there should be a space after the last slash here) with nothing (`/` - you can add text after this slash to replace with information of your choice). The `;` is needed for bash for loop formatting.
 
 `done`
  - Ends the for loop
