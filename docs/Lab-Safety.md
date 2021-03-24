@@ -28,19 +28,19 @@ In addition to required safety protocols, it also has links to other mental heal
 
     - [UW Lab Training guide](https://github.com/RobertsLab/onboarding/blob/master/lab_safety_docs/template_UW_lab_training_completion_no_shipping_20170807.pdf)
 
-      - NOTE: If you will be shipping hazardous goods (i.e. dry ice and/or ethanol), please print this form instead: [UW Lab Training guide with shipping](https://github.com/RobertsLab/onboarding/raw/master/lab_safety_docs/template_UW_lab_training_completion_with_shipping_20170807.pdf)
+        - NOTE: If you will be shipping hazardous goods (i.e. dry ice and/or ethanol), please print this form instead: [UW Lab Training guide with shipping](https://github.com/RobertsLab/onboarding/raw/master/lab_safety_docs/template_UW_lab_training_completion_with_shipping_20170807.pdf)
 
-   - Complete all the trainings marked "Yes". Online training is available here:
-      - [UW EH&S Training](https://www.ehs.washington.edu/psotrain/index.shtm)
-   - Fill out the date you completed each of the trainings
-   - Print/sign your name at the top of the form
-   - Return form to Sam
+    - Complete all the trainings marked "Yes". Online training is available here:
+        - [UW EH&S Training](https://www.ehs.washington.edu/psotrain/index.shtm)
+    - Fill out the date you completed each of the trainings
+    - Print/sign your name at the top of the form
+    - Return form to Sam
 
 4. Provide Sam with your UW NetID and he will add you as a user to the [UW MyChem system](https://cspc.admin.uw.edu/mychem/default.aspx) for access to the Roberts Lab chemical inventory and Safety Data Sheets (SDS).
 
 5. Review our Standard Operating Protocols (SOPs) for chemical handling and disposal:
 
-    - [Roberts Lab SOPs](Chemical-Standard-Operating-Protocols.md))
+    - [Roberts Lab SOPs](Chemical-Standard-Operating-Protocols.md)
 
 6. Schedule a time with Sam to tour the labs to learn the locations of phones, eye wash stations, fire extinguishers, first aid kits, emergency showers, other lab-specific points of emphasis.
 
