@@ -50,12 +50,16 @@
 <em>**Specific Hazards:**</em> Highly flammable - keep away from ignition sources.
 
 <em>**Personal Protective Equipment:**</em>
+
 - REQUIRED:
-  - Gloves
+
+    - Gloves
 
 - WHEN SPLASH POTENTIAL EXISTS
-  - Safety googles
-  - Lab Coat
+
+    - Safety googles
+
+    - Lab Coat
 
 <em>**Waste Disposal:**</em>
 
@@ -83,11 +87,14 @@
 <em>**Personal Protective Equipment:**</em>
 
 - REQUIRED:
-  - Gloves
-  - Chemical fume hood
+
+    - Gloves
+    - Chemical fume hood
+
 - WHEN SPLASH POTENTIAL EXISTS
-  - Safety googles
-  - Lab Coat
+
+    - Safety googles
+    - Lab Coat
 
 <em>**Waste Disposal:**</em>
 
@@ -210,7 +217,8 @@
 <em>**Personal Protective Equipment:**</em>
 
 - REQUIRED:
-   - Gloves
+
+     - Gloves
 
 <em>**Waste Disposal:**</em>
 
