@@ -1,6 +1,4 @@
-## Roberts Lab SOPs
 
----
 
 ### [University of Washington Lab Safety Manual](https://www.ehs.washington.edu/manuals/lsm/index.shtm)
 
