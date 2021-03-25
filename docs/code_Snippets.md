@@ -8,49 +8,63 @@ Also, assumes usage of bash >=4.0.
 
 ---
 
-### FastQ files
+## FastQ files
 
-- Create separate arrays for R1 and R2 reads
+### Create separate arrays for R1 and R2 reads
 
-    With a for loop
-    ```shell
-    # Declare arrays
-    R1_array=()
-    R2_array=()
+- With a for loop
+  ```shell
+  # Declare arrays
+  R1_array=()
+  R2_array=()
 
-    # Populate arrays
-    for fastq in *R1.fq
-    do
-      R1_array+=(${fastq})
-    done
+  # Populate arrays
+  for fastq in *R1.fq
+  do
+    R1_array+=(${fastq})
+  done
 
-    for fastq in *R2.fq
-    do
-      R2_array+=(${fastq})
-    done
-    ```
+  for fastq in *R2.fq
+  do
+    R2_array+=(${fastq})
+  done
+  ```
 
-    Using "globbing"
-    ```shell
-    # Declare arrays
-    R1_array=()
-    R2_array=()
+- Using "globbing"
+  ```shell
+  # Declare arrays
+  R1_array=()
+  R2_array=()
 
-    # Populate arrays
-    R1_array=(*R1.fq)
-    R2_array=(*R2.fq)
-    ```
+  # Populate arrays
+  R1_array=(*R1.fq)
+  R2_array=(*R2.fq)
+  ```
 
-    - Create comma-separated lists of FastQ reads
+  - Create comma-separated lists of FastQ reads
 
-        (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
+      (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
 
-        ```bash
-        R1_list=$(echo "${R1_array[@]}" | tr " " ",")
-        R2_list=$(echo "${R2_array[@]}" | tr " " ",")
+      ```bash
+      R1_list=$(echo "${R1_array[@]}" | tr " " ",")
+      R2_list=$(echo "${R2_array[@]}" | tr " " ",")
         ```
 
-- Creating single array with paired reads
+### Creating single array with paired reads
+
+```shell
+## Assumes there is only a single set of paired reads per sample
+
+# Declare array
+reads_array=()
+
+# Populate array
+# Corresponding reads will be placed next to each other in array
+# (e.g. sample01_R1.fq sample01_R2.fq sample02_R1.fq samples02_R2.fq)
+reads_array=(*.fq)
+```
+
+- Loop through single array of paired reads
 
     ```shell
     ## Assumes there is only a single set of paired reads per sample
@@ -59,63 +73,49 @@ Also, assumes usage of bash >=4.0.
     reads_array=()
 
     # Populate array
-    # Corresponding reads will be placed next to each other in array
-    # (e.g. sample01_R1.fq sample01_R2.fq sample02_R1.fq samples02_R2.fq)
     reads_array=(*.fq)
+
+    # Loop through read pairs
+    # Increment by 2 to process next pair of FastQ files
+    for (( i=0; i<${#reads_array[@]} ; i+=2 ))
+      do
+      echo "Read 1: ${reads_array[i]}"
+      echo "Read 2: ${reads_array[i+1]}"
+    done
     ```
 
-    - Loop through single array of paired reads
+- Create comma-separated lists of paired FastQ reads
 
-        ```shell
-        ## Assumes there is only a single set of paired reads per sample
+    (E.g This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
 
-        # Declare array
-        reads_array=()
+    ```shell
+    # Create comma-separated lists of FastQ reads
+    # Loop through read pairs
+    # Increment by 2 to process next pair of FastQ files
+    for (( i=0; i<${#fastq_array[@]} ; i+=2 ))
+    do
+      # Check array length for even number (i.e. paire end FastQs)
+      if [[ $(( "${#fastq_array[@]}" % 2 )) -ne 0 ]]; then
+        echo "FastQ array contains uneven number of files."
+        exit
+      fi
 
-        # Populate array
-        reads_array=(*.fq)
+      # Handle "fence post" problem
+      # associated with comma placement
+      if [[ ${i} -eq 0 ]]; then
+        R1_list="${fastq_array[${i}]},"
+        R2_list="${fastq_array[${i}+1]},"
 
-        # Loop through read pairs
-        # Increment by 2 to process next pair of FastQ files
-        for (( i=0; i<${#reads_array[@]} ; i+=2 ))
-          do
-          echo "Read 1: ${reads_array[i]}"
-          echo "Read 2: ${reads_array[i+1]}"
-        done
-        ```
+      elif [[ ${i} -eq $(( ${#fastq_array[@]} - 1 )) ]]; then
+        R1_list="${R1_list}${fastq_array[${i}]}"
+        R2_list="${R2_list}${fastq_array[${i}+1]}"
 
-    - Create comma-separated lists of paired FastQ reads
-
-        (E.g This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
-
-        ```shell
-        # Create comma-separated lists of FastQ reads
-        # Loop through read pairs
-        # Increment by 2 to process next pair of FastQ files
-        for (( i=0; i<${#fastq_array[@]} ; i+=2 ))
-        do
-          # Check array length for even number (i.e. paire end FastQs)
-          if [[ $(( "${#fastq_array[@]}" % 2 )) -ne 0 ]]; then
-            echo "FastQ array contains uneven number of files."
-            exit
-          fi
-
-          # Handle "fence post" problem
-          # associated with comma placement
-          if [[ ${i} -eq 0 ]]; then
-            R1_list="${fastq_array[${i}]},"
-            R2_list="${fastq_array[${i}+1]},"
-
-          elif [[ ${i} -eq $(( ${#fastq_array[@]} - 1 )) ]]; then
-            R1_list="${R1_list}${fastq_array[${i}]}"
-            R2_list="${R2_list}${fastq_array[${i}+1]}"
-
-          else
-            R1_list="${R1_list}${fastq_array[${i}]},"
-            R2_list="${R2_list}${fastq_array[${i}+1]},"
-          fi
-        done
-        ```
+      else
+        R1_list="${R1_list}${fastq_array[${i}]},"
+        R2_list="${R2_list}${fastq_array[${i}+1]},"
+      fi
+    done
+    ```
 
 ---
 
