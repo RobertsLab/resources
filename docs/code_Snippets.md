@@ -94,14 +94,22 @@ Also, assumes usage of bash >=4.0.
         # Increment by 2 to process next pair of FastQ files
         for (( i=0; i<${#fastq_array[@]} ; i+=2 ))
         do
+          # Check array length for even number (i.e. paire end FastQs)
+          if [[ $(( "${#fastq_array[@]}" % 2 )) -ne 0 ]]; then
+            echo "FastQ array contains uneven number of files."
+            exit
+          fi
+
           # Handle "fence post" problem
           # associated with comma placement
           if [[ ${i} -eq 0 ]]; then
             R1_list="${fastq_array[${i}]},"
             R2_list="${fastq_array[${i}+1]},"
+
           elif [[ ${i} -eq $(( ${#fastq_array[@]} - 1 )) ]]; then
             R1_list="${R1_list}${fastq_array[${i}]}"
             R2_list="${R2_list}${fastq_array[${i}+1]}"
+
           else
             R1_list="${R1_list}${fastq_array[${i}]},"
             R2_list="${R2_list}${fastq_array[${i}+1]},"
