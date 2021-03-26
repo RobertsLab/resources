@@ -212,9 +212,28 @@ Transcriptomes
 
 ---
 
-## _Crassostrea gigas_
+## _Crassostrea gigas_ - cgigas_uk_roslin_v1
+
+- [NCBI Assembly GCF_902806645.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_902806645.1/)
+
+- [A chromosome-level genome assembly for the Pacific oyster Crassostrea gigas](https://doi.org/10.1093/gigascience/giab020)
+
+- [NCBI Crassostrea gigas Annotation Release 102](https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Crassostrea_gigas/102/)
+
+
+
+
+
+
+
+
+
+
+## _Crassostrea gigas_ - oyster_v9
 
 **Related Resources**
+
+
 
 - [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/genomes/?txid=29159)
 
@@ -226,14 +245,7 @@ Transcriptomes
 
 - [TJGR](https://github.com/RobertsLab/resources/blob/master/html/tjgr.markdown)
 
-Genome: _see also [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/genomes/?txid=29159)_
-
-* []
-
-
-
-
-
+Genome:
 
 * [Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa`
 
