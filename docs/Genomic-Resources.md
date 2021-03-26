@@ -215,6 +215,9 @@ Transcriptomes
 ## _Crassostrea gigas_
 
 **Related Resources**
+
+- [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/genomes/?txid=29159)
+
 - [Compilation of DNA Methylation Genome Feature Tracks (_Crassostrea gigas_)](https://figshare.com/articles/Compilation_of_DNA_Methylation_Genome_Feature_Tracks_Crassostrea_gigas_/1456226) _circa 2015_
 
 - [Re-defining Cgigas Canonical features](http://onsnetwork.org/halfshell/2015/02/27/re-defining-cgigas-canonical-features/) _circa 2015_
@@ -223,7 +226,14 @@ Transcriptomes
 
 - [TJGR](https://github.com/RobertsLab/resources/blob/master/html/tjgr.markdown)
 
-Genome:
+Genome: _see also [NCBI Datasets](https://www.ncbi.nlm.nih.gov/datasets/genomes/?txid=29159)_
+
+* []
+
+
+
+
+
 
 * [Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Crassostrea_gigas.oyster_v9.dna_sm.toplevel.fa`
 
