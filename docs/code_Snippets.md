@@ -56,12 +56,12 @@ Also, assumes usage of bash >=4.0.
 ## Assumes there is only a single set of paired reads per sample
 
 # Declare array
-reads_array=()
+fastq_array=()
 
 # Populate array
 # Corresponding reads will be placed next to each other in array
 # (e.g. sample01_R1.fq sample01_R2.fq sample02_R1.fq samples02_R2.fq)
-reads_array=(*.fq)
+fastq_array=(*.fq)
 ```
 
 - Loop through single array of paired reads
@@ -70,17 +70,17 @@ reads_array=(*.fq)
     ## Assumes there is only a single set of paired reads per sample
 
     # Declare array
-    reads_array=()
+    fastq_array=()
 
     # Populate array
-    reads_array=(*.fq)
+    fastq_array=(*.fq)
 
     # Loop through read pairs
     # Increment by 2 to process next pair of FastQ files
-    for (( i=0; i<${#reads_array[@]} ; i+=2 ))
+    for (( i=0; i<${#fastq_array[@]} ; i+=2 ))
       do
-      echo "Read 1: ${reads_array[i]}"
-      echo "Read 2: ${reads_array[i+1]}"
+      echo "Read 1: ${fastq_array[i]}"
+      echo "Read 2: ${fastq_array[i+1]}"
     done
     ```
 
