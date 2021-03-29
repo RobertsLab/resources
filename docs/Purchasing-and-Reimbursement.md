@@ -3,9 +3,12 @@
 Here is the procedure for purchases. Generally, we are shifting to have SAFS admin staff handling purchasing as default (SAFS Purchasing Form).
 
 1. Submit initial request in [`#purchasing` channel on Slack](https://genefish.slack.com/messages/CDPNUMPFC/).
-  a. Provide link(s) to desired product(s)
+
+    a. Provide link(s) to desired product(s)
+
       - University of Washington preferred vendors should always be given priority (i.e. don't default to buying from Amazon.com)
-  b. Purchasing approval will be confirmed by Steven and he will provide the appropriate budget number & name to use
+  
+    b. Purchasing approval will be confirmed by Steven and he will provide the appropriate budget number & name to use
 
 2. Fill and submit appropriate form(s).
 
