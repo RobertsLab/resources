@@ -36,7 +36,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
           2. Have Steven sign the ```Authorization``` field by submitting form on `#purchasing` channel on Slack.
 
-          3. <a name="SubmitRequest"></a> Email completed form to Lisa Smith (or print and put in mailbox in FHS116).
+          3. <a name="SubmitRequest"></a> Email completed form to [Lisa Smith](mailto:autumn@uw.edu) (or print and put in mailbox in FHS116).
 
     - [eProcurement (Ariba)](https://ar.admin.washington.edu/AribaBuyer/uw/login.asp)
 
