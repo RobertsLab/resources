@@ -572,11 +572,13 @@ Transcriptomes:
 
 Genome:
 
-* [Pgenerosa_v074.fa](http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa`
+* [Panopea-generosa-v1.0.fa](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa) : `https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa`
 
     - [ENA Accession: GCA_902825435](https://www.ebi.ac.uk/ena/data/view/GCA_902825435)
 
     - Version of 070 containing 18 largest scaffolds ([details on subsetting](https://robertslab.github.io/sams-notebook/2019/06/25/Data-Wrangling-FastA-Subsetting-of-Pgenerosa_v070.fa-Using-samtools-faidx.html))
+
+    - [FastA file and scaffolds were renamed on 20191105](https://robertslab.github.io/sams-notebook/2019/11/05/Data-Wrangling-Rename-Pgenerosa_v074-Files-and-Scaffolds.html) (notebook)
 
     - MD5 = 32976550b9030126c07920d5f2db179c
 
