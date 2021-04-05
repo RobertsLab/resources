@@ -23,6 +23,7 @@ nav:
      - Undergraduate Contract: 'Undergraduate-contract.md'
 
    - 'Computing and Code':
+     - Best Practices: 'Computing-Best-Practices.md'
      - Code Snippets: 'code_Snippets.md'
      - Computing Hardware: 'Computing-Hardware.md'
      - Lab Software: 'Lab-Software.md'
