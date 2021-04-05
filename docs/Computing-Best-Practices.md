@@ -11,4 +11,4 @@ Here are some general resources for thinking about open and reproducible scienti
 
 ## Workshops
 
--[A crash-course in using a project-oriented workflow with Git + GitHub in scientific research](https://github.com/OARS-SAFS/projects-with-github)
+- [A crash-course in using a project-oriented workflow with Git + GitHub in scientific research](https://github.com/OARS-SAFS/projects-with-github)
