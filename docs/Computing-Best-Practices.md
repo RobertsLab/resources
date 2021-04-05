@@ -20,4 +20,4 @@ Here are some general resources for thinking about open and reproducible scienti
 
 - [FISH274 - Introduction to Data Analysis for Aquatic Sciences](https://sr320.github.io/course-fish274-2020/)
 
-- 
+- [Data Carpentry for Biologists](https://datacarpentry.org/semester-biology/)
