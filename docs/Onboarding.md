@@ -36,6 +36,7 @@ Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organi
 
 #### What do you recommend for learning more about the process and output of the labs's scientific endevours?
 
+- [Our Recent Products](http://faculty.washington.edu/sr320/?page_id=246) (website)
 - [Opportunities in Functional Genomics: a primer on lab and
 computational aspects](https://gannet.fish.washington.edu/seashell/snaps/035.037.0406.pdf) (paper)
 - [Short video tutorial on GitHub, Blast, and Jupyter](https://youtu.be/i2RcnuT5DRY) (video)   
