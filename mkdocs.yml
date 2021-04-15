@@ -1,5 +1,7 @@
 site_name: Roberts Lab Handbook
 theme:
+  name: material
+  #custom_dir: material
   palette:
 
     # Light mode
