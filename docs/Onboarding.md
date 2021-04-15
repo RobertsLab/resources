@@ -14,6 +14,19 @@ For newcomers, please read the following pages. Please read carefully, complete 
 
 6. [Computing](Computing-Hardware.md)
 
+---
+
+### IAQs
+(Initially Asked Questions) or TLDR Handbook
+
+- What things do I need to do to get "connected"?
+
+Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organization](https://github.com/RobertsLab), added to [Lab Calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America/Los_Angeles), attend Lab Meetings, post regularly to your [lab notebook](Lab-Notebooks.md).
+
+
+---
+
+
 ### Getting connected at the University of Washington
 
 At the University of Washington, there are a number of departments, schools, programs, institutes, and people that you may find beneficial to connect with. Below are some resources to help get you connected.
