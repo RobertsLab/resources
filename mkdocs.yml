@@ -1,7 +1,6 @@
 site_name: Roberts Lab Handbook
 theme:
   name: material
-  #custom_dir: material
   palette:
 
     # Light mode
@@ -16,7 +15,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue
+      primary: indigo
       accent: blue
       toggle:
         icon: material/toggle-switch
