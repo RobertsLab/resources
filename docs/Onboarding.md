@@ -16,14 +16,36 @@ For newcomers, please read the following pages. Please read carefully, complete 
 
 ---
 
-### IAQs
+### Lab IAQs
 (Initially Asked Questions) or TLDR Handbook
 
-- What things do I need to do to get "connected"?
+#### What things do I need to do to get "connected"?
 
 Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organization](https://github.com/RobertsLab), added to [Lab Calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America/Los_Angeles), attend Lab Meetings, post regularly to your [lab notebook](Lab-Notebooks.md).
 
+#### What do I need to have on my device(s) to get started?
 
+- Text editor (eg BBEdit, Sublime text)    
+- Markdown editor (eg Atom)    
+- shell (eg zsh, bash)    
+- git    
+- GitHub Desktop   
+- [JupyterLab](https://jupyter.org/install)    
+- RStudio   
+- NCBI Blast
+
+#### What do you recommend for learning more about the process and output of the labs's scientific endevours?
+
+- [Opportunities in Functional Genomics: a primer on lab and
+computational aspects](https://gannet.fish.washington.edu/seashell/snaps/035.037.0406.pdf) (paper)
+- [Short video tutorial on GitHub, Blast, and Jupyter](https://youtu.be/i2RcnuT5DRY) (video)   
+- [Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools](https://www.amazon.com/Bioinformatics-Data-Skills-Reproducible-Research/dp/1449367372/) (book)
+
+
+
+#### What do I do if I have a question?
+
+- Ask it on [our GitHub Discussion](https://github.com/RobertsLab/resources/discussions/new).
 ---
 
 
