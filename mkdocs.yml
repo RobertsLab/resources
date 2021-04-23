@@ -15,7 +15,7 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: blue
       accent: blue
       toggle:
         icon: material/toggle-switch
