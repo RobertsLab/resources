@@ -55,6 +55,7 @@ nav:
        - Software: 'mox_Software.md'
        - Installing software: 'mox_Installing-Programs.md'
        - Jupyter Notebooks: 'mox_Jupyter-Notebooks.md'
+       - RStudio Server: 'mox_RStudio-Server.md'
 
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
