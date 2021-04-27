@@ -1,4 +1,4 @@
-
+## Quick Start Guide
 
 Example SLURM Script to launch RStudio Server:
 
@@ -6,6 +6,13 @@ Example SLURM Script to launch RStudio Server:
 
     - `--mail-user=`
     - `--chdir=`
+    - `R_LIBS_USER` in `~/.Renviron`. Example:
+
+        ```shell
+        cat ~/.Renviron 
+        # Set local library installation path
+        R_LIBS_USER=/gscratch/srlab/${USER}/R_libs_singularity
+        ```
 
 - Script uses the following Singularity container: `rstudio-4.0.2.sjw-01`.
 
@@ -96,3 +103,6 @@ singularity exec \
 /gscratch/srlab/programs/singularity_containers/rstudio-4.0.2.sjw-01 \
 rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
 ```
+
+## Create/customize your own Singularity Rstudio Server container
+
