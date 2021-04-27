@@ -14,8 +14,6 @@ Example SLURM Script to launch RStudio Server:
         R_LIBS_USER=/gscratch/srlab/${USER}/R_libs_singularity
         ```
 
-- Script uses the following Singularity container: `rstudio-4.0.2.sjw-01`.
-
 - After submitting script, view the SLURM output file located in `--chdir=` for information on:
 
     1. How to create tunnel to Mox node.
@@ -25,6 +23,8 @@ Example SLURM Script to launch RStudio Server:
     3. Username/password to enter into RStudio Server interface.
 
     4. How to terminate RStudio Server and the SLURM job.
+
+- Script uses the following Singularity container: `rstudio-4.0.2.sjw-01`.
 
 ```shell
 #!/bin/bash
@@ -106,3 +106,27 @@ rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
 
 ## Create/customize your own Singularity Rstudio Server container
 
+
+NOTE: Instructions incomplete as of this commit! Updates coming soon.
+
+1. Log into Emu/Roadrunner.
+
+2. Enter the container at the command line:
+
+    `<command>`
+
+3. Run `R`:
+
+    - `R`
+
+    ![screenshot of starting R in Singularity container]()
+
+4. Install package(s) of your choosing using standard `install.packages()` function in `R`.
+
+5. Quit `R`:
+
+    - `quit()`
+
+6. Exit the container:
+
+    - `exit`
