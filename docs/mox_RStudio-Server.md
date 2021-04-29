@@ -138,7 +138,7 @@ NOTE: Instructions incomplete as of this commit! Updates coming soon.
 3. Update/install system packages:
 
     ```shell
-    apt update && apt install -y \
+    apt -y update && apt -y install \
     libbz2-dev \
     liblzma-dev \
     libxml2 \
