@@ -24,7 +24,7 @@ Example SLURM Script to launch RStudio Server:
 
     4. How to terminate RStudio Server and the SLURM job.
 
-- Script uses the following Singularity container: `rstudio-4.0.2.sjw-01`.
+- Example script uses the following Singularity container image: `rstudio-4.0.2.sjw-v1.0`.
 
 ```shell
 #!/bin/bash
@@ -47,7 +47,22 @@ Example SLURM Script to launch RStudio Server:
 ## Specify the working directory for this job
 #SBATCH --chdir=
 
+
+################################################################
+# Set user-defined variables inside this box.
+
+# Set container path
+container_path="/gscratch/srlab/programs/singularity_containers"
+
+# Set container name
+container="rstudio-4.0.2.sjw-v1.0"
+################################################################
+
+## MAKE NO CHANGES BELOW THIS LINE
+
 module load singularity
+
+
 
 export PASSWORD=$(openssl rand -base64 15)
 # get unused socket per https://unix.stackexchange.com/a/132524
@@ -93,40 +108,92 @@ then
   echo 'R_LIBS_USER=~/R/%p-library/%v' >> ${HOME}/.Renviron
 fi
 
-# This example bind mounts the /project directory on the host into the Singularity container.
+# This example bind mounts the /gscratch/scrubbed/${USER} directory on the host into the Singularity container.
 # By default the only host file systems mounted within the container are $HOME, /tmp, /proc, /sys, and /dev.
 singularity exec \
 --bind="$TMPDIR/var/lib:/var/lib/rstudio-server" \
 --bind="$TMPDIR/var/run:/var/run/rstudio-server" \
 --bind="$TMPDIR/tmp:/tmp" \
 --bind=/gscratch/scrubbed/${USER} \
-/gscratch/srlab/programs/singularity_containers/rstudio-4.0.2.sjw-01 \
+${container_path}/${container} \
 rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
 ```
 
+---
+
 ## Create/customize your own Singularity Rstudio Server container
 
+NOTE: These instructions require an existing installation of [Singularity](https://sylabs.io/guides/3.0/user-guide/index.html) - which is only avaible for Linux.
 
 NOTE: Instructions incomplete as of this commit! Updates coming soon.
 
-1. Log into Emu/Roadrunner.
+1. Download/install/create a new container (if needed/desired):
 
-2. Enter the container at the command line:
+    `singularity build --sandbox rstudio-4.0.2.sandbox.simg docker://rocker/rstudio:4.0.2`
 
-    `<command>`
+2. Enter the container at the command line as root user:
 
-3. Run `R`:
+    `sudo singularity shell --writable rstudio-4.0.2.sandbox.simg/`
+
+3. Update/install system packages:
+
+    ```shell
+    apt update && apt install -y \
+    libbz2-dev \
+    liblzma-dev \
+    libxml2 \
+    libz-dev \
+    libxtst6
+    ```
+
+4. Run `R`:
 
     - `R`
 
     ![screenshot of starting R in Singularity container]()
 
-4. Install package(s) of your choosing using standard `install.packages()` function in `R`.
+5. Install BioConductor (required for many commonly used programs):
 
-5. Quit `R`:
+    ```R
+    if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+    BiocManager::install(version = "3.12")
+    ```
+
+
+6. Install package(s) of your choosing using standard `install.packages()` function in `R`.
+
+    - For example, `tidyverse` is not installed by default. To install:
+
+      ```R
+      install.packages("tidyverse")
+      ```
+
+    - If installing [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html), you'll encounter some errors. You'll need to install the following:
+
+        - matrixStats:
+
+            ```R
+            install.packages("https://cran.rstudio.com/src/contrib/matrixStats_0.58.0.tar.gz", repos=NULL, type="source")
+            ```
+
+        - MatrixGenerics:
+
+            ```R
+            BiocManager::install("MatrixGenerics")
+            ```
+
+
+8. Quit `R`:
 
     - `quit()`
 
-6. Exit the container:
+9. Exit the container:
 
     - `exit`
+
+10. Convert sandboxed container to image (needed for transfer to Mox):
+
+    `sudo singularity build rstudio-4.0.2.sjw-v1.0.simg rstudio-4.0.2.sandbox.simg/`
+
+    - This will create a file called `rstudio-4.0.2.sjw-v1.0.simg` which can be rsync'd to your desired Mox folder.
