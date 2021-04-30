@@ -125,8 +125,6 @@ rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
 
 NOTE: These instructions are written to be performed on Mox (Hyak).
 
-NOTE: Instructions incomplete as of this commit! Updates coming soon.
-
 1. Create a [Singularity definition file](https://sylabs.io/guides/3.5/user-guide/definition_files.html):
 
     - Example filename: `rstudio-4.0.2.sjw-v1.0.def`
