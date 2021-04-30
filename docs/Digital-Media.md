@@ -13,6 +13,7 @@ Laura takes us through the process of screening Olympia oyster larvae.
 Tour of the Chew hatchery and Laura's research given by Beyer.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EGzxtekC-3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Research Summary video highlighting our work with Geoduck clams and environmental conditioning.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ARcEIbmgh_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
