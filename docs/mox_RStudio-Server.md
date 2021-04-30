@@ -55,7 +55,7 @@ Example SLURM Script to launch RStudio Server:
 container_path="/gscratch/srlab/programs/singularity_containers"
 
 # Set container name
-container="rstudio-4.0.2.sjw-v1.0"
+container="rstudio-4.0.2.sjw-v1.0.sif"
 ################################################################
 
 ## MAKE NO CHANGES BELOW THIS LINE
@@ -123,77 +123,84 @@ rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
 
 ## Create/customize your own Singularity Rstudio Server container
 
-NOTE: These instructions require an existing installation of [Singularity](https://sylabs.io/guides/3.0/user-guide/index.html) - which is only avaible for Linux.
+NOTE: These instructions are written to be performed on Mox (Hyak).
 
 NOTE: Instructions incomplete as of this commit! Updates coming soon.
 
-1. Download/install/create a new container (if needed/desired):
+1. Create a [Singularity definition file](https://sylabs.io/guides/3.5/user-guide/definition_files.html):
 
-    `singularity build --sandbox rstudio-4.0.2.sandbox.simg docker://rocker/rstudio:4.0.2`
+    - Example filename: `rstudio-4.0.2.sjw-v1.0.def`
 
-2. Enter the container at the command line as root user:
+    - Here's an example with a good set of basic installations for R 4.0.2:
 
-    `sudo singularity shell --writable rstudio-4.0.2.sandbox.simg/`
+    ```
+    Bootstrap: docker
+    From: rocker/rstudio:4.0.2
+    %files
+        # Load file with R package installation commands in to container at /tmp
+        # Expects file called "r_packages_installs.R" to be in current directory.
+        r_packages_installs.R /tmp/
 
-3. Update/install system packages:
-
-    ```shell
-    apt -y update && apt -y install \
-    libbz2-dev \
-    liblzma-dev \
-    libxml2 \
-    libz-dev \
-    libxtst6
+    %post
+        # Install additinoal system packages in container
+        # Most are needed for R/RStudio dependencies
+        apt -y update
+        apt -y install libxml2 libz-dev libbz2-dev liblzma-dev libxtst6
+        
+        # Run R package installation script file
+        Rscript /tmp/r_packages_installs.R
     ```
 
-4. Run `R`:
+2. Create file `r_packages_installs.R` containing R package installation instructions.
 
-    - `R`
+    - NOTE: The container already has a base set of R packages (e.g. `ggplot2` installed).
 
-    ![screenshot of starting R in Singularity container]()
-
-5. Install BioConductor (required for many commonly used programs):
+    - Here's an example with a set of commonly used packages:
 
     ```R
+    # Update base packages
+    update.packages(ask = FALSE)
+
+    # Install BioConductor package manager
     if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
     BiocManager::install(version = "3.12")
+
+    # Install tidyverse
+    install.packages("tidyverse")
+
+    # Install matrixStats 0.58.0 (needed for DESeq2)
+    install.packages("https://cran.rstudio.com/src/contrib/matrixStats_0.58.0.tar.gz", repos=NULL, type="source")
+
+    # Install MatrixGenerics (needed for DESeq2)
+    BiocManager::install("MatrixGenerics")
+
+    # Install Methylkit
+    BiocManager::install("methylKit")
+
+    # Install WGCNA
+    BiocManager::install("WGCNA")
+
+    # Install DESeq2
+    BiocManager::install("DESeq2")
     ```
 
 
-6. Install package(s) of your choosing using standard `install.packages()` function in `R`.
+1. Log into a [build node](https://robertslab.github.io/resources/mox_Node-Types/#build-node).
 
-    - For example, `tidyverse` is not installed by default. To install:
+2. Load the Singularity module:
 
-      ```R
-      install.packages("tidyverse")
-      ```
+    `module load singularity`
 
-    - If installing [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html), you'll encounter some errors. You'll need to install the following:
+3. Build the container:
+    
+    - NOTE: Continer name will be `rstudio-4.0.2.sjw-v1.0.sif`
 
-        - matrixStats:
+    `singularity build --fakeroot rstudio-4.0.2.sjw-v1.0.sif rstudio-4.0.2.sjw-v1.0.def`
 
-            ```R
-            install.packages("https://cran.rstudio.com/src/contrib/matrixStats_0.58.0.tar.gz", repos=NULL, type="source")
-            ```
+4. Use the SLURM script above.
 
-        - MatrixGenerics:
-
-            ```R
-            BiocManager::install("MatrixGenerics")
-            ```
-
-
-8. Quit `R`:
-
-    - `quit()`
-
-9. Exit the container:
-
-    - `exit`
-
-10. Convert sandboxed container to image (needed for transfer to Mox):
-
-    `sudo singularity build rstudio-4.0.2.sjw-v1.0.simg rstudio-4.0.2.sandbox.simg/`
-
-    - This will create a file called `rstudio-4.0.2.sjw-v1.0.simg` which can be rsync'd to your desired Mox folder.
+    - NOTE: Be sure to update the script line to reflect your container name:
+    
+    `# Set container name
+container="rstudio-4.0.2.sjw-v1.0.sif"`
