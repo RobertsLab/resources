@@ -10,6 +10,7 @@ Candid media should be place in this [Team Drive](https://drive.google.com/drive
 Laura takes us through the process of screening Olympia oyster larvae.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tKy_N1dpNhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Tour of the Chew hatchery and Laura's research given by Beyer.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EGzxtekC-3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
