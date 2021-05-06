@@ -225,11 +225,11 @@ Genome feature tracks generated from the [NCBI RefSeq link](https://ftp.ncbi.nlm
 - [cgigas_uk_roslin_v1_gene.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff`
     - [cgigas_uk_roslin_v1_mRNA.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_mRNA.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_mRNA.gff`
     - [cgigas_uk_roslin_v1_CDS.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_CDS.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_CDS.gff`
-    - [cgigas_uk_roslin_v1_nonCDS.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_nonCDS.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_nonCDS.gff`
+    - [cgigas_uk_roslin_v1_nonCDS.bed](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_nonCDS.bed): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_nonCDS.bed`
     - [cgigas_uk_roslin_v1_exon.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exon.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exon.gff`
         - [cgigas_uk_roslin_v1_exonUTR.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exonUTR.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_exonUTR.gff`
-- [cgigas_uk_roslin_v1_intron.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intron.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intron.gff`
-- [cgigas_uk_roslin_v1_intergenic.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intergenic.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intergenic.gff`
+    - [cgigas_uk_roslin_v1_intron.bed](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intron.bed): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intron.bed`
+    - [cgigas_uk_roslin_v1_intergenic.bed](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intergenic.bed): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_intergenic.bed`
 
 - [cgigas_uk_roslin_v1_flanks.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_flanks.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_flanks.gff`
     - [cgigas_uk_roslin_v1_upstream.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_upstream.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_upstream.gff`
