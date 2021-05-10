@@ -40,14 +40,14 @@ ${bismark_dir}/bismark_genome_preparation \
 --path_to_aligner ${bowtie2_dir} \
 ${genome_folder}
 
-
+#cheatline for specific file naming, will change
 #/zr3644_11_R2.fastp-trim.20201206.fq.gz
 
 find ${reads_dir}*_R1.fastp-trim.20201202.fq.gz \
 | xargs basename -s _R1.fastp-trim.20201202.fq.gz | xargs -I{} ${bismark_dir}/bismark \
 --path_to_bowtie ${bowtie2_dir} \
 -genome ${genome_folder} \
--p 8 \
+-p 4 \
 -score_min L,0,-0.6 \
 --non_directional \
 -1 ${reads_dir}{}_R1.fastp-trim.20201202.fq.gz \
