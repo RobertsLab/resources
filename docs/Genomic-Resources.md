@@ -220,6 +220,8 @@ Transcriptomes
 
 - [NCBI Crassostrea gigas Annotation Release 102](https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Crassostrea_gigas/102/)
 
+- [cgigas_uk_roslin_v1_fuzznuc_CGmotif.gff](http://owl.fish.washington.edu/halfshell/genomic-databank//cgigas_uk_roslin_v1_fuzznuc_CGmotif.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_fuzznuc_CGmotif.gff` (CG motif track)
+
 Genome feature tracks generated from the [NCBI RefSeq link](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/902/806/645/GCF_902806645.1_cgigas_uk_roslin_v1/) in [this Jupyter notebook](https://github.com/RobertsLab/project-gigas-oa-meth/blob/master/code/08-Generating-Genome-Feature-Tracks.ipynb)
 
 - [cgigas_uk_roslin_v1_gene.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff): `http://owl.fish.washington.edu/halfshell/genomic-databank/cgigas_uk_roslin_v1_gene.gff`
