@@ -38,6 +38,8 @@ Only people in “critical research positions” are allowed on campus for the d
 
 * Lauren Vandepas
 
+* Mackenzie Gavery
+
 
 As of June 30,  the folks listed above are fully willing to come to work. YOU CAN CHANGE YOUR MIND AT ANY TIME. If at any point you feel unsafe or uncomfortable working on campus, tell Steven immediately and we will figure out how to complete the desired work.
 
@@ -51,19 +53,19 @@ As of June 30,  the folks listed above are fully willing to come to work. YOU CA
 
 and DAILY...
 
-* You are willing to return to on-campus work
+1) You are willing to return to on-campus work
 
-* You have not tested positive for COVID-19
+2) You have not tested positive for COVID-19
 
-* You do not have any new [COVID-19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html) as defined by CDC
+3) You do not have any new [COVID-19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html) as defined by CDC
 
-* You have completed the Working On-Site COVID-19 Symptom Attestation on [Workday](https://wd5.myworkday.com/uw/login.htmld), and do so every day you come to work if you have a UW email. All others need to attest daily @ [https://d.pr/5eQRpn](https://d.pr/5eQRpn).
+4) You have completed the Working On-Site COVID-19 Symptom Attestation on [Workday](https://wd5.myworkday.com/uw/login.htmld), and do so every day you come to work if you have a UW email. All others need to attest daily @ [https://d.pr/5eQRpn](https://d.pr/5eQRpn).
 
-* You indicate on the lab calendar when and where you will be on campus the day before coming to campus.
+5) You indicate on the lab calendar when and where you will be on campus the day before coming to campus.
 
-* Complete the Lab Daily Tracing Log each day on campus - [https://forms.gle/Pr8RauUYAkoH4zvD8](https://forms.gle/Pr8RauUYAkoH4zvD8)
+6) Complete the Lab Daily Tracing Log each day on campus - [https://forms.gle/Pr8RauUYAkoH4zvD8](https://forms.gle/Pr8RauUYAkoH4zvD8)
 
-* You adhere to the safety standards listed here.
+7) You adhere to the safety standards listed here.
 
 
 ## Scheduling
