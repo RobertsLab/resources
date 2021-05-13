@@ -28,7 +28,14 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
               - Email
 
-              - Delivery Info (select Fishery Science, Room \#116)
+              - Delivery info (Replace `<YOUR NAME>` with your name)
+
+                  ```
+                  UW Mailing Services
+                  Attn: SAFS 355020/<YOUR NAME>
+                  3900 7th Ave NE
+                  Seattle, WA 98195
+                  ```
 
               - Vendor Information
 
