@@ -26,17 +26,17 @@ Only people in “critical research positions” are allowed on campus for the d
 
 * Steven Roberts
 
-* Shelly Trigg
-
 * Yaamini Venkataraman
-
-* Jackson Roberts
 
 * Grace Crandall
 
 * Ariana Huffmyer
 
 * Crystal Simchick
+
+* Aidan Coyle
+
+* Lauren Vandepas
 
 
 As of June 30,  the folks listed above are fully willing to come to work. YOU CAN CHANGE YOUR MIND AT ANY TIME. If at any point you feel unsafe or uncomfortable working on campus, tell Steven immediately and we will figure out how to complete the desired work.
