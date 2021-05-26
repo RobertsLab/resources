@@ -47,19 +47,19 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
     - [eProcurement (Ariba)](https://ar.admin.washington.edu/AribaBuyer/uw/login.asp)
 
-      - Requires pre-authorization from Steven and the department to use. Instructions, training, and tutorials are available from [UW Procurement Services](http://finance.uw.edu/ps/).
+        - Requires pre-authorization from Steven and the department to use. Instructions, training, and tutorials are available from [UW Procurement Services](http://finance.uw.edu/ps/).
 
     - [ProCard](http://finance.uw.edu/fm/ps/how-to-buy/procurement-card)
 
-      - ProCard is a credit card issued to specific users via the University of Washington.
+        - ProCard is a credit card issued to specific users via the University of Washington.
 
-      - Graduate students are not elligible for ProCard use.
+        - Graduate students are not elligible for ProCard use.
 
-      - Sam is the only current lab member who has a ProCard.
+        - Sam is the only current lab member who has a ProCard.
 
-      - Obtaining a ProCard requires completing a [University of Washington training course](http://f2.washington.edu/fm/ps/upcoming-events).
+        - Obtaining a ProCard requires completing a [University of Washington training course](http://f2.washington.edu/fm/ps/upcoming-events).
 
-      - ProCards cannot be used for travel or meal expenses.
+        - ProCards cannot be used for travel or meal expenses.
 
 3. Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing)
 
