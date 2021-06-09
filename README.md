@@ -3,7 +3,7 @@
 
 This repository is designed to serve as the core repository for existing [Roberts Lab](http://faculty.washington.edu/sr320/) members. Repos for major research projets can be found [here](https://github.com/RobertsLab?utf8=%E2%9C%93&q=project&type=&language=).
 
-- ### Most of the material can be found in the [Roberts Lab Handbook](https://robertslab.github.io/resources/Genomic-Resources/).
+- ### Most of the material can be found in the [Roberts Lab Handbook](https://robertslab.github.io/resources/).
 
 - ### [Lab Protocols](https://github.com/RobertsLab/resources/tree/master/protocols)
 
@@ -16,7 +16,7 @@ This repository is designed to serve as the core repository for existing [Robert
 
 #### Directories and files:
 
-- ```docs/```: Folder for markdown files used for the [readthedocs Roberts Lab Handbook](https://robertslab.github.io/resources/Genomic-Resources/).
+- ```docs/```: Folder for markdown files used for the [readthedocs Roberts Lab Handbook](https://robertslab.github.io/resources/).
 
 - ```equipment_manuals/```: Manuals for lab equipment.
 
