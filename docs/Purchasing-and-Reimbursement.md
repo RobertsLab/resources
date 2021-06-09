@@ -1,5 +1,6 @@
 # SAFS Purchasing
 
+## General Purchasing
 Here is the procedure for purchases. Generally, we are shifting to have SAFS admin staff handling purchasing as default (SAFS Purchasing Form).
 
 1. Submit initial request in [`#purchasing` channel on Slack](https://genefish.slack.com/messages/CDPNUMPFC/).
