@@ -44,8 +44,9 @@ Computer specs:
 | Lenovo NextScale | E5-2680 v4 | 28 | 512 |
 | Lenovo NextScale | E5-2680 v4 | 28 | 128 |
 
-Due to the initial steep learning curve, we have a dedicated wiki to document how to use Mox:
-- [Mox Wiki](https://robertslab.github.io/resources/mox_Adding-a-User/)
+Due to the initial steep learning curve, we have a dedicated section on how to use Mox:
+
+- [New Mox User](mox_Adding-a-User.md)
 
 ## Printers
 You can send print jobs wirelessly to the Brother MFC7460DN printer in rm 209.
@@ -64,7 +65,7 @@ For Macs, you may need to change the 'Use' drop down menu:
 
 To limit clutter on this page, we've assembled a list of software currently installed on each lab computer (including our Mox node):
 
-- [Lab Software](https://robertslab.github.io/resources/Lab-Software/)
+- [Lab Software](Lab-Software.md)
 
 If you need/want any particular software installed that isn't on the list, please submit a [GitHub Issue](https://github.com/RobertsLab/resources/issues). Please consider that we prefer to use free, open-source software.
 
@@ -75,7 +76,7 @@ Reproducibility is of the utmost importance to your, and the Roberts Lab, succes
 The easiest and most robust means that we've found to aid in this goal is through the use of a [Jupyter Notebook](http://jupyter.org/). A Jupyter Notebook serves as a substitute for your Terminal (i.e. the place where you normally run your commands) and documents all commands that you run in a given session.
 
 
-- [Review our guide for using Jupyter Notebooks](https://github.com/RobertsLab/code/wiki/Jupyter-Notebook-Guide)
+- [Review our guide for using Jupyter Notebooks](Jupyter-Notebook-Guide.md)
 
 ## Learning & Other Resources
 
