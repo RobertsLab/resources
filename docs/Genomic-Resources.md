@@ -667,7 +667,7 @@ Transcriptome:
 
     - MD5 = 5a21424ecbc88c3b01daefe56bed79da
 
-Transcriptome generated from various libaries - details [here](https://robertslab.github.io/sams-notebook/2018/09/04/transcriptome-assembly-geoduck-rnaseq-data.html). [Kallisto index](https://gannet.fish.washington.edu/seashell/wd/062821/transcriptome_v5.idx) for Pgenerosa_transcriptome_v5.fasta (8.2GB): `https://gannet.fish.washington.edu/seashell/wd/062821/transcriptome_v5.idx`
+Transcriptome generated from various libaries - details [here](https://robertslab.github.io/sams-notebook/2018/09/04/transcriptome-assembly-geoduck-rnaseq-data.html). Kallisto index for Pgenerosa_transcriptome_v5.fasta (8.2GB): `https://gannet.fish.washington.edu/seashell/wd/062821/transcriptome_v5.idx`
 
 ---
 
