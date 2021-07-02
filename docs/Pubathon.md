@@ -81,7 +81,7 @@ Journal: Ecological Applications
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)      
 
 14) **Differential gonad methylation in female oysters** - _Yaamini_        
-Draft link coming soon!          
+[Working Draft](https://docs.google.com/document/d/1tEqyvmxe4CqBbq-bBeOa_r0oX_WH1SPy9ofJg26p3po/edit#heading=h.p6g45es19e8c)        
 [Github](https://github.com/RobertsLab/project-gigas-oa-meth)      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
