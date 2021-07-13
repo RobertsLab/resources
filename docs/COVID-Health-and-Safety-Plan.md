@@ -1,4 +1,4 @@
-Last updated: 14 July 2020; in effect until further notice
+Last updated: 14 July 2021; in effect until further notice
 
 See also:
 
@@ -8,11 +8,16 @@ See also:
 
 - [https://d.pr/ods7R9](https://d.pr/ods7R9)
 
+
+
 ## Plan
 
-This plan is currently maintained on the Lab GitHub Wiki and is also available via Slack, the SAFS SharePoint server, and [mirrored on Gdocs](https://docs.google.com/document/d/1UUBcdH3TZaXo-mOX_RXsrBZFwby0ctqShee4merHWPI/edit). It is updated by Steven Roberts and any updates will also be circulated by email to the entire lab group. If the COVID situation changes, we may restrict access or expand access accordingly, designate new critical personnel or remove them, and thus will revise this document and recirculate.
+This plan is currently maintained on the Lab GitHub Wiki and is also available via Slack, the SAFS SharePoint server, and [mirrored on Gdocs](https://docs.google.com/document/d/1UUBcdH3TZaXo-mOX_RXsrBZFwby0ctqShee4merHWPI/edit). It is updated by Steven Roberts and any updates will also be circulated by email to the entire lab group. 
+If you or someone else believes that the Health and Safety Plan is not being followed, notify Steven Roberts immediately and remove yourself from the unsafe situation if able. Steven Roberts will review the situation and adjust safety plan requirements and personnel designations accordingly.
 
-No one is required to work in UW facilities; only do so if you feel comfortable doing so and meet essential personnel criteria. If you or someone else believes that the Health and Safety Plan is not being followed, notify Steven Roberts immediately and remove yourself from the unsafe situation if able. Steven Roberts will review the situation and adjust safety plan requirements and personnel designations accordingly.
+If the COVID situation changes, we may restrict access or expand access according to recommendations by the University of Washington, College of the Environment and SAFS. This plan may need to be adjusted if members of the lab are at high risk for COVID-19 – accommodations should be requested through the [UW disabilities accommodation office](https://hr.uw.edu/coronavirus/policy-updates/covid-19-employment-accommodation-for-high-risk-employees/)
+
+
 
 ## Space
 
@@ -42,6 +47,18 @@ Only people in “critical research positions” are allowed on campus for the d
 
 
 As of June 30,  the folks listed above are fully willing to come to work. YOU CAN CHANGE YOUR MIND AT ANY TIME. If at any point you feel unsafe or uncomfortable working on campus, tell Steven immediately and we will figure out how to complete the desired work.
+
+Personnel who wish to come back to campus can do so once they have completed the UW COVID-19 training, and attested their vaccine status. If someone believes that the Health and Safety Plan is not being followed, please let fac_name know. fac_name will report the situation to Andre Punt and together they will review the situation. For those people who wish to return you may only come to campus if the following criteria are fulfilled:
+●	You have taken the UW back to the workplace training (URL)
+●	You have read the SAFS Return to Work Plan (URL)
+●	You have completed the associated survey (URL)
+●	You have completed attested to your vaccination status (see here for the UW COVID-19 vaccination policy)
+○	For those listed in Workday use the Workday attestation system
+○	For students not in Workday use the student reporting system
+○	Those not listed in Workday, including volunteers, should fill out and submit to the fac_name a vaccination attestation form as explained here and provided here.
+●	You adhere to the safety standards in this document.
+●	You have discussed your work arrangement (on-site, hybrid work arrangement)  with fac_name.
+![image](https://user-images.githubusercontent.com/4442039/125522593-3846684d-a64b-4c39-84f2-b480e8491503.png)
 
 
 
