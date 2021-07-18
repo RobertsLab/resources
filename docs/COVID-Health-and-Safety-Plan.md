@@ -12,7 +12,7 @@ See also:
 
 ## Plan
 
-This plan is currently maintained on the Lab GitHub Wiki and is also available via Slack, the SAFS SharePoint server, and [mirrored on Gdocs](https://docs.google.com/document/d/1UUBcdH3TZaXo-mOX_RXsrBZFwby0ctqShee4merHWPI/edit). It is updated by Steven Roberts and any updates will also be circulated by email to the entire lab group. 
+This plan is currently maintained on the Lab GitHub Wiki and is also available via Slack, the SAFS SharePoint server, and [mirrored on Gdocs](https://docs.google.com/document/d/1UUBcdH3TZaXo-mOX_RXsrBZFwby0ctqShee4merHWPI/edit). It is updated by Steven Roberts and any updates will also be circulated by email to the entire lab group.
 If you or someone else believes that the Health and Safety Plan is not being followed, notify Steven Roberts immediately and remove yourself from the unsafe situation if able. Steven Roberts will review the situation and adjust safety plan requirements and personnel designations accordingly.
 
 If the COVID situation changes, we may restrict access or expand access according to recommendations by the University of Washington, College of the Environment and SAFS. This plan may need to be adjusted if members of the lab are at high risk for COVID-19 – accommodations should be requested through the [UW disabilities accommodation office](https://hr.uw.edu/coronavirus/policy-updates/covid-19-employment-accommodation-for-high-risk-employees/)
@@ -25,71 +25,24 @@ Facilities include the labs FTR 209, FTR 213, and FTR 228, and conference space 
 
 ## Personnel
 
-Only people in “critical research positions” are allowed on campus for the duration of [Governor Inslee’s “Stay Home, Stay Healthy” order](https://www.governor.wa.gov/sites/default/files/proclamations/20-25%20Coronovirus%20Stay%20Safe-Stay%20Healthy%20%28tmp%29%20%28002%29.pdf). Staff / students are not required to work at UW facilities. You have the option to opt-out.  For our group the list of critical research employees includes people who are conducting [“long-term experiments... for which a pause would cause undue harm and/or cost.”](https://www.washington.edu/coronavirus/2020/03/24/research-update-on-stay-home-stay-healthy-directive/) These people include:
+If someone believes that the Health and Safety Plan is not being followed, please let STEVEN know. Steven will report the situation to Andre Punt and together they will review the situation. For those people who wish to return you may only come to campus if the following criteria are fulfilled:    
 
-* Sam White
+1)	You have taken the UW back to the [workplace training](https://www.ehs.washington.edu/training/covid-19-safety-training-back-workplace)    
+2)	You have read the [SAFS Return to Work Plan](https://uwnetid.sharepoint.com/:w:/r/sites/safs/covid19/_layouts/15/Doc.aspx?sourcedoc=%7BCF81CB78-485B-4E57-AD16-C8BE8C1BCD08%7D&file=SAFS_COVID-19_Phase_3%20plan.docx&action=default&mobileredirect=true)  
+3)	You have completed the [associated survey](https://forms.gle/KgiA3WwGC3sbHr8XA)    
+4) You have completed attested to your vaccination status (see [UW COVID-19 vaccination policy](https://www.ehs.washington.edu/system/files/resources/uw-COVID-19-vaccination-policy.pdf))
 
-* Steven Roberts
+  a.	For those listed in Workday use the Workday attestation system   
+      b.	For students not in Workday use the [student reporting system](https://www.ehs.washington.edu/covid-19-prevention-and-response/uw-covid-19-vaccination-policy)   
+      c.	Those not listed in Workday, including volunteers, should fill out and submit to the Steven a vaccination attestation form as explained [here](https://www.ehs.washington.edu/covid-19-prevention-and-response/uw-covid-19-vaccination-policy) and provided [here](https://www.ehs.washington.edu/system/files/resources/uw-COVID-19-vaccination-policy.pdf).
 
-* Yaamini Venkataraman
-
-* Grace Crandall
-
-* Ariana Huffmyer
-
-* Crystal Simchick
-
-* Aidan Coyle
-
-* Lauren Vandepas
-
-* Mackenzie Gavery
-
-
-As of June 30,  the folks listed above are fully willing to come to work. YOU CAN CHANGE YOUR MIND AT ANY TIME. If at any point you feel unsafe or uncomfortable working on campus, tell Steven immediately and we will figure out how to complete the desired work.
-
-Personnel who wish to come back to campus can do so once they have completed the UW COVID-19 training, and attested their vaccine status. If someone believes that the Health and Safety Plan is not being followed, please let fac_name know. fac_name will report the situation to Andre Punt and together they will review the situation. For those people who wish to return you may only come to campus if the following criteria are fulfilled:
-●	You have taken the UW back to the workplace training (URL)
-●	You have read the SAFS Return to Work Plan (URL)
-●	You have completed the associated survey (URL)
-●	You have completed attested to your vaccination status (see here for the UW COVID-19 vaccination policy)
-○	For those listed in Workday use the Workday attestation system
-○	For students not in Workday use the student reporting system
-○	Those not listed in Workday, including volunteers, should fill out and submit to the fac_name a vaccination attestation form as explained here and provided here.
-●	You adhere to the safety standards in this document.
-●	You have discussed your work arrangement (on-site, hybrid work arrangement)  with fac_name.
-![image](https://user-images.githubusercontent.com/4442039/125522593-3846684d-a64b-4c39-84f2-b480e8491503.png)
+5)	You adhere to the safety standards in this document   .   
+6)	You have discussed your work arrangement (on-site, hybrid work arrangement)  with Steven.    
 
 
 
-## Daily Requirements
 
-**For those people in “critical research positions”, you may only come to campus if the following criteria are fulfilled:**
-
-* You have completed the [EH&S COVID-19 Safety Training](https://www.ehs.washington.edu/training/covid-19-safety-training-back-workplace). Note that non-UW employees can complete the training material via https://forms.gle/JvsyXSFkvjX8oK8z8
-
-and DAILY...
-
-1) You are willing to return to on-campus work
-
-2) You have not tested positive for COVID-19
-
-3) You do not have any new [COVID-19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html) as defined by CDC
-
-4) You have completed the Working On-Site COVID-19 Symptom Attestation on [Workday](https://wd5.myworkday.com/uw/login.htmld), and do so every day you come to work if you have a UW email. All others need to attest daily @ [https://d.pr/5eQRpn](https://d.pr/5eQRpn).
-
-5) You indicate on the lab calendar when and where you will be on campus the day before coming to campus.
-
-6) Complete the Lab Daily Tracing Log each day on campus - [https://forms.gle/Pr8RauUYAkoH4zvD8](https://forms.gle/Pr8RauUYAkoH4zvD8)
-
-7) You adhere to the safety standards listed here.
-
-
-## Scheduling
-
-The [lab calendar](https://d.pr/WYJr2i) will be used to schedule time and location of individuals. In addition, the [lab-safety Slack channel](https://genefish.slack.com/archives/C016MSZ4S4F) will be used to communicate when individuals arrive in lab spaces, are actively using them, and when they leave.
-
-## Safety and security in the lab 
+## Safety and security in the lab
 
 With reduced population density in academic buildings, we need to be extra vigilant about safety and security. If you are essential personnel and you will be working in a campus building, please:
 
@@ -158,3 +111,11 @@ The UW will respond as described in [https://www.washington.edu/coronavirus/#hea
 - [Here](https://uwnetid.sharepoint.com/sites/safs/covid19/) is a list of mental health resources available to you as a member of the UW community.
 
 - Please also know that you can reach out to Steven (360-362-3626;  sr320@uw.edu) if you are struggling. I am not a counselor, but can help adjust your work assignments as needed and direct you to support resources. Prioritize your health before anything else.
+
+
+---
+
+Current members Lab approved to return to campus
+_complete form [here](https://docs.google.com/spreadsheets/d/1aipSV_tBKYkceYTkKvXoWq_N7cIna8g6HK0btF1Sea0/edit?usp=sharing)_
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRns2yGvT3QXouvEmBGgf88ZXltyHOkbuYRBdeyTiaRBQW8gAVRxoM-e7UD5op4a5gWxttlaeAM3u7M/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
