@@ -40,13 +40,6 @@ If someone believes that the Health and Safety Plan is not being followed, pleas
 6)	You have discussed your work arrangement (on-site, hybrid work arrangement)  with Steven.    
 
 
-## and DAILY...
-
-1) You have not tested positive for COVID-19    
-2) You do not have any new [COVID-19 symptoms](https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html) as defined by CDC    
-3) You have completed the Working On-Site COVID-19 Symptom Attestation on [Workday](https://wd5.myworkday.com/uw/login.htmld), and do so every day you come to work if you have a UW email. All others need to attest daily @ [https://d.pr/5eQRpn](https://d.pr/5eQRpn).    
-4) You indicate on the lab calendar when and where you will be on campus the day before coming to campus.    
-5) Complete the Lab Daily Tracing Log each day on campus - [https://forms.gle/Pr8RauUYAkoH4zvD8](https://forms.gle/Pr8RauUYAkoH4zvD8)
 
 ## Safety and security in the lab
 
