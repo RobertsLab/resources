@@ -28,17 +28,21 @@ Journal:
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
 
+11) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
+[Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)   
+[GitHub](https://github.com/RobertsLab/paper-tanner-crab)           
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
+
+
+
 
 _Tier Yellow_
-
 
 6) **Temp and Salinity effects on Salmon with sea lice** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1BJiqCxBNu4nk1PmfB3TC9gjyU5WTciRStQPSKUYVnug/edit)  
 [Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
-
-
 
 8) **Oly epigenetics by population** - _Laura, Katherine, Steven_     
 [Working Draft](https://docs.google.com/document/d/1HKIAAIzJ2-t86US8GY5PD12z7aNsKZSnt25u8QJOiaY/edit?usp=sharing)     
@@ -54,11 +58,6 @@ Journal:
 [Working Draft](https://docs.google.com/document/d/1GCqD_4S4TlIMhTGUpCOzE29-FqbBzPrJ3yyT4V2ONb0/edit)     
 [GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
-11) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
-[Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)   
-[GitHub](https://github.com/RobertsLab/paper-tanner-crab)           
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 12) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grace_      
 [Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
@@ -80,30 +79,18 @@ Journal:
 [GitHub]()      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)     
 
-16) **DNA METHYLATION PROFILING OF A CNIDARIAN-ALGAL SYMBIOSIS USING NANOPORE SEQUENCING** - _Jay_     
-https://www.biorxiv.org/content/10.1101/2021.02.01.429278v1     
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
-[GitHub](https://github.com/jldimond/Ae_meth)     
-Journal: G3
 
 17) **Oly WGBS** - _Steven_    
 [Working Draft](https://github.com/sr320/paper-oly-wgbs/blob/master/submission/Narrative.Rmd)    
 [GitHub](https://github.com/sr320/paper-oly-wgbs)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
-19) **Chromosome-scale genome assembly of the sea louse Caligus rogercresseyi by SMRT sequencing and Hi-C analysis**     
-https://doi.org/10.1038/s41597-021-00842-w    
-![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED-blue.svg)    
-[Figshare](https://figshare.com/articles/dataset/Additional_annotation_files_GenSAS/12847493)
 
 20) **Differential gene expression in Hematodinium**  - _Aidan_      
 [Working Draft](https://github.com/afcoyle/hemat_bairdii_transcriptome/tree/main/paper)    
 [GitHub](https://github.com/afcoyle/hemat_bairdii_transcriptome)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
 
-21) **OA impact on invertebrate reproduction** - _Laura and Yaamini_
-[Workding Draft](https://docs.google.com/document/d/1CMcxD_Hu66jx4utSQHsw9W_xg338QHCj1Gg914szHjg/edit#)
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 22) **Epigenetic response of diploidy and triploid Pacific Oysters to desiccation stress**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
@@ -128,6 +115,24 @@ https://doi.org/10.1016/j.jembe.2021.151604
 [GitHub](https://github.com/laurahspencer/O.lurida_Temperature)     
 ![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)   
 Journal of Experimental Marine Biology and Ecology. doi:10.1016/j.jembe.2021.151604
+
+
+16) **DNA METHYLATION PROFILING OF A CNIDARIAN-ALGAL SYMBIOSIS USING NANOPORE SEQUENCING** - _Jay_     
+https://www.biorxiv.org/content/10.1101/2021.02.01.429278v1     
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
+[GitHub](https://github.com/jldimond/Ae_meth)     
+Journal: G3
+
+
+21) **OA impact on invertebrate reproduction** - _Laura and Yaamini_
+[Workding Draft](https://docs.google.com/document/d/1CMcxD_Hu66jx4utSQHsw9W_xg338QHCj1Gg914szHjg/edit#)
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
+
+19) **Chromosome-scale genome assembly of the sea louse Caligus rogercresseyi by SMRT sequencing and Hi-C analysis**     
+https://doi.org/10.1038/s41597-021-00842-w    
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED-blue.svg)    
+[Figshare](https://figshare.com/articles/dataset/Additional_annotation_files_GenSAS/12847493)
 
 ---
 
