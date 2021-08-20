@@ -6,25 +6,15 @@
 ---
 Not able to make the call? You can [register your goals here.](https://docs.google.com/forms/d/e/1FAIpQLSecodL5dAgPhjTa_B5B2jRhwKgPlCKoPztPHrW1Cziq0vliTg/viewform) (_and see what folks register [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTGJFZPOW0nLYY8DBxHxIsdTuBc5R7Yyr9lIk_iuT2dc_SNFaxOWGmGCQIwcOzZQvHC2vtZ-B2oOLFV/pubhtml?gid=296481310&single=true)_)
 
---- 
+---
+
+_Tier Red_
 
 1) **Geoduck Env Memory Genome Paper** - Hollie et al    
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
 [OSF](https://osf.io/yem8n/)
 [GitHub](https://github.com/hputnam/Geoduck_Meth)
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
-
-2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
-[https://www.researchsquare.com/article/rs-90268/v1](https://www.researchsquare.com/article/rs-90268/v1)    
-![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
-Journal: Environmental Microbiome      
-
-3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the methylation landscape** - Shelly and Yaamini et al  
-[Working draft](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)  
-[Paper repo](https://github.com/hputnam/Meth_Compare)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)        
-Journal:  BMC Genome Biology
 
 4) **Geoduck OA and reproductive development** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
@@ -38,17 +28,17 @@ Journal:
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
 
+
+_Tier Yellow_
+
+
 6) **Temp and Salinity effects on Salmon with sea lice** - Shelly et al  
 [Working draft](https://docs.google.com/document/d/1BJiqCxBNu4nk1PmfB3TC9gjyU5WTciRStQPSKUYVnug/edit)  
 [Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 Journal:
 
-7) **Oly larvae food and temp** - _Laura_     
-[Working Draft](https://docs.google.com/document/d/1ELHOIK-iJ1UgnKi9aF_SdoqmLVe2UM9bi2G-fOuQ3RA/edit?usp=sharing)     
-[GitHub](https://github.com/laurahspencer/O.lurida_Temperature) (not cleaned up yet, though)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
-Journal: Ecological Applications
+
 
 8) **Oly epigenetics by population** - _Laura, Katherine, Steven_     
 [Working Draft](https://docs.google.com/document/d/1HKIAAIzJ2-t86US8GY5PD12z7aNsKZSnt25u8QJOiaY/edit?usp=sharing)     
@@ -119,6 +109,25 @@ https://doi.org/10.1038/s41597-021-00842-w
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy)
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
+
+_Tier Blue_
+
+2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
+[https://www.researchsquare.com/article/rs-90268/v1](https://www.researchsquare.com/article/rs-90268/v1)    
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
+Journal: Environmental Microbiome      
+
+3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the methylation landscape** - Shelly and Yaamini et al  
+[Working draft](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)  
+[Paper repo](https://github.com/hputnam/Meth_Compare)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)        
+Journal:  BMC Genome Biology
+
+7) **Latent effects of winter warming on Olympia oyster reproduction and larval viability** - _Laura_     
+https://doi.org/10.1016/j.jembe.2021.151604     
+[GitHub](https://github.com/laurahspencer/O.lurida_Temperature)     
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)   
+Journal of Experimental Marine Biology and Ecology. doi:10.1016/j.jembe.2021.151604
 
 ---
 
