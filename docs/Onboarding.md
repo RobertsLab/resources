@@ -69,7 +69,7 @@ If you experience any problems in joining these listservs, email SAFS computing 
 
 #### Undergraduate students
 
-- SAFS Undergraduate resources [Opportunities and Careers](https://fish.uw.edu/students/advising/careers/)
+- SAFS Undergraduate Resources: [Research and Internships](https://fish.uw.edu/students/undergraduate-program/research-and-internships/), [Study Abroad](https://fish.uw.edu/students/undergraduate-program/degree-overview-new/study-abroad/)
 - SAFS Undergraduate [funding](https://fish.uw.edu/students/undergraduate-program/scholarships-funding/)
 - [Undergraduate Research Symposium](https://www.washington.edu/undergradresearch/symposium/)
 - College of the Environment's undergraduate research journal, [FieldNotes](https://fieldnotesjournal.org/)
