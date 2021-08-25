@@ -8,7 +8,7 @@ NOTE: To enable attendance, all meetings are either held in person with the opti
 
 - **Biweekly Project Progress Lab Meetings** (1 hour): All members discuss their activities since the last meeting, planned activities for the next two weeks, and to get help from lab members on project-related issues.  
 
-- **Biweekly Diversity, Equity and Inclusion Meetings** (1 hour): This biweekly meeting provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. Example activities include reading articles prior to the meeting to discuss, tackling action items to improve DEI in the lab and/or department.  
+- **Biweekly Diversity, Equity and Inclusion Meetings** (1 hour): This biweekly meeting provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. Example activities include reading articles prior to the meeting to discuss, tackling action items to improve DEI in the lab and/or department. See [log of topics](https://docs.google.com/spreadsheets/d/1LCIiAqWMaJ0tPZIevUXqWyZR2SN4p9qGLgQIvWBaWgo/edit#gid=0). 
 
 - **Weekly Science Hour** (Fridays, 1:30-4:30 but join when you can): A casual meeting to hang out, and sometimes tackle science issues/questions with the "hive mind" - e.g. we spend time debugging a script, interpreting a statistical analysis, interpreting/providing feedback on figures, or discuss science concepts that require more time than is available during the biweekly lab meetings.
 
