@@ -24,11 +24,9 @@ Here is a table of computers we have in the lab that are available for use:
 | Name        | Operating System                       | Location | CPU Cores                       | Memory          | Storage               | Primary Use                              | External Drives |
 |-------------|----------------------------------------|----------|---------------------------------|-----------------|-----------------------|------------------------------------------|-----------------|
 | genefish    | macOS Sierra (10.12), Windows 7        | 230      | 2.3 GHz Intel Core i7 Quad Core | 16GB            | 1TB                   |                                          |                 |
-| bigfish     | OS X Server (10.5.8)                   | 213      | 16                              | 48GB            | 1.8TB (IPSEG_Storage) |                                          |                 |
 | roadrunner  | Ubuntu (16.04.1)                       | 213      | 16                              | 48GB            | 1.9TB                 |                                          |                 |
-| emu         | Ubuntu (16.04.1)                       | 213      | 16                              | 48GB            | 1.9TB                 |                                          |                 |
 | ostrich     | El Capitan (10.11.5)                   | 213      | 16                              | 48GB            | 1.9TB                 |                                          |                 |
-| hummingbird | Mavericks (10.8.2)                     | 213      | 16                              | 24GB            | 1.9TB                 |                                          | 1.5TB           |
+| hummingbird | Mavericks (10.8.2)                     | 213      | 16                              | 48GB            | 1.9TB                 |                                          | 1.5TB           |
 |             | Windows 7 Enterprise (64-bit)          | 228      |                                 |                 |                       | qPCR                                     |                 |
 | woodpecker  | Windows 7 Enterprise (64-bit)          | 209      | 16                              | 64GB            | 2TB                   | Bioanalyzer;NanoDrop;NanoPore;proteomics |                 |
 | swoose      | Ubuntu 16.04.1/Windows 10 Pro (64-bit) | 209      | 24                              | 72GB            | 1.5TB                 | Sam                                      | 8TB             |
