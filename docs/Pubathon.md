@@ -97,41 +97,44 @@ Journal:
 [GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy)
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
 
+
+
 _Tier Blue_
 
 2) **Coupled Microbiome Analyses Highlights Relative Functional Roles of Bacteria in a Bivalve Hatchery** - Emma et al    
-[https://www.researchsquare.com/article/rs-90268/v1](https://www.researchsquare.com/article/rs-90268/v1)    
-![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
+https://doi.org/10.1186/s40793-021-00376-z        
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)      
 Journal: Environmental Microbiome      
 
-3) **Choice of DNA methylation analyses in invertebrates requires consideration of genome characteristics and the methylation landscape** - Shelly and Yaamini et al  
+3) **Invertebrate methylomes provide insight into mechanisms of environmental tolerance and reveal methodological biases** - Shelly and Yaamini et al  
 [Working draft](https://docs.google.com/document/d/1mjYzBNSl67Siv_Wph1ZF7CUrFpJr797_6yWyrjEKbto/edit)  
 [Paper repo](https://github.com/hputnam/Meth_Compare)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)        
-Journal:  BMC Genome Biology
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)           
+Journal:  Molecular Ecology
 
 7) **Latent effects of winter warming on Olympia oyster reproduction and larval viability** - _Laura_     
 https://doi.org/10.1016/j.jembe.2021.151604     
 [GitHub](https://github.com/laurahspencer/O.lurida_Temperature)     
-![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)   
 Journal of Experimental Marine Biology and Ecology. doi:10.1016/j.jembe.2021.151604
 
 
-16) **DNA METHYLATION PROFILING OF A CNIDARIAN-ALGAL SYMBIOSIS USING NANOPORE SEQUENCING** - _Jay_     
-https://www.biorxiv.org/content/10.1101/2021.02.01.429278v1     
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg)    
+16) **DNA methylation profiling of a cnidarian-algal symbiosis using nanopore sequencing** - _Jay_     
+https://doi.org/10.1093/g3journal/jkab148   
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)  
 [GitHub](https://github.com/jldimond/Ae_meth)     
 Journal: G3
 
 
-21) **OA impact on invertebrate reproduction** - _Laura and Yaamini_
-[Workding Draft](https://docs.google.com/document/d/1CMcxD_Hu66jx4utSQHsw9W_xg338QHCj1Gg914szHjg/edit#)
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+21) **OA impact on invertebrate reproduction** - _Laura and Yaamini_    
+[Working Draft](https://docs.google.com/document/d/1CMcxD_Hu66jx4utSQHsw9W_xg338QHCj1Gg914szHjg/edit#)    
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)  
 
 
 19) **Chromosome-scale genome assembly of the sea louse Caligus rogercresseyi by SMRT sequencing and Hi-C analysis**     
 https://doi.org/10.1038/s41597-021-00842-w    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED-blue.svg)    
+Journal: Scientific Data    
 [Figshare](https://figshare.com/articles/dataset/Additional_annotation_files_GenSAS/12847493)
 
 ---
