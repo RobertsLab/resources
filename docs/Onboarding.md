@@ -85,7 +85,7 @@ If you experience any problems in joining these listservs, email SAFS computing 
   - listserv environment_grads@uw.edu : Stay updated on graduate student opportunities and seminars. Click [here](http://mailman11.u.washington.edu/mailman/listinfo/environment_grads) to join
   - [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
 
-- [SAFS Graduate Students](https://fish.uw.edu/students/graduate-program/)
+- [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/)
   - [Graduate Program Adviser Amy Fox](https://fish.uw.edu/students/advising/): amyfox@uw.edu
   - [Fisheries Interdisciplinary Network of Students (FINS)](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/): Graduate student organization within the School of Aquatic and Fishery Sciences. In addition to serving as an umbrella organization for several graduate student committees, FINS also raises funds to support student travel to conferences and organizes academic and social events throughout the year.
     - [Student travel and conference awards](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/student-awards/)
