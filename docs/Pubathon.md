@@ -31,7 +31,7 @@ Journal:
 11) **Characterization of the gene repertoire and environmentally driven expression patterns in Tanner crab (_Chionoecetes bairdi_)** - _Grace_     
 [Working Draft](https://docs.google.com/document/d/1dKwKKFfLoBPAswzMlaJ7Fk5BKDAN6C4ldv-6xpWIr9s/edit)   
 [GitHub](https://github.com/RobertsLab/paper-tanner-crab)           
-[Reviews](https://docs.google.com/document/d/1E4sNHj3TsNuItN2kXNEM5aYekyMI4p4wgo4qybXEnsI/edit)
+[Reviews](https://docs.google.com/document/d/1E4sNHj3TsNuItN2kXNEM5aYekyMI4p4wgo4qybXEnsI/edit)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
 
 
