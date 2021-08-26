@@ -9,7 +9,7 @@ User Guides
 2) https://www.bioinformatics.babraham.ac.uk/projects/bismark/
 
 
-## Use cases from our lab
+### Use cases from our lab
 
 https://github.com/RobertsLab/code/blob/master/20-bismark.sh
 
@@ -25,5 +25,5 @@ https://github.com/RobertsLab/code/blob/master/20-bismark.sh
 
 
 
-## Diagram 
+### Diagram 
 
