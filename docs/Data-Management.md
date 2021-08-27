@@ -98,7 +98,7 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 
 **Backup**   
 
-* The Google Docs spreadsheet [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit) is backed up on a regular basis? by downloading tab-delimited file and pushing to LabDocs Repository, with the file name `Nightingales.tsv`
+* The Google Docs spreadsheet [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit) is backed up on a regular basis by downloading tab-delimited file and pushing to LabDocs Repository, with the file name `Nightingales.tsv`
 
 * `owl/nightingales` is automatically backed up to two locations, both managed by Synology apps:
 
@@ -110,7 +110,7 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 
 **SRA Upload**
 
-* Sam will upload all high-throughput sequencing data to the [NCBI Short Read Archive (SRA)](https://submit.ncbi.nlm.nih.gov/about/sra/). Once submitted, the BioProject accession and a link to the NCBI BioProject will be added to the `SRA` column in the [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit).
+* Sam will upload all high-throughput sequencing data to the [NCBI Sequence Read Archive (SRA)](https://submit.ncbi.nlm.nih.gov/about/sra/). Once submitted, the BioProject accession and a link to the NCBI BioProject will be added to the `SRA` column in the [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit).
 
 
 ---
@@ -174,4 +174,4 @@ You will find that creating a usable data archive is much easier to do as you go
 Finally, data will be most usable if it is as flexible as possible.  So an excel spreadsheet with different information on different tabs is not very flexible.  Much better to have a text file, with the data in “long form”.  This means rather than have a ton of columns, have a ton of rows.
 
 see    
-Broman KW, Woo KH. (2017) Data organization in spreadsheets. PeerJ Preprints 5:e3183v1 [https://doi.org/10.7287/peerj.preprints.3183v](https://doi.org/10.7287/peerj.preprints.3183v)
+Broman KW, Woo KH. (2017) Data organization in spreadsheets. PeerJ Preprints 5:e3183v1 [https://doi.org/10.7287/peerj.preprints.3183v](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
