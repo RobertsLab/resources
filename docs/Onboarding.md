@@ -86,8 +86,8 @@ If you experience any problems in joining these listservs, email SAFS computing 
   - [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
 
 - [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/)
-  - [Assistant Director of Student Services and DEI](https://fish.uw.edu/students/advising/): iamsams@uw.edu
-  - [HR Mananger](amyfox@uw.edu) : Amy Fox 
+  - [Assistant Director of Student Services and DEI](https://fish.uw.edu/students/advising/): Samantha Scherer (iamsams@uw.edu)
+  - [HR Mananger](amyfox@uw.edu) : Amy Fox (amyfox@uw.edu) 
   - [Fisheries Interdisciplinary Network of Students (FINS)](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/): Graduate student organization within the School of Aquatic and Fishery Sciences. In addition to serving as an umbrella organization for several graduate student committees, FINS also raises funds to support student travel to conferences and organizes academic and social events throughout the year.
     - [Student travel and conference awards](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/student-awards/)
   - listserv safsgrads@uw.edu: click [here](http://mailman11.u.washington.edu/mailman/listinfo/safsgrads) to join
