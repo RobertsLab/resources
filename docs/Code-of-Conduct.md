@@ -27,17 +27,21 @@ If you have experienced harassment, notice that someone else is being harassed, 
 
 ### Support Resources at UW
 
-- [Title IX office](https://compliance.uw.edu/titleIX) (federal gender equity law)
+- [Compliance Office](https://www.washington.edu/crs/) (title IX, ADA, Compliance)
+
+- [UW title IX coordinator](https://www.washington.edu/titleix/) (federal civil rights law)
 
 - [UW Safe Campus](https://depts.washington.edu/safecamp/)
 
-- [UW Q Center](http://depts.washington.edu/qcenter/wordpress/about/about-us/) (Advocacy, mentoring, and support for queer students)
+- [UW Q Center](https://sites.uw.edu/qcenter) (Advocacy, mentoring, and support for queer students)
 
 - [Disability Resources](http://depts.washington.edu/uwdrs/)
 
 - [UW Counseling Center](http://www.washington.edu/counseling/)
 
-- [UW Health and Wellness](http://depts.washington.edu/livewell/)
+- [UW Health and Wellness](https://wellbeing.uw.edu/) 
+
+- [UW Livewell Site](http://depts.washington.edu/livewell/) (wellness training site)
 
 ---
 
