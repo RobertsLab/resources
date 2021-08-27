@@ -1,5 +1,5 @@
 
-## Annotation
+# Annotation
 
 Annotation (eg BLAST) is a key component of working with lesser studied taxa. Here are some resources to help with this.
 
