@@ -23,6 +23,8 @@ User Guides
 
 - <https://raw.githubusercontent.com/epigeneticstoocean/paper-gonad-meth/master/code/02-bismark.sh> eastern oyster data, run on Mox ![GitHub last commit](https://img.shields.io/github/last-commit/epigeneticstoocean/paper-gonad-meth)
 
+- <https://github.com/hputnam/Meth_Compare/blob/master/code/00.01-DNA-sequence-processing.md> Complete DNA processing protocol from comparison of BS methods on corals. ![GitHub last commit](https://img.shields.io/github/last-commit/hputnam/Meth_Compare/)
+
 
 
 ### Diagram 
