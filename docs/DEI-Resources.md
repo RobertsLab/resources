@@ -4,14 +4,13 @@
 
 - [UW Safe Campus](https://depts.washington.edu/safecamp/)
 
-- [UW Q Center](http://depts.washington.edu/qcenter/wordpress/about/about-us/) (Advocacy, mentoring, and support for queer students)
+- [UW Q Center](https://sites.uw.edu/qcenter) (Advocacy, mentoring, and support for queer students)
 
 - [Disability Resources](http://depts.washington.edu/uwdrs/)
 
 - [UW Counseling Center](http://www.washington.edu/counseling/)
 
-- [UW Health and Wellness](http://depts.washington.edu/livewell/)
-
+- [UW Health and Wellness](https://wellbeing.uw.edu/topic/mental-health/)
 
 ## Groups and Committees
 
@@ -20,15 +19,14 @@
 - SAFS DEI Committee: [https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-equity-inclusion-committee/](https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-equity-inclusion-committee/)
      - SAFS DEI Committee GitHub for suggested action items: [https://github.com/OARS-SAFS/DEI/issues](https://github.com/OARS-SAFS/DEI/issues)
 
-- SAFS DEI Slack channel: [https://safs-community.slack.com/archives/C014S0RHT0F](https://safs-community.slack.com/archives/C014S0RHT0F)
+- SAFS DEI Slack channel: [https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) (navigate to DEI page) 
 
-- SAFS 360: https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/
+- SAFS 360: [https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/](https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/)
 
 - College of the Environment Community Equity Initiative: Organizational information TBA
-  - click [here](https://join.slack.com/t/coecei/shared_invite/zt-h4o8hvbn-Fkro5tyYpusr5LjLqGcHpw) to join the Slack channel
+  - click [here](https://huskylink.washington.edu/organization/cei) 
 
 - College of the Environment DEI Committee: [https://environment.uw.edu/about/diversity-equity-inclusion/college-diversity-committee/](https://environment.uw.edu/about/diversity-equity-inclusion/college-diversity-committee/)
-     - CoEnv diversity events: [https://environment.uw.edu/about/diversity-equity-inclusion/news-and-events/](https://environment.uw.edu/about/diversity-equity-inclusion/news-and-events/)
 
 - Departmental Diversity Committees:
 [https://grad.uw.edu/equity-inclusion-and-diversity/programs-resources/for-faculty-and-staff/departmental-diversity-committees/](https://grad.uw.edu/equity-inclusion-and-diversity/programs-resources/for-faculty-and-staff/departmental-diversity-committees/)
@@ -69,7 +67,7 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 
 ## Articles and Reading
 
-- [Interrupting Bias in Academic Settings](https://www.ncwit.org/resources/interrupting-bias-academic-settings-0) Feb 2017. From the National Center for Women & Information Technology. “Use this resource to help you practice ways to interrupt bias in real-life situations."
+- [Interrupting Bias in Academic Settings](https://ncwit.org/resource/biasacademic/) Feb 2017. From the National Center for Women & Information Technology. “Use this resource to help you practice ways to interrupt bias in real-life situations."
 
 - [Black Scientists Call Out Racism in Their Institutions](https://www.theverge.com/21286924/science-racism-strike-stem-black-lives-matter-protests) June 2020. “Black scientists and students are sharing their experiences on Twitter of being dismissed and discriminated against in academia using the hashtag #BlackintheIvory.”
 
