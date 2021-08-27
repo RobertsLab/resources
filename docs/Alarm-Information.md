@@ -12,7 +12,7 @@ Current numbers programmed to be called in the event of an alarm state:
 
 - 1: 206-866-5141 : Steven
 
-- 2: Sam
+- 2: Sam (home number)
 
 - 3: 206-914-3735 :
 
