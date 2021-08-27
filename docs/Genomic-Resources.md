@@ -120,7 +120,6 @@ Transcriptomes
     - Also referred to as [`20200507.C_bairdi.Trinity.fasta`](https://robertslab.github.io/sams-notebook/2020/05/02/Transcriptome-Assembly-C.bairdi-All-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox.html).
 
     - MD5 = `01adbd54298495c147767b19ee5c0de9`
-  https://gannet.fish.washington.edu/Atumefaciens/20200526_cbai_trinotate_transcriptome-v3.0/20200526.cbai.trinotate.go_annotations.txt
     - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/08/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-v2.0-Transcriptome.html): `C:98.8%[S:24.9%,D:73.9%],F:0.9%,M:0.3%,n:978`
 
     - FastA index (```samtools faidx```)
@@ -166,7 +165,7 @@ Transcriptomes
 
     - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200519_cbai_diamond_blastx_transcriptome_v1.6/cbai_transcriptome_v1.6.blastx.outfmt6) (outfmt6)
 
-    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200520_cbai_trinotate_transcriptome-v1.6/20200520.cbai_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)
+    - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200520_cbai_trinotate_transcriptome-v1.6/20200616.cbai_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)
 
     - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _Arthropoda_ only reads.
 
