@@ -19,7 +19,7 @@ For the designated Technical contact (i.e. Steven or Sam):
 
 1. Proceed to the [UW-IT Groups Service](https://groups.uw.edu/).
 2. Click the "Find my groups" link in the "Find groups" section.
-3. In the search results section, there should be a link u_hyak_srlab. Cluck it
+3. In the search results section, there should be a link u_hyak_srlab. Click it
 4. It will bring up a description of your group. Click the "Membership" link.
 5. Type the UW NetID(s) into the "Add members" text field and click the "Do it" button. Newly added user(s) should now appear in the "Membership" section. An error window will appear if the user(s) cannot be added.
 6. Notify the users that they have been added.
