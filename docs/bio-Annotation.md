@@ -16,7 +16,7 @@ Annotation (eg BLAST) is a key component of working with lesser studied taxa. He
 
 - <https://github.com/RobertsLab/code/blob/master/09-blast.ipynb> - An example of how one might take a multi sequence fasta file and using NCBI Blast, compare the sequences with the Swiss-Prot Database on their own computer.
 
-- <https://github.com/RobertsLab/code/blob/master/10-blast-2-slim.ipynb> - A notebook to seamlessly take blast output to GO Slim list¶
+- <https://github.com/RobertsLab/code/blob/master/10-blast-2-slim.ipynb> - A notebook to seamlessly take blast output to GO Slim list
 
-- 
+- <https://github.com/RobertsLab/code/blob/master/script-box/complete_go_annotation_notebook.Rmd> - 
 
