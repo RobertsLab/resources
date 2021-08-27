@@ -18,7 +18,7 @@ Current numbers programmed to be called in the event of an alarm state:
 
 - 4: 206-685-3273 : Sam
 
-Alarms:
+Sensaphone Connections:
 
 - 1: Temperature sensor for ambient temperature inside of room.
 
@@ -28,7 +28,7 @@ Alarms:
 
 - 4: Not hooked to anything.
 
-Alarm meaning and acknowledgement:
+Example alarm meaning and acknowledgement:
 
 >The alarm indicates only lack of power being supplied to freezer 1.
 >
@@ -36,7 +36,7 @@ Alarm meaning and acknowledgement:
 >
 >This only acknowledges receipt, the alarm condition still exists.
 
-Alarm sequence:
+Sensaphone alarm sequence:
 
 >When the power goes off, Alarm 2 waits 10 minutes, then issues an alarm status.
 >
@@ -69,11 +69,17 @@ VWR freezer alarm set points:
 #Alarm: Avtech
 
 Alarms:
-- 1: FTR-209 Freezer [High Alarm: 5, Low Alarm: -50]
+
+- 1: FTR-213 Large Freezer [High Alarm: -20, Low Alarm: -50]. Not set up as of 2021-08-27
+
 - 2: FTR-209 Refrigerator [High Alarm: 15, Low Alarm: -5]
+
 - 3: FTR-213 Freezer [High Alarm: 5, Low Alarm: -50]
+
 - 4: FTR-213 Refrigerator [High Alarm: 15, Low Alarm: -5]
 
 Current numbers programmed to be called in the event of an alarm state:
+
 - 1: 206-866-5141 : Steven
+
 - 2: 206-685-3273 : Sam
