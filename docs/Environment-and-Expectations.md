@@ -12,9 +12,8 @@ NOTE: To enable attendance, all meetings are either held in person with the opti
 
 _Code of Conduct for DEI Meetings_
 
-```
  We are dedicated to providing a welcoming and supportive environment for all people, regardless of background, identity, physical appearance, or manner of communication. Any form of language or behavior used to exclude, intimidate, or cause discomfort will not be tolerated. This applies to all course participants (instructor, students, guests). In order to foster a positive and professional learning environment, we will be using progressive stack discussion methods and these discussion rules:
-
+```
 We will listen with the intention of understanding.
 We will monitor our own air time (aim to share the space and time so others may participate as well).
 We will respect those who do not wish to speak.
