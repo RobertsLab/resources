@@ -20,7 +20,7 @@ Be sure have a look at the following:
 
 ---
 
-## Ready to pick up a pipette?
+## Ready to Pick up a Pipette?
 
 - [Lab Safety](Lab-Safety.md)
 
@@ -50,7 +50,7 @@ Be sure have a look at the following:
 
 ---
 
-## Even more!
+## Even More!
 
 - [Experiment Database](Experiment-Database.md) - Database of all Roberts Lab experiments
 
