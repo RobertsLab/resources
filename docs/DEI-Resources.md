@@ -23,8 +23,7 @@
 
 - SAFS 360: [https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/](https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/)
 
-- College of the Environment Community Equity Initiative: Organizational information TBA
-  - click [here](https://huskylink.washington.edu/organization/cei) 
+- College of the Environment Community Equity Initiative: Organizational information [here](https://huskylink.washington.edu/organization/cei) 
 
 - College of the Environment DEI Committee: [https://environment.uw.edu/about/diversity-equity-inclusion/college-diversity-committee/](https://environment.uw.edu/about/diversity-equity-inclusion/college-diversity-committee/)
 
