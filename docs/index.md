@@ -3,7 +3,10 @@
 [Our](http://robertslab.info/) hope is this is a one-stop locale for relavant information. You can use navigation at the left, the search function, and a few quick pages of interest are highlighted below. If you see something needing updating, you should be able to click on the pencil on each page and go directly to the source to edit, or simply [submit an issue](https://github.com/RobertsLab/resources/issues/new). Do not hesitate to [join the Discussion](https://github.com/RobertsLab/resources/discussions).
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/RobertsLab/resources)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/RobertsLab/resources?color=%23FF0000)
 ![GitHub Discussions](https://img.shields.io/github/discussions/RobertsLab/resources)
+![GitHub contributors](https://img.shields.io/github/contributors/RobertsLab/resources)
+
 
 ## Just Getting Started?
 
