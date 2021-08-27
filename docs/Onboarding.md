@@ -26,8 +26,8 @@ Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organi
 #### What do I need to have on my device(s) to get started?
 
 - Text editor (eg BBEdit, Sublime text)    
-- Markdown editor (eg Atom)    
-- shell (eg zsh, bash)    
+- [Markdown](https://www.markdownguide.org/basic-syntax/) editor (eg Atom)    
+- [shell](http://swcarpentry.github.io/shell-novice/01-intro/) (eg zsh, bash)    
 - git    
 - GitHub Desktop   
 - [JupyterLab](https://jupyter.org/install)    
