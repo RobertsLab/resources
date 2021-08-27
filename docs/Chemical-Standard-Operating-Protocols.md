@@ -4,7 +4,7 @@
 
 ### Chemical Material Safety Data Sheets (MSDS) on [MyChem website](https://www.ehs.washington.edu/epomychem/index.shtm).
 
-### [UW Hazardous Waste Online Collection Request](https://depts.washington.edu/ehas/pubcookie/prod/mychemwaste/index.php)
+### [UW Hazardous Waste Online Collection Request](https://webapps.ehs.washington.edu/chemwaste/index.php)
 
 ---
 
@@ -24,7 +24,7 @@
 
 - WHEN SPLASH POTENTIAL EXISTS
 
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
@@ -55,7 +55,7 @@
 
 - WHEN SPLASH POTENTIAL EXISTS
 
-    - Safety googles
+    - Safety goggles
 
     - Lab Coat
 
@@ -91,7 +91,7 @@
 
 - WHEN SPLASH POTENTIAL EXISTS
 
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
@@ -122,7 +122,7 @@
     - Gloves
 
 - WHEN SPLASH POTENTIAL EXISTS
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
@@ -153,7 +153,7 @@
     - Gloves
 
 - WHEN SPLASH POTENTIAL EXISTS
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
@@ -186,7 +186,7 @@
     - Chemical fume hood
 
 - WHEN SPLASH POTENTIAL EXISTS
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
@@ -271,7 +271,7 @@
     - Gloves
 
 - WHEN SPLASH POTENTIAL EXISTS
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
@@ -305,7 +305,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 - REQUIRED:
     - Gloves
 - WHEN SPLASH POTENTIAL EXISTS
-    - Safety googles
+    - Safety goggles
     - Lab Coat
 
 <em>**Waste Disposal:**</em>
