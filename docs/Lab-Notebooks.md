@@ -3,6 +3,10 @@ We have been using online lab notebooks since 2007 and the platforms and workflo
 
 An online lab notebook is required of all lab members. Entries need to be organized by date and in reverse chronological order.
 
+## Notebooks
+
+- [Steven](https://sr320.github.io) ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/sr320.github.io)
+
 ## Platforms
 
 The preferred platform is GitHub. See [Laura's Notebook](laurahspencer.github.io/LabNotebook/), [Steven's Notebook](sr320.github.io), or [Yaamini's Notebook](yaaminiv.github.io).
