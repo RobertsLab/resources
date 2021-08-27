@@ -86,7 +86,8 @@ If you experience any problems in joining these listservs, email SAFS computing 
   - [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
 
 - [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/)
-  - [Graduate Program Adviser Amy Fox](https://fish.uw.edu/students/advising/): amyfox@uw.edu
+  - [Assistant Director of Student Services and DEI](https://fish.uw.edu/students/advising/): iamsams@uw.edu
+  - [HR Mananger](amyfox@uw.edu) : Amy Fox 
   - [Fisheries Interdisciplinary Network of Students (FINS)](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/): Graduate student organization within the School of Aquatic and Fishery Sciences. In addition to serving as an umbrella organization for several graduate student committees, FINS also raises funds to support student travel to conferences and organizes academic and social events throughout the year.
     - [Student travel and conference awards](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/student-awards/)
   - listserv safsgrads@uw.edu: click [here](http://mailman11.u.washington.edu/mailman/listinfo/safsgrads) to join
@@ -98,14 +99,14 @@ If you experience any problems in joining these listservs, email SAFS computing 
 	- UW Office of Postdoctoral Affairs listserv: to join, send an email request to [uwopa@uw.edu](uwopa@uw.edu)
 	- UW Postdoc Association Twitter: [@UWPostDocs](https://twitter.com/uwpostdocs?lang=en)
 	- UW Postdoc Association Slack channel: to join, send an email request to [uwpa@uw.edu](uwpa@uw.edu)
-	- [Postdoc Parenting Group](uwpa@uw.edu)
+	- [Postdoc Parenting Group](http://depts.washington.edu/uwpa/who-we-are-2/)
 	- [Postdoc Diversity Alliance](https://sites.uw.edu/uwpda)
 
-- [UW College of the Envrionment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/)
+- [UW College of the Environment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/)
 	- more CoEnv Postdoc resources: [https://environment.uw.edu/intranet/academics/postdoctoral-resources/](https://environment.uw.edu/intranet/academics/postdoctoral-resources/)
 	- listserv environment_postdocs@uw.edu : Stay in the loop on career preparation seminars, career panels, opportunities to give practice talks, etc. To join, email the CoEnv Graduate Student and Postdoctoral Services Specialist, Anthony Salazar (asalazar@uw.edu)
 	- [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
 
 - [UW SAFS Postdocs](https://fish.uw.edu/faculty-research/research/postdoctoralscholars/)
-	- [join SAFS postdoc channel on slack](https://safs-community.slack.com/archives/C011APE89FE)
+	- join SAFS postdoc channel on Slack: click [here](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) to join
 	- join the SAFS Postdocs listserv safspostdocs@uw.edu: click [here](http://mailman13.u.washington.edu/mailman/listinfo/safspostdocs) to join
