@@ -10,9 +10,9 @@ Below is a list of computing resources we have available, as well as some links 
 
 You will need accounts with the following services in order to minimally function in the Roberts Lab:
 
-- [GitHub](github.com): Needed for posting/responding to [RobertsLab/resources Issues](https://github.com/RobertsLab/resources/issues)
+- [GitHub](https://github.com): Needed for posting/responding to [RobertsLab/resources Issues](https://github.com/RobertsLab/resources/issues)
 
-- [Slack](slack.com): Needed for participation in the [Roberts Lab Slack channels](genefish.slack.com)
+- [Slack](https://slack.com): Needed for participation in the [Roberts Lab Slack channels](https://genefish.slack.com)
 
 ## Computers
 You're free to use your own computer for any computing task that you wish. However, some of the computing work that you will perform will require lengthy run times. As such, we have computers available for you to use. Plus, Roberts Lab computers have better processors and much more RAM, which will allow you to keep your computer free for doing fun stuff, like reading Facebook (or scientific papers).
@@ -103,4 +103,4 @@ If you are new to using the command line (and/or other languages like R and Pyth
 
 - [Software Carpentry Introduction to Python](http://swcarpentry.github.io/python-novice-inflammation)
 
-- [Software Carpentry Introduction to Python](http://swcarpentry.github.io/r-novice-inflammation)
+- [Software Carpentry Introduction to R](http://swcarpentry.github.io/r-novice-inflammation)
