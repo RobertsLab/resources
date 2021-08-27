@@ -1,5 +1,10 @@
 A suite of _core_ fundamental Bioinformatic workflows.
 
+## Shell
+- [Introducing the Shell](http://swcarpentry.github.io/shell-novice/01-intro/)
+- [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/)
+
+
 ## Sequence Alignment - BLAST
 
 Tutorial from FISH546 - starting from a fasta and downloading blast.
