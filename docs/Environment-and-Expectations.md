@@ -36,7 +36,7 @@ We will not participate in ad hominem attacks.
 
 My mentoring approach will be somewhat specific per person, however generally I view my role as providing you the resources to succeed in **your** educational experience. There will be regular lab meetings where we primarily address any challenges members might be having while reaching their goals. Goals are important and I will working with you in developing long-term goals, however you will need to develop monthly goals. You might not always achieve them, but this helps you stay focused. Beyond lab meetings we have established a [number means of communication](https://github.com/RobertsLab/resources/wiki/Lab-Communication).
 
-Utmostly important as you get into research, is to communicate issues and challenges. I will work with you to address, though often we might find that the most effective solutions are resources outside of the lab.
+Utmostly important as you get into research, is to communicate issues and challenges. I will work with you to address these, though often we might find that the most effective solutions are resources outside of the lab.
 
 I will provide honest feedback in an effort to push you to be your best. This will include pushing you to consistently be stepping back to re-evaluate your work in a larger context, and consider areas of improvement.
 
@@ -55,7 +55,7 @@ Writing. Always be doing it. Do not wait until you have completed a project but 
 ### Graduate Students
 Graduate school is not easy, and not for everyone. Graduate school will be very challenging, and for most, very rewarding. Graduate school is not a job where you check-in and check-out each day, but rather an educational endevour where you gain a deep understanding of a scientific area and complete your tenure by contributing a valuable research product, that substantially advances knowledge. Understanding this fact might help you deal with the challenges and frustrations you will face.
 
-There is a lot going on during your graduate education. Staying organized and not overwhelmed is key. In the same vein, time-management is key. There are several strategies for this. I suggest reading "Getting Things Done". Finding time outside of lab to recharge your mind and body is essential.
+There is a lot going on during your graduate education. Staying organized and not overwhelmed is key. In the same vein, time-management is key. There are several strategies for this. I suggest reading ["Getting Things Done"](https://gettingthingsdone.com/what-is-gtd/). Finding time outside of lab to recharge your mind and body is essential.
 
 Graduate students will complete a [Graduate Research Plan](https://fish.uw.edu/wp-content/uploads/sites/29/2020/06/GSAR.pdf) that will be updated on a quarterly basis.
 
