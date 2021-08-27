@@ -4,13 +4,13 @@ This is a living document that lists conferences, community outreach, and fundin
 
 1. [National Shellfisheries Association (NSA) annual meeting](https://www.shellfish.org/annual-meeting). March, USA, location changes annually.  Travel grant: [NSA Student Endowment Fund](https://www.shellfish.org/sef-student-presentation-and-travel-awards) 
 
-2. [Pacific Shellfish Growers' Association / Pacific Coast NSA chapter annual meeting](https://pcsga.org/annual-conferences/). September, PNW. Travel grant: Apply for travel award upon submitting poster/presentation abstract. 
+2. [Pacific Shellfish Growers' Association](https://pcsga.org/) / [Pacific Coast NSA chapter annual meeting](https://pcsga.org/events/list/). September, PNW. Travel grant: Apply for travel award upon submitting poster/presentation abstract. 
 
-3. Aquaculture America (need to google link). February, USA, location changes annually. 
+3. [Aquaculture America](https://www.usaquaculture.org/) February, USA, location changes annually. 
 
 4. [Salish Sea Ecosystem Conference](https://wp.wwu.edu/salishseaconference/). April, Washington or British Columbia. 
 
-5. [Western Society of Naturalists](https://www.wsn-online.org/). October/November, U.S. west coast. [Student travel award](https://www.wsn-online.org/student-travel-award-applications/). 
+5. [Western Society of Naturalists](https://www.wsn-online.org/). October/November, U.S. west coast. 
 
 6. [Association for the Sciences of Limnology and Oceanography (ASLO) Aquatic Sciences](https://www.aslo.org/page/meetings). February/March, international. 
 
@@ -29,12 +29,12 @@ This is a living document that lists conferences, community outreach, and fundin
 
 ## Posters 
 - [How to print a poster](https://github.com/RobertsLab/resources/blob/master/protocols/poster-printing.md)
-- Traditional poster example
+- [Traditional poster example](https://figshare.com/articles/poster/Influence_of_ocean_acidification_on_eastern_Crassostrea_virginica_and_Pacific_oyster_Crassostrea_gigas_DNA_methylation/11868231/1)
 - [Poster 2.0 example](https://osf.io/ef53g/)
 
 ## Community Outreach & Education 
-- [Students Explore Aquatic Sciences](https://sites.uw.edu/seasafs/): SEAS is an outreach program at UW. The program provides project-based learning activities, free of charge, for K-12 students in the Seattle area.
-- Ocean Inquiry Project 
+- [Students Explore Aquatic Sciences](https://fish.uw.edu/alumni-community/students-explore-aquatic-sciences-seas/): SEAS is an outreach program at UW. The program provides project-based learning activities, free of charge, for K-12 students in the Seattle area.
+- [Ocean Inquiry Project](http://www.oceaninquiry.org/about/) 
 
 ## Fellowships & Research Grants 
 The following are sources of funding, and people in the Roberts Lab who previously received them (with year)  
@@ -57,14 +57,13 @@ The following are sources of funding, and people in the Roberts Lab who previous
   - Michael Castagna Student Grant for Applied Research, $1,250
   - George R. Abbe Student Research Grant, $1,250 
 
-[Libbie H. Hyman Memorial Scholarship](http://sicb.org/grants/hyman/) 
+[Libbie H. Hyman Memorial Scholarship](https://www.scholarships.com/financial-aid/college-scholarships/scholarships-by-grade-level/graduate-scholarships/libbie-h-hyman-memorial-scholarship/) for undergrads also
  - $1,840 towards invertebrate coursework or research at a field station (e.g. Friday Harbor Labs). Laura Spencer (2017)
 
-## Undergraduate Funding
--  [Libbie H. Hyman Memorial Scholarship](http://sicb.org/grants/hyman/) - _see above_. 
+[Other Field Station Research Grants](https://fhl.uw.edu/research/research-fellowships/) for undergrads also
 
 ## Postdoc Funding
 
 ## Grants for study abroad / internships 
 - [NSF Graduate Research Opportunity Worldwide (GROW)](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504876); only available to NSF GRFP recipients. Recipients: Laura Spencer (2018) 
-- [Australia-Americas PhD Research Internship program](https://www.science.org.au/opportunities/travel/grants-and-exchange/2018-australia-americas-phd-research-internship-program). Recipients: Laura Spencer (2018) 
+- [Australia-Americas PhD Research Internship program](https://blogs.adelaide.edu.au/researchbulletin/2017/11/21/australian-academy-of-science-2018-australia-americas-phd-research-internship-program/). Recipients: Laura Spencer (2018) 
