@@ -37,7 +37,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -70,7 +70,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -104,7 +104,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -135,7 +135,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -167,7 +167,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -200,7 +200,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -225,7 +225,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -253,7 +253,7 @@
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 
@@ -287,7 +287,7 @@ _NOTE: Disposal instructions are only for dilute EtBr concentrations (< 10ug/mL)
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
 
 ---
 ### [Qiagen Kits](#qiagen_kits)
@@ -319,4 +319,4 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 <em>**Prepared by:**</em>
 
 - Name: Sam White
-- Date: 20161024
+- Date: 2016-10-24
