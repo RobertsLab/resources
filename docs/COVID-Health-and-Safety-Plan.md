@@ -21,7 +21,7 @@ If the COVID situation changes, we may restrict access or expand access accordin
 
 ## Space
 
-Facilities include the labs FTR 209, FTR 213, and FTR 228, and conference space and offices in FTR 230, FTR 232, FTR 234, FTR 132, and FTR 134 (Appendix: Figures 1 & 2).  See also [University Requirements for Covid-19 Prevention in the Workplace](http://we.discover.uw.edu/Ma0R0r0zAt0jd00Wh0EH0I2)
+Facilities include the labs FTR 209, FTR 213, and FTR 228, and conference space and offices in FTR 230, FTR 232, FTR 234, FTR 132, and FTR 134 (Appendix: Figures 1 & 2).  See also [University Requirements for Covid-19 Prevention in the Workplace](https://www.ehs.washington.edu/system/files/resources/COVID-19-Prevention-Plan-for-the-Workplace.pdf)
 
 ## Personnel
 
