@@ -50,7 +50,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
         - Requires pre-authorization from Steven and the department to use. Instructions, training, and tutorials are available from [UW Procurement Services](http://finance.uw.edu/ps/).
 
-    - [ProCard](http://finance.uw.edu/fm/ps/how-to-buy/procurement-card)
+    - [ProCard](https://finance.uw.edu/ps/how-to-buy/procurement-card)
 
         - ProCard is a credit card issued to specific users via the University of Washington.
 
@@ -88,7 +88,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 ## [Biochem Stores](https://depts.washington.edu/biowww/pages/biochem-stores.shtml) Purchasing
 ![This is what the store front looks like](https://raw.githubusercontent.com/shellytrigg/shellytrigg.github.io/master/images/UWBiochemStore.jpg)
 
-1. [Search the store catalog](http://128.95.12.98:88/stores/dataSearch.asp) or just head down to Room J-014 in the Health Sciences Building basement and ask for your product.
+1. [Search the store catalog](http://128.95.12.98:88/stores/dataSearch.asp) or just head down to Room J-014 in the Health Sciences Building basement and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
 
 2. Order your product. They will need to know your lab, your name, and the budget number. They will give you a sales receipt for your purchase, but you don't need to submit this anywhere.
 
@@ -125,7 +125,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 ---
 
 ## [Chem Store](http://depts.washington.edu/chem/facilserv/stockroom/index.html) Purchasing
-1. [Search the store catalog](https://idp.u.washington.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1) or just go down to 036 Bagley Hall and ask for your product.
+1. [Search the store catalog](https://idp.u.washington.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1) or just go down to 036 Bagley Hall and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
 2. They will need to know your lab, your name, and the budget number. They will give you a sales receipt for your purchase, but you don't need to submit this anywhere.
 3. Update the [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing)
   - Spreadsheet is organized by date ordered.
@@ -139,7 +139,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
 Complete [this form](http://gannet.fish.washington.edu/seashell/snaps/new_ereimbursement_form_.pdf) and attach copies of receipts.
 
-It is recommended that the form and receipt are combined into a single PDF and emailed to Lisa Smith. You will need to first have Steven sign the form, preferably via Slack.   
+It is recommended that the form and receipt are combined into a single PDF and emailed to [Lisa Smith](mailto:autumn@uw.edu). You will need to first have Steven sign the form, preferably via Slack.   
 
 Upon receipt, Lisa will often confirm she has submitted the request in 1-2 business days.
 
