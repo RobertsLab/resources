@@ -70,8 +70,8 @@ In addition to required safety protocols, it also has links to other mental heal
 
 [UW Lab Safety Manual](https://www.ehs.washington.edu/manuals/lsm/index.shtm)
 
-[UW Online Accident Reporting System (OARS)](https://www.ehs.washington.edu/ohsoars/)
+[UW Online Accident Reporting System (OARS)](https://oars.ehs.washington.edu/Oars/LoginUWashingtonShib)
 
 [Chemical Inventory & Safety Data Sheets (MyChem)](https://cspc.admin.uw.edu/mychem/default.aspx)
 
-[Hazardous Waste Online Collection Request](https://depts.washington.edu/ehas/pubcookie/prod/mychemwaste/index.php)
+[Hazardous Waste Online Collection Request](https://webapps.ehs.washington.edu/chemwaste/index.php)
