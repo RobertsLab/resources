@@ -4,9 +4,9 @@ See also the official documentation.
 
 User Guides
 
+### Use cases from our lab
 
-
-
+- <https://github.com/RobertsLab/paper-tanner-crab/blob/master/notebooks/kallisto-4libraries.ipynb> tanner crab ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/paper-tanner-crab)
 
 
 ---
