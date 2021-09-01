@@ -9,6 +9,8 @@
 
 - `Agilent 2100 Bioanalyzer user guide.pdf`:
 
+- `CoolLED_pE-300_manual_20210901.pdf`: Light source manual for Olympus BH-2 microscope.
+
 - `cryoscience_CXR100_LN2_dewar_dry_shipper_instructions.pdf`: Instructions on using/filling dry shipper.
 
 - `cryoscience_CXR100_LN2_dewar_dry_shipper_specs.pdf`: Spec sheet for CXR100 liquid nitrogen dry shipper. Has info on storage times and tube storage capacities.
