@@ -1,4 +1,6 @@
 
+There are a variety of hardware and software options and combinations available to you. While there are no concrete rules, here is an attempt to guide your success.
+
 
 Here are some general resources for thinking about open and reproducible scientific computing.
 
