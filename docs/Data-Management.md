@@ -94,6 +94,7 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
   2. `SeqID` is the base name of the sequencing file (i.e. no file extensions like ".fq.gz" or ".gz")
   2. Each library receives a unique, incremented `Library_ID` number.
   3. Each library receives a `Library_name`; this may or may not be unique.
+  4. `SeqSubmissionDate` and `SSeqReceiptDate` should be entered in yyyymmdd format. 
 
 
 **Backup**   
