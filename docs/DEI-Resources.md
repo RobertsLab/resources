@@ -47,6 +47,7 @@
      - Events calendar: [https://www.washington.edu/circle/calendar/](https://www.washington.edu/circle/calendar/)
 
 ## Indigenous Resources and Land Acknowledgement
+
 - Text your zip code or your city and state (separated by a comma) to (907) 312-5085 and a bot will respond with the names of the Native lands that correspond to that region
 - Duwamish Tribe [Land Acknowledgement](https://www.duwamishtribe.org/land-acknowledgement)
 - âpihtawikosisân [Beyond Territorial Acknowledgements](https://apihtawikosisan.com/2016/09/beyond-territorial-acknowledgments/)
@@ -75,3 +76,24 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 - [Facilitating Critical Conversations With Students [PDF]](https://www.tolerance.org/sites/default/files/2019-12/TT-Lets-Talk-December-2019.pdf) December 2019. “ It’s a conversation that explores the relationships between identity and power, that traces the structures that privilege some at the
 expense of others, that helps students think through the actions they can
 take to create a more just, more equitable, world.”
+
+## Biweekly Diversity, Equity and Inclusion Meetings 
+
+This biweekly meeting (~1 hour) provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. Example activities include discussing articles read prior to the meeting, tackling action items to improve DEI in the lab and/or department. See [log of topics](https://docs.google.com/spreadsheets/d/1LCIiAqWMaJ0tPZIevUXqWyZR2SN4p9qGLgQIvWBaWgo/edit#gid=0).
+
+_Code of Conduct for DEI Meetings_
+
+We are dedicated to providing a welcoming and supportive environment for all people, regardless of background, identity, physical appearance, or manner of communication. Any form of language or behavior used to exclude, intimidate, or cause discomfort will not be tolerated. This applies to all course participants (instructor, students, guests). In order to foster a positive and professional learning environment, we will be using progressive stack discussion methods and these discussion rules:
+```
+We will listen with the intent to understand.
+We will monitor our own air time, aiming to share the space and time so others may participate as well.
+We will respect those who do not wish to speak.
+We will use “I” statements as opposed to generalizations.
+We will not ask anyone to speak on behalf of any group we perceive them to identify with, or that they self-identify with.
+We will expect discomfort.
+We will resist the urge to “fix” others’ discomfort.
+We will elevate impact above intent, and we will apologize when necessary.
+We will expect and accept non-closure. We acknowledge that these conversations may not be resolved in a single meeting.
+We will take lessons learned, but not others’ stories, out of this space.
+We will not participate in ad hominem attacks.
+```
