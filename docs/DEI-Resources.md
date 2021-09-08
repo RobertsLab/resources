@@ -88,23 +88,13 @@ We are dedicated to providing a welcoming and supportive environment for all peo
 _Discussion Rules_
 
 1. We will listen with the intent to understand.
-     
 2. We will monitor our own air time, aiming to share the space and time so others may participate as well.
-     
 3. We will respect those who do not wish to speak.
-     
 4. We will use “I” statements as opposed to generalizations.
-     
 5. We will not ask anyone to speak on behalf of any group we perceive them to identify with, or that they self-identify with.
-
 6. We will expect discomfort.
-     
 7. We will resist the urge to “fix” others’ discomfort.
-     
 8. We will elevate impact above intent, and we will apologize when necessary.
-     
 9. We will expect and accept non-closure. We acknowledge that these conversations may not be resolved in a single meeting.
-     
-10. We will take lessons learned, but not others’ stories, out of this space.
-     
+10. We will take lessons learned, but not others’ stories, out of this space. 
 11. We will not participate in ad hominem attacks.
