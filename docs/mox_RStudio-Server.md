@@ -192,7 +192,7 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
 
 3. Build the container:
     
-    - NOTE: Continer name will be `rstudio-4.0.2.sjw-v1.0.sif`
+    - NOTE: Container name will be `rstudio-4.0.2.sjw-v1.0.sif`
 
     `singularity build --fakeroot rstudio-4.0.2.sjw-v1.0.sif rstudio-4.0.2.sjw-v1.0.def`
 
