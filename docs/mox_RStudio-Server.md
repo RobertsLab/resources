@@ -143,7 +143,7 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
         # Install additinoal system packages in container
         # Most are needed for R/RStudio dependencies
         apt -y update
-        apt -y install libxml2 libz-dev libbz2-dev liblzma-dev libxtst6
+        apt -y install libxml2 libz-dev libbz2-dev liblzma-dev libxtst6 libxt6
         
         # Run R package installation script file
         Rscript /tmp/r_packages_installs.R
