@@ -85,16 +85,14 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 1. As sequencing facility provides data, files are downloaded to our local NAS (owl), in the correct species subdirectory within `nightingales`.  http://owl.fish.washington.edu/nightingales/
 
 2. MD5 checksums are generated and compared to those supplied by the sequencing facility.
-
-  - Append the generated MD5 checksums to the `checksums.md5` file. If that file does not yet exist, create it, and add the generated checksums to the new `checksums.md5` file.
+  1. Append the generated MD5 checksums to the `checksums.md5` file. If that file does not yet exist, create it, and add the generated checksums to the new `checksums.md5` file.
 
 3. The [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit) is updated.
-
-  - Each library (i.e. each sample with a unique sequencing barcode) is entered in its own row.
-  - `SeqID` is the base name of the sequencing file (i.e. no file extensions like ".fq.gz" or ".gz")
-  - Each library receives a unique, incremented `Library_ID` number.
-  - Each library receives a `Library_name`; this may or may not be unique.
-  - `SeqSubmissionDate` and `SeqReceiptDate` should be entered in yyyymmdd format. 
+    1. Each library (i.e. each sample with a unique sequencing barcode) is entered in its own row.
+    2. `SeqID` is the base name of the sequencing file (i.e. no file extensions like ".fq.gz" or ".gz")
+    3. Each library receives a unique, incremented `Library_ID` number.
+    4. Each library receives a `Library_name`; this may or may not be unique.
+    5. `SeqSubmissionDate` and `SeqReceiptDate` should be entered in yyyymmdd format. 
 
 _Taxa Representation_
 ![graph_taxa](https://github.com/RobertsLab/resources/blob/master/img/nightingales_figure.png?raw=true)
