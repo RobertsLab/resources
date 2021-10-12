@@ -98,7 +98,7 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 
 _Taxa Representation_
 ![graph_taxa](https://github.com/RobertsLab/resources/blob/master/img/nightingales_figure.png?raw=true)
-
+![table_taxa](https://github.com/RobertsLab/resources/blob/master/img/nightingales_table.png?raw=true)
 
 
 
