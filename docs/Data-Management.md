@@ -94,8 +94,10 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
     4. Each library receives a `Library_name`; this may or may not be unique.
     5. `SeqSubmissionDate` and `SeqReceiptDate` should be entered in yyyymmdd format. 
 
-_Taxa Representation_
+_Taxa Representation in Nightingales_
 ![graph_taxa](https://github.com/RobertsLab/resources/blob/master/img/nightingales_figure.png?raw=true)
+
+![graph_taxa](../img/nightingales_figure.png?raw=true)
 
 <img src="https://github.com/RobertsLab/resources/blob/master/img/nightingales_table.png?raw=true" alt="table" width="50%"/>
 
