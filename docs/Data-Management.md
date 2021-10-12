@@ -97,7 +97,7 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
   4. `SeqSubmissionDate` and `SeqReceiptDate` should be entered in yyyymmdd format. 
 
 _Taxa Representation_
-![graph_taxa]()
+![graph_taxa](https://raw.githubusercontent.com/RobertsLab/resources/master/img/graph.png)
 
 
 
