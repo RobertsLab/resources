@@ -96,6 +96,11 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
   3. Each library receives a `Library_name`; this may or may not be unique.
   4. `SeqSubmissionDate` and `SeqReceiptDate` should be entered in yyyymmdd format. 
 
+_Taxa Representation_
+![graph_taxa]()
+
+
+
 
 **Backup**   
 
