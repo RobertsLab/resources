@@ -85,7 +85,7 @@ _Please refrain from using any non alpha-numeric (including spaces) in file and 
 1. As sequencing facility provides data, files are downloaded to our local NAS (owl), in the correct species subdirectory within `nightingales`.  http://owl.fish.washington.edu/nightingales/
 
 2. MD5 checksums are generated and compared to those supplied by the sequencing facility.
-  1. Append the generated MD5 checksums to the `checksums.md5` file. If that file does not yet exist, create it, and add the generated checksums to the new `checksums.md5` file.
+    1. Append the generated MD5 checksums to the `checksums.md5` file. If that file does not yet exist, create it, and add the generated checksums to the new `checksums.md5` file.
 
 3. The [Nightingales Google Spreadsheet](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit) is updated.
     1. Each library (i.e. each sample with a unique sequencing barcode) is entered in its own row.
