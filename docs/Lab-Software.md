@@ -153,36 +153,17 @@ trinity (2.3.2)
      path = /Users/Shared/bioinformatics/trinityrnaseq-Trinity-V2.3.2
 
 ----
-### Computer: emu
+### Computer: raven
 #### OS: Ubuntu 16.04
-#### CPU(s): 16
-#### Memory: 48GB
-#### HDD Capacity: 1.8TB
+#### CPU(s): 48
+#### Memory: 256GB
+#### HDD Capacity: 1.0TB
+#### Ext. HDD 1 Capacity (`/media/${USER}/Samsung_T5`): 1.0TB
+#### Ext. HDD 2 Capactiry (`/media/${USER}/Samsung_T51`): 1.0TB
 
 ```
 $/home/shared
-20200207_macau                BUSCO_v1.22                     include                         MultiQC                RepeatModeler-open-1.0.11   SparseAssembler
-abacus                        comet                           isb-2.6.0+-changes-vers2.patch  ncbi-blast-2.6.0+-src  RepeatScout-1.0.5           sra-toolkit
-bedtools-2.28.0               doc                             jellyfish-2.2.6                 nseg                   rmblast_2.6.0               src
-BerkleyDB                     EMBOSS-6.6.0                    kallisto                        PBSuite_15.8.24        RNAMMER                     tmhmm-2.0c
-bfg-1.13.0.jar                etc                             last-658                        pecan                  salmon-0.11.3-linux_x86_64  TransDecoder-3.0.1
-bin                           fastqc_0.11.7                   lib                             pitchfork              salmon-1.2.1_linux_x86_64   TrimGalore-0.4.5
-Bismark-0.19.1                gsl                             macau                           ProtDigSim             samtools-1.8                Trimmomatic-0.36
-bissnp                        hmmer-2.3                       methpipe                        proteowiz              seqkit.v0.9.3               trinityrnaseq-Trinity-v2.4.0
-BisSNP                        hmmer-3.1b2-linux-intel-x86_64  MethylExtract_1.9.1             pyfaidx-0.5.5.2        SGE6.2u5p2                  trinityrnaseq-Trinity-v2.8.4
-blastdb                       IGV_Linux_2.6.1                 miniconda2                      ReAdW                  share                       Trinotate-3.0.2
-bowtie2-2.3.4.1-linux-x86_64  igvtools                        miniconda3                      RECON-1.08             Sibelia-3.0.7-Linux         var
-bsmap                         igv-webapp                      MSFileReader                    RepeatMasker-4.0.7     signalp-4.1
-```
-
-```
-/usr/bin
-R (Microsoft Open R 3.5.1)
-```
-
-```
-/home/shared/miniconda3/bin
-jupyter (with R Kernel)
+blast_dbs  blobtoolkit-v2.6.2  bowtie2-2.4.4-linux-x86_64  jellyfish-2.3.0  kallisto  ncbi-blast-2.11.0+  salmon-1.4.0_linux_x86_64  samtools-1.12  trinityrnaseq-v2.12.0
 ```
 
 ----
