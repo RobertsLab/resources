@@ -36,15 +36,15 @@ To leverage the modifications Steven has made...
 
 2) Change the user name associated the repository name in the Settings.
 
-3) Revise the config.xml file to include your own personal information
+3) Revise the `_config.yml` file to include your own personal information
 
 4) Alter line 49 of `your_username.github.io/_layouts/default.html` so clicking on "admin" link takes you to your `_posts` directory.
 
 5) Go to Disqus to set up comments for your website. Pick a page name, ignore instructions on adding code to your site. Complete registration.
 
-6) Go back to config.xml file and add your Disqus shortname. This will magically alter code so comments will show up for each posts.
+6) Go back to `_config.yml` file and add your Disqus shortname. This will magically alter code so comments will show up for each posts.
 
-Note sometimes revisions take a few minutes to render on GitHub.
+Note: Sometimes revisions take a few minutes to render on GitHub.
 
 
 —-
