@@ -75,6 +75,10 @@ Aidan:
 - github.io:
   - 2020: `https://github.com/afcoyle/afcoyle.github.io/archive/v2020.zip`
 
+Chris:
+
+- gitbhu.io:
+
 Grace:
 
 - github.io:
@@ -106,6 +110,10 @@ Megan:
 - github.io:
   - 2020: `https://github.com/meganewing/meganewing.github.io/archive/v2020.zip`
 
+Olivia:
+
+- github.io:
+
 Sam:
 
 - github.io:
@@ -135,3 +143,7 @@ Yaamini:
 -  github.io:
   - 2020: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2020.zip`
   - 2019: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2019.zip`
+
+Zach:
+
+- github.io:
