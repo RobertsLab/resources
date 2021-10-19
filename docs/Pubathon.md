@@ -68,12 +68,12 @@ Journal:
 13) **Differential methylation in response to OA with diploid and triploid oysters** - _Yaamini_        
 [Working Draft](https://docs.google.com/document/d/1uqPDX2BWuWlEeS_d5JMTATvJFaEJOZED2SOVpqkLOJM/edit#heading=h.6ddhvfvd1oh3)  
 [Github](https://github.com/RobertsLab/project-oyster-oa)         
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)      
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 14) **Differential gonad methylation in female oysters** - _Yaamini_        
 [Working Draft](https://docs.google.com/document/d/1tEqyvmxe4CqBbq-bBeOa_r0oX_WH1SPy9ofJg26p3po/edit#heading=h.p6g45es19e8c)        
 [Github](https://github.com/RobertsLab/project-gigas-oa-meth)      
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 15) **Harnessing the Power of Single-cell RNA Sequencing to Control Reproductive Development in Bivalves** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)    
@@ -96,6 +96,11 @@ Journal:
 22) **Epigenetic response of diploidy and triploid Pacific Oysters to desiccation stress**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy)
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
+
+23) **Cvirg Methylation and Gene Expression**
+[Working Draft](https://docs.google.com/document/d/1O63kXExAe-bBPXv6fTEZAof8Q2-ARI5Y3XyD5oxkiGE/edit)        
+[Github](https://github.com/epigeneticstoocean/2018_L18-adult-methylation)      
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
 
 
