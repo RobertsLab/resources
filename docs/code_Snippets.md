@@ -8,6 +8,48 @@ Also, assumes usage of bash >=4.0.
 
 ---
 
+
+## R Markdown
+
+### Use Bash variables across chunks
+
+Variables are saved to a “dot file” and that file needs to be sourced in each Bash chunk to have access to the Bash variables across Bash chunks.
+
+The Bash variables set in the example below are:
+
+- `${threads}`
+
+- `${my_fasta}`
+
+- `${samtools}`
+
+```R
+{bash}
+# Send text to export Bash variables to .rvars file
+{
+echo "# CPU threads"
+echo 'export threads=8'
+echo ""
+echo "# Programs"
+echo 'export my_fasta="~/data/temporary.fasta"'
+echo 'export samtools="~/programs/samtools-1.12/samtools"'
+echo ""
+} > .rvars
+```
+
+In subsequent Bash chunks, load the variables into memory to use them:
+
+```R
+{bash}
+# Load contents of .rvars into memory so varaibles are accessible
+source .rvars
+
+# Create FastA index file
+"${samtools} faidx "${my_fasta}"
+```
+
+---
+
 ## FastQ files
 
 ### Create separate arrays for R1 and R2 reads
