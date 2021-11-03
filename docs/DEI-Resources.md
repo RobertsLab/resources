@@ -77,7 +77,7 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 expense of others, that helps students think through the actions they can
 take to create a more just, more equitable, world.”
 
-## Biweekly Diversity, Equity and Inclusion Meetings 
+## Bimonthly Diversity, Equity and Inclusion Meetings 
 
 Biweekly DEI meetings (~1 hour) provide a space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. Example activities include discussing articles read prior to the meeting, tackling action items to improve DEI in the lab and/or department, and more. See [log of topics](https://docs.google.com/spreadsheets/d/1LCIiAqWMaJ0tPZIevUXqWyZR2SN4p9qGLgQIvWBaWgo/edit#gid=0).
 
