@@ -158,8 +158,8 @@ trinity (2.3.2)
 #### CPU(s): 48
 #### Memory: 256GB
 #### HDD Capacity: 1.0TB
-#### Ext. HDD 1 Capacity (`/media/${USER}/Samsung_T5`): 1.0TB
-#### Ext. HDD 2 Capactiry (`/media/${USER}/Samsung_T51`): 1.0TB
+#### Ext. HDD 1 Capacity (`/media/ext_HDD01`): 1.0TB
+#### Ext. HDD 2 Capacity (`/media/ext_HDD01`): 1.0TB
 
 ```
 $/home/shared
