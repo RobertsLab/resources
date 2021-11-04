@@ -162,7 +162,7 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
     # Install BioConductor package manager
     if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
-    BiocManager::install(version = "3.12")
+    BiocManager::install(version = "3.14")
 
     # Install tidyverse
     install.packages("tidyverse")
