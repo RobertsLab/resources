@@ -173,6 +173,9 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
     # Install remotes package (allows for package installs from GitHub)
     BiocManager::install("remotes")
 
+    # Install GSEABase (a dependency for numerous gene ontology/enrichment analysis)
+    BiocManager::install("Bioconductor/GSEABase")
+
     # Install MatrixGenerics (needed for DESeq2)
     BiocManager::install("MatrixGenerics")
 
@@ -184,6 +187,8 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
 
     # Install DESeq2
     BiocManager::install("DESeq2")
+
+
     ```
 
 
