@@ -167,7 +167,7 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
     # Install tidyverse
     install.packages("tidyverse")
 
-    # Install matrixStats 0.58.0 (needed for DESeq2)
+    # Install matrixStats 0.61.0 (needed for DESeq2)
     install.packages("https://cran.rstudio.com/src/contrib/matrixStats_0.61.0.tar.gz", repos=NULL, type="source")
 
     # Install MatrixGenerics (needed for DESeq2)
