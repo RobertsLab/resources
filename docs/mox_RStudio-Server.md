@@ -176,6 +176,9 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
     # Install GSEABase (a dependency for numerous gene ontology/enrichment analysis)
     BiocManager::install("Bioconductor/GSEABase")
 
+    # Install GO.db (annotation maps for Gene Ontology data)
+    BiocManager::install("GO.db")
+
     # Install MatrixGenerics (needed for DESeq2)
     BiocManager::install("MatrixGenerics")
 
