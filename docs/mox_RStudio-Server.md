@@ -123,7 +123,7 @@ rserver --www-port ${PORT} --auth-none=0 --auth-pam-helper-path=pam-helper
 
 ## Create/customize your own Singularity Rstudio Server container
 
-NOTE: These instructions are written to be performed on Mox (Hyak) on a _BUILD node_.
+NOTE: These instructions are written to be performed on Mox (Hyak).
 
 1. Create a [Singularity definition file](https://sylabs.io/guides/3.5/user-guide/definition_files.html):
 
