@@ -185,6 +185,9 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
     # Install Methylkit
     BiocManager::install("methylKit")
 
+    # Install GOseq
+    BiocManager::install("goseq")
+
     # Install WGCNA
     BiocManager::install("WGCNA")
 
