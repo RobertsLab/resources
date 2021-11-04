@@ -170,6 +170,9 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
     # Install matrixStats 0.61.0 (needed for DESeq2)
     install.packages("https://cran.rstudio.com/src/contrib/matrixStats_0.61.0.tar.gz", repos=NULL, type="source")
 
+    # Install remotes package (allows for package installs from GitHub)
+    BiocManager::install("remotes")
+
     # Install MatrixGenerics (needed for DESeq2)
     BiocManager::install("MatrixGenerics")
 
