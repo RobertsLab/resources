@@ -34,7 +34,11 @@ Journal:
 [Reviews](https://docs.google.com/document/d/1E4sNHj3TsNuItN2kXNEM5aYekyMI4p4wgo4qybXEnsI/edit)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
 
-
+24) **Tanner crab and Hematodinium gene expression** - Aidan et al  
+[Working draft](https://github.com/afcoyle/hemat_bairdi_transcriptome/blob/main/paper/coyle_paper_draft.Rmd)  
+[Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:
 
 
 _Tier Yellow_
