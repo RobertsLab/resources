@@ -26,6 +26,6 @@ Here are some general resources for thinking about open and reproducible scienti
 
 - [FISH546 - Bioinformatics for Environmental Sciences](https://github.com/sr320/course-fish546-2021/wiki)
 
-- [FISH274 - Introduction to Data Analysis for Aquatic Sciences](https://sr320.github.io/course-fish274-2020/)
+- [FISH274 - Introduction to Data Analysis for Aquatic Sciences](https://sr320.github.io/course-fish274-2021/)
 
 - [Data Carpentry for Biologists](https://datacarpentry.org/semester-biology/)
