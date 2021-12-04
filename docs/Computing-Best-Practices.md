@@ -11,7 +11,9 @@ Formost, code should be written so someone else could easily run. This means the
 
 1) Code should be in a Github repository 
 
-2) 
+2) [Organize](https://kbroman.org/steps2rr/pages/organize.html) your data and code. 
+
+
 
 
 
