@@ -1,12 +1,17 @@
 
-There are a variety of hardware and software options and combinations available to you. While there are no concrete rules, here is an attempt to guide your success.
+There are a variety of hardware and software options and combinations available to you. While there are few concrete rules, here is an attempt to guide your success.
 
 
-Here are some general resources for thinking about open and reproducible scientific computing.
+Resources for thinking about open and reproducible scientific computing.
 
 
 ## Practical Aspects
 
+Formost, code should be written so someone else could easily run. This means they have access and can understand.
+
+1) Code should be in a Github repository 
+
+2) 
 
 
 
