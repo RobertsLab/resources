@@ -4,6 +4,12 @@ There are a variety of hardware and software options and combinations available 
 
 Here are some general resources for thinking about open and reproducible scientific computing.
 
+
+## Practical Aspects
+
+
+
+
 ## Papers
 
 - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
