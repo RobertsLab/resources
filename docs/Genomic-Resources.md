@@ -357,6 +357,12 @@ Genome Feature Tracks
 
 * [C_virginica-3.0_Gnomon_mRNA.gff3](http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_mRNA.gff3) : `http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_mRNA.gff3`
 
+* [C_virginica-3.0_Gnomon_genes.bed](https://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_genes.bed) : `https://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_genes.bed`
+
+    - MD5 = `c61136062edfa2eac851baf3285e3646`
+
+    - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/12/09/Data-Wrangling-C.virginica-NCBI-GCF_002022765.2-GFF-to-Gene-BED-File.html)
+
 
 * [C_virginica-3.0_Gnomon_exon.bed](http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_exon.bed) : `http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_Gnomon_exon.bed`
 
@@ -364,7 +370,7 @@ Genome Feature Tracks
 
 * [C_virginica-3.0_CG-motif.bed](http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_CG-motif.bed) : `http://eagle.fish.washington.edu/Cvirg_tracks/C_virginica-3.0_CG-motif.bed`
 
-    - MD5 = f88c171bccf45a6f3afcf455b6be810f
+    - MD5 = `f88c171bccf45a6f3afcf455b6be810f`
 
     - Dead link in this Jupyter Notebook obscures details on how this was generated (via Galaxy):
 
