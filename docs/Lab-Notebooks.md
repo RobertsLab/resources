@@ -15,7 +15,7 @@ Olivia Cattau | [ocattau.github.io](https://ocattau.github.io)  | ![GitHub last 
 Delaney Lawson| [drlawson.github.io](https://drlawson.github.io)  | ![GitHub last commit](https://img.shields.io/github/last-commit/drlawson/drlawson.github.io)
 Ariana Huffmyer | [ahuffmyer.github.io](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/AHuffmyer/ASH_Putnam_Lab_Notebook)
 Chris Mantegna | [chrismantegna.github.io](https://chrismantegna.github.io/) | ![Github last commit](https://img.shields.io/github/last-commit/ChrisMantegna/ChrisMantegna.github.io)
-Zach Bengtsson | [zbengt.github.io](https://zbengt.github.io/) | ![Github last commit](https://img.shields.io/github/last-commit/zbengt/zbengt.github.io)
+Zach Bengtsson | [zbengt.github.io](https://zbengt.github.io/notebook/) | ![Github last commit](https://img.shields.io/github/last-commit/zbengt/zbengt.github.io)
 Laura Spencer | [laurahspencer.github.io](https://laurahspencer.github.io/LabNotebook/)  | [![GitHub followers](https://img.shields.io/github/followers/laurahspencer.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/laurahspencer)
 Yaamini Venkataraman | [yaaminiv.github.io](https://yaaminiv.github.io/) | [![GitHub followers](https://img.shields.io/github/followers/yaaminiv.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/yaaminiv)
 Grace Crandall | [grace-ac.github.io](https://grace-ac.github.io/) |  [![GitHub followers](https://img.shields.io/github/followers/grace-ac.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/grace-ac)
@@ -79,7 +79,7 @@ Periodically, you will be asked to show where your backup is and demonstrate tha
 Aidan:
 
 - github.io:
-  - 2020: `https://github.com/afcoyle/afcoyle.github.io/archive/v2020.zip`
+    - 2020: `https://github.com/afcoyle/afcoyle.github.io/archive/v2020.zip`
 
 Chris:
 
@@ -88,33 +88,33 @@ Chris:
 Grace:
 
 - github.io:
-  - 2020: `https://github.com/grace-ac/grace-ac.github.io/archive/v2020.zip`
+    - 2020: `https://github.com/grace-ac/grace-ac.github.io/archive/v2020.zip`
 
 Jay:
 
 - ONS:
-  - 2018: `https://eagle.fish.washington.edu/trilobite/notebooks/jay.zip`
+    - 2018: `https://eagle.fish.washington.edu/trilobite/notebooks/jay.zip`
 
 Jake:
 
 - Blogspot:
-  - 2015: `https://eagle.fish.washington.edu/trilobite/notebooks/jake.zip`
+    - 2015: `https://eagle.fish.washington.edu/trilobite/notebooks/jake.zip`
 
 Laura:
 
 - github.io:
-  - 2020: `https://github.com/laurahspencer/LabNotebook/archive/v2021.zip`
-  - 2019: `https://github.com/laurahspencer/LabNotebook/archive/v2019.zip`
+    - 2020: `https://github.com/laurahspencer/LabNotebook/archive/v2021.zip`
+    - 2019: `https://github.com/laurahspencer/LabNotebook/archive/v2019.zip`
 
 Matt:
 
 - github.io:
-  - 2020: `https://github.com/mattgeorgephd/mattgeorgephd.github.io/archive/v2020.zip`
+    - 2020: `https://github.com/mattgeorgephd/mattgeorgephd.github.io/archive/v2020.zip`
 
 Megan:
 
 - github.io:
-  - 2020: `https://github.com/meganewing/meganewing.github.io/archive/v2020.zip`
+    - 2020: `https://github.com/meganewing/meganewing.github.io/archive/v2020.zip`
 
 Olivia:
 
@@ -123,32 +123,32 @@ Olivia:
 Sam:
 
 - github.io:
-  - 2020: `https://github.com/RobertsLab/sams-notebook/archive/v2020.zip`
-  - 2019: `https://github.com/RobertsLab/sams-notebook/archive/v2019.zip`
+    - 2020: `https://github.com/RobertsLab/sams-notebook/archive/v2020.zip`
+    - 2019: `https://github.com/RobertsLab/sams-notebook/archive/v2019.zip`
 - Jupyter notebooks and R Projects:
-  - 2020: `https://github.com/RobertsLab/code/archive/v2020.zip`
-  - 2019: `https://github.com/RobertsLab/code/archive/v2019.zip`
+    - 2020: `https://github.com/RobertsLab/code/archive/v2020.zip`
+    - 2019: `https://github.com/RobertsLab/code/archive/v2019.zip`
 
 Shelly:
 
 - github.io:
-  - 2020: `https://github.com/shellytrigg/shellytrigg.github.io/archive/v2020.zip`
+    - 2020: `https://github.com/shellytrigg/shellytrigg.github.io/archive/v2020.zip`
 
 
 Steven:
 
 - github.io:
-  - 2020: `https://github.com/sr320/nb-2020/archive/v1.0.zip`
-  - 2019: `https://github.com/RobertsLab/resources/blob/master/archive/sr320.github.io-2019.zip`
+    - 2020: `https://github.com/sr320/nb-2020/archive/v1.0.zip`
+    - 2019: `https://github.com/RobertsLab/resources/blob/master/archive/sr320.github.io-2019.zip`
 - ONS:
-  - 2016: `https://eagle.fish.washington.edu/trilobite/notebooks/steven.zip`
+    - 2016: `https://eagle.fish.washington.edu/trilobite/notebooks/steven.zip`
 
 
 Yaamini:
 
--  github.io:
-  - 2020: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2020.zip`
-  - 2019: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2019.zip`
+- github.io:
+    - 2020: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2020.zip`
+    - 2019: `https://github.com/yaaminiv/yaaminiv.github.io/archive/v2019.zip`
 
 Zach:
 
