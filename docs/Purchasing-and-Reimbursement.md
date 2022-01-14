@@ -82,7 +82,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
     5. Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
 
-      - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://cspc.admin.washington.edu/mychem/uwnetid/home/greeting.aspx).
+      - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
 ---
 ## [Biochem Stores](https://depts.washington.edu/biowww/pages/biochem-stores.shtml) Purchasing
@@ -100,7 +100,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
 4. Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
 
-  - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://cspc.admin.washington.edu/mychem/uwnetid/home/greeting.aspx).
+  - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
 ---
 
@@ -131,7 +131,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
   - Spreadsheet is organized by date ordered.
   - Each row represents an order submitted to a single vendor; list all items, quantities, and catalogue numbers in a single cell for a given order.
 4. Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
-  - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://cspc.admin.washington.edu/mychem/uwnetid/home/greeting.aspx).
+  - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
 ---
 

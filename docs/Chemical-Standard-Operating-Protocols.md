@@ -2,7 +2,7 @@
 
 ### [University of Washington Lab Safety Manual](https://www.ehs.washington.edu/manuals/lsm/index.shtm)
 
-### Chemical Material Safety Data Sheets (MSDS) on [MyChem website](https://www.ehs.washington.edu/epomychem/index.shtm).
+### Chemical Material Safety Data Sheets (MSDS) on [MyChem website](https://mychem.ehs.washington.edu/).
 
 ### [UW Hazardous Waste Online Collection Request](https://webapps.ehs.washington.edu/chemwaste/index.php)
 
