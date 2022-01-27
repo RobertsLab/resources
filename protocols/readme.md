@@ -41,7 +41,11 @@ Brief description of repo files are below
 
 - **[DIA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md)** - Steps to analyze data derived from Data Independent Acquisition (DIA) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio). 
 
-- **[SRM-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md)** -  Steps to analyze data derived from Selected Reaction Monitoring (SRM) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio). 
+- **[SRM-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/SRM-data-Analyses.md)** -  Steps to analyze data derived from Selected Reaction Monitoring (SRM) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio).
+
+## Enzymes 
+
+- **[ATPase.md](https://github.com/RobertsLab/resources/blob/master/protocols/ATPase.md)** - SOP for the collection, extraction, and quantification of ATPase activity from oyster tissue samples.   
 
 ## Miscellaneous 
 
