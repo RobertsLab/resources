@@ -29,15 +29,15 @@ Brief description of repo files are below
 
 - **[reverse_transcription.md](https://github.com/RobertsLab/resources/blob/master/protocols/reverse_transcription.md)** - Reverse transcription using Promega M-MMLV Reverse Transcriptase. Used when 
 
-- **[qpcr.md](https://github.com/RobertsLab/resources/blob/master/protocols/qpcr.md)** - Quantitative PCR protocol using SsoFast EvaGreen master mix. 
+- **[qpcr.md](https://github.com/RobertsLab/resources/blob/master/protocols/qpcr.md)** - Quantitative PCR protocol using SsoFast EvaGreen master mix.
+
+- **[RNA_Pico_chip_bioanalyzer_protocol.md](https://github.com/RobertsLab/resources/blob/master/protocols/RNA_Pico_chip_bioanalyzer_protocol.md)** - SOP for the quantification of RNA quality using the RNA 6000 Pico Chip and Agilent Bioanalyzer
 
 ## Protein
 
 - **[MassSpec_Tutorial.md](https://github.com/RobertsLab/resources/blob/master/protocols/MassSpec_Tutorial.md)** - Explanation of the different types of mass spectrometry (MS, or "mass spec") experiments one could use to measure protein abundances via "proteomics" 
 
 - **[ProteinprepforMSMS.md](https://github.com/RobertsLab/resources/blob/master/protocols/ProteinprepforMSMS.md)** - Bench protocol for taking tissues that have been flash frozen, and extracting protein for proteomics experiments. 
-
-- **[DDA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DDA-data-Analyses.md)** - TBD
 
 - **[DIA-data-Analyses.md](https://github.com/RobertsLab/resources/blob/master/protocols/DIA-data-Analyses.md)** - Steps to analyze data derived from Data Independent Acquisition (DIA) runs on a mass spectrometer. Included are steps from taking raw data to exporting a .csv table of protein abundances for downstream statistical analysis (e.g. in RStudio). 
 
