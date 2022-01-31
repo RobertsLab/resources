@@ -321,7 +321,7 @@ Genome Feature Tracks
 
 ## _Crassostrea virginica_
 
-[NCBI FTP](ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/022/765/GCF_002022765.2_C_virginica-3.0/)
+[NCBI FTP](https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/022/765/GCF_002022765.2_C_virginica-3.0/)
 
 Genomes:
 
