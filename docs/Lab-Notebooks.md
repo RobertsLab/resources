@@ -123,9 +123,11 @@ Olivia:
 Sam:
 
 - github.io:
+    - 2021: `https://github.com/RobertsLab/sams-notebook/archive/refs/tags/v2021.zip`
     - 2020: `https://github.com/RobertsLab/sams-notebook/archive/v2020.zip`
     - 2019: `https://github.com/RobertsLab/sams-notebook/archive/v2019.zip`
 - Jupyter notebooks and R Projects:
+    - 2021: `https://github.com/RobertsLab/code/archive/refs/tags/v2021.zip`
     - 2020: `https://github.com/RobertsLab/code/archive/v2020.zip`
     - 2019: `https://github.com/RobertsLab/code/archive/v2019.zip`
 
