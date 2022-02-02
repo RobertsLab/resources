@@ -72,6 +72,8 @@ Have a copy of your notebook in another location. This could be done in several 
 
 Periodically, you will be asked to show where your backup is and demonstrate that it is functional.
 
+All GitHub-based notebooks are also backed up to Gannet: https://gannet.fish.washington.edu/github_backups/notebooks/
+
 ---
 
 ## Archive
