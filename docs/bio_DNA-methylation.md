@@ -32,11 +32,46 @@ User Guides
 
 
 
-### Unofficial Step by step Guide
-(Always default to the Manual/User Guide!)
+### Code Output Expectations
+(**Always default to the Manual/User Guide!** - this is merely an attempt at explaining our workflow)
 
 
+**(I) Running bismark_genome_preparation**
 
+USAGE:
+bismark_genome_preparation [options] <path_to_genome_folder>
+```
+${bismark_dir}/bismark_genome_preparation \
+--verbose \
+--parallel 28 \
+--path_to_aligner ${bowtie2_dir} \
+${genome_folder}
+```
+
+You should expect to prepared genome with directory structure similar to
+```
+./roslin_M/Bisulfite_Genome
+./roslin_M/Bisulfite_Genome/GA_conversion
+./roslin_M/Bisulfite_Genome/CT_conversion
+```
+
+**(II) Running bismark**
+
+USAGE:
+bismark [options] --genome <genome_folder> {-1 <mates1> -2 <mates2> | <singles>}
+
+```
+find ${reads_dir}*_R1_001_val_1.fq.gz \
+| xargs basename -s _R1_001_val_1.fq.gz | xargs -I{} ${bismark_dir}/bismark \
+--path_to_bowtie ${bowtie2_dir} \
+-genome ${genome_folder} \
+-p 4 \
+-score_min L,0,-0.6 \
+--non_directional \
+-1 ${reads_dir}{}_R1_001_val_1.fq.gz \
+-2 ${reads_dir}{}_R2_001_val_2.fq.gz \
+-o Mcap_tg
+```
 
 
 
