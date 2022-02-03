@@ -134,6 +134,7 @@ NC_035784.1	314	314	66.6666666666667	2	1
 NC_035784.1	470	470	66.6666666666667	4	2
 NC_035784.1	611	611	0	0	4
 ```
+
 `<chromosome> <start position> <end position> <methylation percentage> <count methylated> <count unmethylated>`
 
 
@@ -154,7 +155,7 @@ find *deduplicated.bismark.cov.gz \
 --merge_CpG \
 --zero_based \
 {}_trimmed_bismark_bt2.deduplicated.bismark.cov.gz
-  ```
+```
 
 generates a file `.CpG_report.merged_CpG_evidence.cov`
 
@@ -172,11 +173,6 @@ NC_035785.1	1747	1749	100.000000	8	0
 NC_035785.1	2024	2026	100.000000	24	0
 NC_035785.1	2054	2056	93.333333	14	1
 ```
-
-
-
-
-
 
 
 
