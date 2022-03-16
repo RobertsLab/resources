@@ -616,7 +616,7 @@ Genome:
 
     - FastA index (```samtools faidx```):
     
-      - `https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa.fai`
+        - `https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa.fai`
 
 
 Bisulfite Genome:
