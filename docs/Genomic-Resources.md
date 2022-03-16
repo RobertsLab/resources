@@ -614,7 +614,9 @@ Genome:
 
         - [Notebook entry](https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Assessment-BUSCO-Metazoa-on-Pgenerosa_v074-on-Mox.html)
 
-    - FastA index (```samtools faidx```): `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_v074.fa.fai`
+    - FastA index (```samtools faidx```):
+    
+      - `https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa.fai`
 
 
 Bisulfite Genome:
