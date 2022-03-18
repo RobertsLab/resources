@@ -648,21 +648,42 @@ Genome Feature Tracks:
 
      - [Panopea-generosa-vv0.74.a4-merged-2019-10-07-4-46-46.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4-merged-2019-10-07-4-46-46.gff3)
 
-         - Primary GFF containing all features.
+            - Primary GFF containing all features.
 
-     - [Panopea-generosa-vv0.74.a4.rRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.rRNA.gff3)
+        - [Panopea-generosa-v1.0.CpG.gff](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.CpG.gff)
 
-     - [Panopea-generosa-vv0.74.a4.gene.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.gene.gff3)
+        - [Panopea-generosa-v1.0.a4.CDS.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.CDS.gff3)
 
-     - [Panopea-generosa-vv0.74.a4.CDS.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.CDS.gff3)
+        - [Panopea-generosa-v1.0.a4.exon.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.exon.gff3)
 
-     - [Panopea-generosa-vv0.74.a4.mRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.mRNA.gff3)
+        - [Panopea-generosa-v1.0.a4.gene.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.gene.gff3)
 
-     - [Panopea-generosa-vv0.74.a4.exon.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.exon.gff3)
+        - [Panopea-generosa-v1.0.a4.intergenic.bed](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.intergenic.bed)
 
-     - [Panopea-generosa-vv0.74.a4.tRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.tRNA.gff3)
+        - [Panopea-generosa-v1.0.a4.introns.bed](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.introns.bed)
 
-     - [Panopea-generosa-vv0.74.a4.repeat_region.gff3](https://gannet.fish.washington.edu/Atumefaciens/20190928_Pgenerosa_v074.a4_gensas_annotation/Panopea-generosa-vv0.74.a4.repeat_region.gff3)
+        - [Panopea-generosa-v1.0.a4.mRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.mRNA.gff3)
+
+        - [Panopea-generosa-v1.0.a4.rRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.rRNA.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeat_region.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeat_region.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.DNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.DNA.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.LINE.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.LINE.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.LTR.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.LTR.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.RC.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.RC.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.SINE.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.SINE.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.Simple_repeat.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.Simple_repeat.gff3)
+
+        - [Panopea-generosa-v1.0.a4.repeats.Unknown.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.repeats.Unknown.gff3)
+
+        - [Panopea-generosa-v1.0.a4.tRNA.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.tRNA.gff3)
+
 
 ---
 
