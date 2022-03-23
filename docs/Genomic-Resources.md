@@ -648,7 +648,7 @@ Genome Feature Tracks:
 
     - [GFF files and scaffolds were renamed on 20191105](https://robertslab.github.io/sams-notebook/2019/11/05/Data-Wrangling-Rename-Pgenerosa_v074-Files-and-Scaffolds.html) (notebook)
 
-  - [Panopea-generosa-v1.0.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.gff3)
+  - [Panopea-generosa-v1.0.a4.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.gff3)
 
     - Primary GFF containing all features.
 
