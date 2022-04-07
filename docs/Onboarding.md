@@ -110,3 +110,40 @@ If you experience any problems in joining these listservs, email SAFS computing 
 - [UW SAFS Postdocs](https://fish.uw.edu/faculty-research/research/postdoctoralscholars/)
 	- join SAFS postdoc channel on Slack: click [here](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) to join
 	- join the SAFS Postdocs listserv <safspostdocs@uw.edu>: click [here](http://mailman13.u.washington.edu/mailman/listinfo/safspostdocs) to join
+
+
+#### Faculty
+
+https://uwnetid.sharepoint.com/sites/safs/facultygovernance
+(Log in with UW net id)
+
+In particular under "Policies"
+1. "Salary recovery policy" explains how if you have too many grants
+for your salary, you can use some to cover state salary, and then the
+state salary gets shifted to SAFS (benefits portion) and your RCR (the
+remainder).
+
+2.  "Salary recovery policy" teaching buyout. You can buy out from 1
+quarter of teaching a small seminar course, for 1.5 mo of salary, or a
+large course for 2 mo of salary. Restrictions apply.
+
+3. "Teaching release", when substantially revamping a course or
+developing a new course, it is possible to get a one-quarter teaching
+release.
+
+In addition, there are University-wide policies that some of us have
+signed up for:
+1. A/B salary. For those who often have extra grant funding, it is
+possible to use the A/B salary. Your state income stays the same, but
+pays for only 80% or 90% of your time (basically an increase in
+monthly salary rate), and the extra time is covered by external
+grants. More details here:
+https://environment.uw.edu/intranet/personnel/academic-human-resources/salary-compensation/ab-salary-retention-adjustment-policy
+
+2. Personal mobile phone use for business. It is possible to cover a
+portion of your cell phone bill from RCR if you use your cell phone
+for UW business. More details here:
+https://www.washington.edu/admin/rules/policies/APS/55.01.html
+This one depends on departmental policy to some extent.
+
+
