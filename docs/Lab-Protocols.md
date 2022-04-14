@@ -2,6 +2,11 @@ Protocols for benchwork in the lab (e.g. RNA isolation), for commonly used instr
 
 Foundational protocols can be found [here](https://github.com/RobertsLab/resources/tree/master/protocols). As they become prominent, they will be migrated here for posterity.
 
+## RNA Extraction 
+  We often use MRC RNA-zol RT ([protocol](https://github.com/RobertsLab/resources/blob/master/protocols/Commercial_Protocols/MRC_RNAzol-RT-march-2017.pdf)). Depending on downstream needs we might engage in DNAase treatment. 
+
+
+
 
 ## Common Physiological Assays of Interest
 
