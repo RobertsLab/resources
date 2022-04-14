@@ -6,7 +6,14 @@ Foundational protocols can be found [here](https://github.com/RobertsLab/resourc
   We often use MRC RNA-zol RT ([protocol](https://github.com/RobertsLab/resources/blob/master/protocols/Commercial_Protocols/MRC_RNAzol-RT-march-2017.pdf)). Depending on downstream needs we might engage in DNAase treatment. 
 
 
+## Reverse Transcription
 
+
+## qPCR 
+  One of the most used application is for gene quantification. Generally we will use SsoFast Evagreen Supermix (BioRad) ([protocol](https://github.com/RobertsLab/resources/blob/master/protocols/Commercial_Protocols/BioRad_Sso_Fast_EvaGreen_Supermix.pdf)). This requires that we start with cDNA.
+  
+  
+  
 
 ## Common Physiological Assays of Interest
 
