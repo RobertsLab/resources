@@ -618,6 +618,23 @@ Genome:
     
         - `https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa.fai`
 
+    - Gene annotation file:
+
+        - [20220419-pgen-gene-accessions-gene_id-gene_name-gene_description-alt_gene_description-go_ids.tab](https://gannet.fish.washington.edu/Atumefaciens/20220419-pgen-gene_annotation_mapping/20220419-pgen-gene-accessions-gene_id-gene_name-gene_description-alt_gene_description-go_ids.tab)
+
+            - `gene_ID`: Gene ID from our [_Panopea generosa_ (Pacific geoduck)](http://en.wikipedia.org/wiki/Geoduck) genome.
+
+            - `SPIDs`: Semicolon-delimited list of SPIDs from UniProt. One SPID in this list is a match corresponding to the our original BLAST annotations.
+
+            - `UniProt_gene_ID`: Gene accession from UniProt.
+
+            - `gene`: Abbreviated gene name from UniProt.
+
+            - `gene_description`: Human-readable gene description from UniProt.
+
+            - `alternate_gene_description`: Human-readable alternate gene description from UniProt.
+
+            - `GO_IDs`: Semicolon-delimited GO IDs from UniProt.
 
 Bisulfite Genome:
 
