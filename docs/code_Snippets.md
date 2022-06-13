@@ -171,6 +171,18 @@ wget -r \
 -A _001_val_1.fq.gz https://gannet.fish.washington.edu/metacarcinus/Salmo_Calig/analyses/20190806_TrimGalore/
 ```
 
+### Transfer sequencing files to Owl
+
+```shell
+rsync --archive --progress --verbose *.fastq.gz <owl_username>@<server_name>.fish.washington.edu:/volume1/web/nightingales/<species_directory>
+```
+
+- Replace `<owl_username_>` with whatever username you use to login to owl (even replace the `<` and the `>`).
+
+- Replace `<species_directory>` with whatever species you're working with  (even replace the `<` and the `>`). Example directory name format: `P_generosa`.
+
+- If it doesn't work, Sam may need to change your user settings on Owl, so please post an issue in [https://github.com/RobertsLab/resources/issues/](https://github.com/RobertsLab/resources/issues/)
+
 ### Download file from Google Drive
 
 Install [`gdown`](https://github.com/wkentaro/gdown).
