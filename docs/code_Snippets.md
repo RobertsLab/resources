@@ -174,7 +174,7 @@ wget -r \
 ### Transfer sequencing files to Owl
 
 ```shell
-rsync --archive --progress --verbose *.fastq.gz <owl_username>@<server_name>.fish.washington.edu:/volume1/web/nightingales/<species_directory>
+rsync --archive --progress --verbose *.fastq.gz <owl_username>@owl.fish.washington.edu:/volume1/web/nightingales/<species_directory>
 ```
 
 - Replace `<owl_username_>` with whatever username you use to login to owl (even replace the `<` and the `>`).
@@ -182,6 +182,29 @@ rsync --archive --progress --verbose *.fastq.gz <owl_username>@<server_name>.fis
 - Replace `<species_directory>` with whatever species you're working with  (even replace the `<` and the `>`). Example directory name format: `P_generosa`.
 
 - If it doesn't work, Sam may need to change your user settings on Owl, so please post an issue in [https://github.com/RobertsLab/resources/issues/](https://github.com/RobertsLab/resources/issues/)
+
+### Confirm MD5 checksums
+
+#### Multiple MD5 checksum files (Linux)
+
+```shell
+for checksum_file in *.md5
+do
+  md5sum --check ${checksum_file}
+done
+```
+
+#### Multiple MD5 checksum files (Mac OS)
+
+```shell
+for checksum_file in *.md5
+do
+  # Gets filename without any suffixes
+  filename=$(basename -s .md5 ${checksum_file})
+  # Generates MD5 checksum and compares to provided checksum in MD5 file
+  diff <(md5 "${filename}.fastq.gz" | awk '{print $4}') <(awk '  {print $1}' ${checksum_file})
+done
+```
 
 ### Download file from Google Drive
 
