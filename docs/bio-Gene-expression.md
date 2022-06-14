@@ -1,3 +1,10 @@
+This primarily refers to dealing with transcriptome wide analysis (eg RNA-seq, tag-seq).
+
+## QC
+A normal starting point would be having raw sequence data provided by a core facility.
+
+
+
 
 ## kallisto
 See also the official documentation.
