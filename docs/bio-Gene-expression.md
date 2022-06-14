@@ -1,4 +1,4 @@
-This primarily refers to dealing with transcriptome wide analysis (eg RNA-seq, tag-seq).
+This primarily refers to dealing with transcriptome wide analysis (eg RNA-seq, tag-seq). Please see also Roberts and Gavery (2018) [Opportunities in Functional Genomics: A Primer on Lab and Computational Aspects](http://eagle.fish.washington.edu/whale/pub/jsr37309_1r8rd0.pdf)
 
 ## QC
 A normal starting point would be having raw sequence data provided by a core facility. When downloading said data you need to make sure you check the integrity by making sure the hash at the source is the same once you get it to where you want to analyse it. 
