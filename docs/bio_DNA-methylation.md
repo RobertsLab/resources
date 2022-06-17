@@ -199,8 +199,14 @@ ${bismark_dir}/bismark2summary
 
 Produces report like [this](https://www.bioinformatics.babraham.ac.uk/projects/bismark/bismark_summary_report.html)
 
+---
+  
+## BS-Snpr
+See https://github.com/hellbelly/BS-Snper
 
-
+### Use cases from our lab
+  
+- <https://nbviewer.org/github/RobertsLab/project-gigas-oa-meth/blob/master/code/07-BS-SNPer.ipynb> - Pacific oyster exposed to OA. Author: Yaamini Venkataraman ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/project-gigas-oa-meth)
 
 ---
 
