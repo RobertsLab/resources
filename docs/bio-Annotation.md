@@ -21,7 +21,10 @@ Blast is a key component of working with lesser studied taxa. Here are some reso
 
 - <https://github.com/RobertsLab/code/blob/master/script-box/complete_go_annotation_notebook.Rmd> -
 
-
+- https://github.com/sr320/ceabigr/blob/main/code/17-Swiss-Prot-Annotation.Rmd -  Blasting C virginica to Swiss-Prot. Author: Steven Roberts ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/ceabigr)
 
 ## Genome features
 In addition to sequence database alignment, finding spatial relationship within a genome is also an import approach for annotation. Often this is done using software tools such as `bedtools`.
+
+### bedtools::intersectbed
+see also https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
