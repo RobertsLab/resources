@@ -33,7 +33,10 @@ User Guides
 
 
 ### Code Output Expectations
-(**Always default to the Manual/User Guide!** - this is merely an attempt at explaining our workflow)    
+(**Always default to the Manual/User Guide!** - this is merely an attempt at explaining our workflow)
+
+## Bismark
+
 [Bismark User Guide](https://rawgit.com/FelixKrueger/Bismark/master/Docs/Bismark_User_Guide.htm)
 
 
