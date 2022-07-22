@@ -214,12 +214,44 @@ See https://github.com/hellbelly/BS-Snper
 ---
 
 ## `EpiDiverse/wgbs` (Nextflow pipeline)
-See https://github.com/EpiDiverse/wgbs
+See https://github.com/EpiDiverse/wgbs.
 
 ### Instructions for running on Raven
 
 
 ### Instructions for running on Mox
+
+NOTE: All code below should be added to your SLURM script.
+
+1. Add the following lines to the beginning (below the header) of your SLURM script:
+
+```shell
+# Load Anaconda
+# Unknown why this is needed, but Anaconda will not run if this line is not included.
+. "/gscratch/srlab/programs/anaconda3/etc/profile.d/conda.sh"
+
+
+# Activate the EpiDiverse/wbgs Anaconda environment
+conda activate epidiverse-wgbs
+```
+
+2. Run the Nextflow pipeline. Read the comments in code below for important usage notes.
+
+    NOTE: Replace items enclosed in `<>` (including the `<>` with your own path(s))
+
+```shell
+# Run Nextflow EpiDiverse/wgbs pipeline
+# Expects paired end, gzipped FastQ files named *.fastq.gz. Add --SE parameter to use single end instead.
+# Genome FastA must have a corresponding FastA index file.
+# Can perform trimming if desired. Add --trim parameter.
+# Can run FastQC after trimming. Add --fastqc parameter.
+NXF_VER=20.07.1 \
+/gscratch/srlab/programs/nextflow \
+/gscratch/srlab/programs/epidiverse-pipelines/wgbs \
+--input <path to directory with *.fastq.gz files> \
+--reference <path to genome FastA> \
+--INDEX
+```
 
 ## Methylkit
 
