@@ -213,6 +213,14 @@ See https://github.com/hellbelly/BS-Snper
 
 ---
 
+## `EpiDiverse/wgbs` (Nextflow pipeline)
+See https://github.com/EpiDiverse/wgbs
+
+### Instructions for running on Raven
+
+
+### Instructions for running on Mox
+
 ## Methylkit
 
 See also the official documentation - [MethylKit Vignette](https://bioconductor.org/packages/release/bioc/vignettes/methylKit/inst/doc/methylKit.html)
