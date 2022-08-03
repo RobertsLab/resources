@@ -24,7 +24,7 @@ Sensaphone Connections:
 
 - 2: Power on/off sensor for power being supplied to freezer 1
 
-- 3: Power on/off sensor for power being supplied to freezer 2
+- 3: ~~Power on/off sensor for power being supplied to freezer 2~~ (disabled 20220803 by SJW)
 
 - 4: Not hooked to anything.
 
