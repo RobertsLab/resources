@@ -7,9 +7,7 @@ Foundational protocols can be found [here](https://github.com/RobertsLab/resourc
 
 ---
 
-## Reverse Transcription
-
-### <a name="reverse_transcription"></a>Reverse Transcription
+## <a name="reverse_transcription"></a>Reverse Transcription
 #### Standard Operating Protocol (SOP)
 Written 20150702 by Sam White.
 
