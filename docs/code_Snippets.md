@@ -217,6 +217,43 @@ subsequently verified after downloading.
 gdown -O PGA_assembly.fasta https://drive.google.com/uc?id=1Yanmb5yBXn-D4b_fzkR2GSxP
 ```
 
+### Transfer files to/from Mox using Globus Connect Personal
+
+1. Log into Mox.
+
+2. Activate anaconda (this might fail, let me know if it does and don't bother going to the next step): `conda activate`
+
+3. Setup Globus collection: `/gscratch/srlab/programs/globusconnectpersonal-3.1.4/globusconnectpersonal -setup --no-gui`
+
+4. Follow the instructions (copy/paste URL into browser, get code from webpage, enter code in Mox terminal, provide name for collection).
+
+5. Add desired Mox directory to config file and set permissions. Here's an example:
+
+```
+$cat ~/.globusonline/lta/config-paths
+
+~/,0,1
+/gscratch/scrubbed/samwhite/,0,1
+```
+
+The config file does two things:
+
+-  `~/,0,1`: Makes your home directory readable/writeable by Globus.
+-  `/gscratch/scrubbed/samwhite/,0,1`: Makes my directory on `/gscratch/scrubbed/` readable/writeable by Globus.
+
+6. Start Globus Connect Personal: `/gscratch/srlab/programs/globusconnectpersonal-3.1.4/globusconnectpersonal -start`. Nothing will happen after you hit enter. The cursor will simply flash - this is good.
+
+7. Login to your Globus Connect Personal account via a web browser.
+
+8. Click on Collections and you should now see your collection (name provided in Step 4), and it should have a green stack of papers(?) next to it; the green indicates that the connection is activate.
+
+9. Click on the collection name.
+
+10. Click on "Open in File Manager" (on the right side of the screen).
+
+11. Navigate to the directory you setup in Step 5. NOTE: You'll have to navigate up a directory out of your home directory in order to get to the `/gscratch` partition.
+
+12. Transfer data from other Globus Endpoint to Mox!
 
 ---
 
