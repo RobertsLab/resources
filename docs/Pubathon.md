@@ -1,13 +1,7 @@
-# Pub-a-thon 2022
 
-
-::insert awesome works of science here::
-
----
 
 # Pub-a-thon 2022
 
-_Tier Red_
 
 1) **Coral nutritional exchange across ontogeny** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
