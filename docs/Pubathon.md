@@ -11,7 +11,7 @@ _Tier Red_
 
 1) **Coral nutritional exchange across ontogeny** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
-[Paper repo](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics) 
+[Paper repo](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics)   
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 2) **Coral nutritional exchange in larvae under thermal stress** - Ariana et al      
