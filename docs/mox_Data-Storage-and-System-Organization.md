@@ -20,14 +20,8 @@
 ### Suggested User Organization
 You should be aware of storage limits above, but here is a suggestion of how to organize your files.
 
-In our **group-specific storage** (`/gscratch/srlab/your_uw_id`) create subdirectories:
-- `jobs` where job scripts live. These could be named based on date. For example Steven uses `MMDD-HHMM.sh` format.
-- `data` data you are acting on.
-- `analyses` where output goes. Steven uses MMDD subdirectory naming structure. This is where he points to a working directory in job script header.
-- `blastdb` where blast databases live.
+In our **group-specific storage** (`/gscratch/srlab/your_uw_id`) create clear subdirectories that any files that might be needed over the course of months or years and are not large in size.
 
-If you have _a lot_ of data to analyze or your output will be _big_ (or thousands of files) you will need to use the **temporary storage**. Roughly 500GB of input or output would qualify for using this space. Of course this will always depend on our free space in **group-specific storage**. Just be aware of the 30 day limit. For this you could have two subdirectories in (`/gscratch/scrubbed/your_uw_id`)...
-- `analyses` where output goes.
-- `data` data you are acting on.
+Generally you will need to  use the **temporary storage**. Roughly 500GB of input or output would qualify for using this space. Of course this will always depend on our free space in **group-specific storage**. Just be aware of the 30 day limit. 
 
-For both, Steven uses MMDD subdirectory structure.
+And example of how Steven operates is that for every job he creates a directory in slurm (eg 020322-oly-snp) and includes job shell script in this directory and write out to said directory. Once complete you would rsync to your personal directory on one of birds (eg gannet).
