@@ -217,6 +217,7 @@ NOTE: These instructions are written to be performed on Mox (Hyak).
 
     - NOTE: Be sure to update the script line to reflect your container name:
     
-    ```# Set container name
+    ```
+    # Set container name
     container="rstudio-4.0.2.sjw-v1.0.sif"
     ```
