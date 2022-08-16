@@ -1,4 +1,4 @@
-These directions are taken from the Mox Hyak wiki found [here]([https://wiki.cac.washington.edu/display/hyakusers/Mox_ipython_jupyter](https://hyak.uw.edu/docs/tools/jupyter/).
+These directions are taken from the Mox Hyak wiki found [here](https://hyak.uw.edu/docs/tools/jupyter/).
 
 #### Use Jupyter Notebook
 
