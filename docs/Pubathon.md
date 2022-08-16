@@ -1,12 +1,24 @@
+
+
+# Pub-a-thon 2022
+
+
+1) **Coral nutritional exchange across ontogeny** - Ariana et al      
+[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
+[Paper repo](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+2) **Coral nutritional exchange in larvae under thermal stress** - Ariana et al      
+[Working draft](https://docs.google.com/document/d/1D-iMattGZxOVxhnQd1ib1ML0I_Vqoy7jkGPfxmmNd_8/edit)  
+[Paper repo](https://github.com/AHuffmyer/SymbioticIntegration)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
+
+2) **Coral phenotypes shaped by host and symbiont physiological plasticity across environments in Moorea French Polynesia** - Ariana et al      
+[Working draft](https://docs.google.com/document/d/1gBrDypEwR4ont16BX5hCv0N3kpMmFW-lJlT0PVaHvEM/edit)    
+[Paper repo](https://github.com/urol-e5/timeseries)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
 # Pub-a-thon 2021
-
-
-<iframe width="682" height="422" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3k1Br4DkiJyzH2nou51H-nORE9dVCgiwjD_nchL4CCsWcFBwSB-I562XG0ns2p32IROzNZ_PSFIqO/pubchart?oid=1356993868&amp;format=interactive"></iframe>
-
----
-Not able to make the call? You can [register your goals here.](https://docs.google.com/forms/d/e/1FAIpQLSecodL5dAgPhjTa_B5B2jRhwKgPlCKoPztPHrW1Cziq0vliTg/viewform) (_and see what folks register [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vTGJFZPOW0nLYY8DBxHxIsdTuBc5R7Yyr9lIk_iuT2dc_SNFaxOWGmGCQIwcOzZQvHC2vtZ-B2oOLFV/pubhtml?gid=296481310&single=true)_)
-
----
 
 _Tier Red_
 

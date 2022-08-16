@@ -137,11 +137,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
 ## Personal Purchases (reimbursed by SAFS Budget)
 
-Complete [this form](http://gannet.fish.washington.edu/seashell/snaps/new_ereimbursement_form_.pdf) and attach copies of receipts.
-
-It is recommended that the form and receipt are combined into a single PDF and emailed to [Lisa Smith](mailto:autumn@uw.edu). You will need to first have Steven sign the form, preferably via Slack.   
-
-Upon receipt, Lisa will often confirm she has submitted the request in 1-2 business days.
+Use https://treq.environment.uw.edu
 
 Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing)
 
@@ -153,8 +149,6 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 ## Travel Reimbursement
 
-Complete [this form](http://gannet.fish.washington.edu/seashell/snaps/Newest-Travel-Worksheet_-10-21-13.pdf) and attach copies of receipts if required.
+Use https://treq.environment.uw.edu
 
-Note for local travel you should provide a map that shows distance in miles.
-
-It is recommended that the form and receipt are combined into a single PDF and emailed to Robyn Brooks (brooksr@uw.edu). You will need to first have Steven sign the form, preferably via Slack.   
+ 
