@@ -16,7 +16,13 @@
 3) **Coral phenotypes shaped by host and symbiont physiological plasticity across environments in Moorea French Polynesia** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/1gBrDypEwR4ont16BX5hCv0N3kpMmFW-lJlT0PVaHvEM/edit)    
 [Paper repo](https://github.com/urol-e5/timeseries)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
+
+4) **Tanner crab and Hematodinium gene expression** - Aidan et al  
+[Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
+[Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+Journal:
 
 # Pub-a-thon 2021
 
