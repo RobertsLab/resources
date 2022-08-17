@@ -25,8 +25,8 @@
 Journal:
 
 5) **Citrate Synthase Response and Multiple-Stress in Pacific Oysters (C. gigas)** - Olivia et al
-[Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)
-[Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase)
+[Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit) 
+[Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase) 
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg) 
 Journal: 
 
