@@ -28,7 +28,23 @@ Journal:
 [Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)    
 [Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase)   
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
-Journal: 
+Journal:
+
+6) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
+[Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
+[GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy)
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
+
+7) **The impact of ploidy on the physiological and genetic response of Pacific oysters following multiple stress exposure**  - _Matt_  
+[Working Draft](https://docs.google.com/document/d/1XM3lNTzLySROcJbUl2UZN-uC9SWQNTkhkTfVNU8qeDs/edit?usp=sharing)    
+[GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp)
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
+8) **The impact of environmental stressors on the expression of byssal thread proteins**  - _Matt_  
+[Working Draft](https://docs.google.com/document/d/1fKfDU4gHPdMy9xejUA5pZ6YY2HVzsiGSGo7uFVgDln4/edit?usp=sharing)    
+[GitHub](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
 
 # Pub-a-thon 2021
 
