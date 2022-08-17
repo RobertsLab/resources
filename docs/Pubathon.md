@@ -21,28 +21,26 @@
 4) **Tanner crab and Hematodinium gene expression** - Aidan et al  
 [Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
 [Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
-Journal:
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 5) **Citrate Synthase Response and Multiple Stress in Pacific Oysters (C. gigas)** - Olivia et al   
 [Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)    
-[Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase)   
+[Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
-Journal:
 
 6) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
-[GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy)
+[GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
 
 7) **The impact of ploidy on the physiological and genetic response of Pacific oysters following multiple stress exposure**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/1XM3lNTzLySROcJbUl2UZN-uC9SWQNTkhkTfVNU8qeDs/edit?usp=sharing)    
-[GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp)
+[GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
 8) **The impact of environmental stressors on the expression of byssal thread proteins**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/1fKfDU4gHPdMy9xejUA5pZ6YY2HVzsiGSGo7uFVgDln4/edit?usp=sharing)    
-[GitHub](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
+[GitHub](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
 
