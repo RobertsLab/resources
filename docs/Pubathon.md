@@ -26,19 +26,24 @@
 5) **Citrate Synthase Response and Multiple Stress in Pacific Oysters (C. gigas)** - Olivia et al   
 [Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)    
 [Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase) </br>
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-6) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
+6) **Mussel (Mytilus trossulus) heat stress response** - Zach et al   
+[Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
+[Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
+7) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
 
-7) **The impact of ploidy on the physiological and genetic response of Pacific oysters following multiple stress exposure**  - _Matt_  
+8) **The impact of ploidy on the physiological and genetic response of Pacific oysters following multiple stress exposure**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/1XM3lNTzLySROcJbUl2UZN-uC9SWQNTkhkTfVNU8qeDs/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
-8) **The impact of environmental stressors on the expression of byssal thread proteins**  - _Matt_  
+9) **The impact of environmental stressors on the expression of byssal thread proteins**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/1fKfDU4gHPdMy9xejUA5pZ6YY2HVzsiGSGo7uFVgDln4/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
