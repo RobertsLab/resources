@@ -720,7 +720,7 @@ Transcriptome:
 
 * [Pgenerosa_transcriptome_v5.fasta](http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta`
 
-    - MD5 = 5a21424ecbc88c3b01daefe56bed79da
+    - MD5 = `5a21424ecbc88c3b01daefe56bed79da`
 
 Transcriptome generated from various libaries - details [here](https://robertslab.github.io/sams-notebook/2018/09/04/transcriptome-assembly-geoduck-rnaseq-data.html). 
 
@@ -760,5 +760,10 @@ QPX_Transcriptome v2.1
 
 Subset of version 1 (v1) that only includes sequences with e-value < 1E-20. Based on Swiss-Prot blastx output, all sequences are oriented 5' - 3'. nucleotides between stop codons; minimum size 200.
 
+## _Salvelinus namaycush_ (lake trout)
+
+Genome Feature Tracks:
+
+- [20220818-snam-GCF_016432855.1_SaNama_1.0_genes.bed](https://gannet.fish.washington.edu/Atumefaciens/20220818-snam-gff_to_bed-genes/20220818-snam-GCF_016432855.1_SaNama_1.0_genes.bed)
 
 ---
