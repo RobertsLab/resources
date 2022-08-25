@@ -54,6 +54,11 @@
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
 Due date to PeerJ August 30(!!)
 
+11) **Factors associated with Bitter Crab Syndrome in Southeast Alaskan Tanner crab**  - _Aidan_  
+[Working Draft](https://docs.google.com/document/d/1N-HoxKCsHHYaGQHoWrwu3876ayRmOrbE6ZIWQ4Hc79c/edit?usp=sharing)    
+[GitHub](https://github.com/afcoyle/hemat_modeling) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
 
 # Pub-a-thon 2021
 
