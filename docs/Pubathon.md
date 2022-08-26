@@ -83,7 +83,7 @@ Due date to PeerJ August 30(!!)
 16) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
 [OSF](https://osf.io/yem8n/)
-[GitHub](https://github.com/hputnam/Geoduck_Meth)
+[GitHub](https://github.com/hputnam/Geoduck_Meth)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
 
 # Pub-a-thon 2021
