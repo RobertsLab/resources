@@ -65,6 +65,26 @@ Due date to PeerJ August 30(!!)
 [GitHub](https://github.com/afcoyle/hemat_modeling) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
+13) **Geoduck OA and reproductive development** - Shelly et al  
+[Working draft](https://docs.google.com/document/d/1YRoMQprj-cUQzBWzJ9lwSXrLbU3UYlutvDPb2QNlcMQ/edit)  
+[Paper repo](https://github.com/shellytrigg/paper-GeoduckReproDev_pH)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+14) **Geoduck OA transgenerational effects** - Shelly et al  
+[Working draft](https://docs.google.com/document/d/1aIho7R27-cXpDpuRKlQY_p-3Bi7-HlZMNQcTtH_bigI/edit)  
+[Paper repo](https://github.com/shellytrigg/paper-GeoduckTransgen_var.pH)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+15) **Temp and Salinity effects on Salmon with sea lice** - Shelly et al  
+[Working draft](https://docs.google.com/document/d/1BJiqCxBNu4nk1PmfB3TC9gjyU5WTciRStQPSKUYVnug/edit)  
+[Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+16) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
+[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
+[OSF](https://osf.io/yem8n/)
+[GitHub](https://github.com/hputnam/Geoduck_Meth)
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
 
 # Pub-a-thon 2021
 
