@@ -90,7 +90,10 @@ Journal: PeerJ
 [Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-
+17) **Effects of OA on Manila and Littleneck clams** - Larken et al
+[Working draft]()  
+[Paper repo](https://github.com/larkenr/Clam-OA-project)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 # Pub-a-thon 2021
 
