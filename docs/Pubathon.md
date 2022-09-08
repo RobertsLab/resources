@@ -5,7 +5,7 @@
 11) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grac et al_      
 [Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
 [GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
-![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)      
+![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
 Journal: PeerJ     
 
 16) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
