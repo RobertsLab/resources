@@ -8,6 +8,11 @@
 ![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)      
 Journal: PeerJ     
 
+16) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
+[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
+[OSF](https://osf.io/yem8n/)
+[GitHub](https://github.com/hputnam/Geoduck_Meth)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
 
 1) **Coral nutritional exchange across ontogeny** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
@@ -82,11 +87,7 @@ Journal: PeerJ
 [Paper repo](https://github.com/shellytrigg/Salmon_sealice)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-16) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
-[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
-[OSF](https://osf.io/yem8n/)
-[GitHub](https://github.com/hputnam/Geoduck_Meth)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
+
 
 # Pub-a-thon 2021
 
