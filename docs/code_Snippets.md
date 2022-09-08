@@ -87,10 +87,10 @@ source .rvars
 
       (E.g. This is useful when running [`bowtie2`](https://github.com/BenLangmead/bowtie2) or [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
 
-      ```bash
+      ```shell
       R1_list=$(echo "${R1_array[@]}" | tr " " ",")
       R2_list=$(echo "${R2_array[@]}" | tr " " ",")
-        ```
+      ```
 
 ### Creating single array with paired reads
 
