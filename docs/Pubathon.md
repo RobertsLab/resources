@@ -2,6 +2,12 @@
 
 # Pub-a-thon 2022
 
+11) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grac et al_      
+[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
+[GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)      
+Journal: PeerJ     
+
 
 1) **Coral nutritional exchange across ontogeny** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
@@ -54,11 +60,7 @@
 [GitHub](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
-11) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grac et al_      
-[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
-[GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
-Due date to PeerJ August 30(!!)
+
 
 12) **Factors associated with Bitter Crab Syndrome in Southeast Alaskan Tanner crab**  - _Aidan_  
 [Working Draft](https://docs.google.com/document/d/1N-HoxKCsHHYaGQHoWrwu3876ayRmOrbE6ZIWQ4Hc79c/edit?usp=sharing)    
