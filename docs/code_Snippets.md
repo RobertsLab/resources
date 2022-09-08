@@ -173,6 +173,8 @@ wget -r \
 
 ### Transfer sequencing files to Owl
 
+#### Standard `rsync` procedure:
+
 ```shell
 rsync --archive --progress --verbose *.fastq.gz <owl_username>@owl.fish.washington.edu:/volume1/web/nightingales/<species_directory>
 ```
@@ -182,6 +184,27 @@ rsync --archive --progress --verbose *.fastq.gz <owl_username>@owl.fish.washingt
 - Replace `<species_directory>` with whatever species you're working with  (even replace the `<` and the `>`). Example directory name format: `P_generosa`.
 
 - If it doesn't work, Sam may need to change your user settings on Owl, so please post an issue in [https://github.com/RobertsLab/resources/issues/](https://github.com/RobertsLab/resources/issues/)
+
+#### Using `rsync` list of files:
+
+```shell
+rsync -avP --files-from=:/volume1/web/nightingales/P_generosa/rsync_list.txt owl:/volume1/web/ .
+```
+
+```shell
+head rsync_list.txt
+
+nightingales/P_generosa/Geoduck-ctenidia-RNA-1_S3_L001_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-2_S11_L002_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-3_S19_L003_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-4_S27_L004_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-5_S35_L005_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-6_S43_L006_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-7_S51_L007_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-ctenidia-RNA-8_S59_L008_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-gonad-RNA-1_S1_L001_R2_001.fastq.gz
+nightingales/P_generosa/Geoduck-gonad-RNA-2_S9_L002_R2_001.fastq.gz
+```
 
 ### Confirm MD5 checksums
 
