@@ -48,7 +48,7 @@ Journal: PeerJ
 [Paper Repo 2](https://github.com/ocattau/code-for-Pgenerosa) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-7) **Mussel (Mytilus trossulus) heat stress response** - Zach et al   
+7) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
 [Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
 [Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
