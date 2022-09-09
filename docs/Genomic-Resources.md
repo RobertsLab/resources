@@ -677,6 +677,12 @@ Genome Feature Tracks:
 
     - Primary GFF containing all features.
 
+  - [Panopea-generosa-v1.0.a4_biotype-trna_strand_converted-no_RNAmmer.gtf](https://gannet.fish.washington.edu/Atumefaciens/20220323-pgen-nextflow_rnaseq-tissues/genome/Panopea-generosa-v1.0.a4_biotype-trna_strand_converted-no_RNAmmer.gtf)
+
+    - GTF file with formatting to avoid downstream parsing problems.
+
+    - [GitHub Issue describing creation and problems](https://github.com/RobertsLab/resources/issues/1411)
+
   - [Panopea-generosa-v1.0.CpG.gff](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.CpG.gff)
 
   - [Panopea-generosa-v1.0.a4.CDS.gff3](https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.a4.CDS.gff3)
