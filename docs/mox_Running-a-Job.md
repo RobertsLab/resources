@@ -1,3 +1,8 @@
+
+**NOTE** - Please use [temporary storage / `scrubbed`](https://robertslab.github.io/resources/mox_Data-Storage-and-System-Organization/#3-temporary-storage) for running jobs (ie writing new files to). As the name suggests you will need move files to a "bird" for archival storage.
+
+---
+
 `sbatch` is the main execution command for the job scheduler ([slurm](https://slurm.schedmd.com/overview.html)). It spools up an execute node for long term or compute intensive tasks such as assemblies, blasts, or other things of that nature.
 
 `sbatch` can be run from a login node with the command
