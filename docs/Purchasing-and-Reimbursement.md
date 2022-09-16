@@ -11,40 +11,13 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
   
     b. Purchasing approval will be confirmed by Steven and he will provide the appropriate budget number & name to use
 
-2. Fill and submit appropriate form(s).
+2. Sumbit Purchase
 
     There are three basic means by which to submit a purchase. They are listed in order (top to bottom) of preferred usage:
 
-    - [SAFS Purchasing Form](https://fish.uw.edu/wp-content/uploads/sites/4/2014/08/Purchasing_Form.pdf)
+    - [treq](https://treq.environment.uw.edu)
 
-          1. Fill out the following fields:
-
-              - Budget & Budget Name
-
-              - Date Desired
-
-              - Ordered By
-
-              - Phone
-
-              - Email
-
-              - Delivery info (Replace `<YOUR NAME>` with your name)
-
-                  ```
-                  UW Mailing Services
-                  Attn: SAFS 355020/<YOUR NAME>
-                  3900 7th Ave NE
-                  Seattle, WA 98195
-                  ```
-
-              - Vendor Information
-
-              - Required fields in table at bottom
-
-          2. Have Steven sign the ```Authorization``` field by submitting form on `#purchasing` channel on Slack.
-
-          3. <a name="SubmitRequest"></a> Email completed form to [Lisa Smith](mailto:autumn@uw.edu) (or print and put in mailbox in FHS116).
+         
 
     - [eProcurement (Ariba)](https://ar.admin.washington.edu/AribaBuyer/uw/login.asp)
 
