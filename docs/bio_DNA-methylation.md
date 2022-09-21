@@ -232,7 +232,7 @@ NOTE: All code below should be added to your SLURM script.
 
 
 # Activate the EpiDiverse/wbgs Anaconda environment
-conda activate epidiverse-wgbs
+conda activate epidiverse-wgbs_env
 ```
 
 2. Run the Nextflow pipeline. Read the comments in code below for important usage notes.
