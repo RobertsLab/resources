@@ -24,7 +24,7 @@ The Bash variables set in the example below are:
 - `${samtools}`
 
 ```R
-{bash}
+{bash save-bash-variables-to-rvars-file}
 # Send text to export Bash variables to .rvars file
 {
 echo "# CPU threads"
@@ -40,7 +40,7 @@ echo ""
 In subsequent Bash chunks, load the variables into memory to use them:
 
 ```R
-{bash}
+{bash load-bash-variables}
 # Load contents of .rvars into memory so varaibles are accessible
 source .rvars
 
@@ -361,14 +361,15 @@ Applications/bioinfo/ncbi-blast-2.11.0+/bin/blastx \
  for file in *; do mv "$file" ${file// /}; done
  ```
 
+Explanation:
 
-`for file in *;`
+- `for file in *;`
 
- - A for loop that looks at all files in the current directory. The word ```file``` is a variable that takes on the value of each file name in the directory (one file name per loop). The ```;``` is needed for bash for loop formatting.
+  - A for loop that looks at all files in the current directory. The word ```file``` is a variable that takes on the value of each file name in the directory (one file name per loop). The ```;``` is needed for bash for loop formatting.
 
-`do mv "$file" ${file// /};`
+- `do mv "$file" ${file// /};`
 
- - Tells bash to use the move command (`mv`) and use the current contents of the variable `$file` as the initial filename. The `${file// /}` is a substitution command that tells bash to use the contents of the `file` variable and replace all spaces (`//` ; note - there should be a space after the last slash here) with nothing (`/` - you can add text after this slash to replace with information of your choice). The `;` is needed for bash for loop formatting.
+  - Tells bash to use the move command (`mv`) and use the current contents of the variable `$file` as the initial filename. The `${file// /}` is a substitution command that tells bash to use the contents of the `file` variable and replace all spaces (`//` ; note - there should be a space after the last slash here) with nothing (`/` - you can add text after this slash to replace with information of your choice). The `;` is needed for bash for loop formatting.
 
-`done`
- - Ends the for loop
+- `done`
+  - Ends the for loop
