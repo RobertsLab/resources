@@ -10,7 +10,7 @@ The majority of programs can be found in:
 
 ## Modules
 
-Modules are a relatively simply way to add programs to your system `$PATH`
+Modules are a relatively simple way to add programs to your system `$PATH`
 
 A module is a text file. Here's an example from `cat /gscratch/srlab/programs/modules/maker-3.01.03.module`:
 
