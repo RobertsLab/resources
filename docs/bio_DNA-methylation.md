@@ -213,6 +213,73 @@ See https://github.com/hellbelly/BS-Snper
 
 ---
 
+## `EpiDiverse/snp` (Nextflow pipeline)
+See https://github.com/EpiDiverse/snp
+
+### Instructions for running on Mox
+
+
+Add the following below your SBATCH script header. Replace `bams_dir` and `genome_fasta` locations with your own.
+
+NOTE: A FastA index file needs to be present in the same directory as your genome FastA file.
+
+```shell
+# These variables need to be set by user
+
+## Directory with BAM(s)
+bams_dir="/gscratch/scrubbed/samwhite/data/C_virginica/BSseq/120321-cvBS"
+
+## Location of EpiDiverse/snp pipeline directory
+epi_snp="/gscratch/srlab/programs/epidiverse-pipelines/snp"
+
+## FastA file is required to end with .fa
+## Requires FastA index file to be present in same directory as FastA
+genome_fasta="/gscratch/srlab/sam/data/C_virginica/genomes/GCF_002022765.2_C_virginica-3.0_genomic.fa"
+
+## Location of Nextflow
+nextflow="/gscratch/srlab/programs/nextflow-21.10.6-all"
+
+## Specify desired/needed version of Nextflow
+nextflow_version="20.07.1"
+
+
+###################################################################################
+
+
+# Exit script if a command fails
+set -e
+
+# Load Anaconda
+# Uknown why this is needed, but Anaconda will not run if this line is not included.
+. "/gscratch/srlab/programs/anaconda3/etc/profile.d/conda.sh"
+
+# Activate NF-core conda environment
+conda activate epidiverse-snp_env
+
+# Count BAMs
+# Needed to pass info to Epidiverse/spn
+# to avoid artificial file count limitation.
+bam_count=0
+
+for bam in ${bams_dir}*.bam
+do
+  # Increments counter by 1 for each BAM
+  ((bam_count++))
+done
+
+## Run EpiDiverse/snp
+NXF_VER=${nextflow_version} \
+${nextflow} run \
+${epi_snp} \
+--input ${bams_dir} \
+--reference ${genome_fasta} \
+--variants \
+--clusters \
+--take ${bam_count}
+```
+
+---
+
 ## `EpiDiverse/wgbs` (Nextflow pipeline)
 See https://github.com/EpiDiverse/wgbs.
 
