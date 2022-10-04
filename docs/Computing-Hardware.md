@@ -70,6 +70,8 @@ For Macs, you may need to change the 'Use' drop down menu:
 
 - select 'Brother HL-L2395DW CUPS'.
 
+Also for Macs, you will need to change the 'Protocol to HP Jetdirect-Socket' or else your computer will not find the printer. No software download neeeded. 
+
 ## Software
 
 To limit clutter on this page, we've assembled a list of software currently installed on each lab computer (including our Mox node):
