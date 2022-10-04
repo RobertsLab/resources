@@ -58,7 +58,7 @@ Due to the initial steep learning curve, we have a dedicated section on how to u
 - [New Mox User](mox_Adding-a-User.md)
 
 ## Printers
-You can send print jobs wirelessly to the Brother L2395DW printer in rm 209.
+You can send print jobs wirelessly to the Brother HL-L2395DW395DW printer in rm 209.
 
 First, download the [printer driver software](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=hll2395dw_us_as) to your computer.
 
@@ -68,7 +68,7 @@ For Macs, you may need to change the 'Use' drop down menu:
 
 - choose 'select software'
 
-- select 'Brother L2395DW CUPS'.
+- select 'Brother HL-L2395DW CUPS'.
 
 ## Software
 
