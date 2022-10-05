@@ -60,17 +60,23 @@ Due to the initial steep learning curve, we have a dedicated section on how to u
 ## Printers
 You can send print jobs wirelessly to the Brother HL-L2395DW395DW printer in rm 209.
 
-First, download the [printer driver software](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=hll2395dw_us_as) to your computer.
+Windows computers:
 
-Next, add the printer via system preferences-> printers and scanners for Mac or settings-> devices -> printers and scanners for Windows. You'll need to enter the IP address of the printer which is listed on the [Roberts Lab Computers spreadsheet](https://docs.google.com/spreadsheets/d/1mtIITcjqZVEQtynYZFdOdx51uXTiXP7Jvvzv_SnWCDY/edit#gid=0).
+1. Download the [printer driver software](https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=hll2395dw_us_as) to your computer.
 
-For Macs, you may need to change the 'Use' drop down menu:
+2. Add the printer via: Settings-> Devices -> Printers and Scanners. You'll need to enter the IP address of the printer which is listed on the [Roberts Lab Computers spreadsheet](https://docs.google.com/spreadsheets/d/1mtIITcjqZVEQtynYZFdOdx51uXTiXP7Jvvzv_SnWCDY/edit#gid=0).
 
-- choose 'select software'
+For Macs:
 
-- select 'Brother HL-L2395DW CUPS'.
+1. Add the printer via: System preferences-> Printers and scanners. You'll need to enter the IP address of the printer which is listed on the [Roberts Lab Computers spreadsheet](https://docs.google.com/spreadsheets/d/1mtIITcjqZVEQtynYZFdOdx51uXTiXP7Jvvzv_SnWCDY/edit#gid=0).
 
-Also for Macs, you will need to change the *Protocol* to **'HP Jetdirect-Socket'** or else your computer will not find the printer. No software download neeeded. 
+  - You may need to change the 'Use' drop down menu:
+
+    - Choose 'select software'
+
+    - Select 'Brother HL-L2395DW CUPS'.
+
+  - You will need to change the *Protocol* to 'HP Jetdirect-Socket'.
 
 ## Software
 
