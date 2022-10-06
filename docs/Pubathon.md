@@ -94,7 +94,7 @@ Journal: PeerJ
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 17) **Effects of OA on Manila and Littleneck clams** - Larken et al
-[Working draft]()  
+[Working draft](https://docs.google.com/document/d/1eAXcXll1d228u14kOivJBmKH4dfBoObi1WMUACSfhog/edit)  
 [Paper repo](https://github.com/larkenr/Clam-OA-project)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
