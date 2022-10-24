@@ -25,6 +25,11 @@
 [Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
+7) **Citrate Synthase Response and Multiple Stress in Pacific Oysters (C. gigas)** - _Olivia_    
+[Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)    
+[Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
 3) **Coral nutritional exchange across ontogeny** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
 [Paper repo](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics)   
@@ -39,11 +44,6 @@
 [Working draft](https://docs.google.com/document/d/1gBrDypEwR4ont16BX5hCv0N3kpMmFW-lJlT0PVaHvEM/edit)    
 [Paper repo](https://github.com/urol-e5/timeseries)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
-
-7) **Citrate Synthase Response and Multiple Stress in Pacific Oysters (C. gigas)** - _Olivia_    
-[Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)    
-[Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase) </br>
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
 8) **Comparative Transcriptome Analysis of Geoduck Clam (P. generosa)** - _Olivia_  
 [Working Draft](https://docs.google.com/document/d/1YqGZNaGJxnlBQapLIxCF238DA-mGo6S1Tc7uBbWqN0o/edit) </br>
