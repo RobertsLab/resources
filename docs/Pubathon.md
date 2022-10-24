@@ -5,17 +5,25 @@
 
 <iframe width="682" height="422" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3k1Br4DkiJyzH2nou51H-nORE9dVCgiwjD_nchL4CCsWcFBwSB-I562XG0ns2p32IROzNZ_PSFIqO/pubchart?oid=1185787774&amp;format=interactive"></iframe>
 
-1) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grac et al_      
-[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
-[GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
-![status](https://img.shields.io/badge/pub--a--thon%20status-ACCEPTED!!-blue.svg)      
-Journal: PeerJ     
+9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
+[Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
+[Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-2) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
-[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
-[OSF](https://osf.io/yem8n/)
-[GitHub](https://github.com/hputnam/Geoduck_Meth)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
+10) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
+[Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
+[GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
+
+11) **The impact of ploidy on the physiological and genetic response of Pacific oysters following multiple stress exposure**  - _Matt_  
+[Working Draft](https://docs.google.com/document/d/1XM3lNTzLySROcJbUl2UZN-uC9SWQNTkhkTfVNU8qeDs/edit?usp=sharing)    
+[GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
+6) **Tanner crab and Hematodinium gene expression** - Aidan et al  
+[Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
+[Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 3) **Coral nutritional exchange across ontogeny** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)  
@@ -32,11 +40,6 @@ Journal: PeerJ
 [Paper repo](https://github.com/urol-e5/timeseries)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
 
-6) **Tanner crab and Hematodinium gene expression** - Aidan et al  
-[Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
-[Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
 7) **Citrate Synthase Response and Multiple Stress in Pacific Oysters (C. gigas)** - _Olivia_    
 [Working Draft](https://docs.google.com/document/d/1fbFR6rQdQiAYQkFlttQ_jnVntgv40YrUGGV0BgP78BI/edit)    
 [Paper Repo](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp/tree/main/202107_EXP2/citrate_synthase) </br>
@@ -47,21 +50,6 @@ Journal: PeerJ
 [Paper Repo 1](https://github.com/ocattau/pgenreosa_shared_raven) </br>
 [Paper Repo 2](https://github.com/ocattau/code-for-Pgenerosa) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
-9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
-[Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
-[Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
-10) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
-[Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
-[GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy) </br>
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
-
-11) **The impact of ploidy on the physiological and genetic response of Pacific oysters following multiple stress exposure**  - _Matt_  
-[Working Draft](https://docs.google.com/document/d/1XM3lNTzLySROcJbUl2UZN-uC9SWQNTkhkTfVNU8qeDs/edit?usp=sharing)    
-[GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp) </br>
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
 12) **The impact of environmental stressors on the expression of byssal thread proteins**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/1fKfDU4gHPdMy9xejUA5pZ6YY2HVzsiGSGo7uFVgDln4/edit?usp=sharing)    
@@ -97,6 +85,19 @@ Journal: PeerJ
 [Working draft](https://docs.google.com/document/d/1eAXcXll1d228u14kOivJBmKH4dfBoObi1WMUACSfhog/edit)  
 [Paper repo](https://github.com/larkenr/Clam-OA-project)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
+1) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grac et al_      
+[Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
+[GitHub](https://github.com/grace-ac/paper-pacific.oyster-larvae)      
+![status](https://img.shields.io/badge/pub--a--thon%20status-PUBLISHED!!-blue.svg)      
+Journal: PeerJ     
+
+2) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
+[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
+[OSF](https://osf.io/yem8n/)
+[GitHub](https://github.com/hputnam/Geoduck_Meth)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
+
 
 # Pub-a-thon 2021
 
