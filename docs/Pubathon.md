@@ -5,6 +5,12 @@
 
 <iframe width="682" height="422" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3k1Br4DkiJyzH2nou51H-nORE9dVCgiwjD_nchL4CCsWcFBwSB-I562XG0ns2p32IROzNZ_PSFIqO/pubchart?oid=1185787774&amp;format=interactive"></iframe>
 
+15) **CEABiGR** Yaamini, Sam et al     
+[Working Draft](https://docs.google.com/document/d/1O63kXExAe-bBPXv6fTEZAof8Q2-ARI5Y3XyD5oxkiGE/edit#heading=h.cmsdeulk6pg5)    
+[Paper Repo](https://github.com/sr320/ceabigr)    
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+
 9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
 [Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
 [Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
