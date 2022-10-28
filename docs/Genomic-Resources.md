@@ -772,7 +772,7 @@ Subset of version 1 (v1) that only includes sequences with e-value < 1E-20. Base
 
 Genome:
 
-* [SaNama_1.0_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/SaNama_1.0_genomic.fna): `https://gannet.fish.washington.edu/Atumefaciens/20191105_swoose_pgen_v074_renaming/Panopea-generosa-v1.0.fa`
+* [SaNama_1.0_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/SaNama_1.0_genomic.fna): `https://owl.fish.washington.edu/halfshell/genomic-databank/SaNama_1.0_genomic.fna`
 
 
 Genome Feature Tracks:
