@@ -51,4 +51,4 @@ Brief description of repo files are below
 
 - **[setting_larvae.md](https://github.com/RobertsLab/resources/blob/master/protocols/setting_larvae.md)** - How to induce Pacific oyster larvae to metamorphose 
 
-- **[Titrator.SOP.md](https://github.com/RobertsLab/resources/blob/master/protocols/Titrator.SOP.md)** Protocol for meauring total alkalinity in water samples, typically needed for studies that manipulate pCO2 or pH.  LINK BROKEN
+- **[Titrator.SOP.md](https://github.com/RobertsLab/titrator/blob/43cda74c50feab00a3376cf17b85e8151cb1e1bd/protocols/titrator_SOP.md)** Protocol for meauring total alkalinity in water samples, typically needed for studies that manipulate pCO2 or pH.
