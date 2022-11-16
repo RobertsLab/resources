@@ -11,6 +11,13 @@
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
 
+
+10) **Single cell RNA-seq** - _Mac_    
+[Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)     
+[GitHub](cccc)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
+
 9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
 [Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
 [Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
@@ -158,10 +165,7 @@ Journal:
 [GitHub](https://github.com/laurahspencer/O.lurida_QuantSeq-2020)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
-10) **Single cell RNA-seq** - _Mac_    
-[Working Draft](https://docs.google.com/document/d/1GCqD_4S4TlIMhTGUpCOzE29-FqbBzPrJ3yyT4V2ONb0/edit)     
-[GitHub](cccc)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
 
 12) **Proteomic response of early juvenile Pacific Oysters to temperature** - _Grace_      
 [Working Draft](https://docs.google.com/document/d/1OaYNzlOJr5QibCYt8--GMNGvXlzHPR9_daCkNUVkj-U/edit)    
