@@ -16,10 +16,12 @@ In general we will use DEI slots for a book club focused discussion and academic
 * formal presentations (including practice talks)   
 * revisit common tasks (eg writing, ref managing, notebooks)   
 * round robin code show and tell   
-* handbook focus   
+* handbook focus (update / highlight)
 * peer feedback   
 * data workshop   
 * issue triage
+* website update
+* specific Q & A
 
 A traditional update with be rolled into new format that might include presentation or simply recent notebook posts.
 
