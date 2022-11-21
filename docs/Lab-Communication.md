@@ -15,4 +15,9 @@ A critical form of lab communication is via [RobertsLab/resources GitHub Issues]
 ## Lab Meetings
 We generally have weekly lab meetings. These can be attended in person or remotely via video/audio chat. Steven will post link(s) for joining the chats in [Slack](https://genefish.slack.com) and/or in the event on the [Roberts Lab Google Calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America/Los_Angeles).
 
+We alternate between a DEI focus and academic discovery. Themes can be found below.
+In general we will use DEI slots for a book club focused discussion and academic discovery will be a mix of modules including but not limited to...
+- 
+
+
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTNFZvm1UbyKlGU0nsiif4uJfV66V1Hovxmc2M0cMnKW-Kj7L60HVv4H3ipC5Nfl-I64dQlFdZFjwV/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
