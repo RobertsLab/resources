@@ -17,8 +17,8 @@ We generally have weekly lab meetings. These can be attended in person or remote
 
 We alternate between a DEI focus and academic discovery. Themes can be found below.
 In general we will use DEI slots for a book club focused discussion and academic discovery will be a mix of modules including but not limited to...
-- coding mini lectures
-- list of knowledge gaps
+- coding mini lectures    
+- list of knowledge gaps    
 - journal club (potential model - foundational paper coupled with new paper)
 - formal presentations (including practice talks)
 - revisit common tasks (eg writing, ref managing, notebooks)
