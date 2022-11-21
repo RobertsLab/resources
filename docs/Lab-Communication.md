@@ -25,7 +25,7 @@ In general we will use DEI slots for a book club focused discussion and academic
 
 A traditional update with be rolled into new format that might include presentation or simply recent notebook posts.
 
-If you have any suggestions for topics, papers, demos (or anything for lab meeting) please submit [here](https://github.com/RobertsLab/resources/issues?q=is%3Aopen+is%3Aissue+label%3A%22lab+meeting%22)
+If you have any **suggestions for topics, papers, demos (or anything for lab meeting)** please submit [here](https://github.com/RobertsLab/resources/issues?q=is%3Aopen+is%3Aissue+label%3A%22lab+meeting%22).
 
 <iframe width="682" height="422" seamless frameborder="0" scrolling="yes"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTNFZvm1UbyKlGU0nsiif4uJfV66V1Hovxmc2M0cMnKW-Kj7L60HVv4H3ipC5Nfl-I64dQlFdZFjwV/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 _go [here](https://docs.google.com/spreadsheets/d/1WB87aK0_CHu9mxb5P9nWRH0-LDF15ogf3Ibjoe_cGTQ/edit?usp=sharing) to edit sheet_
