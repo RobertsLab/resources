@@ -11,7 +11,7 @@ Steven Roberts | [sr320.github.io](https://sr320.github.io/) |  ![GitHub last co
 Sam White | [robertslab.github.io](https://robertslab.github.io/sams-notebook/) |  ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/sams-notebook)
 Matt George | [mattgeorgephd.github.io](https://mattgeorgephd.github.io/notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/mattgeorgephd/mattgeorgephd.github.io)
 Aidan Coyle | [afcoyle.github.io](https://afcoyle.github.io) |   ![GitHub last commit](https://img.shields.io/github/last-commit/afcoyle/afcoyle.github.io)
-Olivia Cattau | [ocattau.github.io](https://ocattau.github.io)  | ![GitHub last commit](https://img.shields.io/github/last-commit/ocattau/ocattau.github.io)
+Olivia Cattau | [ocattau.github.io](https://ocattau.github.io/notebook-2/)  | ![GitHub last commit](https://img.shields.io/github/last-commit/ocattau/ocattau.github.io/notebook-2)
 Delaney Lawson| [drlawson.github.io](https://drlawson.github.io)  | ![GitHub last commit](https://img.shields.io/github/last-commit/drlawson/drlawson.github.io)
 Ariana Huffmyer | [ahuffmyer.github.io](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/AHuffmyer/ASH_Putnam_Lab_Notebook)
 Chris Mantegna | [chrismantegna.github.io](https://chrismantegna.github.io/) | ![Github last commit](https://img.shields.io/github/last-commit/ChrisMantegna/ChrisMantegna.github.io)
