@@ -40,54 +40,54 @@ General usage:
 
 1. Build a [`HISAT2`](https://daehwankimlab.github.io/hisat2/) reference sequence index:
 
-```bash
-# Create Hisat2 exons tab file
-"${programs_array[hisat2_exons]}" \
-"${transcripts_gtf}" \
-> "${exons}"
+    ```bash
+    # Create Hisat2 exons tab file
+    "${programs_array[hisat2_exons]}" \
+    "${transcripts_gtf}" \
+    > "${exons}"
 
-# Create Hisat2 splice sites tab file
-"${programs_array[hisat2_splice_sites]}" \
-"${transcripts_gtf}" \
-> "${splice_sites}"
+    # Create Hisat2 splice sites tab file
+    "${programs_array[hisat2_splice_sites]}" \
+    "${transcripts_gtf}" \
+    > "${splice_sites}"
 
-# Build Hisat2 reference index using splice sites and exons
-"${programs_array[hisat2_build]}" \
-"${genome_fasta}" \
-"${genome_index_name}" \
---exon "${exons}" \
---ss "${splice_sites}" \
--p "${threads}" \
-2> hisat2-build_stats.txt
-```
+    # Build Hisat2 reference index using splice sites and exons
+    "${programs_array[hisat2_build]}" \
+    "${genome_fasta}" \
+    "${genome_index_name}" \
+    --exon "${exons}" \
+    --ss "${splice_sites}" \
+    -p "${threads}" \
+    2> hisat2-build_stats.txt
+    ```
 
 2. Perform alignment(s):
 
-```bash
-# Hisat2 alignments
-"${programs_array[hisat2]}" \
--x "${genome_index_name}" \
--1 "${fastq_list_R1}" \
--2 "${fastq_list_R2}" \
--S "${sample_name}".sam \
-2> "${sample_name}"-hisat2_stats.txt
+    ```bash
+    # Hisat2 alignments
+    "${programs_array[hisat2]}" \
+    -x "${genome_index_name}" \
+    -1 "${fastq_list_R1}" \
+    -2 "${fastq_list_R2}" \
+    -S "${sample_name}".sam \
+    2> "${sample_name}"-hisat2_stats.txt
 
-# Sort SAM files, convert to BAM, and index
-${programs_array[samtools_view]} \
--@ "${threads}" \
--Su "${sample_name}".sam \
-| ${programs_array[samtools_sort]} - \
--@ "${threads}" \
--o "${sample_name}".sorted.bam
-${programs_array[samtools_index]} "${sample_name}".sorted.bam
+    # Sort SAM files, convert to BAM, and index
+    ${programs_array[samtools_view]} \
+    -@ "${threads}" \
+    -Su "${sample_name}".sam \
+    | ${programs_array[samtools_sort]} - \
+    -@ "${threads}" \
+    -o "${sample_name}".sorted.bam
+    ${programs_array[samtools_index]} "${sample_name}".sorted.bam
 
 
-# Delete unneccessary index files
-rm "${genome_index_name}"*.ht2
+    # Delete unneccessary index files
+    rm "${genome_index_name}"*.ht2
 
-# Delete unneeded SAM files
-rm ./*.sam
-```
+    # Delete unneeded SAM files
+    rm ./*.sam
+    ```
 
 See links in the "use cases" section below for full-fledged scripts and advanced usage (e.g. assigning read groups to alignment files (SAM) for improved downstream handling/accessiblity).
 
