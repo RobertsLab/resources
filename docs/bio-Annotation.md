@@ -26,5 +26,19 @@ Blast is a key component of working with lesser studied taxa. Here are some reso
 ## Genome features
 In addition to sequence database alignment, finding spatial relationship within a genome is also an import approach for annotation. Often this is done using software tools such as `bedtools`.
 
-### bedtools::intersectbed
+### `bedtools::intersectbed`
 see also https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
+
+## Transcriptome (Trinity)
+
+After [transcriptome assembly using Trinity](https://robertslab.github.io/resources/bio_Transcriptome-assembly/)
+
+- Transdecoder
+
+- longest Open Reading Frames
+
+- BLASTp
+
+- pFam
+
+- Trinotate
