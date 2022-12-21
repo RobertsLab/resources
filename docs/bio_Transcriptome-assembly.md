@@ -57,6 +57,9 @@ ${trinity_dir}/Trinity \
 
 - `--max_memory 100G` should _not_ be changed, per communications with the developer.
 
+#### Use cases from our lab
+
+- [Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
 
 ### Genome-guided assembly
 
@@ -76,6 +79,10 @@ ${programs_array[trinity]} \
 - `--genome_guided_max_intron ${max_intron}`: The value used in the [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) examples is 10000.
 
 - `--max_memory 100G` should _not_ be changed, per communications with the developer.
+
+#### Use cases from our lab
+
+- [Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/2022/02/07/Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox.html)
 
 ## Gene expression
 
