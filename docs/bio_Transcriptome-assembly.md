@@ -44,15 +44,31 @@ If you do not know whether your libraries are stranded or not (for example, if y
 
 ### _De novo_ assembly
 
-A _de novo_ assembly is an assembly that is done without the use of a reference genome. Here's an example command, using paired-end reads:
+A _de novo_ assembly is an assembly that is done without the use of a reference genome. Here's an example command, using trimmed paired-end reads. This set of commands will assembly the reads into contigs, generate assembly statistics, a gene map file (maps isoforms to "gene" names), and a sequence length file (useful for downstream gene expression).
 
 ```shell
+# Perform assembly
 ${trinity_dir}/Trinity \
 --seqType fq \
 --SS_lib_type RF \
 --max_memory 100G \
 --CPU ${threads} \
 --samples_file ${samples}
+
+# Assembly stats
+${trinity_dir}/util/TrinityStats.pl \
+trinity_out_dir/"${fasta_name}" \
+> ${assembly_stats}
+
+# Create gene map files
+${trinity_dir}/util/support_scripts/get_Trinity_gene_to_trans_map.pl \
+trinity_out_dir/"${fasta_name}" \
+> "${fasta_name}".gene_trans_map
+
+# Create sequence lengths file (used for differential gene expression)
+${trinity_dir}/util/misc/fasta_seq_length.pl \
+trinity_out_dir/"${fasta_name}" \
+> "${fasta_name}".seq_lens
 ```
 
 - `--max_memory 100G` should _not_ be changed, per communications with the developer.
@@ -63,9 +79,10 @@ ${trinity_dir}/Trinity \
 
 ### Genome-guided assembly
 
-A genome-guided assembly is an assembly which utilizes a reference genome. This requires a sorted BAM as input, which means you have to have previously aligned your RNA-seq reads to a reference genome. See our Handbook entry on using [Hisat2](https://robertslab.github.io/resources/bio-Gene-expression/#alignment-hisat2) for read alignment. Here's an example command, using paired-end reads
+A genome-guided assembly is an assembly which utilizes a reference genome. This requires a sorted BAM as input, which means you have to have previously aligned your RNA-seq reads to a reference genome. See our Handbook entry on using [Hisat2](https://robertslab.github.io/resources/bio-Gene-expression/#alignment-hisat2) for read alignment. Here's an example command, using trimmed paired-end reads. This set of commands will assembly the reads into contigs, generate assembly statistics, a gene map file (maps isoforms to "gene" names), and a sequence length file (useful for downstream gene expression).
 
 ```shell
+# Perform assembly
 ${programs_array[trinity]} \
 --genome_guided_bam ${sorted_bam} \
 --genome_guided_max_intron ${max_intron} \
@@ -74,6 +91,21 @@ ${programs_array[trinity]} \
 --max_memory 100GB \
 --CPU ${threads} \
 --samples_file ${samples}
+
+# Assembly stats
+${trinity_dir}/util/TrinityStats.pl \
+trinity_out_dir/"${fasta_name}" \
+> ${assembly_stats}
+
+# Create gene map files
+${trinity_dir}/util/support_scripts/get_Trinity_gene_to_trans_map.pl \
+trinity_out_dir/"${fasta_name}" \
+> "${fasta_name}".gene_trans_map
+
+# Create sequence lengths file (used for differential gene expression)
+${trinity_dir}/util/misc/fasta_seq_length.pl \
+trinity_out_dir/"${fasta_name}" \
+> "${fasta_name}".seq_lens
 ```
 
 - `--genome_guided_max_intron ${max_intron}`: The value used in the [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) examples is 10000.
@@ -83,6 +115,85 @@ ${programs_array[trinity]} \
 #### Use cases from our lab
 
 - [Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/2022/02/07/Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox.html)
+
+## Output files
+
+Both types of assemblies listed above will generate your assembly as a FastA file:
+
+- `Trinity.fasta`: This is the default name.
+
+If you ran the commands above you will also get the following files:
+
+- `assembly_stats.txt`: Statistics on your assembly. Will look something like this:
+
+    ```
+    ################################
+    ## Counts of transcripts, etc.
+    ################################
+    Total trinity 'genes':	887315
+    Total trinity transcripts:	1849486
+    Percent GC: 36.26
+
+    ########################################
+    Stats based on ALL transcript contigs:
+    ########################################
+
+      Contig N10: 7967
+      Contig N20: 5284
+      Contig N30: 3814
+      Contig N40: 2801
+      Contig N50: 2062
+
+      Median contig length: 562
+      Average contig: 1117.46
+      Total assembled bases: 2066718534
+
+
+    #####################################################
+    ## Stats based on ONLY LONGEST ISOFORM per 'GENE':
+    #####################################################
+
+      Contig N10: 6904
+      Contig N20: 4398
+      Contig N30: 3003
+      Contig N40: 2120
+      Contig N50: 1501
+
+      Median contig length: 434
+      Average contig: 860.79
+      Total assembled bases: 763788564
+      ```
+
+- `Trinity.fasta.gene_trans_map`:
+
+    ```
+    TRINITY_GG_1_c20044_g1	TRINITY_GG_1_c20044_g1_i2
+    TRINITY_GG_1_c20044_g1	TRINITY_GG_1_c20044_g1_i4
+    TRINITY_GG_1_c27757_g4	TRINITY_GG_1_c27757_g4_i1
+    TRINITY_GG_1_c4646_g1	TRINITY_GG_1_c4646_g1_i1
+    TRINITY_GG_1_c31636_g3	TRINITY_GG_1_c31636_g3_i1
+    TRINITY_GG_1_c5375_g1	TRINITY_GG_1_c5375_g1_i2
+    TRINITY_GG_1_c5375_g1	TRINITY_GG_1_c5375_g1_i7
+    TRINITY_GG_1_c5375_g1	TRINITY_GG_1_c5375_g1_i5
+    TRINITY_GG_1_c5375_g1	TRINITY_GG_1_c5375_g1_i6
+    TRINITY_GG_1_c5375_g1	TRINITY_GG_1_c5375_g1_i4
+    TRINITY_GG_1_c5375_g1	TRINITY_GG_1_c5375_g1_i1
+    ```
+
+- `Trinity.fasta.seq_lens`:
+
+    ```
+    #fasta_entry	length
+    TRINITY_GG_1_c20044_g1_i2	1058
+    TRINITY_GG_1_c20044_g1_i4	1057
+    TRINITY_GG_1_c27757_g4_i1	265
+    TRINITY_GG_1_c4646_g1_i1	347
+    TRINITY_GG_1_c31636_g3_i1	215
+    TRINITY_GG_1_c5375_g1_i2	324
+    TRINITY_GG_1_c5375_g1_i7	511
+    TRINITY_GG_1_c5375_g1_i5	349
+    TRINITY_GG_1_c5375_g1_i6	340
+    ```
 
 ## Gene expression
 
