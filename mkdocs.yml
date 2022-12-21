@@ -77,3 +77,4 @@ nav:
      - Annotation: 'bio-Annotation.md'
      - DNA Methylation Analysis: 'bio_DNA-methylation.md'
      - Gene Expression: 'bio-Gene-expression.md'
+     - Transcriptome Assembly: 'bio_Transcriptome-assembly.md'
