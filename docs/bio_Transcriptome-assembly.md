@@ -9,7 +9,7 @@ You should run [`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fas
 
 ## Trimming
 
-Quality and adapter trimming is required prior to assembly. [`fastp`](https://github.com/OpenGene/fastp) is recommended due to its speed and FastQC-like report(s). Additionally, the output from [`fastp`](https://github.com/OpenGene/fastp) can also be analyzed by [`MultiQC`](https://multiqc.info/) (requires a "plug-in"). Trimmed files should be passed through `[`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and assessed. Although rare, some projects may require a second round of trimming.
+Quality and adapter trimming is required prior to assembly. [`fastp`](https://github.com/OpenGene/fastp) is recommended due to its speed and FastQC-like report(s). Additionally, the output from [`fastp`](https://github.com/OpenGene/fastp) can also be analyzed by [`MultiQC`](https://multiqc.info/) (requires a "plug-in"). Trimmed files should be passed through [`FastQC`](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) and assessed. Although rare, some projects may require a second round of trimming.
 
 Alternatively, [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) has trimming capabilities built in, using [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic). Although convenient, it limits the ability to assess post-trimming sequencing data prior to assembly.
 
@@ -138,31 +138,31 @@ If you ran the commands above you will also get the following files:
     Stats based on ALL transcript contigs:
     ########################################
 
-      Contig N10: 7967
-      Contig N20: 5284
-      Contig N30: 3814
-      Contig N40: 2801
-      Contig N50: 2062
+    Contig N10: 7967
+    Contig N20: 5284
+    Contig N30: 3814
+    Contig N40: 2801
+    Contig N50: 2062
 
-      Median contig length: 562
-      Average contig: 1117.46
-      Total assembled bases: 2066718534
+    Median contig length: 562
+    Average contig: 1117.46
+    Total assembled bases: 2066718534
 
 
     #####################################################
     ## Stats based on ONLY LONGEST ISOFORM per 'GENE':
     #####################################################
 
-      Contig N10: 6904
-      Contig N20: 4398
-      Contig N30: 3003
-      Contig N40: 2120
-      Contig N50: 1501
+    Contig N10: 6904
+    Contig N20: 4398
+    Contig N30: 3003
+    Contig N40: 2120
+    Contig N50: 1501
 
-      Median contig length: 434
-      Average contig: 860.79
-      Total assembled bases: 763788564
-      ```
+    Median contig length: 434
+    Average contig: 860.79
+    Total assembled bases: 763788564
+    ```
 
 - `Trinity.fasta.gene_trans_map`:
 
