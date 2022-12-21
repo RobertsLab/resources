@@ -19,7 +19,7 @@ Alternatively, [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) 
 
 [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) is powerful and has complex, but useful options availalbe. Take time to consider how you will use your assembly for later analysis. [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) has many options available for downstream analysis (e.g. [gene expression](#gene-expression)) that can be simplified with careful planning prior to assembly.
 
-Due to the intensive processing required for assembly (high CPU and RAM usage), it is highly recommended to run all assemblies on an [execute node on Mox](https://robertslab.github.io/resources/mox_Node-Types/).
+Due to the intensive processing required for assembly (high CPU and RAM usage), it is highly recommended to run all assemblies on an [execute node on Mox](https://robertslab.github.io/resources/mox_Node-Types/). As such, all code examples are written with the assumption that the commands are being run on Mox.
 
 ### Sample list file
 
@@ -44,12 +44,38 @@ If you do not know whether your libraries are stranded or not (for example, if y
 
 ### _De novo_ assembly
 
-A _de novo_ assembly is an assembly that is done without the use of a reference genome.
+A _de novo_ assembly is an assembly that is done without the use of a reference genome. Here's an example command, using paired-end reads:
+
+```shell
+${trinity_dir}/Trinity \
+--seqType fq \
+--SS_lib_type RF \
+--max_memory 100G \
+--CPU ${threads} \
+--samples_file ${samples}
+```
+
+- `--max_memory 100G` should _not_ be changed, per communications with the developer.
 
 
 ### Genome-guided assembly
 
-A genome-guided assembly is an assembly which utilizes a reference genome.
+A genome-guided assembly is an assembly which utilizes a reference genome. This requires a sorted BAM as input, which means you have to have previously aligned your RNA-seq reads to a reference genome. See our Handbook entry on using [Hisat2](https://robertslab.github.io/resources/bio-Gene-expression/#alignment-hisat2) for read alignment. Here's an example command, using paired-end reads
+
+```shell
+${programs_array[trinity]} \
+--genome_guided_bam ${sorted_bam} \
+--genome_guided_max_intron ${max_intron} \
+--seqType fq \
+--SS_lib_type RF \
+--max_memory 100GB \
+--CPU ${threads} \
+--samples_file ${samples}
+```
+
+- `--genome_guided_max_intron ${max_intron}`: The value used in the [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) examples is 10000.
+
+- `--max_memory 100G` should _not_ be changed, per communications with the developer.
 
 ## Gene expression
 
