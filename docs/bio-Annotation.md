@@ -31,7 +31,9 @@ see also https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
 
 ## Transcriptome (Trinity)
 
-After [transcriptome assembly using Trinity](https://robertslab.github.io/resources/bio_Transcriptome-assembly/), in order:
+After [transcriptome assembly using Trinity](https://robertslab.github.io/resources/bio_Transcriptome-assembly/), run the numbered steps below, in order.
+
+NOTE: The following info is long and requires the use of many programs. All of the code listed below are solely examples. Making the commands functional requires a fair amount of organization (i.e. listing paths to programs and input/output files, creating subdirectories for organizing outputs, etc.). See the Use Cases at the end of this section for a more complete picture of how to organize/run this pipeline.
 
 1. Transdecoder
 
@@ -97,8 +99,6 @@ After [transcriptome assembly using Trinity](https://robertslab.github.io/resour
 
     - Protein hidden Markov model database (`Pfam-A.hmm`) is supplied with Trinotate (e.g. `Trinotate-v3.1.1/admin/Pfam-A.hmm`), but can be changed to use your own version.
 
-    - Uses 
-
         ```
         hmmscan \
         --cpu ${threads} \
@@ -144,7 +144,7 @@ After [transcriptome assembly using Trinity](https://robertslab.github.io/resour
 
         - Run `RNAmmer`
 
-        - Uses a special Trinotate implementation of `rnammer` (e.g. `Trinotate/util/rnammer_support/RnammerTranscriptome.pl`)
+            - Uses a special Trinotate implementation of `rnammer` (e.g. `Trinotate/util/rnammer_support/RnammerTranscriptome.pl`)
 
             ```
             RnammerTranscriptome.pl \
@@ -234,7 +234,7 @@ After [transcriptome assembly using Trinity](https://robertslab.github.io/resour
             > Trinity.fasta.go_annotations.txt
             ```
 
-        - File formatted like this (`<trinity-id>``<tab>``<GO:NNNNNN,GO:NNNNN,...>`):
+            - The output file is formatted like this (`<trinity-id>``<tab>``<GO:NNNNNN,GO:NNNNN,...>`):
 
             ```
             TRINITY_DN0_c0_g1	GO:0003674,GO:0003824,GO:0003964,GO:0006139,GO:0006259,GO:0006310,GO:0006313,GO:0006725,GO:0006807,GO:0008150,GO:0008152,GO:0009987,GO:0016740,GO:0016772,GO:0016779,GO:0032196,GO:0034061,GO:0034641,GO:0043170,GO:0044237,GO:0044238,GO:0044260,GO:0044699,GO:0044710,GO:0044763,GO:0046483,GO:0071704,GO:0090304,GO:1901360
