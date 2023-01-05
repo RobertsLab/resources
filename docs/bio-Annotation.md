@@ -35,217 +35,217 @@ After [transcriptome assembly using Trinity](https://robertslab.github.io/resour
 
 1. Transdecoder
 
-  - Identify longest open reading frames (ORFs).
+    - Identify longest open reading frames (ORFs).
 
-  - Use transcriptome assembly and gene-trans map from [Trinity assembly](https://robertslab.github.io/resources/bio_Transcriptome-assembly/).
+    - Use transcriptome assembly and gene-trans map from [Trinity assembly](https://robertslab.github.io/resources/bio_Transcriptome-assembly/).
 
-    ```
-    TransDecoder.LongOrfs \
-    --gene_trans_map Trinity.fasta.gene_trans_map \
-    -t Trinity.fasta"
-    ```
+        ```
+        TransDecoder.LongOrfs \
+        --gene_trans_map Trinity.fasta.gene_trans_map \
+        -t Trinity.fasta"
+        ```
 
 2. BLASTp
 
-  - Run blastp on long ORFs from Step 1 above.
+    - Run blastp on long ORFs from Step 1 above.
 
-  - Output format 6 produces a standard BLAST tab-delimited file.
+    - Output format 6 produces a standard BLAST tab-delimited file.
 
-  - Settings are recommended in TransDecoder documentation.
+    - Settings are recommended in TransDecoder documentation.
 
-  - Peptide database (`-db uniprot_sprot.pep`) is supplied with Trinotate (e.g. `Trinotate-v3.1.1/admin/uniprot_sprot.pep`), but can be changed to use your own version.
+    - Peptide database (`-db uniprot_sprot.pep`) is supplied with Trinotate (e.g. `Trinotate-v3.1.1/admin/uniprot_sprot.pep`), but can be changed to use your own version.
 
-    ```
-    blastp \
-    -query longest_orfs.pep \
-    -db uniprot_sprot.pep \
-    -max_target_seqs 1 \
-    -outfmt 6 \
-    -evalue 1e-5 \
-    -num_threads ${threads} \
-    > Trinity.fasta.blastp.outfmt6
-    ```
+        ```
+        blastp \
+        -query longest_orfs.pep \
+        -db uniprot_sprot.pep \
+        -max_target_seqs 1 \
+        -outfmt 6 \
+        -evalue 1e-5 \
+        -num_threads ${threads} \
+        > Trinity.fasta.blastp.outfmt6
+        ```
 
 3. BLASTx ([`DIAMOND`](https://github.com/bbuchfink/diamond))
 
-  - Run [`DIAMOND`](https://github.com/bbuchfink/diamond) blastx on long ORFs from Step 1 above.
+    - Run [`DIAMOND`](https://github.com/bbuchfink/diamond) blastx on long ORFs from Step 1 above.
 
-  - Output format 6 produces a standard BLAST tab-delimited file.
+    - Output format 6 produces a standard BLAST tab-delimited file.
 
-  - Settings (`--evalue` and `--max-target-seqs`) are recommended in TransDecoder documentation.
+    - Settings (`--evalue` and `--max-target-seqs`) are recommended in TransDecoder documentation.
 
-  - `--block-size` and `--index-chunks` are specific to running [`DIAMOND`](https://github.com/bbuchfink/diamond) BLASTx.
+    - `--block-size` and `--index-chunks` are specific to running [`DIAMOND`](https://github.com/bbuchfink/diamond) BLASTx.
 
-  - `--db uniprot_sprot.dmnd` is a [`DIAMOND`](https://github.com/bbuchfink/diamond)-formatted BLAST database. User can generate their own.
+    - `--db uniprot_sprot.dmnd` is a [`DIAMOND`](https://github.com/bbuchfink/diamond)-formatted BLAST database. User can generate their own.
 
-        ```
-        diamond blastx \
-        --db uniprot_sprot.dmnd \
-        --query Trinity.fasta \
-        --out Trinity.fasta.blastx.outfmt6 \
-        --outfmt 6 \
-        --evalue 1e-4 \
-        --max-target-seqs 1 \
-        --block-size 15.0 \
-        --index-chunks 4
-        ```
+            ```
+            diamond blastx \
+            --db uniprot_sprot.dmnd \
+            --query Trinity.fasta \
+            --out Trinity.fasta.blastx.outfmt6 \
+            --outfmt 6 \
+            --evalue 1e-4 \
+            --max-target-seqs 1 \
+            --block-size 15.0 \
+            --index-chunks 4
+            ```
 
 
 4. pFam
 
-  - Run pfam search on long ORFs from Step 1 above.
+    - Run pfam search on long ORFs from Step 1 above.
 
-  - Protein hidden Markov model database (`Pfam-A.hmm`) is supplied with Trinotate (e.g. `Trinotate-v3.1.1/admin/Pfam-A.hmm`), but can be changed to use your own version.
+    - Protein hidden Markov model database (`Pfam-A.hmm`) is supplied with Trinotate (e.g. `Trinotate-v3.1.1/admin/Pfam-A.hmm`), but can be changed to use your own version.
 
-  - Uses 
+    - Uses 
 
-    ```
-    hmmscan \
-    --cpu ${threads} \
-    --domtblout Trinity.fasta.pfam.domtblout \
-    Pfam-A.hmm \
-    longest_orfs.pep
-    ```
+        ```
+        hmmscan \
+        --cpu ${threads} \
+        --domtblout Trinity.fasta.pfam.domtblout \
+        Pfam-A.hmm \
+        longest_orfs.pep
+        ```
 
 
 
 5. Transdecoder
 
-  - Run Transdecoder using transcriptome assembly FastA, `blastp` and `Pfam` results.
+    - Run Transdecoder using transcriptome assembly FastA, `blastp` and `Pfam` results.
 
-   ```
-   TransDecoder.Predict \
-     -t Trinity.fasta \
-    --retain_pfam_hits Trinity.fasta.pfam.domtblout \
-    --retain_blastp_hits Trinity.fasta.blastp.outfmt6
-   ```
+    ```
+    TransDecoder.Predict \
+        -t Trinity.fasta \
+        --retain_pfam_hits Trinity.fasta.pfam.domtblout \
+        --retain_blastp_hits Trinity.fasta.blastp.outfmt6
+    ```
 
 6. Trinotate
 
-  - Trinotate requires a large number of steps and programs!
+    - Trinotate requires a large number of steps and programs!
 
-    - Run `signalp`
+        - Run `signalp`
 
-        ```
-        signalp \
-        -f short \
-        -n Trinity.fasta.trinotate.signalp.out \
-        longest_orfs.pep
-        ```
+            ```
+            signalp \
+            -f short \
+            -n Trinity.fasta.trinotate.signalp.out \
+            longest_orfs.pep
+            ```
 
-    - Run `tmHMM`
+        - Run `tmHMM`
 
-        ```
-        tmhmm \
-        --short \
-        < longest_orfs.pep \
-        > Trinity.fasta.trinotate.tmhmm.out
-        ```
+            ```
+            tmhmm \
+            --short \
+            < longest_orfs.pep \
+            > Trinity.fasta.trinotate.tmhmm.out
+            ```
 
-    - Run `RNAmmer`
+        - Run `RNAmmer`
 
-      - Uses a special Trinotate implementation of `rnammer` (e.g. `Trinotate/util/rnammer_support/RnammerTranscriptome.pl`)
+        - Uses a special Trinotate implementation of `rnammer` (e.g. `Trinotate/util/rnammer_support/RnammerTranscriptome.pl`)
 
-        ```
-        RnammerTranscriptome.pl \
-        --transcriptome Trinity.fasta \
-        --path_to_rnammer rnammer
-        ```
-    
-    - Load transcripts and coding regions into Trinotate SQLite database
+            ```
+            RnammerTranscriptome.pl \
+            --transcriptome Trinity.fasta \
+            --path_to_rnammer rnammer
+            ```
+        
+        - Load transcripts and coding regions into Trinotate SQLite database
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        init \
-        --gene_trans_map Trinity.fasta.gene_trans_map \
-        --transcript_fasta Tinity.fasta \
-        --transdecoder_pep longest_orfs.pep
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            init \
+            --gene_trans_map Trinity.fasta.gene_trans_map \
+            --transcript_fasta Tinity.fasta \
+            --transdecoder_pep longest_orfs.pep
+            ```
 
-    - Load BLASTp/x homologies into SQLite database
+        - Load BLASTp/x homologies into SQLite database
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        LOAD_swissprot_blastp \
-        Trinity.fasta.blastp.outfmt6
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            LOAD_swissprot_blastp \
+            Trinity.fasta.blastp.outfmt6
+            ```
 
-        ```   
-        Trinotate \
-        Trinotate.sqlite \
-        LOAD_swissprot_blastx \
-        Trinity.fasta.blastx.outfmt6
-        ```
+            ```   
+            Trinotate \
+            Trinotate.sqlite \
+            LOAD_swissprot_blastx \
+            Trinity.fasta.blastx.outfmt6
+            ```
 
-    - Load Pfam into SQLite database
+        - Load Pfam into SQLite database
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        LOAD_pfam \
-        Trinity.fasta.pfam.domtblout
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            LOAD_pfam \
+            Trinity.fasta.pfam.domtblout
+            ```
 
-    - Load transmembrane domains
+        - Load transmembrane domains
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        LOAD_tmhmm \
-        Trinity.fasta.trinotate.tmhmm.out
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            LOAD_tmhmm \
+            Trinity.fasta.trinotate.tmhmm.out
+            ```
 
-    - Load signal peptides
+        - Load signal peptides
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        LOAD_signalp \
-        Trinity.fasta.trinotate.signalp.out
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            LOAD_signalp \
+            Trinity.fasta.trinotate.signalp.out
+            ```
 
-    - Load RNAmmer
+        - Load RNAmmer
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        LOAD_rnammer \
-        Trinity.fasta.rnammer.gff
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            LOAD_rnammer \
+            Trinity.fasta.rnammer.gff
+            ```
 
-    - Create annotation report
+        - Create annotation report
 
-        ```
-        Trinotate \
-        Trinotate.sqlite \
-        report \
-        > Trinity.fasta.annotation_report.txt
-        ```
+            ```
+            Trinotate \
+            Trinotate.sqlite \
+            report \
+            > Trinity.fasta.annotation_report.txt
+            ```
 
-    - Extract gene ontology (GO) terms from annotation report
+        - Extract gene ontology (GO) terms from annotation report
 
-        ```
-        extract_GO_assignments_from_Trinotate_xls.pl \
-        --Trinotate_xls Trinity.fasta.annotation_report.txt \
-        -G \
-        --include_ancestral_terms \
-        > Trinity.fasta.go_annotations.txt
-        ```
+            ```
+            extract_GO_assignments_from_Trinotate_xls.pl \
+            --Trinotate_xls Trinity.fasta.annotation_report.txt \
+            -G \
+            --include_ancestral_terms \
+            > Trinity.fasta.go_annotations.txt
+            ```
 
-    - File formatted like this (`<trinity-id>``<tab>``<GO:NNNNNN,GO:NNNNN,...>`):
+        - File formatted like this (`<trinity-id>``<tab>``<GO:NNNNNN,GO:NNNNN,...>`):
 
-        ```
-        TRINITY_DN0_c0_g1	GO:0003674,GO:0003824,GO:0003964,GO:0006139,GO:0006259,GO:0006310,GO:0006313,GO:0006725,GO:0006807,GO:0008150,GO:0008152,GO:0009987,GO:0016740,GO:0016772,GO:0016779,GO:0032196,GO:0034061,GO:0034641,GO:0043170,GO:0044237,GO:0044238,GO:0044260,GO:0044699,GO:0044710,GO:0044763,GO:0046483,GO:0071704,GO:0090304,GO:1901360
-        TRINITY_DN0_c10_g1	GO:0003674,GO:0003824,GO:0004659,GO:0004660,GO:0005488,GO:0005575,GO:0005829,GO:0005875,GO:0005965,GO:0006464,GO:0006807,GO:0008150,GO:0008152,GO:0008270,GO:0008318,GO:0009987,GO:0016740,GO:0016765,GO:0018342,GO:0018343,GO:0019538,GO:0032991,GO:0036211,GO:0043167,GO:0043169,GO:0043170,GO:0043234,GO:0043412,GO:0044237,GO:0044238,GO:0044260,GO:0044267,GO:0044422,GO:0044424,GO:0044430,GO:0044444,GO:0044446,GO:0044464,GO:0046872,GO:0046914,GO:0071704,GO:0097354,GO:1901564,GO:1902494,GO:1990234
-        TRINITY_DN0_c2_g4	GO:0000166,GO:0003674,GO:0005488,GO:0005524,GO:0005575,GO:0005737,GO:0005856,GO:0017076,GO:0030554,GO:0032553,GO:0032555,GO:0032559,GO:0035639,GO:0036094,GO:0043167,GO:0043168,GO:0043226,GO:0043228,GO:0043229,GO:0043232,GO:0044424,GO:0044464,GO:0097159,GO:0097367,GO:1901265,GO:1901363
-        ```
+            ```
+            TRINITY_DN0_c0_g1	GO:0003674,GO:0003824,GO:0003964,GO:0006139,GO:0006259,GO:0006310,GO:0006313,GO:0006725,GO:0006807,GO:0008150,GO:0008152,GO:0009987,GO:0016740,GO:0016772,GO:0016779,GO:0032196,GO:0034061,GO:0034641,GO:0043170,GO:0044237,GO:0044238,GO:0044260,GO:0044699,GO:0044710,GO:0044763,GO:0046483,GO:0071704,GO:0090304,GO:1901360
+            TRINITY_DN0_c10_g1	GO:0003674,GO:0003824,GO:0004659,GO:0004660,GO:0005488,GO:0005575,GO:0005829,GO:0005875,GO:0005965,GO:0006464,GO:0006807,GO:0008150,GO:0008152,GO:0008270,GO:0008318,GO:0009987,GO:0016740,GO:0016765,GO:0018342,GO:0018343,GO:0019538,GO:0032991,GO:0036211,GO:0043167,GO:0043169,GO:0043170,GO:0043234,GO:0043412,GO:0044237,GO:0044238,GO:0044260,GO:0044267,GO:0044422,GO:0044424,GO:0044430,GO:0044444,GO:0044446,GO:0044464,GO:0046872,GO:0046914,GO:0071704,GO:0097354,GO:1901564,GO:1902494,GO:1990234
+            TRINITY_DN0_c2_g4	GO:0000166,GO:0003674,GO:0005488,GO:0005524,GO:0005575,GO:0005737,GO:0005856,GO:0017076,GO:0030554,GO:0032553,GO:0032555,GO:0032559,GO:0035639,GO:0036094,GO:0043167,GO:0043168,GO:0043226,GO:0043228,GO:0043229,GO:0043232,GO:0044424,GO:0044464,GO:0097159,GO:0097367,GO:1901265,GO:1901363
+            ```
 
-- Make transcript features annotation map
+    - Make transcript features annotation map
 
-        ```
-        Trinotate_get_feature_name_encoding_attributes.pl \
-        Trinity.fasta.annotation_report.txt \
-        > Trinity.fasta.annotation_feature_map.txt
-        ```
+            ```
+            Trinotate_get_feature_name_encoding_attributes.pl \
+            Trinity.fasta.annotation_report.txt \
+            > Trinity.fasta.annotation_feature_map.txt
+            ```
