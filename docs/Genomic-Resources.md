@@ -736,6 +736,26 @@ Transcriptome generated from various libaries - details [here](https://robertsla
 
 ---
 
+## _Pocillipora acuta_
+
+Genome:
+
+  - [Pocillopora_acuta_HIv2.assembly.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.assembly.fasta) (389MB)
+
+    - MD5 checksum: `ce3b69ff3f5dafb8fb7416dc862ef4a0`
+
+    - Downloaded 20230125: http://cyanophora.rutgers.edu/Pocillopora_acuta/
+
+Genome Feature Tracks:
+
+  - [Pocillopora_acuta_HIv2.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.genes.gff3) (54MB)
+
+    - MD5 checksum: `fad5aa85afd7e3bec4400ca6da7d706d`
+
+    - Downloaded 20230125: http://cyanophora.rutgers.edu/Pocillopora_acuta/
+
+---
+
 ## _QPX_
 
 Genome:
