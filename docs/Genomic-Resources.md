@@ -525,6 +525,18 @@ Genome:
 
 ---
 
+## _Montipora capitata_
+
+Genome:
+
+  - [GCA_006542545.1_Mcap_UHH_1.1_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_006542545.1_Mcap_UHH_1.1_genomic.fna) (569MB)
+
+    - MD5 checksum: `25efbc3110c0791b5eb2e5ac5c2a472f`
+
+    - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/)
+
+---
+
 ## _Ostrea lurida_
 
 Genome:
