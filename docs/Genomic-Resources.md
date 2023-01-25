@@ -752,7 +752,17 @@ Genome Feature Tracks:
 
     - MD5 checksum: `fad5aa85afd7e3bec4400ca6da7d706d`
 
-    - Downloaded 20230125: http://cyanophora.rutgers.edu/Pocillopora_acuta/
+    - Downloaded 20230125: [http://cyanophora.rutgers.edu/Pocillopora_acuta/](http://cyanophora.rutgers.edu/Pocillopora_acuta/)
+
+---
+
+## _Pocillipora verrucosa_
+
+  - [GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna) (369MB)
+
+    - MD5 checksum: `6ca98fae6a8b86183d75b23cf52a6651`
+
+    - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/)
 
 ---
 
