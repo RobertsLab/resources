@@ -758,7 +758,7 @@ Genome:
 
     - Downloaded 20230125: http://cyanophora.rutgers.edu/Pocillopora_acuta/
 
-Genome Index (HiSat2):
+Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
   - [Pocillopora_acuta_HIv2-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230126-pacu-HIv2-hisat2-build-index/Pocillopora_acuta_HIv2-hisat2-indices.tar.gz) (564MB)
 
@@ -778,11 +778,21 @@ Genome Feature Tracks:
 
 ## _Pocillipora verrucosa_
 
+Genome:
+
   - [GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna) (369MB)
 
     - MD5 checksum: `6ca98fae6a8b86183d75b23cf52a6651`
 
     - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/)
+
+Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+
+  - [20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz) (tarball gzip; 563MB)
+
+    - MD5 checksum: `f1669e7d88cf014fcfa10c6c06e03802`
+
+    - Needs to be unpacked before use!
 
 ---
 
