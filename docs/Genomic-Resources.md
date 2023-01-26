@@ -535,6 +535,14 @@ Genome:
 
     - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/)
 
+Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/))
+
+  - [20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz) (tarball gzip; 879MB)
+
+    - MD5 checksum: `1fd78407ed6416350d832a124212b1bc`
+
+    - Needs to be unpacked before use!
+
 ---
 
 ## _Ostrea lurida_
