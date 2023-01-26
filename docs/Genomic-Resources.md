@@ -758,6 +758,14 @@ Genome:
 
     - Downloaded 20230125: http://cyanophora.rutgers.edu/Pocillopora_acuta/
 
+Genome Index (HiSat2):
+
+  - [Pocillopora_acuta_HIv2-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230126-pacu-HIv2-hisat2-build-index/Pocillopora_acuta_HIv2-hisat2-indices.tar.gz) (564MB)
+
+    - MD5 checksum: `589bdcd2c9e5eb161ceff072f5eda531`
+
+    - Needs to be unpacked before use!
+
 Genome Feature Tracks:
 
   - [Pocillopora_acuta_HIv2.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.genes.gff3) (54MB)
