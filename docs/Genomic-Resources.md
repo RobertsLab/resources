@@ -527,21 +527,35 @@ Genome:
 
 ## _Montipora capitata_
 
-Genome:
+Genomes:
 
-  - [GCA_006542545.1_Mcap_UHH_1.1_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_006542545.1_Mcap_UHH_1.1_genomic.fna) (569MB)
+  - [`GCA_006542545.1_Mcap_UHH_1.1_genomic.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_006542545.1_Mcap_UHH_1.1_genomic.fna) (569MB)
 
     - MD5 checksum: `25efbc3110c0791b5eb2e5ac5c2a472f`
 
     - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/)
 
-Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/))
+  - [`Montipora_capitata_HIv3.assembly.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Montipora_capitata_HIv3.assembly.fasta) (745MB)
 
-  - [20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz) (tarball gzip; 879MB)
+    - MD5 checksum: `99819eadba1b13ed569bb902eef8da08`
+
+    - Downloaded 2023017: [http://cyanophora.rutgers.edu/montipora/](http://cyanophora.rutgers.edu/montipora/)
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/))
+
+  - [`20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz) (tarball gzip; 879MB)
 
     - MD5 checksum: `1fd78407ed6416350d832a124212b1bc`
 
     - Needs to be unpacked before use!
+
+Genome Feature Tracks
+
+  - [`Montipora_capitata_HIv3.genes.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Montipora_capitata_HIv3.genes.gff3) (67MB)
+
+    - MD5 checksum: `5f6b80ba2885471c8c1534932ccb7e84`
+
+    - Downloaded 2023017: [http://cyanophora.rutgers.edu/montipora/](http://cyanophora.rutgers.edu/montipora/)
 
 ---
 
