@@ -800,7 +800,7 @@ Genome Feature Tracks:
 
 ## _Pocillipora verrucosa_
 
-Genome:
+Genomes:
 
   - [GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna) (369MB)
 
@@ -808,13 +808,27 @@ Genome:
 
     - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/)
 
-Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+  - [`Pver_genome_assembly_v1.0.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.fasta) (363MB)
+
+    -  MD5 checksum: `cb1ed5a1b724d92456347a28bb25f228`
+
+    - Downloaded 20230127: [http://pver.reefgenomics.org/download/](http://pver.reefgenomics.org/download/)
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
   - [20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz) (tarball gzip; 563MB)
 
     - MD5 checksum: `f1669e7d88cf014fcfa10c6c06e03802`
 
     - Needs to be unpacked before use!
+
+Genome Feature Tracks
+
+  - [`Pver_genome_assembly_v1.0.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3) (70MB)
+
+    - MD5 checksum: `3f1d52afa2801f9aa126623aba3c149d`
+
+    - Downloaded 20230127: [http://pver.reefgenomics.org/download/](http://pver.reefgenomics.org/download/)
 
 ---
 
