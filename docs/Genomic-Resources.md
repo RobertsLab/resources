@@ -543,9 +543,9 @@ Genomes:
 
 Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/))
 
-  - [`20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230125-mcap-hisat2-GCA_006542545.1-index/mcap-GCA_006542545.1-hisat2-indices.tar.gz) (tarball gzip; 879MB)
+  - [`Montipora_capitata_HIv3-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-mcap-HIv3-hisat2-build-index/Montipora_capitata_HIv3-hisat2-indices.tar.gz) (tarball gzip; 1.2GB)
 
-    - MD5 checksum: `1fd78407ed6416350d832a124212b1bc`
+    - MD5 checksum: `c8accb6c54e843198c776f0d6f0c603d`
 
     - Needs to be unpacked before use!
 
@@ -556,6 +556,12 @@ Genome Feature Tracks
     - MD5 checksum: `5f6b80ba2885471c8c1534932ccb7e84`
 
     - Downloaded 2023017: [http://cyanophora.rutgers.edu/montipora/](http://cyanophora.rutgers.edu/montipora/)
+
+  - [`Montipora_capitata_HIv3.genes.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-mcap-gff_to_gtf/Montipora_capitata_HIv3.genes.gtf) (101MB)
+
+    - MD5 checksum: `ceef8eca945199415b23d2f1f0dd2066`
+
+    - Created 2023017: [https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-M.capitata-Genome-GFF-to-GTF-Using-gffread.html](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-M.capitata-Genome-GFF-to-GTF-Using-gffread.html)
 
 ---
 
