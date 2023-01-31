@@ -808,7 +808,7 @@ Genome Feature Tracks:
 
 Genomes:
 
-  - [GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna) (369MB)
+  - [`GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna) (369MB)
 
     - MD5 checksum: `6ca98fae6a8b86183d75b23cf52a6651`
 
@@ -822,9 +822,15 @@ Genomes:
 
 Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
-  - [20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz) (tarball gzip; 563MB)
+  - [`pver-GCA_014529365.1-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz) (tarball gzip; 563MB)
 
     - MD5 checksum: `f1669e7d88cf014fcfa10c6c06e03802`
+
+    - Needs to be unpacked before use!
+
+  - [`Pver_genome_assembly_v1.0-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-pver-v1.0-hisat2-build-index/Pver_genome_assembly_v1.0-hisat2-indices.tar.gz) (tarball gzip; 594MB)
+
+    - MD5 checksum: `a7cae695134fe93a795df7b395e7d5fc`
 
     - Needs to be unpacked before use!
 
@@ -835,6 +841,12 @@ Genome Feature Tracks
     - MD5 checksum: `3f1d52afa2801f9aa126623aba3c149d`
 
     - Downloaded 20230127: [http://pver.reefgenomics.org/download/](http://pver.reefgenomics.org/download/)
+
+  - [`Pver_genome_assembly_v1.0.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0.gtf) (48MB)
+
+    - MD5 checksum: `c3cc8fb576bcf39dd17b6d229100aa56`
+
+    - Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
 
 ---
 
