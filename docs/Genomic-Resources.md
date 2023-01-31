@@ -774,7 +774,7 @@ Transcriptome generated from various libaries - details [here](https://robertsla
 
 Genome:
 
-  - [Pocillopora_acuta_HIv2.assembly.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.assembly.fasta) (389MB)
+  - [`Pocillopora_acuta_HIv2.assembly.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.assembly.fasta) (389MB)
 
     - MD5 checksum: `ce3b69ff3f5dafb8fb7416dc862ef4a0`
 
@@ -782,19 +782,25 @@ Genome:
 
 Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
-  - [Pocillopora_acuta_HIv2-hisat2-indices.tar.gz](https://gannet.fish.washington.edu/Atumefaciens/20230126-pacu-HIv2-hisat2-build-index/Pocillopora_acuta_HIv2-hisat2-indices.tar.gz) (564MB)
+  - [`Pocillopora_acuta_HIv2-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-pacu-HIv2-hisat2-build-index/Pocillopora_acuta_HIv2-hisat2-indices.tar.gz) (597MB)
 
-    - MD5 checksum: `589bdcd2c9e5eb161ceff072f5eda531`
+    - MD5 checksum: `80dbf8ca589f569f43ef2a75ab57e17d`
 
     - Needs to be unpacked before use!
 
 Genome Feature Tracks:
 
-  - [Pocillopora_acuta_HIv2.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.genes.gff3) (54MB)
+  - [`Pocillopora_acuta_HIv2.genes.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.genes.gff3) (54MB)
 
     - MD5 checksum: `fad5aa85afd7e3bec4400ca6da7d706d`
 
     - Downloaded 20230125: [http://cyanophora.rutgers.edu/Pocillopora_acuta/](http://cyanophora.rutgers.edu/Pocillopora_acuta/)
+
+  - [`Pocillopora_acuta_HIv2.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230126-pacu-gff_to_gtf/Pocillopora_acuta_HIv2.gtf) (82MB)
+
+    - MD5 checksum: `34196bd945eb4965e665097648037132`
+
+    - Created 20230127: [Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html](https://robertslab.github.io/sams-notebook/2023/01/26/Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html)
 
 ---
 
