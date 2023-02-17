@@ -211,6 +211,51 @@ Transcriptomes
 
 ---
 
+## _Pocillipora verrucosa_
+
+Genomes:
+
+  - `/volume1/web/halfshell/genomic-databank/Cladocopium_goreaui_genes_gff3Cladocopium_goreaui_genome_fa` (1.1GB)
+
+    - MD5 checksum: `eb4a1a7ac2fc0cbc6f5c178240beb932`
+
+    - Downloaded 20230216: [https://espace.library.uq.edu.au/view/UQ:fba3259](https://espace.library.uq.edu.au/view/UQ:fba3259)
+
+    - Access to the genome requires agreeing to some licensing provisions (primarily the requirement to cite the publication whenever the genome is used), so we will not be providing any public links to the file.
+
+    - [Chen et. al, 2022](https://doi.org/10.48610/fba3259)
+
+
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+
+  - [``]() (tarball gzip; 563MB)
+
+    - MD5 checksum: ``
+
+    - Needs to be unpacked before use!
+
+Genome Feature Tracks
+
+  - `/volume1/web/halfshell/genomic-databank/Cladocopium_goreaui_genes_gff3` (225MB)
+
+    - MD5 checksum: `ab47babf331507b9284e9d35406aefac`
+
+    - Downloaded 20230216: [https://espace.library.uq.edu.au/view/UQ:fba3259](https://espace.library.uq.edu.au/view/UQ:fba3259)
+
+    - Access to the GFF requires agreeing to some licensing provisions (primarily the requirement to cite the publication whenever the genome is used), so we will not be providing any public links to the file.
+
+    - [Chen et. al, 2022](https://doi.org/10.48610/fba3259)
+
+
+  - [`Cladocopium_goreaui_genes_gff3.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230217-cgor-gff_to_gtf/Cladocopium_goreaui_genes_gff3.gtf) (197MB)
+
+    - MD5 checksum: `97e69a850faf2e6d9b60df828ad02671`
+
+    - Created 20230217: [Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/02/17/Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread.html)
+
+---
+
 ## _Crassostrea gigas_ - cgigas_uk_roslin_v1
 
 - [NCBI Assembly GCF_902806645.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_902806645.1/)
