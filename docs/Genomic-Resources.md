@@ -785,8 +785,8 @@ Genome:
     - MD5 checksum: `ce3b69ff3f5dafb8fb7416dc862ef4a0`
 
     - Downloaded 20230125: [http://cyanophora.rutgers.edu/Pocillopora_acuta/](http://cyanophora.rutgers.edu/Pocillopora_acuta/)
-]
-Genome Index [`HISAT2`](https://daehwankimlab.github.io/hisat2/):
+
+Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
   - [`Pocillopora_acuta_HIv2-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-pacu-HIv2-hisat2-build-index/Pocillopora_acuta_HIv2-hisat2-indices.tar.gz) (597MB)
 
