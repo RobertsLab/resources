@@ -881,19 +881,33 @@ Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
   - [`Pver_genome_assembly_v1.0-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-pver-v1.0-hisat2-build-index/Pver_genome_assembly_v1.0-hisat2-indices.tar.gz) (tarball gzip; 594MB)
 
-    - MD5 checksum: `a7cae695134fe93a795df7b395e7d5fc`
+    - MD5 checksum: `57e193e101396fab67de04c851f63240`
 
     - Needs to be unpacked before use!
 
 Genome Feature Tracks
 
-  - [`Pver_genome_assembly_v1.0.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3) (70MB)
+  - [~~`Pver_genome_assembly_v1.0.gff3`~~](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3) (70MB)
+
+    - **NOTE: DO _NOT_ USE! NOT A VALID GFF3 FORMAT!**
+
+      - Retaining to maintain provenance of data.
+
+      - Use updated/validated [`Pver_genome_assembly_v1.0-valid.gff3`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gff3).
 
     - MD5 checksum: `3f1d52afa2801f9aa126623aba3c149d`
 
     - Downloaded 20230127: [http://pver.reefgenomics.org/download/](http://pver.reefgenomics.org/download/)
 
-  - [`Pver_genome_assembly_v1.0.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0.gtf) (48MB)
+  - [`Pver_genome_assembly_v1.0-valid.gff3`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gff3) (70MB)
+
+    - MD5 checksum: `5dd8f21a4faea1f46c48a5ab253749d7`
+
+    - Modified/validated version of `Pver_genome_assembly_v1.0.gff3`
+
+    - Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
+
+  - [`Pver_genome_assembly_v1.0-valid.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gtf) (48MB)
 
     - MD5 checksum: `c3cc8fb576bcf39dd17b6d229100aa56`
 
