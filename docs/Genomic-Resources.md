@@ -885,6 +885,8 @@ Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
     - Needs to be unpacked before use!
 
+    - Notebook: [Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/01/31/Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html)
+
 Genome Feature Tracks
 
   - [~~`Pver_genome_assembly_v1.0.gff3`~~](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3) (70MB)
