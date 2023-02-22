@@ -889,7 +889,7 @@ Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
 Genome Feature Tracks
 
-  - [~~`Pver_genome_assembly_v1.0.gff3`~~](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3) (70MB)
+  - ~~[`Pver_genome_assembly_v1.0.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3)~~ (70MB)
 
     - **NOTE: DO _NOT_ USE! NOT A VALID GFF3 FORMAT!**
 
