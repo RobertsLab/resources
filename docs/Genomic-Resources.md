@@ -211,11 +211,11 @@ Transcriptomes
 
 ---
 
-## _Pocillipora verrucosa_
+## _C.goreaui_
 
 Genomes:
 
-  - `/volume1/web/halfshell/genomic-databank/Cladocopium_goreaui_genes_gff3Cladocopium_goreaui_genome_fa` (1.1GB)
+  - `/volume1/web/halfshell/genomic-databank/Cladocopium_goreaui_genome_fa` (1.1GB)
 
     - MD5 checksum: `eb4a1a7ac2fc0cbc6f5c178240beb932`
 
