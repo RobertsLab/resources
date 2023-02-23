@@ -1,5 +1,8 @@
 site_name: Roberts Lab Handbook
+repo_url: https://github.com/RobertsLab/resources/
 theme:
+  features:
+    - content.action.edit
   name: material
   palette:
 
@@ -23,8 +26,7 @@ theme:
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
-repo_url: https://github.com/RobertsLab/resources/
-edit_uri: edit/master/docs
+
 nav:
    - Home: 'index.md'
 
