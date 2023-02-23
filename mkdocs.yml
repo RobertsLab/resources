@@ -2,11 +2,11 @@ site_name: Roberts Lab Handbook
 repo_url: https://github.com/RobertsLab/resources/
 edit_uri: blob/main/docs
 theme:
+  name: material
   features:
     - content.action.edit
     icon:
       edit: material/pencil
-  name: material
   palette:
 
     # Light mode
