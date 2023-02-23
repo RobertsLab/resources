@@ -5,8 +5,8 @@ theme:
   name: material
   features:
     - content.action.edit
-    icon:
-      edit: material/pencil
+  icon:
+    edit: material/pencil
   palette:
 
     # Light mode
