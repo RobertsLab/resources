@@ -919,7 +919,13 @@ Genome Feature Tracks
 
     - MD5 checksum: `e80cc476a8096f5e045fea492c6607d1`
 
-    - Created 20230227 by Sam White: `bedops_linux_x86_64-v2.4.40/gff2bed < Pver_genome_assembly_v1.0-valid.genes.gff3 > Pver_genome_assembly_v1.0.genes.bed`
+    - Created 20230227 by Sam White: 
+    
+        ```shell
+        bedops_linux_x86_64-v2.4.40/gff2bed \
+        < Pver_genome_assembly_v1.0-valid.genes.gff3 \
+        > Pver_genome_assembly_v1.0.genes.bed
+        ```
 
 ---
 
