@@ -915,9 +915,9 @@ Genome Feature Tracks
 
     - Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
   
-  - [`Pver_genome_assembly_v1.0.genes.bed`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0.genes.bed) (2.5MB)
+  - [`Pver_genome_assembly_v1.0-valid.genes.bed`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.genes.bed) (1.2MB)
 
-    - MD5 checksum: `e80cc476a8096f5e045fea492c6607d1`
+    - MD5 checksum: `f19672f65c4e376f96c6ab23c202c2e0`
 
     - Created 20230227 by Sam White: 
     
