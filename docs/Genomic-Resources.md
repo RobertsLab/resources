@@ -924,7 +924,8 @@ Genome Feature Tracks
         ```shell
         bedops_linux_x86_64-v2.4.40/gff2bed \
         < Pver_genome_assembly_v1.0-valid.genes.gff3 \
-        > Pver_genome_assembly_v1.0.genes.bed
+        | awk -F"\t" 'BEGIN {OFS="\t"} {print $1, $2, $3, $4, $5, $6}' \
+        > Pver_genome_assembly_v1.0-valid.genes.bed
         ```
 
 ---
