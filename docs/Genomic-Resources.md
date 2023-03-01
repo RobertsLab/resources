@@ -928,6 +928,9 @@ Genome Feature Tracks
         > Pver_genome_assembly_v1.0-valid.genes.bed
         ```
 
+  - [Pver_CGmotif.gff](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_CGmotif.gff): `https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_CGmotif.gff` (1.3G)
+
+
 ---
 
 ## _QPX_
