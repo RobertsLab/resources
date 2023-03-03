@@ -57,6 +57,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
     -   <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
 ---
+
 ## [Biochem Stores](https://depts.washington.edu/biowww/pages/biochem-stores.shtml) Purchasing
 ![This is what the store front looks like](https://raw.githubusercontent.com/shellytrigg/shellytrigg.github.io/master/images/UWBiochemStore.jpg)
 
@@ -73,6 +74,8 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 4. Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
 
   - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
+  
+  
 ---
 
 ## Primer Purchasing
