@@ -2,15 +2,6 @@
 
 ## In any emergency, dial 911 from any laboratory phone.
 
----
-
-### COVID-19 LAB WORK REQUIREMENTS
-
-##### Read the entirety of:
-
-- [Roberts Lab COVID-19 Health and Safety Plan](COVID-Health-and-Safety-Plan.md).
-
-In addition to required safety protocols, it also has links to other mental health and safety resources that may be useful.
 
 ---
 
