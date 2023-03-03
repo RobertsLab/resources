@@ -211,6 +211,51 @@ Transcriptomes
 
 ---
 
+## _C.goreaui_
+
+Genomes:
+
+  - `/volume1/web/halfshell/genomic-databank/Cladocopium_goreaui_genome_fa` (1.1GB)
+
+    - MD5 checksum: `eb4a1a7ac2fc0cbc6f5c178240beb932`
+
+    - Downloaded 20230216: [https://espace.library.uq.edu.au/view/UQ:fba3259](https://espace.library.uq.edu.au/view/UQ:fba3259)
+
+    - Access to the genome requires agreeing to some licensing provisions (primarily the requirement to cite the publication whenever the genome is used), so we will not be providing any public links to the file.
+
+    - [Chen et. al, 2022](https://doi.org/10.48610/fba3259)
+
+
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+
+  - [``]() (tarball gzip; 563MB)
+
+    - MD5 checksum: ``
+
+    - Needs to be unpacked before use!
+
+Genome Feature Tracks
+
+  - `/volume1/web/halfshell/genomic-databank/Cladocopium_goreaui_genes_gff3` (225MB)
+
+    - MD5 checksum: `ab47babf331507b9284e9d35406aefac`
+
+    - Downloaded 20230216: [https://espace.library.uq.edu.au/view/UQ:fba3259](https://espace.library.uq.edu.au/view/UQ:fba3259)
+
+    - Access to the GFF requires agreeing to some licensing provisions (primarily the requirement to cite the publication whenever the genome is used), so we will not be providing any public links to the file.
+
+    - [Chen et. al, 2022](https://doi.org/10.48610/fba3259)
+
+
+  - [`Cladocopium_goreaui_genes_gff3.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230217-cgor-gff_to_gtf/Cladocopium_goreaui_genes_gff3.gtf) (197MB)
+
+    - MD5 checksum: `97e69a850faf2e6d9b60df828ad02671`
+
+    - Created 20230217: [Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/02/17/Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread.html)
+
+---
+
 ## _Crassostrea gigas_ - cgigas_uk_roslin_v1
 
 - [NCBI Assembly GCF_902806645.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_902806645.1/)
@@ -525,6 +570,46 @@ Genome:
 
 ---
 
+## _Montipora capitata_
+
+Genomes:
+
+  - [`GCA_006542545.1_Mcap_UHH_1.1_genomic.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_006542545.1_Mcap_UHH_1.1_genomic.fna) (569MB)
+
+    - MD5 checksum: `25efbc3110c0791b5eb2e5ac5c2a472f`
+
+    - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_006542545.1/)
+
+  - [`Montipora_capitata_HIv3.assembly.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Montipora_capitata_HIv3.assembly.fasta) (745MB)
+
+    - MD5 checksum: `99819eadba1b13ed569bb902eef8da08`
+
+    - Downloaded 2023017: [http://cyanophora.rutgers.edu/montipora/](http://cyanophora.rutgers.edu/montipora/)
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/))
+
+  - [`Montipora_capitata_HIv3-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-mcap-HIv3-hisat2-build-index/Montipora_capitata_HIv3-hisat2-indices.tar.gz) (tarball gzip; 1.2GB)
+
+    - MD5 checksum: `c8accb6c54e843198c776f0d6f0c603d`
+
+    - Needs to be unpacked before use!
+
+Genome Feature Tracks
+
+  - [`Montipora_capitata_HIv3.genes.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Montipora_capitata_HIv3.genes.gff3) (67MB)
+
+    - MD5 checksum: `5f6b80ba2885471c8c1534932ccb7e84`
+
+    - Downloaded 2023017: [http://cyanophora.rutgers.edu/montipora/](http://cyanophora.rutgers.edu/montipora/)
+
+  - [`Montipora_capitata_HIv3.genes.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-mcap-gff_to_gtf/Montipora_capitata_HIv3.genes.gtf) (101MB)
+
+    - MD5 checksum: `ceef8eca945199415b23d2f1f0dd2066`
+
+    - Created 2023017: [https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-M.capitata-Genome-GFF-to-GTF-Using-gffread.html](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-M.capitata-Genome-GFF-to-GTF-Using-gffread.html)
+
+---
+
 ## _Ostrea lurida_
 
 Genome:
@@ -733,6 +818,118 @@ Transcriptome generated from various libaries - details [here](https://robertsla
   - Kallisto index for `Pgenerosa_transcriptome_v5.fasta` (8.2GB):
   
     - [`https://gannet.fish.washington.edu/seashell/wd/062821/transcriptome_v5.idx`](https://gannet.fish.washington.edu/seashell/wd/062821/transcriptome_v5.idx)
+
+---
+
+## _Pocillipora acuta_
+
+Genome:
+
+  - [`Pocillopora_acuta_HIv2.assembly.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.assembly.fasta) (389MB)
+
+    - MD5 checksum: `ce3b69ff3f5dafb8fb7416dc862ef4a0`
+
+    - Downloaded 20230125: [http://cyanophora.rutgers.edu/Pocillopora_acuta/](http://cyanophora.rutgers.edu/Pocillopora_acuta/)
+
+Genome Index ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+
+  - [`Pocillopora_acuta_HIv2-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-pacu-HIv2-hisat2-build-index/Pocillopora_acuta_HIv2-hisat2-indices.tar.gz) (597MB)
+
+    - MD5 checksum: `80dbf8ca589f569f43ef2a75ab57e17d`
+
+    - Needs to be unpacked before use!
+
+Genome Feature Tracks:
+
+  - [`Pocillopora_acuta_HIv2.genes.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_acuta_HIv2.genes.gff3) (54MB)
+
+    - MD5 checksum: `fad5aa85afd7e3bec4400ca6da7d706d`
+
+    - Downloaded 20230125: [http://cyanophora.rutgers.edu/Pocillopora_acuta/](http://cyanophora.rutgers.edu/Pocillopora_acuta/)
+
+  - [`Pocillopora_acuta_HIv2.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230126-pacu-gff_to_gtf/Pocillopora_acuta_HIv2.gtf) (82MB)
+
+    - MD5 checksum: `34196bd945eb4965e665097648037132`
+
+    - Created 20230127: [Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html](https://robertslab.github.io/sams-notebook/2023/01/26/Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html)
+
+---
+
+## _Pocillipora verrucosa_
+
+Genomes:
+
+  - [`GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_014529365.1_Pver_genome_assembly_v1.0_genomic.fna) (369MB)
+
+    - MD5 checksum: `6ca98fae6a8b86183d75b23cf52a6651`
+
+    - Downloaded 20230125: [https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/](https://www.ncbi.nlm.nih.gov/data-hub/genome/GCA_014529365.1/)
+
+  - [`Pver_genome_assembly_v1.0.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.fasta) (363MB)
+
+    -  MD5 checksum: `cb1ed5a1b724d92456347a28bb25f228`
+
+    - Downloaded 20230127: [http://pver.reefgenomics.org/download/](http://pver.reefgenomics.org/download/)
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+
+  - [`pver-GCA_014529365.1-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230125-pver-hisat2-GCA_014529365.1-index/pver-GCA_014529365.1-hisat2-indices.tar.gz) (tarball gzip; 563MB)
+
+    - MD5 checksum: `f1669e7d88cf014fcfa10c6c06e03802`
+
+    - Needs to be unpacked before use!
+
+  - [`Pver_genome_assembly_v1.0-hisat2-indices.tar.gz`](https://gannet.fish.washington.edu/Atumefaciens/20230131-pver-v1.0-hisat2-build-index/Pver_genome_assembly_v1.0-hisat2-indices.tar.gz) (tarball gzip; 594MB)
+
+    - MD5 checksum: `57e193e101396fab67de04c851f63240`
+
+    - Needs to be unpacked before use!
+
+    - Notebook: [Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/01/31/Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html)
+
+Genome Feature Tracks
+
+  - ~~[`Pver_genome_assembly_v1.0.gff3`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_genome_assembly_v1.0.gff3)~~ (70MB)
+
+    - **NOTE: DO _NOT_ USE! NOT A VALID GFF3 FORMAT!**
+
+      - Retaining to maintain provenance of data.
+
+      - Use updated/validated [`Pver_genome_assembly_v1.0-valid.gff3`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gff3).
+
+    - MD5 checksum: `3f1d52afa2801f9aa126623aba3c149d`
+
+    - Downloaded 20230127: [http://pver.reefgenomics.org/download/](http://pver.reefgenomics.org/download/)
+
+  - [`Pver_genome_assembly_v1.0-valid.gff3`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gff3) (70MB)
+
+    - MD5 checksum: `5dd8f21a4faea1f46c48a5ab253749d7`
+
+    - Modified/validated version of `Pver_genome_assembly_v1.0.gff3`
+
+    - Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
+
+  - [`Pver_genome_assembly_v1.0-valid.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gtf) (48MB)
+
+    - MD5 checksum: `c3cc8fb576bcf39dd17b6d229100aa56`
+
+    - Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
+  
+  - [`Pver_genome_assembly_v1.0-valid.genes.bed`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.genes.bed) (1.2MB)
+
+    - MD5 checksum: `f19672f65c4e376f96c6ab23c202c2e0`
+
+    - Created 20230227 by Sam White: 
+    
+        ```shell
+        bedops_linux_x86_64-v2.4.40/gff2bed \
+        < Pver_genome_assembly_v1.0-valid.genes.gff3 \
+        | awk -F"\t" 'BEGIN {OFS="\t"} {print $1, $2, $3, $4, $5, $6}' \
+        > Pver_genome_assembly_v1.0-valid.genes.bed
+        ```
+
+  - [Pver_CGmotif.gff](https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_CGmotif.gff): `https://owl.fish.washington.edu/halfshell/genomic-databank/Pver_CGmotif.gff` (1.3G)
+
 
 ---
 
