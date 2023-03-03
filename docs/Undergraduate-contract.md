@@ -10,9 +10,9 @@ If there are any issues (e.g. allergies) or assistance you might need/want that 
 
 Signing this document acknowledges the following:
 
-1) I have read through all components of *Onboarding*: https://github.com/RobertsLab/resources/wiki/Onboarding
+1) I have read through all components of *Onboarding*: https://robertslab.github.io/resources/Onboarding/
 
-2) I have completed all required Lab Safety training (https://github.com/RobertsLab/resources/wiki/Lab-Safety) and provided the required documents to Sam White.
+2) I have completed all required Lab Safety training (https://robertslab.github.io/resources/Lab-Safety/) and provided the required documents to Sam White.
 
 3) Research supplies (and equipment) are purchased through my grants and are very expensive.
 
