@@ -70,6 +70,7 @@ General usage:
     -1 "${fastq_list_R1}" \
     -2 "${fastq_list_R2}" \
     -S "${sample_name}".sam \
+    --threads "${threads}" \
     2> "${sample_name}"-hisat2_stats.txt
 
     # Sort SAM files, convert to BAM, and index
