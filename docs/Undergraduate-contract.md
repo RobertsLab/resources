@@ -1,31 +1,32 @@
-
-
-
 I enjoy having the opportunity to provide motivated undergraduate students with a chance to gain hands-on lab experience and get a better understanding of an array of approaches that can be used to study aquatic organisms. I feel this is an important component of your education. Depending on your status (i.e. intern, work-study, course credit, capstone etc.) there will likely be specific details that will need to be discussed, however all personnel need to agree to, and understand the following.
 
 If there are any issues (e.g. allergies) or assistance you might need/want that will help you succeed during your time in the lab, please record them on this page.
 
 Signing this document acknowledges the following:
 
-1) I have read through all components of *Onboarding*: https://robertslab.github.io/resources/Onboarding/
+1)  I have read through all components of [*Onboarding*](https://robertslab.github.io/resources/Onboarding/):
 
-2) I have completed all required Lab Safety training (https://robertslab.github.io/resources/Lab-Safety/) and provided the required documents to Sam White.
+2)  I have completed all required [Lab Safety](https://robertslab.github.io/resources/Lab-Safety/) training and provided the required documents to Sam White.
 
-3) Research supplies (and equipment) are purchased through my grants and are very expensive.
+3)  Research supplies (and equipment) are purchased through my grants and are very expensive.
 
-4) You need to commit to at least 4-10 hours per week.
+4)  You need to commit to at least 4-10 hours per week.
 
-5) Always, Always ask Steven or someone else if you have any questions or are unsure about something. You are here to learn and you should take the initiative to make the most of your time here.
+5)  Always, Always ask Steven or someone else if you have any questions or are unsure about something. You are here to learn and you should take the initiative to make the most of your time here.
 
-6) You need to maintain an e-lab notebook / journal that is updated on a daily basis. The platform for this will be genefish.wordpress.com.
+6)  You need to maintain an e-lab notebook / journal that is updated on a daily basis. The platform for this will be genefish.wordpress.com.
 
-7) If you are expected (or tell someone you are) to be in lab, and for some reason cannot make it -let us know ASAP
+7)  If you are expected (or tell someone you are) to be in lab, and for some reason cannot make it -let us know ASAP
 
-8) Your schedule of when you will be in the lab needs to be maintained on the [lab calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America%2FVancouver).
+8)  Your schedule of when you will be in the lab needs to be maintained on the [lab calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America%2FVancouver).
 
-9) Make an effort to attend all lab meetings.
+9)  Make an effort to attend all lab meetings.
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1-NHOKTN2piSBaTPRH5V9VJPufRoGhc0ue4CVCUpM7Sjqqg/viewform?embedded=true" width="640" height="336" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf1-NHOKTN2piSBaTPRH5V9VJPufRoGhc0ue4CVCUpM7Sjqqg/viewform?embedded=true" width="640" height="336" frameborder="0" marginheight="0" marginwidth="0">
+
+Loading...
+
+</iframe>
 
 Name:`______________________________`
 
@@ -33,4 +34,4 @@ Signature:`___________________________`
 
 Date:`___________________________`
 
-email used for Google Calendar:  `_______________________________`
+email used for Google Calendar: `_______________________________`
