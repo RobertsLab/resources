@@ -56,27 +56,27 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
     -   <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
----
+------------------------------------------------------------------------
 
 ## [Biochem Stores](https://depts.washington.edu/biowww/pages/biochem-stores.shtml) Purchasing
+
 ![This is what the store front looks like](https://raw.githubusercontent.com/shellytrigg/shellytrigg.github.io/master/images/UWBiochemStore.jpg)
 
-1. [Search the store catalog](http://128.95.12.98:88/stores/dataSearch.asp) or just head down to Room J-014 in the Health Sciences Building basement and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
+1.  [Search the store catalog](http://128.95.12.98:88/stores/dataSearch.asp) or just head down to Room J-014 in the Health Sciences Building basement and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
 
-2. Order your product. They will need to know your lab, your name, and the budget number. They will give you a sales receipt for your purchase, but you don't need to submit this anywhere.
+2.  Order your product. They will need to know your lab, your name, and the budget number. They will give you a sales receipt for your purchase, but you don't need to submit this anywhere.
 
-3. Update the [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing)
+3.  Update the [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing)
 
-   - Spreadsheet is organized by date ordered.
+    -   Spreadsheet is organized by date ordered.
 
-   - Each row represents an order submitted to a single vendor; list all items, quantities, and catalogue numbers in a single cell for a given order.
+    -   Each row represents an order submitted to a single vendor; list all items, quantities, and catalogue numbers in a single cell for a given order.
 
-4. Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
+4.  Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
 
-  - <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
-  
-  
----
+-   <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
+
+------------------------------------------------------------------------
 
 ## Primer Purchasing
 
