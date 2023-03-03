@@ -1,6 +1,4 @@
-#### Undergraduate Commitment Contract
 
----
 
 
 I enjoy having the opportunity to provide motivated undergraduate students with a chance to gain hands-on lab experience and get a better understanding of an array of approaches that can be used to study aquatic organisms. I feel this is an important component of your education. Depending on your status (i.e. intern, work-study, course credit, capstone etc.) there will likely be specific details that will need to be discussed, however all personnel need to agree to, and understand the following.
