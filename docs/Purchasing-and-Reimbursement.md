@@ -124,6 +124,8 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 ## Travel
 
+*Note Steps 1 and 2 need to occur prior to travel*
+
 Travel is handled via <https://treq.environment.uw.edu>
 
 Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself.
