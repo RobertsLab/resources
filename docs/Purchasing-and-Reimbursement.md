@@ -120,8 +120,16 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 ---
 
-## Travel Reimbursement
+## Travel 
 
-Use https://treq.environment.uw.edu
+Travel is handled via  https://treq.environment.uw.edu
 
+Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself
+
+Step 2) For any travel you need to complete Travel Pre-Authorization as soon as you know you would like to travel. 
+
+During the Pre-Authorization step you can request a per diem Advance.
+
+Step 3) Secure transit and lodging following all rules and regulations set forth by UW.
  
+Step 4) When travel is complete, submit required documentation. 
