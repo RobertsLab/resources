@@ -132,7 +132,7 @@ Step 1) Need to identify and apply for any supplemental support. This includes a
 
 Step 2) For any travel you need to complete Travel Pre-Authorization as soon as you know you would like to travel.
 
-![treq](../img/treq-pre.png)
+![treq](https://raw.githubusercontent.com/RobertsLab/resources/master/img/treq-pre.png)
 
 During the Pre-Authorization step you can request a per diem Advance.
 
