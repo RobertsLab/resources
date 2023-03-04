@@ -131,15 +131,17 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 Travel is handled via <https://treq.environment.uw.edu>
 
-Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself.
+Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself. Many conferences have early-bird rates and discounted hotels. These should be considered. 
 
-Step 2) For any travel you need to complete Travel Pre-Authorization as soon as you know you would like to travel.
+Step 2) For any travel you need to complete Travel Pre-Authorization as soon as you know you would like to travel. (_It is optional to complete for local transit to research sites_)
 
 ![treq](https://raw.githubusercontent.com/RobertsLab/resources/master/img/treq-pre.png)
 
 During the Pre-Authorization step you can request a per diem Advance.
 
-Step 3) Secure transit and lodging following all [rules and regulations set forth by UW](https://finance.uw.edu/travel/policies)
+**Note that there are options to have UW directly pay for registration, if you can get an invoice from the conference** When this is the case you would simply submit this invoice for payment in Treq and not include in Travel Authorization / Reimbursement. 
+
+Step 3) Secure transit and lodging following all [rules and regulations set forth by UW](https://finance.uw.edu/travel/policies). 
 
 Step 4) When travel is complete, submit required documentation via Treq
 
