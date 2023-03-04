@@ -606,9 +606,8 @@ Genome Feature Tracks:
 
     Individual feature GFFs were made with the following shell commands:
 
-```{=html}
 <!-- -->
-```
+
     ```bash
 
     features_array=(CDS exon gene mRNA repeat_region rRNA tRNA)
@@ -673,62 +672,59 @@ Genome Feature Tracks:
 
 ------------------------------------------------------------------------
 
-Fasta files: 
+Fasta files:
 
-- [Panopea-generosa-v1.0.a4.CDS.fasta](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.CDS.fasta) (67M)
+-   [Panopea-generosa-v1.0.a4.CDS.fasta](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.CDS.fasta) (67M)
 
-  - MD5: `fb192eab0aefd5d3ba5bebef2a012f15`
+    -   MD5: `fb192eab0aefd5d3ba5bebef2a012f15`
 
-- [Panopea-generosa-v1.0.a4.CDS.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.CDS.fasta.fai) (26M)
+-   [Panopea-generosa-v1.0.a4.CDS.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.CDS.fasta.fai) (26M)
 
-  - MD5: `f2266a449290ea0383d2eb98eb3ed426`
+    -   MD5: `f2266a449290ea0383d2eb98eb3ed426`
 
-- [Panopea-generosa-v1.0.a4.gene.fasta](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.gene.fasta) (362M)
+-   [Panopea-generosa-v1.0.a4.gene.fasta](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.gene.fasta) (362M)
 
-  - MD5: `7c956b1c27d14bd91959763403f81265
-588d18f5fe0e4f2259a25586349fc244`
+    -   MD5: `7c956b1c27d14bd91959763403f81265 588d18f5fe0e4f2259a25586349fc244`
 
-- [Panopea-generosa-v1.0.a4.gene.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.gene.fasta.fai) (2.4M)
+-   [Panopea-generosa-v1.0.a4.gene.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.gene.fasta.fai) (2.4M)
 
-  - MD5: `588d18f5fe0e4f2259a25586349fc244`
+    -   MD5: `588d18f5fe0e4f2259a25586349fc244`
 
-- [Panopea-generosa-v1.0.a4.mRNA.fasta](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.mRNA.fasta) (475M)
+-   [Panopea-generosa-v1.0.a4.mRNA.fasta](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.mRNA.fasta) (475M)
 
-  - MD5: `1823be75694cf70f0ea6f1abc072ba16
-e120b4c1d3bb0917868e72cd22507bbc`
+    -   MD5: `1823be75694cf70f0ea6f1abc072ba16 e120b4c1d3bb0917868e72cd22507bbc`
 
-- [Panopea-generosa-v1.0.a4.mRNA.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.mRNA.fasta.fai) (3.4M)
+-   [Panopea-generosa-v1.0.a4.mRNA.fasta.fai](https://gannet.fish.washington.edu/Atumefaciens/20220324-pgen-gffs_to_fastas/Panopea-generosa-v1.0.a4.mRNA.fasta.fai) (3.4M)
 
-  - MD5: `e120b4c1d3bb0917868e72cd22507bbc`
+    -   MD5: `e120b4c1d3bb0917868e72cd22507bbc`
 
 Jupyter notebook with creation deets (NB Viewer):
 
-- [20220324-pgen-gffs_to_fastas.ipynb](https://nbviewer.org/github/RobertsLab/code/blob/master/notebooks/sam/20220324-pgen-gffs_to_fastas.ipynb)
+-   [20220324-pgen-gffs_to_fastas.ipynb](https://nbviewer.org/github/RobertsLab/code/blob/master/notebooks/sam/20220324-pgen-gffs_to_fastas.ipynb)
 
 CDS FastA description lines look like this:
 
-- `PGEN_.00g000010.m01.CDS01|PGEN_.00g000010.m01::Scaffold_01:2-125`
+-   `PGEN_.00g000010.m01.CDS01|PGEN_.00g000010.m01::Scaffold_01:2-125`
 
 Explanation for CDS:
 
-- `PGEN_.00g000010.m01.CDS01`: Unique sequence ID.
-- `PGEN_.00g000010.m01`: "Parent" ID. Corresponds to unique _mRNA_ ID.
-- `Scaffold_01`: Originating scaffold.
-- `2-125`: Sequence coordinates from scaffold mentioned above.
+-   `PGEN_.00g000010.m01.CDS01`: Unique sequence ID.
+-   `PGEN_.00g000010.m01`: "Parent" ID. Corresponds to unique *mRNA* ID.
+-   `Scaffold_01`: Originating scaffold.
+-   `2-125`: Sequence coordinates from scaffold mentioned above.
 
 mRNA FastA description looks like this:
 
-- `PGEN_.00g000030.m01|PGEN_.00g000030::Scaffold_01:49248-52578`
+-   `PGEN_.00g000030.m01|PGEN_.00g000030::Scaffold_01:49248-52578`
 
 Explanation for mRNA:
 
-- `PGEN_.00g000030.m01`: Unique sequence ID.
-- `PGEN_.00g000030`: "Parent" ID. Corresponds to unique _gene_ ID.
-- `Scaffold_01`: Originating scaffold.
-- `49248-52578`: Sequence coordinates from scaffold mentioned above.
+-   `PGEN_.00g000030.m01`: Unique sequence ID.
+-   `PGEN_.00g000030`: "Parent" ID. Corresponds to unique *gene* ID.
+-   `Scaffold_01`: Originating scaffold.
+-   `49248-52578`: Sequence coordinates from scaffold mentioned above.
 
-
----
+------------------------------------------------------------------------
 
 -   [Pgenerosa_transcriptome_v5.fasta](http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Pgenerosa_transcriptome_v5.fasta`
 
