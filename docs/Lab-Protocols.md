@@ -67,6 +67,7 @@ Written 20150702 by Sam White.
 ### qPCR Data Analysis
 
 Step 1: Check for quality control of the qPCR data
+
 Before starting the analysis, it is important to check the quality control of the qPCR data to ensure that the data is reliable. Quality control can be done using the following methods:
 
 - Check for amplification curves: Ensure that amplification curves are present for all the samples. Absence of amplification curves might indicate poor quality RNA or experimental errors.     
@@ -75,21 +76,25 @@ Before starting the analysis, it is important to check the quality control of th
 - Check for threshold cycle (Ct) values: Ensure that Ct values are consistent across all the samples.  
 
 Step 2: Calculate the relative expression of the target gene    
+
 To calculate the relative expression of the target gene, use the following formula:
 
 ΔCt = Ct_target – Ct_reference
 
 Where Ct_target is the cycle threshold of the target gene and Ct_reference is the cycle threshold of the reference gene (in this case, actin).
 
-Step 3: Calculate the fold change of the target gene    
+Step 3: Calculate the fold change of the target gene
+
 To calculate the fold change of the target gene, use the following formula:   
 
 Fold change = 2^(-ΔCt)
 
 Step 4: Statistical analysis
+
 After calculating the fold change, perform statistical analysis to determine the significance of the results. This can be done using t-tests or ANOVA. A p-value of less than 0.05 is considered significant.
 
 Step 5: Interpretation of results
+
 After obtaining the statistical results, interpret the results by comparing the fold change of the target gene in the experimental group to the control group. A fold change greater than 1 indicates upregulation, while a fold change less than 1 indicates downregulation.
   
   
