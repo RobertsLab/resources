@@ -5,6 +5,9 @@ Here we try to compile genomic resources such that they are readily available an
 -   [Nightingales (Google Sheet)](https://docs.google.com/spreadsheets/d/1_XqIOPVHSBVGscnjzDSWUeRL7HUHXfaHxVzec-I-8Xk/edit?usp=sharing) : Database of all raw high-throughput sequencing data
 
 ---
+
+## Chionoecetes bairdi
+
 * [cbai_genome_v1.01.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta) (18MB)
     - MD5 = `5a08d8b0651484e3ff75fcf032804596`
     - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/09/24/Assembly-Assessment-BUSCO-C.bairdi-Genome-v1.01-on-Mox.html):
