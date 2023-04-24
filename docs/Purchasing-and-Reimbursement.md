@@ -131,7 +131,10 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 Travel is handled via <https://treq.environment.uw.edu>
 
-Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself. Many conferences have early-bird rates and discounted hotels. These should be considered. 
+Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself. Many conferences have early-bird rates and discounted hotels. These should be considered.
+Note: 
+-   [The College of the Environment travel fund](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund/) is only for future travel so make sure you apply for this two quarters in advance if possible.
+-   FINS travel funds are prioritized for those involved in FINS or some other type of service related to SAFS (CoEnv SAC, SEAS, GSS, etc.).
 
 Step 2) For any travel you need to complete Travel Pre-Authorization as soon as you know you would like to travel. (_It is optional to complete for local transit to research sites_)
 
@@ -144,10 +147,10 @@ During the Pre-Authorization step you can request a per diem Advance. But if you
 Step 3) Secure transit and lodging following all [rules and regulations set forth by UW](https://finance.uw.edu/travel/policies). 
 
 **In order to have UW pay directly for your flight and lodging, you must follow these steps.** 
-* Once you have completed your travel pre-authorization, click on the "+Task" button on the main page of your travel request. 
-* Leave "Assign To" blank and fill in "Task Title" with something like "UW direct payment". 
-* Fill in the description with the parts of your travel request you would like to get UW to pay for directly. For example: "Could I get UW to directly pay for airfare and lodging so I don't have to use personal card?"
-* Save the task
+-   Once you have completed your travel pre-authorization, click on the "+Task" button on the main page of your travel request. 
+-   Leave "Assign To" blank and fill in "Task Title" with something like "UW direct payment". 
+-   Fill in the description with the parts of your travel request you would like to get UW to pay for directly. For example: "Could I get UW to directly pay for airfare and lodging so I don't have to use personal card?"
+-   Save the task
 
 Someone from UW will be assigned to the task and will reach out with further instructions to reserve your flight and/or reserve lodging. For flights, you will be contacted via email by Tangerine Travel Agency. You'll need to provide them with the exact flight itinerary you want so they can book your flight.
 
