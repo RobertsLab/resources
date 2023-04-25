@@ -115,7 +115,7 @@ The following steps will use the UniProt Python API to create a tab-delimited fi
     python uniprot-retrieval.py SPIDS.txt
     ```
 
-    The resulting output file (`uniprot-retrieval.tsv.gz`) will be in your working directory.
+ The resulting output file (`uniprot-retrieval.tsv.gz`) will be in your working directory.
 
 4. Gunzip the output file:
 
