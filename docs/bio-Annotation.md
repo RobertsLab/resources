@@ -33,8 +33,8 @@ The following steps will use the UniProt Python API to create a tab-delimited fi
 
 1. Create newline-delimited file of SwissProt IDs. (e.g. `SPIDS.txt`)
 
-   ```bash
-   cat SPIDS.txt
+    ```bash
+    cat SPIDS.txt
 
     Q86IC9
     P04177
@@ -46,7 +46,7 @@ The following steps will use the UniProt Python API to create a tab-delimited fi
     O00463
     Q00945
     Q5SWK7
-   ```
+    ```
 
 2. Create Python file (e.g. `uniprot-retrieval.py`) with the following:
 
