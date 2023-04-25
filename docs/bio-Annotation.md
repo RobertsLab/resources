@@ -23,11 +23,129 @@ Blast is a key component of working with lesser studied taxa. Here are some reso
 
 - https://github.com/sr320/ceabigr/blob/main/code/17-Swiss-Prot-Annotation.Rmd -  Blasting C virginica to Swiss-Prot. Author: Steven Roberts ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/ceabigr)
 
+---
+
+## Gene Ontology (GO)
+
+### Retrieve GO terms from UniProt Using SwissProt IDs
+
+The following steps will use the UniProt Python API to create a tab-delimited file of data retrieved from UniProt.
+
+1. Create newline-delimited file of SwissProt IDs. (e.g. `SPIDS.txt`)
+
+   ```bash
+   cat SPIDS.txt
+
+    Q86IC9
+    P04177
+    Q8L840
+    Q61043
+    A1E2V0
+    P34456
+    P34457
+    O00463
+    Q00945
+    Q5SWK7
+   ```
+
+2. Create Python file (e.g. `uniprot-retrieval.py`) with the following:
+
+    ```python
+    import re
+    import zlib
+    import gzip
+    import requests
+    from requests.adapters import HTTPAdapter, Retry
+    import sys
+
+
+    re_next_link = re.compile(r'<(.+)>; rel="next"')
+    retries = Retry(total=5, backoff_factor=0.25, status_forcelist=[500, 502, 503, 504])
+    session = requests.Session()
+    session.mount("https://", HTTPAdapter(max_retries=retries))
+
+
+    def get_next_link(headers):
+        if "Link" in headers:
+            match = re_next_link.match(headers["Link"])
+            if match:
+                return match.group(1)
+
+
+    def get_batch(batch_url):
+        while batch_url:
+            response = session.get(batch_url)
+            response.raise_for_status()
+            total = response.headers["x-total-results"]
+            yield response, total
+            batch_url = get_next_link(response.headers)
+
+
+    def main(accession_file):
+        with open(accession_file, 'r') as f:
+            accessions = f.read().splitlines()
+
+        accession_query = '%29%20OR%20%28accession%3A'.join(accessions)
+        url = f"https://rest.uniprot.org/uniprotkb/search?compressed=true&fields=accession%2Creviewed%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Clength%2Cgo_p%2Cgo_c%2Cgo_f%2Cgo%2Cgo_id&format=tsv&query=%28%28accession%3A{accession_query}%29%29&size=500"
+
+        progress = 0
+        lines = []
+        for batch, total in get_batch(url):
+            # Decompress each batch as we want to extract the header
+            decompressed = zlib.decompress(batch.content, 16 + zlib.MAX_WBITS)
+            batch_lines = [line for line in decompressed.decode("utf-8").split("\n") if line]
+            if not progress:
+                # First line so print TSV header
+                lines = [batch_lines[0]]
+            lines += batch_lines[1:]
+            progress = len(lines) - 1
+            print(f"{progress} / {total}")
+
+        # Save lines to a gzip file
+        with gzip.open("uniprot-retrieval.tsv.gz", "wt", encoding="utf-8") as f:
+            f.write('\n'.join(lines))
+
+    if __name__ == '__main__':
+        main(sys.argv[1])
+    ```
+
+3. Run they Python script:
+
+    ```bash
+    python uniprot-retrieval.py SPIDS.txt
+    ```
+
+The resulting output file (`uniprot-retrieval.tsv.gz`) will be in your working directory.
+
+4. Gunzip the output file:
+
+    ```bash
+    gunzip uniprot-retrieval.tsv.gz
+    ```
+
+The resulting file (`uniprot-retrieval.tsv`) will be formatted with the following columns:
+
+| Entry | Reviewed | Entry Name | Protein names | Gene Names | Organism | Length | Gene Ontology (biological process) | Gene Ontology (cellular component) | Gene Ontology (molecular function) | Gene Ontology (GO) | Gene Ontology IDs |
+|-------|----------|------------|---------------|------------|----------|--------|------------------------------------|------------------------------------|------------------------------------|--------------------|-------------------|
+
+
+NOTES:
+
+- This requires Python >= 3 to run. Simplest way to access Python 3 is via a conda environment.
+
+- On the first attempt, you'll likely need to install the packages that are being imported at the very beginning of the script.
+
+- [Create an issue](https://github.com/RobertsLab/resources/issues) if you need help with any of the above.
+
+---
+
 ## Genome features
 In addition to sequence database alignment, finding spatial relationship within a genome is also an import approach for annotation. Often this is done using software tools such as `bedtools`.
 
 ### `bedtools::intersectbed`
 see also https://bedtools.readthedocs.io/en/latest/content/tools/intersect.html
+
+---
 
 ## Transcriptome (Trinity)
 
