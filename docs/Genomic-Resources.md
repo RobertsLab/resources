@@ -783,7 +783,7 @@ Genome(s):
 
     -   MD5 checksum: `36eb9cdaf92db69906e6d1486a8406f5`
 
-    -   Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/Pocillopora_meandrina_HIv1.assembly.fasta.gz>
+    -   Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
 
 Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
@@ -796,6 +796,18 @@ Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
     -   Notebook: []()
 
 Genome Feature Tracks
+
+- [Pocillopora_meandrina_HIv1.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.genes.gff3) (55MB)
+
+    - MD5 checksum: `ace5c9a588321fada8e6771a1c758861`
+
+    - Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
+
+- [Pocillopora_meandrina_HIv1.genes.gtf](https://gannet.fish.washington.edu/Atumefaciens/20230519-pmea-gff_to_gtf/Pocillopora_meandrina_HIv1.genes.gtf) (60MB)
+
+    - MD5 checksum: `638abc4f5f115e7a32731ad24cc558fd`
+
+    - Created 202300519: [Data-Wrangling-P.meandrina-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/05/19/Data-Wrangling-P.meandrina-Genome-GFF-to-GTF-Using-gffread.html)
 
 ---
 
