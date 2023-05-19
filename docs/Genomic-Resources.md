@@ -803,25 +803,6 @@ Genome Feature Tracks
 
     - Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
 
-- [Pocillopora_meandrina_HIv1.genes.gtf](https://gannet.fish.washington.edu/Atumefaciens/20230519-pmea-gff_to_gtf/Pocillopora_meandrina_HIv1.genes.gtf) (60MB)
-
-    - MD5 checksum: `638abc4f5f115e7a32731ad24cc558fd`
-
-    - Created 202300519: [Data-Wrangling-P.meandrina-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/05/19/Data-Wrangling-P.meandrina-Genome-GFF-to-GTF-Using-gffread.html)
-
-- [Pocillopora_meandrina_HIv1.genes.bed](https://owl.fish.washington.edu/halfshell/genomic-databank/)
-
-    - MD5 checksum: `Pocillopora_meandrina_HIv1.genes.bed`
-
-    - Created 20230519 by Sam White:
-
-    ```shell
-    ~/programs/bedops_linux_x86_64-v2.4.40/gff2bed \
-    < Pocillopora_meandrina_HIv1.genes.gff3 \
-    | awk -F"\t" 'BEGIN {OFS="\t"} {print $1, $2, $3, $4, $5, $6}' \
-    > Pocillopora_meandrina_HIv1.genes.bed
-    ```
-
 ---
 
 ## *Pocillipora verrucosa*
