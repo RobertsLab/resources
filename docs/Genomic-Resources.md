@@ -773,7 +773,31 @@ Genome Feature Tracks:
 
     -   Created 20230127: [Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html](https://robertslab.github.io/sams-notebook/2023/01/26/Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html)
 
-------------------------------------------------------------------------
+---
+
+## _Pocillopora meandrina_
+
+Genome(s):
+
+-   [`Pocillopora_meandrina_HIv1.assembly.fasta`](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.assembly.fasta) (360MB)
+
+    -   MD5 checksum: `36eb9cdaf92db69906e6d1486a8406f5`
+
+    -   Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/Pocillopora_meandrina_HIv1.assembly.fasta.gz>
+
+Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
+
+-   [`Pocillopora_meandrina_HIv1.assembly-hisat2-indices.tar.gz`]() (tarball gzip; MB)
+
+    -   MD5 checksum: ``
+
+    -   Needs to be unpacked before use!
+
+    -   Notebook: []()
+
+Genome Feature Tracks
+
+---
 
 ## *Pocillipora verrucosa*
 
