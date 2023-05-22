@@ -803,6 +803,8 @@ Genome Feature Tracks
 
     - Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
 
+    - NOTE: This is labelled as a GFF3, but in reality is a GTF file; as it only contains transcript/exon/CDS features. There are no gene features (e.g. 5'/3'UTR, mRNA, etc)
+
 ---
 
 ## *Pocillipora verrucosa*
