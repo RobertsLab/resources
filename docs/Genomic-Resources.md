@@ -811,9 +811,9 @@ Genome Feature Tracks
 
     - [Pocillopora_meandrina_HIv1.assembly.fasta.out.gff](https://gannet.fish.washington.edu/Atumefaciens/20230526-pmea-repeatmasker-Pocillopora_meandrina_HIv1.assembly/Pocillopora_meandrina_HIv1.assembly.fasta.out.gff) (13MB)
 
-    - MD5 checksum: `6e7a25bf51a7c838b9659dd7ec37990f`
+        - MD5 checksum: `6e7a25bf51a7c838b9659dd7ec37990f`
 
-    - Notebook: [Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/05/26/Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html)
+        - Notebook: [Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/05/26/Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html)
 
 ---
 
