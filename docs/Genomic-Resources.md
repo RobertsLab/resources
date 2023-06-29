@@ -797,19 +797,23 @@ Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
 Genome Feature Tracks
 
-- [Pocillopora_meandrina_HIv1.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.genes.gff3) (55MB)
+- Genes
 
-    - MD5 checksum: `ace5c9a588321fada8e6771a1c758861`
+    - [Pocillopora_meandrina_HIv1.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.genes.gff3) (55MB)
 
-    - Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
+        - MD5 checksum: `ace5c9a588321fada8e6771a1c758861`
 
-    - NOTE: This is labelled as a GFF3, but in reality is a GTF file; as it only contains transcript/exon/CDS features. There are no gene features (e.g. 5'/3'UTR, mRNA, etc)
+        - Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
 
-- [Pocillopora_meandrina_HIv1.assembly.fasta.out.gff](https://gannet.fish.washington.edu/Atumefaciens/20230526-pmea-repeatmasker-Pocillopora_meandrina_HIv1.assembly/Pocillopora_meandrina_HIv1.assembly.fasta.out.gff) (13MB)
+        - NOTE: This is labelled as a GFF3, but in reality is a GTF file; as it only contains transcript/exon/CDS features. There are no gene features (e.g. 5'/3'UTR, mRNA, etc)
 
-  - MD5 checksum: `6e7a25bf51a7c838b9659dd7ec37990f`
+- Repeats
 
-  - Notebook: [Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/05/26/Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html)
+    - [Pocillopora_meandrina_HIv1.assembly.fasta.out.gff](https://gannet.fish.washington.edu/Atumefaciens/20230526-pmea-repeatmasker-Pocillopora_meandrina_HIv1.assembly/Pocillopora_meandrina_HIv1.assembly.fasta.out.gff) (13MB)
+
+    - MD5 checksum: `6e7a25bf51a7c838b9659dd7ec37990f`
+
+    - Notebook: [Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/05/26/Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html)
 
 ---
 
