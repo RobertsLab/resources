@@ -799,13 +799,21 @@ Genome Feature Tracks
 
 - Genes
 
+    - [https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.genes-valid.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.genes-valid.gff3) (55MB)
+
+      - MD5 checksum: `5865589d1f2764b4b74df91ea78d5652`
+
+      - A GFF3-compliant version of `Pocillopora_meandrina_HIv1.genes.gff3` (see below). Created GFF3 compliant version via the following command (replace `transcript` with `mRNA`):
+
+        - `sed 's/transcript/mRNA/' Pocillopora_meandrina_HIv1.genes.gff3 > Pocillopora_meandrina_HIv1.genes-valid.gff3`
+
     - [Pocillopora_meandrina_HIv1.genes.gff3](https://owl.fish.washington.edu/halfshell/genomic-databank/Pocillopora_meandrina_HIv1.genes.gff3) (55MB)
 
         - MD5 checksum: `ace5c9a588321fada8e6771a1c758861`
 
         - Downloaded 20230519: <http://cyanophora.rutgers.edu/Pocillopora_meandrina/>
 
-        - NOTE: This is labelled as a GFF3, but in reality is a GTF file; as it only contains transcript/exon/CDS features. There are no gene features (e.g. 5'/3'UTR, mRNA, etc)
+        - NOTE: This is labelled as a GFF3, but in reality closer to a GTF file; as it only contains transcript/exon/CDS features. There are no gene features (e.g. 5'/3'UTR, mRNA, gene, etc). Additionally, the feature label of `transcript` is not GFF or GTF compliant.
 
 - Repeats
 
