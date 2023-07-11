@@ -109,11 +109,18 @@ The following steps will use the UniProt Python API to create a tab-delimited fi
         main(sys.argv[1])
     ```
 
-3. Run they Python script:
+3. Run the Python script:
 
     ```bash
     python uniprot-retrieval.py SPIDS.txt
     ```
+    - IMPORTANT: Requires Python >= 3!
+
+        - If using R Markdown, add the following line to your setup chunk to load Python 3:
+
+            ```r
+            knitr::opts_chunk$set(engine.path = '/usr/bin/python3')
+            ```
 
  The resulting output file (`uniprot-retrieval.tsv.gz`) will be in your working directory.
 
