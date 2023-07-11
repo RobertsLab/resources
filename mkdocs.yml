@@ -1,6 +1,6 @@
 site_name: Roberts Lab Handbook
 repo_url: https://github.com/RobertsLab/resources/
-edit_uri: blob/main/docs
+edit_uri: blob/master/docs
 theme:
   name: material
   features:
