@@ -1,5 +1,5 @@
 
-**NOTE** - Please use [temporary storage / `scrubbed`](https://robertslab.github.io/resources/mox_Data-Storage-and-System-Organization/#3-temporary-storage) for running jobs (ie writing new files to). As the name suggests you will need move files to a "bird" for archival storage.
+**NOTE** - Please use [temporary storage / `scrubbed`](https://robertslab.github.io/resources/mox_Data-Storage-and-System-Organization/#3-temporary-storage) for running jobs (ie writing new files to). As the name suggests you will need move files to a "bird" for archival storage. If you are needing a  set of large raw files for analysis - also place these in the `scrubbed` directory.
 
 ---
 
