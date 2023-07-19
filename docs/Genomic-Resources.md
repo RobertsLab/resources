@@ -485,6 +485,15 @@ Genome Feature Tracks
 
 ------------------------------------------------------------------------
 
+## *Mytilus trossulus*
+
+Transcriptome:
+
+-   [Mtros-hq_transcripts.fasta](http://eagle.fish.washington.edu/cnidarian/Olurida_transcriptome_v3.fasta)
+
+    -   MD5 = 381f7b6970fd20ff6b0e72006c80a
+
+
 ## *Ostrea lurida*
 
 Genome:
