@@ -489,7 +489,7 @@ Genome Feature Tracks
 
 Transcriptome:
 
--   [Mtros-hq_transcripts.fasta](http://eagle.fish.washington.edu/cnidarian/Olurida_transcriptome_v3.fasta)
+-   [Mtros-hq_transcripts.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/Mtros-hq_transcripts.fasta)
 
     -   MD5 = 381f7b6970fd20ff6b0e72006c80a
 
