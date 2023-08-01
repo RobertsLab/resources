@@ -160,11 +160,27 @@ trinity (2.3.2)
 #### HDD Capacity: 1.0TB
 #### Ext. HDD 1 Capacity (`/media/ext_HDD01`): 1.0TB
 #### Ext. HDD 2 Capacity (`/media/ext_HDD01`): 1.0TB
+#### Int. HDD 1 Capacity (`//home/shared/8TB_HDD_01`): 8.0TB
+#### Int. HDD 2 Capacity (`/home/shared/8TB_HDD_02`): 8.0TB
 
 ```
 $/home/shared
 blast_dbs  blobtoolkit-v2.6.2  bowtie2-2.4.4-linux-x86_64  jellyfish-2.3.0  kallisto  ncbi-blast-2.11.0+  salmon-1.4.0_linux_x86_64  samtools-1.12  trinityrnaseq-v2.12.0
 ```
+
+#### RStudio Server
+
+1. Activate Husky OnNet VPN service.
+
+2. Paste the following URL in your internet browser:
+
+    - `http://172.25.149.12:8787`
+
+    - If you receive a notice from your browser regarding "insecure connection", you may safely ignore this and proceed.
+
+3. Use login credentials provided by Steven or Sam.
+
+4. If you encounter any issues, please [create a new Issue](https://github.com/RobertsLab/resources/issues). Please post screenshots _and_ paste text of any error messages you encounter.
 
 ----
 ### Computer: roadrunner  
