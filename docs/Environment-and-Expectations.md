@@ -58,7 +58,22 @@ Graduate school is not easy, and not for everyone. Graduate school will be very 
 
 There is a lot going on during your graduate education. Staying organized and not overwhelmed is key. In the same vein, time-management is key. There are several strategies for this. I suggest reading ["Getting Things Done"](https://gettingthingsdone.com/what-is-gtd/). Finding time outside of lab to recharge your mind and body is essential.
 
-Graduate students will complete a [Graduate Research Plan](https://fish.uw.edu/wp-content/uploads/sites/29/2020/06/GSAR.pdf) that will be updated on a quarterly basis.
+#### Expectations on Performance
+
+Graduate students will complete a [Graduate Research Plan](https://fish.uw.edu/wp-content/uploads/sites/29/2020/06/GSAR.pdf) that will be revisited on a quarterly basis.
+
+This document is in part meant to delineate expected progress on thesis research. If there is inadequate progress made on thesis research (determined in part by entire committee when in place), action will be taken at the department level (commonly a written warning with specific expectations outlined). If targets are not reached, the situation will be reported to the UW Graduate School where a formal probation period could be initiated. 
+
+Research Credit Hours: The following information regarding research credit hours should be confirmed with SAFS Graduate Program Advisor, but typically a graduate student will need to be signed up for at least 10 credit hours during the academic year. If these are not graded courses they should be research credit hours. Note, with the exception of summer, students are limited to a maximum of 10 credits per quarter of any combination of courses numbered 600, 700, or 800. Unsatisfactory progress on thesis research could result in no credit (NC).
+
+Graduate Student stipends are paid in a variety of manners. There are often specific responsibilities associated with this. If you are a TA you are expected to perform duties set forth for the position no more than 20 hours a week. If you are asked to perform duties that exceed 20 hours a week you need to inform Professor Roberts ASAP.
+
+Another common form of stipend payment is a RA. A RA can be associated with a faculty grant or certain funds from SAFS are distributed as an RA. Responsibilities as set forth as part of a RA require 20 hours of effort per week. If you are unclear of responsibilities of a RA for any given quarter please contact Professor Roberts ASAP. 
+
+To simplify efficient documentation of progress (useful for grant reporting) students on RAs will need summarize activity at the end of each month (or end of quarter) when funded on an RA. Please use this form: https://forms.gle/ePCTJvBo2XnazGf47
+
+
+---
 
 **Prospective graduate students** interested in graduate school and joining the lab, please [submit this form](https://goo.gl/forms/kqG2jtVa0xWwKcW23). Please feel free to [contact current graduate students](http://faculty.washington.edu/sr320/?page_id=505) for more information.
 
