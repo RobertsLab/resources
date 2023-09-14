@@ -194,6 +194,22 @@ wget -r \
 -A "*_001_val_1.fq.gz" https://gannet.fish.washington.edu/metacarcinus/Salmo_Calig/analyses/20190806_TrimGalore/
 ```
 
+### git clone website
+
+_when in public_html_
+
+```
+mkdir temp
+cd temp
+git clone https://github.com/sr320/lab-website.git
+cd ..
+cp -r temp/lab-website/docs/* .
+rm -f -r temp
+echo "now done"
+```
+
+
+
 ### Transfer sequencing files to Owl
 
 #### Standard `rsync` procedure:
