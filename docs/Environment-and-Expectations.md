@@ -2,13 +2,13 @@
 
 The purpose of the lab group is to grow as scientists and as people. Our intent is to maintain an open, welcoming, and communicative environment among all lab members. You are encouraged to approach any member of the lab with questions or issues related to science or otherwise. As the old idiom goes, "there are no stupid questions". It is okay to make mistakes, but it is not okay to hide your mistakes from others - addressing them and learning from them is how we grow as scientists. Similarly, if you disagree with lab members on any issue you are encouraged to challenge them directly.
 
-To foster the intended lab environment, everyone must follow the [code of conduct](https://robertslab.github.io/resources/Code-of-Conduct/). Lab members are also expected and encouraged to participate in trainings, committees, and self or group education to strive towards a more equitable, inclusive, and just lab and departmental community. Here is a non-exhaustive list of DEI resources available to you at UW and beyond: [DEI-Resources](DEI-Resources.md). Additionally, all members of the lab meet \~2x per week to discuss project progress, diversity, equity, and inclusion issues, and to get help from others. Here is an example of our weekly meeting schedule.
+To foster the intended lab environment, everyone must follow the [code of conduct](https://robertslab.github.io/resources/Code-of-Conduct/). Lab members are also expected and encouraged to participate in trainings, committees, and self or group education to strive towards a more equitable, inclusive, and just lab and departmental community. Here is a non-exhaustive list of DEI resources available to you at UW and beyond: [DEI-Resources](DEI-Resources.md). Additionally, all members of the lab meet \~1x per week to discuss project progress, diversity, equity, and inclusion issues, and to get help from others. Here is an example of our weekly meeting schedule.
 
-NOTE: To enable attendance, all meetings are either held in person with the option to call in virtually (via Zoom), or entirely virtually. You are expected to attend all lab meetings, within reason (but no need to ask permission to miss an occasional meeting). Science hour is optional, but highly encouraged!
+NOTE: You are expected to attend all lab meetings, within reason (but no need to ask permission to miss an occasional meeting). Science hour is optional, but highly encouraged!
 
--   **Biweekly Project Progress Lab Meetings** (1 hour): All members discuss their activities since the last meeting, planned activities for the next two weeks, and to get help from lab members on project-related issues.
+-   **Biweekly Project Progress Lab Meetings** (1.5 hour): All members discuss their activities since the last meeting, planned activities for the next two weeks, and to get help from lab members on project-related issues.
 
--   **Biweekly Diversity, Equity and Inclusion Meetings** (1 hour): This biweekly meeting provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. Example activities include discussing articles read prior to the meeting, tackling action items to improve DEI in the lab and/or department, and more. See [log of topics](https://docs.google.com/spreadsheets/d/1LCIiAqWMaJ0tPZIevUXqWyZR2SN4p9qGLgQIvWBaWgo/edit#gid=0).
+-   **Biweekly Diversity, Equity and Inclusion Meetings** (1.5 hour): This biweekly meeting provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. 
 
 *Code of Conduct for DEI Meetings*
 
@@ -28,7 +28,7 @@ We are dedicated to providing a welcoming and supportive environment for all peo
 10. We will take lessons learned, but not others' stories, out of this space.
 11. We will not participate in ad hominem attacks.
 
--   **Weekly Science Hour** (Fridays, 1:30-4:30 but join when you can): A casual meeting to hang out, and sometimes tackle science issues/questions with the "hive mind" - e.g. we spend time debugging a script, interpreting a statistical analysis, interpreting/providing feedback on figures, or discuss science concepts that require more time than is available during the biweekly lab meetings.
+-   **Weekly Science Hour** (Fridays): A casual meeting to hang out, and sometimes tackle science issues/questions with the "hive mind" - e.g. we spend time debugging a script, interpreting a statistical analysis, interpreting/providing feedback on figures, or discuss science concepts that require more time than is available during the biweekly lab meetings.
 
 -   **Practice presentation meetings** (occasionally): When members prepare a presentation for a conference or symposium (etc.), they are expected to give a practice presentation to the lab group. For a 15 minute presentation, we schedule at least 1hr to deliver it, then receive lots of feedback. This exercise is invaluable, and greatly improves presentations.
 
@@ -48,7 +48,7 @@ The predominantly white and cis/het, amongst other factors, community at SAFS ma
 
 A lot of our research involves computational analysis of large, novel datasets. You will need to be competent in computing skills including basics of bash and R. A common task you should be able to accomplish is installing and running Blast on your own computer. You should also be familiar with Jupyter Notebooks. As might be evident, we using GitHub extensively and you will be using this to document code and data (and everything else).
 
-Electronic Open Lab Notebooks are also central to the lab. You will be required to document your activity *in real time*. This will include not only benchwork and computational work, but also reflections, questions, and monthly goals.
+Electronic Open Lab Notebooks are also central to the lab. **You are required to document your activity *in real time*.** This will include not only benchwork and computational work, but also reflections, questions, and monthly goals.
 
 Writing. Always be doing it. Do not wait until you have completed a project but rather write the methods as you carry them out (or preferably before). This goes hand in hand with the lab notebook. Document your work in a detail that you and a stranger can completely reproduce it in 5 years.
 
@@ -70,7 +70,7 @@ Graduate Student stipends are paid in a variety of manners. There are often spec
 
 Another common form of stipend payment is a RA. A RA can be associated with a faculty grant or certain funds from SAFS are distributed as an RA. Responsibilities as set forth as part of a RA require 20 hours of effort per week. If you are unclear of responsibilities of a RA for any given quarter please contact Professor Roberts ASAP. 
 
-To simplify efficient documentation of progress (useful for grant reporting) students on RAs will need summarize activity at the end of each month (or end of quarter) when funded on an RA. Please use this form: https://forms.gle/ePCTJvBo2XnazGf47
+To simplify efficient documentation of progress (useful for grant reporting) students on RAs will need summarize activity at the end of each month (or end of quarter) when funded on an RA. Please use this form: <https://forms.gle/ePCTJvBo2XnazGf47>
 
 
 ---
