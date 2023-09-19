@@ -25,28 +25,16 @@ Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organi
 
 #### What do I need to have on my device(s) to get started?
 
-- Text editor (eg BBEdit, Sublime text)    
-- [Markdown](https://www.markdownguide.org/basic-syntax/) editor (eg Atom)    
-- [shell](http://swcarpentry.github.io/shell-novice/01-intro/) (eg zsh, bash)    
+- shell
 - git    
 - GitHub Desktop   
-- [JupyterLab](https://jupyter.org/install)    
 - RStudio   
-- NCBI Blast
 
 #### What do you recommend for learning more about the process and output of the labs's scientific endevours?
 
-- [Our Recent Products](http://faculty.washington.edu/sr320/?page_id=246) (website)
-- [Opportunities in Functional Genomics: a primer on lab and
-computational aspects](https://gannet.fish.washington.edu/seashell/snaps/035.037.0406.pdf) (paper)
-- [Short video tutorial on GitHub, Blast, and Jupyter](https://youtu.be/i2RcnuT5DRY) (video)   
-- [Bioinformatics Data Skills: Reproducible and Robust Research with Open Source Tools](https://www.amazon.com/Bioinformatics-Data-Skills-Reproducible-Research/dp/1449367372/) (book)
+- [tusk](https://robertslab.github.io/tusk/)
+- [FISH546](https://sr320.github.io/course-fish546-2023/schedule.html)
 
-
-
-#### What do I do if I have a question?
-
-- Ask it on [our GitHub Discussion](https://github.com/RobertsLab/resources/discussions/new).
 
 
 ---
