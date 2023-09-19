@@ -1,7 +1,7 @@
 We have been using online lab notebooks since 2007 and the platforms and workflows have certainly changed over the years. Below is a compendium of best practices based on our experience and the particular research we do. This is intended for those in our lab group, however [comments and suggestions are welcome](https://github.com/RobertsLab/resources/issues).
 
 
-An online lab notebook is required of all lab members. Entries need to be organized by date and in reverse chronological order.
+An online lab notebook is required of all lab members. Entries need to be organized by date and in reverse chronological order, and **Updated daily**.
 
 ## Notebooks
 
@@ -24,40 +24,104 @@ Shelly Trigg | [shellytrigg.github.io/notebook](https://shellytrigg.github.io/no
 
 ## Platforms
 
-The preferred platform is GitHub. See [Laura's Notebook](laurahspencer.github.io/LabNotebook/), [Steven's Notebook](sr320.github.io), or [Yaamini's Notebook](yaaminiv.github.io).
+# Quarto
 
-*Guide to creating a notebook on GitHub:*
+One of the great features of Quarto is using it to create websites. What is really cool is the ability to used code chunks you might be already be familiar with. Unique features include callouts and tabs. These websites can be quite simple with only a single page, a blog, or more complex with multiple pages and options, such as the website for this course. Websites created with **Quarto** can be viewed/hosted directly on **GitHub**, or copied over to a server such as <http://students.washington.edu>.
 
-One way to approach is simply to to follow the instructions at https://github.com/barryclark/jekyll-now. This is what our Notebooks are forks of.
+------------------------------------------------------------------------
 
-To leverage the modifications Steven has made...
+# Setup
 
-1) Fork his repository associated with his notebook: https://github.com/sr320/sr320.github.io.   
-[Screencast](http://owl.fish.washington.edu/scaphapoda/grace/Github-noteboook.mov)
+For this exercise, we'll create a simple personal blog and host it on **GitHub**. See also <https://quarto.org/docs/websites/website-blog.html>
 
-2) Change the user name associated the repository name in the Settings.
+## Create RStudio project
 
-3) Revise the `_config.yml` file to include your own personal information
+Create a new project in **RStudio**. However, rather than base this new project on an existing repo, as we've done in the past, we'll instead choose **New Directory**.
 
-4) Alter lines 30 - 34 of `your_username.github.io/_layouts/default.html` to edit the items listed in the Navigation bar at the top right of your rendered webpage. It's useufl to add the following so clicking on "admin" link takes you to your `_posts` directory (you'll need to replace `<GITHUB-USERNAME> with your own info):
+```{r rs_new_proj, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/rs_new_project.png")
+```
 
-`<a href="https://github.com/<GITHUB-USERNAME>/<GITHUB-USERNAME>.github.io/tree/master/_posts">admin</a>`
+<br>
 
-5) Go to Disqus to set up comments for your website. Pick a page name, ignore instructions on adding code to your site. Complete registration.
+Scroll down the options for **Project Type** and select Quarto Blog.
 
-6) Go back to `_config.yml` file and add your Disqus shortname. This will magically alter code so comments will show up for each posts.
+```{r rs_blog, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/rs_blog.png")
+```
 
-7) All notebook posts have to exist in the `_posts` directory and must be formatted in the following fashion (including the `.md` extension):
+<br>
 
-`YYYY-MM-DD-<ANYTHING_YOU_want>.md`
+In the next window, enter your a name for `Directory name:`
 
-Note: Sometimes revisions take a few minutes to render on GitHub.
+Choose the location where you'd like this new project to live.
+
+When you are finished, check the box next to `Open in new session` and click the **Create Project** button.
+
+```{r rs_dir, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/rs_blogdir.png")
+```
+
+<br>
+
+# Prepare for GitHub Publishing
+
+## Render to `docs`
+
+```{r rs_docs, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/rs_docs.png")
+```
+
+You could also change the theme, blog title, links, etc here.
+
+## add a `.nojekyll` file
+
+```{r rs_no, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/rs_noj.png")
+```
+
+## Render
+
+```{r rs_render, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/rs_render.png")
+```
+
+## Commit and Push
+
+First time needs to be done via command line or GitHub Desktop, then could be done all within RStudio.
+
+```{r gh_desktop, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/gh_desktop.gif")
+```
+
+<br>
+
+------------------------------------------------------------------------
+
+# Publish with GitHub Pages
+
+Now we can go to the repo in GitHub and set source for deployment.
+
+```{r pages, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/gh_pages.gif")
+```
+
+```{r live, echo = FALSE, out.width = "70%", fig.align = "center"}
+knitr::include_graphics("img/gh_live.gif")
+```
+
+Everthing should be live.
+
+<br>
+
+------------------------------------------------------------------------
+
+# Creating a new post
+
+Add a new post to your blog by creating a sub-directory within `posts`, and adding an `index.qmd`file to the directory. That `qmd` file is the new blog post and when you render that, the blog home page will automatically update to include the newest post at the top of the listing. For more options see <https://quarto.org/docs/websites/website-blog.html#posts-directory>
 
 
-—-
 
-Other options include:
-- [genefish.wordpress.com](https://genefish.wordpress.com) (ask Steven for an account). See [Grace's Notebook](https://genefish.wordpress.com/author/graceac9/)
 
 ## Make sure it is reproducible
 Document in a fashion where someone could replicate your work.
