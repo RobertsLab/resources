@@ -33,7 +33,7 @@
 [GitHub](https://github.com/mattgeorgephd/NOPP-gigas-ploidy-temp) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
-6) **Tanner crab and Hematodinium gene expression** - Aidan et al  
+6) **Tanner crab and Hematodinium gene expression** - Aspen et al  
 [Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
 [Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
@@ -74,7 +74,7 @@
 [GitHub](https://github.com/mattgeorgephd/Berdahl-sockeye-salmon) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
-13) **Factors associated with Bitter Crab Syndrome in Southeast Alaskan Tanner crab**  - _Aidan_  
+13) **Factors associated with Bitter Crab Syndrome in Southeast Alaskan Tanner crab**  - _Aspen_  
 [Working Draft](https://docs.google.com/document/d/1N-HoxKCsHHYaGQHoWrwu3876ayRmOrbE6ZIWQ4Hc79c/edit?usp=sharing)    
 [GitHub](https://github.com/afcoyle/hemat_modeling) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
@@ -140,7 +140,7 @@ Journal:
 [Reviews](https://docs.google.com/document/d/1E4sNHj3TsNuItN2kXNEM5aYekyMI4p4wgo4qybXEnsI/edit)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
 
-24) **Tanner crab and Hematodinium gene expression** - Aidan et al  
+24) **Tanner crab and Hematodinium gene expression** - Aspen et al  
 [Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
 [Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
@@ -194,7 +194,7 @@ Journal:
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)  
 
 
-20) **Differential gene expression in Hematodinium**  - _Aidan_      
+20) **Differential gene expression in Hematodinium**  - _Aspen_      
 [Working Draft](https://github.com/afcoyle/hemat_bairdii_transcriptome/tree/main/paper)    
 [GitHub](https://github.com/afcoyle/hemat_bairdii_transcriptome)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)   
