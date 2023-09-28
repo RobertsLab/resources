@@ -281,6 +281,16 @@ Genomes:
 
     -   compressed version of `Cvirginica_v300.fa` (same files)
 
+Annotations:
+
+- [geneGO.txt](https://owl.fish.washington.edu/halfshell/genomic-databank/geneGO.txt) (2.8MB)
+
+    - MD5 = `cc587fe765825ca5f76886ab829c556c`
+
+    - [Notebook details](https://sr320.github.io/annotation/)
+
+        - Originally created in [MarineOmics repo](https://github.com/MarineOmics) commit [`cacd795b71caaf4f1b9e04ba955037f4128b801d`](https://raw.githubusercontent.com/MarineOmics/marineomics.github.io/cacd795b71caaf4f1b9e04ba955037f4128b801d/DRAFT_Funct_Enrich/annot/geneGO.txt)
+
 Bisulfite Genomes:
 
 -   [Cvirginica_v300_bisulfite.tar.gz](http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300_bisulfite.tar.gz) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Cvirginica_v300_bisulfite.tar.gz`
