@@ -21,7 +21,7 @@ Laura Spencer | [laurahspencer.github.io](https://laurahspencer.github.io/LabNot
 Yaamini Venkataraman | [yaaminiv.github.io](https://yaaminiv.github.io/) | [![GitHub followers](https://img.shields.io/github/followers/yaaminiv.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/yaaminiv)
 Grace Crandall | [grace-ac.github.io](https://grace-ac.github.io/) |  [![GitHub followers](https://img.shields.io/github/followers/grace-ac.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/grace-ac)
 Shelly Trigg | [shellytrigg.github.io/notebook](https://shellytrigg.github.io/notebook/) |   [![GitHub followers](https://img.shields.io/github/followers/shellytrigg.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/shellytrigg)
-Kathleen Durkin | [shedurkin.github.io/Kathleen--LabNotebook](https://shedurkin.github.io/Kathleen--LabNotebook/) | ![Github last commit](https://shedurkin.github.io/Kathleen--LabNotebook/)
+Kathleen Durkin | [shedurkin.github.io/Kathleen--LabNotebook](https://shedurkin.github.io/Kathleen--LabNotebook/) | ![Github last commit](https://img.shields.io/github/last-commit/shedurkin/shedurkin.github.io/Kathleen--LabNotebook/)
 
 ## Platforms
 
