@@ -14,7 +14,7 @@ Aspen Coyle | [aspencoyle.github.io](https://aspencoyle.github.io) |   ![GitHub 
 Olivia Cattau | [ocattau.github.io](https://ocattau.github.io/notebook-2/)  | ![GitHub last commit](https://img.shields.io/github/last-commit/ocattau/notebook-2)
 Delaney Lawson| [drlawson.github.io](https://drlawson.github.io)  | ![GitHub last commit](https://img.shields.io/github/last-commit/drlawson/drlawson.github.io)
 Ariana Huffmyer | [ahuffmyer.github.io](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/AHuffmyer/ASH_Putnam_Lab_Notebook)
-Chris Mantegna | [chrismantegna.github.io/cmlabsite](https://chrismantegna.github.io/cmlabsite/) | ![Github last commit](https://img.shields.io/github/last-commit/ChrisMantegna/ChrisMantegna.github.io)
+Chris Mantegna | [chrismantegna.github.io/cmlabsite](https://chrismantegna.github.io/cmlabsite/) | ![Github last commit](https://img.shields.io/github/last-commit/ChrisMantegna/ChrisMantegna.github.io/cmlabsite)
 Zach Bengtsson | [zbengt.github.io](https://zbengt.github.io/notebook/) | ![Github last commit](https://img.shields.io/github/last-commit/zbengt/zbengt.github.io)
 Larken Root | [larkenr.github.io](https://larkenr.github.io) | ![Github last commit](https://img.shields.io/github/last-commit/larkenr/larkenr.github.io)
 Laura Spencer | [laurahspencer.github.io](https://laurahspencer.github.io/LabNotebook/)  | [![GitHub followers](https://img.shields.io/github/followers/laurahspencer.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/laurahspencer)
