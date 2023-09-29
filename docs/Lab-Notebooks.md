@@ -7,7 +7,7 @@ An online lab notebook is required of all lab members. Entries need to be organi
 
 Person | Notebook  | Commitment
 --- | --- | ----
-Steven Roberts | [sr320.github.io](https://sr320.github.io/) |  ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/sr320.github.io)
+Steven B Roberts | [sr320.github.io](https://sr320.github.io/) |  ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/sr320.github.io)
 Sam White | [robertslab.github.io](https://robertslab.github.io/sams-notebook/) |  ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/sams-notebook)
 Matt George | [mattgeorgephd.github.io](https://mattgeorgephd.github.io/notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/mattgeorgephd/mattgeorgephd.github.io)
 Aspen Coyle | [aspencoyle.github.io](https://aspencoyle.github.io) |   ![GitHub last commit](https://img.shields.io/github/last-commit/afcoyle/afcoyle.github.io)
