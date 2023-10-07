@@ -13,6 +13,45 @@ Formost, code should be written so someone else could easily run. This means the
 
 2) [Organize](https://kbroman.org/steps2rr/pages/organize.html) your data and code. 
 
+Here's an example of how repos should be organized. Note that each directory contains a `README.md`, which describes the contents of each directory (and, sometimes even describes each file in that directory).
+
+Create a directory called `gitrepos` and then keep all subsequent repositories within it.
+
+```gitrepos$ tree
+.
+├── <GitHub username>
+│   └── Project-01
+│       ├── code
+│       │   ├── 01-FastQ-QC.Rmd
+│       │   ├── 02-DESeq2
+│       │   └── README.md
+│       ├── data
+│       │   ├── genome-features
+│       │   │   └── README.md
+│       │   ├── raw
+│       │   │   └── README.md
+│       │   └── README.md
+│       ├── outputs
+│       │   ├── 01-FastQ-QC
+│       │   │   ├── figures
+│       │   │   │   └── README.md
+│       │   │   └── README.md
+│       │   ├── 02-DESeq2
+│       │   │   ├── figures
+│       │   │   │   └── README.md
+│       │   │   └── README.md
+│       │   └── README.md
+│       └── README.md
+└── RobertsLab
+    ├── lab-website
+    │   └── README.md
+    ├── README.md
+    ├── resources
+    │   └── README.md
+    └── tusk
+        └── README.md
+```
+
 
 ### Working with Git and RStudio on Raven
 
