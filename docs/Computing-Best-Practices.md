@@ -17,7 +17,9 @@ Here's an example of how repos should be organized. Note that each directory con
 
 Create a directory called `gitrepos` and then keep all subsequent repositories within it.
 
-```gitrepos$ tree
+```
+gitrepos$ tree
+
 .
 ├── <GitHub username>
 │   └── Project-01
