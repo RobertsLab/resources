@@ -7,7 +7,7 @@ Resources for thinking about open and reproducible scientific computing.
 
 ## Practical Aspects
 
-Formost, code should be written so someone else could easily run. This means they have access and can understand.
+Foremost, code should be written so someone else could easily run. This means they have access and can understand.
 
 1) Code should be in a Github repository 
 
