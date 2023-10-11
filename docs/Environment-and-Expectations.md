@@ -8,26 +8,8 @@ NOTE: You are expected to attend all lab meetings, within reason (but no need to
 
 -   **Biweekly Project Progress Lab Meetings** (1.5 hour): All members discuss their activities since the last meeting, planned activities for the next two weeks, and to get help from lab members on project-related issues.
 
--   **Biweekly Diversity, Equity and Inclusion Meetings** (1.5 hour): This biweekly meeting provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. 
-
-*Code of Conduct for DEI Meetings*
-
-We are dedicated to providing a welcoming and supportive environment for all people, regardless of background, identity, physical appearance, or manner of communication. Any form of language or behavior used to exclude, intimidate, or cause discomfort will not be tolerated. This applies to all course participants (instructor, students, guests). In order to foster a positive and professional learning environment, we will be using progressive stack discussion methods and these discussion rules:
-
-*Discussion Rules*
-
-1.  We will listen with the intent to understand.
-2.  We will monitor our own air time, aiming to share the space and time so others may participate as well.
-3.  We will respect those who do not wish to speak.
-4.  We will use "I" statements as opposed to generalizations.
-5.  We will not ask anyone to speak on behalf of any group we perceive them to identify with, or that they self-identify with.
-6.  We will expect discomfort.
-7.  We will resist the urge to "fix" others' discomfort.
-8.  We will elevate impact above intent, and we will apologize when necessary.
-9.  We will expect and accept non-closure. We acknowledge that these conversations may not be resolved in a single meeting.
-10. We will take lessons learned, but not others' stories, out of this space.
-11. We will not participate in ad hominem attacks.
-
+-   **Biweekly Diversity, Equity and Inclusion Meetings** (1.5 hour): This biweekly meeting provides space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia.
+   
 -   **Weekly Science Hour** (Fridays): A casual meeting to hang out, and sometimes tackle science issues/questions with the "hive mind" - e.g. we spend time debugging a script, interpreting a statistical analysis, interpreting/providing feedback on figures, or discuss science concepts that require more time than is available during the biweekly lab meetings.
 
 -   **Practice presentation meetings** (occasionally): When members prepare a presentation for a conference or symposium (etc.), they are expected to give a practice presentation to the lab group. For a 15 minute presentation, we schedule at least 1hr to deliver it, then receive lots of feedback. This exercise is invaluable, and greatly improves presentations.
