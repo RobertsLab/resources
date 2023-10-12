@@ -283,13 +283,45 @@ Genomes:
 
 Annotations:
 
-- [geneGO.txt](https://owl.fish.washington.edu/halfshell/genomic-databank/geneGO.txt) (2.8MB)
+- Coding sequences (CDS):
 
-    - MD5 = `cc587fe765825ca5f76886ab829c556c`
+    - [`Cvir_cds-geneID-SPID.tab`](https://github.com/sr320/ceabigr/blob/main/output/17-Swiss-Prot-Annotation/Cvir_cds-geneID-SPID.tab)
 
-    - [Notebook details](https://sr320.github.io/annotation/)
+        - MD5 = `0ee045d4e4702094798da26c2dd6fca3`
 
-        - Originally created in [MarineOmics repo](https://github.com/MarineOmics) commit [`cacd795b71caaf4f1b9e04ba955037f4128b801d`](https://raw.githubusercontent.com/MarineOmics/marineomics.github.io/cacd795b71caaf4f1b9e04ba955037f4128b801d/DRAFT_Funct_Enrich/annot/geneGO.txt)
+        - Gene with corresponsing SPID.
+
+        - [17-Swiss-Prot-Annotation.Rmd](https://github.com/sr320/ceabigr/blob/main/code/17-Swiss-Prot-Annotation.Rmd)
+
+    - [`Cvir-CDS-GOslim.BP_per_gene.tab`](https://github.com/sr320/ceabigr/tree/main/output/17.1-GO-and-GOslim-CDS-Annotation/Cvir-CDS-GOslim.BP_per_gene.tab)
+
+        - MD5 = `73eac024baeedf06e28121f201525945`
+
+        - Biological process GOslims/terms per gene
+
+        - [17.1-GO-and-GOslim-CDS-Annotation.Rmd](https://github.com/sr320/ceabigr/blob/main/code/17.1-GO-and-GOslim-CDS-Annotation.Rmd)
+
+    - [`Cvir-CDS-uniprot-full.tsv`](https://github.com/sr320/ceabigr/tree/main/output/17.1-GO-and-GOslim-CDS-Annotation/Cvir-CDS-uniprot-full.tsv)
+
+        - MD5 = `80dd6338e42f21df120bf0cc22f95eab`
+
+        - Tab-delimited output file from UniProt API retrieval. Columns:
+            - `Entry`
+            - `Reviewed`
+            - `Entry Name`
+            - `Protein names`
+            - `Gene Names`
+            - `Organism`
+            - `Length`
+            - `Gene Ontology (biological process)`
+            - `Gene Ontology (cellular component)`
+            - `Gene Ontology (GO)`
+            - `Gene Ontology (molecular function)`
+            - `Gene Ontology IDs`
+
+        - [17.1-GO-and-GOslim-CDS-Annotation.Rmd](https://github.com/sr320/ceabigr/blob/main/code/17.1-GO-and-GOslim-CDS-Annotation.Rmd)
+
+
 
 Bisulfite Genomes:
 
