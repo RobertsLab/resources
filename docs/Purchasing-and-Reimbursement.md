@@ -125,7 +125,7 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 ------------------------------------------------------------------------
 
-## Travel
+## Travel and Meeting Registration
 
 *Note Steps 1 and 2 need to occur prior to travel*
 
