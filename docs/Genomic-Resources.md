@@ -367,6 +367,35 @@ Genome Feature Tracks
 
 ------------------------------------------------------------------------
 
+## _Gadus macrocephalus_ (Pacific cod)
+
+[NCBI](https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_031168955.1/)
+
+Genomes
+
+- [`GCF_031168955.1_ASM3116895v1_genomic.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCF_031168955.1_ASM3116895v1_genomic.fna)
+
+    - MD5 = `5144890d4eceb0b258d92db3f35c681e`
+
+  - [`GCF_031168955.1_ASM3116895v1_cds_from_genomic.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCF_031168955.1_ASM3116895v1_cds_from_genomic.fna)
+
+    - MD5 = `95ef994762e8e4d58c2ce15d312f0aaf`
+
+  - [`GCF_031168955.1_ASM3116895v1.faa`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCF_031168955.1_ASM3116895v1.faa)
+
+    - MD5 = `cf58a1ec6408eb8c55aa23a6c06430d9`
+
+  - [`GCF_031168955.1_ASM3116895v1_rna.fna`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCF_031168955.1_ASM3116895v1_rna.fna)
+
+    - MD5 = `2a6c7c98982727e688f033a9b236725b`
+
+Genome Feature Tracks
+
+- [`GCF_031168955.1_ASM3116895v1.gff`](https://owl.fish.washington.edu/halfshell/genomic-databank/GCF_031168955.1_ASM3116895v1.gff): 
+
+  - MD5 = `173fb3c159e474391c5c4aa1f7230024`
+
+
 ## *Hematodinium sp.* (Host: *Chionoecetes bairdi*)
 
 Transcriptomes
