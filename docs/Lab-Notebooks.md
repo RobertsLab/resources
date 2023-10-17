@@ -23,7 +23,7 @@ Yaamini Venkataraman | [yaaminiv.github.io](https://yaaminiv.github.io/) | [![Gi
 Grace Crandall | [grace-ac.github.io](https://grace-ac.github.io/) |  [![GitHub followers](https://img.shields.io/github/followers/grace-ac.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/grace-ac)
 Shelly Trigg | [shellytrigg.github.io/notebook](https://shellytrigg.github.io/notebook/) |   [![GitHub followers](https://img.shields.io/github/followers/shellytrigg.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/shellytrigg)
 Kathleen Durkin | [shedurkin.github.io](https://shedurkin.github.io/Roberts-LabNotebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/shedurkin/Roberts-LabNotebook)
-Megan Ewing | [meganewing.github.io/mewing-notebook](https://meganewing.github.io/mewing-notebook/) | [![GitHub last commit](https://img.shields.io/github/last-commit/meganewing/mewing-notebook) 
+Megan Ewing | [meganewing.github.io/mewing-notebook](https://meganewing.github.io/mewing-notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/meganewing/mewing-notebook) 
 
 ## Platforms
 
