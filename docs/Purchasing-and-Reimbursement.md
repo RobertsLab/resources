@@ -146,13 +146,7 @@ During the Pre-Authorization step you can request a per diem Advance. But if you
 
 Step 3) Secure transit and lodging following all [rules and regulations set forth by UW](https://finance.uw.edu/travel/policies). 
 
-**In order to have UW pay directly for your flight and lodging, you must follow these steps.** 
--   Once you have completed your travel pre-authorization, click on the "+Task" button on the main page of your travel request. 
--   Leave "Assign To" blank and fill in "Task Title" with something like "UW direct payment". 
--   Fill in the description with the parts of your travel request you would like to get UW to pay for directly. For example: "Could I get UW to directly pay for airfare and lodging so I don't have to use personal card?"
--   Save the task
-
-Someone from UW will be assigned to the task and will reach out with further instructions to reserve your flight and/or reserve lodging. For flights, you will be contacted via email by Tangerine Travel Agency. You'll need to provide them with the exact flight itinerary you want so they can book your flight.
+**In order to have UW pay directly for your flight and lodging, you must follow these steps.** Once you have completed your travel pre-authorization, click on the "+Task" button on the main page of your travel request. Leave "Assign To" blank and fill in "Task Title" with something like "UW direct payment". Fill in the description with the parts of your travel request you would like to get UW to pay for directly. For example: "Could I get UW to directly pay for airfare and lodging so I don't have to use personal card?". Save the task. Someone from UW will be assigned to the task and will reach out with further instructions to reserve your flight and/or reserve lodging. For flights, you will be contacted via email by Tangerine Travel Agency. You'll need to provide them with the exact flight itinerary you want so they can book your flight.
 
 Step 4) When travel is complete, submit required documentation via Treq
 
