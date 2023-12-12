@@ -24,8 +24,9 @@ Last login: Thu Jun  8 14:59:10 2017 from d-173-250-161-130.dhcp4.washington.edu
      interacting with the scheduler and transferring data to and from the
      system.
 
-     Please visit the Hyak User Wiki for more details
-     http://wiki.hyak.uw.edu
+     Please visit the Hyak User Documentation for more details:
+     
+     https://hyak.uw.edu/docs
 
 
 [seanb80@mox2 ~]$
