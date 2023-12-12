@@ -22,8 +22,8 @@ Written 20150702 by Sam White.
 ##### Equipment:
 - Pipettes (10 - 1000uL)
 - Filtered pipette tips
-- 0.5mL snap-cap microfuge tubes ([Genesee: 22-178A](https://geneseesci.com/shop-online/product-details/923/?product=22-178A))
-- Sterile 1.7mL snap-cap microfuge tubes ([Genesee: 22-281S](https://geneseesci.com/shop-online/product-details/?product=22-281S))
+- 0.5mL snap-cap microfuge tubes ([Genesee: 22-281A](https://geneseesci.com/shop-online/product-details/22-281A/olympus-plastics-22-281a-olympus-1.7ml-microtubes-assorted-polypropylene-large-cap-box-of-500-tubes-unit))
+- Sterile 1.7mL snap-cap microfuge tubes ([Genesee: 22-281S](https://geneseesci.com/shop-online/product-details/22-281S/olympus-plastics-22-281s-olympus-1.7ml-microtubes-clear-sterile-polypropylene-large-cap-ster-5-bags-of-50-tubes-unit))
 - Thermal cycler, water bath, or heating block capable of 37C OR 42C.
 - vortexer
 - ice
