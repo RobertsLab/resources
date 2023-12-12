@@ -62,7 +62,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
 ![This is what the store front looks like](https://raw.githubusercontent.com/shellytrigg/shellytrigg.github.io/master/images/UWBiochemStore.jpg)
 
-1.  [Search the store catalog](http://128.95.12.98:88/stores/dataSearch.asp) or just head down to Room J-014 in the Health Sciences Building basement and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
+1.  Search the store catalog or just head down to Room J-014 in the Health Sciences Building basement and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
 
 2.  Order your product. They will need to know your lab, your name, and the budget number. They will give you a sales receipt for your purchase, but you don't need to submit this anywhere.
 
