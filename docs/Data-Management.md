@@ -180,4 +180,4 @@ You will find that creating a usable data archive is much easier to do as you go
 Finally, data will be most usable if it is as flexible as possible.  So an excel spreadsheet with different information on different tabs is not very flexible.  Much better to have a text file, with the data in “long form”.  This means rather than have a ton of columns, have a ton of rows.
 
 see    
-Broman KW, Woo KH. (2017) Data organization in spreadsheets. PeerJ Preprints 5:e3183v1 [https://doi.org/10.7287/peerj.preprints.3183v](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
+Broman KW, Woo KH. (2017) Data organization in spreadsheets. PeerJ Preprints 5:e3183v1 [https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989](https://www.tandfonline.com/doi/full/10.1080/00031305.2017.1375989)
