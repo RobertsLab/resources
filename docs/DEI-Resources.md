@@ -17,6 +17,7 @@
 - GO-MAP: Supporting Graduate Students of Color at the University of Washington [https://grad.uw.edu/equity-inclusion-and-diversity/go-map/](https://grad.uw.edu/equity-inclusion-and-diversity/go-map/)
 
 - SAFS DEI Committee: [https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-equity-inclusion-committee/](https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-equity-inclusion-committee/)
+
      - SAFS DEI Committee GitHub for suggested action items: [https://github.com/OARS-SAFS/DEI/issues](https://github.com/OARS-SAFS/DEI/issues)
 
 - SAFS DEI Slack channel: [https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) (navigate to DEI page) 
@@ -36,8 +37,9 @@
      - Facebook page: [https://www.facebook.com/peaksandprofessorsuw/](https://www.facebook.com/peaksandprofessorsuw/)
      - Send a request to join the mailing list: <peaksandprofessorsuw@gmail.com>
 
-- List of organizations that are striving to bring more diversity to the outdoors. [https://www.adventure-journal.com/2020/06/these-orgs-could-use-your-help-to-bring-more-diversity-to-the-outdoors/](https://www.adventure-journal.com/2020/06/these-orgs-could-use-your-help-to-bring-more-diversity-to-the-outdoors/)
-     - The College of the Environment communities are often consisting of people who enjoy and spend time in nature. Gatekeeping “outdoorsy-ness” is a serious issue that often excludes women, people of color, lower income individuals, and more. This can often make it difficult to participate in casual conversations at work/school or after-work/weekend activities, which can create a feeling of exclusion from the community as a whole.
+- List of organizations that are striving to bring more diversity to the outdoors. [https://web.archive.org/web/20220523105055/https://www.adventure-journal.com/2020/06/these-orgs-could-use-your-help-to-bring-more-diversity-to-the-outdoors/](https://web.archive.org/web/20220523105055/https://www.adventure-journal.com/2020/06/these-orgs-could-use-your-help-to-bring-more-diversity-to-the-outdoors/)
+
+  - The College of the Environment communities often consist of people who enjoy and spend time in nature. Gatekeeping “outdoorsy-ness” is a serious issue that often excludes women, people of color, lower income individuals, and more. This can often make it difficult to participate in casual conversations at work/school or after-work/weekend activities, which can create a feeling of exclusion from the community as a whole.
 
 ## UW Centers
 
