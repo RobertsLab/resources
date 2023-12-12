@@ -278,7 +278,7 @@ _Archived_
 
 Dimond JL and Roberts SB  (2015) Germline DNA methylation in reef corals: patterns and potential roles in response to environmental change UW ResearchWorks Archive uri:<http://hdl.handle.net/1773/34298>
 
-Mackenzie Gavery and Steven Roberts (**preprint**) A context specific role for DNA methylation in bivalves. Status: _Archived_ [download](https://dl.dropboxusercontent.com/u/115356/Gavery_Roberts_context2013.pdf) (_Revised and later accepted at_ [Briefings in Functional Genomics](https://10.1093/bfgp/elt054) 10.1093/bfgp/elt054
+Mackenzie Gavery and Steven Roberts (**preprint**) A context specific role for DNA methylation in bivalves. Status: _Archived_ [download](https://dl.dropboxusercontent.com/u/115356/Gavery_Roberts_context2013.pdf) (_Revised and later accepted at_ [Briefings in Functional Genomics](https://doi.org/10.1093/bfgp/elt054) 10.1093/bfgp/elt054
 
 Emma Timmins-Schiffman, Carolyn Friedman, Steven Roberts, Sam White, Dave Metzger (**preprint**) Genomic resource development of shellfish of conservation concern. Status: [_on figshare_](http://dx.doi.org/10.6084/m9.figshare.97205) (_published_ - Molecular Ecology Resources)
 
