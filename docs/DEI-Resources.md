@@ -71,7 +71,7 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 
 - [Black Scientists Call Out Racism in Their Institutions](https://www.theverge.com/21286924/science-racism-strike-stem-black-lives-matter-protests) June 2020. “Black scientists and students are sharing their experiences on Twitter of being dismissed and discriminated against in academia using the hashtag #BlackintheIvory.”
 
-- [The science divide: Why do Latino and black students leave STEM majors at higher rates?](https://www.washingtonpost.com/local/education/the-science-divide-why-do-latino-and-black-students-leave-stem-majors-at-higher-rates/2019/05/03/e386d318-4b32-11e9-93d0-64dbcf38ba41_story.html) May 2019. “If there’s demonstrated, strong interest in STEM among black and Latino youth, why would you see higher departure rates for these students?” the professor said. “It’s not about interest or academic ability. So what causes this?”
+- [The science divide: Why do Latino and black students leave STEM majors at higher rates?](https://wapo.st/3tikMCH) May 2019. “If there’s demonstrated, strong interest in STEM among black and Latino youth, why would you see higher departure rates for these students?” the professor said. “It’s not about interest or academic ability. So what causes this?”
 
 - [Facilitating Critical Conversations With Students [PDF]](https://www.tolerance.org/sites/default/files/2019-12/TT-Lets-Talk-December-2019.pdf) December 2019. “ It’s a conversation that explores the relationships between identity and power, that traces the structures that privilege some at the
 expense of others, that helps students think through the actions they can
