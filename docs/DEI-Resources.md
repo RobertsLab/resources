@@ -28,9 +28,6 @@
 
 - College of the Environment DEI Task Force: [https://environment.uw.edu/about/diversity-equity-inclusion/diversity-equity-and-inclusion-task-force/](https://environment.uw.edu/about/diversity-equity-inclusion/diversity-equity-and-inclusion-task-force/)
 
-- Departmental Diversity Committees:
-[https://grad.uw.edu/equity-inclusion-and-diversity/programs-resources/for-faculty-and-staff/departmental-diversity-committees/](https://grad.uw.edu/equity-inclusion-and-diversity/programs-resources/for-faculty-and-staff/departmental-diversity-committees/)
-
 - UW Postdoc Diversity Alliance: [https://sites.uw.edu/uwpda](https://sites.uw.edu/uwpda)
 
 - Peaks and professors club: hike with UW faculty members to network while enjoying the outdoors.
