@@ -94,9 +94,9 @@ See links in the "use cases" section below for full-fledged scripts and advanced
 
 ### Use cases from our lab
 
-- [RNAseq Alignments - P.generosa Alignments and Alternative Transcript Identification Using Hisat2 and StringTie on Mox](https://robertslab.github.io/sams-notebook/2022/09/14/RNAseq-Alignments-P.generosa-Alignments-and-Alternative-Transcript-Identification-Using-Hisat2-and-StringTie-on-Mox.html)
+- [RNAseq Alignments - P.generosa Alignments and Alternative Transcript Identification Using Hisat2 and StringTie on Mox](https://robertslab.github.io/sams-notebook/posts/2022/2022-09-14-RNAseq-Alignments---P.generosa-Alignments-and-Alternative-Transcript-Identification-Using-Hisat2-and-StringTie-on-Mox/)
 
-- [Splice Site Identification - S.namaycush Liver Parasitized and Non-Parasitized SRA RNAseq Using Hisat2-Stingtie with Genome GCF_016432855.1](https://robertslab.github.io/sams-notebook/2022/08/10/Splice-Site-Identification-S.namaycush-Liver-Parasitized-and-Non-Parasitized-SRA-RNAseq-Using-Hisat2-Stingtie-with-Genome-GCF_016432855.1.html)
+- [Splice Site Identification - S.namaycush Liver Parasitized and Non-Parasitized SRA RNAseq Using Hisat2-Stingtie with Genome GCF_016432855.1](https://robertslab.github.io/sams-notebook/posts/2022/2022-08-10-Splice-Site-Identification---S.namaycush-Liver-Parasitized-and-Non-Parasitized-SRA-RNAseq-Using-Hisat2-Stingtie-with-Genome-GCF_016432855.1/)
 
 
 
