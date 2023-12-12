@@ -69,7 +69,7 @@ If you experience any problems in joining these listservs, email SAFS computing 
   - [Graduate and Professional Student Senate (GPSS)](http://depts.washington.edu/gpss/)
 
 - UW College of the Environment
-  - [Graduate student resources](https://environment.uw.edu/students/student-resources/graduate-student-resources/)
+  - [Graduate student resources](https://environment.uw.edu/students/current-students/)
   - listserv <environment_grads@uw.edu> : Stay updated on graduate student opportunities and seminars. Click [here](http://mailman11.u.washington.edu/mailman/listinfo/environment_grads) to join
   - [CoEnv travel funding](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund//)
 
