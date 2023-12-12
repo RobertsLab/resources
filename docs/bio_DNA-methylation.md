@@ -4,7 +4,7 @@ See also the official documentation.
 
 User Guides
 
-1)  <http://felixkrueger.github.io/Bismark/Docs/>\
+1)  <https://felixkrueger.github.io/Bismark/>\
 2)  <https://www.bioinformatics.babraham.ac.uk/projects/bismark/>
 
 ### Use cases from our lab
@@ -31,7 +31,7 @@ User Guides
 
 ## Bismark
 
-[Bismark User Guide](https://rawgit.com/FelixKrueger/Bismark/master/Docs/Bismark_User_Guide.htm)
+[Bismark User Guide](https://felixkrueger.github.io/Bismark/)
 
 **(I) Running bismark_genome_preparation**
 
