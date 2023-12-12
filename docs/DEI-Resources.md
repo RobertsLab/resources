@@ -1,6 +1,6 @@
 ## Support Resources at UW
 
-- [Title IX office](https://compliance.uw.edu/titleIX) (federal gender equity law)
+- [Title IX office](hhttps://www.washington.edu/titleix/) (federal gender equity law)
 
 - [UW Safe Campus](https://depts.washington.edu/safecamp/)
 
