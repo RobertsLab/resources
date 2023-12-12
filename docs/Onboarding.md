@@ -71,7 +71,7 @@ If you experience any problems in joining these listservs, email SAFS computing 
 - UW College of the Environment
   - [Graduate student resources](https://environment.uw.edu/students/student-resources/graduate-student-resources/)
   - listserv <environment_grads@uw.edu> : Stay updated on graduate student opportunities and seminars. Click [here](http://mailman11.u.washington.edu/mailman/listinfo/environment_grads) to join
-  - [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
+  - [CoEnv travel funding](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund//)
 
 - [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/)
   - [Assistant Director of Student Services and DEI](https://fish.uw.edu/students/advising/): Samantha Scherer (<iamsams@uw.edu>)
@@ -93,7 +93,7 @@ If you experience any problems in joining these listservs, email SAFS computing 
 - [UW College of the Environment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/)
 	- more CoEnv Postdoc resources: [https://environment.uw.edu/intranet/academics/postdoctoral-resources/](https://environment.uw.edu/intranet/academics/postdoctoral-resources/)
 	- listserv <environment_postdocs@uw.edu> : Stay in the loop on career preparation seminars, career panels, opportunities to give practice talks, etc. To join, email the CoEnv Graduate Student and Postdoctoral Services Specialist, Anthony Salazar (asalazar@uw.edu)
-	- [CoEnv travel funding](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/)
+	- [CoEnv travel funding](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund//)
 
 - [UW SAFS Postdocs](https://fish.uw.edu/faculty-research/research/postdoctoralscholars/)
 	- join SAFS postdoc channel on Slack: click [here](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) to join
