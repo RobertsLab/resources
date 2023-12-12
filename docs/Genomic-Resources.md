@@ -982,6 +982,18 @@ Genome Feature Tracks
 
 ------------------------------------------------------------------------
 
+## *Pycnopodia helianthodes*
+
+Genome
+
+- [GCA_032158295.1_ASM3215829v1_genomic.fna](https://owl.fish.washington.edu/halfshell/genomic-databank/GCA_032158295.1_ASM3215829v1_genomic.fna)
+
+  - MD5: `c6eb5b44d2bc14c37c852688a39009ad`
+
+  - Downloaded from NCBI 20231025 by SJW.
+
+-------------------------------------------------------------------------
+
 ## *QPX*
 
 Genome:
