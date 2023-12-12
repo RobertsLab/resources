@@ -1,6 +1,6 @@
 # Runs mkdocs-material theme for readthedocs documentation
 # Automatically deploys documentation to https://robertslab.github.io/resources/
-name: ci 
+name: mkdocs-material-theme-readthedocs
 on:
   push:
     branches:
