@@ -10,8 +10,8 @@ jobs:
       uses: urlstechie/urlchecker-action@0.0.34
       with:
         # A subfolder or path to navigate to in the present or cloned repository
-        subfolder: posts
-        file_types: .qmd
+        subfolder: docs
+        file_types: .md
         # Choose whether to print a more verbose end summary with files and broken URLs.
         verbose: true
         # The timeout seconds to provide to requests, defaults to 5 seconds
