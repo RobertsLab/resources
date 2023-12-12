@@ -27,7 +27,7 @@
     - Print/sign your name at the top of the form
     - Return form to Sam
 
-4. Provide Sam with your UW NetID and he will add you as a user to the [UW MyChem system](https://mychem.ehs.washington.edu/) for access to the Roberts Lab chemical inventory and Safety Data Sheets (SDS).
+4. Provide Sam with your UW NetID and he will add you as a user to the [UW MyChem system](https://www.ehs.washington.edu/chemical/mychem) for access to the Roberts Lab chemical inventory and Safety Data Sheets (SDS).
 
 5. Review our Standard Operating Protocols (SOPs) for chemical handling and disposal:
 
