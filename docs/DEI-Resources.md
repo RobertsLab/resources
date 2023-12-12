@@ -26,7 +26,7 @@
 
 - College of the Environment Community Equity Initiative: Organizational information [here](https://huskylink.washington.edu/organization/cei) 
 
-- College of the Environment DEI Committee: [https://environment.uw.edu/about/diversity-equity-inclusion/college-diversity-committee/](https://environment.uw.edu/about/diversity-equity-inclusion/college-diversity-committee/)
+- College of the Environment DEI Task Force: [https://environment.uw.edu/about/diversity-equity-inclusion/diversity-equity-and-inclusion-task-force/](https://environment.uw.edu/about/diversity-equity-inclusion/diversity-equity-and-inclusion-task-force/)
 
 - Departmental Diversity Committees:
 [https://grad.uw.edu/equity-inclusion-and-diversity/programs-resources/for-faculty-and-staff/departmental-diversity-committees/](https://grad.uw.edu/equity-inclusion-and-diversity/programs-resources/for-faculty-and-staff/departmental-diversity-committees/)
