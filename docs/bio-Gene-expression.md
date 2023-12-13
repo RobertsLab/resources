@@ -100,6 +100,8 @@ See links in the "use cases" section below for full-fledged scripts and advanced
 
 -   [project-pycno-sizeclass-2022](https://github.com/grace-ac/project-pycno-sizeclass-2022/blob/main/code/05-hisat.md) ![GitHub last commit](https://img.shields.io/github/last-commit/grace-ac/project-pycno-sizeclass-2022)
 
+-   [05.33-lncRNA-discovery-overview](https://github.com/urol-e5/deep-dive/blob/main/D-Apul/code/05.33-lncRNA-discovery-overview.md): lncRNA pipeline that involves HiSat of RNAseq data ![GitHub last commit](https://img.shields.io/github/last-commit/urol-e5/deep-dive)
+
 ------------------------------------------------------------------------
 
 ## DESeq2
