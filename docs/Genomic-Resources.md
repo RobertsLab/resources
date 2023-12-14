@@ -90,7 +90,7 @@ Here we try to compile genomic resources such that they are readily available an
     - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW with _Arthropoda_ only reads.
 * [cbai_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta)
     - MD5 = `e61d68c45728ffbb91e3d34c087d9aa9`
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/04/07/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome.html): C:91.8%[S:64.0%,D:27.8%],F:5.9%,M:2.3%,n:978
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/posts/2020/2020-04-07-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome/index.html): C:91.8%[S:64.0%,D:27.8%],F:5.9%,M:2.3%,n:978
     - FastA index (```samtools faidx```)
         - [cbai_transcriptome_v1.5.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta.fai) :
       `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.5.fasta.fai`
