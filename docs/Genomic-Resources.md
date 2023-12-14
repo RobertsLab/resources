@@ -685,7 +685,7 @@ Genome Feature Tracks:
 
 -   Panopea-generosa-vv0.74.a4
 
-    *These originate from [GenSAS annotation on 20190928](https://robertslab.github.io/sams-notebook/2019/09/28/Genome-Annotation-Pgenerosa_v074-a4-Using-GenSAS.html)*
+    *These originate from [GenSAS annotation on 20190928](https://robertslab.github.io/sams-notebook/posts/2019/2019-09-28-Genome-Annotation---Pgenerosa_v074-a4-Using-GenSAS/index.html)*
 
     Individual feature GFFs were made with the following shell commands:
 
