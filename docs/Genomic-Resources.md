@@ -75,7 +75,7 @@ Here we try to compile genomic resources such that they are readily available an
     - FastA index (```samtools faidx```)
         - [cbai_transcriptome_v1.7.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.7.fasta.fai) :
           `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.7.fasta.fai`
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/05/27/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.7.html): `C:86.7%[S:66.5%,D:20.2%],F:8.2%,M:5.1%,n:978`
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/posts/2020/2020-05-27-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.7/): `C:86.7%[S:66.5%,D:20.2%],F:8.2%,M:5.1%,n:978`
     - [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200527_cbai_diamond_blastx_transcriptome_v1.7/cbai_transcriptome_v1.7.blastx.outfmt6) (outfmt6)
     - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200529_cbai_trinotate_transcriptome-v1.7/20200616.cbai_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (Trinotate)
     - internal short-hand: includes 2018, 2019, 2020-UW with _Arthropoda_ only reads.
