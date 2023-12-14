@@ -105,7 +105,7 @@ Here we try to compile genomic resources such that they are readily available an
         - [cbai_transcriptome_v1.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.0.fasta.fai) :
       `https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v1.0.fasta.fasta.fai`
     - Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
-    - [BLASTx Annotation](https://robertslab.github.io/sams-notebook/2020/01/23/Transcriptome-Annotation-C.bairdi-MEGAN-Trinity-Assembly-Using-DIAMOND-BLASTx-on-Mox.html)
+    - [BLASTx Annotation](https://robertslab.github.io/sams-notebook/posts/2020/2020-01-23-Transcriptome-Annotation---C.bairdi-MEGAN-Trinity-Assembly-Using-DIAMOND-BLASTx-on-Mox/index.html)
     - [GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200126_cbai_trinotate_megan/20200126.cbai.trinotate.go_annotations.txt) (Trinotate)
     - internal short-hand: includes 2018, 2019 with _Arthropoda_ only reads.
 editor_options: 
