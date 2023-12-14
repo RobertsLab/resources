@@ -645,7 +645,7 @@ Genome:
 
     -   [ENA Accession: GCA_902825435](https://www.ebi.ac.uk/ena/data/view/GCA_902825435)
 
-    -   Version of 070 containing 18 largest scaffolds ([details on subsetting](https://robertslab.github.io/sams-notebook/2019/06/25/Data-Wrangling-FastA-Subsetting-of-Pgenerosa_v070.fa-Using-samtools-faidx.html))
+    -   Version of 070 containing 18 largest scaffolds ([details on subsetting](https://robertslab.github.io/sams-notebook/posts/2019/2019-06-25-Data-Wrangling---FastA-Subsetting-of-Pgenerosa_v070.fa-Using-samtools-faidx/index.html))
 
     -   [FastA file and scaffolds were renamed on 20191105](https://robertslab.github.io/sams-notebook/2019/11/05/Data-Wrangling-Rename-Pgenerosa_v074-Files-and-Scaffolds.html) (notebook)
 
