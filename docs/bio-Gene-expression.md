@@ -24,6 +24,8 @@ User Guides
 
 -   <https://github.com/RobertsLab/paper-tanner-crab/blob/master/notebooks/kallisto-4libraries.ipynb> tanner crab ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/paper-tanner-crab)
 
+-   [Mytilus Tag-seq](https://github.com/mattgeorgephd/PSMFC-mytilus-byssus-pilot/blob/main/code/07-kallisto.md) ![GitHub last commit](https://img.shields.io/github/last-commit/mattgeorgephd/PSMFC-mytilus-byssus-pilot)
+
 ## Alignment: [HiSat2](https://daehwankimlab.github.io/hisat2/manual/)
 
 See the official documentation (linked above).
