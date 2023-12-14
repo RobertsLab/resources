@@ -627,7 +627,7 @@ Transcriptomes:
 
 -   [Olurida_v081-20190709.mRNA.gff](https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081-20190709.mRNA.gff) : `https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081-20190709.mRNA.gff`
 
--   [Olurida_v081_TE-Cg.gff](http:/owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_TE-Cg.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_TE-Cg.gff`
+-   [Olurida_v081_TE-Cg.gff](https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_TE-Cg.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_TE-Cg.gff`
 
     -   MD5 = 977fd7cdb460cd0b9df5e875e1e880ea
 
