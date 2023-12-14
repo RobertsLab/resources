@@ -486,7 +486,7 @@ Transcriptomes
 
         -   [hemat_transcriptome_v1.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.0.fasta.fai) : `https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.0.fasta.fai`
 
-    -   Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
+    -   Initial Trinity assembly from [20200122](https://robertslab.github.io/sams-notebook/posts/2020/2020-01-22-Transcriptome-Assembly---Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox/index.html)
 
     -   [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200123_hemat_diamond_blastx_megan/20200122.hemat.megan.Trinity.blastx.outfmt6) (txt; 308KB)
 
