@@ -631,7 +631,7 @@ Transcriptomes:
 
     -   MD5 = 977fd7cdb460cd0b9df5e875e1e880ea
 
-    -   Transposable Element track - more details in [Sam's Notebook](http://onsnetwork.org/kubu4/2018/07/03/transposable-element-mapping-olympia-oyster-genome-assembly-olurida_v081-using-repeatmasker-4-07/), including a [summary table](http://owl.fish.washington.edu/Athaliana/20180702_oly_repeatmasker_Cgigas/Olurida_v081.fa.tbl).
+    -   Transposable Element track - more details in [Sam's Notebook](https://robertslab.github.io/sams-notebook/posts/2018/2018-07-03-transposable-element-mapping-olympia-oyster-genome-assembly-olurida_v081-using-repeatmasker-4-07/index.html), including a [summary table](http://owl.fish.washington.edu/Athaliana/20180702_oly_repeatmasker_Cgigas/Olurida_v081.fa.tbl).
 
 -   [Olurida_v081_CG-motif.gff](https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_CG-motif.gff) : `https://owl.fish.washington.edu/halfshell/genomic-databank/Olurida_v081_CG-motif.gff`
 
