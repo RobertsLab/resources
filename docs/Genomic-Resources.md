@@ -901,7 +901,7 @@ Genome Feature Tracks
 
         - MD5 checksum: `6e7a25bf51a7c838b9659dd7ec37990f`
 
-        - Notebook: [Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/05/26/Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html)
+        - Notebook: [Repeats-Identification-P.meandrina-Using-RepeatMasker-on-Mox.html](https://robertslab.github.io/sams-notebook/posts/2023/2023-05-26-Repeats-Identification---P.meandrina-Using-RepeatMasker-on-Mox/index.html)
 
 ---
 
