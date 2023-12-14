@@ -935,7 +935,7 @@ Genome Indexes ([`HISAT2`](https://daehwankimlab.github.io/hisat2/)):
 
     -   Needs to be unpacked before use!
 
-    -   Notebook: [Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html](https://robertslab.github.io/sams-notebook/2023/01/31/Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html)
+    -   Notebook: [Genome-Indexing-P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox.html](https://robertslab.github.io/sams-notebook/posts/2023/2023-01-31-Genome-Indexing---P.verrucosa-v1.0-Assembly-with-HiSat2-on-Mox/index.html)
 
 Genome Feature Tracks
 
