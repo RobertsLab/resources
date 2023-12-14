@@ -23,7 +23,7 @@ Here we try to compile genomic resources such that they are readily available an
     `C:0.4%[S:0.3%,D:0.1%],F:0.3%,M:99.3%,n:978`
     - FastA index (```samtools faidx```)
         - [cbai_genome_v1.0.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.0.fasta.fai)
-    - Assembly from [20200917](https://robertslab.github.io/sams-notebook/2020/09/17/Genome-Assembly-C.bairdi-cbai_v1.0-Using-All-NanoPore-Data-With-Flye-on-Mox.html)
+    - Assembly from [20200917](https://robertslab.github.io/sams-notebook/posts/2020/2020-09-17-Genome-Assembly---C.bairdi---cbai_v1.0---Using-All-NanoPore-Data-With-Flye-on-Mox/index.html)
         - Q7-filtered NanoPore data. Includes _Hematodinium_-infected sample.
 [Assembly Stats Table (Google Sheet)](https://docs.google.com/spreadsheets/d/1XAgU_xQKJjWk4ThJHn1wLDtPuW6X7s6Jjh_373bMc0U/edit?usp=sharing)
 [RNA-seq sample list](https://docs.google.com/spreadsheets/d/1d17yg5F5gKKC66O8QkTIlPxljJeuX7ZsG46pkBr1lNQ/edit#gid=0)
