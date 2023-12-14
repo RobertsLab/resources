@@ -655,7 +655,7 @@ Genome:
 
         -   `C:71.6%[S:70.7%,D:0.9%],F:4.7%,M:23.7%,n:978`
 
-        -   [Notebook entry](https://robertslab.github.io/sams-notebook/2019/07/10/Genome-Assessment-BUSCO-Metazoa-on-Pgenerosa_v074-on-Mox.html)
+        -   [Notebook entry](https://robertslab.github.io/sams-notebook/posts/2019/2019-07-10-Genome-Assessment---BUSCO-Metazoa-on-Pgenerosa_v074-on-Mox/)
 
     -   FastA index (`samtools faidx`):
 
