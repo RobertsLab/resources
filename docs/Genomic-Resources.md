@@ -957,13 +957,13 @@ Genome Feature Tracks
 
     -   Modified/validated version of `Pver_genome_assembly_v1.0.gff3`
 
-    -   Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
+    -   Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/posts/2023/2023-01-27-Data-Wrangling---P.verrucosa-Genome-GFF-to-GTF-Using-gffread/index.html)
 
 -   [`Pver_genome_assembly_v1.0-valid.gtf`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.gtf) (48MB)
 
     -   MD5 checksum: `c3cc8fb576bcf39dd17b6d229100aa56`
 
-    -   Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/01/27/Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread.html)
+    -   Created 20230127: [Data-Wrangling-P.verrucosa-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/posts/2023/2023-01-27-Data-Wrangling---P.verrucosa-Genome-GFF-to-GTF-Using-gffread/index.html)
 
 -   [`Pver_genome_assembly_v1.0-valid.genes.bed`](https://gannet.fish.washington.edu/Atumefaciens/20230127-pver-gff_to_gtf/Pver_genome_assembly_v1.0-valid.genes.bed) (1.2MB)
 
