@@ -37,7 +37,7 @@ Here we try to compile genomic resources such that they are readily available an
     - internal short-hand: includes 2018, 2019, 2020-GW, 2020-UW BLASTx against NCBI _C.opilio_ genome.
 * [cbai_transcriptome_v3.1.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.1.fasta)
     - MD5 = `aeec8ffbf8fa44fb1750caee6abaf68a`
-    - [BUSCOs](https://robertslab.github.io/sams-notebook/2020/06/05/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v3.1.html): `C:96.5%[S:40.3%,D:56.2%],F:2.2%,M:1.3%,n:978`
+    - [BUSCOs](https://robertslab.github.io/sams-notebook/posts/2020/2020-06-05-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-Transcriptome-v3.1/): `C:96.5%[S:40.3%,D:56.2%],F:2.2%,M:1.3%,n:978`
     - FastA index (```samtools faidx```)
         - [cbai_transcriptome_v3.1.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_transcriptome_v3.1.fasta.fai)
     - [BLASTx annotation](https://gannet.fish.washington.edu/Atumefaciens/20200608_cbai_diamond_blastx_v2.1_v3.1/cbai_transcriptome_v3.1.blastx.outfmt6) (outfmt6)
