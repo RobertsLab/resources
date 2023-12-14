@@ -595,7 +595,7 @@ Bisulfite Genomes:
 
 -   Gzipped tarball of bisulfite genome for use with Bismark
 
--   Creation details [here](https://robertslab.github.io/sams-notebook/2018/05/08/bs-seq-mapping-olympia-oyster-bisulfite-sequencing-trimgalore-fastqc-bismark.html)
+-   Creation details [here](https://robertslab.github.io/sams-notebook/posts/2018/2018-05-08-bs-seq-mapping-olympia-oyster-bisulfite-sequencing-trimgalore-fastqc-bismark/index.html)
 
 Transcriptomes:
 
