@@ -470,7 +470,7 @@ Transcriptomes
 
     -   Updated assembly from [20200330](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html).
 
-    -   [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200331_hemat_diamond_blastx_megan/20200408.hemat.megan.Trinity.fasta.blastx.outfmt6) (txt; 355KB)
+    -   [BLASTx Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200331_hemat_diamond_blastx_megan/20200408.hemat.megan.Trinity.blastx.outfmt6) (txt; 355KB)
 
     -   [Trinotate GO Terms Annotation](https://gannet.fish.washington.edu/Atumefaciens/20200408_hemat_trinotate_megan/20200408.hemat.trinotate.go_annotations.txt) (txt; 2.3MB)
 
