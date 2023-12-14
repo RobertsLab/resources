@@ -14,7 +14,7 @@ Here we try to compile genomic resources such that they are readily available an
     `C:0.4%[S:0.3%,D:0.1%],F:0.2%,M:99.4%,n:978`
     - FastA index (```samtools faidx```)
         - [cbai_genome_v1.01.fasta.fai](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta.fai)
-    - Assembly from [20200923](https://robertslab.github.io/sams-notebook/2020/09/23/Data-Wrangling-Subsetting-cbai_genome_v1.0-Assembly-with-faidx.html)
+    - Assembly from [20200923](https://robertslab.github.io/sams-notebook/posts/2020/2020-09-23-Data-Wrangling---Subsetting-cbai_genome_v1.0-Assembly-with-faidx/index.html)
         - Q7-filtered NanoPore data. Includes _Hematodinium_-infected sample.
         - Subset of `cbai_genome_v1.0.fasta` with contigs >1000bp
 * [cbai_genome_v1.0.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.0.fasta) (19MB)
