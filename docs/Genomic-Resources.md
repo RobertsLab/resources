@@ -151,7 +151,7 @@ Genome Feature Tracks
 
     -   MD5 checksum: `97e69a850faf2e6d9b60df828ad02671`
 
-    -   Created 20230217: [Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/2023/02/17/Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread.html)
+    -   Created 20230217: [Data-Wrangling-C.goreaui-Genome-GFF-to-GTF-Using-gffread](https://robertslab.github.io/sams-notebook/posts/2023/2023-02-17-Data-Wrangling---C.goreaui-Genome-GFF-to-GTF-Using-gffread/index.html)
 
 ------------------------------------------------------------------------
 
