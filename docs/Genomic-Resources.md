@@ -426,7 +426,7 @@ Transcriptomes
 
         - GO Terms Annotation
 
-          - [20210310.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.7/20210309.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (Trinotate)
+          - [20210310.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.7/20210310.hemat_transcriptome_v1.7.fasta.trinotate.go_annotations.txt) (Trinotate)
 
           - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/09/Transcriptome-Annotation-Trinotate-Hematodinium-v1.7-on-Mox.html)
 
