@@ -851,7 +851,7 @@ Genome Feature Tracks:
 
     -   MD5 checksum: `34196bd945eb4965e665097648037132`
 
-    -   Created 20230127: [Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html](https://robertslab.github.io/sams-notebook/2023/01/26/Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html)
+    -   Created 20230127: [Data-Wrangling-P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread.html](https://robertslab.github.io/sams-notebook/posts/2023/2023-01-26-Data-Wrangling---P.acuta-Genome-GFF-to-GTF-Conversion-Using-gffread/index.html)
 
 ---
 
