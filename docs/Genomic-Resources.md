@@ -1030,6 +1030,6 @@ Genome Feature Tracks:
 
 -   [20220818-snam-GCF_016432855.1_SaNama_1.0_genes.bed](https://gannet.fish.washington.edu/Atumefaciens/20220818-snam-gff_to_bed-genes/20220818-snam-GCF_016432855.1_SaNama_1.0_genes.bed)
 
-    -   [Notebook entry](https://robertslab.github.io/sams-notebook/2022/08/18/Data-Wrangling-Convert-S.namaycush-NCBI-GFF-to-genes-only-BED-file-for-Use-in-Ballgown-Analysis.html)
+    -   [Notebook entry](https://robertslab.github.io/sams-notebook/posts/2022/2022-08-18-Data-Wrangling---Convert-S.namaycush-NCBI-GFF-to-genes-only-BED-file-for-Use-in-Ballgown-Analysis/index.html)
 
 ------------------------------------------------------------------------
