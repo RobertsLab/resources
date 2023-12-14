@@ -357,13 +357,13 @@ Genome Feature Tracks
 
     -   MD5 = d0d81fc6cf7525bc2c61984bee23521b
 
-    -   [Details](http://onsnetwork.org/kubu4/2018/08/28/transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/)
+    -   [Details](https://robertslab.github.io/sams-notebook/posts/2018/2018-08-28-transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/)
 
 -   [C_virginica-3.0_TE-Cg.gff](http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff) : `http://owl.fish.washington.edu/halfshell/genomic-databank/C_virginica-3.0_TE-Cg.gff`
 
     -   MD5 = 83cd753c171076464fee1165b7e1c6ba
 
-    -   [Details](http://onsnetwork.org/kubu4/2018/08/28/transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/)
+    -   [Details](https://robertslab.github.io/sams-notebook/posts/2018/2018-08-28-transposable-element-mapping-crassostrea-virginica-genome-cvirginica_v300-using-repeatmasker-4-07/)
 
 ------------------------------------------------------------------------
 
