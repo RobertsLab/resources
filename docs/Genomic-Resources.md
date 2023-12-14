@@ -480,7 +480,7 @@ Transcriptomes
 
     -   MD5 = `fa5eb74767d180af5265d2d1f80b6430`
 
-    -   [BUSCOs](https://robertslab.github.io/sams-notebook/2020/02/07/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-MEGAN-Transcriptome.html): `C:25.1%[S:19.2%,D:5.9%],F:9.5%,M:65.4%,n:978`
+    -   [BUSCOs](https://robertslab.github.io/sams-notebook/posts/2020/2020-02-07-Transcriptome-Assessment---BUSCO-Metazoa-on-Hematodinium-MEGAN-Transcriptome/index.html): `C:25.1%[S:19.2%,D:5.9%],F:9.5%,M:65.4%,n:978`
 
     -   FastA index (`samtools faidx`)
 
