@@ -456,7 +456,7 @@ Transcriptomes
 
           - [20210309.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt](https://gannet.fish.washington.edu/Atumefaciens/20210309_hemat_trinotate_transcriptome-v1.6/20210309.hemat_transcriptome_v1.6.fasta.trinotate.go_annotations.txt) (Trinotate)
 
-          - [Notebook entry](https://robertslab.github.io/sams-notebook/2021/03/09/Transcriptome-Annotation-Trinotate-Hematodinium-v1.6-on-Mox.html)
+          - [Notebook entry](https://robertslab.github.io/sams-notebook/posts/2021/2021-03-09-Transcriptome-Annotation---Trinotate-Hematodinium-v1.6-on-Mox/index.html)
 
 -   [hemat_transcriptome_v1.5.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/hemat_transcriptome_v1.5.fasta)
 
