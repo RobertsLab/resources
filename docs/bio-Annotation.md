@@ -14,7 +14,8 @@ Blast is a key component of working with lesser studied taxa. Here are some reso
 
 
 ### Blast Notebooks
-- <https://rpubs.com/sr320/1026094> - Blast tutorial from FISH 546 ()
+- <https://robertslab.github.io/tusk/modules/04-blast.html> - Blast and annotation on **tusk**.    
+- <https://rpubs.com/sr320/1026094> - Blast tutorial from FISH 546 (2023)
 - <https://github.com/RobertsLab/code/blob/master/09-blast.ipynb> - An example of how one might take a multi sequence fasta file and using NCBI Blast, compare the sequences with the Swiss-Prot Database on their own computer.
 
 - <https://github.com/RobertsLab/code/blob/master/10-blast-2-slim.ipynb> - A notebook to seamlessly take blast output to GO Slim list
