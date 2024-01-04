@@ -2,6 +2,9 @@ Description of active alarms in the lab, how to configure, and what phone calls 
 
 
 # Alarm: Sensaphone Model 1104
+
+The Sensaphone monitors power status, room temperature, and -80<sup>o</sup>C freezer temperature limits.
+
 User Manual [here](http://www.sensaphone.com/legacy-products/1104Manual.pdf)
 
 Incoming Phone Number: 1-206-685-7806
@@ -22,9 +25,9 @@ Sensaphone Connections:
 
 - 1: Temperature sensor for ambient temperature inside of room.
 
-- 2: Power on/off sensor for power being supplied to freezer 1
+- 2: Temperature limit sensor for Roberts Lab -80<sup>o</sup>C freezer (Normally closed trigger)
 
-- 3: ~~Power on/off sensor for power being supplied to freezer 2~~ (disabled 20220803 by SJW)
+- 3: Temperature limit sensor for former Horner-Devine Lab -80<sup>o</sup>C freezer (i.e. "middle" freezer. Normally closed trigger) (disabled 20240104 by SJW)
 
 - 4: Not hooked to anything.
 
