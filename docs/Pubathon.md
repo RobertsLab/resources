@@ -1,5 +1,3 @@
-# Pub-a-thon 2024
-
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfAcAJ6v6I7bTcoIOBZpxoH_N_ZM7IlPBuaRCPGmuefBYYs9g/viewform?embedded=true" width="640" height="895" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 
