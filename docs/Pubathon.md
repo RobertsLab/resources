@@ -8,12 +8,10 @@
 [Paper Repo](https://github.com/sr320/ceabigr)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-
 10) **Single cell RNA-seq** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)     
 [GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
 
 9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
 [Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
@@ -30,17 +28,17 @@
 [Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-3) **Coral nutritional exchange across ontogeny** - Ariana et al      
+3) **Ontogenetic shifts in metabolism and symbiotic nutritional exchange across a developmental time series in a vertically-transmitting species of reef-building coral** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)     
 [Paper repo](https://github.com/AHuffmyer/EarlyLifeHistory_Energetics)   
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
 
-4) **Coral nutritional exchange in larvae under thermal stress** - Ariana et al      
+4) **Thermal stress reduces photosynthate metabolism and disrupts carbon and nitrogen cycling in Montipora capitata coral larvae** - _Ariana_      
 [Working draft](https://docs.google.com/document/d/1D-iMattGZxOVxhnQd1ib1ML0I_Vqoy7jkGPfxmmNd_8/edit)  
 [Paper repo](https://github.com/AHuffmyer/SymbioticIntegration)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)   
 
-5) **Coral phenotypes shaped by host and symbiont physiological plasticity across environments in Moorea French Polynesia** - Ariana et al      
+5) **Seasonal environmental variation drives host and symbiont physiological state of three important reef-building coral species in Moorea, French Polynesia** - _Ariana_      
 [Working draft](https://docs.google.com/document/d/1gBrDypEwR4ont16BX5hCv0N3kpMmFW-lJlT0PVaHvEM/edit)    
 [Paper repo](https://github.com/urol-e5/timeseries)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)  
