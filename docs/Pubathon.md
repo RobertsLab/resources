@@ -13,20 +13,10 @@
 [GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
-[Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
-[Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
-
 10) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy) </br>
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
-
-6) **Tanner crab and Hematodinium gene expression** - Aspen et al  
-[Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
-[Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 3) **Ontogenetic shifts in metabolism and symbiotic nutritional exchange across a developmental time series in a vertically-transmitting species of reef-building coral** - Ariana et al      
 [Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)     
@@ -79,7 +69,15 @@
 [GitHub](https://github.com/hputnam/Geoduck_Meth)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
 
+9) **Mussel (Mytilus trossulus) heat stress response** - Zach & Chris et al   
+[Working Draft](https://docs.google.com/document/d/10QEJBxxuIshe86aFV_8EuL5WKzX9SvJT_2HosNxuZqQ/edit?usp=sharing)    
+[Paper Repo](https://github.com/afcoyle/fish541_lab) </br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
+6) **Tanner crab and Hematodinium gene expression** - Aspen et al  
+[Working draft](https://docs.google.com/document/d/1hZ9gT6gd8aDRjrE9_JgY31TPvRKGyjTerdN2aebXrT8/edit)  
+[Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 # Pub-a-thon 2023
 
