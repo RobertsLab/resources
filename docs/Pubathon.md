@@ -13,6 +13,11 @@
 [GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
+41) **Manila Clam Priming** - _Mac_    
+[Working Draft](https://docs.google.com/document/d/1eJtVsJ7tXpFlP8RmqeQecYmWLiCoKhNxPHc7zgKFlbM/edit)     
+[GitHub](cccc)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
 10) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
 [Working Draft](https://docs.google.com/document/d/17mcGDI-TWmU4vgBXmiXmeofe4qEuFH5inBKBHhG9tzg/edit?usp=sharing)    
 [GitHub](https://github.com/mattgeorgephd/project-gigas_ploidy) </br>
