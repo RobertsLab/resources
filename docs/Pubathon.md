@@ -3,10 +3,15 @@
 
 # 2024 Contenders
 
-15) **CEABiGR** Yaamini, Sam et al     
+1) **CEABiGR** Yaamini, Sam et al     
 [Working Draft](https://docs.google.com/document/d/1O63kXExAe-bBPXv6fTEZAof8Q2-ARI5Y3XyD5oxkiGE/edit#heading=h.cmsdeulk6pg5)    
 [Paper Repo](https://github.com/sr320/ceabigr)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)    
+
+2) **CEABiGR lncRNA** Zach, Yaamini et al     
+[Working Draft](https://docs.google.com/document/d/1Nx1GdJ2igvxWMo5VWHY2fL_H_Ws_ek-dFwd70-nQTrk/edit?usp=sharing)  
+[Paper Repo](https://github.com/zbengt/oyster-lnc)    
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 10) **Single cell RNA-seq** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)     
