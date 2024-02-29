@@ -99,6 +99,11 @@
 [Paper repo](https://github.com/afcoyle/hemat_bairdi_transcriptome)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
+20) **Pacific cod heat stress response** - Kathleen  
+[Working Draft](https://docs.google.com/document/d/1CrTyvBxRCPPmQ5h3x3-Bhh3-2bV7tBmfjbXUyEb7ufs/edit#heading=h.o7w81ibur94r)  
+[Project repo](https://github.com/RobertsLab/project-cod-temperature)  
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
 # Pub-a-thon 2023
 
 
