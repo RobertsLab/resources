@@ -74,13 +74,13 @@
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 18) **Immune response of _Pycnopodia helianthoides_ to Sea Star Wasting Disease** - _Grace C et al_
-[working draft](https://docs.google.com/document/d/1FypEY1RVVMtoEJwA8llRQlZBnZu9hZpeEPbDPVF4-FA/edit?usp=sharing)
-[paper repo](https://github.com/grace-ac/paper-pycno-sswd-2021)
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+[working draft](https://docs.google.com/document/d/1FypEY1RVVMtoEJwA8llRQlZBnZu9hZpeEPbDPVF4-FA/edit?usp=sharing)       
+[paper repo](https://github.com/grace-ac/paper-pycno-sswd-2021)        
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)       
 
 19) **Size class/age class _Pycnopodia helianthoides_ exposed to sea star wasting** - _Grace C et al_
-[working draft](https://docs.google.com/document/d/1JPoior7O1m_WsQLka7b5b1m1YausBo2rJrd5ROHan3c/edit?usp=sharing)
-[project repo](https://github.com/grace-ac/project-pycno-sizeclass-2022)
+[working draft](https://docs.google.com/document/d/1JPoior7O1m_WsQLka7b5b1m1YausBo2rJrd5ROHan3c/edit?usp=sharing)      
+[project repo](https://github.com/grace-ac/project-pycno-sizeclass-2022)        
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
 2) **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
