@@ -104,17 +104,22 @@
 [Project repo](https://github.com/RobertsLab/project-cod-temperature)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-21) **Nature Opinion** Chris     
+21) **E5 deep dive ncRNA gene expression** - Kathleen , Zach, et al.  
+[Working Draft](https://docs.google.com/document/d/1u787Lr15EGxnrPROKGOUNJ_zqxhDiIfJ2GGPxdKoPew/edit?usp=sharing)  
+[Project repo](https://github.com/urol-e5/deep-dive)   
+![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+
+22) **Nature Opinion** Chris     
 [Working Draft](https://docs.google.com/document/d/17gK1FuTZyyqm8KyjrUBm7r1bSE0xbbADBVPXRUlqRZI/edit?usp=sharing)    
 [Google Drive Folder](https://drive.google.com/drive/folders/1fehzwo7lUBpH_8ZGpd2oImHq94K9XzNj?usp=sharing)   
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-22) **Mussel Biomarkers** Chris et al     
+23) **Mussel Biomarkers** Chris et al     
 [Working Draft](https://docs.google.com/document/d/1KDYsUN2VHjrJ22kT_9kV3q5UR3mO1byr8u8zpv79Aok/edit?usp=sharing)    
 [Paper Repo](https://github.com/ChrisMantegna/WDFWmussels)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
 
-23) **Yellow Island eDNA** Chris et al    
+24) **Yellow Island eDNA** Chris et al    
 [Working Draft](https://docs.google.com/document/d/1w1Ulf7tpQ3LBkKHGwZ7An7L89PHkvLNwFQi51tDSwwE/edit?usp=sharing)   
 [Paper Repo](https://github.com/ChrisMantegna/YellowIsland2023)    
 ![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
