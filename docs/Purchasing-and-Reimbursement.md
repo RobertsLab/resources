@@ -129,7 +129,7 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 *Note Steps 1 and 2 need to occur prior to travel*
 
-Travel is handled via <https://treq.environment.uw.edu>
+Travel is handled via <https://treq.environment.uw.edu> or [not]
 
 Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself. Many conferences have early-bird rates and discounted hotels. These should be considered. Note: - [The College of the Environment travel fund](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund/) is only for future travel so make sure you apply for this two quarters in advance if possible. - FINS travel funds are prioritized for those involved in FINS or some other type of service related to SAFS (CoEnv SAC, SEAS, GSS, etc.).
 
@@ -148,6 +148,32 @@ Step 3) Secure transit and lodging following all [rules and regulations set fort
 Step 4) When travel is complete, submit required documentation via Treq
 
 If you need technical assistance you can email efast\@uw.edu.
+
+
+### Without TREQ
+
+Need to submit the request via eFAST@uw.edu.  They will need to copy Steven on this request so that you can provide your approval.  Here are the pertinent things that will be needed for a request example of mileage and ferry. Modify according to request.
+ 
+Name the SUBJECT of Request as:  Mileage and Ferry Reimbursement Request for NAME OF STUDENT.
+ 
+Contact information (Full name, email address, phone number)  of the Biology Student.
+ 
+Destination
+ 
+Dates of Travel
+ 
+Time of Travel
+ 
+Business Purpose.  UW defines business purpose as: "Explanation of how the purchase or payment is used for UW business.”  A good business purpose may be, “Travel to the Point Whitney hatcher for field research to investigate stress related to oyster aquaculture. This travel was with two other students in Biology (name of student) and the School of Aquatic and Fishery Sciences (name of student).  I’ve drove to the field and paid for all ferry tickets, and requesting reimbursement for this expense.”
+ 
+Itemized the Amount
+Mileage                       ??
+Must be from “Home Duty Station” to the Destination.  Mileage is $0.670 / mile
+ 
+Ferry Ticket                ??
+TOTAL REIMBURSEMENT REQUEST   ??
+ 
+Budget Worktags and Name of Budget to be charged.
 
 
 ## Budgets UWFT System 
