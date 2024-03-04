@@ -129,7 +129,7 @@ Fill out [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DH
 
 *Note Steps 1 and 2 need to occur prior to travel*
 
-Travel is handled via <https://treq.environment.uw.edu> or [not]
+Travel is handled via <https://treq.environment.uw.edu> or [not](https://robertslab.github.io/resources/Purchasing-and-Reimbursement/#without-treq)
 
 Step 1) Need to identify and apply for any supplemental support. This includes at the School and College level. This also includes support offered by the conference itself. Many conferences have early-bird rates and discounted hotels. These should be considered. Note: - [The College of the Environment travel fund](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund/) is only for future travel so make sure you apply for this two quarters in advance if possible. - FINS travel funds are prioritized for those involved in FINS or some other type of service related to SAFS (CoEnv SAC, SEAS, GSS, etc.).
 
