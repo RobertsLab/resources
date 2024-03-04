@@ -166,12 +166,13 @@ Time of Travel
  
 Business Purpose.  UW defines business purpose as: "Explanation of how the purchase or payment is used for UW business.”  A good business purpose may be, “Travel to the Point Whitney hatcher for field research to investigate stress related to oyster aquaculture. This travel was with two other students in Biology (name of student) and the School of Aquatic and Fishery Sciences (name of student).  I’ve drove to the field and paid for all ferry tickets, and requesting reimbursement for this expense.”
  
-Itemized the Amount
-Mileage                       ??
-Must be from “Home Duty Station” to the Destination.  Mileage is $0.670 / mile
- 
-Ferry Ticket                ??
-TOTAL REIMBURSEMENT REQUEST   ??
+Itemized the Amount        
+Mileage                           ??
+Must be from “Home Duty Station” to the Destination.  Mileage is $0.670 / mile     
+
+
+Ferry Ticket                ??        
+TOTAL REIMBURSEMENT REQUEST   ??      
  
 Budget Worktags and Name of Budget to be charged.
 
