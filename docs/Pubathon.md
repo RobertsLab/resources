@@ -122,7 +122,18 @@
 24) **Yellow Island eDNA** Chris et al    
 [Working Draft](https://docs.google.com/document/d/1w1Ulf7tpQ3LBkKHGwZ7An7L89PHkvLNwFQi51tDSwwE/edit?usp=sharing)   
 [Paper Repo](https://github.com/ChrisMantegna/YellowIsland2023)    
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) 
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
+25) **Clam OA Differential Expression** Megan
+[Working Draft](https://docs.google.com/document/d/1zEKo6ri_JoHVy7hb-GQv3jXFM8_B10DGM7uuMXbkZUs/edit?usp=sharing)
+[Repo](https://github.com/meganewing/clamgonads-macsamples)
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
+27) **Ostrea lurida Sex-Determination Genes** Megan
+[Wokring Draft](https://docs.google.com/document/d/1Dcy0a89Ip6q4RzOpfcFlDQ8WBUDnsqm1Z2Rk7ved8Ds/edit?usp=sharing)
+Repo not created yet
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+
 
 # Pub-a-thon 2023
 
