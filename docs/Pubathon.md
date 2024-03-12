@@ -112,7 +112,7 @@
 22) **Nature Opinion** Chris     
 [Working Draft](https://docs.google.com/document/d/17gK1FuTZyyqm8KyjrUBm7r1bSE0xbbADBVPXRUlqRZI/edit?usp=sharing)    
 [Google Drive Folder](https://drive.google.com/drive/folders/1fehzwo7lUBpH_8ZGpd2oImHq94K9XzNj?usp=sharing)   
-![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
+![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
 
 23) **Mussel Biomarkers** Chris et al     
 [Working Draft](https://docs.google.com/document/d/1KDYsUN2VHjrJ22kT_9kV3q5UR3mO1byr8u8zpv79Aok/edit?usp=sharing)    
