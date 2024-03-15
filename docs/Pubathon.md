@@ -139,10 +139,10 @@
 [Repo placeholder](https://github.com/valeste)            
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
-28) **Anthopleura elegantissima Multiple Stressors** Sarah 
-[Working Draft](https://docs.google.com/document/d/1uQw-FySSddiACy6p5DJluWDczW-lD599Jcl3b1iU0O4/edit?usp=sharing)
-[GitHub Project](https://github.com/sarahtanja/anemone-leachate-heat/tree/main)
-![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg)
+28) **Anthopleura elegantissima Multiple Stressors** Sarah <br>
+[Working Draft](https://docs.google.com/document/d/1uQw-FySSddiACy6p5DJluWDczW-lD599Jcl3b1iU0O4/edit?usp=sharing) <br>
+[GitHub Project](https://github.com/sarahtanja/anemone-leachate-heat/tree/main) <br>
+![status](https://img.shields.io/badge/pub--a--thon%20status-early%20draft-yellow.svg) <br>
 
 # Pub-a-thon 2023
 
