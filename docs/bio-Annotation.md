@@ -153,7 +153,7 @@ The following steps will use the UniProt Python API to create a tab-delimited fi
     ```
     - IMPORTANT: Requires Python >= 3!
 
-        - If using R Markdown, run the above in a `bash` chunk:
+    - If using R Markdown, run the above in a `bash` chunk:
 
  The resulting output file (`uniprot-retrieval.tsv.gz`) will be in the specified directory.
 
