@@ -637,6 +637,20 @@ Transcriptomes:
 
 ------------------------------------------------------------------------
 
+## *Ostrea chil*
+
+Genome:
+
+-   [HapA]
+
+-   [HapB]
+
+Protein:
+
+-
+
+Blast:
+
 ## *Panopea generosa*
 
 Genome:
