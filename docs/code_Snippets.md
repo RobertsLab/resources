@@ -50,6 +50,18 @@ source .rvars
 
 ---
 
+## Git
+
+### Add files >100MB to .gitignore file
+
+`find ./* -size +100M | cat >> .gitignore`
+
+Run this from top directory of your repo.
+
+This finds all files in your current directory (presumably a Git repo) greater than 100MB and writes the paths to those files in your .gitignore file. 
+
+---
+
 ## FastQ files
 
 ### Create separate arrays for R1 and R2 reads
