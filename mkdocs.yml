@@ -62,8 +62,8 @@ nav:
        - Installing software: 'mox_Installing-Programs.md'
        - Jupyter Notebooks: 'mox_Jupyter-Notebooks.md'
        - RStudio Server: 'mox_RStudio-Server.md'
-      - 'Klone Guides':
-        - Containers: 'klone_containers.md'
+     - 'Klone Guides':
+       - Containers: 'klone_containers.md'
 
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
