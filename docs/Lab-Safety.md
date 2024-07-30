@@ -31,7 +31,7 @@
 
 5. Review our Standard Operating Protocols (SOPs) for chemical handling and disposal:
 
-    - [Roberts Lab SOPs](Chemical-Standard-Operating-Protocols.md)
+    - [Roberts Lab SOPs](../lab_safety_docs/standard-operating-procedures/)
 
 6. Schedule a time with Sam to tour the labs to learn the locations of phones, eye wash stations, fire extinguishers, first aid kits, emergency showers, other lab-specific points of emphasis.
 
@@ -51,7 +51,7 @@
 
 - [UW MyChem](https://mychem.ehs.washington.edu/)
 
-- [Roberts Lab SOPs](Chemical-Standard-Operating-Protocols.md)
+- [Roberts Lab SOPs](../lab_safety_docs/standard-operating-procedures/)
 
 
 ---
