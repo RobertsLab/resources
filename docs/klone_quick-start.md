@@ -18,10 +18,10 @@
     <program_name> <programs_arguments>
     ```
 
-  - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
+    - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
 
 3. Submit job to SLURM scheduler (i.e. start your job):
 
-  - `sbatch <slurm_script_name.sh>`
+    - `sbatch <slurm_script_name.sh>`
 
-  - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
+    - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
