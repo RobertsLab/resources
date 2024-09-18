@@ -63,6 +63,7 @@ nav:
        - Jupyter Notebooks: 'mox_Jupyter-Notebooks.md'
        - RStudio Server: 'mox_RStudio-Server.md'
      - 'Klone Guides':
+       - Quick Start: 'klone_quick-start.md'
        - Containers: 'klone_containers.md'
 
    - 'Databases and Catalogs':
