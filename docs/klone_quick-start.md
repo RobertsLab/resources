@@ -5,18 +5,18 @@
 - `ssh <username>@klone.hyak.uw.edu`
 
 2. Create a SLURM script (e.g. `20240917-cgig-ncbi-blastx.sh`) with the following commands (these come after the SLURM header):
-
-```bash
-module load apptainer
-
-
-apptainer exec \
---home $PWD \
---bind /mmfs1/home/ \
---bind /mmfs1/gscratch/ \
-/gscratch/srlab/containers/srlab-bioinformatics-container-<git_commit_hash>.sif \
-<program_name> <programs_arguments>
-```
+    
+    ```bash
+    module load apptainer
+    
+    
+    apptainer exec \
+    --home $PWD \
+    --bind /mmfs1/home/ \
+    --bind /mmfs1/gscratch/ \
+    /gscratch/srlab/containers/srlab-bioinformatics-container-<git_commit_hash>.sif \
+    <program_name> <programs_arguments>
+    ```
 
 - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
 
