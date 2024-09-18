@@ -2,7 +2,9 @@
 
 1. SSH into Klone:
 
-- `ssh <username>@klone.hyak.uw.edu`
+- `ssh <UW_NetID>@klone.hyak.uw.edu`
+
+    - You'll need to replace anything in `<UW_NetID>` (including the `<` and `>`) with your UW NetID.
 
 2. Create a SLURM script (e.g. `20240917-cgig-ncbi-blastx.sh`) with the following commands (these come after the SLURM header):
 
@@ -24,4 +26,4 @@
 
     - `sbatch <slurm_script_name.sh>`
 
-    - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
+        - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
