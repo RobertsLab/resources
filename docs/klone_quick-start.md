@@ -1,6 +1,6 @@
 # Quick start guide to running a job on Klone
 
-See the ["Quick Start" instructions](./klone_quick-start.md) for a more detailed description of how set up and run a job on Klone.
+See the ["Running a job" instructions](./klone_Running-a-Job.md) for a more detailed description of how set up and run a job on Klone.
 
 1. SSH into Klone:
 
