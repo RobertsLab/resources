@@ -65,6 +65,12 @@ nav:
      - 'Klone Guides':
        - Quick Start: 'klone_quick-start.md'
        - Containers: 'klone_containers.md'
+       - New User: 'klone_Adding-a-User.md'
+       - Logging in: 'klone_Logging-In.md'
+       - Node Types: 'klone_Node-Types.md'
+       - Data Storage and System Organization: 'klone_Data-Storage-and-System-Organization.md'
+       - File Transfers: 'klone_File-Transfers.md'
+       - Running a job: 'klone_Running-a-Job.md'
 
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
