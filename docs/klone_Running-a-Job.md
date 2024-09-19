@@ -8,7 +8,7 @@
 `sbatch` can be run from a login node with the command:
 
 ```bash
-`sbatch <slurm_script_name.sh>`
+sbatch <slurm_script_name.sh>
 ```
 
 `sbatch` requires a shell script to function, with two main parts: the header and the execute portion.
