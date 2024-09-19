@@ -1,14 +1,13 @@
 
-**NOTE** - Please use [`/gscratch/scrubbed/<UW_NetID>`](https://robertslab.github.io/resources/klone_Data-Storage-and-System-Organization/#3-temporary-storage) for running jobs (i.e. writing output files to). As the name suggests, you will need to move files to a "bird" for archival storage. If you are needing a set of large raw files for analysis - also place these in the `/gscratch/scrubbed/<UW_NetID>` directory.
+**NOTE** - Use [`/gscratch/scrubbed/<UW_NetID>`](https://robertslab.github.io/resources/klone_Data-Storage-and-System-Organization/#3-temporary-storage) for running jobs (i.e. writing output files to). As the name suggests, you will need to move files to a "bird" for archival storage. If you are needing a set of large raw files for analysis - also place these in the `/gscratch/scrubbed/<UW_NetID>` directory.
 
 ---
 
-`sbatch` is the main execution command for the job scheduler ([SLURM](https://slurm.schedmd.com/overview.html)). It spools up an compute node for long term or compute intensive tasks such as assemblies, blasts, alignments, etc.
+`sbatch` is the main execution command for the job scheduler ([SLURM](https://slurm.schedmd.com/overview.html)). It spools up a compute node for long-term or compute-intensive tasks such as assemblies, blasts, alignments, etc.
 
-`sbatch` can be run from a login node with the command
+`sbatch` can be run from a login node with the command:
 
-
-```
+```bash
 `sbatch <slurm_script_name.sh>`
 ```
 
@@ -66,11 +65,12 @@ This section contains the commands/programs you want executed. You can treat it 
     --bind /mmfs1/home/ \
     --bind /mmfs1/gscratch/ \
     /gscratch/srlab/containers/srlab-bioinformatics-container-<git_commit_hash>.sif \
-    <program_name> <programs_arguments>
+    <commands_script.sh>
     ```
+
 ## SLURM Script Template/Example - Multiple Commands
 
-If you need to execute multiple commands using a container, which will usually be the case, you'll need to place those commands in a separte script.
+If you need to execute multiple commands using a container, which will usually be the case and is shown in the example directly above this, you'll need to place those commands in a separate script.
 
 ### Command script example
 
@@ -164,7 +164,7 @@ Here's an example script, called `commands.sh`. This is where we'll set all of o
     echo "Finished logging system $PATH."
     ```
 
-To run the `commands.sh` script above in our conatiner on Klone, we would have the following SLURM script.
+To run the `commands.sh` script above in our conatiner on Klone, we would use the following SLURM script, which we'll call `example-SLURM-script.sh`.
 
 This example will perform the following:
 
@@ -222,6 +222,15 @@ apptainer exec \
 /gscratch/srlab/containers/srlab-bioinformatics-container-"${git_commit_hash}$".sif \
 commands.sh
 ```
+
+Finally, to submit the job to SLURM:
+
+```bash
+sbatch example-SLURM-script.sh
+```
+
+This will execute `example-SLURM-script.sh` which contains instructions for submitting it into the SLURM job scheduler and onto our slice (the header portion). The rest of the script will then be executed, which will result in the execution of `commands.sh`.
+
 
 ## SLURM Script Template/Example - Single Command
 
