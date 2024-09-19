@@ -1,10 +1,12 @@
 # Quick start guide to running a job on Klone
 
+See the ["Quick Start" instructions](./klone_quick-start.md) for a more detailed description of how set up and run a job on Klone.
+
 1. SSH into Klone:
 
 - `ssh <UW_NetID>@klone.hyak.uw.edu`
 
-    - You'll need to replace anything in `<UW_NetID>` (including the `<` and `>`) with your UW NetID.
+    - You'll need to replace `<UW_NetID>` (including the `<` and `>`) with your UW NetID.
 
 2. Create a SLURM script (e.g. `20240917-cgig-ncbi-blastx.sh`) with the following commands (these come after the [SLURM header](./klone_Running-a-Job.md)):
 
