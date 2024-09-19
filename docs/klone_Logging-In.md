@@ -7,7 +7,7 @@
 Example:
 
 ```
-D-69-91-141-150:~ Sean$ ssh seanb80@mox.hyak.uw.edu
+D-69-91-141-150:~ Sean$ ssh seanb80@klone.hyak.uw.edu
 Password:
 Enter passcode or select one of the following options:
 
@@ -37,5 +37,5 @@ Run "scontrol show res" to see any reservations in place that will
 prevent your jobs from running with the reason "ReqNodeNotAvail".
 
 
-[seanb80@mox2 ~]$
+[seanb80@klone2 ~]$
 ```
