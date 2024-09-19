@@ -16,7 +16,7 @@ The definition file is in a git repo on Klone:
 
 `/gscratch/srlab/gitrepos/RobertsLab/code/apptainer_definition_files/srlab-bioinformatics-container.def`
 
-- To minimize conflicts, please _do not_ modify the git repo on Klone (other than using `git pull` to update the repo). Any changes should be made on your own computer or on GitHub.
+- To minimize conflicts, please _do not_ modify the git repo on Klone (other than using `git pull` to update the repo). Any changes should be made on your own computer or on GitHub, and then pulled to Klone.
 
 # Building containers
 
