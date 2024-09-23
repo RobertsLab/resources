@@ -23,3 +23,7 @@ The definition file is in a git repo on Klone:
 Containers are "built" using a definition file. Once built, they exist as a single file. Since we're using [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), the container files will have the `.sif` suffix. Currently, we use the script [`srlab-bioinformatics-build.sh`](https://github.com/RobertsLab/code/blob/master/apptainer_definition_files/srlab-bioinformatics-build.sh) (GitHub) to build the container directly on Klone. However, the container could be built on any computer running [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), and the resulting file could be transferred to Klone. 
 
 The build process must be initiated _manually_. If the definition file(s) is updated, then the user must remember to re-build the container, in order to incorporate the new changes!
+
+# More Resources
+
+[UW Hyak Documentation](https://hyak.uw.edu/docs) is a great way to start using Hyak (Klone) by providing (relatively) easy to follow walkthrough of how to access Klone, what the different nodes are, examples of how to build containers, and more.
