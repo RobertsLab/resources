@@ -1,6 +1,6 @@
 # Containers
 
-Computing on Klone requires the use of containers. See the [section about containers](./klone_containers.md) for more background info.
+Computing on Klone requires the use of containers. Specifically, the Univ. of Washington utilizes [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity) on Klone for building/executing/running containers. See the [section about containers](./klone_containers.md) for more background info.
 
 The container the Roberts Lab uses hosts virtually all of the software we use. Its location on Klone:
 
@@ -20,3 +20,6 @@ The definition file is in a git repo on Klone:
 
 # Building containers
 
+Containers are "built" using a definition file. Once built, they exist as a single file. Since we're using [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), the container files will have the `.sif` suffix. Currently, we use the script [`srlab-bioinformatics-build.sh`](https://github.com/RobertsLab/code/blob/master/apptainer_definition_files/srlab-bioinformatics-build.sh) (GitHub) to build the container directly on Klone. However, the container could be built on any computer running [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), and the resulting file could be transferred to Klone. 
+
+The build process must be initiated _manually_. If the definition file(s) is updated, then the user must remember to re-build the container, in order to incorporate the new changes!
