@@ -30,3 +30,15 @@ See the ["Running a job" instructions](./klone_Running-a-Job.md) for a more deta
     - `sbatch <slurm_script_name.sh>`
 
         - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
+
+---
+
+For more information, check out the following:
+
+- Roberts Lab Klone guides:
+
+    - [Using containers](./klone_containers.md)
+    - [Storage on Klone](./klone_Data-Storage-and-System-Organization.md)
+    - [Running a job on Klone](./klone_Running-a-Job.md)
+
+- [UW Hyak Documentation](https://hyak.uw.edu/docs)
