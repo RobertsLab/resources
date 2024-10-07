@@ -40,6 +40,8 @@ Graduate school is not easy, and not for everyone. Graduate school will be very 
 
 There is a lot going on during your graduate education. Staying organized and not overwhelmed is key. In the same vein, time-management is key. There are several strategies for this. I suggest reading ["Getting Things Done"](https://gettingthingsdone.com/what-is-gtd/). Finding time outside of lab to recharge your mind and body is essential.
 
+**Graduate students are expected to meet every two weeks with Steven, having a clear agenda and goals for the meeting. This should include your action items for the next two weeks, as well as self-assessment on performance for the prior two weeks. All of this information should be published in your lab notebook no less than 24 hours prior to the meeting.**
+
 #### Expectations on Performance
 
 Graduate students will complete a [Graduate Research Plan](https://fish.uw.edu/wp-content/uploads/sites/29/2020/06/GSAR.pdf) that will be revisited on a quarterly basis.
