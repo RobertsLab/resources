@@ -46,13 +46,14 @@ Graduate students will complete a [Graduate Research Plan](https://fish.uw.edu/w
 
 This document is in part meant to delineate expected progress on thesis research. If there is inadequate progress made on thesis research (determined in part by entire committee when in place), action will be taken at the department level (commonly a written warning with specific expectations outlined). If targets are not reached, the situation will be reported to the UW Graduate School where a formal probation period could be initiated. 
 
-Research Credit Hours: The following information regarding research credit hours should be confirmed with SAFS Graduate Program Advisor, but typically a graduate student will need to be signed up for at least 10 credit hours during the academic year. If these are not graded courses they should be research credit hours. Note, with the exception of summer, students are limited to a maximum of 10 credits per quarter of any combination of courses numbered 600, 700, or 800. Unsatisfactory progress on thesis research could result in no credit (NC).
+Research Credit Hours: The following information regarding research credit hours should be confirmed with SAFS Graduate Program Advisor, but typically a graduate student will need to be signed up for at least 10 credit hours during the academic year. If these are not graded courses they should be research credit hours. Note, with the exception of summer, students are limited to a maximum of 10 credits per quarter of any combination of courses numbered 600, 700, or 800. **Unsatisfactory progress on thesis research will result in no credit (NC) or possibly and/or a low grade for research credit hours.** This will result in a student being placed on academic probation.
 
 Graduate Student stipends are paid in a variety of manners. There are often specific responsibilities associated with this. If you are a TA you are expected to perform duties set forth for the position no more than 20 hours a week. If you are asked to perform duties that exceed 20 hours a week you need to inform Professor Roberts ASAP.
 
 Another common form of stipend payment is a RA. A RA can be associated with a faculty grant or certain funds from SAFS are distributed as an RA. Responsibilities as set forth as part of a RA require 20 hours of effort per week. If you are unclear of responsibilities of a RA for any given quarter please contact Professor Roberts ASAP. 
 
-To simplify efficient documentation of progress (useful for grant reporting) students on RAs will need summarize activity at the end of each month (or end of quarter) when funded on an RA. Please use this form: <https://forms.gle/ePCTJvBo2XnazGf47>
+To simplify efficient documentation of progress (useful for grant reporting) **students on RAs will need summarize activity every two weeks when funded on an RA**. Please use this form: <https://forms.gle/ePCTJvBo2XnazGf47>
+
 
 
 ---
