@@ -216,21 +216,21 @@ NOTE: These instructions are written to be performed on Klone (Hyak).
     ```
 
 
-1. Initiate an [interactive node](./klone_Node-Types.md).
+3. Initiate an [interactive node](./klone_Node-Types.md).
 
-2. Build the container from the definition file:
+4. Build the container from the definition file:
     
-    - NOTE: Resulting container name will be `rstudio-4.0.2.sjw-v1.0.sif`
+    - NOTE: Resulting container name will be `rstudio-4.4.1.sjw-v1.0.sif`
 
-    `apptainer build --fakeroot rstudio-4.0.2.sjw-v1.0.sif rstudio-4.0.2.sjw-v1.0.def`
+    `apptainer build --fakeroot rstudio-4.4.1.sjw-v1.0.sif rstudio-4.4.1.sjw-v1.0.def`
 
-3. Exit the interactive node.
+5. Exit the interactive node.
 
-4. Use the SLURM script above to start the container.
+6. Use the SLURM script above to start the container.
 
     - NOTE: Be sure to update the script line to reflect your container name:
     
     ```
     # Set container name
-    container="rstudio-4.0.2.sif"
+    container="rstudio-4.4.1.sif"
     ```
