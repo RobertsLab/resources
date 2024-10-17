@@ -1,11 +1,18 @@
 ## Quick Start Guide
 
-Example SLURM Script to launch RStudio Server:
+Example SLURM Script to launch RStudio Server.
 
-- User needs to set the following before starting script:
+The example will use the `srlab-bioinformatics-container-2bd5d44.sif` container in the SLURM script called `rstudio-server.job`.
 
-    - `--mail-user=`
-    - `--chdir=`
+- User needs to set/change the following in the SLURM script before starting script:
+
+    - `#SBATCH --time=02:00:00`
+    - `#SBATCH --mem=20G`
+    - `--chdir=/gscratch/scrubbed/${USER}/<add_rest_of_path>`
+    - `RSTUDIO_SIF="srlab-bioinformatics-container-2bd5d44.sif" # UPDATE THIS LINE`
+
+- Users should add the following line in `~/.Renviron`. If you don't have a `~/.Renviron`, you can create it like this: `touch ~/.Renviron`
+    
     - `R_LIBS_USER` in `~/.Renviron`. Example:
 
         ```shell
@@ -14,19 +21,19 @@ Example SLURM Script to launch RStudio Server:
         R_LIBS_USER=/gscratch/srlab/${USER}/R_libs_apptainer
         ```
 
-- After submitting script, view the SLURM output file located in `--chdir=` for information on:
+- After submitting script (`sbatch rstudio-server.job`), view the SLURM output file located in `--chdir=/gscratch/scrubbed/${USER}/<add_rest_of_path>` for information on:
 
     1. How to create tunnel to Mox node.
 
       - NOTE: When logging into the tunnel, the terminal will _not_ acknowledge when you've logged in. You need to leave this Terminal window open.
 
-    2. What address to direct your web browser to (localhost:8787).
+    2. What address to direct your web browser to (`localhost:8787`).
 
     3. Username/password to enter into RStudio Server interface.
 
     4. How to terminate RStudio Server and the SLURM job.
 
-- Example script uses the following Apptainer container image: `rstudio-4.4.1.sif`.
+- Example script uses the following Apptainer container image: `srlab-bioinformatics-container-2bd5d44.sif`.
 
 ```shell
 $ cat rstudio-server.job 
@@ -53,7 +60,7 @@ $ cat rstudio-server.job
 # jobID assigned by SLURM when our job is submitted.
 
 RSTUDIO_CWD="/gscratch/srlab/containers" # UPDATE THIS LINE
-RSTUDIO_SIF="rstudio-4.4.1.sif" # UPDATE THIS LINE
+RSTUDIO_SIF="srlab-bioinformatics-container-2bd5d44.sif" # UPDATE THIS LINE
 
 # Create temp directory for ephemeral content to bind-mount in the container
 RSTUDIO_TMP=$(/usr/bin/python3 -c 'import tempfile; print(tempfile.mkdtemp())')
