@@ -31,7 +31,7 @@ sbatch <slurm_script_name.sh>
 #SBATCH --mem=<b>450G</b>
 ##turn on e-mail notification
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=$USER
+#SBATCH --mail-user=$USER@uw.edu
 ## Specify the working directory for this job
 #SBATCH --chdir=<b>/gscratch/srubbed/<UW_NetID>/to/your/desired/directory</b>
 </code>
@@ -56,7 +56,7 @@ This section contains the commands/programs you want executed. You can treat it 
     # Load modules
     module load apptainer
 
-    # Execute Roberts Lab bionformatics container
+    # Execute Roberts Lab bioinformatics container
     # Binds home directory
     # Binds /gscratch directory
     # Directory bindings allow outputs to be written to the hard drive.
@@ -164,16 +164,16 @@ Here's an example script, called `commands.sh`. This is where we'll set all of o
     echo "Finished logging system $PATH."
     ```
 
-To run the `commands.sh` script above in our conatiner on Klone, we would use the following SLURM script, which we'll call `example-SLURM-script.sh`.
+To run the `commands.sh` script above in our container on Klone, we would use the following SLURM script, which we'll call `example-SLURM-script.sh`.
 
 This example will perform the following:
 
 - Request the slice assigned to our account (`--account=srlab`)
 - Request the parition on the `srlab` slice (`--partition=cpu-g2-mem2x`)
 - Set a run time of 10 days (`--time=10-00:00:00`)
-- Requst 120GB of memory (`--mem=120G`)
+- Request 120GB of memory (`--mem=120G`)
 - Identify the most recent version of the bioinformatics container to use.
-- Run the `commands.sh` script from the bioinformatics container to constuct a bowtie2 index of the provided genome FastA.
+- Run the `commands.sh` script from the bioinformatics container to construct a bowtie2 index of the provided genome FastA.
 
 NOTE: This is written to assume that the `commands.sh` script and the SLURM script are in the same directory.
 
@@ -211,7 +211,7 @@ git_commit_hash=$(find /gscratch/srlab/containers/ \
 # Load modules
 module load apptainer
 
-# Execute Roberts Lab bionformatics container
+# Execute Roberts Lab bioinformatics container
 # Binds home directory
 # Binds /gscratch directory
 # Directory bindings allow outputs to be written to the hard drive.
@@ -270,7 +270,7 @@ git_commit_hash=$(find /gscratch/srlab/containers/ \
 # Load modules
 module load apptainer
 
-# Execute Roberts Lab bionformatics container
+# Execute Roberts Lab bioinformatics container
 # Binds home directory
 # Binds /gscratch directory
 # Directory bindings allow outputs to be written to the hard drive.
@@ -281,7 +281,7 @@ apptainer exec \
 /gscratch/srlab/containers/srlab-bioinformatics-container-"${git_commit_hash}$".sif \
 bowtie2_build \
 --threads 28 \
-/gscratch/scrubbed/"$USER"/data/C_gigas/genomes/cgig-ncbi-genome.fasta \
+/gscratch/scrubbed/"${USER}"/data/C_gigas/genomes/cgig-ncbi-genome.fasta \
 cgig-ncbi-genome
 ```
 
