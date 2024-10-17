@@ -71,6 +71,7 @@ nav:
        - Data Storage and System Organization: 'klone_Data-Storage-and-System-Organization.md'
        - File Transfers: 'klone_File-Transfers.md'
        - Running a job: 'klone_Running-a-Job.md'
+       - RStudio Server: 'klone_RStudio-Server.md'
 
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
