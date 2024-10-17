@@ -6,7 +6,7 @@ The container the Roberts Lab uses hosts virtually all of the software we use. I
 
 `/gscratch/srlab/containers/srlab-bioinformatics-container-<git_commit_hash>.sif`
 
-- `<git_commit_hash>` is the corresponding git commit for the [container definition file](https://github.com/RobertsLab/code/blob/master/apptainer_definition_files/srlab-bioinformatics-container.def) from which the container was built. This allows users to re-build previous versions of containers, if desired. It also allows use to keep track of which version of the container is being used.
+- `<git_commit_hash>` is the corresponding git commit for the [container definition file](https://github.com/RobertsLab/code/blob/master/apptainer_definition_files/srlab-bioinformatics-container.def) from which the container was built. This allows users to re-build previous versions of containers, if desired. It also allows users to keep track of which version of the container is being used.
 
 # Definition file(s)
 
@@ -20,7 +20,7 @@ The definition file is in a git repo on Klone:
 
 # Building containers
 
-Containers are "built" using a definition file. Once built, they exist as a single file. Since we're using [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), the container files will have the `.sif` suffix. Currently, we use the script [`srlab-bioinformatics-build.sh`](https://github.com/RobertsLab/code/blob/master/apptainer_definition_files/srlab-bioinformatics-build.sh) (GitHub) to build the container directly on Klone. However, the container could be built on any computer running [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), and the resulting file could be transferred to Klone. 
+Containers are built using a definition file. Once built, they exist as a single file. Since we're using [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), the container files will have the `.sif` suffix. Currently, we use the script [`srlab-bioinformatics-build.sh`](https://github.com/RobertsLab/code/blob/master/apptainer_definition_files/srlab-bioinformatics-build.sh) (GitHub) to build the container directly on Klone. However, the container could be built on any computer running [Apptainer](https://apptainer.org/docs/user/main/introduction.html) (formerly Singularity), and the resulting file could be transferred to Klone. 
 
 The build process must be initiated _manually_. If the definition file(s) is updated, then the user must remember to re-build the container, in order to incorporate the new changes!
 
