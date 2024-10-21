@@ -23,7 +23,7 @@ See the ["Running a job" instructions](./klone_Running-a-Job.md) for a more deta
     ```
 
     - You'll need to replace anything in `<>` (including the `<` and `>`) with your specific requirements.
-    - `<commands-script.sh> is a Bash script containing all of the commands/programs you wan to run.
+    - `<commands-script.sh>` is a Bash script containing all of the commands/programs you wan to run.
 
 3. Submit job to SLURM scheduler (i.e. start your job):
 
