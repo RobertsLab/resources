@@ -200,6 +200,7 @@ There are steps after this that perform different subsetting that you may/not be
 
 Load libraries
 
+````
 ```{r setup, include=TRUE}
 library(GSEABase)
 library(GO.db)
@@ -213,6 +214,7 @@ knitr::opts_chunk$set(
   comment = ""         # Prevents appending '##' to beginning of lines in code output
 )
 ```
+````
 
 Variables
 
@@ -224,6 +226,7 @@ IMPORTANT: The user needs to provide:
 
 After that, there's almost no need to modify any of the chunks which follow.
 
+````
 ```{r set-variables, eval=TRUE}
 # Column names corresponding to gene name/ID and GO IDs
 GO.ID.column <- "Gene.Ontology.IDs"
@@ -237,9 +240,10 @@ input.file <- "https://raw.githubusercontent.com/grace-ac/paper-pycno-sswd-2021-
 goslims_obo <- "goslim_generic.obo"
 goslims_url <- "http://current.geneontology.org/ontology/subsets/goslim_generic.obo"
 ```
+````
 
 Set GSEAbase location and download `goslim_generic.obo`
-
+````
 ```{r download-generic-goslim-obo, eval=TRUE}
 # Find GSEAbase installation location
 gseabase_location <- find.package("GSEABase")
@@ -253,18 +257,20 @@ download.file(url = goslims_url, destfile = goslim_obo_destintation)
 # Loads package files
 gseabase_files <- system.file("extdata", goslims_obo, package="GSEABase")
 ```
+````
+
 
 Read in gene/GO file
-
+````
 ```{r read-in-gene-file, eval=TRUE}
 full.gene.df <- read.csv(file = input.file, header = TRUE, sep = "\t")
 
 str(full.gene.df)
 ```
-
+````
 
 Remove rows with NA, remove whitespace in GO IDs column and keep just gene/GO IDs columns
-
+````
 ```{r remove-NA-and-uniprotIDs, eval=TRUE}
 
 # Clean whitespace, filter NA/empty rows, select columns, and split GO terms using column name variables
@@ -276,22 +282,22 @@ gene.GO.df <- full.gene.df %>%
 
 str(gene.GO.df)
 ```
-
+````
 
 
 This flattens the file so all of the GO IDs per gene
 are separated into one GO ID per gene per row.
-
+````
 ```{r flatten-gene-and-GO-IDs, eval=TRUE}
 flat.gene.GO.df <- gene.GO.df %>% separate_rows(!!sym(GO.ID.column), sep = ";")
 
 str(flat.gene.GO.df)
 ```
-
+````
 
 
 Groups the genes by GO ID (i.e. lists all genes associated with each unique GO ID)
-
+````
 ```{r group-by-GO, eval=TRUE}
 grouped.gene.GO.df <- flat.gene.GO.df %>%
   group_by(!!sym(GO.ID.column)) %>%
@@ -299,23 +305,24 @@ grouped.gene.GO.df <- flat.gene.GO.df %>%
 
 str(grouped.gene.GO.df)
 ```
-
+````
 
 
 Map GO IDs to GOslims
 
 The mapping steps were derived from this [bioconductor forum response](https://support.bioconductor.org/p/128407/#128408)
-
+````
 ```{r vectorize-GOIDs, eval=TRUE}
 # Vector of GO IDs
 go_ids <- grouped.gene.GO.df[[GO.ID.column]]
 
 str(go_ids)
 ```
-
+````
 
 
 Creates new OBO Collection object of just GOslims, based on provided GO IDs.
+````
 ```{r extract-GOslims-from-OBO, eval=TRUE}
 
 # Create GSEAbase GOCollection using `go_ids`
@@ -326,14 +333,16 @@ slim <- getOBOCollection(gseabase_files)
 
 str(slim)
 ```
-
+````
 
 Get Biological Process (BP) GOslims associated with provided GO IDs.
+````
 ```{r retrieve-BP-GOslims, eval=TRUE}
 # Retrieve Biological Process (BP) GOslims
 slimdf <- goSlim(myCollection, slim, "BP", verbose)
 str(slimdf)
 ```
+````
 
 
 
@@ -347,7 +356,7 @@ Returns:
 - Counts of GO IDs matching to corresponding GOslim
 - Percentage of GO IDs matching to corresponding GOslim
 - GOIDs mapped to corresponding GOslim, in a semi-colon delimited format
-
+````
 ```{r map-GO-to-GOslims, eval=TRUE}
 # List of GOslims and all GO IDs from `go_ids`
 gomap <- as.list(GOBPOFFSPRING[rownames(slimdf)])
@@ -382,10 +391,10 @@ for (go_id in go_ids) {
 
 str(slimdf)
 ```
-
+````
 
 "Flatten" file so each row is single GO ID with corresponding GOslim rownames_to_column needed to retain row name info
-
+````
 ```{r flatten-GOslims-file, eval=TRUE}
 # "Flatten" file so each row is single GO ID with corresponding GOslim
 # rownames_to_column needed to retain row name info
@@ -403,12 +412,12 @@ grouped_slimdf <- slimdf_separated %>%
 
 str(grouped_slimdf)
 ```
-
+````
 
 
 Sorts GOslims by `Count`, in descending order and then
 selects just the `Term` and `Count` columns.
-
+````
 ```{r sort-and-select-slimdf-counts, eval=TRUE}
 
 slimdf.sorted <- slimdf %>% arrange(desc(Count))
@@ -418,7 +427,7 @@ slim.count.df <- slimdf.sorted %>%
 
 str(slim.count.df)
 ```
-
+````
 ---
 
 ## Genome features
