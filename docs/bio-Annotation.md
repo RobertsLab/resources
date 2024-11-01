@@ -216,7 +216,13 @@ knitr::opts_chunk$set(
 
 Variables
 
-IMPORTANT: The user needs to provide the names of the columns containing the GO IDs and the gene IDs! After that, there's almost no need to modify any of the chunks which follow.
+IMPORTANT: The user needs to provide:
+
+- names of the columns containing the GO IDs and the gene IDs!
+
+- Path or URL to input file.
+
+After that, there's almost no need to modify any of the chunks which follow.
 
 ```{r set-variables, eval=TRUE}
 # Column names corresponding to gene name/ID and GO IDs
