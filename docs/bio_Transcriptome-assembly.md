@@ -73,6 +73,20 @@ trinity_out_dir/"${fasta_name}" \
 
 - `--max_memory 100G` should _not_ be changed, per communications with the developer.
 
+Another example via SR
+```
+export PATH=/home/shared/jellyfish-2.3.0/bin:$PATH
+export PATH=/home/shared/bowtie2-2.4.4-linux-x86_64/:$PATH
+export PATH=/home/shared/salmon-1.4.0_linux_x86_64/bin:$PATH
+/home/shared/trinityrnaseq-v2.12.0/Trinity \
+--seqType fq \
+--max_memory 50G \
+--CPU 8 \
+--left ../data/raw/der/PSC-0517_R1_001.fastq.gz \
+--right ../data/raw/der/PSC-0517_R2_001.fastq.gz \
+--output ../output/01-data-explore/trinity
+```
+
 #### Use cases from our lab
 
 - [Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
