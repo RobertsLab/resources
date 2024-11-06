@@ -1,6 +1,6 @@
 ## Quick Start Guide
 
-[**Screen Recording How-to**](https://washington.zoom.us/rec/share/tM_4zmytAnDQrPoIxqDH0Q7RpaZviXcs9ih7ypUPSJCbaQc0Kwa6NnsqdeMvkvdF.P4qX95_arDgBeGMF)
+[**Screen Recording How-to**](https://washington.zoom.us/rec/share/tM_4zmytAnDQrPoIxqDH0Q7RpaZviXcs9ih7ypUPSJCbaQc0Kwa6NnsqdeMvkvdF.P4qX95_arDgBeGMF) (UW sign-in required)
 
 Example SLURM Script to launch RStudio Server.
 
