@@ -1,5 +1,7 @@
 ## Quick Start Guide
 
+[**Screen Recording How-to**](https://washington.zoom.us/rec/share/tM_4zmytAnDQrPoIxqDH0Q7RpaZviXcs9ih7ypUPSJCbaQc0Kwa6NnsqdeMvkvdF.P4qX95_arDgBeGMF)
+
 Example SLURM Script to launch RStudio Server.
 
 The example will use the `srlab-bioinformatics-container-2bd5d44.sif` container in the SLURM script called `rstudio-server.job`.
