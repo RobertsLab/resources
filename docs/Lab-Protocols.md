@@ -153,7 +153,31 @@ Step 5: Interpretation of results
 
 After obtaining the statistical results, interpret the results by comparing the fold change of the target gene in the experimental group to the control group. A fold change greater than 1 indicates upregulation, while a fold change less than 1 indicates downregulation.
   
-  
+### CFX Maestro Software
+
+#### Plate Spreadsheet Import
+
+1. Modify [cfx_plate_template.csv](../protocols/cfx_plate_template.csv) (CSV) to your desired `Target Name` and `Sample Name` and save as a CSV file.
+
+2. In CFX Maestro, create a new plate: `File > New > Plate...`.
+
+3. Highlight all wells.
+
+4. Select `Sample Type` of `Unknown`.
+
+5. In the `Target Names` section, click on the empty box next to `SYBR`.
+
+6. Click on the `Spreadsheet View/Importer` tab along the top.
+
+7. Click `Import`.
+
+8. Find the file you saved in Step 1 and click `Open`.
+
+9. Click `Okay`.
+
+10. Update plate layout with any different `Sample Type` (e.g. NTC, Positive Control, etc.), `Technical Replicates` and/or `Trace Styles`.
+
+11. Save the file.
   
 
 ## Common Physiological Assays of Interest
