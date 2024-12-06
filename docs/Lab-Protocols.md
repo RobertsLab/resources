@@ -64,18 +64,18 @@ Written 20150702 by Sam White.
 ## qPCR 
 One of the most used application is for gene quantification. Generally we will use SsoFast Evagreen Supermix (BioRad) ([protocol](https://github.com/RobertsLab/resources/blob/master/protocols/Commercial_Protocols/BioRad_Sso_Fast_EvaGreen_Supermix.pdf)). This requires that we start with cDNA.
 
-#### Standard Operating Protocol (SOP)
+### Standard Operating Protocol (SOP)
 Written 20150702 by Sam White.
 
-##### Reagents:
+Reagents:
 - SsoFast EvaGreen Supermix ([BioRad: 172-5203](https://github.com/sr320/LabDocs/blob/master/protocols/Commercial_Protocols/BioRad_Sso_Fast_EvaGreen_Supermix.pdf))
 - Primer working stocks (10uM)
 - DNase-free H2O (NanoPure H2O)
 
-##### Personal Protective Equipment (PPE):
+Personal Protective Equipment (PPE):
 - Gloves
 
-##### Equipment:
+Equipment:
 - Pipettes (10 - 1000uL)
 - Filtered pipette tips
 - White PCR plates, non-skirted, low profile ([USA Scientific: 1402-9590](http://www.usascientific.com/non-skirted-96-well-PCR-plate-low-profile-white.aspx))
@@ -84,9 +84,9 @@ Written 20150702 by Sam White.
 - Real-time PCR machine
 - ice
 
-#### Procedure
-##### Total Time: ~ 2.0 - 4.0hrs
-##### Cost/sample: ~ $0.42
+Procedure
+Total Time: ~ 2.0 - 4.0hrs
+Cost/sample: ~ $0.42
 
 1. Read the [manufacturer's protocol](https://github.com/sr320/LabDocs/blob/master/protocols/Commercial_Protocols/BioRad_Sso_Fast_EvaGreen_Supermix.pdf).
 2. Read <em>this</em> protocol.
