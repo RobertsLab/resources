@@ -329,7 +329,7 @@ Bisulfite Genomes:
 
     -   Gzipped tarball of bisulfite genome for use with Bismark
 
-    -   Creation details [here](https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.virginica-Bisulfite-Genome-wit-Bismark-on-Mox.html)
+    -   Creation details [here](https://robertslab.github.io/sams-notebook/posts/2019/2019-02-21-Data-Management---Create-C.virginica-Bisulfite-Genome-with-Bismark-on-Mox/index.html)
 
 Genome Feature Tracks
 
