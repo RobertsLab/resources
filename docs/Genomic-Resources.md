@@ -6,6 +6,26 @@ Here we try to compile genomic resources such that they are readily available an
 
 ---
 
+## Acropora pulchra
+
+- [Apulchra-genome.fa](https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome.fa) (504MB): `https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome.fa`
+
+  - MD5 = `1c500bff4aa07f8a097adf79260bf141`
+
+  - FastA index (`samtoold faidx`)
+
+    - [Apulchra-genome.fa.fai](https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome.fa.fai)
+
+  - Origin of this genome comes from this [GitHub Issue](https://github.com/urol-e5/timeseries_molecular/issues/1#issue-2564344644).
+
+### Bisulfite Genome
+
+- [Apulchra-genome-bisulfite.tar.gz](https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome-bisulfite.tar.gz) (1.3GB): `https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome-bisulfite.tar.gz`
+
+  - MD5 = `3d36bf7468dbd42eef7b718d612c81ce`
+  - Gzipped tarball of bisulfite genome for use with Bismark.
+  - Creation details [here](https://github.com/urol-e5/timeseries_molecular/blob/136243fb6f3894924ed1f5d8c29f5d2e93aaa8c7/D-Apul/code/00.21-D-Apul-BS-genome.Rmd).
+
 ## Chionoecetes bairdi
 
 * [cbai_genome_v1.01.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/cbai_genome_v1.01.fasta) (18MB)
