@@ -22,7 +22,7 @@ Here we try to compile genomic resources such that they are readily available an
 
 - [Apulchra-genome-bisulfite.tar.gz](https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome-bisulfite.tar.gz) (1.3GB): `https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome-bisulfite.tar.gz`
 
-  - MD5 = `3d36bf7468dbd42eef7b718d612c81ce`
+  - MD5 = `9e1db5875f210007a43e2083f01c2db9`
   - Gzipped tarball of bisulfite genome for use with Bismark.
   - Creation details [here](https://github.com/urol-e5/timeseries_molecular/blob/136243fb6f3894924ed1f5d8c29f5d2e93aaa8c7/D-Apul/code/00.21-D-Apul-BS-genome.Rmd).
 
