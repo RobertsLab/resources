@@ -20,11 +20,11 @@ Here we try to compile genomic resources such that they are readily available an
 
 ### Bisulfite Genome
 
-- [Apulchra-genome-bisulfite.tar.gz](https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome-bisulfite.tar.gz) (1.3GB): `https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Apulchra-genome-bisulfite.tar.gz`
+- [Bisulfite_Genome.tar.gz](https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Bisulfite_Genome.tar.gz) (1.3GB): `https://gannet.fish.washington.edu/gitrepos/urol-e5/timeseries_molecular/D-Apul/data/Bisulfite_Genome.tar.gz`
 
-  - MD5 = `9e1db5875f210007a43e2083f01c2db9`
+  - MD5 = `399a196fc1dfc202a9f084a8fb342dd9`
   - Gzipped tarball of bisulfite genome for use with Bismark.
-  - Creation details [here](https://github.com/urol-e5/timeseries_molecular/blob/136243fb6f3894924ed1f5d8c29f5d2e93aaa8c7/D-Apul/code/00.21-D-Apul-BS-genome.Rmd).
+  - Creation details [here](https://github.com/urol-e5/timeseries_molecular/blob/f8b2e0100ecaa9c0d008f7466cabdf54ab261de8/D-Apul/code/00.21-D-Apul-BS-genome.md).
 
 ## Chionoecetes bairdi
 
