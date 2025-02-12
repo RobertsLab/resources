@@ -52,7 +52,7 @@ sbatch <slurm_script_name.sh>
 
 This section contains the commands/programs you want executed. You can treat it like the command line, in that it executes commands sequentially as input. These can include program calls, module loading, making directories, etc. However, since Klone relies on the use of [containers](./klone_containers.md) to run, your SLURM script will _require_ the following:
 
-    ```bash
+  ```bash
     # Load modules
     module load apptainer
 
@@ -66,7 +66,7 @@ This section contains the commands/programs you want executed. You can treat it 
     --bind /mmfs1/gscratch/ \
     /gscratch/srlab/containers/srlab-bioinformatics-container-<git_commit_hash>.sif \
     <commands_script.sh>
-    ```
+  ```
 
 ## SLURM Script Template/Example - Multiple Commands
 
@@ -76,7 +76,7 @@ If you need to execute multiple commands using a container, which will usually b
 
 Here's an example script, called `commands.sh`. This is where we'll set all of our variables and execute various commands/programs we'd like for our analysis:
 
-    ```bash
+  ```bash
     #!/bin/bash
 
     # Requires Bash >=4.0, as script uses associative arrays.
@@ -96,13 +96,21 @@ Here's an example script, called `commands.sh`. This is where we'll set all of o
     [bowtie2_build]="bowtie2-build" \
     [samtools_index]="samtools index" \
     [samtools_sort]="samtools sort" \
-    [samtools_view]="samtools view"
+    [samtools_view]="samtools view" \
+    [samtools_faidx]="samtools faidx"
     )
 
 
     ## INPUT FILES ##
     genome_fasta="./data/C_gigas/genomes/cgig-NCBI-genome.fasta"
     genome_name="cgig-NCBI-genome"
+
+    ###################################################################################
+
+
+    # Create FastA index
+    ${programs_array[trinsamtools_faidxity]} "${genome_fasta}"
+
 
     ###################################################################################
 
@@ -162,7 +170,7 @@ Here's an example script, called `commands.sh`. This is where we'll set all of o
     echo "${PATH}" | tr : \\n
     } >> system_path.log
     echo "Finished logging system $PATH."
-    ```
+  ```
 
 To run the `commands.sh` script above in our container on Klone, we would use the following SLURM script, which we'll call `example-SLURM-script.sh`.
 
