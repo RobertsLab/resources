@@ -64,6 +64,7 @@ This section contains the commands/programs you want executed. You can treat it 
     --home $PWD \
     --bind /mmfs1/home/ \
     --bind /mmfs1/gscratch/ \
+    --bind /gscratch/ \
     /gscratch/srlab/containers/srlab-bioinformatics-container-<git_commit_hash>.sif \
     <commands_script.sh>
   ```
