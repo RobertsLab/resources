@@ -174,6 +174,8 @@ Here's an example script, called `commands.sh`. This is where we'll set all of o
 
 To run the `commands.sh` script above in our container on Klone, we would use the following SLURM script, which we'll call `example-SLURM-script.sh`.
 
+IMPORTANT: `<commands.sh>` needs to be executable!! Make sure to run `chmod +x <commands.sh>` to make it executable.
+
 This example will perform the following:
 
 - Request the slice assigned to our account (`--account=srlab`)
