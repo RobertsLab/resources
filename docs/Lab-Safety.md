@@ -66,3 +66,18 @@
 [Chemical Inventory & Safety Data Sheets (MyChem)](https://cspc.admin.uw.edu/mychem/default.aspx)
 
 [Hazardous Waste Online Collection Request](https://webapps.ehs.washington.edu/chemwaste/index.php)
+
+
+---
+## Best Practices for Lab Work 
+
+1. **Label all samples and reagents** with contents, date, and name with clear and durable labels.
+2. **Dispose of waste properly** according to lab guidelines. Clearly label all waste and ensure it is stored properly. Clean up all materials used after you are finished with lab work, an experiment, etc.
+3. **Keep the lab clean and organized** by wiping down surfaces, decontaminating, throwing away trash, and maintaining equipment regularly.
+4. **Report broken or malfunctioning lab equipment promptly** and label the equipment with your name, date, and issue. Follow up to ensure equipment is repaired, discarded, or calibrated as needed.
+5. **Maintain an up-to-date inventory** of chemicals, reagents, and consumables. If you use the last of an item, please notify the lab so it can be reordered.
+6. **Keep accurate records** of experiments, protocols, and observations in physical lab notebooks and digital systems, with regular data backups. 
+7. **Follow all lab safety protocols**. Wear appropriate PPE, be prepared for emergencies, and  follow safety and ethical guidelines.
+8. **Take care of equipment and instruments in the lab**. Many instruments are very expensive or difficult to repair. Ensure you know how to use an instrument and ask questions if you are unsure.
+9. **Avoid contamination** by cleaning areas before and after you conduct work in the lab and be mindful of where others are performing sensitive protocols.
+10. **Do your part to keep the lab running smoothly.** If you see that the lab needs some cleaning, picking up, or tips refilled please help! 
