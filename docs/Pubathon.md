@@ -6,7 +6,7 @@
 
 
 **Geoduck Env Memory Genome Paper** - Hollie and Shelly et al    
-[Working draft](https://docs.google.com/document/d/10Wmr_ceODWreZfS8WPekvoBwD2xEqlq28iSitapHTHA/edit)   
+[Working draft](https://docs.google.com/document/d/1jRkJ176TidUuDflp6Std-PzxNKKU4_A8RitpuvN9K-I/edit?usp=sharing)  
 [OSF](https://osf.io/yem8n/)
 [GitHub](https://github.com/hputnam/Geoduck_Meth)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-submitted-green.svg) 
