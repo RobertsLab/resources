@@ -258,7 +258,7 @@ This recipe is to make 150 mL of working stock. To run a single 96 well plate, a
 
 Store at 4°C in dark fridge until use. We recommend making a fresh batch of working stock within 7 days of use.    
 
-### 3. Supplies 
+##### 3. Supplies 
 
 - Bench top incubators 
 - [Temperature loggers](https://www.onsetcomp.com/products/data-loggers/mx2203) to be placed in incubators at treatment conditions 
@@ -275,7 +275,7 @@ Store at 4°C in dark fridge until use. We recommend making a fresh batch of wor
 
 Label plates with identifying number (e.g. "Plate 1", "Plate 2") or label cups with unique numbers/identifiers.    
 
-##### Protocol
+#### Protocol
 
 Conduct measurements at treatments desired. We typically conduct measurements at a control temperature and a high temperature each day. If multiple treatments are desired over multiple days, be sure to run a control treatment each day as reference. Ensure you account for tank effects or other batch effects by randomizing loading order, position in incubators, etc. 
 
@@ -284,7 +284,7 @@ For oysters, we recommend the following treatments:
 - For acute stress and survival testing: control temperature (10-20°C) and acute high temperature (40-44°C)
 - For thermal performance testing: control temperature (10-20°C), 36°C, 38°C, 40°C, 42°C
 
-##### Schedule 
+#### Schedule 
 
 Each day, the schedule will be as follows. Note that this schedule is written for a single person. If there are 2-3 people, the time frame for loading and assessing survival will be shorter than written here. 
 
@@ -299,7 +299,7 @@ Each day, the schedule will be as follows. Note that this schedule is written fo
 
 Note that it is critical to perform survival assessments so that you can analyze resazurin metabolic response for those that survive and those that die during the trials. If performing trials in 96 well plates or other small containers, we recommend performing survival assessment at the end of the incubation. If you are conducting trials in larger cups where you can see the animals without removing the resazurin solution, you can assess survival at each time point.  
 
-##### Load and prepare samples  
+#### Load and prepare samples  
 
 Before starting, set the incubator at the desired temperature.  
 
@@ -316,7 +316,7 @@ An example of photograph for size measurements:
 
 ![](https://github.com/AHuffmyer/ASH_Putnam_Lab_Notebook/blob/master/images/NotebookImages/oysters/polyic/20250310/20240310_plate1.jpeg?raw=true)  
 
-##### Measurements 
+#### Measurements 
 
 1. Turn on the computer and plate reader. Open the plate reader software.
 2. Create a new protocol that conducts end point measurements from the top of the plate using an excitation wavelength of 530 and emission wavelength of 590 nm. 
@@ -352,13 +352,13 @@ Here is an example of the plate maps from our work.
 Here is an example of the data sheet in the notebook from our work.  
 ![](https://github.com/AHuffmyer/ASH_Putnam_Lab_Notebook/blob/master/images/NotebookImages/oysters/analysis/20250128/nb5.jpeg?raw=true)
 
-##### Size measurements 
+#### Size measurements 
 
 From the images, measure the size of the organism. For oysters, we often use maximum length (mm). Other measurements may be more appropriate for other organisms. This will be used to normalize resazurin measurements.  
 
 Record size from measurements of images (e.g., using ImageJ) in a data frame. See examples below.  
 
-##### Data preparation and analysis  
+#### Data preparation and analysis  
 
 Prepare the following data frames (see examples at the links below): 
 
@@ -376,7 +376,7 @@ Conduct the following analysis steps (see R scripts available for use below):
 - Size normalize the data by dividing fluorescence values by size of each sample
 - Proceed with visualization and statistical analyses, including testing for effects of treatment or other effects of interest and examining metabolic differences between animals that lived and animals that died during the trials. See examples in our GitHub repositories linked below. 
 
-##### Data sheet and script examples  
+#### Data sheet and script examples  
 
 Data will be stored on GitHub. Links are available below for examples.   
 
@@ -390,7 +390,63 @@ Small seed project example: Scripts for analysis are available on GitHub [here](
 
 Large seed project example: Scripts for analysis are available on GitHub [here](https://github.com/RobertsLab/10K-seed-Cgigas/blob/main/scripts/resazurin.Rmd) and figures of results are [available here](https://github.com/RobertsLab/10K-seed-Cgigas/tree/main/figures/resazurin).   
 
+## Aquarium nitrogen testing kit protocols (AQI test kit) 
 
+Written by Noah Ozguner and Madeliene Baird 20250401.  
+
+This protocol is written based on the [manufacturer's instructions](https://apifishcare.com/pdfs/products-us/saltwater-master-test-kit/api-saltwater-mastert-test-kit-instruction-manual.pdf). 
+
+Test kit was [ordered here](https://www.amazon.com/API-MASTER-Aquarium-Water-1-Count/dp/B001D6Z7QW/ref=asc_df_B001D6Z7QW?mcid=f12e42d7505a391c8f7d47fcc7373e19&hvocijid=11467865304186403471-B001D6Z7QW-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=11467865304186403471&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9033456&hvtargid=pla-2281435179778&psc=1)
+
+### Standard Operating Protocol (SOP)
+
+After testing, do not pour contents back into the tank. Make sure to rinse test tubes after use. 
+
+#### pH (kit minimum 7.4, maximum 8.8) 
+
+- Fill a clean test tube with 5 ml of water 
+- Add 5 drops of High range pH Test Solution
+- Cap the test tube and invert it multiple times to mix the solution
+- Read results by comparing the color of the solution to the provided pH color chart (in a relatively well lit area). The closest color match indicates the pH value of the water sample. 
+- Thoroughly wash test tube after use
+
+#### Ammonia (ppm or mg/L) [two bottles]
+
+- Fill a clean test tube with 5 ml of water 
+- Add 8 drops of Ammonia Test Solution 1
+- Add 8 drops of Ammonia Test Solution 2
+- Cap the test tube and shake vigorously for 5 seconds
+- Wait 5 minutes for color to develop
+- Read results by comparing the color of the solution to the provided Ammonia color chart. (in a relatively well lit area). The closest color match indicates the Ammonia value of the water sample. 
+- Thoroughly wash test tube after use
+
+#### Nitrite (ppm or mg/L)
+
+- Fill a clean test tube with 5mL of water
+- Add 5 drops of Nitrite Test Solution
+- Cap the test tube and shake for 5 seconds
+- Wait 5 minutes for color to develop
+- Compare the color of the solution to the Nitrite Color Chart in a well lit area. The closest match will indicate the ppm (mg/L) of the nitrite in the sample
+- Thoroughly wash test tube after use
+
+#### Nitrate (ppm or mg/L) [two bottles]
+- Fill a clean test tube with 5mL of water
+- Add 10 drops of Nitrate Test Solution #1
+- Cap the test tube and invert several times to mix the solution
+- Vigorously shake the Nitrate Test Solution #2 for at least 30 seconds
+- Add 10 drops of Nitrate Test Solution #2
+- Cap the test tube and shake vigorously for 1 minute
+- Wait 5 minutes for the color to develop
+- Compare the color of the solution to the Nitrate Color Chart in a well lit area. The closest match will indicate the ppm (mg/L) of the nitrite in the sample
+- Thoroughly wash test tube after use
+
+#### Reference values 
+
+Ammonia (NH3): Ammonia is highly toxic to fish and should always be 0 ppm.  
+
+Nitrite (NO2): Nitrite is also toxic and should be 0 ppm.  
+
+Nitrate (NO3): While less toxic than ammonia and nitrite, nitrate can still be harmful to fish and corals at high levels. Aim to keep nitrate levels below 20 ppm, and ideally between 0-5 ppm.  
 
 
 
