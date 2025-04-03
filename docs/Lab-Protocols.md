@@ -229,7 +229,7 @@ This protocol is written for small oyster spat, but can be adapted for other lif
 
 #### Materials and preparing solutions
 
-##### 1. Stock resazurin solution 
+1. Stock resazurin solution 
 
 To make the resazurin stock solution (10 mL) mix the following. We will use this solution for multiple trials.  
 
@@ -239,7 +239,7 @@ To make the resazurin stock solution (10 mL) mix the following. We will use this
 
 Store in a dark fridge or freezer.  
 
-##### 2. Working resazurin solution
+2. Working resazurin solution
 
 First, determine the volume of resazurin required depending on the size of your organism and the container size. Here are some examples that we have used before. We recommend performing preliminary trials to ensure that a change in resazurin fluorescence can be detected over the time scale desired. This protocol was developed to detect a change in resazurin fluorescence within 5 hours in small seed (<7mm) and larger seed (10-30mm).  
 
@@ -258,7 +258,7 @@ This recipe is to make 150 mL of working stock. To run a single 96 well plate, a
 
 Store at 4°C in dark fridge until use. We recommend making a fresh batch of working stock within 7 days of use.    
 
-##### 3. Supplies 
+3. Supplies 
 
 - Bench top incubators 
 - [Temperature loggers](https://www.onsetcomp.com/products/data-loggers/mx2203) to be placed in incubators at treatment conditions 
