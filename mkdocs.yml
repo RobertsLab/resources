@@ -86,6 +86,7 @@ nav:
      - Data-Management: 'Data-Management.md'
      - Lab Protocols:
        - 'protocols/resazurin-assay.md'
+       - 'protocols/protocol-reverse_transcription.md'
      - Chemical SOPs: 'Chemical-Standard-Operating-Protocols.md'
      - Alarm Information: 'Alarm-Information.md'
 
