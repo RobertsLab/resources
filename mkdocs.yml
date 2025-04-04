@@ -85,6 +85,7 @@ nav:
      - Purchasing and Reimbursement: 'Purchasing-and-Reimbursement.md'
      - Data-Management: 'Data-Management.md'
      - Lab Protocols:
+       - qPCR: 'protocols/qPCR.md'
        - Resazurin Assay: 'protocols/resazurin-assay.md'
        - Reverse Transcription: 'protocols/protocol-reverse_transcription.md'
      - Chemical SOPs: 'Chemical-Standard-Operating-Protocols.md'
