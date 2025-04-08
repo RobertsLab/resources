@@ -1,6 +1,6 @@
 ## Resazurin metabolic assay 
 
-Resazurin metabolic assays are used to measure the metabolic rate of marine organisms. This protocol has been developed for use in oysters, but can be adapted for other organisms.   
+Resazurin metabolic assays are used to measure the metabolic rate of marine organisms. This protocol has been developed for use in oysters, but can be adapted for other organisms.  This protocol is based off of the Renquist et al. (2013) protocol.  
 
 Contact: ashuff (at) uw (dot) edu
 
