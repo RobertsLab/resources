@@ -33,7 +33,7 @@ Data, including intermediate analysis, needs to have a url. This most often mean
 
 Gannet is a Synology RS3618xs NAS :
 
-- RS3618xs uses 16TB HDDs (n = 12)
+- RS3618xs uses 16TB HDDs (n = 36)
 
 Data on Gannet is backed up in the following ways:
 
@@ -42,18 +42,18 @@ Data on Gannet is backed up in the following ways:
     - Mirrors data across HDDs, which reduces total storage capacity by 50%
     - Allows for up to two concurrent HDD failures before data loss occurs
 
+#### Gannet Data Structure
 
-- Gannet/web folder
+- Each user has a dedicated, publicly accessible folder on Gannet. This is where you will store your data.
 
-    - One-way sync from Gannet to [UW Google Drive](https://drive.google.com/open?id=1l0jc1Pj7gldNJRrfrM_Ld-T0it5LFyJG) via the Synology Cloud Sync app.
-    - Backup frequency: Daily
-    - Access: Public (read-only)
+- Gannet has two storage volumes:
 
+  - Volume 2 (`/volume2/web/`) Main storage volume. This is where you will store your data.
+  - Volume 1 (`/volume2/web/v1_web -> /volume1/v1_web/`): Symlinked to the main storage volume.
 
 #### Daily Data on Gannet
 
-
-Using the Gannet NAS to store your data:
+Using the Gannet NAS to store your data (web interface):
 
 1. Ask Steven or Sam to generate a user account for you. A folder will be created for you in: ```gannet/web/``` Ask Steven/Sam for the name of the folder, as well as your username and password.
 2. Upload data to your Gannet web folder:
@@ -63,6 +63,22 @@ Using the Gannet NAS to store your data:
     3. Enter username and password. (NOTE: If it's your first time accessing your account, please change your password by clicking on the silhouette in the upper right corner, then "Personal" in the dropdown menu).
     4. Navigate to File Station > web > your_folder (If you don't see the File Station icon, click on the icon of four squares in the upper left corner and select File Station from the subsequent menu).
     5. Click-and-drag files from your computer to your ```gannet/web``` folder.
+
+Using the Gannet NAS to store your data (command line):
+1. Open a terminal window.
+2. Use the following command to connect to Gannet:
+```bash
+ssh <username>@gannet.fish.washington.edu
+```
+3. Enter your password when prompted.
+4. Navigate to your folder:
+```bash
+cd /volume2/web/<your_folder>
+```
+5. Use the following command to upload files:
+```bash
+rsync -avP <local_file> <username>@gannet.fish.washington.edu:/volume2/web/<your_folder>
+```
 
 Files that you have uploaded to your_folder are publicly viewable: http://gannet.fish.washington.edu/your_folder
 
