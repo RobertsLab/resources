@@ -11,7 +11,40 @@ Written 20250401 by Ariana Huffmyer.
 
 This protocol is written for small oyster spat, but can be adapted for other life stages. This protocol is based on [previous work in the lab by Colby E.](https://genefish.wordpress.com/author/colbyelvrum/) and as used in our analysis of oyster seed [metabolic response](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/Initial-analysis-of-resazurin-metabolic-rates-in-10K-Seed-oysters/) and [survival](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/10K-seed-resazurin-survival-analysis/).   
 
-#### Materials and preparing solutions
+#### Reagents
+
+
+- Resazurin salt (e.g., [ThermoFisher Scientific](https://www.thermofisher.com/order/catalog/product/R12204))
+    - Specific hazards
+        - skin irritant
+        - eye irritant
+- Dimethyl sulfoxide (DMSO) (e.g., [ThermoFisher Scientific](https://www.thermofisher.com/order/catalog/product/D8418))
+    - Specific hazards
+        - flammable
+        - skin irritant
+- Antibiotic/antifungal solution (e.g., [HyClone antibiotic antimycotic (PEN/STREP/FUNGIZONE) solution](https://www.thermofisher.com/order/catalog/product/15240062))
+    - Specific hazards
+        - skin irritant
+- Seawater (DI water with Instant Ocean adjusted to 23-25 ppt or filtered (<1um) seawater)
+
+#### Personal Protective Equipment (PPE)
+
+REQUIRED:
+
+- Gloves
+
+WHEN SPLASH POTENTIAL EXIST:
+
+- Safety goggles
+- Lab coat
+
+#### Waste Disposal
+- Liquid Waste:
+    - Transfer liquid waste to labeled container designated for resazurin waste.
+- Solid Waste:
+    - Tubes/tip/gloves with residual resazurin/solution may be disposed of in regular trash.
+
+#### Preparing solutions
 
 1. Stock resazurin solution 
 
