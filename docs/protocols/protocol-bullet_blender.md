@@ -36,9 +36,9 @@ Review the manufacturer's various information before using
 
 - [Recommended protocols for various tissue types](https://www.nextadvance.com/bullet-blender-homogenizer/homogenizer-tissue-cell-culture-bullet-blender-support/homogenizer-cell-disrupter-protocols/) (NextAdvance website). Unsurprisingly, there aren't any protocols for oyster tissues, however we can probably follow any protocol for any soft tissues listed.
 
-- [Bullet Blender usage guide](../../equipment_manuals/NextAdvance-RS18-0511-Bullet-Blender-Homogenization-Guide.pdf) (PDF). This is a nice general overview of the basics of using a Bullet Blender, including buffer/bead/sample ratios, types of beads and how they differ, different types of tissues, tissue preparation, etc.
+- [Bullet Blender usage guide](https://github.com/RobertsLab/resources/blob/master/equipment_manuals/NextAdvance-RS18-0511-Bullet-Blender-Homogenization-Guide.pdf) (PDF). This is a nice general overview of the basics of using a Bullet Blender, including buffer/bead/sample ratios, types of beads and how they differ, different types of tissues, tissue preparation, etc.
 
-- [Bullet Blender 5E Gold+ manual](../../equipment_manuals/NextAdvance-RS18-0505-Bullet-Blender-GOLD-Plus-Manual.pdf) (PDF). The manual for the machine. Contains machine-specific instructions on how to use the machine, including tube requirements.
+- [Bullet Blender 5E Gold+ manual](https://github.com/RobertsLab/resources/blob/master/equipment_manuals/NextAdvance-RS18-0505-Bullet-Blender-GOLD-Plus-Manual.pdf) (PDF). The manual for the machine. Contains machine-specific instructions on how to use the machine, including tube requirements.
 
 ### TUBES
 The machine is designed to use 5.0mL tubes.
