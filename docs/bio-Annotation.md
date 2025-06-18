@@ -86,7 +86,7 @@ The following steps will use the UniProt Python API to create a tab-delimited fi
     
         for accession_batch in accession_batches:
             accession_query = '%29%20OR%20%28accession%3A'.join(accession_batch)
-            url = f"https://rest.uniprot.org/uniprotkb/search?compressed=true&  fields=accession%2Creviewed%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Clength%2Cgo_p%2Cgo_c%2Cgo%2Cgo_f%2Cgo_id&format=tsv&   query=%28%28accession%3A{accession_query}%29%29&size=500"
+            url = f"https://rest.uniprot.org/uniprotkb/search?compressed=true&fields=accession%2Creviewed%2Cid%2Cprotein_name%2Cgene_names%2Corganism_name%2Clength%2Cgo_p%2Cgo_c%2Cgo%2Cgo_f%2Cgo_id&format=tsv&query=%28%28accession%3A{accession_query}%29%29&size=500"
             
             progress = 0
             lines = []
