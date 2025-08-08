@@ -6,6 +6,8 @@ Example SLURM Script to launch RStudio Server.
 
 The example will use the `srlab-bioinformatics-container-2bd5d44.sif` container in the SLURM script called `rstudio-server.job`.
 
+NOTE: the `srlab-bioinformatics-container-2bd5d44.sif` container needs to be copied into the {USER} directory and `RSTUDIO_CWD=` must point to this path.
+
 - User needs to set/change the following in the SLURM script before starting script:
 
     - `#SBATCH --time=02:00:00`
