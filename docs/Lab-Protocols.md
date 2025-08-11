@@ -31,6 +31,20 @@ First, determine the volume of resazurin required depending on the size of your 
 - Medium seed (15-40 mm length): trials conducted in small plastic cups (20 mL volume)
 - Large seed/adults (>40 mm length): trials can be conducted in tripour cups, beakers, or plastic cups. Scale volume appropriately. The animals should be fully submerged. 
 
+To prepare the working solution of resazurin, prepare the following. 
+
+-   Desired working volume x 0.98666 = ___ mL filtered seawater (DI water with Instant Ocean adjusted to 23-25 ppt
+    or filtered (\<1um) seawater) 
+
+-   Desired working volume x 0.00222 = ___ mL resazurin stock solution as made above in step 1 
+
+-   Desired working volume x 0.001 = ___ mL DMSO
+
+-   Desired working volume x 0.01 = ___ mL  antibiotic solution [100x Penn/Strep & 100x
+    Fungizone](https://us.vwr.com/store/product/4648458/null) - this
+    should be kept frozen in a dark freezer and thawed before use (thaw
+    in the dark or cover with aluminum foil)
+
 To prepare the working solution of resazurin, prepare the following. 
 
 This recipe is to make 150 mL of working stock. To run a single 96 well plate, approximately 35 mL will be required (allowing for extra for re-do's or errors). For example, if we are running 4 total plates, we will need to prepare 4 x 35 mL = 150 mL of working solution. Increase if more is required.  
@@ -38,7 +52,7 @@ This recipe is to make 150 mL of working stock. To run a single 96 well plate, a
 - 148 mL seawater (DI water with Instant Ocean adjusted to 23-25 ppt or filtered (<1um) seawater) 
 - 333 µL resazurin stock solution as made above in step 1 
 - 150 µL DMSO
-- 1.5 mL antibiotic solution [100x Penn/Strep & 100x Fungizone](https://us.vwr.com/store/product/4648458/null) - this should be kept frozen in a dark freezer and thawed before use (thaw in the dark or cover with aluminum foil) 
+- 1.5 mL antibiotic solution [100x Penn/Strep & 100x Fungizone](https://us.vwr.com/store/product/4648458/null)  
 
 Store at 4°C in dark fridge until use. We recommend making a fresh batch of working stock within 7 days of use.    
 
