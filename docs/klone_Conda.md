@@ -1,6 +1,10 @@
 # Using Conda on Klone
 
+
 ## Overview
+
+!!! warning
+    As a best practice, please use our [bioinformatics container(s)](klone_Container-Documentation.md) for your Conda workflows instead of installing conda packages directly on Klone. Containers provide a consistent and reproducible environment, reducing dependency issues and simplifying software management.
 
 Conda (including Miniforge, Miniconda, and Anaconda) is a popular package manager for Python and other languages. However, conda installations and environments can quickly consume significant disk space. This guide explains how to properly install and configure conda on Klone to avoid storage limitations.
 
