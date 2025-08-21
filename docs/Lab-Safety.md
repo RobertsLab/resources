@@ -51,7 +51,7 @@
 
 - [UW MyChem](https://mychem.ehs.washington.edu/)
 
-- [Roberts Lab SOPs](../lab_safety_docs/standard-operating-procedures/)
+- [Roberts Lab SOPs](https://github.com/RobertsLab/resources/tree/master/lab_safety_docs/standard-operating-procedures)
 
 
 ---
