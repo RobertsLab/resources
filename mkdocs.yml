@@ -94,6 +94,7 @@ nav:
      - Data-Management: 'Data-Management.md'
      - Lab Protocols:
        - Bullet Blender: 'protocols/protocol-bullet_blender.md'
+       - Oyster Size Analysis: 'protocols/oyster-size-analysis.md'
        - qPCR: 'protocols/protocol-qPCR.md'
        - Resazurin Assay: 'protocols/resazurin-assay.md'
        - Reverse Transcription: 'protocols/protocol-reverse_transcription.md'

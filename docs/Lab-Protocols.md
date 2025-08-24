@@ -129,6 +129,8 @@ An example of photograph for size measurements:
 
 Measure size using ImageJ or other imaging software. We typically use maximum shell length (mm) for size normalization.  
 
+For detailed protocols on standardized oyster size analysis from images, see [Oyster Size Analysis Protocol](protocols/oyster-size-analysis.md).  
+
 #### Measurements 
 
 1. Turn on the computer and plate reader. Open the plate reader software.

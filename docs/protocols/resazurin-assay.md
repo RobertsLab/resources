@@ -173,7 +173,9 @@ Here is an example of the data sheet in the notebook from our work.
 
 From the images, measure the size of the organism. For oysters, we often use maximum length (mm). Other measurements may be more appropriate for other organisms. This will be used to normalize resazurin measurements.  
 
-Record size from measurements of images (e.g., using ImageJ) in a data frame. See examples below.  
+Record size from measurements of images (e.g., using ImageJ) in a data frame. See examples below.
+
+For detailed protocols on standardized oyster size analysis from images, see [Oyster Size Analysis Protocol](oyster-size-analysis.md).  
 
 #### Data preparation and analysis  
 
