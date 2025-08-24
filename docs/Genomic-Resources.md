@@ -578,6 +578,14 @@ Genome Feature Tracks
 
 ## *Mytilus trossulus*
 
+Genome:
+
+-   [NCBI Assembly GCF_021869535.1](https://www.ncbi.nlm.nih.gov/assembly/GCF_021869535.1/)
+
+-   [A chromosome-level reference genome of the bay mussel Mytilus trossulus](https://doi.org/10.1016/j.margen.2021.100906)
+
+-   [NCBI Mytilus trossulus Annotation Release 100](https://www.ncbi.nlm.nih.gov/genome/annotation_euk/Mytilus_trossulus/100/)
+
 Transcriptome:
 
 -   [Mtros-hq_transcripts.fasta](https://owl.fish.washington.edu/halfshell/genomic-databank/Mtros-hq_transcripts.fasta)
