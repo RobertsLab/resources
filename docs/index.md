@@ -68,3 +68,56 @@ Be sure have a look at the following:
 - [Pubathon](Pubathon.md) - Annual "pubathon" roster, links to and status of manuscripts.
 
 - [Purchasing & Reimbursement](Purchasing-and-Reimbursement.md) - Procedure for purchases.
+
+---
+
+## Stay Updated with Roberts Lab
+
+Get the latest updates from our lab delivered to your inbox! Subscribe to receive periodic updates about our research, publications, and lab activities.
+
+<div class="subscription-form" style="background-color: var(--md-default-bg-color); padding: 2rem; border-radius: 0.5rem; border: 1px solid var(--md-default-fg-color--lighter); margin: 1rem 0;">
+  <h3 style="margin-top: 0; color: var(--md-primary-fg-color);">📧 Subscribe to Lab Updates</h3>
+  <p style="color: var(--md-default-fg-color--light); margin-bottom: 1.5rem;">Choose your preferred update frequency and stay connected with Roberts Lab research and activities.</p>
+  
+  <form action="#" method="post" style="display: flex; flex-direction: column; gap: 1rem;">
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label for="email" style="font-weight: 500; color: var(--md-default-fg-color);">Email Address:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="your.email@example.com"
+        style="padding: 0.75rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.25rem; font-size: 1rem; background-color: var(--md-default-bg-color);"
+      />
+    </div>
+    
+    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <label style="font-weight: 500; color: var(--md-default-fg-color);">Update Frequency:</label>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+          <input type="radio" name="frequency" value="weekly" checked style="margin: 0;" />
+          <span>Weekly Updates</span>
+        </label>
+        <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+          <input type="radio" name="frequency" value="monthly" style="margin: 0;" />
+          <span>Monthly Summary</span>
+        </label>
+      </div>
+    </div>
+    
+    <button 
+      type="submit" 
+      style="background-color: var(--md-primary-fg-color); color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 0.25rem; font-size: 1rem; font-weight: 500; cursor: pointer; transition: background-color 0.2s;"
+      onmouseover="this.style.opacity='0.9'" 
+      onmouseout="this.style.opacity='1'"
+    >
+      Subscribe to Updates
+    </button>
+  </form>
+  
+  <p style="font-size: 0.875rem; color: var(--md-default-fg-color--light); margin-top: 1rem; margin-bottom: 0;">
+    📝 <strong>Note:</strong> This subscription form is ready for integration with your preferred email service provider (Mailchimp, ConvertKit, etc.). 
+    Update the form action URL to connect with your chosen service.
+  </p>
+</div>
