@@ -60,6 +60,79 @@ Run this from top directory of your repo.
 
 This finds all files in your current directory (presumably a Git repo) greater than 100MB and writes the paths to those files in your .gitignore file. 
 
+### Fix "refusing to merge unrelated histories" error
+
+This error occurs when your local repository and the remote repository have diverged with completely different commit histories. This commonly happens when:
+
+- Someone force-pushed to the remote repository, rewriting history
+- The remote repository was reset or recreated
+- You're trying to merge two repositories that were created independently
+
+#### Solution 1: Allow unrelated histories (Recommended)
+
+```bash
+git pull origin main --allow-unrelated-histories
+```
+
+After running this command, Git will attempt to merge the unrelated histories. You may need to resolve merge conflicts manually.
+
+#### Solution 2: Create backup and re-clone (Safest)
+
+If you have uncommitted local changes you want to keep:
+
+```bash
+# Create a backup of your local changes
+cp -r your_repo your_repo_backup
+
+# Remove the problematic repository
+rm -rf your_repo
+
+# Re-clone the repository
+git clone https://github.com/username/repository.git your_repo
+
+# Copy back any local files you need from the backup
+# (Be careful not to overwrite files that should come from the remote)
+```
+
+#### Solution 3: Force pull (Use with caution)
+
+**Warning**: This will overwrite your local changes permanently.
+
+```bash
+# Fetch the latest changes
+git fetch origin
+
+# Reset your local branch to match the remote
+git reset --hard origin/main
+```
+
+#### Solution 4: Manual merge resolution
+
+If you need to preserve both local and remote changes:
+
+```bash
+# Create a new branch from your current state
+git checkout -b backup-local-changes
+
+# Switch back to main
+git checkout main
+
+# Force update to match remote
+git fetch origin
+git reset --hard origin/main
+
+# Merge your local changes back
+git merge backup-local-changes --allow-unrelated-histories
+```
+
+#### Prevention
+
+To avoid this issue in the future:
+- Always pull before making changes: `git pull origin main`
+- Use `git status` regularly to check your repository state
+- Avoid force-pushing unless absolutely necessary
+- Communicate with team members before making major repository changes
+
 ---
 
 ## FastQ files
