@@ -50,6 +50,7 @@ nav:
 
    - 'Computing and Code':
      - Best Practices: 'Computing-Best-Practices.md'
+     - Agentic Coding Tools: 'Agentic-Coding-Tools.md'
      - Code Snippets: 'code_Snippets.md'
      - Computing Hardware: 'Computing-Hardware.md'
      - Lab Software: 'Lab-Software.md'

@@ -46,6 +46,8 @@ Be sure have a look at the following:
 
 - [Computing Hardware](Computing-Hardware.md) - Computing resources we have available & links to help you begin learning.
 
+- [Agentic Coding Tools](Agentic-Coding-Tools.md) - Guide to using AI-powered coding assistants like GitHub Copilot with VS Code, web interfaces, and integration with UW Klone HPC and Raven.
+
 - [Lab Software](Lab-Software.md) - A list of software installed on lab computers.
 
 - [Data Management](Data-Management.md) - This page is intended to document all aspects of data management, from the day-to-day, formal NGS and proteomics plans, and general archiving options.
