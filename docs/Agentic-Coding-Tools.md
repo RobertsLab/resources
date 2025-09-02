@@ -90,6 +90,8 @@ When viewing code files on GitHub.com: - Look for the Copilot icon in
 file views - Click to get AI-powered explanations of code blocks - Get
 suggestions for improvements and alternative approaches
 
+![](<http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png>)
+
 ------------------------------------------------------------------------
 
 ## Best Practices for Using AI Coding Assistants
