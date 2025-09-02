@@ -4,13 +4,15 @@ editor_options:
     wrap: 72
 ---
 
-### Agentic Coding Tools and AI Assistants
+# Agentic Coding Tools and AI Assistants
 
 AI-powered coding assistants can influence how we write and interact
 with code. This guide covers how we might use these tools.    
 **General tips for Using AI Coding Assistants**    
-1. Use branches. This will protect main branch if you go off the rails   
+1. Use branches. This will protect main branch if you go off the rails.   
 2. Provide an instructions.md and tasks.md. This will help keep agent on track
+
+Below we cover GitHub Copilot (w/VScode), ChatGPT, local models 
 
 ------------------------------------------------------------------------
 
@@ -67,6 +69,8 @@ Copilot should suggest completions in gray text.
 ------------------------------------------------------------------------
 
 ### Practical use cases and notes
+
+-   Tab completion.
 
 -   Have it develop, refactor, buid code based on natural language
     instructions to "Agent".
