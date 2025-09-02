@@ -4,15 +4,17 @@ editor_options:
     wrap: 72
 ---
 
-# Agentic Coding Tools and AI Assistants
+### Agentic Coding Tools and AI Assistants
 
 AI-powered coding assistants can influence how we write and interact
-with code. This guide covers how to use these tools in the Roberts Lab
-computing environment.
+with code. This guide covers how we might use these tools.    
+**General tips for Using AI Coding Assistants**    
+1. Use branches. This will protect main branch if you go off the rails   
+2. Provide an instructions.md and tasks.md. This will help keep agent on track
 
 ------------------------------------------------------------------------
 
-## GitHub Copilot
+# GitHub Copilot
 
 GitHub Copilot is an AI-powered coding assistant that helps you write
 code by providing intelligent suggestions and completions.
@@ -22,8 +24,8 @@ code by providing intelligent suggestions and completions.
 #### Prerequisites
 
 You'll need: - A GitHub account with Copilot access (available through
-GitHub Education or paid subscription) - VS Code or compatible IDE -
-Active internet connection
+GitHub Education) - VS Code or compatible IDE - Active internet
+connection
 
 #### Checking Copilot Access
 
@@ -64,9 +66,20 @@ Copilot should suggest completions in gray text.
 
 ------------------------------------------------------------------------
 
+### Practical use cases and notes
+
+-   Have it develop, refactor, buid code based on natural language
+    instructions to "Agent".
+
+-   There is a limit to use, so will need to keep an eye on this. Can
+    see on Github website.
+
+    -   Aspects that influence this if you "Ask" versus "Agent" and what
+        model you select.
+
 ## Using GitHub Copilot on the Web
 
-GitHub now offers Copilot directly in the web interface, making it
+GitHub offers Copilot directly in the web interface, making it
 accessible even when working remotely on repositories.
 
 ### 1. Accessing Web Copilot
@@ -86,19 +99,25 @@ accessible even when working remotely on repositories.
 
 ### 3. GitHub.com Code View Features
 
-When viewing code files on GitHub.com: - Look for the Copilot icon in
-file views - Click to get AI-powered explanations of code blocks - Get
-suggestions for improvements and alternative approaches
+When viewing code files on GitHub.com:
 
-![](<http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png>)
+\- Look for the Copilot icon in file views
 
-------------------------------------------------------------------------
+\- Click to get AI-powered explanations of code blocks
 
-## Best Practices for Using AI Coding Assistants
+\- Get suggestions for improvements and alternative approaches
 
-### 1. Use branches. This will protect main branch if you go off the rails
+### 4. Assigning Copilot Issues
 
-### 2. Provide an instructions.md and tasklist.md. This will help keep agent on track.
+Arguably one of the most powerful features is the ability to assign issues to Copilot.  
+Copilot will create a plan, implement on a new branch, then you (or someone else can review).
+If you like it, you can merge it in using a pull request.
+
+
+**Copilot in action on the web**
+
+![Ways to interact with Copilot on
+GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png){width=50%}
 
 ------------------------------------------------------------------------
 
@@ -118,7 +137,7 @@ suggestions for improvements and alternative approaches
 
 ------------------------------------------------------------------------
 
-## Learning Resources
+
 
 ### Documentation and Tutorials
 
@@ -127,4 +146,28 @@ suggestions for improvements and alternative approaches
     Guide](https://code.visualstudio.com/docs/editor/github-copilot)
 -   [Copilot Best
     Practices](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
--   
+
+---
+
+# ChatGPT
+
+Most are familar with ChatGPT chat features (online or standalone).
+There is also ChatGPT codex that allows you to interact directly with a
+GitHub repository online or in the terminal
+
+---
+
+# Ollama (local models)
+
+There are certain use cases where having everything on your machine
+makes sense such as asking simple regex questions. For this installing
+Ollama is an option.
+
+---
+
+# Image Generation 
+
+more coming soon
+
+---
+.
