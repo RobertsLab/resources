@@ -39,20 +39,7 @@ A more detailed spreadsheet, including IP addresses is below (Google Sheet). You
 
 
 
-## Mox (Hyak)
 
-We have two nodes (a fancy name for a computer) in the University of Washington super-computing cluster, called Mox (formerly Hyak). They're well-suited for resource-intensive computing, like genome assemblies and shotgun proteomics analyses.
-
-Computer specs:
-
-| Model | CPU (dual) | Cores | RAM (GB) |
-| ----- | ---------- |----- | -------- |
-| Lenovo NextScale | E5-2680 v4 | 28 | 512 |
-| Lenovo NextScale | E5-2680 v4 | 28 | 128 |
-
-Due to the initial steep learning curve, we have a dedicated section on how to use Mox:
-
-- [New Mox User](mox_Adding-a-User.md)
 
 ## Printers
 You can send print jobs wirelessly to the Brother HL-L2395DW395DW printer in rm 209.

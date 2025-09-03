@@ -19,7 +19,7 @@ Alternatively, [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) 
 
 [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) is powerful and has complex, but useful options availalbe. Take time to consider how you will use your assembly for later analysis. [`Trinity`](https://github.com/trinityrnaseq/trinityrnaseq/wiki) has many options available for downstream analysis (e.g. [gene expression](#gene-expression)) that can be simplified with careful planning prior to assembly.
 
-Due to the intensive processing required for assembly (high CPU and RAM usage), it is highly recommended to run all assemblies on an [execute node on Mox](https://robertslab.github.io/resources/mox_Node-Types/). As such, all code examples are written with the assumption that the commands are being run on Mox.
+Due to the intensive processing required for assembly (high CPU and RAM usage), it is highly recommended to run all assemblies on a high-performance computing cluster such as UW's Klone or Raven systems.
 
 ### Sample list file
 
