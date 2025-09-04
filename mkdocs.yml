@@ -54,18 +54,7 @@ nav:
      - Code Snippets: 'code_Snippets.md'
      - Computing Hardware: 'Computing-Hardware.md'
      - Lab Software: 'Lab-Software.md'
-     - 'Mox Guides':
-       - New User: 'mox_Adding-a-User.md'
-       - Logging in: 'mox_Logging-In.md'
-       - Node Types: 'mox_Node-Types.md'
-       - Data Storage and System Organization: 'mox_Data-Storage-and-System-Organization.md'
-       - Running a job: 'mox_Running-a-Job.md'
-       - Viewing and interacting with jobs: 'mox_Viewing-and-Interacting-with-Jobs.md'
-       - File Transfers: 'mox_File-Transfers.md'
-       - Software: 'mox_Software.md'
-       - Installing software: 'mox_Installing-Programs.md'
-       - Jupyter Notebooks: 'mox_Jupyter-Notebooks.md'
-       - RStudio Server: 'mox_RStudio-Server.md'
+
      - 'Klone Guides':
        - Quick Start: 'klone_quick-start.md'
        - Containers: 'klone_containers.md'
