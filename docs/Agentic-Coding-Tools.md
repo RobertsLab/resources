@@ -81,6 +81,35 @@ Copilot should suggest completions in gray text.
     -   Aspects that influence this if you "Ask" versus "Agent" and what
         model you select.
 
+### VS Code Copilot Commands
+
+In VS Code with GitHub Copilot, there are three main ways to interact with the AI assistant:
+
+**1. Ask**
+- Opens a chat-like panel (Copilot Chat)
+- Type natural language questions ("What does this function do?", "How do I write a regex for emails?")
+- Copilot responds with explanations, code snippets, or suggestions, but doesn't automatically change your code
+- Best for Q&A, explanations, or guidance
+
+**2. Agent**
+- Runs a Copilot "task agent" that can perform multi-step or tool-like actions
+- Examples: debugging, running tests, explaining diagnostics, or walking through refactors
+- Agents are more goal-oriented and can combine different steps (like reading docs, analyzing code, generating edits)
+- Best for complex workflows where Copilot needs context beyond a single answer
+
+**3. Edit**
+- Lets you select code in the editor, then ask Copilot to modify it
+- Example: highlight a function → Edit with Copilot → "Convert this to async/await"
+- Copilot rewrites the selection directly in your file, showing a diff you can accept or reject
+- Best for direct code changes/refactoring
+
+**✅ Rule of thumb:**
+- Use **Ask** when you want to understand
+- Use **Edit** when you want to change
+- Use **Agent** when you want Copilot to do something bigger/more involved (like debugging, running tests, or analyzing errors)
+
+------------------------------------------------------------------------
+
 ## Using GitHub Copilot on the Web
 
 GitHub offers Copilot directly in the web interface, making it
