@@ -1,43 +1,187 @@
-## Quick Start Guide
+## RStudio Server on Klone: Two Approaches
+
+There are two primary ways to run RStudio Server on Klone:
+
+1. **On-Demand Interactive Sessions** (Recommended for immediate use)
+2. **SLURM Batch Jobs** (For scheduled or longer-running sessions)
+
+---
+
+## Method 1: On-Demand Interactive RStudio Sessions
+
+This method allows you to start RStudio Server immediately in an interactive session, perfect for exploratory data analysis and immediate work.
+
+### Prerequisites
+
+- Ensure you have the RStudio container available in your directory
+- Set up your `~/.Renviron` file (see setup instructions below)
+
+### Quick Start with Interactive Session
+
+1. **Start an interactive session** on a compute node:
+
+   ```bash
+   srun -p cpu-g2-mem2x -A srlab --time=04:00:00 --mem=32G --cpus-per-task=4 --pty /bin/bash
+   ```
+   
+   - Adjust `--time`, `--mem`, and `--cpus-per-task` based on your needs
+   - Use `hyakalloc` to find available partitions for your account
+
+2. **Launch RStudio Server** once in the interactive session:
+
+   ```bash
+   # Set your working directory and container path
+   export RSTUDIO_CWD="/gscratch/srlab/${USER}"
+   export RSTUDIO_SIF="srlab-bioinformatics-container-2bd5d44.sif"
+   
+   # Create temporary directories
+   export RSTUDIO_TMP=$(mktemp -d)
+   mkdir -p -m 700 ${RSTUDIO_TMP}/{run,tmp,var/lib/rstudio-server}
+   
+   # Create database config
+   cat > ${RSTUDIO_TMP}/database.conf <<END
+   provider=sqlite
+   directory=/var/lib/rstudio-server
+   END
+   
+   # Create rsession script
+   cat > ${RSTUDIO_TMP}/rsession.sh <<END
+   #!/bin/sh
+   export OMP_NUM_THREADS=${SLURM_JOB_CPUS_PER_NODE:-4}
+   export R_LIBS_USER=${RSTUDIO_CWD}/R
+   exec /usr/lib/rstudio-server/bin/rsession "\${@}"
+   END
+   chmod +x ${RSTUDIO_TMP}/rsession.sh
+   
+   # Set up Apptainer bindings
+   export APPTAINER_BIND="${RSTUDIO_CWD}:${RSTUDIO_CWD},/gscratch:/gscratch,${RSTUDIO_TMP}/run:/run,${RSTUDIO_TMP}/tmp:/tmp,${RSTUDIO_TMP}/database.conf:/etc/rstudio/database.conf,${RSTUDIO_TMP}/rsession.sh:/etc/rstudio/rsession.sh,${RSTUDIO_TMP}/var/lib/rstudio-server:/var/lib/rstudio-server"
+   
+   # Generate credentials
+   export APPTAINERENV_USER=$(id -un)
+   export APPTAINERENV_PASSWORD=$(openssl rand -base64 15)
+   export APPTAINERENV_RSTUDIO_SESSION_TIMEOUT=0
+   
+   # Get available port
+   PORT=$(python3 -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()')
+   
+   echo "=== RStudio Server Connection Info ==="
+   echo "1. In a NEW terminal on your local machine, run:"
+   echo "   ssh -N -L 8787:${HOSTNAME}:${PORT} ${APPTAINERENV_USER}@klone.hyak.uw.edu"
+   echo ""
+   echo "2. Open your web browser to: http://localhost:8787"
+   echo ""
+   echo "3. Login with:"
+   echo "   Username: ${APPTAINERENV_USER}"
+   echo "   Password: ${APPTAINERENV_PASSWORD}"
+   echo ""
+   echo "4. When finished, press Ctrl+C here and type 'exit' to end the session"
+   echo "====================================="
+   
+   # Load Apptainer and start RStudio Server
+   module load apptainer
+   apptainer exec --cleanenv --home ${RSTUDIO_CWD} ${RSTUDIO_CWD}/${RSTUDIO_SIF} \
+       rserver --www-port ${PORT} \
+               --auth-none=0 \
+               --auth-pam-helper-path=pam-helper \
+               --auth-stay-signed-in-days=30 \
+               --auth-timeout-minutes=0 \
+               --rsession-path=/etc/rstudio/rsession.sh \
+               --server-user=${APPTAINERENV_USER}
+   ```
+
+3. **Connect from your local machine**: 
+
+   - Open a new terminal on your local computer
+   - Run the SSH tunnel command shown in the output
+   - Open your browser to `http://localhost:8787`
+   - Login with the provided credentials
+
+4. **Clean up when done**:
+   - Close RStudio in your browser
+   - Press `Ctrl+C` in the terminal running RStudio Server
+   - Type `exit` to end the interactive session
+
+### Advantages of Interactive Sessions
+
+- **Immediate access**: No waiting in queue for batch job scheduling
+- **Real-time interaction**: Direct terminal access for debugging
+- **Flexible duration**: Easy to extend or terminate as needed
+- **Simpler setup**: Fewer files to manage compared to batch jobs
+
+---
+
+## Method 2: SLURM Batch Jobs
 
 [**Screen Recording How-to**](https://washington.zoom.us/rec/share/tM_4zmytAnDQrPoIxqDH0Q7RpaZviXcs9ih7ypUPSJCbaQc0Kwa6NnsqdeMvkvdF.P4qX95_arDgBeGMF) (UW sign-in required)
 
-Example SLURM Script to launch RStudio Server.
+This method uses a SLURM script to launch RStudio Server as a batch job, suitable for longer-running sessions or when you want to queue the job for later execution.
 
-The example will use the `srlab-bioinformatics-container-2bd5d44.sif` container in the SLURM script called `rstudio-server.job`.
+### SLURM Script Example
 
-NOTE: the `srlab-bioinformatics-container-2bd5d44.sif` container needs to be copied into the {USER} directory and `RSTUDIO_CWD=` must point to this path.
+### Setup Requirements (For Both Methods)
 
-- User needs to set/change the following in the SLURM script before starting script:
+Before using either method, you need to set up your environment:
 
-    - `#SBATCH --time=02:00:00`
-    - `#SBATCH --mem=20G`
-    - `--chdir=/gscratch/scrubbed/${USER}/<add_rest_of_path>`
-    - `RSTUDIO_SIF="srlab-bioinformatics-container-2bd5d44.sif" # UPDATE THIS LINE`
+#### 1. Container Setup
+- Copy the RStudio container to your directory: `srlab-bioinformatics-container-2bd5d44.sif`
+- Ensure `RSTUDIO_CWD` points to where your container is located
+- The example uses the container located in `/gscratch/srlab/containers/`
 
-- Users should add the following line in `~/.Renviron`. If you don't have a `~/.Renviron`, you can create it like this: `touch ~/.Renviron`
-    
-    - `R_LIBS_USER` in `~/.Renviron`. Example:
+#### 2. R Library Configuration
+Create or update your `~/.Renviron` file to specify where R packages should be installed:
 
-        ```shell
-        cat ~/.Renviron 
-        # Set local library installation path
-        R_LIBS_USER=/gscratch/srlab/${USER}/R_libs_apptainer
-        ```
+```bash
+# Create the file if it doesn't exist
+touch ~/.Renviron
 
-- After submitting script (`sbatch rstudio-server.job`), view the SLURM output file located in `--chdir=/gscratch/scrubbed/${USER}/<add_rest_of_path>` for information on:
+# Add library path (adjust the path as needed)
+echo "R_LIBS_USER=/gscratch/srlab/${USER}/R_libs_apptainer" >> ~/.Renviron
+```
 
-    1. How to create tunnel to Mox node.
+You can verify your setup:
+```shell
+cat ~/.Renviron 
+# Should show:
+# R_LIBS_USER=/gscratch/srlab/${USER}/R_libs_apptainer
+```
 
-      - NOTE: When logging into the tunnel, the terminal will _not_ acknowledge when you've logged in. You need to leave this Terminal window open.
+#### 3. Partition Access
+- Use `hyakalloc` to find available partitions for your account
+- Update partition names in commands/scripts accordingly
 
-    2. What address to direct your web browser to (`localhost:8787`).
+### SLURM Script Configuration
 
-    3. Username/password to enter into RStudio Server interface.
+For the batch job method, you need to customize the following in your SLURM script:
 
-    4. How to terminate RStudio Server and the SLURM job.
+- `#SBATCH --time=02:00:00` (adjust time as needed)
+- `#SBATCH --mem=20G` (adjust memory as needed)  
+- `--chdir=/gscratch/scrubbed/${USER}/<add_rest_of_path>` (set your working directory)
+- `RSTUDIO_SIF="srlab-bioinformatics-container-2bd5d44.sif"` (update container name/path)
 
-- Example script uses the following Apptainer container image: `srlab-bioinformatics-container-2bd5d44.sif`.
+### Running the SLURM Batch Job
+
+After customizing your `rstudio-server.job` script:
+
+1. **Submit the job**: `sbatch rstudio-server.job`
+
+2. **Monitor job status**: `squeue -u $USER`
+
+3. **Check the output file**: Look in your specified `--chdir` directory for `rstudio-server_JOBID.out`
+
+4. **Follow connection instructions** from the output file for:
+   - SSH tunnel command to the compute node
+   - Browser URL (`localhost:8787`)
+   - Username/password for RStudio Server
+   - How to terminate the session
+
+5. **Important notes**:
+   - When creating the SSH tunnel, the terminal will not show a confirmation message
+   - Keep the tunnel terminal window open during your RStudio session
+   - To terminate: Exit RStudio, then run `scancel -f JOBID`
+
+### Example SLURM Script
+
+The following script uses the `srlab-bioinformatics-container-2bd5d44.sif` container:
 
 ```shell
 $ cat rstudio-server.job 
@@ -274,4 +418,36 @@ This is a repository for all of [the Roberts Lab](https://robertslab.github.io/r
   3. Move completed Apptainer container to `/gscratch/srlab/containers/srlab-bioinformatics-container-<commit>.sif`.
 
 - [`srlab-bioinformatics-container.def`](./srlab-bioinformatics-container.def): Apptainer definition file for the Roberts Lab bioinformatics container. Built on the `rocker/rstudio:4.4.1` image to allow usage of RStudio.
-`
+
+---
+
+## Method Comparison and Best Practices
+
+### When to Use Interactive Sessions (On-Demand)
+- **Exploratory data analysis**: Quick data examination and visualization
+- **Short-term work**: Sessions lasting 1-4 hours
+- **Learning and testing**: Trying new packages or testing code 
+- **Immediate access needed**: Don't want to wait in queue
+- **Debugging**: Need direct terminal access to troubleshoot
+
+### When to Use SLURM Batch Jobs
+- **Long-running analyses**: Sessions longer than 4-6 hours
+- **Scheduled work**: Want to queue job for later execution
+- **Resource-intensive tasks**: Need guaranteed resource allocation
+- **Reproducible workflows**: Need to document exact resource requirements
+- **Unattended execution**: Can run without constant monitoring
+
+### General Tips
+- **Resource management**: Always specify appropriate time, memory, and CPU requirements
+- **Clean up**: Always exit sessions properly to free resources for other users
+- **Container location**: Keep containers in shared locations when possible to save space
+- **R packages**: Install packages to your personal library path as configured in `~/.Renviron`
+- **Data storage**: Keep large datasets in `/gscratch` rather than home directories
+- **Network usage**: Minimize internet downloads during sessions - prepare data beforehand
+
+### Troubleshooting
+- **Port conflicts**: If port 8787 is busy, the scripts will automatically find an available port
+- **Container not found**: Verify the container path and filename in your settings
+- **R package issues**: Check that `R_LIBS_USER` is properly set in `~/.Renviron`
+- **SSH tunnel problems**: Ensure you're using the correct hostname and port from the output
+- **Session timeouts**: Interactive sessions end at their time limit - plan accordingly
