@@ -7,12 +7,15 @@ editor_options:
 # Agentic Coding Tools and AI Assistants
 
 AI-powered coding assistants can influence how we write and interact
-with code. This guide covers how we might use these tools.    
-**General tips for Using AI Coding Assistants**    
-1. Use branches. This will protect main branch if you go off the rails.   
-2. Provide an instructions.md and tasks.md. This will help keep agent on track
+with code. This guide covers how we might use these tools.
 
-Below we cover GitHub Copilot (w/VScode), ChatGPT, local models 
+\
+**General tips for Using AI Coding Assistants**\
+1. Use branches. This will protect main branch if you go off the rails.\
+2. Provide an instructions.md and tasks.md. This will help keep agent on
+track
+
+Below we cover GitHub Copilot (w/VScode), ChatGPT, and local models
 
 ------------------------------------------------------------------------
 
@@ -83,30 +86,32 @@ Copilot should suggest completions in gray text.
 
 ### VS Code Copilot Commands
 
-In VS Code with GitHub Copilot, there are three main ways to interact with the AI assistant:
+In VS Code with GitHub Copilot, there are three main ways to interact
+with the AI assistant:
 
-**1. Ask**
-- Opens a chat-like panel (Copilot Chat)
-- Type natural language questions ("What does this function do?", "How do I write a regex for emails?")
-- Copilot responds with explanations, code snippets, or suggestions, but doesn't automatically change your code
-- Best for Q&A, explanations, or guidance
+**1. Ask** - Opens a chat-like panel (Copilot Chat) - Type natural
+language questions ("What does this function do?", "How do I write a
+regex for emails?") - Copilot responds with explanations, code snippets,
+or suggestions, but doesn't automatically change your code - Best for
+Q&A, explanations, or guidance
 
-**2. Agent**
-- Runs a Copilot "task agent" that can perform multi-step or tool-like actions
-- Examples: debugging, running tests, explaining diagnostics, or walking through refactors
-- Agents are more goal-oriented and can combine different steps (like reading docs, analyzing code, generating edits)
-- Best for complex workflows where Copilot needs context beyond a single answer
+**2. Agent** - Runs a Copilot "task agent" that can perform multi-step
+or tool-like actions - Examples: debugging, running tests, explaining
+diagnostics, or walking through refactors - Agents are more
+goal-oriented and can combine different steps (like reading docs,
+analyzing code, generating edits) - Best for complex workflows where
+Copilot needs context beyond a single answer
 
-**3. Edit**
-- Lets you select code in the editor, then ask Copilot to modify it
-- Example: highlight a function → Edit with Copilot → "Convert this to async/await"
-- Copilot rewrites the selection directly in your file, showing a diff you can accept or reject
-- Best for direct code changes/refactoring
+**3. Edit** - Lets you select code in the editor, then ask Copilot to
+modify it - Example: highlight a function → Edit with Copilot → "Convert
+this to async/await" - Copilot rewrites the selection directly in your
+file, showing a diff you can accept or reject - Best for direct code
+changes/refactoring
 
-**✅ Rule of thumb:**
-- Use **Ask** when you want to understand
-- Use **Edit** when you want to change
-- Use **Agent** when you want Copilot to do something bigger/more involved (like debugging, running tests, or analyzing errors)
+**✅ Rule of thumb:** - Use **Ask** when you want to understand - Use
+**Edit** when you want to change - Use **Agent** when you want Copilot
+to do something bigger/more involved (like debugging, running tests, or
+analyzing errors)
 
 ------------------------------------------------------------------------
 
@@ -142,15 +147,16 @@ When viewing code files on GitHub.com:
 
 ### 4. Assigning Copilot Issues
 
-Arguably one of the most powerful features is the ability to assign issues to Copilot.  
-Copilot will create a plan, implement on a new branch, then you (or someone else can review).
-If you like it, you can merge it in using a pull request.
-
+Arguably one of the most powerful features is the ability to assign
+issues to Copilot.\
+Copilot will create a plan, implement on a new branch, then you (or
+someone else can review). If you like it, you can merge it in using a
+pull request.
 
 **Copilot in action on the web**
 
 ![Ways to interact with Copilot on
-GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png){width=50%}
+GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png){width="50%"}
 
 ------------------------------------------------------------------------
 
@@ -170,8 +176,6 @@ GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0
 
 ------------------------------------------------------------------------
 
-
-
 ### Documentation and Tutorials
 
 -   [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
@@ -180,7 +184,7 @@ GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0
 -   [Copilot Best
     Practices](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
 
----
+------------------------------------------------------------------------
 
 # ChatGPT
 
@@ -188,7 +192,7 @@ Most are familar with ChatGPT chat features (online or standalone).
 There is also ChatGPT codex that allows you to interact directly with a
 GitHub repository online or in the terminal
 
----
+------------------------------------------------------------------------
 
 # Ollama (local models)
 
@@ -196,11 +200,12 @@ There are certain use cases where having everything on your machine
 makes sense such as asking simple regex questions. For this installing
 Ollama is an option.
 
----
+------------------------------------------------------------------------
 
-# Image Generation 
+# Image Generation
 
 more coming soon
 
----
+------------------------------------------------------------------------
+
 .
