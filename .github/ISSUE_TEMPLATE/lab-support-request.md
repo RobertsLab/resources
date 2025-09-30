@@ -2,7 +2,7 @@
 name: Lab Support Request
 about: Request help with lab computing resources, tools, or troubleshooting
 title: ''
-labels: ''
+labels: 'help wanted'
 assignees: ''
 
 ---
