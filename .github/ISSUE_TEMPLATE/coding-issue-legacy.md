@@ -1,11 +1,13 @@
 ---
-name: Coding Issue
-about: Troubleshooting for computer coding issues.
+name: Coding Issue (Legacy)
+about: Specific troubleshooting for computer coding issues - use Lab Support Request for most issues
 title: ''
 labels: code
 assignees: ''
 
 ---
+
+**Note**: For most issues, please use the "Lab Support Request" template instead. This template is kept for specific coding troubleshooting.
 
 ### Please provide the following in your issue:
 

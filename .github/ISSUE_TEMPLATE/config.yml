@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Roberts Lab Slack
+    url: https://genefish.slack.com
+    about: For urgent issues or general lab communication
+  - name: Roberts Lab Handbook
+    url: https://robertslab.github.io/resources/
+    about: Comprehensive documentation and troubleshooting guides
