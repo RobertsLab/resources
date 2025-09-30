@@ -39,7 +39,7 @@ These templates were created based on analysis of closed issues from the past ye
 ## Configuration
 
 The `config.yml` file:
-- Disables blank issues to encourage use of structured templates
+- Enables blank issues
 - Provides links to Roberts Lab Slack and Handbook for additional resources
 
 ## Usage Guidelines
