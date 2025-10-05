@@ -49,6 +49,5 @@ Additional lab videos and demonstrations.
 
 ### Featured Video
 
-<a href="https://www.youtube.com/watch?v=g3EYdj3tuEM" target="_blank">
-  <img src="https://github.com/RobertsLab/resources/blob/master/img/thumbnail.png?raw=true" alt="Click to play video" width="560" height="315" />
-</a>
+
+[![Click to play video](https://github.com/RobertsLab/resources/blob/master/img/thumbnail.png?raw=true)](https://www.youtube.com/watch?v=g3EYdj3tuEM)
