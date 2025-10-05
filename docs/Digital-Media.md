@@ -38,3 +38,17 @@ Release of sablefish with a satellite tag.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ripw5peJcIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w8-qLKuJgZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Additional Content
+
+Additional lab videos and demonstrations.
+
+
+
+
+
+### Featured Video
+
+<a href="https://www.youtube.com/watch?v=g3EYdj3tuEM" target="_blank">
+  <img src="https://github.com/RobertsLab/resources/blob/master/img/thumbnail.png?raw=true" alt="Click to play video" width="560" height="315" />
+</a>
