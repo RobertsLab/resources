@@ -430,6 +430,529 @@ str(slim.count.df)
 ````
 ---
 
+## Enrichment Analysis and Visualization
+
+Once you have identified differentially expressed genes (DEGs) and performed GO annotation, the next critical step is enrichment analysis to identify which biological processes, molecular functions, or cellular components are statistically overrepresented in your gene set. More importantly, you need to distill these results into a compelling narrative and impactful visualizations for your research story.
+
+### Overview: From Results to Story
+
+Enrichment analysis often produces hundreds of significantly enriched terms, making it challenging to:
+
+1. **Identify the most important physiological processes** relevant to your biological question
+2. **Create visualizations** that clearly communicate key findings
+3. **Write a coherent discussion** that tells a story rather than listing enriched terms
+
+This section provides strategies, code examples, and best practices for transforming enrichment results into publication-ready figures and narratives.
+
+---
+
+### Best Practices for Synthesizing Enrichment Results
+
+#### 1. Prioritize and Filter Results
+
+Not all significantly enriched terms are equally informative. Consider:
+
+- **Biological relevance**: Focus on processes directly related to your experimental design or biological question
+- **Term specificity**: Prefer specific terms (e.g., "lipid metabolic process") over very broad terms (e.g., "metabolic process")
+- **Statistical significance**: Use adjusted p-values (FDR/q-value < 0.05) and consider effect size (fold enrichment)
+- **Redundancy reduction**: Many GO terms are hierarchical and redundant; simplify by selecting representative terms
+
+**Strategy**: Start by filtering to the top 10-20 most significant terms, then manually curate to remove redundancy and retain biological meaning.
+
+#### 2. Group Related Processes
+
+Organize enriched terms into higher-level biological themes:
+
+- **Metabolism**: Energy production, biosynthesis, catabolism
+- **Stress response**: Oxidative stress, heat shock, immune response
+- **Development**: Cell differentiation, morphogenesis, growth
+- **Signaling**: Cell communication, signal transduction
+- **Structural**: Cytoskeleton, cell adhesion, extracellular matrix
+
+This grouping helps create a coherent narrative and simplifies visualization.
+
+#### 3. Compare Across Conditions
+
+If you have multiple comparisons (e.g., multiple treatments or time points):
+
+- Identify **shared** enriched processes (core response)
+- Identify **unique** enriched processes (condition-specific responses)
+- Look for **temporal patterns** (early vs. late response)
+- Consider **opposing processes** (up-regulated vs. down-regulated genes)
+
+---
+
+### R Packages for Enrichment Analysis and Visualization
+
+#### Essential Packages
+
+```r
+# Install Bioconductor packages (if needed)
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install(c("clusterProfiler", "enrichplot", "DOSE", "GOSemSim"))
+
+# Install CRAN packages
+install.packages(c("ggplot2", "dplyr", "tidyr", "forcats", "stringr", "RColorBrewer"))
+```
+
+**Key packages**:
+- **clusterProfiler**: Comprehensive enrichment analysis and visualization
+- **enrichplot**: Advanced visualization functions
+- **GOSemSim**: Semantic similarity to reduce redundancy
+- **ggplot2**: Customizable plotting
+- **dplyr/tidyr**: Data manipulation
+
+---
+
+### Performing Enrichment Analysis with clusterProfiler
+
+#### Basic GO Enrichment Analysis
+
+```r
+library(clusterProfiler)
+library(org.Hs.eg.db)  # Use appropriate organism database
+library(enrichplot)
+library(ggplot2)
+
+# Example: Your list of differentially expressed genes (gene symbols or IDs)
+deg_genes <- c("GENE1", "GENE2", "GENE3", ...)  # Replace with your DEG list
+
+# Background: all genes in your experiment
+background_genes <- c("ALL_GENE1", "ALL_GENE2", ...)  # All genes tested
+
+# GO enrichment analysis (Biological Process)
+ego_bp <- enrichGO(gene         = deg_genes,
+                   universe     = background_genes,
+                   OrgDb        = org.Hs.eg.db,  # Change for your organism
+                   ont          = "BP",          # "BP", "MF", or "CC"
+                   pAdjustMethod = "BH",
+                   pvalueCutoff  = 0.05,
+                   qvalueCutoff  = 0.05,
+                   readable     = TRUE)
+
+# View results
+head(ego_bp)
+
+# Convert to dataframe for custom manipulation
+ego_df <- as.data.frame(ego_bp)
+```
+
+#### Simplify Results (Remove Redundancy)
+
+```r
+library(GOSemSim)
+
+# Simplify GO terms based on semantic similarity
+ego_simplified <- simplify(ego_bp, 
+                          cutoff = 0.7,      # Similarity threshold (0-1)
+                          by = "p.adjust",   # Metric to select representative
+                          select_fun = min)
+
+# Further reduce to top N terms
+top_n <- 20
+ego_top <- ego_simplified[1:min(top_n, nrow(ego_simplified)), ]
+```
+
+---
+
+### Creating Impactful Figures
+
+#### 1. Dot Plot (Most Common and Effective)
+
+Dot plots show enriched terms with:
+- **X-axis**: Gene ratio or fold enrichment
+- **Y-axis**: GO terms
+- **Dot size**: Number of genes
+- **Dot color**: Significance (p-value or q-value)
+
+```r
+# Basic dotplot
+dotplot(ego_top, 
+        showCategory = 20,
+        font.size = 10,
+        title = "GO Biological Process Enrichment")
+
+# Enhanced dotplot with custom colors
+dotplot(ego_top, 
+        showCategory = 20,
+        font.size = 10) + 
+  scale_color_gradient(low = "red", high = "blue") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 11)) +
+  ggtitle("Top Enriched Biological Processes in DEGs")
+```
+
+**Best for**: Showing top 15-25 enriched terms with statistical significance and gene counts at a glance.
+
+#### 2. Bar Plot (Clear and Simple)
+
+```r
+# Bar plot showing count or gene ratio
+barplot(ego_top, 
+        showCategory = 15,
+        font.size = 10) + 
+  ggtitle("GO Enrichment - Biological Process")
+
+# Horizontal bar plot with custom aesthetics
+ggplot(ego_df[1:15, ], aes(x = Count, y = reorder(Description, Count))) +
+  geom_bar(stat = "identity", aes(fill = p.adjust)) +
+  scale_fill_gradient(low = "red", high = "blue", name = "Adjusted\np-value") +
+  labs(x = "Gene Count", y = "", title = "Top 15 Enriched GO Terms") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 11))
+```
+
+**Best for**: Simple, publication-ready figures showing the most enriched processes.
+
+#### 3. Network/Enrichment Map (Shows Relationships)
+
+Network plots display relationships between enriched terms based on shared genes:
+
+```r
+# Pairwise term similarity
+ego_pairwise <- pairwise_termsim(ego_simplified)
+
+# Enrichment map (network plot)
+emapplot(ego_pairwise, 
+         showCategory = 30,
+         cex_label_category = 0.7,
+         layout = "nicely") +
+  ggtitle("Enrichment Map of GO Terms")
+
+# Alternative: use ggraph for more control
+library(ggraph)
+emapplot(ego_pairwise, 
+         showCategory = 30,
+         cex_label_category = 0.7,
+         layout = "fr")  # Fruchterman-Reingold layout
+```
+
+**Best for**: Showing how enriched processes relate to each other and identifying clusters of related functions.
+
+#### 4. Upset Plot (For Multiple Gene Lists)
+
+When comparing enrichment across multiple conditions:
+
+```r
+# Assuming you have multiple enrichment results
+ego_list <- list(Condition1 = ego_cond1,
+                Condition2 = ego_cond2,
+                Condition3 = ego_cond3)
+
+# Upset plot
+upsetplot(ego_list)
+```
+
+**Best for**: Comparing enriched terms across multiple experimental conditions or time points.
+
+#### 5. Heatmap of Enriched Terms
+
+```r
+# Heatplot showing gene-term relationships
+heatplot(ego_top, 
+         showCategory = 15,
+         foldChange = gene_fc)  # Optional: include fold-change values
+
+# Custom heatmap with ggplot2
+library(pheatmap)
+
+# Prepare matrix: rows = genes, columns = GO terms
+# (Requires some data wrangling)
+```
+
+**Best for**: Detailed view of which genes contribute to which enriched terms.
+
+#### 6. Gene-Concept Network
+
+```r
+# Show genes associated with top enriched terms
+cnetplot(ego_top, 
+         showCategory = 5,
+         foldChange = gene_fc,  # Optional: show gene expression
+         circular = FALSE,
+         colorEdge = TRUE)
+
+# Circular layout
+cnetplot(ego_top, 
+         showCategory = 5,
+         circular = TRUE,
+         colorEdge = TRUE)
+```
+
+**Best for**: Highlighting specific genes driving enrichment in key processes.
+
+---
+
+### Advanced Visualization Strategies
+
+#### Combining Multiple Plots
+
+```r
+library(cowplot)
+library(patchwork)
+
+# Create multiple plots
+p1 <- dotplot(ego_bp, showCategory = 15) + ggtitle("Biological Process")
+p2 <- dotplot(ego_mf, showCategory = 15) + ggtitle("Molecular Function")
+p3 <- dotplot(ego_cc, showCategory = 15) + ggtitle("Cellular Component")
+
+# Combine into one figure
+combined_plot <- p1 | p2 | p3
+ggsave("combined_GO_enrichment.png", combined_plot, width = 18, height = 6, dpi = 300)
+```
+
+#### Custom Ordering and Grouping
+
+```r
+# Manually select and order terms by biological theme
+selected_terms <- c(
+  # Metabolism
+  "lipid metabolic process",
+  "carbohydrate metabolic process",
+  
+  # Stress response
+  "response to oxidative stress",
+  "response to heat",
+  
+  # Immune
+  "innate immune response",
+  "inflammatory response"
+)
+
+# Filter and plot in custom order
+ego_custom <- ego_df %>%
+  filter(Description %in% selected_terms) %>%
+  mutate(Description = factor(Description, levels = selected_terms))
+
+ggplot(ego_custom, aes(x = GeneRatio, y = Description)) +
+  geom_point(aes(size = Count, color = p.adjust)) +
+  scale_color_gradient(low = "red", high = "blue") +
+  theme_minimal() +
+  labs(title = "Key Physiological Processes in Response to Treatment")
+```
+
+#### Adding Annotations and Context
+
+```r
+# Add biological context to plot
+dotplot(ego_top, showCategory = 15) +
+  annotate("rect", xmin = 0.3, xmax = 0.5, ymin = 1, ymax = 5, 
+           alpha = 0.2, fill = "yellow") +
+  annotate("text", x = 0.4, y = 6, 
+           label = "Metabolic\nreprogramming", 
+           size = 4, fontface = "bold")
+```
+
+---
+
+### Writing a Compelling Discussion
+
+#### Structure Your Narrative
+
+1. **Start with the big picture**: What is the overall biological theme?
+   - *"Enrichment analysis revealed a coordinated metabolic shift toward lipid catabolism..."*
+
+2. **Present major themes, not individual terms**: Group related processes
+   - *"Three major physiological responses emerged: (1) stress defense, (2) metabolic remodeling, and (3) immune activation"*
+
+3. **Connect to your hypothesis**: Link enrichment to your research question
+   - *"Consistent with our hypothesis that heat stress triggers energy reallocation..."*
+
+4. **Highlight specific processes**: Dive into 2-3 key enriched processes
+   - *"The enrichment of 'oxidative stress response' (q-value = 0.001, 45 genes) suggests..."*
+
+5. **Integrate with gene expression patterns**: Mention direction (up/down)
+   - *"Up-regulated genes were enriched in immune pathways, while down-regulated genes showed enrichment in growth processes"*
+
+6. **Compare to literature**: Reference similar findings or contrasts
+   - *"This aligns with previous transcriptomic studies in oysters exposed to thermal stress (Smith et al., 2020)"*
+
+7. **Acknowledge limitations and complexity**: Be transparent
+   - *"While enrichment analysis provides functional insights, individual gene functions and pathway crosstalk require further investigation"*
+
+#### Example Discussion Paragraph
+
+```
+Gene ontology enrichment analysis of the 1,247 up-regulated genes revealed significant 
+overrepresentation of biological processes related to stress response and metabolic 
+remodeling (Figure 3A). Specifically, genes involved in 'response to oxidative stress' 
+(GO:0006979, q < 0.001, 68 genes), 'protein folding' (GO:0006457, q = 0.002, 45 genes), 
+and 'lipid catabolic process' (GO:0016042, q = 0.003, 52 genes) were highly enriched. 
+This pattern suggests a coordinated cellular response to thermal stress characterized by 
+both protective mechanisms (heat shock proteins, antioxidant enzymes) and metabolic 
+adaptation (shift from anabolic to catabolic processes). In contrast, down-regulated 
+genes (n = 892) showed enrichment in 'cell division' (GO:0051301, q < 0.001) and 
+'protein translation' (GO:0006412, q = 0.002), indicating suppression of energy-intensive 
+growth processes during stress. These findings align with the concept of stress-induced 
+growth-metabolism tradeoffs previously described in marine invertebrates (Jones et al., 2018).
+```
+
+---
+
+### Complete Workflow Example
+
+```r
+# ===== Complete Enrichment Analysis and Visualization Workflow =====
+
+library(clusterProfiler)
+library(enrichplot)
+library(ggplot2)
+library(dplyr)
+library(org.Hs.eg.db)  # Change to your organism
+
+# 1. Load your DEG results
+degs <- read.csv("deg_results.csv")
+
+# 2. Separate up- and down-regulated genes
+up_genes <- degs %>% filter(log2FoldChange > 1, padj < 0.05) %>% pull(gene_id)
+down_genes <- degs %>% filter(log2FoldChange < -1, padj < 0.05) %>% pull(gene_id)
+background <- degs$gene_id
+
+# 3. Run enrichment for up-regulated genes
+ego_up <- enrichGO(gene = up_genes,
+                   universe = background,
+                   OrgDb = org.Hs.eg.db,
+                   ont = "BP",
+                   pAdjustMethod = "BH",
+                   pvalueCutoff = 0.05,
+                   qvalueCutoff = 0.05,
+                   readable = TRUE)
+
+# 4. Run enrichment for down-regulated genes
+ego_down <- enrichGO(gene = down_genes,
+                     universe = background,
+                     OrgDb = org.Hs.eg.db,
+                     ont = "BP",
+                     pAdjustMethod = "BH",
+                     pvalueCutoff = 0.05,
+                     qvalueCutoff = 0.05,
+                     readable = TRUE)
+
+# 5. Simplify results
+ego_up_simp <- simplify(ego_up, cutoff = 0.7, by = "p.adjust", select_fun = min)
+ego_down_simp <- simplify(ego_down, cutoff = 0.7, by = "p.adjust", select_fun = min)
+
+# 6. Create publication-ready figure
+p_up <- dotplot(ego_up_simp, showCategory = 15, title = "Up-regulated Genes") +
+  scale_color_gradient(low = "red", high = "blue")
+
+p_down <- dotplot(ego_down_simp, showCategory = 15, title = "Down-regulated Genes") +
+  scale_color_gradient(low = "red", high = "blue")
+
+# Combine plots
+library(patchwork)
+combined <- p_up / p_down
+ggsave("Figure_GO_enrichment.png", combined, width = 10, height = 12, dpi = 300)
+
+# 7. Export results table for supplementary materials
+write.csv(as.data.frame(ego_up_simp), "Supplementary_Table_GO_up.csv", row.names = FALSE)
+write.csv(as.data.frame(ego_down_simp), "Supplementary_Table_GO_down.csv", row.names = FALSE)
+
+# 8. Create enrichment map for manuscript
+ego_up_pairwise <- pairwise_termsim(ego_up_simp)
+p_network <- emapplot(ego_up_pairwise, showCategory = 30) +
+  ggtitle("Enrichment Network - Up-regulated Genes")
+ggsave("Figure_enrichment_network.png", p_network, width = 10, height = 10, dpi = 300)
+```
+
+---
+
+### Alternative Approaches and Tools
+
+#### Using GOplot for Circular Visualization
+
+```r
+# Install GOplot
+if (!requireNamespace("GOplot", quietly = TRUE))
+    install.packages("GOplot")
+
+library(GOplot)
+
+# Prepare data (requires specific format)
+# See: https://wencke.github.io/
+
+# Circular visualization
+GOCircle(GOplot_data, nsub = 10)
+```
+
+#### REVIGO for Semantic Clustering
+
+For reducing GO term redundancy through semantic similarity:
+
+1. Export GO terms with p-values
+2. Upload to [REVIGO](http://revigo.irb.hr/)
+3. Visualize clustered terms
+4. Export representative terms
+
+#### ShinyGO for Interactive Exploration
+
+[ShinyGO](http://bioinformatics.sdstate.edu/go/) provides a web interface for:
+- Enrichment analysis
+- Interactive visualizations
+- Pathway analysis
+- No coding required
+
+---
+
+### Tips for Publication-Quality Figures
+
+1. **Font sizes**: Ensure labels are readable (minimum 8-10 pt)
+2. **Color palettes**: Use colorblind-friendly palettes (viridis, RColorBrewer)
+3. **Resolution**: Export at 300 DPI for publication
+4. **File format**: PDF for vector graphics, PNG for presentations
+5. **Simplicity**: Don't show more than 20-25 terms per figure
+6. **Consistency**: Use same color schemes across figures
+7. **White space**: Don't overcrowd; consider multi-panel figures
+
+```r
+# Colorblind-friendly palette
+library(viridis)
+
+dotplot(ego_top, showCategory = 15) +
+  scale_color_viridis(option = "plasma", direction = -1) +
+  theme_minimal(base_size = 12)
+```
+
+---
+
+### Common Pitfalls to Avoid
+
+1. **Showing too many terms**: More is not better; focus on top processes
+2. **Ignoring redundancy**: Simplify semantically similar terms
+3. **Cherry-picking**: Report systematic filtering criteria
+4. **Over-interpretation**: GO terms are predictions, not proof of function
+5. **Ignoring background**: Always use appropriate universe/background
+6. **P-value only**: Consider fold enrichment and gene counts too
+7. **No biological context**: Connect enrichment to your research question
+
+---
+
+### Use Cases from Our Lab
+
+- [Enrichment analysis examples](https://github.com/RobertsLab/paper-tanner-crab) - Tanner crab transcriptomics ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/paper-tanner-crab)
+
+- [C. virginica GO enrichment](https://github.com/sr320/ceabigr) - Eastern oyster functional genomics ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/ceabigr)
+
+---
+
+### Additional Resources
+
+**R Packages Documentation**:
+- [clusterProfiler book](https://yulab-smu.top/biomedical-knowledge-mining-book/)
+- [enrichplot documentation](https://github.com/YuLab-SMU/enrichplot)
+
+**Tutorials**:
+- [clusterProfiler tutorial](http://bioconductor.org/packages/release/bioc/vignettes/clusterProfiler/inst/doc/clusterProfiler.html)
+- [GO enrichment analysis workflow](https://learn.gencore.bio.nyu.edu/rna-seq-analysis/gene-set-enrichment-analysis/)
+
+**Theory**:
+- [Gene Ontology Handbook](http://geneontology.org/)
+- [Understanding enrichment analysis](https://www.pathwaycommons.org/guide/primers/statistics/fishers_exact_test/)
+
+---
+
 ## Genome features
 In addition to sequence database alignment, finding spatial relationship within a genome is also an import approach for annotation. Often this is done using software tools such as `bedtools`.
 
