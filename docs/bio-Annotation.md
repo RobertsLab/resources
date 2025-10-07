@@ -430,19 +430,19 @@ str(slim.count.df)
 ````
 ---
 
-## Enrichment Analysis and Visualization
+## Enrichment Analysis Visualization and Interpretation
 
-Once you have identified differentially expressed genes (DEGs) and performed GO annotation, the next critical step is enrichment analysis to identify which biological processes, molecular functions, or cellular components are statistically overrepresented in your gene set. More importantly, you need to distill these results into a compelling narrative and impactful visualizations for your research story.
+You've completed your enrichment analysis and have a list of significantly enriched GO terms, KEGG pathways, or other functional categories. Now what? Enrichment analysis often produces hundreds of significantly enriched terms, making it challenging to distill these results into a compelling narrative and impactful visualizations for your research story.
 
 ### Overview: From Results to Story
 
-Enrichment analysis often produces hundreds of significantly enriched terms, making it challenging to:
+After completing enrichment analysis, you typically face these challenges:
 
-1. **Identify the most important physiological processes** relevant to your biological question
-2. **Create visualizations** that clearly communicate key findings
+1. **Identify the most important physiological processes** relevant to your biological question from hundreds of enriched terms
+2. **Create visualizations** that clearly communicate key findings without overwhelming readers
 3. **Write a coherent discussion** that tells a story rather than listing enriched terms
 
-This section provides strategies, code examples, and best practices for transforming enrichment results into publication-ready figures and narratives.
+This section provides strategies, code examples, and best practices for transforming your enrichment results into publication-ready figures and narratives. **This guide assumes you already have enrichment results** (e.g., from clusterProfiler, GOseq, DAVID, or similar tools).
 
 ---
 
@@ -482,7 +482,7 @@ If you have multiple comparisons (e.g., multiple treatments or time points):
 
 ---
 
-### R Packages for Enrichment Analysis and Visualization
+### R Packages for Visualization
 
 #### Essential Packages
 
@@ -491,52 +491,43 @@ If you have multiple comparisons (e.g., multiple treatments or time points):
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 
-BiocManager::install(c("clusterProfiler", "enrichplot", "DOSE", "GOSemSim"))
+BiocManager::install(c("enrichplot", "GOSemSim", "DOSE"))
 
 # Install CRAN packages
 install.packages(c("ggplot2", "dplyr", "tidyr", "forcats", "stringr", "RColorBrewer"))
 ```
 
 **Key packages**:
-- **clusterProfiler**: Comprehensive enrichment analysis and visualization
-- **enrichplot**: Advanced visualization functions
+- **enrichplot**: Advanced visualization functions for enrichment results
 - **GOSemSim**: Semantic similarity to reduce redundancy
 - **ggplot2**: Customizable plotting
 - **dplyr/tidyr**: Data manipulation
 
 ---
 
-### Performing Enrichment Analysis with clusterProfiler
+### Working with Your Enrichment Results
 
-#### Basic GO Enrichment Analysis
+This section assumes you have enrichment results in one of these formats:
+
+1. **clusterProfiler object** (e.g., from `enrichGO()`, `enrichKEGG()`)
+2. **Data frame** with columns for: term ID, description, p-value, adjusted p-value, gene count, etc.
+3. **Table from web tools** (DAVID, Enrichr, etc.) exported as CSV/TSV
+
+#### Loading Your Results
 
 ```r
-library(clusterProfiler)
-library(org.Hs.eg.db)  # Use appropriate organism database
 library(enrichplot)
 library(ggplot2)
+library(dplyr)
 
-# Example: Your list of differentially expressed genes (gene symbols or IDs)
-deg_genes <- c("GENE1", "GENE2", "GENE3", ...)  # Replace with your DEG list
+# If you have a clusterProfiler object already:
+# ego_results <- readRDS("my_enrichment_results.rds")
 
-# Background: all genes in your experiment
-background_genes <- c("ALL_GENE1", "ALL_GENE2", ...)  # All genes tested
+# If you have a table from another tool, read it:
+# enrichment_df <- read.csv("enrichment_results.csv")
 
-# GO enrichment analysis (Biological Process)
-ego_bp <- enrichGO(gene         = deg_genes,
-                   universe     = background_genes,
-                   OrgDb        = org.Hs.eg.db,  # Change for your organism
-                   ont          = "BP",          # "BP", "MF", or "CC"
-                   pAdjustMethod = "BH",
-                   pvalueCutoff  = 0.05,
-                   qvalueCutoff  = 0.05,
-                   readable     = TRUE)
-
-# View results
-head(ego_bp)
-
-# Convert to dataframe for custom manipulation
-ego_df <- as.data.frame(ego_bp)
+# For this guide, we'll assume you have a clusterProfiler enrichResult object
+# named 'ego_results' with your enrichment analysis results
 ```
 
 #### Simplify Results (Remove Redundancy)
@@ -544,8 +535,9 @@ ego_df <- as.data.frame(ego_bp)
 ```r
 library(GOSemSim)
 
+# Assuming you have enrichment results in 'ego_results'
 # Simplify GO terms based on semantic similarity
-ego_simplified <- simplify(ego_bp, 
+ego_simplified <- simplify(ego_results, 
                           cutoff = 0.7,      # Similarity threshold (0-1)
                           by = "p.adjust",   # Metric to select representative
                           select_fun = min)
@@ -553,7 +545,15 @@ ego_simplified <- simplify(ego_bp,
 # Further reduce to top N terms
 top_n <- 20
 ego_top <- ego_simplified[1:min(top_n, nrow(ego_simplified)), ]
+
+# Convert to dataframe for further manipulation
+ego_df <- as.data.frame(ego_simplified)
 ```
+
+**Note**: If your enrichment results are from a non-clusterProfiler source (e.g., DAVID, Enrichr), you can manually filter redundant terms by:
+- Selecting the most specific term from hierarchical groups
+- Using [REVIGO](http://revigo.irb.hr/) to cluster semantically similar terms
+- Prioritizing terms with the highest significance and gene counts
 
 ---
 
@@ -793,48 +793,31 @@ growth-metabolism tradeoffs previously described in marine invertebrates (Jones 
 
 ### Complete Workflow Example
 
-```r
-# ===== Complete Enrichment Analysis and Visualization Workflow =====
+This example assumes you already have enrichment results from your analysis.
 
-library(clusterProfiler)
+```r
+# ===== Visualization Workflow Starting with Enrichment Results =====
+
 library(enrichplot)
 library(ggplot2)
 library(dplyr)
-library(org.Hs.eg.db)  # Change to your organism
+library(GOSemSim)
 
-# 1. Load your DEG results
-degs <- read.csv("deg_results.csv")
+# STARTING POINT: You already have enrichment results
+# These could be from clusterProfiler, GOseq, or loaded from saved files
+# For this example, we assume you have two enrichResult objects:
+# - ego_up: enrichment results for up-regulated genes
+# - ego_down: enrichment results for down-regulated genes
 
-# 2. Separate up- and down-regulated genes
-up_genes <- degs %>% filter(log2FoldChange > 1, padj < 0.05) %>% pull(gene_id)
-down_genes <- degs %>% filter(log2FoldChange < -1, padj < 0.05) %>% pull(gene_id)
-background <- degs$gene_id
+# If you saved your results previously, load them:
+# ego_up <- readRDS("enrichment_results_up.rds")
+# ego_down <- readRDS("enrichment_results_down.rds")
 
-# 3. Run enrichment for up-regulated genes
-ego_up <- enrichGO(gene = up_genes,
-                   universe = background,
-                   OrgDb = org.Hs.eg.db,
-                   ont = "BP",
-                   pAdjustMethod = "BH",
-                   pvalueCutoff = 0.05,
-                   qvalueCutoff = 0.05,
-                   readable = TRUE)
-
-# 4. Run enrichment for down-regulated genes
-ego_down <- enrichGO(gene = down_genes,
-                     universe = background,
-                     OrgDb = org.Hs.eg.db,
-                     ont = "BP",
-                     pAdjustMethod = "BH",
-                     pvalueCutoff = 0.05,
-                     qvalueCutoff = 0.05,
-                     readable = TRUE)
-
-# 5. Simplify results
+# 1. Simplify results to remove redundancy
 ego_up_simp <- simplify(ego_up, cutoff = 0.7, by = "p.adjust", select_fun = min)
 ego_down_simp <- simplify(ego_down, cutoff = 0.7, by = "p.adjust", select_fun = min)
 
-# 6. Create publication-ready figure
+# 2. Create publication-ready figure
 p_up <- dotplot(ego_up_simp, showCategory = 15, title = "Up-regulated Genes") +
   scale_color_gradient(low = "red", high = "blue")
 
@@ -846,15 +829,41 @@ library(patchwork)
 combined <- p_up / p_down
 ggsave("Figure_GO_enrichment.png", combined, width = 10, height = 12, dpi = 300)
 
-# 7. Export results table for supplementary materials
+# 3. Export results table for supplementary materials
 write.csv(as.data.frame(ego_up_simp), "Supplementary_Table_GO_up.csv", row.names = FALSE)
 write.csv(as.data.frame(ego_down_simp), "Supplementary_Table_GO_down.csv", row.names = FALSE)
 
-# 8. Create enrichment map for manuscript
+# 4. Create enrichment map for manuscript
 ego_up_pairwise <- pairwise_termsim(ego_up_simp)
 p_network <- emapplot(ego_up_pairwise, showCategory = 30) +
   ggtitle("Enrichment Network - Up-regulated Genes")
 ggsave("Figure_enrichment_network.png", p_network, width = 10, height = 10, dpi = 300)
+```
+
+**Alternative: Working with enrichment results from other tools**
+
+If you have enrichment results from DAVID, Enrichr, or similar web tools:
+
+```r
+# Load your enrichment results table
+enrichment_df <- read.csv("enrichment_results.csv")
+
+# Assuming columns: Term, P.value, Adjusted.P.value, Genes, Count
+# Filter to significant terms
+sig_terms <- enrichment_df %>%
+  filter(Adjusted.P.value < 0.05) %>%
+  arrange(Adjusted.P.value) %>%
+  head(20)
+
+# Create a custom bar plot
+ggplot(sig_terms, aes(x = Count, y = reorder(Term, Count))) +
+  geom_bar(stat = "identity", aes(fill = Adjusted.P.value)) +
+  scale_fill_gradient(low = "red", high = "blue", name = "Adjusted\np-value") +
+  labs(x = "Gene Count", y = "", title = "Top 20 Enriched Terms") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = 10))
+
+ggsave("enrichment_barplot.png", width = 8, height = 10, dpi = 300)
 ```
 
 ---
