@@ -63,6 +63,7 @@ nav:
        - Logging in: 'klone_Logging-In.md'
        - Node Types: 'klone_Node-Types.md'
        - Data Storage and System Organization: 'klone_Data-Storage-and-System-Organization.md'
+       - Managing Home Directory: 'klone_Managing-Home-Directory.md'
        - File Transfers: 'klone_File-Transfers.md'
        - Installing Programs: 'klone_Installing-Programs.md'
        - Running a job: 'klone_Running-a-Job.md'
