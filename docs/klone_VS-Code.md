@@ -33,7 +33,7 @@
 5. Set the node in your local `.ssh/klone-node-config` file
 	- This is described in the UW-IT documentation: [https://hyak.uw.edu/docs/tools/vsc-proxy-jump/](https://hyak.uw.edu/docs/tools/vsc-proxy-jump/)
 	- You can do this through your command line text editor (e.g. nano, vim). You’ll paste the node name after the `Hostname` field
-	- Alternatively you can use the `Run set-hyak-node.sh` script
+	- Alternatively you can use the Run `set-hyak-node.sh` script
 		- `bash set-hyak-node.sh`
 6. Open VS Code and run Remove-SSH Connect to Server
 	- type `fn + F1` then in the top bar type `Remote-SSH: Connect to Server` and select `klone-node`.
