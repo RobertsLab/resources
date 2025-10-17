@@ -46,6 +46,6 @@ You should now be connected and the bottom left corner of the VS Code window sho
 ## Still struggling?
 
 This is complicated and you don’t have to struggle alone. 
-- Create a [GitHub issue](https://github.com/RobertsLab/resources/issues)
-- Contact UW-IT (help@uw.edu)
-- Go to [UW-IT office hours](https://calendar.washington.edu/sea_uwit-rc)
+	- Create a [GitHub issue](https://github.com/RobertsLab/resources/issues)
+	- Contact UW-IT (help@uw.edu)
+	- Go to [UW-IT office hours](https://calendar.washington.edu/sea_uwit-rc)
