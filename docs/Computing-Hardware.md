@@ -14,6 +14,12 @@ You will need accounts with the following services in order to minimally functio
 
 - [Slack](https://slack.com): Needed for participation in the [Roberts Lab Slack channels](https://genefish.slack.com)
 
+## Software Setup
+
+If you're using a Windows computer and need to set up Git and RStudio, see our comprehensive guide:
+
+- [Git and RStudio Setup for Windows](Git-RStudio-Setup-Windows.md)
+
 ## Computers
 You're free to use your own computer for any computing task that you wish. However, some of the computing work that you will perform will require lengthy run times. As such, we have computers available for you to use. Plus, Roberts Lab computers have better processors and much more RAM, which will allow you to keep your computer free for doing fun stuff, like reading Facebook (or scientific papers).
 
