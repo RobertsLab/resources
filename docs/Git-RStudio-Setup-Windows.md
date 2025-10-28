@@ -227,8 +227,7 @@ Once Git is connected to RStudio, you can use version control for your projects:
 - **RStudio Git Integration**: [https://support.posit.co/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN](https://support.posit.co/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
 - **Happy Git with R**: [https://happygitwithr.com/](https://happygitwithr.com/) - Comprehensive guide for using Git with R and RStudio
 - **Software Carpentry Git Lesson**: [https://swcarpentry.github.io/git-novice/](https://swcarpentry.github.io/git-novice/)
-- **Roberts Lab Computing Best Practices**: [Computing-Best-Practices.md](Computing-Best-Practices.md)
-- **Video Tutorial - Working with Git and RStudio on Raven**: See [Computing Best Practices](Computing-Best-Practices.md#working-with-git-and-rstudio-on-raven)
+- **Roberts Lab Computing Best Practices**: [Computing-Best-Practices.md](Computing-Best-Practices.md) - includes video tutorial on working with Git and RStudio on Raven
 
 ---
 
