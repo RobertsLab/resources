@@ -28,7 +28,9 @@ Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organi
 - shell
 - git    
 - GitHub Desktop   
-- RStudio   
+- RStudio
+
+**Windows users**: See our [Git and RStudio Setup guide for Windows](Git-RStudio-Setup-Windows.md) for detailed installation instructions.
 
 #### What do you recommend for learning more about the process and output of the labs's scientific endevours?
 
