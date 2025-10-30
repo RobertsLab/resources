@@ -36,7 +36,7 @@
 	- Alternatively you can use the Run `set-hyak-node.sh` script
 		- `bash set-hyak-node.sh`
 6. Open VS Code and run Remove-SSH Connect to Server
-	- type `fn + F1` then in the top bar type `Remote-SSH: Connect to Server` and select `klone-node`.
+	- type `fn + F1` then in the top bar type `Remote-SSH: Connect to Host` and select `klone-node`.
  		- If you don't see the function pop up in the bar, you may need to install the extention Remote-SSH.
     	- If prompted about fingerprinting select continue.
      	- If you are still having difficulty connecting, one hack is to log in to Klone through the terminal and delete the `.vscode-server` directory (`rm -r .vscode-server`). It is possible that it did not fully download when you initially tried to connect and this causes failure to connect. 
