@@ -54,7 +54,6 @@ Using RStudio via Apptainer containers allows you to run RStudio in an isolated 
    ```
    
    Replace `</path/to/your/container>/` with the path to your RStudio Apptainer container file.
-
 4. Open a web browser on your local machine and navigate to:
    [`http://raven.fish.washington.edu:8788`](http://raven.fish.washington.edu:8788)
 
