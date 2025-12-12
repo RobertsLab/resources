@@ -44,13 +44,13 @@ Using RStudio via Apptainer containers allows you to run RStudio in an isolated 
 
    ```bash
    singularity exec \
-  --bind /tmp:/tmp \
-  --bind /home:/home \
-  --bind ~/rstudio-server/var-lib:/var/lib/rstudio-server \
-  --bind ~/rstudio-server/var-run:/var/run/rstudio-server \
-  --bind ~/rstudio-server/tmp:/tmp/rstudio-server \
-  </path/to/your/container>/srlab-R4.4-bioinformatics-container-4743580.sif \
-  rserver --www-port 8788 --www-address 0.0.0.0 --server-user=$(whoami)
+     --bind /tmp:/tmp \
+     --bind /home:/home \
+     --bind ~/rstudio-server/var-lib:/var/lib/rstudio-server \
+     --bind ~/rstudio-server/var-run:/var/run/rstudio-server \
+     --bind ~/rstudio-server/tmp:/tmp/rstudio-server \
+     </path/to/your/container>/srlab-R4.4-bioinformatics-container-4743580.sif \
+     rserver --www-port 8788 --www-address 0.0.0.0 --server-user=$(whoami)
    ```
    
    Replace `</path/to/your/container>/` with the path to your RStudio Apptainer container file.
