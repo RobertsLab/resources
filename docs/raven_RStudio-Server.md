@@ -31,6 +31,7 @@ Using RStudio via Apptainer containers allows you to run RStudio in an isolated 
 ### Launching RStudio from an Apptainer Container
 
 1. SSH into Raven.
+
 2. Start a `screen` session (optional, but recommended):
 
    ```bash
@@ -51,11 +52,12 @@ Using RStudio via Apptainer containers allows you to run RStudio in an isolated 
   </path/to/your/container>/srlab-R4.4-bioinformatics-container-4743580.sif \
   rserver --www-port 8788 --www-address 0.0.0.0 --server-user=$(whoami)
    ```
+   
    Replace `</path/to/your/container>/` with the path to your RStudio Apptainer container file.
 
 4. Open a web browser on your local machine and navigate to:
    [`http://raven.fish.washington.edu:8788`](http://raven.fish.washington.edu:8788)
 
    NOTE: You may be prompted with a security warning, since the site uses `http` instead of `https`. You can safely ignore this warning and proceed to the site.
-   
+
 5. Log in with your _Raven_ account credentials.
