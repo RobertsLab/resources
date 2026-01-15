@@ -9,13 +9,13 @@ The Glycogen-Glo Assay (Promega) is a luminescence-based assay used to quantify 
 ## Reagents:
 
 - Glycogen-Glo Assay Kit ([Promega](https://github.com/RobertsLab/resources/blob/master/protocols/Commercial_Protocols/Promega_Glycogen_Glo_Assay.pdf)) containing:
-  - Glucoamylase Buffer
-  - Glucoamylase
-  - Luciferin Detection Solution
-  - Glycogen Standard (20 µg/µL)
-  - Glucose Standard (100 mM)
-  - 0.3N HCl
-  - TRIS Buffer
+    - Glucoamylase Buffer
+    - Glucoamylase
+    - Luciferin Detection Solution
+    - Glycogen Standard (20 µg/µL)
+    - Glucose Standard (100 mM)
+    - 0.3N HCl
+    - TRIS Buffer
 - PBS (Phosphate Buffered Saline)
 - 0.5mm glass beads
 - DNase-free H₂O (NanoPure H₂O)
