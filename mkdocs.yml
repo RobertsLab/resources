@@ -86,6 +86,7 @@ nav:
      - Data-Management: 'Data-Management.md'
      - Lab Protocols:
        - Bullet Blender: 'protocols/protocol-bullet_blender.md'
+       - Glycogen-Glo Assay: 'protocols/protocol-glycogen-glo-assay.md'
        - qPCR: 'protocols/protocol-qPCR.md'
        - Resazurin Assay: 'protocols/resazurin-assay.md'
        - Reverse Transcription: 'protocols/protocol-reverse_transcription.md'
