@@ -129,6 +129,13 @@ For samples outside this range:
 
 ### A. Reagent Preparation
 
+**NOTE:** Kit components have been aliquoted into ~25 reaction volumes to minimize freeze/thaw cycles (≤3 cycles recommended). Aliquots are stored as follows:
+- **Reductase:** -80°C freezer (middle), bottom shelf
+- **All other components (except standards):** -20°C freezer in FTR 209, in dedicated boxes
+- **Glycogen and Glucose standards:** -20°C freezer in original Glycogen-Glo kit box
+
+**CAUTION:** Aliquot tubes are not labeled. Be careful not to mix up components when removing from storage.
+
 1. Thaw all kit reagents according to manufacturer's instructions.
 2. After thawing:
    - Keep Glucoamylase Buffer and Luciferin Detection Solution at room temperature
