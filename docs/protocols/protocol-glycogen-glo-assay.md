@@ -22,18 +22,20 @@ The Glycogen-Glo Assay (Promega) is a luminescence-based assay used to quantify 
 
 ### Specific Hazards:
 
-- 0.3N HCl is corrosive. Use appropriate PPE and work carefully.
-- Glass beads can be hazardous if inhaled. Handle with care.
+- 0.3N HCl is corrosive.
+- Glass beads can be hazardous if inhaled.
 - Dry ice and liquid nitrogen are cryogenic materials and can cause frostbite. Use caution when handling and wear appropriate gloves and eye protection (liquid nitrogen).
 - The Bullet Blender is loud and can cause hearing damage if used without ear protection for extended periods.
 
 ### Personal Protective Equipment (PPE):
 
 REQUIRED:
+
 - Gloves
 - Lab coat
 
 OPTIONAL:
+
 - Eye protection (when handling HCl)
 - Ear protection (when using Bullet Blender for extended periods)
 
@@ -55,7 +57,6 @@ OPTIONAL:
 ## Procedure
 
 ### Total Time: ~3.5-4.5 hours
-### Cost/sample: Variable (depends on kit usage and sample number)
 
 ---
 
