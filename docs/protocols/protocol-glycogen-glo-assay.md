@@ -159,16 +159,16 @@ For samples outside this range:
 - 0.02 µg/µL
 - 0 µg/µL (blank)
 
-Perform 1:100 dilutions: 1µL standard in 99µL dilution buffer.
+Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 **Glucose Standard Curve (in triplicate - OPTIONAL):**
-- 100 mM
-- 10 mM
-- 1 mM
-- 0.1 mM
-- 0 mM (blank)
+- 100 µM
+- 10 µM
+- 1 µM
+- 0.1 µM
+- 0 µM (blank)
 
-Perform 1:100 dilutions: 1µL standard in 99µL dilution buffer.
+Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 **NOTE:** [Initial testing suggests glucose levels in ctenidia tissue are below detection limits](https://robertslab.github.io/sams-notebook/posts/2026/2026-01-12-Glycogen-Assay---Glycogen-Glo-Dilution-Testing-with-M.gigas-Ctenidia-Homogenate/)(notebook entry), so glucose measurements may be skipped for these samples. However, glucose background should be assessed when working with new tissue types.
 
