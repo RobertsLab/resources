@@ -255,20 +255,20 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 1. Generate standard curve using linear regression:
 
-   - Plot luminescence (y-axis) vs. glycogen concentration (x-axis)
-   - Calculate slope and intercept
+    - Plot luminescence (y-axis) vs. glycogen concentration (x-axis)
+    - Calculate slope and intercept
 
 2. Calculate sample concentrations from luminescence values:
 
-   - Concentration = (Luminescence - Intercept) / Slope
+    - Concentration = (Luminescence - Intercept) / Slope
 
 3. If glucose was measured, subtract glucose values from total to obtain glycogen-specific values.
 
 4. Calculate final glycogen content accounting for:
 
-   - Dilution factors
-   - Original tissue weight
-   - Homogenization buffer volume
+    - Dilution factors
+    - Original tissue weight
+    - Homogenization buffer volume
 
 ---
 
