@@ -184,7 +184,6 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### C. Plate Setup
 
 1. Plan plate layout to include:
-
    - Sample replicates (duplicates or triplicates recommended)
    - Glycogen standard curve (triplicate)
    - Glucose standard curve (triplicate, if needed)
@@ -200,15 +199,12 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 1. Add 25µL of sample or standard to designated wells.
 2. For GLYCOGEN measurements:
-
    - Add 25µL of Glucoamylase Digestion Solution
 
 3. For GLUCOSE measurements (optional):
-
    - Add 25µL of Glucoamylase Buffer only (no glucoamylase enzyme)
 
 4. For blanks:
-
    - Add 25µL of dilution buffer, then 25µL of appropriate buffer (with or without enzyme)
 
 5. Cover plate loosely with aluminum foil to prevent light exposure and contamination.
@@ -218,7 +214,6 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### B. Detection Reaction
 
 1. Prepare glucose detection reagent immediately before use:
-
    - Calculate total volume needed: count ALL wells (samples + standards + blanks)
    - Each well requires 50µL
    - Add 10% extra to account for pipetting error
@@ -226,7 +221,6 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
    - Mix Luciferin glucose detection reagent gently by inversion five times.
 
 2. Add 50µL of glucose detection reagent to ALL wells.
-
    - Use repeater pipette for consistency if available
 3. Cover plate loosely with aluminum foil.
 4. Gently shake plate by hand for 60 seconds.
@@ -235,7 +229,6 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### C. Luminescence Reading
 
 1. After incubation, read luminescence on plate reader.
-
    - Integration time: 1 second per well
    - No filters needed
 
@@ -255,21 +248,18 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### Calculations
 
 1. Generate standard curve using linear regression:
-
-    - Plot luminescence (y-axis) vs. glycogen concentration (x-axis)
-    - Calculate slope and intercept
+   - Plot luminescence (y-axis) vs. glycogen concentration (x-axis)
+   - Calculate slope and intercept
 
 2. Calculate sample concentrations from luminescence values:
-
-    - Concentration = (Luminescence - Intercept) / Slope
+   - Concentration = (Luminescence - Intercept) / Slope
 
 3. If glucose was measured, subtract glucose values from total to obtain glycogen-specific values.
 
 4. Calculate final glycogen content accounting for:
-
-    - Dilution factors
-    - Original tissue weight
-    - Homogenization buffer volume
+   - Dilution factors
+   - Original tissue weight
+   - Homogenization buffer volume
 
 ---
 
