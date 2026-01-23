@@ -228,11 +228,43 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 ### C. Luminescence Reading
 
-1. After incubation, read luminescence on plate reader.
-    - Integration time: 1 second per well
-    - No filters needed
+1. Power on plate reader and allow to warm up according to manufacturer's instructions.
 
-2. Export raw luminescence data for analysis.
+NOTE: Start the plate reader _before_ opening the Gen5 software.
+
+2. Using the Gen5 software, open the [`Gen5-default-96well-luminescence.xpt`](https://github.com/RobertsLab/sormi-assay-development/blob/main/Glycogen/data/plate_reader_files/Gen5-default-96well-luminescence.xpt) (GitHub) experiment file. 
+
+This file is set to read luminescence in all wells 96-well plate format with appropriate settings.
+
+3. After incubation, read luminescence on plate reader.
+
+4. Rename and save the output file as follows:
+
+- `Gen5-YYYYMMDD-<species_abbrevation>-<experiment_description>.xpt`
+
+    - For `<species_abbrevation>`, use first letter of genus and first three letters of species. E.g. `mgig` for _M. gigas_.
+
+
+4. Add sample names and standard curve information to the file.
+
+Sample name conventions should be as follows:
+
+- `<sample>-<analyte>-<tissue amount in mg>-df.<dilution factor>`
+
+E.g. `A2-glyc-50-df.10`
+
+Where:
+- `<sample>`: Sample identifier (e.g., A2)
+- `<analyte>`: Either "glyc" for glycogen or "gluc" for glucose
+- `<tissue amount in mg>`: Amount of tissue _originally collected_ in mg.
+- `<dilution factor>`: Dilution factor applied during sample preparation. E.g a dilution factor of `1` means no dilution, `10` means a 1:10 dilution, etc.
+
+Standard curve names should be as follows:
+
+- `STD-glyc-<concentration in µg/uL>` for glycogen standards. E.g. `STD-glyc-2` for 2 µg glycogen standard.
+
+- `STD-gluc-<concentration in µM>` for glucose standards. E.g. `STD-gluc-10` for 10 µM glucose standard.
+
 
 
 ---
