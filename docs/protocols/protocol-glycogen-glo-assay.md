@@ -246,27 +246,27 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 5. Add sample names and standard curve information to the file.
 
-Sample name conventions should be as follows:
-
-- `<sample>-<analyte>-<tissue amount in mg>-df.<dilution factor>`
-
-E.g. `A2-glyc-50-df.10`
-
-Where:
-- `<sample>`: Sample identifier (e.g., A2)
-- `<analyte>`: Either "glyc" for glycogen or "gluc" for glucose
-- `<tissue amount in mg>`: Amount of tissue _originally collected_ in mg.
-- `<dilution factor>`: Dilution factor applied during sample preparation. E.g a dilution factor of `1` means no dilution, `10` means a 1:10 dilution, etc.
-
-Standard curve names should be as follows:
-
-- `STD-glyc-<concentration in µg/uL>` for glycogen standards. 
-
-    - E.g. `STD-glyc-2` for 2 µg glycogen standard.
-
-- `STD-gluc-<concentration in µM>` for glucose standards.
-
-    - E.g. `STD-gluc-10` for 10 µM glucose standard.
+    Sample name conventions should be as follows:
+    
+    - `<sample>-<analyte>-<tissue amount in mg>-df.<dilution factor>`
+    
+    E.g. `A2-glyc-50-df.10`
+    
+    Where:
+    - `<sample>`: Sample identifier (e.g., A2)
+    - `<analyte>`: Either "glyc" for glycogen or "gluc" for glucose
+    - `<tissue amount in mg>`: Amount of tissue _originally collected_ in mg.
+    - `<dilution factor>`: Dilution factor applied during sample preparation. E.g a dilution factor of `1` means no dilution, `10` means a 1:10 dilution, etc.
+    
+    Standard curve names should be as follows:
+    
+    - `STD-glyc-<concentration in µg/uL>` for glycogen standards. 
+    
+        - E.g. `STD-glyc-2` for 2 µg glycogen standard.
+    
+    - `STD-gluc-<concentration in µM>` for glucose standards.
+    
+        - E.g. `STD-gluc-10` for 10 µM glucose standard.
 
 
 
