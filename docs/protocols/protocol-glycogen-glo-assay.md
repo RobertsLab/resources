@@ -88,8 +88,8 @@ The Glycogen-Glo Assay (Promega) is a luminescence-based assay used to quantify 
 ### B. Tissue Sample Preparation
 
 1. Collect tissue samples and record weights to the nearest milligram.
-   - **Recommended range:** 5-20 mg per sample for _M. gigas_ ctenidia
-   - Samples can be diluted if needed; larger initial tissue amounts provide more flexibility
+    - **Recommended range:** 5-20 mg per sample for _M. gigas_ ctenidia
+    - Samples can be diluted if needed; larger initial tissue amounts provide more flexibility
 2. Place tissues in pre-labeled 1.5mL Safe-Lock tubes containing homogenization buffer and beads.
 
 ### C. Homogenization
@@ -144,16 +144,16 @@ For samples outside this range:
 
 1. Thaw all kit reagents according to manufacturer's instructions.
 2. After thawing:
-   - Keep Glucoamylase Buffer and Luciferin Detection Solution at room temperature
-   - Keep all other components on ice.
+    - Keep Glucoamylase Buffer and Luciferin Detection Solution at room temperature
+    - Keep all other components on ice.
 3. Calculate total volume of Glucoamylase Digestion Solution needed:
-   - Count total wells requiring glucoamylase enzyme (samples + glycogen standards, each in triplicate)
-   - Each well requires 25µL
-   - Add 10% extra to account for pipetting error
-   - Example: (10 samples × 3 replicates + 5 glycogen standards × 3 replicates) × 25µL × 1.1 = 1,237.5µL
+    - Count total wells requiring glucoamylase enzyme (samples + glycogen standards, each in triplicate)
+    - Each well requires 25µL
+    - Add 10% extra to account for pipetting error
+    - Example: (10 samples × 3 replicates + 5 glycogen standards × 3 replicates) × 25µL × 1.1 = 1,237.5µL
 4. Prepare Glucoamylase Digestion Solution by mixing:
-   - Glucoamylase
-   - Glucoamylase Buffer
+    - Glucoamylase
+    - Glucoamylase Buffer
    
    (Follow manufacturer's ratio recommendations for calculated volume)
 
@@ -184,10 +184,10 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### C. Plate Setup
 
 1. Plan plate layout to include:
-   - Sample replicates (duplicates or triplicates recommended)
-   - Glycogen standard curve (triplicate)
-   - Glucose standard curve (triplicate, if needed)
-   - Blanks (buffer only)
+    - Sample replicates (duplicates or triplicates recommended)
+    - Glycogen standard curve (triplicate)
+    - Glucose standard curve (triplicate, if needed)
+    - Blanks (buffer only)
 
 2. Label plate map clearly.
 
@@ -199,13 +199,13 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 1. Add 25µL of sample or standard to designated wells.
 2. For GLYCOGEN measurements:
-   - Add 25µL of Glucoamylase Digestion Solution
+    - Add 25µL of Glucoamylase Digestion Solution
 
 3. For GLUCOSE measurements (optional):
-   - Add 25µL of Glucoamylase Buffer only (no glucoamylase enzyme)
+    - Add 25µL of Glucoamylase Buffer only (no glucoamylase enzyme)
 
 4. For blanks:
-   - Add 25µL of dilution buffer, then 25µL of appropriate buffer (with or without enzyme)
+    - Add 25µL of dilution buffer, then 25µL of appropriate buffer (with or without enzyme)
 
 5. Cover plate loosely with aluminum foil to prevent light exposure and contamination.
 6. Gently shake plate by hand for 60 seconds.
@@ -214,14 +214,14 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### B. Detection Reaction
 
 1. Prepare glucose detection reagent immediately before use:
-   - Calculate total volume needed: count ALL wells (samples + standards + blanks)
-   - Each well requires 50µL
-   - Add 10% extra to account for pipetting error
-   - Example: 50 total wells × 50µL × 1.1 = 2,750µL
-   - Mix Luciferin glucose detection reagent gently by inversion five times.
+    - Calculate total volume needed: count ALL wells (samples + standards + blanks)
+    - Each well requires 50µL
+    - Add 10% extra to account for pipetting error
+    - Example: 50 total wells × 50µL × 1.1 = 2,750µL
+    - Mix Luciferin glucose detection reagent gently by inversion five times.
 
 2. Add 50µL of glucose detection reagent to ALL wells.
-   - Use repeater pipette for consistency if available
+    - Use repeater pipette for consistency if available
 3. Cover plate loosely with aluminum foil.
 4. Gently shake plate by hand for 60 seconds.
 5. Incubate at room temperature for 1 hour.
@@ -229,8 +229,8 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### C. Luminescence Reading
 
 1. After incubation, read luminescence on plate reader.
-   - Integration time: 1 second per well
-   - No filters needed
+    - Integration time: 1 second per well
+    - No filters needed
 
 2. Export raw luminescence data for analysis.
 
@@ -248,18 +248,18 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 ### Calculations
 
 1. Generate standard curve using linear regression:
-   - Plot luminescence (y-axis) vs. glycogen concentration (x-axis)
-   - Calculate slope and intercept
+    - Plot luminescence (y-axis) vs. glycogen concentration (x-axis)
+    - Calculate slope and intercept
 
 2. Calculate sample concentrations from luminescence values:
-   - Concentration = (Luminescence - Intercept) / Slope
+    - Concentration = (Luminescence - Intercept) / Slope
 
 3. If glucose was measured, subtract glucose values from total to obtain glycogen-specific values.
 
 4. Calculate final glycogen content accounting for:
-   - Dilution factors
-   - Original tissue weight
-   - Homogenization buffer volume
+    - Dilution factors
+    - Original tissue weight
+    - Homogenization buffer volume
 
 ---
 
