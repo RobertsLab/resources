@@ -183,13 +183,12 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 ### C. Plate Setup
 
-1. Plan plate layout to include:
-    - Sample replicates (duplicates or triplicates recommended)
-    - Glycogen standard curve (triplicate)
-    - Glucose standard curve (triplicate, if needed)
-    - Blanks (buffer only)
+Plan plate layout to include:
+- Sample replicates (triplicates recommended)
+- Glycogen standard curve (triplicate)
+- Glucose standard curve (triplicate, if needed)
 
-2. Label plate map clearly.
+
 
 ---
 
