@@ -230,22 +230,21 @@ Perform 1:10 dilutions: 10µL standard in 90µL dilution buffer.
 
 1. Power on plate reader and allow to warm up according to manufacturer's instructions.
 
-NOTE: Start the plate reader _before_ opening the Gen5 software.
+    NOTE: Start the plate reader _before_ opening the Gen5 software.
 
 2. Using the Gen5 software, open the [`Gen5-default-96well-luminescence.xpt`](https://github.com/RobertsLab/sormi-assay-development/blob/main/Glycogen/data/plate_reader_files/Gen5-default-96well-luminescence.xpt) (GitHub) experiment file. 
 
-This file is set to read luminescence in all wells 96-well plate format with appropriate settings.
+    This file is set to read luminescence in all wells 96-well plate format with appropriate settings.
 
 3. After incubation, read luminescence on plate reader.
 
 4. Rename and save the output file as follows:
 
-- `Gen5-YYYYMMDD-<species_abbrevation>-<experiment_description>.xpt`
+    - `Gen5-YYYYMMDD-<species_abbrevation>-<experiment_description>.xpt`
 
-    - For `<species_abbrevation>`, use first letter of genus and first three letters of species. E.g. `mgig` for _M. gigas_.
+        - For `<species_abbrevation>`, use first letter of genus and first three letters of species. E.g. `mgig` for _M. gigas_.
 
-
-4. Add sample names and standard curve information to the file.
+5. Add sample names and standard curve information to the file.
 
 Sample name conventions should be as follows:
 
