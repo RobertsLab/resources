@@ -260,9 +260,13 @@ Where:
 
 Standard curve names should be as follows:
 
-- `STD-glyc-<concentration in µg/uL>` for glycogen standards. E.g. `STD-glyc-2` for 2 µg glycogen standard.
+- `STD-glyc-<concentration in µg/uL>` for glycogen standards. 
 
-- `STD-gluc-<concentration in µM>` for glucose standards. E.g. `STD-gluc-10` for 10 µM glucose standard.
+    - E.g. `STD-glyc-2` for 2 µg glycogen standard.
+
+- `STD-gluc-<concentration in µM>` for glucose standards.
+
+    - E.g. `STD-gluc-10` for 10 µM glucose standard.
 
 
 
