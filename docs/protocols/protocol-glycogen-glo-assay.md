@@ -243,7 +243,11 @@ Plan plate layout to include:
 
         - For `<species_abbrevation>`, use first letter of genus and first three letters of species. E.g. `mgig` for _M. gigas_.
 
-5. Add sample names and standard curve information to the file.
+5. Edit plate to add replicates (makes sample names faster later on).
+
+
+
+6. Add sample names and standard curve information to the file.
 
     Sample name conventions should be as follows:
     
@@ -266,8 +270,11 @@ Plan plate layout to include:
     - `STD-gluc-<concentration in µM>` for glucose standards.
     
         - E.g. `STD-gluc-10` for 10 µM glucose standard.
-
-
+    
+    1. Click on the dropdown menu to select the `samples_only` matrix.
+    2. Click the "Edit" button at the bottom of the plate layout window.
+    3. Click the a well and enter sample name. The name will populate in all replicates.
+    4. Repeat for all samples and standards.
 
 ---
 
