@@ -100,7 +100,7 @@ After obtaining the statistical results, interpret the results by comparing the 
 
 #### Plate Spreadsheet Import
 
-1. Modify [cfx_plate_template.csv](../../protocols/cfx_plate_template.csv) (CSV) to your desired `Target Name` and `Sample Name` and save as a CSV file.
+1. Modify [cfx_plate_template.csv](https://raw.githubusercontent.com/RobertsLab/resources/master/protocols/cfx_plate_template.csv) (CSV) to your desired `Target Name` and `Sample Name` and save as a CSV file.
 
 2. In CFX Maestro, create a new plate: `File > New > Plate...`.
 
