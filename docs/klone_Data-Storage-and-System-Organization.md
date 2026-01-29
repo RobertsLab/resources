@@ -5,6 +5,7 @@
 - To see space and file utilization: `hyakstorage`
 - For personal data, scripts, and other small files, or files you don't want potentially changed by others.
 - **Note**: This space fills up quickly with large software installations like conda/miniforge, Nextflow cache, or SRA data. Consider installing these in group storage instead.
+- **Home directory full?** See [Managing Home Directory Space](klone_Managing-Home-Directory.md) for instructions on relocating cache directories (`.cache`, `.vscode-server`, `.cursor-server`, `.apptainer`) to group storage.
 #### 2. Group-specific storage
 - Storage allocation: 1.024TB (or 1,000,000 files)
 - Located: `/gscratch/srlab/`

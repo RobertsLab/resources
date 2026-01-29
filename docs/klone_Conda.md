@@ -250,11 +250,16 @@ du -sh /mmfs1/home/${USER}/*
 du -sh /mmfs1/home/${USER}/.*
 
 # Common culprits to move to group storage:
+# - .cache directory (see Managing Home Directory guide)
+# - .vscode-server, .cursor-server (see Managing Home Directory guide)
+# - .apptainer cache (see Managing Home Directory guide)
 # - .nextflow directory
 # - .sra cache
 # - Large data files
 # - Git repositories
 ```
+
+For detailed instructions on relocating cache directories, see [Managing Home Directory Space](klone_Managing-Home-Directory.md).
 
 ## See Also
 
