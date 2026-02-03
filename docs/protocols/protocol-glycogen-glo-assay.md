@@ -278,6 +278,27 @@ Plan plate layout to include:
 
 ---
 
+## Storage and Waste Disposal
+
+### Sample Storage
+
+- Homogenized samples: -20°C for up to several months
+- Diluted samples: Use fresh; do not store
+
+### Reagent Storage
+
+- Follow manufacturer's storage recommendations
+- Most reagents stable at -20°C
+- Thawed reagents: Use immediately or store as directed
+
+### Waste Disposal
+
+- Dispose of tips in broken glass waste.
+- Dispose of liquid waste containing HCl according to institutional chemical waste procedures.
+- Plates should be washed, dried and reused.
+
+---
+
 ## Data Analysis
 
 ### Quality Control
@@ -304,26 +325,6 @@ Plan plate layout to include:
 
 ---
 
-## Storage and Waste Disposal
-
-### Sample Storage
-
-- Homogenized samples: -20°C for up to several months
-- Diluted samples: Use fresh; do not store
-
-### Reagent Storage
-
-- Follow manufacturer's storage recommendations
-- Most reagents stable at -20°C
-- Thawed reagents: Use immediately or store as directed
-
-### Waste Disposal
-
-- Dispose of tips in broken glass waste.
-- Dispose of liquid waste containing HCl according to institutional chemical waste procedures.
-- Plates should be washed, dried and reused.
-
----
 
 ## References
 
