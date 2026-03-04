@@ -87,6 +87,7 @@ nav:
      - Lab Protocols:
        - Bullet Blender: 'protocols/protocol-bullet_blender.md'
        - Glycogen-Glo Assay: 'protocols/protocol-glycogen-glo-assay.md'
+       - Guava Muse SOP: 'protocols/protocol-guava_muse.md'
        - qPCR: 'protocols/protocol-qPCR.md'
        - Resazurin Assay: 'protocols/resazurin-assay.md'
        - Reverse Transcription: 'protocols/protocol-reverse_transcription.md'
