@@ -13,7 +13,7 @@ It is highly recommend you read through the manufacturer's protocol prior to usi
 
 ---
 
-If this is the first time the machine is being _ever_ being used, please see [Instrument Setup Section](#instrument-setup-first-time-only).
+If this is the first time the machine is _ever_ being used, please see [Instrument Setup Section](#instrument-setup-first-time-only).
 
 ## Daily Startup Procedure
 
