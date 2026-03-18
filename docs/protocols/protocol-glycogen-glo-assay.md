@@ -188,8 +188,6 @@ Plan plate layout to include:
 - Glycogen standard curve (triplicate)
 - Glucose standard curve (triplicate, if needed)
 
-
-
 ---
 
 ## Part 4: Assay Execution
@@ -198,14 +196,11 @@ Plan plate layout to include:
 
 1. Add 25µL of sample or standard to designated wells.
 2. For GLYCOGEN measurements:
-    - Add 25µL of Glucoamylase Digestion Solution
-
+   - Add 25µL of Glucoamylase Digestion Solution
 3. For GLUCOSE measurements (optional):
-    - Add 25µL of Glucoamylase Buffer only (no glucoamylase enzyme)
-
+   - Add 25µL of Glucoamylase Buffer only (no glucoamylase enzyme)
 4. For blanks:
-    - Add 25µL of dilution buffer, then 25µL of appropriate buffer (with or without enzyme)
-
+   - Add 25µL of dilution buffer, then 25µL of appropriate buffer (with or without enzyme)
 5. Cover plate loosely with aluminum foil to prevent light exposure and contamination.
 6. Gently shake plate by hand for 60 seconds.
 7. Incubate at room temperature for 1 hour.
@@ -213,14 +208,14 @@ Plan plate layout to include:
 ### B. Detection Reaction
 
 1. Prepare glucose detection reagent immediately before use:
-    - Calculate total volume needed: count ALL wells (samples + standards + blanks)
-    - Each well requires 50µL
-    - Add 10% extra to account for pipetting error
-    - Example: 50 total wells × 50µL × 1.1 = 2,750µL
-    - Mix Luciferin glucose detection reagent gently by inversion five times.
+   - Calculate total volume needed: count ALL wells (samples + standards + blanks)
+   - Each well requires 50µL
+   - Add 10% extra to account for pipetting error
+   - Example: 50 total wells × 50µL × 1.1 = 2,750µL
+   - Mix Luciferin glucose detection reagent gently by inversion five times.
 
 2. Add 50µL of glucose detection reagent to ALL wells.
-    - Use repeater pipette for consistency if available
+   - Use repeater pipette for consistency if available
 3. Cover plate loosely with aluminum foil.
 4. Gently shake plate by hand for 60 seconds.
 5. Incubate at room temperature for 1 hour.
@@ -249,26 +244,23 @@ Plan plate layout to include:
 
 6. Add sample names and standard curve information to the file.
 
-    Sample name conventions should be as follows:
-    
+    Sample name conventions:
+
     - `<sample>-<analyte>-<tissue amount in mg>-df.<dilution factor>`
-    
-    E.g. `A2-glyc-50-df.10`
+    - E.g. `A2-glyc-50-df.10`
     
     Where:
+
     - `<sample>`: Sample identifier (e.g., A2)
     - `<analyte>`: Either "glyc" for glycogen or "gluc" for glucose
     - `<tissue amount in mg>`: Amount of tissue _originally collected_ in mg.
     - `<dilution factor>`: Dilution factor applied during sample preparation. E.g a dilution factor of `1` means no dilution, `10` means a 1:10 dilution, etc.
     
-    Standard curve names should be as follows:
-    
+    Standard curve names:
+
     - `STD-glyc-<concentration in µg/uL>` for glycogen standards. 
-    
         - E.g. `STD-glyc-2` for 2 µg glycogen standard.
-    
     - `STD-gluc-<concentration in µM>` for glucose standards.
-    
         - E.g. `STD-gluc-10` for 10 µM glucose standard.
     
     1. Click on the dropdown menu to select the `samples_only` matrix.
