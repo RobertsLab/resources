@@ -262,7 +262,9 @@ Plan plate layout to include:
         - E.g. `STD-glyc-2` for 2 µg glycogen standard.
     - `STD-gluc-<concentration in µM>` for glucose standards.
         - E.g. `STD-gluc-10` for 10 µM glucose standard.
-        To add sample names to the experiment file:
+
+    To add sample names to the experiment file:
+
     1. Click on the dropdown menu to select the `samples_only` matrix.
     2. Click the "Edit" button at the bottom of the plate layout window.
     3. Click the a well and enter sample name. The name will populate in all replicates.
