@@ -54,6 +54,7 @@ nav:
      - Code Snippets: 'code_Snippets.md'
      - Computing Hardware: 'Computing-Hardware.md'
      - Lab Software: 'Lab-Software.md'
+     - Git and RStudio Setup (Windows): 'Git-RStudio-Setup-Windows.md'
 
      - 'Klone Guides':
        - Quick Start: 'klone_quick-start.md'
