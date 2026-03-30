@@ -48,49 +48,49 @@ WHEN SPLASH POTENTIAL EXIST:
 
 1. Stock resazurin solution 
 
-To make the resazurin stock solution (10 mL) mix the following. We will use this solution for multiple trials.  
+    To make the resazurin stock solution (10 mL) mix the following. We will use this solution for multiple trials.  
 
-- [0.5 g resazurin salt](https://www.thermofisher.com/order/catalog/product/R12204)
-- 10 mL DI water
-- 10 µL DMSO
+    - [0.5 g resazurin salt](https://www.thermofisher.com/order/catalog/product/R12204)
+    - 10 mL DI water
+    - 10 µL DMSO
 
-Store in a dark fridge or freezer.  
+    Store in a dark fridge or freezer.  
 
 2. Working resazurin solution
 
-First, determine the volume of resazurin required depending on the size of your organism and the container size. Here are some examples that we have used before. We recommend performing preliminary trials to ensure that a change in resazurin fluorescence can be detected over the time scale desired. This protocol was developed to detect a change in resazurin fluorescence within 5 hours in small seed (<7mm) and larger seed (10-30mm).  
+    First, determine the volume of resazurin required depending on the size of your organism and the container size. Here are some examples that we have used before. We recommend performing preliminary trials to ensure that a change in resazurin fluorescence can be detected over the time scale desired. This protocol was developed to detect a change in resazurin fluorescence within 5 hours in small seed (<7mm) and larger seed (10-30mm).  
 
-- Small seed (<7mm length): trials conducted in 96 well plates (300uL volume in each well)
-- Medium seed (15-40 mm length): trials conducted in small plastic cups (20 mL volume)
-- Large seed/adults (>40 mm length): trials can be conducted in tripour cups, beakers, or plastic cups. Scale volume appropriately. The animals should be fully submerged. 
+    - Small seed (<7mm length): trials conducted in 96 well plates (300uL volume in each well)
+    - Medium seed (15-40 mm length): trials conducted in small plastic cups (20 mL volume)
+    - Large seed/adults (>40 mm length): trials can be conducted in tripour cups, beakers, or plastic cups. Scale volume appropriately. The animals should be fully submerged. 
 
-To prepare the working solution of resazurin, prepare the following. 
+    To prepare the working solution of resazurin, prepare the following. 
 
-This recipe is to make 150 mL of working stock. To run a single 96 well plate, approximately 35 mL will be required (allowing for extra for re-do's or errors). For example, if we are running 4 total plates, we will need to prepare 4 x 35 mL = 150 mL of working solution. Increase if more is required.  
+    This recipe is to make 150 mL of working stock. To run a single 96 well plate, approximately 35 mL will be required (allowing for extra for re-do's or errors). For example, if we are running 4 total plates, we will need to prepare 4 x 35 mL = 150 mL of working solution. Increase if more is required.  
 
-- 148 mL seawater (DI water with Instant Ocean adjusted to 23-25 ppt or filtered (<1um) seawater) 
-- 333 µL resazurin stock solution as made above in step 1 
-- 150 µL DMSO
-- 1.5 mL antibiotic solution [100x Penn/Strep & 100x Fungizone](https://us.vwr.com/store/product/4648458/null) - this should be kept frozen in a dark freezer and thawed before use (thaw in the dark or cover with aluminum foil) 
+    - 148 mL seawater (DI water with Instant Ocean adjusted to 23-25 ppt or filtered (<1um) seawater) 
+    - 333 µL resazurin stock solution as made above in step 1 
+    - 150 µL DMSO
+    - 1.5 mL antibiotic solution [100x Penn/Strep & 100x Fungizone](https://us.vwr.com/store/product/4648458/null) - this should be kept frozen in a dark freezer and thawed before use (thaw in the dark or cover with aluminum foil) 
 
-Store at 4°C in dark fridge until use. We recommend making a fresh batch of working stock within 7 days of use.    
+    Store at 4°C in dark fridge until use. We recommend making a fresh batch of working stock within 7 days of use.    
 
 3. Supplies 
 
-- Bench top incubators 
-- [Temperature loggers](https://www.onsetcomp.com/products/data-loggers/mx2203) to be placed in incubators at treatment conditions 
-- Paper towels and bench paper/pads 
-- Tweezers, transfer pipettes, and forceps 
-- Dissecting microscope 
-- Spectrophotometer plate reader that detects fluorescence (e.g., FLx800) and software
-- Plate reader filters with excitation wavelength of 530 and emission wavelength of 590 (we are currently using an excitation 528 wavelength filter with a bandpass of 20 and an emission 590 wavelength filter with a bandpass of 20)  
-- P1000 pipette
-- Scale bar/ruler
-- Camera/phone camera
-- Plastic cups, beakers, plates, or other vessel for incubations
-- 96 well plate (for taking readings, you will need this regardless of container type) 
+    - Bench top incubators 
+    - [Temperature loggers](https://www.onsetcomp.com/products/data-loggers/mx2203) to be placed in incubators at treatment conditions 
+    - Paper towels and bench paper/pads 
+    - Tweezers, transfer pipettes, and forceps 
+    - Dissecting microscope 
+    - Spectrophotometer plate reader that detects fluorescence (e.g., FLx800) and software
+    - Plate reader filters with excitation wavelength of 530 and emission wavelength of 590 (we are currently using an excitation 528 wavelength filter with a bandpass of 20 and an emission 590 wavelength filter with a bandpass of 20)  
+    - P1000 pipette
+    - Scale bar/ruler
+    - Camera/phone camera
+    - Plastic cups, beakers, plates, or other vessel for incubations
+    - 96 well plate (for taking readings, you will need this regardless of container type) 
 
-Label plates with identifying number (e.g. "Plate 1", "Plate 2") or label cups with unique numbers/identifiers.    
+    Label plates with identifying number (e.g. "Plate 1", "Plate 2") or label cups with unique numbers/identifiers.    
 
 #### Protocol
 
@@ -158,13 +158,13 @@ Here is an example of the plate maps from our work.
 2. If using plates, prepare a plate map for recording the assessments - this is an easy method to keep track of the assessments. If you are not using plates, make a list of all samples with columns for recording survival at each time point.  
 3. In the plate maps, you will record which wells have dead oysters. Use an "X" to mark wells with dead oysters. You can also record "dead" and "alive" in a list format. 
 4. Start with high temperature plates. 
-4. If working with shellfish, use tweezers/forceps to take each animal out and examine in a petri dish filled with DI water under a dissecting scope. Determine if the oyster is dead by placing the cup side of the oyster down and gently taping/moving the shell. If the shell is open and remains open after tapping, the oyster is dead. If the shell is closed tight or closes after tapping, the oyster is alive. Use other determination methods for other organisms. 
-5. Record any notes of oysters that were damaged by the tweezers or record any other notes of interest. 
-6. After examining each oyster, move it to a beaker. Discard oysters after the measurements are done. 
-7. Repeat for all plates and samples. 
-8. Discard of resazurin in the appropriate waste bin labeled for hazardous waste. Empty plates into a tripour and pour into a labeled waste container. 
-9. Rise plates thoroughly in the sink and allow to dry for the next trial. Cups and materials can be re used.
-10. Generate a data frame that has columns for sample ID, treatments, date, and other relevant information. Add a column designated "mortality" and add a 0 for alive and 1 for dead animals. See examples below.    
+5. If working with shellfish, use tweezers/forceps to take each animal out and examine in a petri dish filled with DI water under a dissecting scope. Determine if the oyster is dead by placing the cup side of the oyster down and gently taping/moving the shell. If the shell is open and remains open after tapping, the oyster is dead. If the shell is closed tight or closes after tapping, the oyster is alive. Use other determination methods for other organisms. 
+6. Record any notes of oysters that were damaged by the tweezers or record any other notes of interest. 
+7. After examining each oyster, move it to a beaker. Discard oysters after the measurements are done. 
+8. Repeat for all plates and samples. 
+9. Discard of resazurin in the appropriate waste bin labeled for hazardous waste. Empty plates into a tripour and pour into a labeled waste container. 
+10. Rise plates thoroughly in the sink and allow to dry for the next trial. Cups and materials can be re used.
+11. Generate a data frame that has columns for sample ID, treatments, date, and other relevant information. Add a column designated "mortality" and add a 0 for alive and 1 for dead animals. See examples below.    
 
 Here is an example of the data sheet in the notebook from our work.  
 ![](https://github.com/AHuffmyer/ASH_Putnam_Lab_Notebook/blob/master/images/NotebookImages/oysters/analysis/20250128/nb5.jpeg?raw=true)
