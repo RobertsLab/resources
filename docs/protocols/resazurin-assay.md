@@ -40,7 +40,7 @@ WHEN SPLASH POTENTIAL EXIST:
 
 #### Waste Disposal
 - Liquid Waste:
-    - Transfer liquid waste to labeled container designated for resazurin waste.
+    - Empty and rinse bottles with DI water in laboratory sink(s).
 - Solid Waste:
     - Tubes/tip/gloves with residual resazurin/solution may be disposed of in regular trash.
 
