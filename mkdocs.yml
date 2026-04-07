@@ -33,6 +33,10 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
 
+plugins:
+  - search
+  - mkdocs-video
+
 nav:
    - Home: 'index.md'
 
