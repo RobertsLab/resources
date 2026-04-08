@@ -173,7 +173,9 @@ Here is an example of the data sheet in the notebook from our work.
 
 From the images, measure the size of the organism. For oysters, we often use maximum length (mm). Other measurements may be more appropriate for other organisms. This will be used to normalize resazurin measurements.  
 
-Record size from measurements of images (e.g., using ImageJ) in a data frame. See examples below.  
+Record size from measurements of images (e.g., using ImageJ) in a data frame. Here is an example of how to use ImageJ to determine the area (ellipse) of clams in a plate.  
+
+![type:video](../videos/imageJ-clam-area-measurements-1080p.mp4)
 
 #### Data preparation and analysis  
 
