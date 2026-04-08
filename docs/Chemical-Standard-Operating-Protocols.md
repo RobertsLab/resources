@@ -252,7 +252,9 @@
 
 <em>**Waste Disposal:**</em>
 
-- Waste may be washed down the drain with DI H<sub>2</sub>O.
+Waste may be washed down the drain with DI H<sub>2</sub>O.
+
+<em>**Procedure:**</em>
 
 
 1. **Plate oysters (1/well; if testing in 2-3 mm spat one can use a 96 well plate and 300 ul of assay media. If using larger oysters you can use a 48 well plate and 1 mL of assay media.)**
