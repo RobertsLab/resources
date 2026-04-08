@@ -35,7 +35,8 @@ markdown_extensions:
 
 plugins:
   - search
-  - mkdocs-video
+  - mkdocs-video:
+      video_autoplay: false
 
 nav:
    - Home: 'index.md'
