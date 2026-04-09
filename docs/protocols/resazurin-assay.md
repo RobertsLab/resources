@@ -49,10 +49,10 @@ WHEN SPLASH POTENTIAL EXIST:
 1. Stock resazurin solution in DI H<sub>2</sub>O.
 
 
-| Reagent   | Final Concentration |
-|-----------|---------------------|
-| Resazurin | 50mg/mL             |
-| DMSO      | 0.10%               |
+    | Reagent   | Final Concentration |
+    |-----------|---------------------|
+    | Resazurin | 50mg/mL             |
+    | DMSO      | 0.10%               |
 
     To make a 10mL resazurin stock solution mix the following. We will use this solution for multiple trials.  
 
@@ -64,11 +64,11 @@ WHEN SPLASH POTENTIAL EXIST:
 
 2. Working resazurin solution in **seawater** (filtered or Instant Ocean)
 
-| Reagent                            | Final Concentration |
-|------------------------------------|---------------------|
-| Resazurin stock solution           | 0.22% (0.111mg/mL)  |
-| DMSO                               | 0.10%               |
-| 100x Penn/Strep/Fungizone solution | 1X                  |
+    | Reagent                            | Final Concentration |
+    |------------------------------------|---------------------|
+    | Resazurin stock solution           | 0.22% (0.111mg/mL)  |
+    | DMSO                               | 0.10%               |
+    | 100x Penn/Strep/Fungizone solution | 1X                  |
 
     First, determine the volume of resazurin required depending on the size of your organism and the container size. Here are some examples that we have used before. We recommend performing preliminary trials to ensure that a change in resazurin fluorescence can be detected over the time scale desired. This protocol was developed to detect a change in resazurin fluorescence within 5 hours in small seed (<7mm) and larger seed (10-30mm).  
 
