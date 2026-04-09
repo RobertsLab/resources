@@ -46,9 +46,15 @@ WHEN SPLASH POTENTIAL EXIST:
 
 #### Preparing solutions
 
-1. Stock resazurin solution 
+1. Stock resazurin solution in DI H<sub>2</sub>O.
 
-    To make the resazurin stock solution (10 mL) mix the following. We will use this solution for multiple trials.  
+
+| Reagent   | Final Concentration |
+|-----------|---------------------|
+| Resazurin | 50mg/mL             |
+| DMSO      | 0.10%               |
+
+    To make a 10mL resazurin stock solution mix the following. We will use this solution for multiple trials.  
 
     - [0.5 g resazurin salt](https://www.thermofisher.com/order/catalog/product/R12204)
     - 10 mL DI water
@@ -56,7 +62,13 @@ WHEN SPLASH POTENTIAL EXIST:
 
     Store in a dark fridge or freezer.  
 
-2. Working resazurin solution
+2. Working resazurin solution in **seawater** (filtered or Instant Ocean)
+
+| Reagent                            | Final Concentration |
+|------------------------------------|---------------------|
+| Resazurin stock solution           | 0.22% (0.111mg/mL)  |
+| DMSO                               | 0.10%               |
+| 100x Penn/Strep/Fungizone solution | 1X                  |
 
     First, determine the volume of resazurin required depending on the size of your organism and the container size. Here are some examples that we have used before. We recommend performing preliminary trials to ensure that a change in resazurin fluorescence can be detected over the time scale desired. This protocol was developed to detect a change in resazurin fluorescence within 5 hours in small seed (<7mm) and larger seed (10-30mm).  
 
@@ -64,9 +76,8 @@ WHEN SPLASH POTENTIAL EXIST:
     - Medium seed (15-40 mm length): trials conducted in small plastic cups (20 mL volume)
     - Large seed/adults (>40 mm length): trials can be conducted in tripour cups, beakers, or plastic cups. Scale volume appropriately. The animals should be fully submerged. 
 
-    To prepare the working solution of resazurin, prepare the following. 
 
-    This recipe is to make 150 mL of working stock. To run a single 96 well plate, approximately 35 mL will be required (allowing for extra for re-do's or errors). For example, if we are running 4 total plates, we will need to prepare 4 x 35 mL = 150 mL of working solution. Increase if more is required.  
+    To make 150 mL of working stock. To run a single 96 well plate, approximately 35 mL will be required (allowing for extra for re-do's or errors). For example, if we are running 4 total plates, we will need to prepare 4 x 35 mL = 150 mL of working solution. Increase if more is required.  
 
     - 148 mL seawater (DI water with Instant Ocean adjusted to 23-25 ppt or filtered (<1um) seawater) 
     - 333 µL resazurin stock solution as made above in step 1 
