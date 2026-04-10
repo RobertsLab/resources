@@ -96,6 +96,7 @@ nav:
        - qPCR: 'protocols/protocol-qPCR.md'
        - Resazurin Assay: 'protocols/resazurin-assay.md'
        - Reverse Transcription: 'protocols/protocol-reverse_transcription.md'
+       - Water Quality Testing: 'protocols/protocol-water_quality.md'
      - Chemical SOPs: 'Chemical-Standard-Operating-Protocols.md'
      - Alarm Information: 'Alarm-Information.md'
 
