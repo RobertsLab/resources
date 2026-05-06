@@ -13,7 +13,7 @@ Matt George | [mattgeorgephd.github.io](https://mattgeorgephd.github.io/notebook
 Aspen Coyle | [aspencoyle.github.io](https://aspencoyle.github.io) |   ![GitHub last commit](https://img.shields.io/github/last-commit/aspencoyle/aspencoyle.github.io)
 Olivia Cattau | [ocattau.github.io](https://ocattau.github.io/notebook-2/)  | ![GitHub last commit](https://img.shields.io/github/last-commit/ocattau/notebook-2)
 Delaney Lawson| [drlawson.github.io](https://drlawson.github.io)  | ![GitHub last commit](https://img.shields.io/github/last-commit/drlawson/drlawson.github.io)
-Ariana Huffmyer | [ahuffmyer.github.io](https://ahuffmyer.github.io/ASH_Putnam_Lab_Notebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/AHuffmyer/ASH_Putnam_Lab_Notebook)
+Ariana Huffmyer | [ahuffmyer.github.io](https://ahuffmyer.github.io/notebook.html) | ![GitHub last commit](https://img.shields.io/github/last-commit/ahuffmyer/ahuffmyer.github.io/main)
 Chris Mantegna | [chrismantegna.github.io](https://chrismantegna.github.io/labnotebook/) | ![GitHub last commit](https://img.shields.io/github/last-commit/ChrisMantegna/labnotebook)
 Zach Bengtsson | [zbengt.github.io](https://zbengt.github.io/notebook/) | ![Github last commit](https://img.shields.io/github/last-commit/zbengt/zbengt.github.io)
 Celeste Valdivia | [valeste.github.io](https://valeste.github.io/tough-tunicates/) | ![GitHub last commit](https://img.shields.io/github/last-commit/valeste/tough-tunicates)
