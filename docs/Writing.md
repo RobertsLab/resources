@@ -553,12 +553,12 @@ You wrongly assumed your reader knows what you know if any of these are true:
 - [ ] Past tense throughout.   
 
 **Figures and tables**   
-- [ ] Every figure/table is necessary and not redundant with another.
-- [ ] Figures show trends/relationships; tables show precise values.
-- [ ] Figure titles state the conclusion; captions explain how the data were obtained.
-- [ ] Every figure/table is referenced in the body and numbered in order.
-- [ ] Captions go below figures and above tables.
-- [ ] Each figure/table is comprehensible with its caption alone.
+- [ ] Every figure/table is necessary and not redundant with another.    
+- [ ] Figures show trends/relationships; tables show precise values.     
+- [ ] Figure titles state the conclusion; captions explain how the data were obtained.    
+- [ ] Every figure/table is referenced in the body and numbered in order.    
+- [ ] Captions go below figures and above tables.    
+- [ ] Each figure/table is comprehensible with its caption alone.    
 
 **Discussion**   
 - [ ] First paragraph answers the question in plain language.   
