@@ -1,7 +1,6 @@
-# A Comprehensive Guide to Writing a Scientific Paper
+# A Guide to Writing a Scientific Paper
 
-> **About this guide.** This guide synthesizes the FISH 290 lecture series (Weeks 1–9) with the assigned course readings. Where guidance differs between sources, this guide follows Mensh & Kording (2017), *Ten simple rules for structuring papers* (PLOS Computational Biology), which the course treats as the authoritative reference for paper structure. Section-specific guidance from *The Scientist's Guide to Writing* (Heard) — *The Introduction Section*, *The Methods Section*, *The Results Section*, *The Discussion Section* — is folded in only where it is consistent with the Ten Simple Rules.
-
+> **About this guide.** This guide synthesizes the FISH 290 lecture series with the assigned course readings. Where guidance differs between sources, this guide follows Mensh & Kording (2017), *Ten simple rules for structuring papers* (PLOS Computational Biology), which the course treats as the reference for paper structure. 
 ---
 
 ## Table of Contents
@@ -513,17 +512,20 @@ You wrongly assumed your reader knows what you know if any of these are true:
 
 ### Section-by-section structural checklist
 
-**Title**
+**Title*
+
 - [ ] States the central contribution (or at least its key concept).
+
 - [ ] Calibrated to the target journal's audience.
+
 - [ ] Not too broad, not too narrow.
 
-**Abstract**
-- [ ] Within 150–300 words.
-- [ ] Follows broad → narrow → broad C-C-C structure.
-- [ ] States the gap, the approach, the key result, and the broader meaning.
-- [ ] No in-text citations or detailed statistics.
-- [ ] Result actually answers the question posed in the context.
+**Abstract**   
+- [ ] Within 150–300 words.    
+- [ ] Follows broad → narrow → broad C-C-C structure.    
+- [ ] States the gap, the approach, the key result, and the broader meaning.   
+- [ ] No in-text citations or detailed statistics.   
+- [ ] Result actually answers the question posed in the context.   
 
 **Introduction**
 - [ ] Starts broad and narrows progressively to the gap.
@@ -594,7 +596,6 @@ You wrongly assumed your reader knows what you know if any of these are true:
 - *Reading Scientific Papers* — [`readings/Reading Scientific Papers.pdf`](readings/Reading%20Scientific%20Papers.pdf)
 - *Nature summary paragraph* — [`readings/Nature summary paragraph.pdf`](readings/Nature%20summary%20paragraph.pdf)
 
-**FISH 290 lectures (Weeks 1–9, 2025):** these supplied course-specific conventions (APA citation, voice/tense, figure and table conventions, the "five pivotal paragraphs" framing, the brevity tables, the three-pass editing process, and the section-by-section checklist).
 
 ---
 
