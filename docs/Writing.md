@@ -1,6 +1,7 @@
 # A Guide to Writing a Scientific Paper
 
 > **About this guide.** This guide synthesizes the FISH 290 lecture series with the assigned course readings. Where guidance differs between sources, this guide follows Mensh & Kording (2017), *Ten simple rules for structuring papers* (PLOS Computational Biology), which the course treats as the reference for paper structure. 
+
 ---
 
 ## Table of Contents
@@ -512,49 +513,46 @@ You wrongly assumed your reader knows what you know if any of these are true:
 
 ### Section-by-section structural checklist
 
-**Title*
+**Title**     
+- [ ] States the central contribution (or at least its key concept).   
+- [ ] Calibrated to the target journal's audience.   
+- [ ] Not too broad, not too narrow.   
 
-- [ ] States the central contribution (or at least its key concept).
-
-- [ ] Calibrated to the target journal's audience.
-
-- [ ] Not too broad, not too narrow.
-
-**Abstract**   
+**Abstract**     
 - [ ] Within 150–300 words.    
 - [ ] Follows broad → narrow → broad C-C-C structure.    
 - [ ] States the gap, the approach, the key result, and the broader meaning.   
-- [ ] No in-text citations or detailed statistics.   
-- [ ] Result actually answers the question posed in the context.   
+- [ ] No in-text citations or detailed statistics.     
+- [ ] Result actually answers the question posed in the context.      
 
-**Introduction**
-- [ ] Starts broad and narrows progressively to the gap.
-- [ ] First paragraph defines the territory; final paragraph states the objectives.
-- [ ] No broad literature review beyond what's needed to motivate the study.
-- [ ] Each paragraph has a topic sentence, supporting middle, and a take-home sentence.
-- [ ] Objectives are explicit and, where possible, quantitative.
-- [ ] Does not "spoil" the full conclusion.
+**Introduction**    
+- [ ] Starts broad and narrows progressively to the gap.   
+- [ ] First paragraph defines the territory; final paragraph states the objectives.   
+- [ ] No broad literature review beyond what's needed to motivate the study.   
+- [ ] Each paragraph has a topic sentence, supporting middle, and a take-home sentence.   
+- [ ] Objectives are explicit and, where possible, quantitative.   
+- [ ] Does not "spoil" the full conclusion.    
 
-**Methods**
-- [ ] Allows the work to be replicated.
-- [ ] Every Result has a matching set of Methods.
-- [ ] Reader can judge the credibility of the approach.
-- [ ] Grouped by topic with subheadings, not by chronology.
-- [ ] Past tense throughout.
-- [ ] Active voice preferred where it doesn't obscure.
-- [ ] Units, time, numbers, scientific names follow conventions.
-- [ ] No results disclosed here (sample sizes are OK if needed for study design).
+**Methods**    
+- [ ] Allows the work to be replicated.    
+- [ ] Every Result has a matching set of Methods.   
+- [ ] Reader can judge the credibility of the approach.   
+- [ ] Grouped by topic with subheadings, not by chronology.   
+- [ ] Past tense throughout.   
+- [ ] Active voice preferred where it doesn't obscure.   
+- [ ] Units, time, numbers, scientific names follow conventions.   
+- [ ] No results disclosed here (sample sizes are OK if needed for study design).    
 
-**Results**
-- [ ] All data needed to test every hypothesis are presented; nothing extraneous.
-- [ ] No biological interpretation (save it for the Discussion).
-- [ ] Each paragraph poses a question and answers it.
-- [ ] Each result pairs the pattern with the supporting evidence (numbers, stats, figure call-out).
-- [ ] First paragraph summarizes the approach.
-- [ ] Subheadings (where used) mirror the Methods.
-- [ ] Past tense throughout.
+**Results**     
+- [ ] All data needed to test every hypothesis are presented; nothing extraneous.   
+- [ ] No biological interpretation (save it for the Discussion).   
+- [ ] Each paragraph poses a question and answers it.   
+- [ ] Each result pairs the pattern with the supporting evidence (numbers, stats, figure call-out).   
+- [ ] First paragraph summarizes the approach.    
+- [ ] Subheadings (where used) mirror the Methods.   
+- [ ] Past tense throughout.   
 
-**Figures and tables**
+**Figures and tables**   
 - [ ] Every figure/table is necessary and not redundant with another.
 - [ ] Figures show trends/relationships; tables show precise values.
 - [ ] Figure titles state the conclusion; captions explain how the data were obtained.
@@ -562,19 +560,19 @@ You wrongly assumed your reader knows what you know if any of these are true:
 - [ ] Captions go below figures and above tables.
 - [ ] Each figure/table is comprehensible with its caption alone.
 
-**Discussion**
-- [ ] First paragraph answers the question in plain language.
-- [ ] Subsequent paragraphs interpret each key result and link to prior literature.
-- [ ] Limitations are addressed, but not in the final paragraph.
-- [ ] "But-yes" framing used when limitations are raised.
-- [ ] Concrete, specific future directions (no "more research is needed").
-- [ ] Ends at the same level of generality as the Introduction's opening.
-- [ ] No new statistics or new methods introduced.
+**Discussion**   
+- [ ] First paragraph answers the question in plain language.   
+- [ ] Subsequent paragraphs interpret each key result and link to prior literature.   
+- [ ] Limitations are addressed, but not in the final paragraph.  
+- [ ] "But-yes" framing used when limitations are raised.   
+- [ ] Concrete, specific future directions (no "more research is needed").   
+- [ ] Ends at the same level of generality as the Introduction's opening.    
+- [ ] No new statistics or new methods introduced.    
 
-**Acknowledgments & References**
-- [ ] Funding sources and non-author contributors named.
-- [ ] Every in-text citation appears in the reference list, and vice versa.
-- [ ] References formatted to the target journal's style.
+**Acknowledgments & References**    
+- [ ] Funding sources and non-author contributors named.    
+- [ ] Every in-text citation appears in the reference list, and vice versa.    
+- [ ] References formatted to the target journal's style.     
 
 ---
 
