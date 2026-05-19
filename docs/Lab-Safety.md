@@ -22,7 +22,7 @@
         - NOTE: If you will be shipping hazardous goods (i.e. dry ice and/or ethanol), please print this form instead: [UW Lab Training guide with shipping](https://github.com/RobertsLab/onboarding/raw/master/lab_safety_docs/template_UW_lab_training_completion_with_shipping_20170807.pdf)
 
     - Complete all the trainings marked "Yes". Online training is available here:
-        - [UW EH&S Training](https://www.ehs.washington.edu/psotrain/index.shtm)
+        - [UW EH&S Training](https://www.ehs.washington.edu/training/find-your-course?sort=title2&order=asc)
     - Fill out the date you completed each of the trainings
     - Print/sign your name at the top of the form
     - Return form to Sam
