@@ -47,6 +47,8 @@ Brief description of repo files are below
 
 - **[ATPase.md](https://github.com/RobertsLab/resources/blob/master/protocols/ATPase.md)** - SOP for the collection, extraction, and quantification of ATPase activity from oyster tissue samples.   
 
+- **[total-antioxidant-capacity-assay.md](https://github.com/RobertsLab/resources/blob/master/docs/protocols/total-antioxidant-capacity-assay.md)** - Single-plate analysis notes for the Cell Biolabs total antioxidant capacity assay, including the inferred plate layout and simplified R workflow.
+
 ## Miscellaneous 
 
 - **[setting_larvae.md](https://github.com/RobertsLab/resources/blob/master/protocols/setting_larvae.md)** - How to induce Pacific oyster larvae to metamorphose 
