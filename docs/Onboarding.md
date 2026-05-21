@@ -1,137 +1,94 @@
-Onboarding to the [Roberts Lab](https://faculty.washington.edu/sr320) at the [University of Washington](https://www.washington.edu/).
+# Onboarding
 
-For newcomers, please read the following pages. Please read carefully, complete any required tasks (e.g. safety documentation).
+Welcome to the [Roberts Lab](https://faculty.washington.edu/sr320) at the [University of Washington](https://www.washington.edu/).
+
+Use this page as your **read order**. Complete required tasks (especially safety paperwork) as you go.
+
+## Day 1 — policies and safety
 
 1. [Code of Conduct](Code-of-Conduct.md)
+2. [Lab Safety](Lab-Safety.md) — complete all required trainings and forms before bench work
+3. [Lab Communication](Lab-Communication.md) — join Slack, GitHub org, and lab calendar (see below)
 
-2. [Lab Safety](Lab-Safety.md)
+**Get connected:** [lab Slack](https://genefish.slack.com/), [RobertsLab on GitHub](https://github.com/RobertsLab), [Lab Calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America/Los_Angeles). Ask Steven or a lab member if you are not yet on these.
 
-3. [Lab Notebooks](Lab-Notebooks.md)
+Undergraduate researchers: also read and sign the [Undergraduate Contract](Undergraduate-contract.md).
 
-4. [Data Management](Data-Management.md)
+## Week 1 — how we work
 
-5. [Lab Communication](Lab-Communication.md)
+4. [Environment and Expectations](Environment-and-Expectations.md)
+5. [Lab Notebooks](Lab-Notebooks.md) — set up your notebook; post daily from day one
+6. [Data Management](Data-Management.md)
+7. [Project Management](Project-Management.md)
+8. [Computing Hardware](Computing-Hardware.md) — install shell, git, GitHub Desktop, RStudio (see IAQs below)
 
-6. [Computing](Computing-Hardware.md)
+## Ongoing — reference as needed
+
+- [Computing Best Practices](Computing-Best-Practices.md)
+- [Writing Scientific Manuscripts](Writing.md)
+- [DEI Resources](DEI-Resources.md)
+- [External Communication and Funding](External-Communication-and-Funding.md) — conferences, travel awards, fellowships
+- [How to Grad School (outreach slides)](How-to-Grad-School-Slides.md)
 
 ---
 
-### Lab IAQs
-(Initially Asked Questions) or TLDR Handbook
+## Lab IAQs
 
-#### What things do I need to do to get "connected"?
+(Initially Asked Questions) — TL;DR for the handbook.
 
-Get on [lab Slack](https://genefish.slack.com/), added to [the lab GitHub Organization](https://github.com/RobertsLab), added to [Lab Calendar](https://calendar.google.com/calendar/embed?src=mrc305%40gmail.com&ctz=America/Los_Angeles), attend Lab Meetings, post regularly to your [lab notebook](Lab-Notebooks.md).
-
-#### What do I need to have on my device(s) to get started?
+### What do I need on my device to get started?
 
 - shell
-- git    
-- GitHub Desktop   
-- RStudio   
+- git
+- GitHub Desktop
+- RStudio
 
-#### What do you recommend for learning more about the process and output of the labs's scientific endevours?
+### What should I read to understand how the lab does science?
 
 - [tusk](https://robertslab.github.io/tusk/)
 - [FISH546](https://sr320.github.io/course-fish546-2023/schedule.html)
 
-
-
 ---
 
+## Getting connected at UW
 
-### Getting connected at the University of Washington
+UW and SAFS have many groups, listservs, and funding channels. **Lab-recommended conferences and fellowships** are maintained in one place: [External Communication and Funding](External-Communication-and-Funding.md).
 
-At the University of Washington, there are a number of departments, schools, programs, institutes, and people that you may find beneficial to connect with. Below are some resources to help get you connected.
+### DEI
 
-#### DEI Groups, Committees, Centers, and Resources
-This is a list (non-exhaustive) of DEI groups, committees, centers, and resources available to you at UW and beyond: [Our DEI page](DEI-Resources.md)
+Non-exhaustive DEI groups and support at UW and beyond: [DEI Resources](DEI-Resources.md).
 
-#### Listservs
+### Listservs
 
-If you experience any problems in joining these listservs, email SAFS computing administrator, Michael Parker (<safshelp@uw.edu>)
+If you have trouble joining, email SAFS computing administrator Michael Parker (<safshelp@uw.edu>).
 
-- SAFS social <safssocial@uw.edu>: click [here](http://mailman13.u.washington.edu/mailman/listinfo/safssocial) to join
-- SAFS job postings <safsjobs@uw.edu>: click [here](http://mailman11.u.washington.edu/mailman/listinfo/safsjobs) to join
-- SAFS community Slack: click [here](https://join.slack.com/t/safs-community/shared_invite/zt-he8uinsg-yd_BzsR8hnST~G4UtNZ_bw) to join. If you have trouble joining, email Steven Roberts (<sr320@uw.edu>)
+- SAFS social <safssocial@uw.edu>: [join](http://mailman13.u.washington.edu/mailman/listinfo/safssocial)
+- SAFS job postings <safsjobs@uw.edu>: [join](http://mailman11.u.washington.edu/mailman/listinfo/safsjobs)
+- SAFS community Slack: [join](https://join.slack.com/t/safs-community/shared_invite/zt-he8uinsg-yd_BzsR8hnST~G4UtNZ_bw) (or email Steven Roberts <sr320@uw.edu>)
 
-#### Undergraduate students
+### Undergraduate students
 
-- SAFS Undergraduate Resources: [Research and Internships](https://fish.uw.edu/students/undergraduate-program/research-and-internships/), [Study Abroad](https://fish.uw.edu/students/undergraduate-program/degree-overview-new/study-abroad/)
-- SAFS Undergraduate [funding](https://fish.uw.edu/students/undergraduate-program/scholarships-funding/)
+- SAFS: [Research and Internships](https://fish.uw.edu/students/undergraduate-program/research-and-internships/), [Study Abroad](https://fish.uw.edu/students/undergraduate-program/degree-overview-new/study-abroad/), [scholarships and funding](https://fish.uw.edu/students/undergraduate-program/scholarships-funding/)
 - [Undergraduate Research Symposium](https://www.washington.edu/undergradresearch/symposium/)
-- College of the Environment's undergraduate research journal, [FieldNotes](https://fieldnotesjournal.org/)
+- [FieldNotes](https://fieldnotesjournal.org/) (CoEnv undergraduate research journal)
 
-#### Graduate students
+### Graduate students
 
-- [UW Graduate School](https://grad.uw.edu)
-  - [Graduate Opportunities and Minority Achievement Program (GO-MAP)](https://grad.uw.edu/equity-inclusion-and-diversity/go-map/): Community for graduate students of color across the three UW campuses
-  - [Graduate and Professional Student Senate (GPSS)](http://depts.washington.edu/gpss/)
+- [UW Graduate School](https://grad.uw.edu) — [GO-MAP](https://grad.uw.edu/equity-inclusion-and-diversity/go-map/), [GPSS](http://depts.washington.edu/gpss/)
+- [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/) — advising: Samantha Scherer (<iamsams@uw.edu>); HR: Amy Fox (<amyfox@uw.edu>)
+- [FINS](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/) — listserv <safsgrads@uw.edu>: [join](http://mailman11.u.washington.edu/mailman/listinfo/safsgrads); Slack: [join](https://join.slack.com/t/safsgrads/shared_invite/zt-fq8maniu-e3JNso80fuqnLzrhdiyAzA)
+- CoEnv grads listserv <environment_grads@uw.edu>: [join](http://mailman11.u.washington.edu/mailman/listinfo/environment_grads)
 
-- UW College of the Environment
-  - [Graduate student resources](https://environment.uw.edu/students/current-students/)
-  - listserv <environment_grads@uw.edu> : Stay updated on graduate student opportunities and seminars. Click [here](http://mailman11.u.washington.edu/mailman/listinfo/environment_grads) to join
-  - [CoEnv travel funding](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund//)
+Travel and conference awards (CoEnv, Grad School, FINS, etc.) are summarized with lab conference recommendations in [External Communication and Funding](External-Communication-and-Funding.md).
 
-- [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/)
-  - [Assistant Director of Student Services and DEI](https://fish.uw.edu/students/advising/): Samantha Scherer (<iamsams@uw.edu>)
-  - HR Mananger : Amy Fox (<amyfox@uw.edu>) 
-  - [Fisheries Interdisciplinary Network of Students (FINS)](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/): Graduate student organization within the School of Aquatic and Fishery Sciences. In addition to serving as an umbrella organization for several graduate student committees, FINS also raises funds to support student travel to conferences and organizes academic and social events throughout the year.
-    - [Student travel and conference awards](https://fish.uw.edu/students/graduate-program/fins-fisheries-interdisciplinary-network-of-students/student-awards/)
-  - listserv <safsgrads@uw.edu>: click [here](http://mailman11.u.washington.edu/mailman/listinfo/safsgrads) to join
-  - SAFS Graduate Student Slack: click [here](https://join.slack.com/t/safsgrads/shared_invite/zt-fq8maniu-e3JNso80fuqnLzrhdiyAzA) to join
+### Postdocs
 
-#### Postdocs
+- [UW Office of Postdoctoral Affairs](https://grad.uw.edu/for-students-and-post-docs/office-of-postdoctoral-affairs/) — listserv: email <uwopa@uw.edu>
+- [UW College of the Environment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/) — listserv <environment_postdocs@uw.edu>: contact Anthony Salazar (asalazar@uw.edu)
+- [SAFS Postdocs](https://fish.uw.edu/faculty-research/research/postdoctoralscholars/) — listserv <safspostdocs@uw.edu>: [join](http://mailman13.u.washington.edu/mailman/listinfo/safspostdocs)
 
-- [UW Office of Postdoctoral Affairs](https://grad.uw.edu/for-students-and-post-docs/office-of-postdoctoral-affairs/)
-	- UW Office of Postdoctoral Affairs listserv: to join, send an email request to <uwopa@uw.edu>
-	- UW Postdoc Association Twitter: [@UWPostDocs](https://twitter.com/uwpostdocs?lang=en)
-	- UW Postdoc Association Slack channel: to join, send an email request to <uwpa@uw.edu>
-	- [Postdoc Parenting Group](http://depts.washington.edu/uwpa/who-we-are-2/)
-	- [Postdoc Diversity Alliance](https://sites.uw.edu/uwpda)
+### Faculty
 
-- [UW College of the Environment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/)
-	- more CoEnv Postdoc resources: [https://environment.uw.edu/intranet/academics/postdoctoral-resources/](https://environment.uw.edu/intranet/academics/postdoctoral-resources/)
-	- listserv <environment_postdocs@uw.edu> : Stay in the loop on career preparation seminars, career panels, opportunities to give practice talks, etc. To join, email the CoEnv Graduate Student and Postdoctoral Services Specialist, Anthony Salazar (asalazar@uw.edu)
-	- [CoEnv travel funding](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund//)
+SAFS faculty governance (UW NetID): <https://uwnetid.sharepoint.com/sites/safs/facultygovernance>
 
-- [UW SAFS Postdocs](https://fish.uw.edu/faculty-research/research/postdoctoralscholars/)
-	- join SAFS postdoc channel on Slack: click [here](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) to join
-	- join the SAFS Postdocs listserv <safspostdocs@uw.edu>: click [here](http://mailman13.u.washington.edu/mailman/listinfo/safspostdocs) to join
-
-
-#### Faculty
-
-https://uwnetid.sharepoint.com/sites/safs/facultygovernance
-(Log in with UW net id)
-
-In particular under "Policies"
-1. "Salary recovery policy" explains how if you have too many grants
-for your salary, you can use some to cover state salary, and then the
-state salary gets shifted to SAFS (benefits portion) and your RCR (the
-remainder).
-
-2.  "Salary recovery policy" teaching buyout. You can buy out from 1
-quarter of teaching a small seminar course, for 1.5 mo of salary, or a
-large course for 2 mo of salary. Restrictions apply.
-
-3. "Teaching release", when substantially revamping a course or
-developing a new course, it is possible to get a one-quarter teaching
-release.
-
-In addition, there are University-wide policies that some of us have
-signed up for:
-1. A/B salary. For those who often have extra grant funding, it is
-possible to use the A/B salary. Your state income stays the same, but
-pays for only 80% or 90% of your time (basically an increase in
-monthly salary rate), and the extra time is covered by external
-grants. More details here:
-https://environment.uw.edu/intranet/personnel/academic-human-resources/salary-compensation/ab-salary-retention-adjustment-policy
-
-2. Personal mobile phone use for business. It is possible to cover a
-portion of your cell phone bill from RCR if you use your cell phone
-for UW business. More details here:
-https://www.washington.edu/admin/rules/policies/APS/55.01.html
-This one depends on departmental policy to some extent.
-
-
+Under **Policies**, see salary recovery, teaching buyout, and teaching release. University-wide options include [A/B salary](https://environment.uw.edu/intranet/personnel/academic-human-resources/salary-compensation/ab-salary-retention-adjustment-policy) and [mobile phone reimbursement](https://www.washington.edu/admin/rules/policies/APS/55.01.html) (department policy may apply).

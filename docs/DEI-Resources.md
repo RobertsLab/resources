@@ -1,6 +1,6 @@
 ## Support Resources at UW
 
-- [Title IX office](hhttps://www.washington.edu/titleix/) (federal gender equity law)
+- [Title IX office](https://www.washington.edu/titleix/) (federal gender equity law)
 
 - [UW Safe Campus](https://depts.washington.edu/safecamp/)
 
@@ -75,25 +75,3 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 - [Facilitating Critical Conversations With Students [PDF]](https://www.tolerance.org/sites/default/files/2019-12/TT-Lets-Talk-December-2019.pdf) December 2019. “ It’s a conversation that explores the relationships between identity and power, that traces the structures that privilege some at the
 expense of others, that helps students think through the actions they can
 take to create a more just, more equitable, world.”
-
-## Bimonthly Diversity, Equity and Inclusion Meetings 
-
-Biweekly DEI meetings (~1 hour) provide a space to learn, discuss, and engage in initiatives that further lab members' understanding about the institutionalized oppression present in academia. Example activities include discussing articles read prior to the meeting, tackling action items to improve DEI in the lab and/or department, and more. See [log of topics](https://docs.google.com/spreadsheets/d/1LCIiAqWMaJ0tPZIevUXqWyZR2SN4p9qGLgQIvWBaWgo/edit#gid=0).
-
-_Code of Conduct for DEI Meetings_
-
-We are dedicated to providing a welcoming and supportive environment for all people, regardless of background, identity, physical appearance, or manner of communication. Any form of language or behavior used to exclude, intimidate, or cause discomfort will not be tolerated. This applies to all course participants (instructor, students, guests). In order to foster a positive and professional learning environment, we will be using progressive stack discussion methods and these discussion rules:
-
-_Discussion Rules_
-
-1. We will listen with the intent to understand.
-2. We will monitor our own air time, aiming to share the space and time so others may participate as well.
-3. We will respect those who do not wish to speak.
-4. We will use “I” statements as opposed to generalizations.
-5. We will not ask anyone to speak on behalf of any group we perceive them to identify with, or that they self-identify with.
-6. We will expect discomfort.
-7. We will resist the urge to “fix” others’ discomfort.
-8. We will elevate impact above intent, and we will apologize when necessary.
-9. We will expect and accept non-closure. We acknowledge that these conversations may not be resolved in a single meeting.
-10. We will take lessons learned, but not others’ stories, out of this space. 
-11. We will not participate in ad hominem attacks.

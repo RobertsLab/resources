@@ -1,4 +1,6 @@
-This is a living document that lists conferences, community outreach, and funding sources that past and present lab members recommend.  
+This is a living document that lists conferences, community outreach, and funding sources that past and present lab members recommend. When you add or verify an entry, include the year checked in the description or in your pull request. For onboarding and UW listservs, see [Onboarding](Onboarding.md).
+
+**Maintainers:** prefer updating this page over duplicating conference or travel-award lists elsewhere in the handbook.
 
 ## Conferences & pertinent travel grants 
 

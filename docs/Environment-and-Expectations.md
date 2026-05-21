@@ -2,23 +2,17 @@
 
 The purpose of the lab group is to grow as scientists and as people. Our intent is to maintain an open, welcoming, and communicative environment among all lab members. You are encouraged to approach any member of the lab with questions or issues related to science or otherwise. As the old idiom goes, "there are no stupid questions". It is okay to make mistakes, but it is not okay to hide your mistakes from others - addressing them and learning from them is how we grow as scientists. Similarly, if you disagree with lab members on any issue you are encouraged to engage with them directly.
 
-To foster the intended lab environment, everyone must follow the [code of conduct](https://robertslab.github.io/resources/Code-of-Conduct/). Lab members are also expected and encouraged to participate in trainings, committees, and self or group education to strive towards a more equitable, inclusive, and just lab and departmental community. Here is a non-exhaustive list of DEI resources available to you at UW and beyond: [DEI-Resources](DEI-Resources.md). Additionally, all members of the lab meet to discuss project progress, diversity, equity, and inclusion issues, and to get help from others. Here is an example of our meeting schedule.
+To foster the intended lab environment, everyone must follow the [Code of Conduct](Code-of-Conduct.md). Lab members are also expected and encouraged to participate in trainings, committees, and self or group education to strive towards a more equitable, inclusive, and just lab and departmental community. See [DEI Resources](DEI-Resources.md) for support at UW and beyond.
 
-NOTE: You are expected to attend all lab meetings, within reason. Science hour is optional, but highly encouraged!
-
--   **Biweekly Project Progress Lab Meetings** (1.5 hour): All members discuss their activities since the last meeting, planned activities for the next two weeks, and to get help from lab members on project-related issues. GOALS are set each meeting and reported upon.
-
--   **Weekly Science Hour** (Fridays): A casual meeting to hang out, and sometimes tackle science issues/questions with the "hive mind" - e.g. we spend time debugging a script, interpreting a statistical analysis, interpreting/providing feedback on figures, or discuss science concepts that require more time than is available during the biweekly lab meetings.
-
--   **Practice presentation meetings** (occasionally): When members prepare a presentation for a conference or symposium (etc.), they are expected to give a practice presentation to the lab group. For a 15 minute presentation, we schedule at least 1hr to deliver it, then receive lots of feedback. This exercise is invaluable, and greatly improves presentations.
-
--   **Targeted Topics** (occasionally): When members determine a topic where is makes sense to meet as a group the initiate the meeting.
+All members meet regularly to discuss project progress and to help each other. **Meeting types, cadence, and how to join** are described on the [Lab Communication](Lab-Communication.md#lab-meetings) page (canonical reference).
 
 ## Roberts Mentoring Approach
 
-My mentoring approach will be somewhat specific per person, however generally I view my role as providing you the resources to succeed in **your** educational experience. There will be regular lab meetings where we primarily address any challenges members might be having while reaching their goals. Goals are important and I will working with you in developing long-term goals, however you will need to develop monthly goals. You might not always achieve them, but this helps you stay focused. Beyond lab meetings we have established a [number means of communication](https://robertslab.github.io/resources/Lab-Communication/).
+My mentoring approach will be somewhat specific per person, however generally I view my role as providing you the resources to succeed in **your** educational experience. There will be regular lab meetings where we primarily address any challenges members might be having while reaching their goals. Goals are important and I will work with you in developing long-term goals; you will need to develop monthly goals. You might not always achieve them, but this helps you stay focused. Beyond lab meetings we have established [several means of communication](Lab-Communication.md).
 
-Utmostly important as you get into research, is to communicate issues and challenges. I will work with you to address these, though often we might find that the most effective solutions are resources outside of the lab.
+For planning, tracking, and meeting preparation habits, see [Project Management](Project-Management.md).
+
+Utmost importance as you get into research is to communicate issues and challenges early. I will work with you to address these, though often we might find that the most effective solutions are resources outside of the lab.
 
 I will provide honest feedback in an effort to push you to be your best. This will include pushing you to consistently be stepping back to re-evaluate your work in a larger context, and consider areas of improvement.
 
@@ -28,17 +22,19 @@ The predominantly white and cis/het, amongst other factors, community at SAFS ma
 
 ### Research Methods
 
-A lot of our research involves computational analysis of large, novel datasets. You will need to be competent in computing skills including basics of bash and R. A common task you should be able to accomplish is installing and running Blast on your own computer. You should also be familiar with Jupyter Notebooks. As might be evident, we using GitHub extensively and you will be using this to document code and data (and everything else).
+A lot of our research involves computational analysis of large, novel datasets. You will need to be competent in computing skills including basics of bash and R. A common task you should be able to accomplish is installing and running Blast on your own computer. You should also be familiar with Jupyter Notebooks. We use GitHub extensively; you will use it to document code, data, and other project artifacts. Start with [Computing Hardware](Computing-Hardware.md) and [Computing Best Practices](Computing-Best-Practices.md).
 
-Electronic Open Lab Notebooks are also central to the lab. **You are required to document your activity *in real time*.** This will include not only benchwork and computational work, but also reflections, questions, and monthly goals.
+**Lab notebooks** are required: document activity in real time, including benchwork, computation, reflections, questions, and monthly goals. See [Lab Notebooks](Lab-Notebooks.md) for platform, daily updates, and backups.
 
-Writing. Always be doing it. Do not wait until you have completed a project but rather write the methods as you carry them out (or preferably before). This goes hand in hand with the lab notebook. Document your work in a detail that you and a stranger can completely reproduce it in 5 years.
+**Writing:** write methods and results as you go (or before experiments), not only at project end. See [Writing Scientific Manuscripts](Writing.md).
+
+**Data:** follow [Data Management](Data-Management.md) for day-to-day and archival expectations.
 
 ### Graduate Students
 
-Graduate school is not easy, and not for everyone. Graduate school will be very challenging, and for most, very rewarding. Graduate school is not a job where you check-in and check-out each day, but rather an educational endevour where you gain a deep understanding of a scientific area and complete your tenure by contributing a valuable research product, that substantially advances knowledge. Understanding this fact might help you deal with the challenges and frustrations you will face.
+Graduate school is not easy, and not for everyone. Graduate school will be very challenging, and for most, very rewarding. Graduate school is not a job where you check-in and check-out each day, but rather an educational endeavour where you gain a deep understanding of a scientific area and complete your tenure by contributing a valuable research product that substantially advances knowledge. Understanding this fact might help you deal with the challenges and frustrations you will face.
 
-There is a lot going on during your graduate education. Staying organized and not overwhelmed is key. In the same vein, time-management is key. There are several strategies for this. I suggest reading ["Getting Things Done"](https://gettingthingsdone.com/what-is-gtd/). Finding time outside of lab to recharge your mind and body is essential.
+There is a lot going on during your graduate education. Staying organized and not overwhelmed is key. Time management is essential. I suggest reading ["Getting Things Done"](https://gettingthingsdone.com/what-is-gtd/). Finding time outside of lab to recharge your mind and body is essential.
 
 > **Graduate students are expected to meet every two weeks with Steven, having a clear agenda and goals for the meeting. This should include your action items for the next two weeks, as well as self-assessment on performance for the prior two weeks. All of this information should be published in your lab notebook no less than 24 hours prior to the meeting.**
 
@@ -58,13 +54,15 @@ To simplify efficient documentation of progress (useful for grant reporting) **s
 
 ------------------------------------------------------------------------
 
-**Prospective graduate students** interested in graduate school and joining the lab, please [submit this form](https://goo.gl/forms/kqG2jtVa0xWwKcW23). Please feel free to contact current graduate students for more information.
+**Prospective graduate students** interested in graduate school and joining the lab, please [submit this form](https://goo.gl/forms/kqG2jtVa0xWwKcW23). See also [How to Grad School (outreach slides)](How-to-Grad-School-Slides.md). Please feel free to contact current graduate students for more information.
+
+Conference and fellowship opportunities are listed in [External Communication and Funding](External-Communication-and-Funding.md).
 
 ### Undergraduate students
 
 I enjoy having the opportunity to provide motivated undergraduate students with a chance to gain hands-on lab experience and get a better understanding of an array of approaches that can be used to study aquatic organisms. I feel this is an important component of your education. Depending on your status (i.e. intern, work-study, course credit, capstone etc.) there will likely be specific details that will need to be discussed.
 
-Undergraduates must review and sign the [Undergraduate Commitment Contract](https://github.com/RobertsLab/resources/wiki/Undergraduate-contract) prior to starting in the lab.
+Undergraduates must review and sign the [Undergraduate Commitment Contract](Undergraduate-contract.md) prior to starting in the lab.
 
 ### Postdocs
 

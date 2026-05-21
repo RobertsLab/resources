@@ -1,5 +1,7 @@
 # How to Grad School: A Guide for High Schoolers and Undergrads
 
+> **Handbook note.** Outreach and recruitment material. Lab members joining the group should start with [Onboarding](Onboarding.md).
+
 *Thinking about graduate school? This guide covers everything you need to know about preparing for and succeeding in graduate studies in aquatic and environmental sciences.*
 
 ---

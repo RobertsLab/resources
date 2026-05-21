@@ -1,5 +1,7 @@
 # A Guide to Writing a Scientific Paper
 
+> **Handbook note.** Reference guide (not required onboarding reading). New members: start with [Onboarding](Onboarding.md). Lab expectations for writing as you go: [Environment and Expectations](Environment-and-Expectations.md).
+
 > **About this guide.** This guide synthesizes the FISH 290 lecture series with the assigned course readings. Where guidance differs between sources, this guide follows Mensh & Kording (2017), *Ten simple rules for structuring papers* (PLOS Computational Biology), which the course treats as the reference for paper structure. 
 
 ---

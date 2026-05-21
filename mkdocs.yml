@@ -42,17 +42,24 @@ nav:
    - Home: 'index.md'
 
    - 'Lab Culture':
-     - Onboarding: 'Onboarding.md'
-     - Code of Conduct: 'Code-of-Conduct.md'
-     - Environment and Expectations: 'Environment-and-Expectations.md'
+     - 'Start here':
+       - Onboarding: 'Onboarding.md'
+     - 'Policies & agreements':
+       - Code of Conduct: 'Code-of-Conduct.md'
+       - Environment and Expectations: 'Environment-and-Expectations.md'
+       - Lab Safety: 'Lab-Safety.md'
+       - Undergraduate Contract: 'Undergraduate-contract.md'
+     - 'How we work':
+       - Lab Communication: 'Lab-Communication.md'
+       - Project Management: 'Project-Management.md'
+       - Lab Notebooks: 'Lab-Notebooks.md'
+       - Data Management: 'Data-Management.md'
+     - 'Career & community resources':
+       - DEI Resources: 'DEI-Resources.md'
+       - External Communication and Funding: 'External-Communication-and-Funding.md'
+
+   - 'Guides':
      - Writing Scientific Manuscripts: 'Writing.md'
-     - Lab Communication: 'Lab-Communication.md'
-     - Lab Notebooks: 'Lab-Notebooks.md'
-     - Project Management: 'Project-Managment.md'
-     - DEI Resources: 'DEI-Resources.md'
-     - External Communication: 'External-Communication-and-Funding.md'
-     - Lab Safety: 'Lab-Safety.md'
-     - Undergraduate Contract: 'Undergraduate-contract.md'
      - How to Grad School (Outreach Slides): 'How-to-Grad-School-Slides.md'
 
    - 'Computing and Code':
