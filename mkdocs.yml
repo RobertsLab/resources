@@ -37,6 +37,15 @@ plugins:
   - search
   - mkdocs-video:
       video_autoplay: false
+  - git-latest-changes:
+      limit_to_docs_dir: true
+      repo_vendor: github
+      history_limit: 10
+      timestamp_format: "%Y-%m-%d"
+      table_features:
+        - page_path_link
+        - timestamp
+        - message
 
 nav:
    - Home: 'index.md'
