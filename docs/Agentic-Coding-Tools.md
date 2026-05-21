@@ -1,211 +1,301 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Agentic Coding Tools and AI Assistants
 
-AI-powered coding assistants can influence how we write and interact
-with code. This guide covers how we might use these tools.
+AI-powered coding assistants can speed up writing, debugging, and refactoring code. They can also introduce subtle errors, leak context to third-party servers, or push changes in the wrong direction if you are not careful.
 
-\
-**General tips for Using AI Coding Assistants**\
-1. Use branches. This will protect main branch if you go off the rails.\
-2. Provide an instructions.md and tasks.md. This will help keep agent on
-track
+This guide covers tools the lab commonly uses—**GitHub Copilot**, **ChatGPT / Codex**, and **local models (Ollama)**—plus practices that keep agents useful and your work reproducible.
 
-Below we cover GitHub Copilot (w/VScode), ChatGPT, and local models
+**Related:** [Computing Best Practices](Computing-Best-Practices.md) · [VS Code on Klone](klone_VS-Code.md)
 
-------------------------------------------------------------------------
+---
 
-# GitHub Copilot
+## Quick comparison
 
-GitHub Copilot is an AI-powered coding assistant that helps you write
-code by providing intelligent suggestions and completions.
+| Tool | Where it runs | Best for | Needs internet |
+|------|---------------|----------|----------------|
+| [GitHub Copilot](#github-copilot) | VS Code, github.dev, GitHub.com | Tab completion, in-editor chat, issue → PR agent | Yes |
+| [ChatGPT / Codex](#chatgpt-and-openai-codex) | Browser, desktop app, terminal CLI | Explaining concepts, one-off scripts, repo-wide tasks via CLI | Yes |
+| [Ollama + Continue](#ollama-local-models) | Your machine only | Quick questions, regex help, privacy-sensitive drafts | No (after model download) |
+| [Image tools](#image-generation) | Various | Figures, diagrams, mockups (verify licensing & accuracy) | Usually yes |
 
-### Getting Started with GitHub Copilot
+---
 
-#### Prerequisites
+## Principles for using AI assistants in research code
 
-You'll need: - A GitHub account with Copilot access (available through
-GitHub Education) - VS Code or compatible IDE - Active internet
-connection
+### Protect your main branch and your data
 
-#### Checking Copilot Access
+1. **Work on a branch.** Agents can edit many files at once. A feature branch limits damage and makes review easy.
+2. **Never commit secrets.** Do not paste API keys, passwords, or `.env` contents into chat. Add those paths to `.gitignore` before sharing a repo with an agent.
+3. **Treat unpublished data carefully.** Sequences, field notes, and embargoed results may be sent to vendor servers when you use cloud tools. Prefer [local models](#ollama-local-models) or offline workflows when sensitivity matters.
+4. **Review every change.** Read diffs like a colleague’s PR. Run tests and spot-check outputs—especially statistics, file paths, and HPC job scripts.
 
-1.  Visit [GitHub Copilot](https://github.com/copilot) to check your
-    subscription status
-2.  Students and educators get free access through [GitHub
-    Education](https://education.github.com/)
+### Give agents enough context
 
-------------------------------------------------------------------------
+Agents work better when the repository explains itself:
 
-## Setting Up GitHub Copilot with VS Code
+| File | Purpose |
+|------|---------|
+| `instructions.md` (or `AGENTS.md`) | Project goals, conventions, how to run code, what *not* to touch |
+| `tasks.md` | Current sprint: what is done, in progress, and blocked |
+| `README.md` in each folder | What data and scripts live where ([Computing Best Practices](Computing-Best-Practices.md)) |
 
-### 1. Install the GitHub Copilot Extension
+Keep these files short and current. Stale instructions are worse than none.
 
-1.  Open VS Code
-2.  Go to the Extensions view (`Ctrl+Shift+X` or `Cmd+Shift+X`)
-3.  Search for "GitHub Copilot"
-4.  Install the official "GitHub Copilot" extension by GitHub
-5.  Optionally install "GitHub Copilot Chat" for conversational AI
-    assistance
+### Match the mode to the job
 
-### 2. Sign In and Activate
+| You want to… | Use |
+|--------------|-----|
+| Understand code or an error message | **Ask** / chat (read-only Q&A) |
+| Change a specific function or block | **Edit** / inline edit on a selection |
+| Multi-step work (tests, refactors, debugging) | **Agent** / coding agent |
+| An entire GitHub issue implemented as a PR | **Copilot coding agent** on GitHub |
 
-1.  After installation, you'll see a Copilot icon in the status bar
-2.  Click on it and select "Sign in to GitHub"
-3.  Follow the authentication flow in your browser
-4.  Return to VS Code - Copilot should now be active
+### Watch usage limits
 
-### 3. Verify Installation
+Copilot and ChatGPT plans have monthly or rate limits. Usage often depends on whether you use lightweight **Ask** vs heavier **Agent** modes and which model you select. Check your account dashboard when sessions stop unexpectedly.
 
-Create a new file (e.g., `test.py`) and start typing a function:
+---
 
-``` python
+## GitHub Copilot
+
+[GitHub Copilot](https://github.com/copilot) suggests code as you type and can run conversational or agentic workflows in the editor and on GitHub.com.
+
+### Prerequisites
+
+- GitHub account with Copilot access ([GitHub Education](https://education.github.com/) provides free access for many students and educators)
+- VS Code or another [supported IDE](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-for-your-enterprise/about-github-copilot-for-business)
+- Active internet connection (cloud models)
+
+**Check access:** [github.com/copilot](https://github.com/copilot)
+
+### Setup in VS Code
+
+#### 1. Install extensions
+
+1. Open VS Code → Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+2. Install **GitHub Copilot** (by GitHub)
+3. Install **GitHub Copilot Chat** for Ask / Agent / Edit panels
+
+#### 2. Sign in
+
+1. Click the Copilot icon in the status bar → **Sign in to GitHub**
+2. Complete browser authentication
+3. Confirm the status bar shows Copilot as enabled
+
+#### 3. Verify inline completion
+
+Create a test file and start a function:
+
+```python
 def calculate_gc_content(
 ```
 
-Copilot should suggest completions in gray text.
+Gray ghost text should appear; accept with `Tab`, dismiss with `Esc`.
 
-------------------------------------------------------------------------
+### Ask, Edit, and Agent in VS Code
 
-### Practical use cases and notes
+Copilot Chat exposes three interaction styles:
 
--   Tab completion.
+**Ask** — Chat panel for questions without automatic edits.
 
--   Have it develop, refactor, buid code based on natural language
-    instructions to "Agent".
+- Examples: “What does this function do?”, “Write a regex for valid FASTA headers”
+- Copilot explains or suggests snippets; you apply changes manually
+- Best for learning and planning
 
--   There is a limit to use, so will need to keep an eye on this. Can
-    see on Github website.
+**Edit** — Change selected code from a prompt.
 
-    -   Aspects that influence this if you "Ask" versus "Agent" and what
-        model you select.
+- Select code → open Edit → e.g. “Convert this loop to vectorized pandas”
+- Shows a diff; accept or reject
+- Best for localized refactors
 
-### VS Code Copilot Commands
+**Agent** — Multi-step, goal-oriented sessions.
 
-In VS Code with GitHub Copilot, there are three main ways to interact
-with the AI assistant:
+- Can read files, propose edits, run terminal commands (depending on settings), and iterate on errors
+- Best for debugging, test runs, and larger refactors
+- Use on a branch; review all file changes before commit
 
-**1. Ask** - Opens a chat-like panel (Copilot Chat) - Type natural
-language questions ("What does this function do?", "How do I write a
-regex for emails?") - Copilot responds with explanations, code snippets,
-or suggestions, but doesn't automatically change your code - Best for
-Q&A, explanations, or guidance
+**Rule of thumb:** Ask to understand → Edit to change a region → Agent for bigger workflows.
 
-**2. Agent** - Runs a Copilot "task agent" that can perform multi-step
-or tool-like actions - Examples: debugging, running tests, explaining
-diagnostics, or walking through refactors - Agents are more
-goal-oriented and can combine different steps (like reading docs,
-analyzing code, generating edits) - Best for complex workflows where
-Copilot needs context beyond a single answer
+### Practical use cases in the lab
 
-**3. Edit** - Lets you select code in the editor, then ask Copilot to
-modify it - Example: highlight a function → Edit with Copilot → "Convert
-this to async/await" - Copilot rewrites the selection directly in your
-file, showing a diff you can accept or reject - Best for direct code
-changes/refactoring
+- **Tab completion** while writing R, Python, shell, or Quarto/Rmd
+- **Explaining** unfamiliar API calls or error stacks
+- **Refactoring** repetitive plotting or file I/O
+- **Drafting** tests or README sections (then verify)
+- **Scaffolding** Slurm scripts—always validate partition, account, and resource flags against [Klone guides](klone_quick-start.md)
 
-**✅ Rule of thumb:** - Use **Ask** when you want to understand - Use
-**Edit** when you want to change - Use **Agent** when you want Copilot
-to do something bigger/more involved (like debugging, running tests, or
-analyzing errors)
+### Copilot on the web
 
-------------------------------------------------------------------------
+#### github.dev editor
 
-## Using GitHub Copilot on the Web
+1. Open any repository on GitHub
+2. Press `.` (period) to open the web VS Code editor, or visit `https://github.dev/owner/repo`
+3. Use completions and Copilot Chat like desktop VS Code (when your plan includes it)
 
-GitHub offers Copilot directly in the web interface, making it
-accessible even when working remotely on repositories.
+#### Code view on GitHub.com
 
-### 1. Accessing Web Copilot
+- Look for the Copilot control in file views for explanations and improvement ideas
+- Treat suggestions as starting points, not ground truth
 
-1.  Navigate to any GitHub repository
-2.  Press `.` (period) to open the web-based VS Code editor
-3.  Or go to `github.dev/owner/repository` directly
-4.  The Copilot extension should be available if you have access
+#### Assign issues to the Copilot coding agent
 
-### 2. Using Copilot in GitHub's Web Editor
+One of the strongest workflows for repo maintenance:
 
--   **Code completions**: Start typing and Copilot will suggest
-    completions
--   **Chat interface**: Use Copilot Chat for questions and explanations
--   **Inline suggestions**: Accept suggestions with `Tab` or reject with
-    `Esc`
+1. Open an issue with clear **background**, **acceptance criteria**, and **files or areas** to touch
+2. Assign the issue to **Copilot** (same as assigning a teammate)
+3. Copilot plans work, pushes to a branch, and opens a **pull request**
+4. You review the PR; request changes or merge when satisfied
 
-### 3. GitHub.com Code View Features
+Write issues the way you would for a human contributor: what “done” looks like, constraints, and test commands if any.
 
-When viewing code files on GitHub.com:
+![Ways to interact with Copilot on GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png)
 
-\- Look for the Copilot icon in file views
+Official docs: [Assign Copilot to an issue](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/assign-copilot-to-an-issue)
 
-\- Click to get AI-powered explanations of code blocks
+### Copilot on UW Klone (HPC)
 
-\- Get suggestions for improvements and alternative approaches
+Copilot runs in VS Code on **your laptop**, talking to cloud models; compute still runs on Klone when you execute code remotely.
 
-### 4. Assigning Copilot Issues
+**Recommended:** [VS Code on Klone via ProxyJump](klone_VS-Code.md) — connect to a compute node with Remote-SSH so login nodes stay free.
 
-Arguably one of the most powerful features is the ability to assign
-issues to Copilot.\
-Copilot will create a plan, implement on a new branch, then you (or
-someone else can review). If you like it, you can merge it in using a
-pull request.
+**Note:** Hyak OnDemand VS Code is easier to start but may not support Copilot extensions the same way; see pros/cons in the Klone VS Code guide.
 
-**Copilot in action on the web**
+Basic Remote-SSH flow:
 
-![Ways to interact with Copilot on
-GitHub](http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png){width="50%"}
+```bash
+# On your laptop: install Remote-SSH in VS Code, configure ProxyJump per UW-IT
+ssh your_netid@klone.hyak.uw.edu
+# Then salloc a compute node and connect VS Code to klone-node (see klone_VS-Code.md)
+```
 
-------------------------------------------------------------------------
+### Copilot documentation
 
-### Using Copilot with UW Klone HPC
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+- [VS Code Copilot guide](https://code.visualstudio.com/docs/copilot/overview)
+- [Prompting best practices (GitHub Blog)](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
 
-#### Remote Development Setup
+---
 
-1.  **SSH with VS Code**
+## ChatGPT and OpenAI Codex
 
-    ``` bash
-    # Install Remote-SSH extension in VS Code
-    # Connect to Klone through VS Code's Remote SSH
-    ssh your_netid@klone.hyak.uw.edu
-    ```
+### ChatGPT (chat)
 
-2.  OPTION 2 - more coming soon
+[ChatGPT](https://chat.openai.com/) is useful for:
 
-------------------------------------------------------------------------
+- Explaining algorithms, statistics, or file formats
+- Drafting small standalone scripts before moving them into a repo
+- Brainstorming analysis plans (then implementing and validating in version-controlled code)
 
-### Documentation and Tutorials
+**Limitations:** Chat sessions are not tied to your repo unless you upload files or use connectors. It will not run your Klone jobs or know your directory layout unless you provide that context. Always copy final code into GitHub with normal review.
 
--   [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
--   [VS Code Copilot
-    Guide](https://code.visualstudio.com/docs/editor/github-copilot)
--   [Copilot Best
-    Practices](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)
+### OpenAI Codex (CLI agent)
 
-------------------------------------------------------------------------
+[Codex](https://github.com/openai/codex) is a **terminal-based** coding agent (distinct from the older “Codex” API name). It can read and edit files in a project directory, run commands, and work across a repository.
 
-# ChatGPT
+**Install (examples):**
 
-Most are familar with ChatGPT chat features (online or standalone).
-There is also ChatGPT codex that allows you to interact directly with a
-GitHub repository online or in the terminal
+```bash
+npm install -g @openai/codex
+# or
+brew install --cask codex
+```
 
-------------------------------------------------------------------------
+**Typical workflow:**
 
-# Ollama (local models)
+1. `cd` into your git repository (on a feature branch)
+2. Start Codex: `codex`
+3. Describe the task in natural language; approve file and command changes when prompted
+4. Review `git diff`, run tests, then commit
 
-There are certain use cases where having everything on your machine
-makes sense such as asking simple regex questions. For this installing
-Ollama is an option.
+Access is included with many ChatGPT paid plans; see [Codex CLI documentation](https://developers.openai.com/codex/cli) for authentication options.
 
-------------------------------------------------------------------------
+**When to prefer Codex vs Copilot:** Codex is strong when you want a **terminal-first**, repo-wide session without VS Code. Copilot is stronger for **inline completion** and **GitHub-native** issue → PR flows.
 
-# Image Generation
+---
 
-more coming soon
+## Ollama (local models)
 
-------------------------------------------------------------------------
+Running models locally keeps prompts on your machine—useful for quick help (regex, bash one-liners, explaining error messages) without sending text to a cloud API.
 
-.
+### Install Ollama
+
+1. Download from [ollama.com](https://ollama.com/)
+2. Pull a coding-oriented model, for example:
+
+```bash
+ollama pull qwen2.5-coder:7b
+```
+
+Smaller models are faster; larger models are better for multi-file reasoning but need more RAM.
+
+### Use with VS Code (Continue extension)
+
+[Continue](https://continue.dev/) connects VS Code to Ollama for chat and optional tab completion.
+
+1. Install the **Continue** extension in VS Code
+2. Ensure Ollama is running (`ollama serve` if needed)
+3. Configure Continue to use `http://localhost:11434` as the Ollama API base
+4. Select your pulled model in Continue’s model picker
+
+Example minimal config concept (paths vary by OS; see [Continue docs](https://docs.continue.dev/)):
+
+```json
+{
+  "models": [
+    {
+      "title": "Qwen2.5 Coder",
+      "provider": "ollama",
+      "model": "qwen2.5-coder:7b",
+      "apiBase": "http://localhost:11434"
+    }
+  ]
+}
+```
+
+### When local models are enough
+
+- Syntax checks and small transformations
+- Drafting commit messages or docstrings
+- Learning a new library API at your desk
+
+### When to use cloud tools instead
+
+- Large refactors across many files
+- Agents that run tests and iterate on CI failures
+- Tight integration with GitHub Issues and PRs
+
+---
+
+## Image generation
+
+AI image tools can help with **conceptual diagrams**, **presentation figures**, and **mockups**. They are poor sources of scientific truth—do not use them for data plots, specimen IDs, or quantitative results.
+
+| Tool | Notes |
+|------|--------|
+| ChatGPT / DALL·E | Good for rough schematics; check [OpenAI usage policies](https://openai.com/policies) |
+| Copilot / VS Code | Some plans support image generation in chat; treat output as draft art |
+| Dedicated tools (Midjourney, Ideogram, etc.) | Useful for outreach graphics; document that AI assisted if required by venue |
+
+**Lab practice:** Prefer real data visualizations (ggplot2, matplotlib, etc.) for publication. Use generated images only where accuracy is not implied, and label them as illustrative.
+
+---
+
+## Choosing a workflow (examples)
+
+| Task | Suggested approach |
+|------|-------------------|
+| Fix a failing R script on your laptop | Copilot **Ask** or **Agent** in VS Code on a branch |
+| Implement a filed GitHub issue end-to-end | Assign issue to **Copilot coding agent**, review PR |
+| Explain a Slurm error without leaving the terminal | **Codex** or **ChatGPT** with the job log pasted in |
+| Quick regex for filenames, no cloud | **Ollama** + Continue |
+| Heavy analysis on Klone | VS Code Remote-SSH + Copilot on laptop; run jobs on compute node |
+| Figure for a seminar slide (not data) | Image tool + manual cleanup in Illustrator/PowerPoint |
+
+---
+
+## Getting help
+
+- **Lab:** [open a GitHub issue](https://github.com/RobertsLab/resources/issues) on this handbook repo
+- **UW Hyak / Klone:** [Hyak documentation](https://hyak.uw.edu/docs/) and [UW-IT office hours](https://calendar.washington.edu/sea_uwit-rc)
+- **Copilot access / education:** [GitHub Education](https://education.github.com/)
+
+If something in this page is outdated (models and UIs change quickly), edit the doc via the pencil icon in the handbook or submit a PR.
