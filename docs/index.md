@@ -9,64 +9,86 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/resources)
 
 
-## Just Getting Started?
+## Lab Culture
 
-Be sure have a look at the following:
-
-- Read and adhere to:
-
-    - [Code of Conduct](Code-of-Conduct.md)
-
-    - [Lab Environment and Expectations](Environment-and-Expectations.md)
-
-- [Onboarding Documentation](Onboarding.md)
-
-- Complete all [Lab Safety Trainings](Lab-Safety.md)
-
+- [Onboarding](Onboarding.md)
+- [Code of Conduct](Code-of-Conduct.md)
+- [Environment and Expectations](Environment-and-Expectations.md)
+- [Writing Scientific Manuscripts](Writing.md)
 - [Lab Communication](Lab-Communication.md) - Digital and scheduling tools that we use to stay connected.
-
----
-
-## Ready to Pick up a Pipette?
-
+- [Lab Notebooks](Lab-Notebooks.md) - Links to notebooks of current and past Roberts Lab members, as well as archived notebooks.
+- [DEI Resources](DEI-Resources.md)
+- [External Communication & Funding](External-Communication-and-Funding.md) - Conferences, community outreach, and funding sources that past and present lab members recommend.
 - [Lab Safety](Lab-Safety.md)
-
-- [Chemical Standard Operating Protocols (SOPs)](Chemical-Standard-Operating-Protocols.md)
-
-- [Lab Inventory](Lab-Inventory.md) - Materials, purchasing log, freezer contents, histology samples, primer database.
-
-- [Lab Protocols](https://github.com/RobertsLab/resources/tree/master/protocols) - Protocols for benchwork in the lab (e.g. RNA isolation), for commonly used instruments and software (e.g. proteomics data analysis in Skyline), and for commonly performed hatchery practices and tissue sampling.
-
-- [Alarm Information](Alarm-Information.md) - Description of active alarms in the lab, how to configure, and what phone calls mean.
-
+- [Undergraduate Contract](Undergraduate-contract.md)
+- [How to Grad School (Outreach Slides)](How-to-Grad-School-Slides.md)
 
 ---
 
-## Sticking to the Keyboard?
+## Computing and Code
 
-- [Computing Hardware](Computing-Hardware.md) - Computing resources we have available & links to help you begin learning.
-
+- [Best Practices](Computing-Best-Practices.md)
 - [Agentic Coding Tools](Agentic-Coding-Tools.md) - Guide to using AI-powered coding assistants like GitHub Copilot with VS Code, web interfaces, and integration with UW Klone HPC and Raven.
-
+- [Code Snippets](code_Snippets.md)
+- [Computing Hardware](Computing-Hardware.md) - Computing resources we have available & links to help you begin learning.
 - [Lab Software](Lab-Software.md) - A list of software installed on lab computers.
 
-- [Data Management](Data-Management.md) - This page is intended to document all aspects of data management, from the day-to-day, formal NGS and proteomics plans, and general archiving options.
+**Klone Guides**
 
-- [Genomic Resources](Genomic-Resources.md) - Here we try to compile genomic resources such that they are readily available and somewhat described.
+- [Quick Start](klone_quick-start.md)
+- [Containers](klone_containers.md)
+- [Conda](klone_Conda.md)
+- [New User](klone_Adding-a-User.md)
+- [Logging In](klone_Logging-In.md)
+- [Node Types](klone_Node-Types.md)
+- [Data Storage and System Organization](klone_Data-Storage-and-System-Organization.md)
+- [File Transfers](klone_File-Transfers.md)
+- [Installing Programs](klone_Installing-Programs.md)
+- [Running a Job](klone_Running-a-Job.md)
+- [RStudio Server](klone_RStudio-Server.md)
+- [VS Code](klone_VS-Code.md)
 
-- [Digital Media](Digital-Media.md) - Where and how to store media including photos, videos and audio
+**Raven Guides**
 
+- [Conda](raven_Conda.md)
+- [RStudio Server](raven_RStudio-Server.md)
 
 ---
 
-## Even More!
+## Databases and Catalogs
 
-- [Experiment Database](Experiment-Database.md) - Database of all Roberts Lab experiments
-
-- [External Communication & Funding](External-Communication-and-Funding.md) - Conferences, community outreach, and funding sources that past and present lab members recommend. Also contains tips on printing posters.
-
-- [Lab Notebooks](Lab-Notebooks.md) - Links to notebooks of current and past Roberts Lab members, as well as archived notebooks.
-
+- [Lab Inventory](Lab-Inventory.md) - Materials, purchasing log, freezer contents, histology samples, primer database.
 - [Pubathon](Pubathon.md) - Annual "pubathon" roster, links to and status of manuscripts.
+- [Digital Media](Digital-Media.md) - Where and how to store media including photos, videos and audio.
+- [Experiment Database](Experiment-Database.md) - Database of all Roberts Lab experiments.
+- [Genomic Resources](Genomic-Resources.md) - Here we try to compile genomic resources such that they are readily available and somewhat described.
+- [Spotify Playlists](music.md)
+
+---
+
+## Protocols
 
 - [Purchasing & Reimbursement](Purchasing-and-Reimbursement.md) - Procedure for purchases.
+- [Data Management](Data-Management.md) - This page is intended to document all aspects of data management, from the day-to-day, formal NGS and proteomics plans, and general archiving options.
+- [Chemical Standard Operating Protocols (SOPs)](Chemical-Standard-Operating-Protocols.md)
+- [Alarm Information](Alarm-Information.md) - Description of active alarms in the lab, how to configure, and what phone calls mean.
+
+**Lab Protocols**
+
+- [Bullet Blender](protocols/protocol-bullet_blender.md)
+- [Glycogen-Glo Assay](protocols/protocol-glycogen-glo-assay.md)
+- [Guava Muse Cell Analyzer](protocols/protocol-guava_muse.md)
+- [qPCR](protocols/protocol-qPCR.md)
+- [Resazurin Assay](protocols/resazurin-assay.md)
+- [Reverse Transcription](protocols/protocol-reverse_transcription.md)
+- [Water Quality Testing](protocols/protocol-water_quality.md)
+
+---
+
+## Bioinformatic Workflows
+
+- [Basics](bio_Basics.md)
+- [Annotation](bio-Annotation.md)
+- [DNA Methylation Analysis](bio_DNA-methylation.md)
+- [Gene Expression](bio-Gene-expression.md)
+- [Transcriptome Assembly](bio_Transcriptome-assembly.md)
