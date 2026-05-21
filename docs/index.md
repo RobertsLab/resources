@@ -4,11 +4,6 @@
 
 ![GitHub issues](https://img.shields.io/github/issues-raw/RobertsLab/resources) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/RobertsLab/resources?color=%23FF0000) ![GitHub Discussions](https://img.shields.io/github/discussions/RobertsLab/resources) ![GitHub contributors](https://img.shields.io/github/contributors/RobertsLab/resources) ![GitHub last commit](https://img.shields.io/github/last-commit/RobertsLab/resources)
 
-## Recently updated
-
-Pages below were updated most recently in this handbook (refreshed on each site build from git history).
-
-{{ latest_changes }}
 
 ## Lab Culture
 
@@ -87,3 +82,12 @@ Pages below were updated most recently in this handbook (refreshed on each site 
 -   [Gene Expression](bio-Gene-expression.md)
 
 -   [Transcriptome Assembly](bio_Transcriptome-assembly.md)
+
+------------------------------------------------------------------------
+
+
+## Recently updated
+
+Pages below were updated most recently in this handbook (refreshed on each site build from git history).
+
+{{ latest_changes }}
