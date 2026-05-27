@@ -19,6 +19,8 @@
 
 -   [Writing Scientific Manuscripts](Writing.md) — structuring and writing papers (reference; use when drafting).
 
+-   [Oral Presentations](Oral-Presentations.md) — planning, designing, and delivering clear scientific talks.
+
 -   [How to Grad School (Outreach Slides)](How-to-Grad-School-Slides.md) — outreach material for prospective graduate students.
 
 ------------------------------------------------------------------------
