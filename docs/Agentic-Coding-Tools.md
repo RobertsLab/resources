@@ -46,7 +46,7 @@ AI Use Indicator: Level 2 — AI-assisted drafting or coding. Generative AI was 
 
 ## Clickable badge tags
 
-The following HTML badges can be added to Quarto pages, GitHub README files, notebook posts, or other HTML-compatible documents. **Each badge links to this page**.
+The following HTML badges can be added to Quarto pages, GitHub README files, notebook posts, or other HTML-compatible documents. **Each badge links to this page (rubric above) so details can be understood**.
 
 ### Level 0 — No AI use
 
