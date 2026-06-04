@@ -50,42 +50,42 @@ The following HTML badges can be added to Quarto pages, GitHub README files, not
 
 ### Level 0 — No AI use
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-Level%200%20No%20AI%20use-lightgrey" alt="AI Use Level 0: No AI use"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-Level%200%20No%20AI%20use-lightgrey" alt="AI Use Level 0: No AI use"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use Level 0: No AI use" src="https://img.shields.io/badge/AI%20Use-Level%200%20No%20AI%20use-lightgrey"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use Level 0: No AI use" src="https://img.shields.io/badge/AI%20Use-Level%200%20No%20AI%20use-lightgrey"></a>
 ```
 
 ### Level 1 — AI-assisted editing
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-Level%201%20Editing-blue" alt="AI Use Level 1: AI-assisted editing"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-Level%201%20Editing-blue" alt="AI Use Level 1: AI-assisted editing"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use Level 1: AI-assisted editing" src="https://img.shields.io/badge/AI%20Use-Level%201%20Editing-blue"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use Level 1: AI-assisted editing" src="https://img.shields.io/badge/AI%20Use-Level%201%20Editing-blue"></a>
 ```
 
 ### Level 2 — AI-assisted drafting or coding
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-Level%202%20Drafting%2FCoding-yellowgreen" alt="AI Use Level 2: AI-assisted drafting or coding"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-Level%202%20Drafting%2FCoding-yellowgreen" alt="AI Use Level 2: AI-assisted drafting or coding"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use Level 2: AI-assisted drafting or coding" src="https://img.shields.io/badge/AI%20Use-Level%202%20Drafting%2FCoding-yellowgreen"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use Level 2: AI-assisted drafting or coding" src="https://img.shields.io/badge/AI%20Use-Level%202%20Drafting%2FCoding-yellowgreen"></a>
 ```
 
 ### Level 3 — AI-supported analysis or interpretation
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-Level%203%20Analysis%2FInterpretation-orange" alt="AI Use Level 3: AI-supported analysis or interpretation"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-Level%203%20Analysis%2FInterpretation-orange" alt="AI Use Level 3: AI-supported analysis or interpretation"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use Level 3: AI-supported analysis or interpretation" src="https://img.shields.io/badge/AI%20Use-Level%203%20Analysis%2FInterpretation-orange"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use Level 3: AI-supported analysis or interpretation" src="https://img.shields.io/badge/AI%20Use-Level%203%20Analysis%2FInterpretation-orange"></a>
 ```
 
 ### Level 4 — Substantial AI contribution
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-Level%204%20Substantial%20AI%20Contribution-red" alt="AI Use Level 4: Substantial AI contribution"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-Level%204%20Substantial%20AI%20Contribution-red" alt="AI Use Level 4: Substantial AI contribution"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use Level 4: Substantial AI contribution" src="https://img.shields.io/badge/AI%20Use-Level%204%20Substantial%20AI%20Contribution-red"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use Level 4: Substantial AI contribution" src="https://img.shields.io/badge/AI%20Use-Level%204%20Substantial%20AI%20Contribution-red"></a>
 ```
 
 ## Compact badge versions
@@ -94,42 +94,42 @@ These shorter badges may be useful for GitHub commits, repository READMEs, or no
 
 ### Compact Level 0
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-L0%20None-lightgrey" alt="AI Use L0: None"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-L0%20None-lightgrey" alt="AI Use L0: None"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use L0: None" src="https://img.shields.io/badge/AI%20Use-L0%20None-lightgrey"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use L0: None" src="https://img.shields.io/badge/AI%20Use-L0%20None-lightgrey"></a>
 ```
 
 ### Compact Level 1
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-L1%20Editing-blue" alt="AI Use L1: Editing"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-L1%20Editing-blue" alt="AI Use L1: Editing"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use L1: Editing" src="https://img.shields.io/badge/AI%20Use-L1%20Editing-blue"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use L1: Editing" src="https://img.shields.io/badge/AI%20Use-L1%20Editing-blue"></a>
 ```
 
 ### Compact Level 2
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-L2%20Drafting%2FCoding-yellowgreen" alt="AI Use L2: Drafting/Coding"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-L2%20Drafting%2FCoding-yellowgreen" alt="AI Use L2: Drafting/Coding"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use L2: Drafting/Coding" src="https://img.shields.io/badge/AI%20Use-L2%20Drafting%2FCoding-yellowgreen"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use L2: Drafting/Coding" src="https://img.shields.io/badge/AI%20Use-L2%20Drafting%2FCoding-yellowgreen"></a>
 ```
 
 ### Compact Level 3
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-L3%20Analysis-orange" alt="AI Use L3: Analysis"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-L3%20Analysis-orange" alt="AI Use L3: Analysis"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use L3: Analysis" src="https://img.shields.io/badge/AI%20Use-L3%20Analysis-orange"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use L3: Analysis" src="https://img.shields.io/badge/AI%20Use-L3%20Analysis-orange"></a>
 ```
 
 ### Compact Level 4
 
-<a href="https://robertslab.info"><img src="https://img.shields.io/badge/AI%20Use-L4%20Substantial-red" alt="AI Use L4: Substantial"/></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img src="https://img.shields.io/badge/AI%20Use-L4%20Substantial-red" alt="AI Use L4: Substantial"/></a>
 
 ``` html
-<a href="https://robertslab.info"><img alt="AI Use L4: Substantial" src="https://img.shields.io/badge/AI%20Use-L4%20Substantial-red"></a>
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use L4: Substantial" src="https://img.shields.io/badge/AI%20Use-L4%20Substantial-red"></a>
 ```
 
 ## Author responsibility
@@ -429,3 +429,8 @@ AI image tools can help with **conceptual diagrams**, **presentation figures**, 
 - **Copilot access / education:** [GitHub Education](https://education.github.com/)
 
 If something in this page is outdated (models and UIs change quickly), edit the doc via the pencil icon in the handbook or submit a PR.
+
+
+---
+
+<a href="https://https://robertslab.github.io/resources/Agentic-Coding-Tools/"><img alt="AI Use Level 2: AI-assisted drafting or coding" src="https://img.shields.io/badge/AI%20Use-Level%202%20Drafting%2FCoding-yellowgreen"></a>
