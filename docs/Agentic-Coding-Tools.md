@@ -185,7 +185,7 @@ Copilot and ChatGPT plans have monthly or rate limits. Usage often depends on wh
 
 ------------------------------------------------------------------------
 
-## GitHub Copilot {#github-copilot}
+## GitHub Copilot
 
 [GitHub Copilot](https://github.com/copilot) suggests code as you type and can run conversational or agentic workflows in the editor and on GitHub.com.
 
@@ -305,7 +305,7 @@ ssh your_netid@klone.hyak.uw.edu
 
 ------------------------------------------------------------------------
 
-## ChatGPT and OpenAI Codex {#chatgpt-and-openai-codex}
+## ChatGPT and OpenAI Codex
 
 ### ChatGPT (chat)
 
@@ -395,7 +395,7 @@ Example minimal config concept (paths vary by OS; see [Continue docs](https://do
 
 ------------------------------------------------------------------------
 
-## Image generation {#image-generation}
+## Image generation
 
 AI image tools can help with **conceptual diagrams**, **presentation figures**, and **mockups**. They are poor sources of scientific truth—do not use them for data plots, specimen IDs, or quantitative results.
 
