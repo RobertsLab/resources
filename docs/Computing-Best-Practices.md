@@ -5,6 +5,9 @@ There are a variety of hardware and software options and combinations available 
 Resources for thinking about open and reproducible scientific computing.
 
 
+!!! tip "New to Git &amp; GitHub? Start with the tutorial"
+    The **[Git &amp; GitHub Tutorial](../github-tutorial.html)** is a self-paced, hands-on walkthrough of the everyday version-control loop — creating a repository, syncing with the **GitHub Desktop** app, making changes, and committing and pushing — with an advanced section covering the same workflow on the command line. Work through it first if version control is new to you.
+
 ## Practical Aspects
 
 Foremost, code should be written so someone else could easily run. This means they have access and can understand.

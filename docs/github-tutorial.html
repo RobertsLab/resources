@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Git &amp; GitHub · A Hands-on Tutorial · Roberts Lab</title>
+<style>
+  :root{
+    --ink:#0f2a33; --ink2:#345863; --sea:#0b7285; --sea-dark:#075260;
+    --foam:#e6f4f1; --sand:#fbf7ef; --kelp:#2f6f4f; --coral:#d9663f;
+    --line:#d7e3e6; --card:#ffffff; --bg:#f3f8f8; --code-bg:#0e2630; --code-ink:#d6eef0;
+    --shadow:0 1px 3px rgba(10,40,50,.08),0 8px 24px rgba(10,40,50,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;font-size:16.5px}
+  a{color:var(--sea)}
+  /* layout */
+  .wrap{display:grid;grid-template-columns:268px 1fr;max-width:1240px;margin:0 auto;min-height:100vh}
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+    background:linear-gradient(180deg,var(--sea-dark),var(--sea));color:#eaf7f8;padding:26px 20px}
+  nav.side h1{font-size:18px;margin:0 0 2px;letter-spacing:.2px}
+  nav.side .sub{font-size:12.5px;opacity:.8;margin-bottom:22px;line-height:1.4}
+  nav.side a{display:block;color:#dff1f3;text-decoration:none;padding:8px 11px;border-radius:8px;
+    font-size:14.5px;margin-bottom:2px;transition:background .15s;border-left:3px solid transparent}
+  nav.side a:hover{background:rgba(255,255,255,.12)}
+  nav.side a.active{background:rgba(255,255,255,.18);border-left-color:#ffd9a8;font-weight:600}
+  nav.side .grp{font-size:11px;text-transform:uppercase;letter-spacing:1px;opacity:.6;margin:18px 0 6px 11px}
+  .prog-wrap{margin-top:20px;padding:12px;background:rgba(0,0,0,.18);border-radius:10px}
+  .prog-wrap .lbl{font-size:12px;opacity:.85;display:flex;justify-content:space-between;margin-bottom:6px}
+  .bar{height:8px;background:rgba(255,255,255,.2);border-radius:5px;overflow:hidden}
+  .bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffd9a8,#ffb877);transition:width .3s}
+  main{padding:0 0 80px}
+  section{padding:54px 60px;border-bottom:1px solid var(--line);scroll-margin-top:0}
+  section:nth-child(even){background:var(--card)}
+  .hero{background:linear-gradient(160deg,#063e4a,#0b7285 70%);color:#eaf7f8;border-bottom:none}
+  .hero .kick{font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.85}
+  .hero h2{font-size:38px;line-height:1.15;margin:.3em 0 .35em;color:#fff;border:none;padding:0}
+  .hero p.lead{font-size:18.5px;max-width:680px;opacity:.95}
+  .hero .pills{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .hero .pills span{background:rgba(255,255,255,.14);padding:7px 14px;border-radius:20px;font-size:13.5px}
+  h2.sec{font-size:27px;margin:0 0 6px;color:var(--ink)}
+  .eyebrow{color:var(--sea);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h3{font-size:19px;margin:30px 0 8px;color:var(--ink)}
+  h4{font-size:15.5px;margin:20px 0 6px;color:var(--ink2);text-transform:uppercase;letter-spacing:.5px}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:5px 0}
+  .lede{font-size:18px;color:var(--ink2);max-width:760px}
+  code{background:#e7f0f1;color:var(--sea-dark);padding:1.5px 6px;border-radius:5px;font-size:.88em;
+    font-family:"SF Mono",Menlo,Consolas,monospace}
+  pre{background:var(--code-bg);color:var(--code-ink);padding:16px 18px;border-radius:11px;overflow-x:auto;
+    font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13.5px;line-height:1.55;margin:14px 0}
+  pre code{background:none;color:inherit;padding:0}
+  pre .c{color:#7fb4bf}/* comment */
+  pre .p{color:#ffd9a8}/* prompt/command */
+  pre .o{color:#9fd6b8}/* output */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:16px 0;box-shadow:var(--shadow)}
+  section:nth-child(even) .card{background:var(--sand)}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .concept{border-top:4px solid var(--sea)}
+  .concept .ico{font-size:26px}
+  .callout{border-left:4px solid var(--coral);background:#fdf1ec;padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0}
+  .callout.sea{border-color:var(--sea);background:#e9f5f6}
+  .callout.kelp{border-color:var(--kelp);background:#eaf4ee}
+  .callout strong{color:var(--ink)}
+  .step{display:flex;gap:16px;margin:18px 0;align-items:flex-start}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--sea);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-weight:700;font-size:15px}
+  .step .body{flex:1}
+  .step .body h4{margin-top:4px}
+  /* checklist */
+  .check{list-style:none;padding-left:0}
+  .check li{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;margin:8px 0;background:var(--card);cursor:pointer;transition:.15s}
+  section:nth-child(even) .check li{background:#fff}
+  .check li:hover{border-color:var(--sea)}
+  .check input{margin-top:4px;width:18px;height:18px;accent-color:var(--sea);cursor:pointer;flex:0 0 auto}
+  .check li.done{opacity:.55}
+  .check li.done .t{text-decoration:line-through}
+  .check .t{flex:1}
+  .check .t small{display:block;color:var(--ink2);font-weight:400}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+    padding:3px 9px;border-radius:6px;background:var(--foam);color:var(--sea-dark);margin-right:6px}
+  .tag.hard{background:#fbe3da;color:#a5421f}
+  .tag.mid{background:#fdf0db;color:#9a6512}
+  .tag.easy{background:#e2f1e8;color:#2f6f4f}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--foam);color:var(--sea-dark);font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+  td code{white-space:nowrap}
+  .proj{border-left:4px solid var(--kelp)}
+  .proj h3{margin-top:0}
+  .proj .meta{font-size:13px;color:var(--ink2);margin:6px 0 0}
+  footer{padding:34px 60px;color:var(--ink2);font-size:14px;background:var(--card)}
+  .toplink{display:inline-block;margin-top:8px;font-size:13px}
+  details{border:1px solid var(--line);border-radius:10px;padding:4px 16px;margin:10px 0;background:var(--card)}
+  details summary{cursor:pointer;font-weight:600;padding:10px 0;color:var(--sea-dark)}
+  details[open]{padding-bottom:14px}
+  kbd{background:#fff;border:1px solid #bcd;border-bottom-width:2px;border-radius:5px;padding:1px 6px;font-size:.85em}
+  .menu-btn{display:none}
+  .backlink{display:inline-block;margin-bottom:14px;font-size:13px;color:#dff1f3;text-decoration:none;opacity:.85}
+  .backlink:hover{opacity:1;text-decoration:underline}
+  .adv{background:linear-gradient(160deg,#0e2630,#12333d);border-bottom:none}
+  .adv .eyebrow{color:#ffd9a8}
+  .adv h2.sec,.adv h3,.adv h4{color:#eaf7f8}
+  .adv .lede{color:#bcd9dd}
+  .adv p{color:#d6eef0}
+  .adv code{background:rgba(255,255,255,.12);color:#ffe6c7}
+  .adv table th{background:rgba(255,255,255,.08);color:#ffd9a8}
+  .adv table td{color:#d6eef0;border-bottom-color:rgba(255,255,255,.12)}
+  .adv .card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.12)}
+  .adv .card h4{color:#ffd9a8}
+  @media(max-width:880px){
+    .wrap{grid-template-columns:1fr}
+    nav.side{position:fixed;z-index:50;width:268px;left:-280px;transition:left .25s;box-shadow:var(--shadow)}
+    nav.side.open{left:0}
+    .menu-btn{display:flex;position:fixed;top:14px;left:14px;z-index:60;background:var(--sea);color:#fff;
+      border:none;width:46px;height:46px;border-radius:12px;font-size:22px;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+    section{padding:40px 22px}
+    .hero h2{font-size:30px}
+    .g2,.g3{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<button class="menu-btn" onclick="document.querySelector('nav.side').classList.toggle('open')">☰</button>
+<div class="wrap">
+
+<nav class="side">
+  <a class="backlink" href="Computing-Best-Practices/">← Back to the Handbook</a>
+  <h1>🐙 Git &amp; GitHub</h1>
+  <div class="sub">Roberts Lab · Version control tutorial<br>Desktop app first, command line later</div>
+  <a href="#welcome">Start here</a>
+  <div class="grp">Concepts</div>
+  <a href="#why">1 · Why version control?</a>
+  <a href="#setup">2 · Set up your account &amp; app</a>
+  <div class="grp">The core loop</div>
+  <a href="#create">3 · Create a repository</a>
+  <a href="#clone">4 · Clone &amp; sync</a>
+  <a href="#changes">5 · Make changes</a>
+  <a href="#commit">6 · Commit</a>
+  <a href="#push">7 · Push &amp; pull</a>
+  <div class="grp">Going further</div>
+  <a href="#cli">8 · Advanced: command line</a>
+  <a href="#exercises">9 · Practice</a>
+  <a href="#cheatsheet">Cheat sheet</a>
+  <div class="prog-wrap">
+    <div class="lbl"><span>Your progress</span><span id="pct">0%</span></div>
+    <div class="bar"><i id="barfill"></i></div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="welcome">
+  <div class="kick">Roberts Lab · Self-directed tutorial</div>
+  <h2>Version control your work with Git &amp; GitHub.</h2>
+  <p class="lead">GitHub is where the lab keeps its code, notebooks, and analyses — version-controlled, backed up, and open. This tutorial gets you from zero to a working repository using the friendly <strong>GitHub Desktop</strong> app, then shows the same workflow on the command line once you're ready.</p>
+  <div class="pills">
+    <span>⏱️ ~1–2 hours, self-paced</span>
+    <span>🖱️ GitHub Desktop first</span>
+    <span>⌨️ Command line as bonus</span>
+    <span>✅ No prior experience needed</span>
+  </div>
+</section>
+
+<!-- START HERE -->
+<section>
+  <div class="eyebrow">Start here</div>
+  <h2 class="sec">How to use this tutorial</h2>
+  <p class="lede">Do it, don't just read it. By the end you'll have a real repository on GitHub with at least one commit you pushed yourself. Check off boxes as you go — progress saves in this browser.</p>
+
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card concept"><div class="ico">🧠</div><h3>Understand</h3><p>Section 1 explains what version control is and the handful of words you'll keep hearing.</p></div>
+    <div class="card concept"><div class="ico">🖱️</div><h3>Do it with the app</h3><p>Sections 2–7 walk through the whole loop in GitHub Desktop — no terminal required.</p></div>
+    <div class="card concept"><div class="ico">⌨️</div><h3>Level up</h3><p>Section 8 repeats every step on the command line for when you're working on Klone or over SSH.</p></div>
+  </div>
+
+  <div class="callout sea">
+    <strong>The big picture.</strong> A <em>repository</em> ("repo") is a project folder whose entire history Git tracks. You work locally, save snapshots called <em>commits</em>, and <em>push</em> them to GitHub so they're backed up and shareable. That loop — change → commit → push — is 90% of what you'll ever do.
+  </div>
+</section>
+
+<!-- 1 WHY -->
+<section id="why">
+  <div class="eyebrow">Section 1</div>
+  <h2 class="sec">Why version control?</h2>
+  <p class="lede">Ever ended up with <code>analysis_final.R</code>, <code>analysis_final_v2.R</code>, and <code>analysis_REALLY_final.R</code>? Version control replaces that mess with a single file and a complete, labeled history you can move through.</p>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>What Git gives you</h4>
+      <ul>
+        <li><strong>History</strong> — every saved state, who changed what, and why.</li>
+        <li><strong>Undo</strong> — roll back to any previous commit.</li>
+        <li><strong>Backup</strong> — your work lives on GitHub, not just your laptop.</li>
+        <li><strong>Collaboration</strong> — many people on one project without overwriting each other.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>Git vs. GitHub</h4>
+      <p><strong>Git</strong> is the version-control software that runs on your computer and tracks changes. <strong>GitHub</strong> is the website that hosts Git repositories online — backup, sharing, issues, and collaboration. <strong>GitHub Desktop</strong> is a free app that drives Git with buttons instead of typed commands.</p>
+    </div>
+  </div>
+
+  <h3>The words you'll keep hearing</h3>
+  <table>
+    <tr><th>Term</th><th>Plain meaning</th></tr>
+    <tr><td>Repository (repo)</td><td>A project folder whose history Git tracks.</td></tr>
+    <tr><td>Commit</td><td>A saved snapshot of your changes, with a message describing them.</td></tr>
+    <tr><td>Push</td><td>Send your local commits up to GitHub.</td></tr>
+    <tr><td>Pull / Fetch</td><td>Bring changes down from GitHub to your computer.</td></tr>
+    <tr><td>Clone</td><td>Download a copy of a GitHub repo to work on locally.</td></tr>
+    <tr><td>Branch</td><td>A parallel line of work you can later merge back in.</td></tr>
+  </table>
+</section>
+
+<!-- 2 SETUP -->
+<section id="setup">
+  <div class="eyebrow">Section 2 · Hands-on</div>
+  <h2 class="sec">Set up your account &amp; the app</h2>
+  <p class="lede">Two one-time steps: a GitHub account, and the GitHub Desktop app installed and signed in.</p>
+
+  <div class="step"><div class="n">1</div><div class="body">
+    <h4>Create a GitHub account</h4>
+    <p>Go to <a href="https://github.com/join" target="_blank" rel="noopener">github.com/join</a> and sign up. Use a professional username — you'll share it with collaborators. Students and educators can get free upgrades via <a href="https://education.github.com/" target="_blank" rel="noopener">GitHub Education</a>.</p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div class="body">
+    <h4>Install GitHub Desktop</h4>
+    <p>Download from <a href="https://desktop.github.com/" target="_blank" rel="noopener">desktop.github.com</a> (macOS &amp; Windows) and install it like any other app.</p>
+  </div></div>
+
+  <div class="step"><div class="n">3</div><div class="body">
+    <h4>Sign in &amp; set your identity</h4>
+    <p>Open GitHub Desktop → <strong>File ▸ Options ▸ Accounts</strong> and sign in to GitHub. Under <strong>Git</strong>, confirm your name and email so your commits are attributed to you. That's it — you're ready to make a repo.</p>
+  </div></div>
+
+  <ul class="check" data-section="setup">
+    <li><input type="checkbox"><span class="t">GitHub account created</span></li>
+    <li><input type="checkbox"><span class="t">GitHub Desktop installed</span></li>
+    <li><input type="checkbox"><span class="t">Signed in, with name &amp; email set</span></li>
+  </ul>
+</section>
+
+<!-- 3 CREATE -->
+<section id="create">
+  <div class="eyebrow">Section 3 · Hands-on</div>
+  <h2 class="sec">Create a repository</h2>
+  <p class="lede">You'll make a brand-new repo for practice. (To work on an existing lab repo instead, skip to Section 4 and clone it.)</p>
+
+  <div class="step"><div class="n">1</div><div class="body">
+    <h4>New repository</h4>
+    <p>In GitHub Desktop: <strong>File ▸ New Repository…</strong></p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div class="body">
+    <h4>Fill in the details</h4>
+    <ul>
+      <li><strong>Name</strong> — e.g. <code>git-practice</code> (no spaces; hyphens are fine).</li>
+      <li><strong>Local Path</strong> — where it lives on your computer. The lab convention is to keep all repos inside a single <code>gitrepos</code> folder.</li>
+      <li><strong>Initialize with a README</strong> — check this; it's the front page of your repo.</li>
+      <li><strong>Git ignore</strong> — pick a template (e.g. R or Python) so junk files aren't tracked.</li>
+      <li><strong>License</strong> — optional now; MIT is a common open choice.</li>
+    </ul>
+    <p>Click <strong>Create Repository</strong>.</p>
+  </div></div>
+
+  <div class="step"><div class="n">3</div><div class="body">
+    <h4>Publish it to GitHub</h4>
+    <p>So far the repo only exists on your laptop. Click <strong>Publish repository</strong> (top bar). Choose whether it's <strong>private</strong> or <strong>public</strong>, then publish. Refresh your GitHub profile and you'll see it online.</p>
+  </div></div>
+
+  <div class="callout">
+    <strong>Public vs. private.</strong> The lab works openly, but check with your mentor before making anything public that contains unpublished data, large data files, or anything sensitive. You can change visibility later in the repo's settings on GitHub.
+  </div>
+
+  <ul class="check" data-section="create">
+    <li><input type="checkbox"><span class="t">Created a new local repository</span></li>
+    <li><input type="checkbox"><span class="t">Added a README and .gitignore</span></li>
+    <li><input type="checkbox"><span class="t">Published it to GitHub</span></li>
+  </ul>
+</section>
+
+<!-- 4 CLONE -->
+<section id="clone">
+  <div class="eyebrow">Section 4 · Hands-on</div>
+  <h2 class="sec">Clone &amp; sync an existing repo</h2>
+  <p class="lede">Most of the time you'll join a repo that already exists — a lab project, or your own from another machine. <strong>Cloning</strong> downloads a full copy you can work on.</p>
+
+  <div class="step"><div class="n">1</div><div class="body">
+    <h4>Clone from GitHub Desktop</h4>
+    <p><strong>File ▸ Clone Repository…</strong> Pick one from your account/organization list, or paste a URL like <code>https://github.com/RobertsLab/resources</code>. Choose the local path (inside <code>gitrepos</code>) and click <strong>Clone</strong>.</p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div class="body">
+    <h4>Keep it in sync</h4>
+    <p>Before you start working each day, click <strong>Fetch origin</strong> → <strong>Pull</strong> to bring down anything teammates pushed. Starting from the latest version is the single best habit for avoiding conflicts.</p>
+  </div></div>
+
+  <div class="callout kelp">
+    <strong>Golden rule of collaboration:</strong> <em>pull before you start, push when you pause.</em> The more often you sync, the smaller and easier any merges will be.
+  </div>
+
+  <ul class="check" data-section="clone">
+    <li><input type="checkbox"><span class="t">Cloned a repository to my computer</span></li>
+    <li><input type="checkbox"><span class="t">Pulled the latest changes from GitHub</span></li>
+  </ul>
+</section>
+
+<!-- 5 CHANGES -->
+<section id="changes">
+  <div class="eyebrow">Section 5 · Hands-on</div>
+  <h2 class="sec">Make some changes</h2>
+  <p class="lede">Now do real work in the repo folder — using whatever tools you normally would (RStudio, VS Code, a text editor, Finder). Git watches the folder for you.</p>
+
+  <ol>
+    <li>Open the repo folder on your computer (in GitHub Desktop: <strong>Repository ▸ Show in Finder/Explorer</strong>).</li>
+    <li>Edit the <code>README.md</code> — add a sentence describing the project.</li>
+    <li>Create a new file, e.g. <code>notes.md</code>, and type a few lines.</li>
+    <li>Save your files.</li>
+  </ol>
+
+  <p>Switch back to GitHub Desktop. The <strong>Changes</strong> tab now lists every file you touched, with a colored <strong>diff</strong> showing exactly what you added (green) and removed (red). This is your chance to review your own work before recording it.</p>
+
+  <div class="callout sea">
+    <strong>What is a "diff"?</strong> A diff is a line-by-line comparison between the last committed version and your current files. Reading diffs before committing catches accidental changes, stray debug code, and files you didn't mean to include.
+  </div>
+
+  <ul class="check" data-section="changes">
+    <li><input type="checkbox"><span class="t">Edited the README</span></li>
+    <li><input type="checkbox"><span class="t">Added a new file</span></li>
+    <li><input type="checkbox"><span class="t">Reviewed the diff in the Changes tab</span></li>
+  </ul>
+</section>
+
+<!-- 6 COMMIT -->
+<section id="commit">
+  <div class="eyebrow">Section 6 · Hands-on</div>
+  <h2 class="sec">Commit your snapshot</h2>
+  <p class="lede">A <strong>commit</strong> records the current state of selected files as a permanent point in history, with a short message explaining the change.</p>
+
+  <div class="step"><div class="n">1</div><div class="body">
+    <h4>Choose what goes in</h4>
+    <p>In the <strong>Changes</strong> tab, the checkbox beside each file decides whether it's included. Usually you commit everything related to one logical change together; leave unrelated edits for a separate commit.</p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div class="body">
+    <h4>Write a good message</h4>
+    <p>At the bottom left, fill in the <strong>Summary</strong> (required) and optional <strong>Description</strong>. Write the summary as a short, present-tense instruction:</p>
+    <pre><code><span class="o">Add project description to README</span>
+<span class="o">Fix temperature unit conversion in cleaning script</span>
+<span class="o">Add notes on sample exclusion criteria</span></code></pre>
+    <p>Aim to describe <em>what changed and why</em> — "stuff" and "update" tell future-you nothing.</p>
+  </div></div>
+
+  <div class="step"><div class="n">3</div><div class="body">
+    <h4>Commit</h4>
+    <p>Click <strong>Commit to main</strong>. Your snapshot is now saved <em>locally</em>. Repeat the change → commit cycle as often as you like; small, frequent commits are easier to understand and undo than giant ones.</p>
+  </div></div>
+
+  <ul class="check" data-section="commit">
+    <li><input type="checkbox"><span class="t">Selected files to include</span></li>
+    <li><input type="checkbox"><span class="t">Wrote a clear commit message</span></li>
+    <li><input type="checkbox"><span class="t">Made at least one commit</span></li>
+  </ul>
+</section>
+
+<!-- 7 PUSH -->
+<section id="push">
+  <div class="eyebrow">Section 7 · Hands-on</div>
+  <h2 class="sec">Push to GitHub (and pull back)</h2>
+  <p class="lede">Your commits are still only on your laptop. <strong>Pushing</strong> sends them up to GitHub — backing them up and making them visible to collaborators.</p>
+
+  <div class="step"><div class="n">1</div><div class="body">
+    <h4>Push origin</h4>
+    <p>Click <strong>Push origin</strong> (top bar). After a moment, refresh the repo page on GitHub — your new commit and files are there, with the message you wrote.</p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div class="body">
+    <h4>Pull on your other machines</h4>
+    <p>Working somewhere else later (another computer, Klone)? Open the repo and <strong>Fetch ▸ Pull</strong> to bring those commits down. The repo stays consistent everywhere.</p>
+  </div></div>
+
+  <div class="callout">
+    <strong>You've completed the core loop.</strong> Edit → review the diff → commit with a message → push. That's the whole everyday workflow. Everything else (branches, pull requests, issues) builds on top of this.
+  </div>
+
+  <details>
+    <summary>Bonus: branches &amp; pull requests in 60 seconds</summary>
+    <p>For bigger or shared changes, create a <strong>branch</strong> (<strong>Branch ▸ New Branch</strong>) so your work-in-progress doesn't disturb <code>main</code>. Commit and push to that branch, then on GitHub open a <strong>Pull Request</strong> to propose merging it back. Collaborators review, discuss, and merge. This is how the lab reviews substantial changes — see the handbook's Project Management page for conventions.</p>
+  </details>
+
+  <ul class="check" data-section="push">
+    <li><input type="checkbox"><span class="t">Pushed commits to GitHub</span></li>
+    <li><input type="checkbox"><span class="t">Confirmed the changes appear online</span></li>
+    <li><input type="checkbox"><span class="t">Completed a full edit → commit → push loop</span></li>
+  </ul>
+</section>
+
+<!-- 8 ADVANCED CLI -->
+<section id="cli" class="adv">
+  <div class="eyebrow">Section 8 · Advanced</div>
+  <h2 class="sec">⌨️ The same workflow on the command line</h2>
+  <p class="lede">On Klone, over SSH, or in any terminal there's no Desktop app — so it pays to know the underlying Git commands. Good news: they map one-to-one onto the buttons you just used. (New to the terminal? Do the <a href="bash-tutorial.html">Bash tutorial</a> first.)</p>
+
+  <h3>One-time setup</h3>
+  <p>Tell Git who you are (matches the identity GitHub Desktop set for you):</p>
+  <pre><code><span class="p">$ git config --global user.name "Your Name"</span>
+<span class="p">$ git config --global user.email "you@example.com"</span>
+<span class="c"># check your settings any time:</span>
+<span class="p">$ git config --list</span></code></pre>
+
+  <h3>Get a repository</h3>
+  <div class="grid g2">
+    <div class="card">
+      <h4>Clone an existing repo</h4>
+      <pre><code><span class="p">$ cd ~/gitrepos</span>
+<span class="p">$ git clone https://github.com/RobertsLab/resources.git</span>
+<span class="p">$ cd resources</span></code></pre>
+    </div>
+    <div class="card">
+      <h4>Start a brand-new one</h4>
+      <pre><code><span class="p">$ mkdir git-practice && cd git-practice</span>
+<span class="p">$ git init</span>
+<span class="p">$ echo "# Git Practice" > README.md</span></code></pre>
+      <p>Then create an empty repo on GitHub and connect it (see "Push" below).</p>
+    </div>
+  </div>
+
+  <h3>The everyday loop</h3>
+  <pre><code><span class="c"># 1. start from the latest version</span>
+<span class="p">$ git pull</span>
+
+<span class="c"># 2. ... edit files with your editor ...</span>
+
+<span class="c"># 3. see what changed (the command-line "Changes" tab)</span>
+<span class="p">$ git status</span>
+<span class="p">$ git diff</span>
+
+<span class="c"># 4. stage the files you want to commit</span>
+<span class="p">$ git add README.md notes.md</span>
+<span class="c"># (or stage everything that changed:)</span>
+<span class="p">$ git add .</span>
+
+<span class="c"># 5. commit with a message</span>
+<span class="p">$ git commit -m "Add project description to README"</span>
+
+<span class="c"># 6. push to GitHub</span>
+<span class="p">$ git push</span></code></pre>
+
+  <h3>Button → command map</h3>
+  <table>
+    <tr><th>GitHub Desktop</th><th>Command line</th><th>Does what</th></tr>
+    <tr><td>Clone Repository</td><td><code>git clone &lt;url&gt;</code></td><td>Download a repo locally</td></tr>
+    <tr><td>(Changes tab)</td><td><code>git status</code> / <code>git diff</code></td><td>See what changed</td></tr>
+    <tr><td>(Checkbox per file)</td><td><code>git add &lt;file&gt;</code></td><td>Stage changes to commit</td></tr>
+    <tr><td>Commit to main</td><td><code>git commit -m "msg"</code></td><td>Save a snapshot locally</td></tr>
+    <tr><td>Push origin</td><td><code>git push</code></td><td>Send commits to GitHub</td></tr>
+    <tr><td>Fetch / Pull</td><td><code>git pull</code></td><td>Bring down others' changes</td></tr>
+    <tr><td>New Branch</td><td><code>git switch -c &lt;name&gt;</code></td><td>Start a parallel line of work</td></tr>
+  </table>
+
+  <h3>Connecting a new local repo to GitHub</h3>
+  <p>After <code>git init</code> locally, create an empty repo on GitHub (no README), then link and push:</p>
+  <pre><code><span class="p">$ git add .</span>
+<span class="p">$ git commit -m "Initial commit"</span>
+<span class="p">$ git branch -M main</span>
+<span class="p">$ git remote add origin https://github.com/&lt;you&gt;/git-practice.git</span>
+<span class="p">$ git push -u origin main</span></code></pre>
+
+  <div class="callout sea" style="border-color:#ffd9a8;background:rgba(255,217,168,.1)">
+    <strong>Authentication tip.</strong> Pushing over HTTPS prompts for a <strong>Personal Access Token</strong> (not your password). The easiest path on a laptop is to let GitHub Desktop handle credentials, or install the <a href="https://cli.github.com/" target="_blank" rel="noopener">GitHub CLI</a> and run <code>gh auth login</code>. On Klone, an <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh" target="_blank" rel="noopener">SSH key</a> is the smoothest option.
+  </div>
+</section>
+
+<!-- 9 EXERCISES -->
+<section id="exercises">
+  <div class="eyebrow">Section 9 · Practice</div>
+  <h2 class="sec">Put it together</h2>
+  <p class="lede">Cement the loop with these. Do A–B in GitHub Desktop; try C on the command line if you're feeling bold.</p>
+
+  <div class="card">
+    <span class="tag easy">Easy</span><h3>A. Three-commit history</h3>
+    <p>In your <code>git-practice</code> repo, make three separate edits and commit each one with its own clear message. Then look at the <strong>History</strong> tab and read your story back.</p>
+    <p class="meta"><strong>You'll practice:</strong> small commits and good messages.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag mid">Medium</span><h3>B. Edit on GitHub, pull down</h3>
+    <p>Edit the README directly on the GitHub website (pencil icon) and commit there. Back in GitHub Desktop, <strong>Fetch ▸ Pull</strong> and watch the change arrive on your computer.</p>
+    <p class="meta"><strong>You'll practice:</strong> syncing in both directions.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag hard">Stretch</span><h3>C. Full loop in the terminal</h3>
+    <p>Using only the command line, clone a repo, create a file, <code>git add</code> / <code>commit</code> / <code>push</code> it, and confirm it appears on GitHub. Use <code>git status</code> liberally along the way.</p>
+    <p class="meta"><strong>You'll practice:</strong> the command-line workflow you'll need on Klone.</p>
+  </div>
+
+  <ul class="check" data-section="ex">
+    <li><input type="checkbox"><span class="t">Made a three-commit history (A)</span></li>
+    <li><input type="checkbox"><span class="t">Edited on GitHub and pulled it down (B)</span></li>
+    <li><input type="checkbox"><span class="t">Completed the loop on the command line (C, stretch)</span></li>
+  </ul>
+</section>
+
+<!-- CHEAT SHEET -->
+<section id="cheatsheet">
+  <div class="eyebrow">Reference</div>
+  <h2 class="sec">Cheat sheet &amp; key points</h2>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>Everyday Git commands</h4>
+      <table>
+        <tr><td><code>git clone &lt;url&gt;</code></td><td>Copy a repo locally</td></tr>
+        <tr><td><code>git pull</code></td><td>Get latest from GitHub</td></tr>
+        <tr><td><code>git status</code></td><td>What's changed?</td></tr>
+        <tr><td><code>git diff</code></td><td>Show line-by-line changes</td></tr>
+        <tr><td><code>git add .</code></td><td>Stage all changes</td></tr>
+        <tr><td><code>git commit -m "…"</code></td><td>Save a snapshot</td></tr>
+        <tr><td><code>git push</code></td><td>Send commits to GitHub</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h4>Habits that prevent pain</h4>
+      <ul>
+        <li><strong>Pull before you start</strong>, push when you pause.</li>
+        <li><strong>Commit small and often</strong>, one logical change at a time.</li>
+        <li><strong>Write messages</strong> future-you will understand.</li>
+        <li><strong>Read the diff</strong> before every commit.</li>
+        <li><strong>Never commit secrets</strong> or large data — use <code>.gitignore</code>.</li>
+        <li><strong>Keep all repos in one <code>gitrepos</code> folder.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>Want to go deeper?</strong> See <a href="https://docs.github.com/en/get-started" target="_blank" rel="noopener">GitHub's Getting Started guides</a>, the <a href="https://docs.github.com/en/desktop" target="_blank" rel="noopener">GitHub Desktop docs</a>, and the lab's <a href="Computing-Best-Practices/">Computing Best Practices</a> for how we organize repositories.
+  </div>
+
+  <p style="margin-top:24px"><strong>You're version-controlled.</strong> Everything the lab does — code, notebooks, analyses — runs through this exact loop. Keep committing. 🐙</p>
+</section>
+
+<footer>
+  Git &amp; GitHub · A Hands-on Tutorial · Roberts Lab Handbook.<br>
+  Self-directed tutorial. Progress is saved locally in your browser.
+  &nbsp;·&nbsp; <a href="Computing-Best-Practices/">← Back to Computing Best Practices</a>
+  <a class="toplink" href="#welcome">↑ Back to top</a>
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var KEY = "github-tutorial-progress-v1";
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e){}
+
+  // assign stable ids to every checkbox and restore state
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".check input[type=checkbox]"));
+  boxes.forEach(function(b,i){
+    var sec = b.closest("ul").getAttribute("data-section") || "x";
+    var id = sec + "-" + i;
+    b.dataset.id = id;
+    if(saved[id]){ b.checked = true; b.closest("li").classList.add("done"); }
+    var li = b.closest("li");
+    li.addEventListener("click", function(e){
+      if(e.target !== b){ b.checked = !b.checked; }
+      li.classList.toggle("done", b.checked);
+      saved[b.dataset.id] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      updateProgress();
+    });
+  });
+
+  function updateProgress(){
+    var total = boxes.length;
+    var done = boxes.filter(function(b){return b.checked;}).length;
+    var pct = total ? Math.round(done/total*100) : 0;
+    document.getElementById("pct").textContent = pct + "%";
+    document.getElementById("barfill").style.width = pct + "%";
+  }
+  updateProgress();
+
+  // scrollspy
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav.side a[href^='#']"));
+  var map = {};
+  links.forEach(function(l){ map[l.getAttribute("href").slice(1)] = l; });
+  var sections = Array.prototype.slice.call(document.querySelectorAll("section[id]"));
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(l){l.classList.remove("active");});
+        var a = map[en.target.id];
+        if(a) a.classList.add("active");
+      }
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  sections.forEach(function(s){ obs.observe(s); });
+
+  // close mobile nav on link tap
+  links.forEach(function(l){
+    l.addEventListener("click", function(){
+      document.querySelector("nav.side").classList.remove("open");
+    });
+  });
+})();
+</script>
+</body>
+</html>
