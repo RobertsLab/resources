@@ -1,6 +1,7 @@
 A suite of _core_ fundamental Bioinformatic workflows.
 
 ## Shell
+- [**Roberts Lab Bash Tutorial**](../bash-tutorial.html) — a self-paced, hands-on walkthrough of the Unix shell (navigating the file system, creating files, wildcards, redirection, and pipes). Start here if the command line is new to you.
 - [Introducing the Shell](http://swcarpentry.github.io/shell-novice/01-intro/)
 - [Introduction to the Command Line for Genomics](https://datacarpentry.org/shell-genomics/)
 
