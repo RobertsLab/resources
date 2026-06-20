@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agentic AI Bootcamp · Roberts Lab · OPUS-AAI 2026</title>
+<style>
+  :root{
+    --ink:#0f2a33; --ink2:#345863; --sea:#0b7285; --sea-dark:#075260;
+    --foam:#e6f4f1; --sand:#fbf7ef; --kelp:#2f6f4f; --coral:#d9663f;
+    --line:#d7e3e6; --card:#ffffff; --bg:#f3f8f8; --code-bg:#0e2630; --code-ink:#d6eef0;
+    --shadow:0 1px 3px rgba(10,40,50,.08),0 8px 24px rgba(10,40,50,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;font-size:16.5px}
+  a{color:var(--sea)}
+  /* layout */
+  .wrap{display:grid;grid-template-columns:268px 1fr;max-width:1240px;margin:0 auto;min-height:100vh}
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+    background:linear-gradient(180deg,var(--sea-dark),var(--sea));color:#eaf7f8;padding:26px 20px}
+  nav.side h1{font-size:18px;margin:0 0 2px;letter-spacing:.2px}
+  nav.side .sub{font-size:12.5px;opacity:.8;margin-bottom:22px;line-height:1.4}
+  nav.side a{display:block;color:#dff1f3;text-decoration:none;padding:8px 11px;border-radius:8px;
+    font-size:14.5px;margin-bottom:2px;transition:background .15s;border-left:3px solid transparent}
+  nav.side a:hover{background:rgba(255,255,255,.12)}
+  nav.side a.active{background:rgba(255,255,255,.18);border-left-color:#ffd9a8;font-weight:600}
+  nav.side .grp{font-size:11px;text-transform:uppercase;letter-spacing:1px;opacity:.6;margin:18px 0 6px 11px}
+  .prog-wrap{margin-top:20px;padding:12px;background:rgba(0,0,0,.18);border-radius:10px}
+  .prog-wrap .lbl{font-size:12px;opacity:.85;display:flex;justify-content:space-between;margin-bottom:6px}
+  .bar{height:8px;background:rgba(255,255,255,.2);border-radius:5px;overflow:hidden}
+  .bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffd9a8,#ffb877);transition:width .3s}
+  main{padding:0 0 80px}
+  section{padding:54px 60px;border-bottom:1px solid var(--line);scroll-margin-top:0}
+  section:nth-child(even){background:var(--card)}
+  .hero{background:linear-gradient(160deg,#063e4a,#0b7285 70%);color:#eaf7f8;border-bottom:none}
+  .hero .kick{font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.85}
+  .hero h2{font-size:38px;line-height:1.15;margin:.3em 0 .35em;color:#fff;border:none;padding:0}
+  .hero p.lead{font-size:18.5px;max-width:680px;opacity:.95}
+  .hero .pills{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .hero .pills span{background:rgba(255,255,255,.14);padding:7px 14px;border-radius:20px;font-size:13.5px}
+  h2.sec{font-size:27px;margin:0 0 6px;color:var(--ink)}
+  .eyebrow{color:var(--sea);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h3{font-size:19px;margin:30px 0 8px;color:var(--ink)}
+  h4{font-size:15.5px;margin:20px 0 6px;color:var(--ink2);text-transform:uppercase;letter-spacing:.5px}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:5px 0}
+  .lede{font-size:18px;color:var(--ink2);max-width:760px}
+  code{background:#e7f0f1;color:var(--sea-dark);padding:1.5px 6px;border-radius:5px;font-size:.88em;
+    font-family:"SF Mono",Menlo,Consolas,monospace}
+  pre{background:var(--code-bg);color:var(--code-ink);padding:16px 18px;border-radius:11px;overflow-x:auto;
+    font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13.5px;line-height:1.55;margin:14px 0}
+  pre code{background:none;color:inherit;padding:0}
+  pre .c{color:#7fb4bf}/* comment */
+  pre .p{color:#ffd9a8}/* prompt/user */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:16px 0;box-shadow:var(--shadow)}
+  section:nth-child(even) .card{background:var(--sand)}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .concept{border-top:4px solid var(--sea)}
+  .concept .ico{font-size:26px}
+  .callout{border-left:4px solid var(--coral);background:#fdf1ec;padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0}
+  .callout.sea{border-color:var(--sea);background:#e9f5f6}
+  .callout.kelp{border-color:var(--kelp);background:#eaf4ee}
+  .callout strong{color:var(--ink)}
+  .step{display:flex;gap:16px;margin:18px 0;align-items:flex-start}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--sea);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-weight:700;font-size:15px}
+  .step .body{flex:1}
+  .step .body h4{margin-top:4px}
+  /* checklist */
+  .check{list-style:none;padding-left:0}
+  .check li{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;margin:8px 0;background:var(--card);cursor:pointer;transition:.15s}
+  section:nth-child(even) .check li{background:#fff}
+  .check li:hover{border-color:var(--sea)}
+  .check input{margin-top:4px;width:18px;height:18px;accent-color:var(--sea);cursor:pointer;flex:0 0 auto}
+  .check li.done{opacity:.55}
+  .check li.done .t{text-decoration:line-through}
+  .check .t{flex:1}
+  .check .t small{display:block;color:var(--ink2);font-weight:400}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+    padding:3px 9px;border-radius:6px;background:var(--foam);color:var(--sea-dark);margin-right:6px}
+  .tag.hard{background:#fbe3da;color:#a5421f}
+  .tag.mid{background:#fdf0db;color:#9a6512}
+  .tag.easy{background:#e2f1e8;color:#2f6f4f}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--foam);color:var(--sea-dark);font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+  .proj{border-left:4px solid var(--kelp)}
+  .proj h3{margin-top:0}
+  .proj .meta{font-size:13px;color:var(--ink2);margin:6px 0 0}
+  footer{padding:34px 60px;color:var(--ink2);font-size:14px;background:var(--card)}
+  .toplink{display:inline-block;margin-top:8px;font-size:13px}
+  details{border:1px solid var(--line);border-radius:10px;padding:4px 16px;margin:10px 0;background:var(--card)}
+  details summary{cursor:pointer;font-weight:600;padding:10px 0;color:var(--sea-dark)}
+  details[open]{padding-bottom:14px}
+  kbd{background:#fff;border:1px solid #bcd;border-bottom-width:2px;border-radius:5px;padding:1px 6px;font-size:.85em}
+  .menu-btn{display:none}
+  .backlink{display:inline-block;margin-bottom:14px;font-size:13px;color:#dff1f3;text-decoration:none;opacity:.85}
+  .backlink:hover{opacity:1;text-decoration:underline}
+  @media(max-width:880px){
+    .wrap{grid-template-columns:1fr}
+    nav.side{position:fixed;z-index:50;width:268px;left:-280px;transition:left .25s;box-shadow:var(--shadow)}
+    nav.side.open{left:0}
+    .menu-btn{display:flex;position:fixed;top:14px;left:14px;z-index:60;background:var(--sea);color:#fff;
+      border:none;width:46px;height:46px;border-radius:12px;font-size:22px;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+    section{padding:40px 22px}
+    .hero h2{font-size:30px}
+    .g2,.g3{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<button class="menu-btn" onclick="document.querySelector('nav.side').classList.toggle('open')">☰</button>
+<div class="wrap">
+
+<nav class="side">
+  <a class="backlink" href="Agentic-Coding-Tools/">← Back to the Handbook</a>
+  <h1>🌊 Agentic AI Bootcamp</h1>
+  <div class="sub">Roberts Lab · OPUS-AAI 2026<br>Self-directed onboarding ramp</div>
+  <a href="#welcome">Start here</a>
+  <div class="grp">Concepts</div>
+  <a href="#concepts">1 · What is agentic AI?</a>
+  <a href="#building-blocks">2 · LLMs, agents, skills, MCP</a>
+  <div class="grp">Hands-on</div>
+  <a href="#setup">3 · Set up Claude Code</a>
+  <a href="#first-session">4 · Your first session</a>
+  <a href="#exercises">5 · Starter exercises</a>
+  <a href="#good-habits">6 · Working well with agents</a>
+  <div class="grp">Your project</div>
+  <a href="#lab">7 · About the lab</a>
+  <a href="#ideas">8 · Project ideas</a>
+  <a href="#pitch">9 · Pitch your project</a>
+  <div class="grp">Wrap</div>
+  <a href="#playbook">10 · The playbook</a>
+  <a href="#resources">Resources</a>
+  <div class="prog-wrap">
+    <div class="lbl"><span>Your progress</span><span id="pct">0%</span></div>
+    <div class="bar"><i id="barfill"></i></div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="welcome">
+  <div class="kick">OPUS-AAI 2026 · 10-week summer program</div>
+  <h2>Get fluent with agentic AI — then point it at real science.</h2>
+  <p class="lead">A short, self-paced ramp for new researchers. By the end you'll understand how agentic AI actually works, be comfortable driving Claude Code, and have a project idea that fits the Roberts Lab's work in marine genomics and aquaculture.</p>
+  <div class="pills">
+    <span>⏱️ ~4–6 hours, self-paced</span>
+    <span>🧬 Marine genomics framing</span>
+    <span>💻 Claude Code focused</span>
+    <span>✅ No prior AI experience needed</span>
+  </div>
+</section>
+
+<!-- START HERE -->
+<section>
+  <div class="eyebrow">Start here</div>
+  <h2 class="sec">How to use this site</h2>
+  <p class="lede">Work top to bottom. Concepts first so the tools make sense, then hands-on practice, then you'll shape a project of your own. Check off boxes as you go — your progress saves in this browser.</p>
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card concept"><div class="ico">📖</div><h3>Understand</h3><p>Modules 1–2 explain what agentic AI is and the four building blocks you'll hear about all summer.</p></div>
+    <div class="card concept"><div class="ico">🛠️</div><h3>Practice</h3><p>Modules 3–6 get Claude Code running and walk you through real, low-stakes exercises.</p></div>
+    <div class="card concept"><div class="ico">🔬</div><h3>Apply</h3><p>Modules 7–9 connect everything to the lab and help you draft a project pitch for your mentor.</p></div>
+  </div>
+  <div class="callout sea">
+    <strong>What you'll deliver this summer.</strong> Each team produces a <em>playbook</em> — a practical guide to using agentic AI in your research area. Keep notes from day one; module 10 shows you how the pieces add up.
+  </div>
+</section>
+
+<!-- 1 CONCEPTS -->
+<section id="concepts">
+  <div class="eyebrow">Module 1</div>
+  <h2 class="sec">What is "agentic" AI?</h2>
+  <p class="lede">You've probably used a chatbot: you ask, it answers. An <strong>agent</strong> goes a step further — it can take actions in a loop to accomplish a goal you give it.</p>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>A chatbot</h4>
+      <p>Predicts text. You ask "How do I count reads in a FASTQ file?" and it explains the command. <em>You</em> then run it.</p>
+    </div>
+    <div class="card">
+      <h4>An agent</h4>
+      <p>Can run the command, read the output, notice the file was gzipped, adjust, re-run, and report back — repeating until the task is done.</p>
+    </div>
+  </div>
+
+  <h3>The agent loop</h3>
+  <p>Almost every agentic tool works the same way under the hood:</p>
+  <pre><code>   ┌─────────────────────────────────────────────┐
+   │  1. You give a goal                           │
+   │  2. The model decides on an action (a "tool") │
+   │  3. The tool runs (read a file, run code...)  │
+   │  4. The model reads the result                │
+   │  5. Done? → answer.  Not done? → back to 2.   │
+   └─────────────────────────────────────────────┘</code></pre>
+
+  <div class="callout">
+    <strong>Why this matters for research.</strong> A lot of science is exactly this loop: try something, look at the result, adjust. Agents are useful precisely where there's iteration — debugging a pipeline, wrangling messy data, exploring a new dataset — not just where there's a single right answer.
+  </div>
+
+  <h3>What agents are good (and not good) at</h3>
+  <table>
+    <tr><th>Great fit</th><th>Be careful</th></tr>
+    <tr>
+      <td>Writing & debugging scripts, exploring unfamiliar code, reformatting data, drafting documentation, summarizing logs, scaffolding analyses.</td>
+      <td>Anything where being subtly wrong is costly: statistical interpretation, biological claims, novel methods. <strong>You stay the scientist.</strong> Verify outputs.</td>
+    </tr>
+  </table>
+
+  <details>
+    <summary>A useful mental model: the eager new lab member</summary>
+    <p>Treat the agent like a fast, tireless, slightly overconfident junior collaborator. It's read an enormous amount but has never worked in <em>your</em> lab. It will happily do exactly what you ask — so clear instructions, good context, and checking its work matter just as much as they would with a person.</p>
+  </details>
+</section>
+
+<!-- 2 BUILDING BLOCKS -->
+<section id="building-blocks">
+  <div class="eyebrow">Module 2</div>
+  <h2 class="sec">The four words you'll hear all summer</h2>
+  <p class="lede">LLM, agent, skill, MCP. These come up constantly in OPUS-AAI Week 1. Here's what each one actually means.</p>
+
+  <div class="grid g2">
+    <div class="card concept">
+      <div class="ico">🧠</div>
+      <h3>LLM</h3>
+      <p><strong>Large Language Model.</strong> The engine — a model trained to predict text (Claude, GPT, etc.). On its own it only produces words. Everything "agentic" is built on top.</p>
+      <p class="meta">The program provides OpenAI-compatible LLM endpoints you'll plug into your tools at no cost.</p>
+    </div>
+    <div class="card concept">
+      <div class="ico">🤖</div>
+      <h3>Agent</h3>
+      <p>An LLM wrapped in the <em>loop</em> from Module 1, plus <strong>tools</strong> (read files, run commands, search the web). Claude Code is an agent that lives in your terminal.</p>
+    </div>
+    <div class="card concept">
+      <div class="ico">📋</div>
+      <h3>Skill</h3>
+      <p>A reusable packet of instructions (and sometimes scripts) that teaches an agent how to do a specific task well — e.g. "run an RNA-seq QC the lab's way." Write it once, reuse it forever.</p>
+    </div>
+    <div class="card concept">
+      <div class="ico">🔌</div>
+      <h3>MCP</h3>
+      <p><strong>Model Context Protocol.</strong> A standard way to plug an agent into outside systems — a database, GitHub, a literature search, Slack. It's how agents reach beyond your laptop.</p>
+    </div>
+  </div>
+
+  <div class="callout kelp">
+    <strong>How they stack:</strong> an <em>LLM</em> is the engine → an <em>agent</em> adds the loop and tools → <em>skills</em> teach it your workflows → <em>MCP</em> connects it to your data and services. You'll touch all four this summer.
+  </div>
+</section>
+
+<!-- 3 SETUP -->
+<section id="setup">
+  <div class="eyebrow">Module 3 · Hands-on</div>
+  <h2 class="sec">Set up Claude Code</h2>
+  <p class="lede">Claude Code is a terminal-based agent. Don't worry if the terminal is new — you'll mostly type plain English to it.</p>
+
+  <div class="callout sea">
+    <strong>Before you start:</strong> the program provides LLM endpoints and access. If you hit an account, billing, or login wall, <em>stop and ask your mentor or a Wednesday session lead</em> — don't pay for anything yourself.
+  </div>
+
+  <div class="step"><div class="n">1</div><div class="body">
+    <h4>Open a terminal</h4>
+    <p>macOS: open <strong>Terminal</strong> (Cmd+Space, type "terminal"). Windows: install <strong>WSL</strong> or use the lab's machine. Linux: you already know.</p>
+  </div></div>
+
+  <div class="step"><div class="n">2</div><div class="body">
+    <h4>Install Node.js, then Claude Code</h4>
+    <p>Claude Code needs Node.js (v18+). Check, then install:</p>
+    <pre><code><span class="c"># check if you already have node</span>
+node --version
+
+<span class="c"># install Claude Code (once Node is present)</span>
+npm install -g @anthropic-ai/claude-code</code></pre>
+    <p>Official, always-current install steps: <a href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">docs.claude.com/en/docs/claude-code</a>.</p>
+  </div></div>
+
+  <div class="step"><div class="n">3</div><div class="body">
+    <h4>Point it at the program's endpoint</h4>
+    <p>Your Wednesday session will give you the exact endpoint URL and key. You'll set them as environment variables — write down what they hand you and keep keys private (never commit them to GitHub).</p>
+  </div></div>
+
+  <div class="step"><div class="n">4</div><div class="body">
+    <h4>Launch it inside a project folder</h4>
+    <pre><code>cd ~/my-first-project
+claude</code></pre>
+    <p>You're in. Claude Code can now see the files in that folder and help you work with them.</p>
+  </div></div>
+
+  <ul class="check" data-section="setup">
+    <li><input type="checkbox"><span class="t">Terminal opens and I can type commands<small>Try <code>pwd</code> and <code>ls</code></small></span></li>
+    <li><input type="checkbox"><span class="t"><code>node --version</code> prints a version ≥ 18</span></li>
+    <li><input type="checkbox"><span class="t">Claude Code installed and <code>claude</code> launches</span></li>
+    <li><input type="checkbox"><span class="t">Connected to the program endpoint (mentor confirmed)</span></li>
+  </ul>
+</section>
+
+<!-- 4 FIRST SESSION -->
+<section id="first-session">
+  <div class="eyebrow">Module 4 · Hands-on</div>
+  <h2 class="sec">Your first session</h2>
+  <p class="lede">The whole interface is a conversation. Type what you want in plain English. Here's a gentle on-ramp.</p>
+
+  <h3>Try these, in order</h3>
+  <pre><code><span class="p">&gt; What files are in this folder, and what does each one do?</span>
+
+<span class="p">&gt; Make a file called hello.py that prints today's date.</span>
+
+<span class="p">&gt; Run it. If it errors, fix it and run it again.</span>
+
+<span class="p">&gt; Now add a function that counts lines in a text file,
+  and write a tiny test for it.</span></code></pre>
+
+  <p>Notice what's happening: Claude Code <em>proposes</em> actions, you approve them, it reads the results and keeps going. That's the agent loop from Module 1, live.</p>
+
+  <h3>Three things to know early</h3>
+  <div class="grid g3">
+    <div class="card"><h4>It asks permission</h4><p>By default it confirms before editing files or running commands. Read what it's about to do before approving.</p></div>
+    <div class="card"><h4>Context resets</h4><p>Start a fresh session for a new task. Use a <code>CLAUDE.md</code> file (next module) to give it lasting context.</p></div>
+    <div class="card"><h4>It can be wrong</h4><p>Confidently. Always sanity-check results, especially numbers and biology.</p></div>
+  </div>
+
+  <ul class="check" data-section="first">
+    <li><input type="checkbox"><span class="t">Had a back-and-forth conversation with the agent</span></li>
+    <li><input type="checkbox"><span class="t">Watched it create, run, and fix a file</span></li>
+    <li><input type="checkbox"><span class="t">Approved (and declined) at least one proposed action</span></li>
+  </ul>
+</section>
+
+<!-- 5 EXERCISES -->
+<section id="exercises">
+  <div class="eyebrow">Module 5 · Hands-on</div>
+  <h2 class="sec">Starter exercises</h2>
+  <p class="lede">Small, realistic tasks that build the muscles you'll use on a real project. Do at least three. Marine-data flavored, but no biology background required.</p>
+
+  <div class="card">
+    <span class="tag easy">Easy</span><h3>A. Tidy a messy CSV</h3>
+    <p>Make a small CSV with inconsistent columns (mixed date formats, blank cells, weird headers). Ask the agent to load it, describe the problems, and write a script that cleans it. Then ask it to explain each cleaning step back to you.</p>
+    <p class="meta"><strong>You'll learn:</strong> giving the agent a file, reviewing its plan, reading generated code.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag easy">Easy</span><h3>B. Explain unfamiliar code</h3>
+    <p>Find a short bioinformatics script online (or a lab repo file). Ask: "Walk me through this line by line, and tell me what could break it." Great for getting up to speed on a new codebase.</p>
+    <p class="meta"><strong>You'll learn:</strong> using agents to <em>understand</em>, not just write.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag mid">Medium</span><h3>C. Plot some real data</h3>
+    <p>Download a small public dataset (e.g. an NCBI sample sheet, or temperature time-series). Ask the agent to load it, summarize it, and make two clear figures. Then ask it to improve the figures for a presentation.</p>
+    <p class="meta"><strong>You'll learn:</strong> the explore → summarize → visualize loop you'll repeat all summer.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag mid">Medium</span><h3>D. Version-control a tiny project</h3>
+    <p>Ask the agent to initialize a git repo for one of the above, write a <code>.gitignore</code> and a short <code>README.md</code>, and explain what each commit is doing. (Week 4 of OPUS-AAI is all about version control — get a head start.)</p>
+    <p class="meta"><strong>You'll learn:</strong> git basics with a guide riding along.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag hard">Stretch</span><h3>E. Write your first skill</h3>
+    <p>Pick something you did twice above (e.g. "clean a CSV the way we like it"). Ask the agent to help you capture it as a reusable <code>SKILL.md</code> with clear steps. Run it on a new file to confirm it works.</p>
+    <p class="meta"><strong>You'll learn:</strong> turning a one-off into a reusable workflow — the heart of the playbook deliverable.</p>
+  </div>
+
+  <ul class="check" data-section="ex">
+    <li><input type="checkbox"><span class="t">Exercise A — tidy a CSV</span></li>
+    <li><input type="checkbox"><span class="t">Exercise B — explain code</span></li>
+    <li><input type="checkbox"><span class="t">Exercise C — plot data</span></li>
+    <li><input type="checkbox"><span class="t">Exercise D — version control</span></li>
+    <li><input type="checkbox"><span class="t">Exercise E — write a skill (stretch)</span></li>
+  </ul>
+</section>
+
+<!-- 6 GOOD HABITS -->
+<section id="good-habits">
+  <div class="eyebrow">Module 6</div>
+  <h2 class="sec">Working well with agents</h2>
+  <p class="lede">The difference between frustrating and magical is mostly how you set things up. A few habits go a long way.</p>
+
+  <div class="grid g2">
+    <div class="card kelp">
+      <h4>Give context</h4>
+      <p>Keep a <code>CLAUDE.md</code> in your project describing the goal, the data, the tools, and lab conventions. The agent reads it automatically every session.</p>
+    </div>
+    <div class="card">
+      <h4>Be specific</h4>
+      <p>"Make a plot" → "Make a line plot of temperature over time, label axes, save as PNG at 300 dpi." Specific in, useful out.</p>
+    </div>
+    <div class="card">
+      <h4>Work in small steps</h4>
+      <p>Ask for one thing, check it, then the next. Easier to catch mistakes than reviewing a giant change at once.</p>
+    </div>
+    <div class="card">
+      <h4>Make it show its work</h4>
+      <p>"Explain your plan before you start." "Why did you choose that?" You learn faster and catch bad assumptions.</p>
+    </div>
+    <div class="card">
+      <h4>Verify everything important</h4>
+      <p>Re-run, spot-check numbers, read the code. The agent is a collaborator, not an oracle.</p>
+    </div>
+    <div class="card">
+      <h4>Protect secrets & data</h4>
+      <p>Never paste API keys or sensitive data. Use <code>.gitignore</code>. Ask your mentor before pushing anything public.</p>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>The standup habit.</strong> OPUS-AAI runs weekly standups (Weeks 6 &amp; 8). Each day, jot: <em>what I did, what I'm doing next, what's blocking me.</em> Ask the agent to help summarize your week's work into a 3-line standup — practice for the real thing.
+  </div>
+</section>
+
+<!-- 7 LAB -->
+<section id="lab">
+  <div class="eyebrow">Module 7 · Your project</div>
+  <h2 class="sec">About the lab</h2>
+  <p class="lede">You'll spend the summer applying these tools to real questions. The Roberts Lab studies how marine invertebrates — especially shellfish like oysters — respond to a changing ocean, using genomics and reproducible computation.</p>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>What we study</h4>
+      <p>Environmental physiology and epigenetics of shellfish; how stressors (heat, pH, pathogens, low oxygen) shape gene expression and DNA methylation; and what that means for aquaculture and resilient food systems.</p>
+    </div>
+    <div class="card">
+      <h4>How we work</h4>
+      <p>Heavily computational and <strong>open</strong>: public lab notebooks, code on GitHub, reproducible pipelines (RNA-seq, WGS, methylation, ATAC-seq), and lots of data wrangling. This is fertile ground for agentic AI.</p>
+    </div>
+  </div>
+
+  <div class="callout sea">
+    <strong>Before module 8,</strong> skim the lab's public materials so your project ideas land: the lab notebooks and the <em>Current Findings</em> site, plus a few recent repos on GitHub. Ask your mentor for the current links — and note that "make our work easier to reproduce and share" is itself a great project theme.
+  </div>
+</section>
+
+<!-- 8 IDEAS -->
+<section id="ideas">
+  <div class="eyebrow">Module 8 · Your project</div>
+  <h2 class="sec">Project idea starters</h2>
+  <p class="lede">Good OPUS-AAI projects pair a real lab need with the agentic methods you just learned — and produce a playbook others can reuse. Here are seeds. Make them yours, or invent your own.</p>
+
+  <div class="card proj">
+    <h3>1 · An agentic reproducibility checker</h3>
+    <p>Build a workflow (and skill) that takes one of the lab's analyses and uses an agent to check it reproduces from raw data: are paths right, dependencies recorded, steps documented? Output a "reproducibility report."</p>
+    <p class="meta"><strong>AI angle:</strong> agent + skills + git · <strong>Lab value:</strong> open, reproducible science</p>
+  </div>
+  <div class="card proj">
+    <h3>2 · From messy sample sheet to clean dataset</h3>
+    <p>Many projects start with inconsistent metadata. Create an agent-assisted pipeline that validates and standardizes sample sheets (species, treatment, tissue, accession) and flags problems before analysis.</p>
+    <p class="meta"><strong>AI angle:</strong> data wrangling + skill authoring · <strong>Lab value:</strong> cleaner downstream analyses</p>
+  </div>
+  <div class="card proj">
+    <h3>3 · Re-analyze a public shellfish dataset</h3>
+    <p>Pick a public RNA-seq study (GEO/SRA) on oyster or shellfish stress response. Use an agent to help run QC, expression, and a simple differential-expression analysis end to end — documenting every prompt and decision.</p>
+    <p class="meta"><strong>AI angle:</strong> agent-driven bioinformatics · <strong>Lab value:</strong> new look at existing data</p>
+  </div>
+  <div class="card proj">
+    <h3>4 · Literature-to-table assistant</h3>
+    <p>Build an agent workflow that, given a research question (e.g. "ocean acidification effects on oyster larvae"), gathers papers and extracts a structured comparison table (species, stressor, finding) — with sources cited and checked.</p>
+    <p class="meta"><strong>AI angle:</strong> MCP / search tools + verification · <strong>Lab value:</strong> faster literature synthesis</p>
+  </div>
+  <div class="card proj">
+    <h3>5 · Make a pipeline self-documenting</h3>
+    <p>Take an existing lab script or pipeline and use agents to generate clear docs, a diagram of the workflow, and a README that a brand-new student could follow. (Ties into OPUS-AAI Week 9: workflow figures.)</p>
+    <p class="meta"><strong>AI angle:</strong> agents for communication · <strong>Lab value:</strong> onboarding &amp; clarity</p>
+  </div>
+  <div class="card proj">
+    <h3>6 · A lab "skills library"</h3>
+    <p>Identify 3–5 tasks the lab does repeatedly and package each as a tested skill (with the agent's help). Deliver a starter skills library the whole lab can adopt — a playbook in the most literal sense.</p>
+    <p class="meta"><strong>AI angle:</strong> skill engineering · <strong>Lab value:</strong> compounding time savings</p>
+  </div>
+
+  <h3>Sizing your idea</h3>
+  <p>A good 10-week project is narrow enough to finish and produce a clear deliverable. Run any idea through these:</p>
+  <table>
+    <tr><th>Ask yourself</th><th>Why</th></tr>
+    <tr><td>Is there a real lab need behind it?</td><td>Keeps you motivated and makes the playbook genuinely useful.</td></tr>
+    <tr><td>Can a first version work in ~2 weeks?</td><td>You want something working early, then improve it.</td></tr>
+    <tr><td>Does it exercise agentic methods (not just a script)?</td><td>That's the point of the program.</td></tr>
+    <tr><td>Is the data available now?</td><td>Waiting on data kills summer projects.</td></tr>
+    <tr><td>Will it produce a clear final artifact + playbook?</td><td>Required deliverable; plan for it from day one.</td></tr>
+  </table>
+</section>
+
+<!-- 9 PITCH -->
+<section id="pitch">
+  <div class="eyebrow">Module 9 · Your project</div>
+  <h2 class="sec">Draft your pitch</h2>
+  <p class="lede">Before you meet your mentor, fill in this one-paragraph pitch. It forces clarity and gives them something concrete to react to. (Practice for the Week 9 non-expert pitch and the Week 10 final presentation.)</p>
+
+  <div class="card">
+    <h4>The template</h4>
+    <pre><code>PROJECT:   &lt;one-line name&gt;
+
+PROBLEM:   The lab currently struggles to ______,
+           which matters because ______.
+
+APPROACH:  I'll use agentic AI to ______
+           (which agent / skills / MCP tools: ______).
+
+DATA:      I'll use ______ (already available? yes/no).
+
+WEEK-2 GOAL:  A first working version that ______.
+
+DELIVERABLE: A ______ plus a playbook documenting
+             how others can reuse this approach.
+
+UNKNOWNS:  The biggest thing I'm unsure about is ______.</code></pre>
+  </div>
+
+  <div class="callout kelp">
+    <strong>Use the agent to pressure-test it.</strong> Paste your draft and ask: "Poke holes in this 10-week project plan. What's too big? What am I assuming? What could I cut?" Bring the strongest version to your mentor.
+  </div>
+
+  <ul class="check" data-section="pitch">
+    <li><input type="checkbox"><span class="t">Skimmed the lab's notebooks / Current Findings / a repo</span></li>
+    <li><input type="checkbox"><span class="t">Picked or invented a project idea</span></li>
+    <li><input type="checkbox"><span class="t">Ran it through the sizing questions</span></li>
+    <li><input type="checkbox"><span class="t">Filled in the pitch template</span></li>
+    <li><input type="checkbox"><span class="t">Pressure-tested it with the agent</span></li>
+    <li><input type="checkbox"><span class="t">Ready to discuss with my mentor</span></li>
+  </ul>
+</section>
+
+<!-- 10 PLAYBOOK -->
+<section id="playbook">
+  <div class="eyebrow">Module 10 · Wrap</div>
+  <h2 class="sec">The playbook (your big deliverable)</h2>
+  <p class="lede">Every team delivers a playbook: a practical guide to using agentic AI in your research area. The good news — if you take notes as you go, it nearly writes itself.</p>
+
+  <h3>Capture as you work</h3>
+  <p>Keep a running <code>playbook.md</code> from week one. Each time something works (or fails instructively), jot it down. By Week 10 you'll have a real document, not a panicked weekend.</p>
+
+  <h4>A solid playbook usually includes</h4>
+  <ul>
+    <li><strong>The problem</strong> — what research task this addresses.</li>
+    <li><strong>Setup</strong> — tools, endpoints, and how to get running.</li>
+    <li><strong>Workflows</strong> — the step-by-step approaches that worked, with example prompts.</li>
+    <li><strong>Skills</strong> — any reusable skills you built, and how to use them.</li>
+    <li><strong>Gotchas</strong> — what went wrong, what to watch for, how to verify outputs.</li>
+    <li><strong>Results</strong> — what you actually accomplished, with a figure or two.</li>
+    <li><strong>Next steps</strong> — what you'd do with more time.</li>
+  </ul>
+
+  <div class="callout sea">
+    <strong>Meta move:</strong> use the agent to draft your playbook from your notes and commit history. You'll be using agentic AI to document how you used agentic AI — exactly the skill the program is building.
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources">
+  <div class="eyebrow">Reference</div>
+  <h2 class="sec">Resources &amp; quick reference</h2>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>Official docs</h4>
+      <ul>
+        <li><a href="https://docs.claude.com/en/docs/claude-code/overview" target="_blank" rel="noopener">Claude Code documentation</a></li>
+        <li><a href="https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview" target="_blank" rel="noopener">Prompt engineering guide</a></li>
+        <li><a href="https://docs.claude.com" target="_blank" rel="noopener">docs.claude.com (everything)</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>When you're stuck</h4>
+      <ul>
+        <li>Ask the agent itself: "I'm getting this error — what does it mean?"</li>
+        <li>Ask your mentor or a senior student in the group.</li>
+        <li>Bring it to the Wednesday standup / midterm review (Week 5).</li>
+        <li>Search the docs above before assuming something's broken.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Glossary</h3>
+  <table>
+    <tr><th>Term</th><th>Plain meaning</th></tr>
+    <tr><td>LLM</td><td>The text-prediction model that powers everything.</td></tr>
+    <tr><td>Agent</td><td>An LLM that can take actions in a loop to reach a goal.</td></tr>
+    <tr><td>Skill</td><td>A reusable, packaged instruction set for a task.</td></tr>
+    <tr><td>MCP</td><td>A standard plug for connecting agents to outside tools/data.</td></tr>
+    <tr><td>Context</td><td>What the agent currently "knows" — files, history, instructions.</td></tr>
+    <tr><td><code>CLAUDE.md</code></td><td>A project file the agent reads automatically for context.</td></tr>
+    <tr><td>Repo</td><td>A version-controlled project folder (git/GitHub).</td></tr>
+    <tr><td>Standup</td><td>Quick daily check-in: did / doing / blocked.</td></tr>
+  </table>
+
+  <p style="margin-top:24px"><strong>You're ready.</strong> Bring your pitch to your mentor, keep notes for the playbook, and remember: you're the scientist — the agent just helps you move faster. 🌊</p>
+</section>
+
+<footer>
+  Agentic AI Bootcamp · Roberts Lab · OPUS-AAI 2026 · eScience Institute &amp; SSEC.<br>
+  Self-directed onboarding ramp. Progress is saved locally in your browser.
+  &nbsp;·&nbsp; <a href="Agentic-Coding-Tools/">← Back to the Agentic Coding Tools handbook page</a>
+  <a class="toplink" href="#welcome">↑ Back to top</a>
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var KEY = "opus-aai-progress-v1";
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e){}
+
+  // assign stable ids to every checkbox and restore state
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".check input[type=checkbox]"));
+  boxes.forEach(function(b,i){
+    var sec = b.closest("ul").getAttribute("data-section") || "x";
+    var id = sec + "-" + i;
+    b.dataset.id = id;
+    if(saved[id]){ b.checked = true; b.closest("li").classList.add("done"); }
+    var li = b.closest("li");
+    li.addEventListener("click", function(e){
+      if(e.target !== b){ b.checked = !b.checked; }
+      li.classList.toggle("done", b.checked);
+      saved[b.dataset.id] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      updateProgress();
+    });
+  });
+
+  function updateProgress(){
+    var total = boxes.length;
+    var done = boxes.filter(function(b){return b.checked;}).length;
+    var pct = total ? Math.round(done/total*100) : 0;
+    document.getElementById("pct").textContent = pct + "%";
+    document.getElementById("barfill").style.width = pct + "%";
+  }
+  updateProgress();
+
+  // scrollspy
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav.side a[href^='#']"));
+  var map = {};
+  links.forEach(function(l){ map[l.getAttribute("href").slice(1)] = l; });
+  var sections = Array.prototype.slice.call(document.querySelectorAll("section[id]"));
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(l){l.classList.remove("active");});
+        var a = map[en.target.id];
+        if(a) a.classList.add("active");
+      }
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  sections.forEach(function(s){ obs.observe(s); });
+
+  // close mobile nav on link tap
+  links.forEach(function(l){
+    l.addEventListener("click", function(){
+      document.querySelector("nav.side").classList.remove("open");
+    });
+  });
+})();
+</script>
+</body>
+</html>

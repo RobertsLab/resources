@@ -6,6 +6,9 @@ This guide covers tools the lab commonly uses—**GitHub Copilot**, **ChatGPT / 
 
 **Related:** [Computing Best Practices](Computing-Best-Practices.md) · [VS Code on Klone](klone_VS-Code.md)
 
+!!! tip "New to agentic AI? Start with the Bootcamp"
+    The **[Agentic AI Bootcamp](../agentic-ai-bootcamp.html)** is a short, self-paced onboarding ramp (~4–6 hours) that walks new lab members and OPUS-AAI participants through what agentic AI is, how to set up and drive **Claude Code**, hands-on starter exercises, and how to shape a marine-genomics project of their own. Work through it first, then use this page as your day-to-day reference.
+
 ------------------------------------------------------------------------
 
 # Before you get started!: Roberts Lab AI Use Indicator
