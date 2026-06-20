@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Unix Shell · A Bash Tutorial · Roberts Lab</title>
+<style>
+  :root{
+    --ink:#0f2a33; --ink2:#345863; --sea:#0b7285; --sea-dark:#075260;
+    --foam:#e6f4f1; --sand:#fbf7ef; --kelp:#2f6f4f; --coral:#d9663f;
+    --line:#d7e3e6; --card:#ffffff; --bg:#f3f8f8; --code-bg:#0e2630; --code-ink:#d6eef0;
+    --shadow:0 1px 3px rgba(10,40,50,.08),0 8px 24px rgba(10,40,50,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);line-height:1.6;font-size:16.5px}
+  a{color:var(--sea)}
+  /* layout */
+  .wrap{display:grid;grid-template-columns:268px 1fr;max-width:1240px;margin:0 auto;min-height:100vh}
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;
+    background:linear-gradient(180deg,var(--sea-dark),var(--sea));color:#eaf7f8;padding:26px 20px}
+  nav.side h1{font-size:18px;margin:0 0 2px;letter-spacing:.2px}
+  nav.side .sub{font-size:12.5px;opacity:.8;margin-bottom:22px;line-height:1.4}
+  nav.side a{display:block;color:#dff1f3;text-decoration:none;padding:8px 11px;border-radius:8px;
+    font-size:14.5px;margin-bottom:2px;transition:background .15s;border-left:3px solid transparent}
+  nav.side a:hover{background:rgba(255,255,255,.12)}
+  nav.side a.active{background:rgba(255,255,255,.18);border-left-color:#ffd9a8;font-weight:600}
+  nav.side .grp{font-size:11px;text-transform:uppercase;letter-spacing:1px;opacity:.6;margin:18px 0 6px 11px}
+  .prog-wrap{margin-top:20px;padding:12px;background:rgba(0,0,0,.18);border-radius:10px}
+  .prog-wrap .lbl{font-size:12px;opacity:.85;display:flex;justify-content:space-between;margin-bottom:6px}
+  .bar{height:8px;background:rgba(255,255,255,.2);border-radius:5px;overflow:hidden}
+  .bar>i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffd9a8,#ffb877);transition:width .3s}
+  main{padding:0 0 80px}
+  section{padding:54px 60px;border-bottom:1px solid var(--line);scroll-margin-top:0}
+  section:nth-child(even){background:var(--card)}
+  .hero{background:linear-gradient(160deg,#063e4a,#0b7285 70%);color:#eaf7f8;border-bottom:none}
+  .hero .kick{font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.85}
+  .hero h2{font-size:38px;line-height:1.15;margin:.3em 0 .35em;color:#fff;border:none;padding:0}
+  .hero p.lead{font-size:18.5px;max-width:680px;opacity:.95}
+  .hero .pills{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .hero .pills span{background:rgba(255,255,255,.14);padding:7px 14px;border-radius:20px;font-size:13.5px}
+  h2.sec{font-size:27px;margin:0 0 6px;color:var(--ink)}
+  .eyebrow{color:var(--sea);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:6px}
+  h3{font-size:19px;margin:30px 0 8px;color:var(--ink)}
+  h4{font-size:15.5px;margin:20px 0 6px;color:var(--ink2);text-transform:uppercase;letter-spacing:.5px}
+  p{margin:10px 0}
+  ul,ol{margin:10px 0;padding-left:22px}
+  li{margin:5px 0}
+  .lede{font-size:18px;color:var(--ink2);max-width:760px}
+  code{background:#e7f0f1;color:var(--sea-dark);padding:1.5px 6px;border-radius:5px;font-size:.88em;
+    font-family:"SF Mono",Menlo,Consolas,monospace}
+  pre{background:var(--code-bg);color:var(--code-ink);padding:16px 18px;border-radius:11px;overflow-x:auto;
+    font-family:"SF Mono",Menlo,Consolas,monospace;font-size:13.5px;line-height:1.55;margin:14px 0}
+  pre code{background:none;color:inherit;padding:0}
+  pre .c{color:#7fb4bf}/* comment */
+  pre .p{color:#ffd9a8}/* prompt/command */
+  pre .o{color:#9fd6b8}/* output */
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:16px 0;box-shadow:var(--shadow)}
+  section:nth-child(even) .card{background:var(--sand)}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:1fr 1fr}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .concept{border-top:4px solid var(--sea)}
+  .concept .ico{font-size:26px}
+  .callout{border-left:4px solid var(--coral);background:#fdf1ec;padding:14px 18px;border-radius:0 10px 10px 0;margin:16px 0}
+  .callout.sea{border-color:var(--sea);background:#e9f5f6}
+  .callout.kelp{border-color:var(--kelp);background:#eaf4ee}
+  .callout strong{color:var(--ink)}
+  .step{display:flex;gap:16px;margin:18px 0;align-items:flex-start}
+  .step .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--sea);color:#fff;display:flex;
+    align-items:center;justify-content:center;font-weight:700;font-size:15px}
+  .step .body{flex:1}
+  .step .body h4{margin-top:4px}
+  /* checklist */
+  .check{list-style:none;padding-left:0}
+  .check li{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border:1px solid var(--line);
+    border-radius:10px;margin:8px 0;background:var(--card);cursor:pointer;transition:.15s}
+  section:nth-child(even) .check li{background:#fff}
+  .check li:hover{border-color:var(--sea)}
+  .check input{margin-top:4px;width:18px;height:18px;accent-color:var(--sea);cursor:pointer;flex:0 0 auto}
+  .check li.done{opacity:.55}
+  .check li.done .t{text-decoration:line-through}
+  .check .t{flex:1}
+  .check .t small{display:block;color:var(--ink2);font-weight:400}
+  .tag{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;
+    padding:3px 9px;border-radius:6px;background:var(--foam);color:var(--sea-dark);margin-right:6px}
+  .tag.hard{background:#fbe3da;color:#a5421f}
+  .tag.mid{background:#fdf0db;color:#9a6512}
+  .tag.easy{background:#e2f1e8;color:#2f6f4f}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--foam);color:var(--sea-dark);font-size:13px;text-transform:uppercase;letter-spacing:.5px}
+  td code{white-space:nowrap}
+  .proj{border-left:4px solid var(--kelp)}
+  .proj h3{margin-top:0}
+  .proj .meta{font-size:13px;color:var(--ink2);margin:6px 0 0}
+  footer{padding:34px 60px;color:var(--ink2);font-size:14px;background:var(--card)}
+  .toplink{display:inline-block;margin-top:8px;font-size:13px}
+  details{border:1px solid var(--line);border-radius:10px;padding:4px 16px;margin:10px 0;background:var(--card)}
+  details summary{cursor:pointer;font-weight:600;padding:10px 0;color:var(--sea-dark)}
+  details[open]{padding-bottom:14px}
+  kbd{background:#fff;border:1px solid #bcd;border-bottom-width:2px;border-radius:5px;padding:1px 6px;font-size:.85em}
+  .menu-btn{display:none}
+  .backlink{display:inline-block;margin-bottom:14px;font-size:13px;color:#dff1f3;text-decoration:none;opacity:.85}
+  .backlink:hover{opacity:1;text-decoration:underline}
+  @media(max-width:880px){
+    .wrap{grid-template-columns:1fr}
+    nav.side{position:fixed;z-index:50;width:268px;left:-280px;transition:left .25s;box-shadow:var(--shadow)}
+    nav.side.open{left:0}
+    .menu-btn{display:flex;position:fixed;top:14px;left:14px;z-index:60;background:var(--sea);color:#fff;
+      border:none;width:46px;height:46px;border-radius:12px;font-size:22px;align-items:center;justify-content:center;box-shadow:var(--shadow)}
+    section{padding:40px 22px}
+    .hero h2{font-size:30px}
+    .g2,.g3{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<button class="menu-btn" onclick="document.querySelector('nav.side').classList.toggle('open')">☰</button>
+<div class="wrap">
+
+<nav class="side">
+  <a class="backlink" href="bio_Basics/">← Back to the Handbook</a>
+  <h1>🐚 The Unix Shell</h1>
+  <div class="sub">Roberts Lab · Bash tutorial<br>Self-directed, command by command</div>
+  <a href="#welcome">Start here</a>
+  <div class="grp">Files &amp; directories</div>
+  <a href="#filesystem">1 · The file system</a>
+  <a href="#ls">2 · Listing with ls</a>
+  <a href="#paths">3 · Relative &amp; absolute paths</a>
+  <div class="grp">Creating things</div>
+  <a href="#creating">4 · mkdir, nano, rm</a>
+  <a href="#moving">5 · mv &amp; cp</a>
+  <div class="grp">Pipes &amp; filters</div>
+  <a href="#wildcards">6 · Wildcards &amp; wc</a>
+  <a href="#redirect">7 · Redirecting output</a>
+  <a href="#pipe">8 · Pipes</a>
+  <div class="grp">Wrap</div>
+  <a href="#exercises">9 · Practice exercises</a>
+  <a href="#cheatsheet">Command cheat sheet</a>
+  <div class="prog-wrap">
+    <div class="lbl"><span>Your progress</span><span id="pct">0%</span></div>
+    <div class="bar"><i id="barfill"></i></div>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="welcome">
+  <div class="kick">Roberts Lab · Self-directed tutorial</div>
+  <h2>Learn the Unix shell — one command at a time.</h2>
+  <p class="lead">The command line is how you'll drive HPC systems like Klone, run bioinformatics tools, and string small programs together into powerful pipelines. This short, hands-on tutorial takes you from "what is a terminal?" to building your first pipe — no prior experience needed.</p>
+  <div class="pills">
+    <span>⏱️ ~1–2 hours, self-paced</span>
+    <span>🐚 bash / Unix shell</span>
+    <span>💻 Type along in a terminal</span>
+    <span>✅ No prior experience needed</span>
+  </div>
+</section>
+
+<!-- START HERE -->
+<section>
+  <div class="eyebrow">Start here</div>
+  <h2 class="sec">Set up &amp; how to use this site</h2>
+  <p class="lede">Don't just read — type every command into your terminal as you go. The shell rewards practice, and muscle memory matters more than memorizing. Check off boxes as you finish each section; your progress saves in this browser.</p>
+
+  <div class="callout">
+    <strong>Before you start:</strong> download <a href="https://d.pr/f/BDaGTy" target="_blank" rel="noopener"><code>data-shell.zip</code></a> (also at <code>http://gannet.fish.washington.edu/seashell/snaps/data-shell.zip</code>), unzip it, and open a terminal. That can be the <strong>Terminal</strong> tab inside RStudio, or a standalone app (macOS <strong>Terminal</strong>, Windows <strong>WSL</strong>/Git Bash, or any Linux shell). So we all have the same experience, <code>cd</code> into the <code>data-shell</code> directory before running the examples.
+  </div>
+
+  <div class="grid g3" style="margin-top:22px">
+    <div class="card concept"><div class="ico">🧭</div><h3>Navigate</h3><p>Sections 1–3: find out where you are, see what's around you, and move through the file system.</p></div>
+    <div class="card concept"><div class="ico">✏️</div><h3>Create</h3><p>Sections 4–5: make directories and files, then move, copy, rename, and delete them.</p></div>
+    <div class="card concept"><div class="ico">🔗</div><h3>Combine</h3><p>Sections 6–8: wildcards, redirection, and pipes — the shell's real superpower.</p></div>
+  </div>
+</section>
+
+<!-- 1 FILESYSTEM -->
+<section id="filesystem">
+  <div class="eyebrow">Section 1</div>
+  <h2 class="sec">The file system &amp; where you are</h2>
+  <p class="lede">The part of the operating system that manages your data is the <strong>file system</strong>. It organizes data into <strong>files</strong> (which hold information) and <strong>directories</strong>, or "folders" (which hold files or other directories).</p>
+
+  <p>When you open a shell you'll see a <strong>prompt</strong> — often a dollar sign — telling you the shell is waiting for input. Throughout this tutorial, lines starting with <code>$</code> are commands <em>you</em> type; the rest is the output the shell prints back.</p>
+
+  <pre><code><span class="p">$ whoami</span>
+<span class="o">jovyan</span></code></pre>
+
+  <p>When you type <code>whoami</code> and press Enter, the shell (1) finds a program called <code>whoami</code>, (2) runs it, (3) displays its output — here, your user ID — and (4) shows a fresh prompt, ready for the next command.</p>
+
+  <h3>pwd — print working directory</h3>
+  <p>Find out <em>where you are</em> with <code>pwd</code>. Your <strong>current working directory</strong> is the default directory the shell runs commands in unless you say otherwise.</p>
+
+  <pre><code><span class="p">$ pwd</span>
+<span class="o">/home/jovyan</span></code></pre>
+
+  <p>At the very top of the file system is the <strong>root directory</strong>, which holds everything else. We write it as a single slash <code>/</code> — that's the leading slash in <code>/home/jovyan</code>.</p>
+
+  <div class="callout sea">
+    <strong>Two meanings for <code>/</code>.</strong> At the <em>front</em> of a path, <code>/</code> means the root directory. <em>Inside</em> a path (like <code>home/jovyan</code>) it's just a separator between directory names.
+  </div>
+</section>
+
+<!-- 2 LS -->
+<section id="ls">
+  <div class="eyebrow">Section 2</div>
+  <h2 class="sec">Listing what's there with <code>ls</code></h2>
+  <p class="lede">Make sure you're in the <code>data-shell</code> directory, then list its contents with <code>ls</code> ("listing"):</p>
+
+  <pre><code><span class="p">$ ls</span>
+<span class="o">creatures  molecules           pizza.cfg
+data       north-pacific-gyre  solar.pdf
+Desktop    notes.txt           writing</span></code></pre>
+
+  <p><code>ls</code> prints the names of files and directories in alphabetical order, arranged in columns. Add the <strong>flag</strong> <code>-F</code> to mark directories with a trailing <code>/</code> so they're easy to tell apart:</p>
+
+  <pre><code><span class="p">$ ls -F</span>
+<span class="o">creatures/  molecules/           pizza.cfg
+data/       north-pacific-gyre/  solar.pdf
+Desktop/    notes.txt            writing/</span></code></pre>
+
+  <p>Now you can see <code>data-shell</code> holds several <strong>sub-directories</strong> (trailing <code>/</code>) and a few plain files like <code>notes.txt</code> and <code>solar.pdf</code>.</p>
+
+  <div class="callout">
+    <strong>Mind the space.</strong> There's a space between <code>ls</code> and <code>-F</code>. Without it, the shell looks for a command called <code>ls-F</code> — which doesn't exist. Most commands take <strong>options</strong> (flags) that begin with <code>-</code>.
+  </div>
+</section>
+
+<!-- 3 PATHS -->
+<section id="paths">
+  <div class="eyebrow">Section 3</div>
+  <h2 class="sec">Relative &amp; absolute paths</h2>
+  <p class="lede">You can point <code>ls</code> at something other than the current directory by giving it an <strong>argument</strong> — a path with no leading dash.</p>
+
+  <h3>Relative path</h3>
+  <p>List the contents of the <code>data</code> sub-directory:</p>
+  <pre><code><span class="p">$ ls -F data</span>
+<span class="o">amino-acids.txt  animal-counts/  animals.txt  elements/
+morse.txt        pdb/            planets.txt  salmon.txt   sunspot.txt</span></code></pre>
+  <p><code>data</code> here is a <strong>relative path</strong>: it tells <code>ls</code> how to find something <em>starting from where you are</em>, not from the root of the file system. It has no leading slash.</p>
+
+  <h3>Absolute path</h3>
+  <p>Run it <em>with</em> a leading slash and you get a different answer — because <code>/data</code> is an <strong>absolute path</strong> measured from the root:</p>
+  <pre><code><span class="p">$ ls -F /data</span>
+<span class="o">ls: cannot access '/data': No such file or directory</span></code></pre>
+  <p>You'll get a "No such file" warning here, because that directory doesn't exist at the root. The leading <code>/</code> tells the computer to start from the very top of the file system, so an absolute path always points to exactly one place no matter where you currently are.</p>
+
+  <p>To list this same <code>data</code> directory by its absolute path, you'd write:</p>
+  <pre><code><span class="p">$ ls -F /home/jovyan/data-shell/data/</span></code></pre>
+  <p>That works regardless of your current <code>pwd</code>.</p>
+
+  <div class="callout kelp">
+    <strong>Tab completion saves typing.</strong> Start typing a name and press <kbd>Tab</kbd> — the shell completes it for you when there's only one match, or shows the options when there are several. Use it constantly; it also prevents typos.
+  </div>
+
+  <h4>Two special shortcuts</h4>
+  <table>
+    <tr><th>Symbol</th><th>Means</th></tr>
+    <tr><td><code>.</code></td><td>The current directory.</td></tr>
+    <tr><td><code>..</code></td><td>The directory <em>above</em> the current one (its parent).</td></tr>
+    <tr><td><code>~</code></td><td>Your home directory (e.g. <code>~/data</code> = <code>/home/jovyan/data</code>).</td></tr>
+  </table>
+</section>
+
+<!-- 4 CREATING -->
+<section id="creating">
+  <div class="eyebrow">Section 4</div>
+  <h2 class="sec">Creating &amp; deleting: <code>mkdir</code>, <code>nano</code>, <code>rm</code></h2>
+  <p class="lede">Now that you can explore, let's make things. Back in <code>data-shell</code>, create a new directory called <code>thesis</code>:</p>
+
+  <pre><code><span class="p">$ mkdir thesis</span></code></pre>
+
+  <p><code>mkdir</code> means "make directory" — it produces no output. Since <code>thesis</code> is a relative path, the new directory is created inside the current working directory. Confirm with <code>ls -F</code>, then check it's empty:</p>
+
+  <pre><code><span class="p">$ ls -F thesis</span></code></pre>
+
+  <h3>Editing a file with nano</h3>
+  <p>Move into <code>thesis</code> and open the simple text editor <strong>Nano</strong> to create <code>draft.txt</code>:</p>
+
+  <pre><code><span class="p">$ cd thesis</span>
+<span class="p">$ nano draft.txt</span></code></pre>
+
+  <p>Type a few lines, then press <kbd>Ctrl</kbd>+<kbd>O</kbd> to write (save) to disk, and <kbd>Ctrl</kbd>+<kbd>X</kbd> to quit back to the shell. (Unix docs often write <code>^O</code> as shorthand for "Control-O.") Now <code>ls</code> shows your new file:</p>
+
+  <pre><code><span class="p">$ ls</span>
+<span class="o">draft.txt</span></code></pre>
+
+  <div class="callout sea">
+    <strong>Which editor?</strong> <code>nano</code> handles plain text only — great for learning because anyone can drive it. For real work, many people use <code>vim</code> or <code>emacs</code> in the terminal, or a graphical editor like VS Code. Whatever you use, know where it saves files (usually your current working directory if launched from the shell).
+  </div>
+
+  <h3>Deleting with rm</h3>
+  <p>Remove the file with <code>rm</code> ("remove"):</p>
+  <pre><code><span class="p">$ rm draft.txt</span></code></pre>
+  <p>Run <code>ls</code> again and the output is empty — the file is gone.</p>
+
+  <div class="callout">
+    <strong>Deleting is forever.</strong> The shell has no trash bin. When you <code>rm</code> a file it's unhooked from the file system and its space can be reused immediately. There's no reliable undo — double-check before you delete, especially with wildcards.
+  </div>
+</section>
+
+<!-- 5 MOVING -->
+<section id="moving">
+  <div class="eyebrow">Section 5</div>
+  <h2 class="sec">Moving, renaming &amp; copying: <code>mv</code> and <code>cp</code></h2>
+  <p class="lede">Re-create a file, then learn the two commands you'll use constantly to reorganize your work.</p>
+
+  <pre><code><span class="p">$ mkdir thesis</span>
+<span class="p">$ nano thesis/draft.txt</span>   <span class="c"># type something, ^O to save, ^X to quit</span>
+<span class="p">$ ls thesis</span>
+<span class="o">draft.txt</span></code></pre>
+
+  <h3>mv — move or rename</h3>
+  <p><code>mv</code> ("move") takes a source and a destination. Give it a new name as the destination and it effectively <strong>renames</strong> the file:</p>
+  <pre><code><span class="p">$ mv thesis/draft.txt thesis/quotes.txt</span>
+<span class="p">$ ls thesis</span>
+<span class="o">quotes.txt</span></code></pre>
+
+  <p>Give it a <em>directory</em> as the destination and it keeps the filename but puts the file somewhere new. The special name <code>.</code> (current directory) moves it right here:</p>
+  <pre><code><span class="p">$ mv thesis/quotes.txt .</span>
+<span class="p">$ ls thesis</span>     <span class="c"># now empty</span></code></pre>
+  <p><code>mv</code> works on directories too — there's no separate <code>mvdir</code> command.</p>
+
+  <h3>cp — copy</h3>
+  <p><code>cp</code> works just like <code>mv</code>, but leaves the original in place:</p>
+  <pre><code><span class="p">$ cp quotes.txt thesis/quotations.txt</span>
+<span class="p">$ ls quotes.txt thesis/quotations.txt</span>
+<span class="o">quotes.txt   thesis/quotations.txt</span></code></pre>
+  <p>Both paths exist, proving you made a copy rather than moving the original.</p>
+
+  <div class="callout kelp">
+    <strong>To delete a whole directory and everything in it,</strong> use <code>rm -r</code> ("recursive"): <code>rm -r thesis</code>. Powerful and unforgiving — there's no undo, so be certain of the target first.
+  </div>
+</section>
+
+<!-- 6 WILDCARDS -->
+<section id="wildcards">
+  <div class="eyebrow">Section 6</div>
+  <h2 class="sec">Wildcards &amp; counting with <code>wc</code></h2>
+  <p class="lede">The shell's real power is combining simple programs. Start in the <code>molecules</code> directory, which holds six <code>.pdb</code> files (Protein Data Bank format).</p>
+
+  <pre><code><span class="p">$ ls molecules</span>
+<span class="o">cubane.pdb    ethane.pdb    methane.pdb
+octane.pdb    pentane.pdb   propane.pdb</span></code></pre>
+
+  <h3>wc — word count</h3>
+  <p><code>cd</code> into <code>molecules</code> and run <code>wc</code> ("word count"), which reports lines, words, and characters per file. The <code>*</code> in <code>*.pdb</code> is a wildcard that the shell expands into the full list of matching files:</p>
+
+  <pre><code><span class="p">$ cd molecules</span>
+<span class="p">$ wc *.pdb</span>
+<span class="o">  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total</span></code></pre>
+
+  <p>Use <code>-l</code> for lines only, <code>-w</code> for words, <code>-c</code> for characters:</p>
+  <pre><code><span class="p">$ wc -l *.pdb</span>
+<span class="o">  20  cubane.pdb
+  12  ethane.pdb
+   9  methane.pdb
+  30  octane.pdb
+  21  pentane.pdb
+  15  propane.pdb
+ 107  total</span></code></pre>
+
+  <h3>Wildcards</h3>
+  <table>
+    <tr><th>Pattern</th><th>Matches</th></tr>
+    <tr><td><code>*</code></td><td>Zero or more characters — <code>*.pdb</code> matches every <code>.pdb</code> file.</td></tr>
+    <tr><td><code>p*.pdb</code></td><td>Only <code>pentane.pdb</code> and <code>propane.pdb</code> (must start with <code>p</code>).</td></tr>
+    <tr><td><code>?</code></td><td>Exactly one character — <code>p?.pdb</code> matches <code>p5.pdb</code> but not <code>propane.pdb</code>.</td></tr>
+    <tr><td><code>*[AB].txt</code></td><td>Files ending in <code>A</code> or <code>B</code> before <code>.txt</code> — handy for selecting valid samples.</td></tr>
+  </table>
+  <p>The shell expands wildcards into a list of filenames <em>before</em> the command runs, so <code>wc</code> and <code>ls</code> never see the <code>*</code> itself — only what it matched.</p>
+</section>
+
+<!-- 7 REDIRECT -->
+<section id="redirect">
+  <div class="eyebrow">Section 7</div>
+  <h2 class="sec">Redirecting output: <code>&gt;</code> and <code>cat</code></h2>
+  <p class="lede">Which file is shortest? Easy with six files — but what about 6000? The first step is to save the counts to a file instead of the screen.</p>
+
+  <pre><code><span class="p">$ wc -l *.pdb &gt; lengths</span></code></pre>
+  <p>The <code>&gt;</code> <strong>redirects</strong> the command's output into a file, creating it (or overwriting it) as needed. There's no screen output because everything went into <code>lengths</code> instead. Confirm it exists:</p>
+  <pre><code><span class="p">$ ls lengths</span>
+<span class="o">lengths</span></code></pre>
+
+  <h3>cat — show a file</h3>
+  <p><code>cat</code> ("concatenate") prints file contents to the screen:</p>
+  <pre><code><span class="p">$ cat lengths</span>
+<span class="o">  20  cubane.pdb
+  12  ethane.pdb
+   9  methane.pdb
+  30  octane.pdb
+  21  pentane.pdb
+  15  propane.pdb
+ 107  total</span></code></pre>
+
+  <h3>sort &amp; head</h3>
+  <p><code>sort -n</code> sorts numerically (without changing the file), and <code>head -1</code> shows just the first line:</p>
+  <pre><code><span class="p">$ sort -n lengths &gt; sorted-lengths</span>
+<span class="p">$ head -1 sorted-lengths</span>
+<span class="o">  9  methane.pdb</span></code></pre>
+  <p><code>head -1</code> means "first line"; <code>-20</code> would give the first 20. Since the list is sorted shortest-first, this is the file with the fewest lines. (<code>&lt;</code> redirects the other way — feeding a file <em>into</em> a command's input, e.g. <code>wc -l &lt; mydata.dat</code>.)</p>
+</section>
+
+<!-- 8 PIPE -->
+<section id="pipe">
+  <div class="eyebrow">Section 8</div>
+  <h2 class="sec">Pipes: joining commands with <code>|</code></h2>
+  <p class="lede">Those intermediate files (<code>lengths</code>, <code>sorted-lengths</code>) make things hard to follow. A <strong>pipe</strong> lets one command's output flow straight into the next — no temp files needed.</p>
+
+  <pre><code><span class="p">$ sort -n lengths | head -1</span>
+<span class="o">  9  methane.pdb</span></code></pre>
+  <p>The vertical bar <code>|</code> sends the output of the command on its left as the input to the command on its right. Chain as many as you like — here, <code>wc</code> → <code>sort</code> → <code>head</code> with no intermediate files at all:</p>
+
+  <pre><code><span class="p">$ wc -l *.pdb | sort -n | head -1</span>
+<span class="o">  9  methane.pdb</span></code></pre>
+
+  <div class="callout sea">
+    <strong>"Small pieces, loosely joined."</strong> This is the heart of Unix's design: instead of giant do-everything programs, you get many small tools that each do one job well and read/write plain text. A program that reads from <strong>standard input</strong> and writes to <strong>standard output</strong> can be piped together with any other — multiplying their power.
+  </div>
+
+  <h3>A real example: sanity-checking data files</h3>
+  <p>Imagine 1520 sample files that should each have 300 lines. Find the shortest five — a quick way to spot a truncated file:</p>
+  <pre><code><span class="p">$ wc -l *.txt | sort -n | head -5</span>
+<span class="o"> 240 NENE02018B.txt
+ 300 NENE01729A.txt
+ 300 NENE01729B.txt
+ 300 NENE01736A.txt
+ 300 NENE01751A.txt</span></code></pre>
+  <p>One file is 60 lines short — worth investigating. Swap <code>head</code> for <code>tail -5</code> to check the <em>longest</em> files instead, and use a wildcard like <code>ls *Z.txt</code> to find flagged samples. Same handful of small tools, endlessly recombined.</p>
+</section>
+
+<!-- 9 EXERCISES -->
+<section id="exercises">
+  <div class="eyebrow">Section 9 · Practice</div>
+  <h2 class="sec">Try it yourself</h2>
+  <p class="lede">Work through these in the <code>data-shell</code> data. Predict the output first, then run it and see if you were right — that's how the commands stick.</p>
+
+  <div class="card">
+    <span class="tag easy">Easy</span><h3>A. Trace a sequence of commands</h3>
+    <p>Starting in <code>/home/jovyan/data</code> with a file <code>proteins.dat</code>, what does the final <code>ls</code> print?</p>
+    <pre><code><span class="p">$ mkdir recombine</span>
+<span class="p">$ mv proteins.dat recombine</span>
+<span class="p">$ cp recombine/proteins.dat ../proteins-saved.dat</span>
+<span class="p">$ ls</span></code></pre>
+    <p class="meta"><strong>You'll practice:</strong> reasoning about <code>mv</code>, <code>cp</code>, and where files end up.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag mid">Medium</span><h3>B. Build a pipeline</h3>
+    <p>In <code>molecules</code>, write one pipeline that prints the <em>name of the longest</em> <code>.pdb</code> file. (Hint: <code>wc</code>, <code>sort -n</code>, and <code>tail</code>.)</p>
+    <p class="meta"><strong>You'll practice:</strong> chaining commands with <code>|</code>.</p>
+  </div>
+
+  <div class="card">
+    <span class="tag mid">Medium</span><h3>C. Wildcards in practice</h3>
+    <p>List only the files in <code>molecules</code> whose names start with a vowel. Then count how many <code>.pdb</code> files there are in total using a wildcard and <code>wc -l</code>.</p>
+    <p class="meta"><strong>You'll practice:</strong> <code>*</code>, <code>?</code>, and <code>[...]</code> patterns.</p>
+  </div>
+
+  <ul class="check" data-section="ex">
+    <li><input type="checkbox"><span class="t">Downloaded data-shell and <code>cd</code>'d into it</span></li>
+    <li><input type="checkbox"><span class="t">Navigated with <code>pwd</code>, <code>ls</code>, and <code>cd</code></span></li>
+    <li><input type="checkbox"><span class="t">Created, renamed, copied, and deleted files</span></li>
+    <li><input type="checkbox"><span class="t">Used a wildcard with <code>wc</code></span></li>
+    <li><input type="checkbox"><span class="t">Redirected output to a file with <code>&gt;</code></span></li>
+    <li><input type="checkbox"><span class="t">Built a pipeline with <code>|</code></span></li>
+    <li><input type="checkbox"><span class="t">Completed exercises A–C</span></li>
+  </ul>
+</section>
+
+<!-- CHEAT SHEET -->
+<section id="cheatsheet">
+  <div class="eyebrow">Reference</div>
+  <h2 class="sec">Command cheat sheet &amp; key points</h2>
+
+  <div class="grid g2">
+    <div class="card">
+      <h4>Navigating</h4>
+      <table>
+        <tr><td><code>pwd</code></td><td>Print working directory</td></tr>
+        <tr><td><code>ls -F</code></td><td>List, marking directories</td></tr>
+        <tr><td><code>cd dir</code></td><td>Change directory</td></tr>
+        <tr><td><code>cd ..</code></td><td>Go up one level</td></tr>
+        <tr><td><code>cd ~</code></td><td>Go home</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h4>Files &amp; directories</h4>
+      <table>
+        <tr><td><code>mkdir d</code></td><td>Make a directory</td></tr>
+        <tr><td><code>nano f</code></td><td>Edit a text file</td></tr>
+        <tr><td><code>mv a b</code></td><td>Move / rename</td></tr>
+        <tr><td><code>cp a b</code></td><td>Copy</td></tr>
+        <tr><td><code>rm f</code> / <code>rm -r d</code></td><td>Delete file / directory</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h4>Inspecting &amp; combining</h4>
+      <table>
+        <tr><td><code>cat f</code></td><td>Print file contents</td></tr>
+        <tr><td><code>wc -l f</code></td><td>Count lines</td></tr>
+        <tr><td><code>sort -n f</code></td><td>Sort numerically</td></tr>
+        <tr><td><code>head -n</code> / <code>tail -n</code></td><td>First / last n lines</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h4>Redirection &amp; pipes</h4>
+      <table>
+        <tr><td><code>cmd &gt; f</code></td><td>Send output to a file</td></tr>
+        <tr><td><code>cmd &lt; f</code></td><td>Read input from a file</td></tr>
+        <tr><td><code>a | b</code></td><td>Pipe output of <code>a</code> into <code>b</code></td></tr>
+        <tr><td><code>*</code> <code>?</code> <code>[AB]</code></td><td>Wildcards</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <h3>Key points to remember</h3>
+  <ul>
+    <li>The file system stores <strong>files</strong> inside <strong>directories</strong>, which nest into a directory tree. <code>/</code> alone is the root.</li>
+    <li>A <strong>relative path</strong> starts from where you are; an <strong>absolute path</strong> starts from the root.</li>
+    <li><code>.</code> = current directory, <code>..</code> = parent, <code>~</code> = home.</li>
+    <li>Most commands take <strong>flags</strong> beginning with <code>-</code> (like <code>ls -F</code> or <code>wc -l</code>).</li>
+    <li>The shell has <strong>no trash bin</strong> — deletion is permanent.</li>
+    <li><code>&gt;</code> redirects output to a file; <code>|</code> pipes output between commands. Combine small tools to do big things.</li>
+    <li>Use <kbd>Tab</kbd> completion always — it's faster and prevents typos.</li>
+  </ul>
+
+  <div class="callout">
+    <strong>Want to go deeper?</strong> This tutorial is adapted from the Software Carpentry / Data Carpentry shell lessons. For more, see <a href="http://swcarpentry.github.io/shell-novice/" target="_blank" rel="noopener">Software Carpentry: The Unix Shell</a> and <a href="https://datacarpentry.org/shell-genomics/" target="_blank" rel="noopener">Data Carpentry: Shell for Genomics</a>.
+  </div>
+
+  <p style="margin-top:24px"><strong>You've got the fundamentals.</strong> These same commands are what you'll use to drive Klone, run bioinformatics tools, and keep your projects organized. 🐚</p>
+</section>
+
+<footer>
+  The Unix Shell · A Bash Tutorial · Roberts Lab Handbook.<br>
+  Adapted from the Software Carpentry / Data Carpentry shell lessons (CC-BY). Progress is saved locally in your browser.
+  &nbsp;·&nbsp; <a href="bio_Basics/">← Back to Bioinformatics Basics</a>
+  <a class="toplink" href="#welcome">↑ Back to top</a>
+</footer>
+
+</main>
+</div>
+
+<script>
+(function(){
+  var KEY = "bash-tutorial-progress-v1";
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch(e){}
+
+  // assign stable ids to every checkbox and restore state
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".check input[type=checkbox]"));
+  boxes.forEach(function(b,i){
+    var sec = b.closest("ul").getAttribute("data-section") || "x";
+    var id = sec + "-" + i;
+    b.dataset.id = id;
+    if(saved[id]){ b.checked = true; b.closest("li").classList.add("done"); }
+    var li = b.closest("li");
+    li.addEventListener("click", function(e){
+      if(e.target !== b){ b.checked = !b.checked; }
+      li.classList.toggle("done", b.checked);
+      saved[b.dataset.id] = b.checked;
+      localStorage.setItem(KEY, JSON.stringify(saved));
+      updateProgress();
+    });
+  });
+
+  function updateProgress(){
+    var total = boxes.length;
+    var done = boxes.filter(function(b){return b.checked;}).length;
+    var pct = total ? Math.round(done/total*100) : 0;
+    document.getElementById("pct").textContent = pct + "%";
+    document.getElementById("barfill").style.width = pct + "%";
+  }
+  updateProgress();
+
+  // scrollspy
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav.side a[href^='#']"));
+  var map = {};
+  links.forEach(function(l){ map[l.getAttribute("href").slice(1)] = l; });
+  var sections = Array.prototype.slice.call(document.querySelectorAll("section[id]"));
+  var obs = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){
+        links.forEach(function(l){l.classList.remove("active");});
+        var a = map[en.target.id];
+        if(a) a.classList.add("active");
+      }
+    });
+  }, {rootMargin:"-45% 0px -50% 0px"});
+  sections.forEach(function(s){ obs.observe(s); });
+
+  // close mobile nav on link tap
+  links.forEach(function(l){
+    l.addEventListener("click", function(){
+      document.querySelector("nav.side").classList.remove("open");
+    });
+  });
+})();
+</script>
+</body>
+</html>
