@@ -33,21 +33,13 @@ Undergraduate researchers: also read and sign the [Undergraduate Contract](Under
 
 ---
 
-## Lab IAQs
+## Self-Directed Tutorials
 
-(Initially Asked Questions) — TL;DR for the handbook.
+Hands-on, self-paced tutorials to build core skills. Each tracks your progress as you work through it.
 
-### What do I need on my device to get started?
-
-- shell
-- git
-- GitHub Desktop
-- RStudio
-
-### What should I read to understand how the lab does science?
-
-- [tusk](https://robertslab.github.io/tusk/)
-- [FISH546](https://sr320.github.io/course-fish546-2023/schedule.html)
+- [**The Unix Shell — Bash Tutorial**](../bash-tutorial.html) — navigate the file system, create and manage files, and combine commands with wildcards, redirection, and pipes. Start here if the command line is new to you.
+- [**Git &amp; GitHub Tutorial**](../github-tutorial.html) — the everyday version-control loop: create a repository, sync with the GitHub Desktop app, make changes, and commit and push (with an advanced command-line section).
+- [**Agentic AI Bootcamp**](../agentic-ai-bootcamp.html) — get fluent with agentic AI and driving Claude Code, then shape a project that fits the lab's work. See also [Agentic Coding Tools](Agentic-Coding-Tools.md).
 
 ---
 
