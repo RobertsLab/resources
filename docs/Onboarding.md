@@ -22,16 +22,6 @@ Undergraduate researchers: also read and sign the [Undergraduate Contract](Under
 7.  [Project Management](Project-Management.md)
 8.  [Computing Hardware](Computing-Hardware.md) — install shell, git, GitHub Desktop, RStudio (see IAQs below)
 
-## Ongoing — reference as needed
-
--   [Computing Best Practices](Computing-Best-Practices.md)
--   [Writing Scientific Manuscripts](Writing.md)
--   [Oral Presentations](Oral-Presentations.md)
--   [DEI Resources](DEI-Resources.md)
--   [External Communication and Funding](External-Communication-and-Funding.md) — conferences, travel awards, fellowships
--   [How to Grad School (outreach slides)](How-to-Grad-School-Slides.md)
-
-------------------------------------------------------------------------
 
 ## Self-Directed Tutorials
 
@@ -40,6 +30,18 @@ Hands-on, self-paced tutorials to build core skills. Each tracks your progress a
 -   [**The Unix Shell — Bash Tutorial**](../bash-tutorial.html) — navigate the file system, create and manage files, and combine commands with wildcards, redirection, and pipes. Start here if the command line is new to you.
 -   [**Git & GitHub Tutorial**](../github-tutorial.html) — the everyday version-control loop: create a repository, sync with the GitHub Desktop app, make changes, and commit and push (with an advanced command-line section).
 -   [**Agentic AI Bootcamp**](../agentic-ai-bootcamp.html) — get fluent with agentic AI and driving Claude Code, then shape a project that fits the lab's work. See also [Agentic Coding Tools](Agentic-Coding-Tools.md).
+
+
+------------------------------------------------------------------------
+
+## Ongoing — reference as needed
+
+-   [Computing Best Practices](Computing-Best-Practices.md)
+-   [Writing Scientific Manuscripts](Writing.md)
+-   [Oral Presentations](Oral-Presentations.md)
+-   [DEI Resources](DEI-Resources.md)
+-   [External Communication and Funding](External-Communication-and-Funding.md) — conferences, travel awards, fellowships
+-   [How to Grad School (outreach slides)](How-to-Grad-School-Slides.md)
 
 ------------------------------------------------------------------------
 
