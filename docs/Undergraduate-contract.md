@@ -10,7 +10,7 @@ Signing this document acknowledges the following:
 
 3)  Research supplies (and equipment) are purchased through my grants and are very expensive.
 
-4)  You need to commit to at least 4-10 hours per week.
+4)  You need to commit to at a specified number of hours per week. Speak to Steven regarding this as it will vary depending on standing.
 
 5)  Always, Always ask Steven or someone else if you have any questions or are unsure about something. You are here to learn and you should take the initiative to make the most of your time here.
 
