@@ -14,6 +14,156 @@ Data must be:
 
 4. Archived in an easily reproducible format.
 
+## File and Directory Organization
+
+Good file organization is a core lab skill. Phones and tablets often hide the directory structure from users, but on a computer every file has a specific location, also called a path. Knowing where files are stored is essential for reproducible research, collaboration, data safety, and long-term project continuity.
+
+A file is not just "in Word", "in RStudio", or "on the computer." It lives in a specific directory. For example:
+
+```text
+/Users/name/GitHub/project-name/data/raw/sample_metadata.csv
+```
+
+Lab members should be able to identify where important files and directories are located. This helps prevent lost work, accidental editing of the wrong copy, broken code paths, and duplicate versions scattered across `Desktop`, `Downloads`, cloud folders, email attachments, and external drives.
+
+Before starting or moving work, ask:
+
+- Where is this file or project located?
+- Is this the original file or a copy?
+- Is this file part of a project directory?
+- Is this file backed up, archived, or version controlled?
+- Will code, notebooks, collaborators, or future lab members depend on this path?
+
+Research projects usually include raw data, processed data, scripts, notebooks, figures, results, manuscripts, and notes. These files should be organized in a way that someone else in the lab can understand. A common project layout is:
+
+```text
+project-name/
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+├── scripts/
+├── notebooks/
+├── results/
+├── figures/
+├── docs/
+└── manuscript/
+```
+
+General principles:
+
+- Keep raw data separate from processed data.
+- Do not overwrite raw data.
+- Keep scripts, notebooks, figures, and results in predictable locations.
+- Include a `README.md` in each major directory describing its contents.
+- Use relative paths in scripts when possible so projects can be run on other computers.
+- Avoid storing active research files only in `Desktop` or `Downloads`.
+
+### GitHub Repositories
+
+GitHub repositories require extra care because they are connected to version control. Once a repository is cloned to your computer, do not casually move it, rename it, or place it inside another folder without understanding the consequences. Moving a repository can break scripts, project settings, relative paths, Git configuration, and collaboration workflows.
+
+GitHub repositories should generally live in a dedicated local directory, such as:
+
+```text
+~/GitHub/
+```
+
+For example:
+
+```text
+~/GitHub/project-name/
+~/GitHub/lab-notebook/
+~/GitHub/genomics-analysis/
+```
+
+Do not place GitHub repositories inside folders that automatically sync with services such as iCloud Drive, Dropbox, Google Drive, or OneDrive. Sync services can interfere with Git by modifying hidden files, creating conflicted copies, delaying updates, or corrupting repository state. A GitHub repository is already managed through Git and GitHub; it should not also be managed by a separate file-sync system.
+
+Avoid locations such as:
+
+```text
+~/Desktop/project-name/
+~/Downloads/project-name/
+~/Library/Mobile Documents/com~apple~CloudDocs/project-name/
+~/Dropbox/project-name/
+~/Google Drive/project-name/
+~/OneDrive/project-name/
+```
+
+Preferred:
+
+```text
+~/GitHub/project-name/
+```
+
+If a repository needs to be moved, ask for help first.
+
+### File and Directory Naming
+
+Use file and folder names that are readable, descriptive, and computer-friendly. Good names make files easier to search, sort, use in code, and share across systems.
+
+Recommended practices:
+
+- Use lowercase letters where possible.
+- Use hyphens `-` or underscores `_` instead of spaces.
+- Use descriptive names.
+- Include dates when version or chronology matters.
+- Use dates in `YYYY-MM-DD` format.
+- Avoid special characters such as `#`, `%`, `&`, `?`, `:`, `*`, `/`, and parentheses when possible.
+- Do not rely on vague names such as `final`, `new`, `updated`, or `stuff`.
+
+Good examples:
+
+```text
+2026-06-23-sample-metadata.csv
+oyster-growth-analysis.R
+temperature-qc-plot.png
+dna-extraction-notes.md
+project-readme.md
+```
+
+Poor examples:
+
+```text
+Data final FINAL.csv
+new stuff.xlsx
+analysis copy 2.R
+Steven's file?.csv
+figure#1.png
+```
+
+For dates, prefer:
+
+```text
+2026-06-23-field-notes.md
+```
+
+rather than:
+
+```text
+6-23-26 notes.docx
+```
+
+The `YYYY-MM-DD` format sorts correctly and avoids confusion between month/day/year and day/month/year formats.
+
+Files named `final`, `final2`, `really-final`, or `final-FINAL` are a sign that version control or organization has broken down. For code and text-based documents, use Git whenever possible. For files that are not well suited to Git, use clear dates or version numbers.
+
+Better:
+
+```text
+2026-06-23-manuscript-draft.docx
+2026-07-10-manuscript-draft.docx
+```
+
+or:
+
+```text
+manuscript-v01.docx
+manuscript-v02.docx
+```
+
+Good file organization is part of doing good science. A few extra seconds spent organizing files at the start can prevent hours or days of confusion later.
+
 ## Metadata
 
 All research data must be accompanied with a thorough description of that data from the beginning of the work. Metadata describes information about a dataset, such that a dataset can be understood, reused, and integrated with other datasets. Information described in a metadata record includes where the data were collected, who is responsible for the dataset, why the dataset was created, and how the data are organized.   
@@ -90,7 +240,7 @@ _All folders need to contain a readme file._
 
 The readme files should be plain text (i.e. do not create/edit the file with a word processor like Microsoft Word or LibreOffice Writer) and should describe the contents of the folder. If there are directories in the same folder as your readme file, the directory names should be listed and a brief description of their contents should be provided.
 
-_Please refrain from using any non alpha-numeric (including spaces) in file and folder names._
+_Please use computer-friendly file and folder names: lowercase letters where possible, hyphens or underscores instead of spaces, and no special characters unless needed by a documented workflow._
 
 ---
 

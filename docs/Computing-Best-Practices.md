@@ -18,7 +18,9 @@ Foremost, code should be written so someone else could easily run. This means th
 
 Here's an example of how repos should be organized. Note that each directory contains a `README.md`, which describes the contents of each directory (and, sometimes even describes each file in that directory).
 
-Create a directory called `gitrepos` and then keep all subsequent repositories within it.
+Create a dedicated directory for GitHub repositories and then keep all subsequent repositories within it. On a personal computer, a common choice is `~/GitHub/`; on shared or lab systems, follow the local convention. Do not store GitHub repositories inside folders that automatically sync with iCloud Drive, Dropbox, Google Drive, or OneDrive. Sync services can interfere with Git and create conflicted or corrupted repository state.
+
+Once a repository is cloned, do not casually move or rename it. Code, notebooks, relative paths, project settings, and Git configuration may depend on the repository location. If a repository needs to move, ask for help first.
 
 ```
 gitrepos$ tree
