@@ -2754,7 +2754,8 @@
 <p>1) Code should be in a Github repository </p>
 <p>2) <a href="https://kbroman.org/steps2rr/pages/organize.html">Organize</a> your data and code. </p>
 <p>Here's an example of how repos should be organized. Note that each directory contains a <code>README.md</code>, which describes the contents of each directory (and, sometimes even describes each file in that directory).</p>
-<p>Create a directory called <code>gitrepos</code> and then keep all subsequent repositories within it.</p>
+<p>Create a dedicated directory for GitHub repositories and then keep all subsequent repositories within it. On a personal computer, a common choice is <code>~/GitHub/</code>; on shared or lab systems, follow the local convention. Do not store GitHub repositories inside folders that automatically sync with iCloud Drive, Dropbox, Google Drive, or OneDrive. Sync services can interfere with Git and create conflicted or corrupted repository state.</p>
+<p>Once a repository is cloned, do not casually move or rename it. Code, notebooks, relative paths, project settings, and Git configuration may depend on the repository location. If a repository needs to move, ask for help first.</p>
 <div class="highlight"><pre><span></span><code>gitrepos$ tree
 
 .
