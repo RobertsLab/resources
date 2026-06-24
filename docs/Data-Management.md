@@ -302,6 +302,9 @@ _Taxa Representation in Nightingales_
 
 ## Histology Data Management Plan
 
+!!! tip "New to bivalve histology? Start with the tutorial"
+    The **[Bivalve Histology Tutorial](../bivalve-histology-tutorial/index.html)** is a self-paced, hands-on walkthrough of reading bivalve tissue sections — orienting to anatomy, identifying tissues and cell types, and recognizing common features in stained slides. Work through it first if histological interpretation is new to you.
+
 1) Before histology cassettes are sent off for processing, fill out the [Histology-databank](https://docs.google.com/spreadsheets/d/1BIbDleJPEiKrmx7JwNIPwg2pM-thuZ39upmenldx4pA/edit#gid=0) with all relevant information at the sample(tissue) level. Reserve space for blocks and slides by adding block-location and slide-location information. Each sample should have a `unique-sample-ID` which is:
 
 - `experiment-date_organism-label_tissue`
