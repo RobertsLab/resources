@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Histology Databank Explorer</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#171e26; --panel2:#1e2731; --line:#2b3742;
+    --ink:#e7edf3; --muted:#9fb0bf; --accent:#4ea1d3; --accent2:#79c0a8; --warn:#d8a657;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--bg);color:var(--ink)}
+  header{padding:18px 22px;border-bottom:1px solid var(--line);background:var(--panel)}
+  h1{margin:0 0 4px;font-size:20px;letter-spacing:.2px}
+  .sub{color:var(--muted);font-size:13px}
+  .hdrtop{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+  .intro{color:var(--muted);font-size:13px;line-height:1.6;max-width:90ch;margin:12px 0 0}
+  .intro code{background:var(--panel2);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:12px}
+  .stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}
+  .stat{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-width:96px}
+  .stat b{display:block;font-size:19px}
+  .stat span{color:var(--muted);font-size:12px}
+  .tabs{display:flex;gap:4px;padding:10px 22px 0;background:var(--panel);border-bottom:1px solid var(--line)}
+  .tab{background:none;border:1px solid transparent;border-bottom:none;color:var(--muted);
+       padding:9px 16px;border-radius:8px 8px 0 0;cursor:pointer;font-size:14px}
+  .tab.active{background:var(--bg);color:var(--ink);border-color:var(--line)}
+  .tab .n{color:var(--muted);font-size:12px}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+            padding:14px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:5}
+  input[type=search],select{background:var(--panel2);color:var(--ink);border:1px solid var(--line);
+            border-radius:8px;padding:8px 10px;font-size:14px}
+  input[type=search]{min-width:240px;flex:1 1 240px}
+  label.chk{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:13px;cursor:pointer}
+  .count{margin-left:auto;color:var(--muted);font-size:13px}
+  main{padding:18px 22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;
+        transition:border-color .15s,transform .05s}
+  .card:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .thumb{aspect-ratio:4/3;background:#0a0e12 center/cover no-repeat;display:flex;align-items:center;
+         justify-content:center;color:var(--muted);font-size:12px;text-align:center;padding:8px}
+  .thumb.tif{background:repeating-linear-gradient(45deg,#141b22,#141b22 10px,#10161c 10px,#10161c 20px)}
+  .card .body{padding:9px 11px}
+  .card .id{font-size:13px;font-weight:600;word-break:break-word}
+  .card .meta{color:var(--muted);font-size:12px;margin-top:3px}
+  .badge{display:inline-block;font-size:11px;border-radius:999px;padding:1px 8px;margin-top:7px;
+         background:var(--panel2);border:1px solid var(--line);color:var(--muted)}
+  .badge.has{color:var(--accent2);border-color:#2f5147}
+  .badge.tifonly{color:var(--warn);border-color:#5a4a2a}
+  .note{color:var(--muted);font-size:13px;margin:0 0 14px;padding:10px 12px;background:var(--panel);
+        border:1px solid var(--line);border-radius:8px}
+  .banner{font-size:13.5px;margin:0 0 14px;padding:10px 12px;background:var(--panel2);
+          border:1px solid #2f5147;border-left:3px solid var(--accent2);border-radius:8px}
+  .banner a{font-weight:600;word-break:break-all}
+  .banner .hint{color:var(--muted)}
+  .card .owl{display:block;font-size:11px;margin-top:6px;color:var(--accent)}
+  .card .owl:hover{text-decoration:underline}
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.72);display:none;align-items:flex-start;
+           justify-content:center;padding:30px;overflow:auto;z-index:20}
+  .overlay.open{display:flex}
+  .modal{background:var(--panel);border:1px solid var(--line);border-radius:12px;max-width:1000px;width:100%}
+  .modal h2{margin:0;font-size:17px;word-break:break-word}
+  .modal .head{display:flex;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);align-items:flex-start}
+  .modal .headbtns{display:flex;gap:10px;align-items:center;flex-shrink:0}
+  .modal .x{background:none;border:none;color:var(--muted);font-size:24px;cursor:pointer;line-height:1}
+  .btn{background:var(--panel2);border:1px solid var(--accent);color:var(--accent);border-radius:8px;
+       padding:6px 12px;font-size:13px;cursor:pointer;text-decoration:none;white-space:nowrap}
+  .btn:hover{background:var(--accent);color:#0b1117}
+  .modal .content{padding:16px 18px}
+  .kv{display:grid;grid-template-columns:140px 1fr;gap:4px 14px;font-size:13.5px;margin-bottom:14px}
+  .kv div.k{color:var(--muted)}
+  .imgsec h3{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin:14px 0 8px}
+  .imgrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+  .imgcell{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--panel2)}
+  .imgcell img{width:100%;display:block;background:#0a0e12;cursor:zoom-in}
+  .imgcell .cap{padding:6px 8px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+  .imgcell .cap a{color:var(--accent)}
+  .tifcell{padding:18px 10px;text-align:center}
+  .tifcell a{color:var(--accent)}
+  a{color:var(--accent)}
+  .empty{color:var(--muted);padding:40px;text-align:center}
+  footer{padding:18px 22px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line);margin-top:24px}
+</style>
+</head>
+<body>
+<header>
+  <div class="hdrtop">
+    <div>
+      <h1>Histology Databank Explorer</h1>
+      <div class="sub">Roberts Lab &middot; browse histological samples and slide images by species, project, and tissue</div>
+    </div>
+    <div id="hdrbtns"></div>
+  </div>
+  <div class="stats" id="stats"></div>
+  <p class="intro">
+    The histology databank comprises 1,308 catalogued entries representing roughly 940 unique tissue
+    samples collected between 2004 and 2019. The collection spans a range of marine invertebrates, with
+    the largest holdings in Tanner crab (<i>Chionoecetes bairdi</i>) and snow crab (<i>C. opilio</i>),
+    alongside substantial bivalve collections including Australian flat oyster (<i>Ostrea angasi</i>),
+    Olympia oyster (<i>O. lurida</i>), Pacific geoduck (<i>Panopea generosa</i>), Pacific and other
+    oysters, and scallop. Samples were contributed by multiple lab members and collaborators. Tissue
+    type is recorded for most entries and is dominated by hemolymph, gonad, and visceral-mass
+    preparations, reflecting the collection's emphasis on reproductive and hemolymph-based studies of
+    disease and environmental stress. Each sample carries a unique identifier
+    (<code>experiment-date_organism-label_tissue</code>) and its physical storage location, linking
+    archived blocks and slides to their digitized histology images.
+  </p>
+</header>
+
+<div class="tabs">
+  <button class="tab active" id="tabSamples" data-view="samples">Samples <span class="n" id="nSamples"></span></button>
+  <button class="tab" id="tabOrphans" data-view="orphans">Unmatched images <span class="n" id="nOrphans"></span></button>
+</div>
+
+<div class="controls">
+  <input type="search" id="q" placeholder="Search…">
+  <select id="fSpecies"><option value="">All species</option></select>
+  <select id="fYear"><option value="">All years</option></select>
+  <select id="fName"><option value="">All researchers</option></select>
+  <select id="fTissue"><option value="">All tissues</option></select>
+  <label class="chk" id="wrapImg"><input type="checkbox" id="fImg"> Has images</label>
+  <label class="chk" id="wrapWeb"><input type="checkbox" id="fWeb"> Viewable in browser</label>
+  <span class="count" id="count"></span>
+</div>
+
+<main>
+  <div class="note" id="orphanNote" style="display:none">
+    These specimens have slide images on owl but are <b>not yet entered in the databank</b>.
+    Use them as a worklist for backfilling the sheet. Cards marked “archival (.tif)” have no
+    browser-viewable version yet — run <code>make_derivatives.py</code> to generate JPEGs.
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">Nothing matches these filters.</div>
+</main>
+
+<footer id="footer"></footer>
+
+<div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+
+<script>
+const OWL="https://owl.fish.washington.edu/hesperornis";
+let SAMPLES=[], ORPHANS=[], VIEW="samples";
+
+/* ============================================================
+   FEEDBACK / CORRECTIONS  — prefilled Google Form
+   Fill these in after you create the Form (see FEEDBACK-SETUP.md).
+   Leave formBase as "" to keep the buttons in "needs setup" mode.
+   ============================================================ */
+const FEEDBACK = {
+  // The Form's prefill base, e.g.
+  // "https://docs.google.com/forms/d/e/1FAIpQLSdTWhMF88A6pzZX_-DjDrozZpbFRb7nYn75Stab0fNQGE0k7w/viewform?usp=pp_url"
+  formBase: "https://docs.google.com/forms/d/e/1FAIpQLSdTWhMF88A6pzZX_-DjDrozZpbFRb7nYn75Stab0fNQGE0k7w/viewform?usp=pp_url",
+  // Map each prefilled question to its entry ID (from a prefill link):
+  fields: {
+    sampleId: "entry.616967374",   // "Sample / image ID"
+    species:  "entry.926889781",   // "Species"
+    source:   "entry.179647160",   // "Where (sample or orphan)"
+    context:  "entry.1814848546",   // "Image / folder reference"
+  },
+};
+function feedbackUrl(o){
+  if(!FEEDBACK.formBase) return "";
+  const f=FEEDBACK.fields, p=new URLSearchParams();
+  if(f.sampleId) p.set(f.sampleId,o.sampleId||"");
+  if(f.species)  p.set(f.species, o.species||"");
+  if(f.source)   p.set(f.source,  o.source||"");
+  if(f.context)  p.set(f.context, o.context||"");
+  return FEEDBACK.formBase+(FEEDBACK.formBase.includes("?")?"&":"?")+p.toString();
+}
+function feedbackBtn(o,label){
+  label=label||"✎ Suggest a correction";
+  const url=feedbackUrl(o);
+  if(url) return `<a class="btn" href="${url}" target="_blank" rel="noopener">${label}</a>`;
+  return `<button class="btn" onclick="alert('Corrections form not set up yet.\\nSee FEEDBACK-SETUP.md: create a Google Form, then paste its URL + field IDs into the FEEDBACK config at the top of index.html\\u2019s script.')">${label}</button>`;
+}
+
+const $=id=>document.getElementById(id);
+function uniqSorted(a){return [...new Set(a.filter(Boolean))].sort((x,y)=>(""+x).localeCompare(""+y,undefined,{numeric:true}));}
+function fillSelect(sel,vals){sel.length=1;for(const v of vals){const o=document.createElement("option");o.value=v;o.textContent=v;sel.appendChild(o);}}
+function magOrder(m){const x=parseInt(m);return isNaN(x)?9999:x;}
+
+function renderStats(){
+  const total=SAMPLES.length, withImg=SAMPLES.filter(s=>s.has_image).length,
+        withWeb=SAMPLES.filter(s=>s.has_web_image).length,
+        orphanImgs=ORPHANS.reduce((a,g)=>a+g.image_count,0);
+  const cards=[["Samples",total],["With images",withImg],["Browser-viewable",withWeb],["Unmatched images",orphanImgs]];
+  $("stats").innerHTML=cards.map(([k,v])=>`<div class="stat"><b>${v.toLocaleString()}</b><span>${k}</span></div>`).join("");
+  $("nSamples").textContent=`(${total.toLocaleString()})`;
+  $("nOrphans").textContent=`(${ORPHANS.length.toLocaleString()})`;
+}
+
+/* ---------- image rendering shared by both views ---------- */
+function imagesHTML(images){
+  const imgs=images.slice().sort((a,b)=>magOrder(a.magnification)-magOrder(b.magnification)||a.filename.localeCompare(b.filename));
+  if(!imgs.length) return `<p style="color:var(--muted)">No image files.</p>`;
+  const groups={};
+  for(const im of imgs){const g=im.magnification||"overview / unspecified";(groups[g]=groups[g]||[]).push(im);}
+  let html="";
+  for(const g of Object.keys(groups).sort((a,b)=>magOrder(a)-magOrder(b))){
+    html+=`<div class="imgsec"><h3>${g}</h3><div class="imgrow">`;
+    for(const im of groups[g]){
+      const cap=`${im.variant||""} ${(im.ext||"").toUpperCase()}`.trim();
+      if(im.viewable){
+        const disp=im.display_url||im.url, thumb=im.thumb||disp;
+        html+=`<div class="imgcell"><a href="${disp}" target="_blank" rel="noopener"><img loading="lazy" src="${thumb}" alt="${im.filename}"></a>
+          <div class="cap"><span>${cap}${im.derivative_url?" · jpg from tif":""}</span><a href="${disp}" target="_blank" rel="noopener">open</a></div></div>`;
+      }else{
+        html+=`<div class="imgcell"><div class="tifcell">🔬 ${im.magnification||""} ${im.variant||""}<br><a href="${im.url}" target="_blank" rel="noopener">Download .${im.ext}</a></div>
+          <div class="cap"><span>${im.filename}</span></div></div>`;
+      }
+    }
+    html+=`</div></div>`;
+  }
+  return html;
+}
+function openModalRaw(title,kv,images,banner,actions){
+  $("modal").innerHTML=`<div class="head"><h2>${title}</h2>
+    <div class="headbtns">${actions||""}<button class="x" onclick="closeModal()">×</button></div></div>
+    <div class="content">${banner||""}${kv.length?`<div class="kv">${kv.map(([k,v])=>`<div class="k">${k}</div><div>${v}</div>`).join("")}</div>`:""}${imagesHTML(images)}</div>`;
+  $("overlay").classList.add("open");
+}
+function closeModal(){$("overlay").classList.remove("open");}
+
+/* ---------- SAMPLES view ---------- */
+function sampleCard(s){
+  let thumb = s.thumb_url ? `<div class="thumb" style="background-image:url('${s.thumb_url}')"></div>`
+            : s.has_image ? `<div class="thumb tif">TIF only<br>(not browser-viewable)</div>`
+            : `<div class="thumb">No image</div>`;
+  let badge = s.has_web_image ? `<span class="badge has">${s.web_image_count} viewable / ${s.image_count} files</span>`
+            : s.has_image ? `<span class="badge tifonly">${s.image_count} archival (.tif)</span>`
+            : `<span class="badge">catalogued only</span>`;
+  const tis=(s.tissues||[]).join(", ");
+  return `<div class="card" data-kind="s" data-id="${encodeURIComponent(s.unique_sample_id)}">${thumb}
+    <div class="body"><div class="id">${s.unique_sample_id}</div>
+    <div class="meta">${s.species_display||""}</div>
+    <div class="meta">${[s.year,tis].filter(Boolean).join(" · ")}</div>${badge}</div></div>`;
+}
+function openSample(id){
+  const s=SAMPLES.find(x=>x.unique_sample_id===id); if(!s)return;
+  const kv=[["Species",s.species_display],["Scientific",s.species_scientific],["Date",s.date],["Researcher",s.name],
+    ["Project",s.project_link?`<a href="${s.project_link}" target="_blank" rel="noopener">${s.project_name||s.project_link}</a>`:(s.project_name||"")],
+    ["Tissue(s)",(s.tissues||[]).join(", ")],["Block label(s)",(s.block_labels||[]).join(", ")],["Slide label(s)",(s.slide_labels||[]).join(", ")],
+    ["Storage",[s.cabinet&&("cab "+s.cabinet),s.drawer&&("drawer "+s.drawer),s.row&&("row "+s.row),s.slide_case&&("case "+s.slide_case),s.slide_slot&&("slot "+s.slide_slot)].filter(Boolean).join(" · ")],
+    ["Notes",s.notes]].filter(([k,v])=>v);
+  const body=(s.images&&s.images.length)?s.images:[];
+  const actions=feedbackBtn({sampleId:s.unique_sample_id, species:s.species_display||"",
+    source:"sample", context:(s.slide_labels||[]).join("; ")||(s.image_ids||[]).join("; ")});
+  openModalRaw(s.unique_sample_id,kv,body,"",actions);
+  if(!body.length) $("modal").querySelector(".content").insertAdjacentHTML("beforeend",
+    `<p style="color:var(--muted)">No images linked yet — catalogued in the databank (location above).</p>`);
+}
+
+/* ---------- ORPHANS view ---------- */
+function orphanCard(g){
+  let thumb = g.thumb_url ? `<div class="thumb" style="background-image:url('${g.thumb_url}')"></div>`
+            : `<div class="thumb tif">TIF only<br>(not browser-viewable)</div>`;
+  let badge = g.has_web_image ? `<span class="badge has">${g.image_count} files</span>`
+            : `<span class="badge tifonly">${g.image_count} archival (.tif)</span>`;
+  const owl=g.folder_url?`<a class="owl" href="${g.folder_url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">↗ owl folder</a>`:"";
+  return `<div class="card" data-kind="o" data-id="${encodeURIComponent(g.group_id)}">${thumb}
+    <div class="body"><div class="id">${g.label||"(unlabeled)"}</div>
+    <div class="meta">${g.species_display||""}</div>
+    <div class="meta">${g.project||""}</div>${badge}${owl}</div></div>`;
+}
+function openOrphan(gid){
+  const g=ORPHANS.find(x=>x.group_id===gid); if(!g)return;
+  const kv=[["Species",g.species_display],["Project",g.project],["Label",g.label],
+    ["Status","Imaged on owl, not yet in the databank"]].filter(([k,v])=>v);
+  const banner=g.folder_url?`<div class="banner">📁 Source folder on owl:
+    <a href="${g.folder_url}" target="_blank" rel="noopener">${g.folder_url.replace(OWL+"/","")}</a>
+    <span class="hint">— open to copy filenames into the databank sheet</span></div>`:"";
+  const actions=feedbackBtn({sampleId:"(orphan) "+(g.label||""), species:g.species_display||"",
+    source:"orphan / not in databank", context:g.folder_url||""});
+  openModalRaw(g.label||"(unlabeled)",kv,g.images,banner,actions);
+}
+
+/* ---------- filtering / routing ---------- */
+function applyFilters(){
+  const q=$("q").value.trim().toLowerCase(), sp=$("fSpecies").value;
+  if(VIEW==="orphans"){
+    const out=ORPHANS.filter(g=>{
+      if(sp && g.species_display!==sp) return false;
+      if(q){const hay=[g.label,g.species_display,g.project].join(" ").toLowerCase(); if(!hay.includes(q))return false;}
+      return true;
+    });
+    $("grid").innerHTML=out.map(orphanCard).join("");
+    $("empty").style.display=out.length?"none":"block";
+    $("count").textContent=`${out.length.toLocaleString()} of ${ORPHANS.length.toLocaleString()} image groups`;
+    return;
+  }
+  const yr=$("fYear").value, nm=$("fName").value, ti=$("fTissue").value,
+        onlyImg=$("fImg").checked, onlyWeb=$("fWeb").checked;
+  const out=SAMPLES.filter(s=>{
+    if(sp && s.species_display!==sp) return false;
+    if(yr && s.year!==yr) return false;
+    if(nm && s.name!==nm) return false;
+    if(ti && !(s.tissues||[]).includes(ti)) return false;
+    if(onlyImg && !s.has_image) return false;
+    if(onlyWeb && !s.has_web_image) return false;
+    if(q){const hay=[s.unique_sample_id,s.species_display,s.notes,s.name,s.project_name,(s.tissues||[]).join(" "),
+                     (s.slide_labels||[]).join(" "),(s.block_labels||[]).join(" ")].join(" ").toLowerCase();
+          if(!hay.includes(q))return false;}
+    return true;
+  });
+  $("grid").innerHTML=out.map(sampleCard).join("");
+  $("empty").style.display=out.length?"none":"block";
+  $("count").textContent=`${out.length.toLocaleString()} of ${SAMPLES.length.toLocaleString()} samples`;
+}
+
+function setView(v){
+  VIEW=v;
+  $("tabSamples").classList.toggle("active",v==="samples");
+  $("tabOrphans").classList.toggle("active",v==="orphans");
+  const sampleOnly=v==="samples";
+  for(const id of ["fYear","fName","fTissue","wrapImg","wrapWeb"]) $(id).style.display=sampleOnly?"":"none";
+  $("orphanNote").style.display=sampleOnly?"none":"block";
+  $("q").placeholder=sampleOnly?"Search sample ID, label, tissue, notes, researcher…":"Search label, species, project…";
+  applyFilters();
+}
+
+$("grid").addEventListener("click",e=>{
+  const c=e.target.closest(".card"); if(!c)return;
+  if(c.dataset.kind==="s") openSample(decodeURIComponent(c.dataset.id));
+  else openOrphan(decodeURIComponent(c.dataset.id));
+});
+$("overlay").addEventListener("click",e=>{if(e.target.id==="overlay")closeModal();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
+$("tabSamples").addEventListener("click",()=>setView("samples"));
+$("tabOrphans").addEventListener("click",()=>setView("orphans"));
+["q","fSpecies","fYear","fName","fTissue","fImg","fWeb"].forEach(id=>$(id).addEventListener("input",applyFilters));
+
+Promise.all([
+  fetch("data/samples.json").then(r=>r.json()),
+  fetch("data/orphans.json").then(r=>r.json()).catch(()=>[]),
+]).then(([s,o])=>{
+  SAMPLES=s; ORPHANS=o||[];
+  fillSelect($("fSpecies"),uniqSorted([...SAMPLES.map(x=>x.species_display),...ORPHANS.map(x=>x.species_display)]));
+  fillSelect($("fYear"),uniqSorted(SAMPLES.map(x=>x.year)));
+  fillSelect($("fName"),uniqSorted(SAMPLES.map(x=>x.name)));
+  fillSelect($("fTissue"),uniqSorted(SAMPLES.flatMap(x=>x.tissues||[])));
+  renderStats(); setView("samples");
+  $("hdrbtns").innerHTML=feedbackBtn({sampleId:"", species:"", source:"general comment (main page)", context:""},"💬 Comment / correction");
+  $("footer").innerHTML=`Images served from <a href="${OWL}/" target="_blank" rel="noopener">owl.fish.washington.edu/hesperornis</a>. `+
+    `<b>.tif</b> images are archival and don't display in browsers — generate JPEG derivatives with `+
+    `<code>build/make_derivatives.py</code>. Coverage and the full orphan list are in <code>data/qc_report.md</code>.`;
+}).catch(()=>{
+  $("grid").innerHTML=`<div class="empty">Could not load <code>data/samples.json</code>.<br>Serve over http (GitHub Pages or <code>python3 -m http.server</code>), not file://.</div>`;
+});
+</script>
+</body>
+</html>
