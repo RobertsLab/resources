@@ -1,0 +1,38 @@
+{
+  "total_rows_in_sheet": 1308,
+  "unique_samples": 940,
+  "samples_with_any_image": 100,
+  "samples_with_web_image": 100,
+  "total_images_indexed": 918,
+  "images_matched_to_a_sample": 267,
+  "orphan_images": 651,
+  "orphan_image_groups": 267,
+  "samples_by_species": {
+    "(unmapped)": {
+      "total": 595,
+      "with_image": 0
+    },
+    "C_gigas": {
+      "total": 10,
+      "with_image": 0
+    },
+    "O_angasi": {
+      "total": 44,
+      "with_image": 44
+    },
+    "O_lurida": {
+      "total": 161,
+      "with_image": 26
+    },
+    "P_generosa": {
+      "total": 130,
+      "with_image": 30
+    }
+  },
+  "images_by_species": {
+    "Larken_clam": 38,
+    "O_angasi": 373,
+    "O_lurida": 315,
+    "P_generosa": 192
+  }
+}
