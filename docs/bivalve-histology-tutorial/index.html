@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading Reproductive Histology in Bivalves — A Self-Guided Tutorial</title>
+<meta name="description" content="A self-guided, interactive tutorial for students learning to read bivalve gonad histology: how to tell the sexes apart and stage reproductive maturity, using geoduck and basket cockle as worked examples.">
+<style>
+  :root{
+    --ink:#16242b; --ink-soft:#41545d; --paper:#fbfaf6; --panel:#ffffff;
+    --sea:#0a6e7c; --sea-deep:#084e58; --sea-light:#e3f1f2;
+    --eosin:#d36c8f; --eosin-bg:#fbe9f0; --hema:#5b3a86; --hema-bg:#efe7f8;
+    --line:#dfe5e3; --ok:#1f8a5b; --ok-bg:#e5f4ec; --no:#c0492f; --no-bg:#fbe9e4;
+    --amber:#b8791b; --shadow:0 1px 3px rgba(16,40,46,.08),0 8px 24px rgba(16,40,46,.06);
+    --radius:14px; --maxw:860px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{line-height:1.2; color:var(--ink); font-weight:700}
+  h2{font-size:1.6rem; margin:0 0 .2em}
+  h3{font-size:1.2rem; margin:1.6em 0 .4em}
+  p{margin:.7em 0}
+  a{color:var(--sea-deep)}
+  code{background:#eef2f1; padding:.05em .35em; border-radius:5px; font-size:.92em}
+  em.sci{font-style:italic}
+
+  /* layout */
+  .wrap{display:flex; max-width:1180px; margin:0 auto; gap:0}
+  nav.side{
+    position:sticky; top:0; align-self:flex-start; height:100vh; width:270px; flex:none;
+    padding:22px 16px 32px; overflow-y:auto; border-right:1px solid var(--line);
+    background:linear-gradient(180deg,#fff, #fbfcfb);
+  }
+  nav.side .brand{font-weight:800; font-size:.95rem; letter-spacing:.02em; color:var(--sea-deep); margin-bottom:2px}
+  nav.side .sub{font-size:.78rem; color:var(--ink-soft); margin-bottom:18px}
+  nav.side ol{list-style:none; margin:0; padding:0; counter-reset:s}
+  nav.side li{counter-increment:s; margin:1px 0}
+  nav.side a.navlink{
+    display:flex; gap:9px; align-items:flex-start; padding:7px 9px; border-radius:9px;
+    color:var(--ink-soft); text-decoration:none; font-size:.86rem; line-height:1.3;
+  }
+  nav.side a.navlink::before{
+    content:counter(s); flex:none; width:20px; height:20px; border-radius:50%;
+    background:#e9eeed; color:var(--ink-soft); font-size:.72rem; font-weight:700;
+    display:grid; place-items:center; margin-top:1px; transition:.2s;
+  }
+  nav.side a.navlink:hover{background:var(--sea-light); color:var(--sea-deep)}
+  nav.side a.navlink.active{background:var(--sea-light); color:var(--sea-deep); font-weight:600}
+  nav.side a.navlink.active::before{background:var(--sea); color:#fff}
+  nav.side a.navlink.done::before{background:var(--ok); color:#fff; content:"\2713"}
+  .progress-wrap{margin:16px 0 8px; font-size:.74rem; color:var(--ink-soft)}
+  .bar{height:7px; background:#e9eeed; border-radius:99px; overflow:hidden; margin-top:5px}
+  .bar > i{display:block; height:100%; width:0; background:linear-gradient(90deg,var(--sea),var(--sea-deep)); transition:width .4s}
+
+  main{flex:1 1 auto; min-width:0; padding:0 28px 120px}
+  .inner{max-width:var(--maxw); margin:0 auto}
+  section{padding:40px 0 8px; border-top:1px solid var(--line)}
+  section:first-of-type{border-top:none}
+  .eyebrow{font-size:.74rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; color:var(--sea); margin-bottom:6px}
+
+  /* hero */
+  header.hero{padding:54px 0 30px}
+  header.hero h1{font-size:2.3rem; margin:.1em 0 .25em; letter-spacing:-.01em}
+  header.hero .lede{font-size:1.12rem; color:var(--ink-soft); max-width:620px}
+  .tagrow{display:flex; flex-wrap:wrap; gap:8px; margin:22px 0 6px}
+  .tag{font-size:.76rem; font-weight:600; padding:5px 11px; border-radius:99px; background:var(--sea-light); color:var(--sea-deep)}
+
+  /* cards / callouts */
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:20px 22px; box-shadow:var(--shadow); margin:18px 0}
+  .objective{background:var(--sea-light); border:1px solid #bfe0e2; border-radius:var(--radius); padding:18px 22px; margin:18px 0}
+  .objective h3{margin:.1em 0 .4em; color:var(--sea-deep)}
+  .objective ul{margin:.3em 0 0; padding-left:1.15em}
+  .objective li{margin:.28em 0}
+
+  .callout{border-left:4px solid var(--sea); background:#f3f9f9; border-radius:0 12px 12px 0; padding:14px 18px; margin:18px 0; font-size:.96rem}
+  .callout.key{border-color:var(--amber); background:#fcf6ea}
+  .callout.warn{border-color:var(--no); background:var(--no-bg)}
+  .callout b{color:var(--ink)}
+
+  .stain{display:inline-block; padding:.05em .45em; border-radius:6px; font-weight:600; font-size:.95em}
+  .stain.h{background:var(--hema-bg); color:var(--hema)}
+  .stain.e{background:var(--eosin-bg); color:var(--eosin)}
+
+  /* two-column compare */
+  .cols{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:18px 0}
+  .sexbox{border-radius:var(--radius); padding:16px 18px; border:1px solid var(--line)}
+  .sexbox.f{background:#fdeef4; border-color:#f3cfdd}
+  .sexbox.m{background:#eaf3fb; border-color:#cfe0f0}
+  .sexbox h4{margin:.1em 0 .5em; font-size:1.02rem}
+  .sexbox.f h4{color:#b03a68}
+  .sexbox.m h4{color:#2a6098}
+  .sexbox ul{margin:.2em 0; padding-left:1.1em; font-size:.93rem}
+  .sexbox li{margin:.3em 0}
+
+  /* figure */
+  figure{margin:22px 0; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:14px; box-shadow:var(--shadow)}
+  figure img{width:100%; height:auto; border-radius:8px; display:block; background:#000}
+  figcaption{font-size:.84rem; color:var(--ink-soft); margin-top:10px; line-height:1.5}
+  .svgfig{display:block; width:100%; height:auto}
+
+  /* tables */
+  .tablewrap{overflow-x:auto; margin:18px 0}
+  table.stage{border-collapse:collapse; width:100%; font-size:.9rem; background:#fff; border:1px solid var(--line); border-radius:12px; overflow:hidden}
+  table.stage th, table.stage td{padding:10px 12px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top}
+  table.stage thead th{background:var(--sea-deep); color:#fff; font-size:.82rem; letter-spacing:.02em}
+  table.stage tbody tr:nth-child(even){background:#f7faf9}
+  table.stage td:first-child{font-weight:700; color:var(--sea-deep); white-space:nowrap}
+
+  /* flip cards */
+  .deck{display:grid; grid-template-columns:repeat(auto-fill,minmax(160px,1fr)); gap:12px; margin:18px 0}
+  .flip{perspective:1000px; height:128px; cursor:pointer}
+  .flip-in{position:relative; width:100%; height:100%; transition:transform .5s; transform-style:preserve-3d}
+  .flip.on .flip-in{transform:rotateY(180deg)}
+  .flip-face{position:absolute; inset:0; backface-visibility:hidden; border-radius:12px; padding:12px; display:grid; place-items:center; text-align:center; border:1px solid var(--line)}
+  .flip-front{background:#fff; font-weight:700; color:var(--sea-deep)}
+  .flip-front small{display:block; font-weight:500; color:var(--ink-soft); margin-top:6px; font-size:.7rem}
+  .flip-back{background:var(--sea-deep); color:#fff; transform:rotateY(180deg); font-size:.82rem; line-height:1.4}
+
+  /* quiz */
+  .quiz{background:#fff; border:1px solid var(--line); border-left:4px solid var(--hema); border-radius:0 14px 14px 0; padding:18px 20px; margin:20px 0; box-shadow:var(--shadow)}
+  .quiz .q{font-weight:600; margin-bottom:12px}
+  .quiz .q span.num{display:inline-block; font-size:.72rem; font-weight:700; color:#fff; background:var(--hema); border-radius:99px; padding:2px 9px; margin-right:8px; vertical-align:middle}
+  .opt{display:block; width:100%; text-align:left; background:#f8f9fb; border:1px solid var(--line); border-radius:10px; padding:11px 14px; margin:7px 0; cursor:pointer; font:inherit; font-size:.94rem; color:var(--ink); transition:.15s}
+  .opt:hover{border-color:var(--sea); background:var(--sea-light)}
+  .opt.correct{background:var(--ok-bg); border-color:var(--ok); color:#0c5c3a; font-weight:600}
+  .opt.wrong{background:var(--no-bg); border-color:var(--no); color:#8a2c19}
+  .opt:disabled{cursor:default}
+  .feedback{margin-top:10px; font-size:.9rem; padding:10px 14px; border-radius:10px; display:none}
+  .feedback.show{display:block}
+  .feedback.good{background:var(--ok-bg); color:#0c5c3a}
+  .feedback.bad{background:var(--no-bg); color:#8a2c19}
+
+  /* reveal practice */
+  .practice{background:#fff; border:1px solid var(--line); border-radius:14px; padding:16px; margin:20px 0; box-shadow:var(--shadow)}
+  .practice img{width:100%; border-radius:10px; display:block; background:#000}
+  .practice .ask{font-weight:600; margin:12px 2px 10px}
+  .reveal-btn{background:var(--sea); color:#fff; border:none; border-radius:10px; padding:10px 18px; font:inherit; font-weight:600; cursor:pointer}
+  .reveal-btn:hover{background:var(--sea-deep)}
+  .answer{display:none; margin-top:12px; padding:12px 16px; background:var(--sea-light); border-radius:10px; font-size:.93rem}
+  .answer.show{display:block}
+  .answer b{color:var(--sea-deep)}
+
+  /* glossary */
+  dl.gloss{margin:14px 0; display:grid; grid-template-columns:auto 1fr; gap:4px 18px}
+  dl.gloss dt{font-weight:700; color:var(--sea-deep); padding:6px 0; border-top:1px solid var(--line)}
+  dl.gloss dd{margin:0; padding:6px 0; border-top:1px solid var(--line); font-size:.95rem; color:var(--ink-soft)}
+
+  .done-toggle{display:flex; align-items:center; gap:10px; margin:26px 0 0; padding:14px 18px; background:#f3f9f9; border:1px dashed #bcdedf; border-radius:12px; font-size:.9rem}
+  .done-toggle input{width:20px; height:20px; accent-color:var(--sea)}
+  .footer{max-width:var(--maxw); margin:30px auto 0; padding-top:22px; border-top:1px solid var(--line); font-size:.84rem; color:var(--ink-soft)}
+
+  .topbtn{position:fixed; right:18px; bottom:18px; background:var(--sea-deep); color:#fff; border:none; width:46px; height:46px; border-radius:50%; font-size:1.1rem; cursor:pointer; box-shadow:var(--shadow); opacity:0; pointer-events:none; transition:.3s}
+  .topbtn.show{opacity:1; pointer-events:auto}
+
+  .menubtn{display:none}
+  @media (max-width:920px){
+    nav.side{position:fixed; z-index:40; left:0; top:0; transform:translateX(-100%); transition:transform .3s; box-shadow:var(--shadow); width:280px}
+    nav.side.open{transform:translateX(0)}
+    .menubtn{display:flex; align-items:center; gap:8px; position:fixed; z-index:30; top:12px; left:12px; background:var(--sea-deep); color:#fff; border:none; border-radius:10px; padding:9px 13px; font:inherit; font-size:.85rem; font-weight:600; cursor:pointer; box-shadow:var(--shadow)}
+    main{padding:0 16px 100px}
+    header.hero{padding-top:64px}
+    .cols{grid-template-columns:1fr}
+  }
+  @media print{nav.side,.topbtn,.menubtn,.quiz,.practice{break-inside:avoid}}
+</style>
+</head>
+<body>
+
+<button class="menubtn" id="menubtn" aria-label="Open contents">☰ Contents</button>
+
+<div class="wrap">
+  <nav class="side" id="side">
+    <div class="brand">Bivalve Reproductive Histology</div>
+    <div class="sub">A self-guided tutorial</div>
+    <div class="progress-wrap">
+      <span id="progtext">0 of 11 sections marked done</span>
+      <div class="bar"><i id="progbar"></i></div>
+    </div>
+    <ol id="navlist">
+      <li><a class="navlink" href="#s-start">How to use this tutorial</a></li>
+      <li><a class="navlink" href="#s-why">Why reproductive histology matters</a></li>
+      <li><a class="navlink" href="#s-biology">Bivalve reproductive biology</a></li>
+      <li><a class="navlink" href="#s-workflow">From clam to slide: the H&amp;E workflow</a></li>
+      <li><a class="navlink" href="#s-sexing">Telling the sexes apart</a></li>
+      <li><a class="navlink" href="#s-female">Staging female development (geoduck)</a></li>
+      <li><a class="navlink" href="#s-male">Staging male development (geoduck)</a></li>
+      <li><a class="navlink" href="#s-cockle">The hermaphrodite twist (cockle)</a></li>
+      <li><a class="navlink" href="#s-caveats">Cautions &amp; common pitfalls</a></li>
+      <li><a class="navlink" href="#s-capstone">Putting it together: capstone</a></li>
+      <li><a class="navlink" href="#s-glossary">Glossary &amp; sources</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <header class="hero inner">
+      <div class="eyebrow">Roberts Lab · Teaching resource</div>
+      <h1>Reading Reproductive Histology in Bivalves</h1>
+      <p class="lede">A self-guided, hands-on tutorial for new lab members and undergraduates. Learn to look at a stained slice of clam gonad and answer two questions: <b>What sex is it?</b> and <b>How far along is it?</b></p>
+      <div class="tagrow">
+        <span class="tag">~45 min</span>
+        <span class="tag">Undergraduate level</span>
+        <span class="tag">Interactive self-checks</span>
+        <span class="tag">Real H&amp;E slides</span>
+      </div>
+    </header>
+
+    <!-- 1 -->
+    <section id="s-start">
+      <div class="inner">
+        <div class="eyebrow">Section 1</div>
+        <h2>How to use this tutorial</h2>
+        <p>Reproductive (gonad) histology is one of the most useful — and most intimidating — skills in shellfish biology. The good news: the logic is simple and repeatable. By the end of this tutorial you will be able to pick up an unlabeled gonad slide and reason your way to a sex and a maturity stage, the same way researchers do in the lab.</p>
+
+        <p>Work through the sections in order. Each one builds on the last. Diagrams explain the structures, real stained slides show you what they actually look like, and short self-checks let you test yourself before moving on. Nothing is graded and nothing is sent anywhere — this all runs in your browser.</p>
+
+        <div class="objective">
+          <h3>What you'll be able to do</h3>
+          <ul>
+            <li>Explain what a bivalve gonad is and where it sits in the animal.</li>
+            <li>Read an <span class="stain h">hematoxylin</span> &amp; <span class="stain e">eosin</span> (H&amp;E) slide and name the major structures.</li>
+            <li>Distinguish a <b>female</b> gonad (oocytes, follicles) from a <b>male</b> gonad (acini packed with sperm).</li>
+            <li>Assign a <b>maturity stage</b> using a published staging scheme.</li>
+            <li>Recognize a <b>simultaneous hermaphrodite</b>, where one animal carries both.</li>
+            <li>Avoid the most common rookie mistakes.</li>
+          </ul>
+        </div>
+
+        <div class="callout key"><b>Two worked examples run through this tutorial.</b> The <b>Pacific geoduck</b> (<em class="sci">Panopea generosa</em>) — a clam with separate sexes — and the <b>basket cockle</b> (<em class="sci">Clinocardium nuttallii</em>) — a clam that is male and female at the same time. Seeing both teaches you the rule <em>and</em> its most important exception.</p></div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-start" id="d-start"><label for="d-start">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section id="s-why">
+      <div class="inner">
+        <div class="eyebrow">Section 2</div>
+        <h2>Why reproductive histology matters</h2>
+        <p>Most bivalves give away nothing about their reproduction from the outside. A geoduck shows no color, size, or shape difference between the sexes — the <em>only</em> reliable way to know its sex, short of watching it spawn, is to take a piece of gonad tissue and look at it under a microscope. That single limitation drives a surprising amount of shellfish science and aquaculture.</p>
+
+        <h3>For aquaculture</h3>
+        <p>Hatcheries need eggs and sperm at the same time. But in a tank of brood animals, some will spawn early, some late, and some not at all. Knowing the <b>sex ratio</b> and the <b>maturity stage</b> of the broodstock lets a hatchery time a spawning event, balance males and females, and protect <b>genetic diversity</b> — if only a few females fertilize all the eggs, the offspring become inbred and fragile. Histology is how that hidden state is measured.</p>
+
+        <h3>For science</h3>
+        <p>Staging tells you <em>when</em> in the reproductive cycle an animal was sampled. That is the backbone for studying spawning seasons, the effects of temperature or ocean acidification on reproduction, and the search for molecular biomarkers that might one day let us sex an animal from a drop of hemolymph instead of killing it.</p>
+
+        <div class="callout"><b>The recurring goal:</b> turn an invisible internal state — sex and ripeness — into something you can see, measure, and compare across animals, sites, and seasons.</div>
+
+        <div class="quiz" data-q="why">
+          <div class="q"><span class="num">Q</span>Why can't you just sort geoducks into males and females by looking at them?</div>
+          <button class="opt" data-correct="false">Males are consistently larger than females</button>
+          <button class="opt" data-correct="false">Females have darker siphons</button>
+          <button class="opt" data-correct="true">There is no external difference between the sexes — you must examine the gonad tissue</button>
+          <button class="opt" data-correct="false">You can, but only during winter</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-why" id="d-why"><label for="d-why">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section id="s-biology">
+      <div class="inner">
+        <div class="eyebrow">Section 3</div>
+        <h2>Bivalve reproductive biology in five minutes</h2>
+
+        <h3>Where is the gonad?</h3>
+        <p>In clams the gonad is not a tidy, discrete organ like an ovary in a mammal. It is a <b>diffuse tissue</b> that spreads through the body around the visceral mass and digestive gland. When you slice and stain it, you are looking at a field of small sac-like compartments — <b>follicles</b> (in females) and <b>acini</b> (in males) — embedded in <b>connective tissue</b>. Gametes develop inside these compartments.</p>
+
+        <figure>
+          <svg class="svgfig" viewBox="0 0 760 250" role="img" aria-label="Schematic of a clam showing the diffuse gonad tissue surrounding the visceral mass.">
+            <rect width="760" height="250" fill="#fbfaf6"/>
+            <!-- shell -->
+            <path d="M120 150 Q120 60 260 55 Q470 50 560 95 Q620 125 560 165 Q470 205 260 200 Q120 200 120 150 Z" fill="#f0e6d6" stroke="#c9b48f" stroke-width="2"/>
+            <!-- visceral mass -->
+            <ellipse cx="300" cy="128" rx="120" ry="58" fill="#cfe0d8" stroke="#7fa494" stroke-width="2"/>
+            <text x="300" y="125" font-size="13" text-anchor="middle" fill="#3c5a4d" font-weight="700">Visceral mass</text>
+            <text x="300" y="143" font-size="11" text-anchor="middle" fill="#3c5a4d">(gut + digestive gland)</text>
+            <!-- gonad tissue (stippled ring) -->
+            <g fill="#e7a8c4" opacity="0.85">
+              <circle cx="220" cy="92" r="7"/><circle cx="250" cy="80" r="6"/><circle cx="300" cy="74" r="7"/><circle cx="350" cy="80" r="6"/><circle cx="385" cy="95" r="7"/>
+              <circle cx="210" cy="160" r="7"/><circle cx="250" cy="172" r="6"/><circle cx="300" cy="178" r="7"/><circle cx="350" cy="172" r="6"/><circle cx="388" cy="160" r="7"/>
+            </g>
+            <!-- siphon -->
+            <path d="M560 130 q70 0 120 0" stroke="#c9b48f" stroke-width="14" fill="none" stroke-linecap="round"/>
+            <text x="630" y="118" font-size="11" text-anchor="middle" fill="#8a6d3a">siphon</text>
+            <!-- labels -->
+            <line x1="300" y1="74" x2="300" y2="30" stroke="#b03a68" stroke-width="1.5"/>
+            <text x="300" y="24" font-size="13" text-anchor="middle" fill="#b03a68" font-weight="700">Gonad tissue</text>
+            <text x="300" y="226" font-size="11.5" text-anchor="middle" fill="#7a6a55">The gonad is diffuse — it wraps around the visceral mass rather than forming one organ.</text>
+          </svg>
+          <figcaption>Schematic (not to scale). A gonad sample is a small block of this tissue, fixed and sliced thin so the internal follicles and acini can be seen.</figcaption>
+        </figure>
+
+        <h3>Gametogenesis: gametes are built in stages</h3>
+        <p><b>Gametogenesis</b> is the production of gametes. It runs as an assembly line, and that is exactly why we can "stage" it — different time points look different under the microscope.</p>
+        <div class="cols">
+          <div class="sexbox f">
+            <h4>Females — oogenesis</h4>
+            <ul>
+              <li><b>Oogonia</b> — tiny stem cells lining the follicle wall.</li>
+              <li><b>Primary &amp; secondary oocytes</b> — grow larger; often <b>pear-shaped</b> while still attached to the wall by a stalk.</li>
+              <li><b>Mature ova</b> — large, round, and <b>free</b> in the follicle center, each with a big nucleus.</li>
+            </ul>
+          </div>
+          <div class="sexbox m">
+            <h4>Males — spermatogenesis</h4>
+            <ul>
+              <li><b>Spermatogonia</b> — stem cells on the acinus wall.</li>
+              <li><b>Spermatocytes &amp; spermatids</b> — successively smaller dividing cells moving inward.</li>
+              <li><b>Spermatozoa</b> — tiny, dense, packed in the center, often in <b>radial bands</b> with tails pointing to the lumen.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout key"><b>The single most useful idea in this tutorial:</b> in females, cells get <em>bigger and fewer</em> as they mature; in males, cells get <em>smaller and far more numerous</em> as they mature. Hold onto that and most slides make sense.</div>
+
+        <h3>Not every clam has two sexes</h3>
+        <p>Bivalves use several reproductive strategies. The two we focus on bracket the range:</p>
+        <div class="tablewrap">
+          <table class="stage">
+            <thead><tr><th>Strategy</th><th>What it means</th><th>Example here</th></tr></thead>
+            <tbody>
+              <tr><td>Dioecious</td><td>Separate sexes — an individual is male <em>or</em> female</td><td>Geoduck <em class="sci">Panopea generosa</em></td></tr>
+              <tr><td>Simultaneous hermaphrodite</td><td>One individual carries mature male <em>and</em> female tissue at once</td><td>Basket cockle <em class="sci">Clinocardium nuttallii</em></td></tr>
+              <tr><td>Mostly dioecious (sometimes hermaphrodite)</td><td>Usually separate sexes, occasional exceptions</td><td>Manila clam, Pacific oyster</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="quiz" data-q="bio">
+          <div class="q"><span class="num">Q</span>As a female gonad matures, the egg cells generally become…</div>
+          <button class="opt" data-correct="true">Larger and fewer, with many breaking free into the follicle center</button>
+          <button class="opt" data-correct="false">Smaller and more numerous, packed into tight bands</button>
+          <button class="opt" data-correct="false">Identical in size but darker</button>
+          <button class="opt" data-correct="false">Replaced entirely by connective tissue</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-biology" id="d-biology"><label for="d-biology">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section id="s-workflow">
+      <div class="inner">
+        <div class="eyebrow">Section 4</div>
+        <h2>From clam to slide: the H&amp;E workflow</h2>
+        <p>A slide doesn't come from the animal directly. The tissue is processed so that a microscope can resolve individual cells. Knowing the steps helps you read — and trust — what you see.</p>
+        <ol>
+          <li><b>Sample</b> a small block of gonad tissue (a few millimeters across) from around the visceral mass.</li>
+          <li><b>Fix</b> it in a chemical fixative to lock the cells in place and stop decay. (Both studies here used fixation before processing; poorly fixed tissue can be unreadable — more on that later.)</li>
+          <li><b>Embed, section, and mount</b> — the tissue is sliced into ribbons only a few microns thick and laid on a glass slide.</li>
+          <li><b>Stain</b> with hematoxylin and eosin.</li>
+        </ol>
+
+        <h3>What the two stains do</h3>
+        <p>H&amp;E is the workhorse stain in histology, and the color code is the same on every slide you will ever read:</p>
+        <div class="cols">
+          <div class="sexbox" style="background:var(--hema-bg);border-color:#d9c7ef">
+            <h4 style="color:var(--hema)">Hematoxylin → purple / blue</h4>
+            <ul>
+              <li>Binds acidic material — above all <b>DNA in nuclei</b>.</li>
+              <li>So <b>nuclei look purple-blue.</b> Sperm, which are almost pure nucleus, appear as a dense purple haze.</li>
+            </ul>
+          </div>
+          <div class="sexbox" style="background:var(--eosin-bg);border-color:#f3cfdd">
+            <h4 style="color:var(--eosin)">Eosin → pink / red</h4>
+            <ul>
+              <li>Binds basic material — mostly <b>cytoplasm</b> and connective tissue proteins.</li>
+              <li>So <b>cytoplasm and the body of an egg look pink</b>, with a purple nucleus inside.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout key"><b>Mental shortcut:</b> purple = "where the DNA is" (nuclei, sperm); pink = "the stuff around it" (cytoplasm, connective tissue). A follicle full of big pink cells with purple dots = eggs. A follicle full of solid purple swirls = sperm.</div>
+
+        <h3>Magnification: zoom for different jobs</h3>
+        <p>The studies imaged slides at several magnifications, and each answers a different question:</p>
+        <div class="tablewrap">
+          <table class="stage">
+            <thead><tr><th>Power</th><th>What it's good for</th></tr></thead>
+            <tbody>
+              <tr><td>4× / 10×</td><td>The big picture — how much of the field is follicle/acinus vs. connective tissue, and how full the compartments are. Most staging starts here.</td></tr>
+              <tr><td>40×</td><td>Cell-level detail — measuring an oocyte, checking whether sperm are arranged in bands, telling a spermatid from a spermatozoon.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="deck" id="deck-terms">
+          <div class="flip"><div class="flip-in"><div class="flip-face flip-front">Follicle<small>tap to flip</small></div><div class="flip-face flip-back">Sac-like compartment in the <b>female</b> gonad where oocytes develop.</div></div></div>
+          <div class="flip"><div class="flip-in"><div class="flip-face flip-front">Acinus<small>tap to flip</small></div><div class="flip-face flip-back">Sac-like compartment in the <b>male</b> gonad where sperm develop. Plural: acini.</div></div></div>
+          <div class="flip"><div class="flip-in"><div class="flip-face flip-front">Lumen<small>tap to flip</small></div><div class="flip-face flip-back">The open central space of a follicle or acinus that fills with mature gametes.</div></div></div>
+          <div class="flip"><div class="flip-in"><div class="flip-face flip-front">Connective tissue<small>tap to flip</small></div><div class="flip-face flip-back">The "packing" tissue between follicles/acini. <b>Lots</b> of it = immature; little = ripe.</div></div></div>
+        </div>
+
+        <div class="quiz" data-q="stain">
+          <div class="q"><span class="num">Q</span>You see a compartment crammed with a swirling, solid <b>purple</b> mass and almost no pink. What is the most likely content?</div>
+          <button class="opt" data-correct="false">Mature eggs (oocytes)</button>
+          <button class="opt" data-correct="true">Densely packed sperm (an acinus full of spermatozoa)</button>
+          <button class="opt" data-correct="false">Empty connective tissue</button>
+          <button class="opt" data-correct="false">A fixation artifact with no biological meaning</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-workflow" id="d-workflow"><label for="d-workflow">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 5 -->
+    <section id="s-sexing">
+      <div class="inner">
+        <div class="eyebrow">Section 5</div>
+        <h2>Telling the sexes apart</h2>
+        <p>This is the first question on any slide. The rule is short:</p>
+        <div class="callout key" style="font-size:1.02rem"><b>See oocytes → female. See spermatids or spermatozoa → male.</b> Everything else is just learning what those cells look like.</div>
+
+        <h3>The female follicle, labeled</h3>
+        <figure>
+          <svg class="svgfig" viewBox="0 0 760 330" role="img" aria-label="Labeled diagram of a female follicle showing oogonia, attached pear-shaped oocyte, free secondary oocyte with nucleus, lumen, and connective tissue.">
+            <rect width="760" height="330" fill="#fff"/>
+            <!-- connective tissue background -->
+            <rect x="0" y="0" width="760" height="330" fill="#fbeef4"/>
+            <!-- follicle -->
+            <ellipse cx="360" cy="165" rx="250" ry="135" fill="#fdf6f9" stroke="#d98bb0" stroke-width="3"/>
+            <text x="360" y="300" font-size="12" text-anchor="middle" fill="#a64a72" font-style="italic">follicle wall (germinal epithelium)</text>
+            <!-- oogonia on wall -->
+            <circle cx="190" cy="100" r="9" fill="#cf80a6"/><circle cx="170" cy="130" r="8" fill="#cf80a6"/>
+            <circle cx="200" cy="230" r="9" fill="#cf80a6"/>
+            <!-- attached pear-shaped oocyte -->
+            <path d="M250 235 q12 -55 48 -60 q34 -4 40 30 q5 34 -28 44 q-44 13 -60 -14 Z" fill="#f4c2d6" stroke="#c76a96" stroke-width="2"/>
+            <circle cx="305" cy="205" r="13" fill="#7b4a9e"/><circle cx="305" cy="205" r="4" fill="#3d2459"/>
+            <!-- free secondary oocyte (large, central) -->
+            <circle cx="430" cy="150" r="58" fill="#f6cfe0" stroke="#c76a96" stroke-width="2"/>
+            <circle cx="430" cy="150" r="22" fill="#8457ab"/><circle cx="430" cy="150" r="7" fill="#3d2459"/>
+            <!-- small free oocyte -->
+            <circle cx="500" cy="225" r="30" fill="#f6cfe0" stroke="#c76a96" stroke-width="2"/>
+            <circle cx="500" cy="225" r="11" fill="#8457ab"/>
+            <!-- labels with leader lines -->
+            <g font-size="12.5" font-weight="600">
+              <line x1="180" y1="115" x2="70" y2="60" stroke="#a64a72"/><text x="66" y="52" text-anchor="end" fill="#a64a72">Oogonia (stem cells on wall)</text>
+              <line x1="300" y1="215" x2="250" y2="300" stroke="#a64a72"/><text x="246" y="314" text-anchor="end" fill="#a64a72">Attached, pear-shaped oocyte</text>
+              <line x1="430" y1="92" x2="560" y2="45" stroke="#a64a72"/><text x="566" y="40" fill="#a64a72">Free secondary oocyte (large)</text>
+              <line x1="452" y1="150" x2="690" y2="120" stroke="#7b4a9e"/><text x="694" y="116" fill="#7b4a9e">Nucleus + nucleolus (purple)</text>
+              <line x1="540" y1="200" x2="690" y2="220" stroke="#a64a72"/><text x="694" y="224" fill="#a64a72">Lumen (open center)</text>
+            </g>
+          </svg>
+          <figcaption>A female follicle. Eggs are large, round, pink-bodied cells with a prominent purple nucleus. Immature ones cling to the wall (often pear-shaped); mature ones float free in the lumen.</figcaption>
+        </figure>
+
+        <h3>The male acinus, labeled</h3>
+        <figure>
+          <svg class="svgfig" viewBox="0 0 760 330" role="img" aria-label="Labeled diagram of a male acinus showing spermatogonia and spermatocytes on the wall, spermatids, and a center filled with spermatozoa arranged in radial bands.">
+            <rect width="760" height="330" fill="#eaf1f9"/>
+            <!-- acinus -->
+            <ellipse cx="360" cy="165" rx="250" ry="135" fill="#f4f8fc" stroke="#5f8fc0" stroke-width="3"/>
+            <!-- radial sperm bands toward center -->
+            <g stroke="#6a4aa0" stroke-width="2" opacity="0.8">
+              <line x1="360" y1="165" x2="360" y2="55"/><line x1="360" y1="165" x2="450" y2="70"/>
+              <line x1="360" y1="165" x2="510" y2="120"/><line x1="360" y1="165" x2="520" y2="200"/>
+              <line x1="360" y1="165" x2="450" y2="255"/><line x1="360" y1="165" x2="360" y2="275"/>
+              <line x1="360" y1="165" x2="260" y2="255"/><line x1="360" y1="165" x2="205" y2="200"/>
+              <line x1="360" y1="165" x2="210" y2="115"/><line x1="360" y1="165" x2="270" y2="70"/>
+            </g>
+            <!-- dense purple sperm haze -->
+            <g fill="#5b3a86" opacity="0.55">
+              <circle cx="360" cy="165" r="46"/>
+            </g>
+            <g fill="#43286a">
+              <circle cx="345" cy="150" r="2.5"/><circle cx="372" cy="158" r="2.5"/><circle cx="360" cy="178" r="2.5"/><circle cx="350" cy="172" r="2.5"/><circle cx="378" cy="172" r="2.5"/><circle cx="365" cy="148" r="2.5"/>
+            </g>
+            <!-- wall cells: outer row larger (spermatogonia), inner smaller (spermatids) -->
+            <g fill="#7e62b4"><circle cx="170" cy="120" r="7"/><circle cx="185" cy="155" r="7"/><circle cx="175" cy="200" r="7"/><circle cx="220" cy="90" r="7"/><circle cx="300" cy="70" r="7"/></g>
+            <g fill="#9d86c9"><circle cx="225" cy="140" r="4.5"/><circle cx="235" cy="170" r="4.5"/><circle cx="250" cy="120" r="4.5"/><circle cx="290" cy="105" r="4.5"/></g>
+            <g font-size="12.5" font-weight="600">
+              <line x1="180" y1="135" x2="70" y2="70" stroke="#2a6098"/><text x="66" y="62" text-anchor="end" fill="#2a6098">Spermatogonia / spermatocytes (wall)</text>
+              <line x1="250" y1="120" x2="200" y2="300" stroke="#2a6098"/><text x="196" y="314" text-anchor="end" fill="#2a6098">Spermatids (smaller, moving inward)</text>
+              <line x1="406" y1="165" x2="560" y2="120" stroke="#5b3a86"/><text x="566" y="116" fill="#5b3a86">Spermatozoa packed in center</text>
+              <line x1="450" y1="70" x2="600" y2="45" stroke="#6a4aa0"/><text x="606" y="40" fill="#6a4aa0">Radial bands, tails to lumen</text>
+            </g>
+          </svg>
+          <figcaption>A male acinus. Sperm are almost pure nucleus, so a ripe acinus reads as a solid purple mass — often with a pinwheel of radial bands, heads on the outside and tails sweeping into the center.</figcaption>
+        </figure>
+
+        <div class="cols">
+          <div class="sexbox f">
+            <h4>Female — look for</h4>
+            <ul>
+              <li>Large, round, individually visible cells.</li>
+              <li>Pink cytoplasm with one big purple nucleus each.</li>
+              <li>Some attached to the wall (pear-shaped), some free in the center.</li>
+              <li>You can count and measure them.</li>
+            </ul>
+          </div>
+          <div class="sexbox m">
+            <h4>Male — look for</h4>
+            <ul>
+              <li>A dense, fine, purple mass — too small to count.</li>
+              <li>Radial bands / whorls in ripe acini.</li>
+              <li>A size gradient: bigger cells on the wall, tiny sperm in the center.</li>
+              <li>Little to no pink inside a full acinus.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="quiz" data-q="sex1">
+          <div class="q"><span class="num">Q1</span>A compartment contains a dozen large round cells, each with pink cytoplasm and a single big purple nucleus; a few are still attached to the wall by a stalk. Sex?</div>
+          <button class="opt" data-correct="true">Female</button>
+          <button class="opt" data-correct="false">Male</button>
+          <button class="opt" data-correct="false">Impossible to tell</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="quiz" data-q="sex2">
+          <div class="q"><span class="num">Q2</span>At 40× you see countless tiny dense nuclei sweeping toward an open center in radial bands, with very little pink. Sex?</div>
+          <button class="opt" data-correct="false">Female</button>
+          <button class="opt" data-correct="true">Male</button>
+          <button class="opt" data-correct="false">Impossible to tell</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-sexing" id="d-sexing"><label for="d-sexing">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section id="s-female">
+      <div class="inner">
+        <div class="eyebrow">Section 6</div>
+        <h2>Staging female development — the geoduck scheme</h2>
+        <p>Once you know it's female, the second question is <b>how ripe?</b> Crandall &amp; Roberts staged 70 geoduck gonads sampled weekly across one winter. They built a fine-scale, 7-stage scheme for females based on two measurable things:</p>
+        <ul>
+          <li><b>Secondary (2°) oocyte size</b>, in microns (µ) — bigger eggs = more mature.</li>
+          <li><b>Follicle size</b> and how much of the field is follicle vs. connective tissue.</li>
+        </ul>
+
+        <div class="tablewrap">
+          <table class="stage">
+            <thead><tr><th>Stage</th><th>Defining characteristics</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>No secondary oocytes, or 2° oocytes only ~5–15 µ</td></tr>
+              <tr><td>2</td><td>Follicles ~200–300 µ; 2° oocytes ~20–35 µ</td></tr>
+              <tr><td>3</td><td>Follicles ~300–500 µ; 2° oocytes ~20–35 µ</td></tr>
+              <tr><td>4</td><td>Very few follicles; 2° oocytes ~45–60 µ</td></tr>
+              <tr><td>5</td><td>More follicles than Stage 4; 2° oocytes ~50–75 µ</td></tr>
+              <tr><td>6</td><td>More connective tissue than Stage 7; 2° oocytes ~65–85 µ</td></tr>
+              <tr><td>7</td><td>Almost no connective tissue, mostly follicles; 2° oocytes ~65–85 µ</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout"><b>How to read this table.</b> Two things climb together as you go down: <em>oocyte size</em> and <em>how packed with follicles</em> the tissue is. By Stage 7 the field is nearly wall-to-wall follicles full of large eggs, and connective tissue has all but vanished.</div>
+
+        <figure>
+          <img src="images/geoduck-female-stages.png" alt="Composite of geoduck female gonad histology, stages 1 through 7, each shown at 10x and 40x.">
+          <figcaption><b>Real geoduck female slides, Stages 1–7</b> (10× left, 40× right of each pair). Trace the progression: in early stages the field is pale and mostly connective tissue with tiny cells; by the late stages it fills with large, well-defined oocytes. Source: Crandall &amp; Roberts, geoduck reproductive-maturation report.</figcaption>
+        </figure>
+
+        <div class="callout key"><b>Fine-scale staging is relative, not universal.</b> Because this scheme was built to resolve small weekly changes across one winter, its "Stage 3" is <em>not</em> the same as a "Stage 3" in the broader literature, where stage 3 may mean fully mature. Always know which scheme you're using before comparing numbers.</div>
+
+        <div class="practice">
+          <div class="ask">Practice — you're handed an unlabeled female geoduck slide:</div>
+          <p style="margin:.2em 2px .8em; font-size:.95rem">At 40× the secondary oocytes measure about 70 µ. At 10× the field is wall-to-wall follicles with almost no connective tissue between them. What stage, roughly?</p>
+          <button class="reveal-btn" onclick="revealAns(this)">Reveal answer</button>
+          <div class="answer"><b>Around Stage 7.</b> Oocytes of 65–85 µ place it at Stage 6 or 7; "almost no connective tissue, mostly follicles" is the feature that distinguishes Stage 7 from Stage 6 (which keeps more connective tissue). This is a ripe female.</div>
+        </div>
+
+        <div class="quiz" data-q="fstage">
+          <div class="q"><span class="num">Q</span>Two female slides have the same oocyte size (~70 µ), but one has noticeably more connective tissue between follicles than the other. Which is more advanced?</div>
+          <button class="opt" data-correct="true">The one with <b>less</b> connective tissue (closer to Stage 7)</button>
+          <button class="opt" data-correct="false">The one with <b>more</b> connective tissue</button>
+          <button class="opt" data-correct="false">They must be identical in stage</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-female" id="d-female"><label for="d-female">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section id="s-male">
+      <div class="inner">
+        <div class="eyebrow">Section 7</div>
+        <h2>Staging male development — the geoduck scheme</h2>
+        <p>Males can't be staged by "egg size" — sperm are all tiny. Instead, Crandall &amp; Roberts used two coverage measures:</p>
+        <ul>
+          <li><b>How much of the tissue is acini</b> (vs. connective tissue) — and how large the acini are.</li>
+          <li><b>What fraction of each acinus is filled with spermatids/spermatozoa</b> — i.e., how "full" it is.</li>
+        </ul>
+
+        <div class="tablewrap">
+          <table class="stage">
+            <thead><tr><th>Stage</th><th>Defining characteristics</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Mostly connective tissue; small acini; ~&lt;5% spermatids per acinus</td></tr>
+              <tr><td>2</td><td>Larger acini than Stage 1; ~5–10% spermatids per acinus</td></tr>
+              <tr><td>3</td><td>More connective tissue than Stage 4; smaller acini than Stages 4–5; ~50% spermatids per acinus</td></tr>
+              <tr><td>4</td><td>More connective tissue than Stage 5; large acini; ~50–75% spermatids per acinus</td></tr>
+              <tr><td>5</td><td>Very little connective tissue; large acini; ~75–90% spermatids per acinus</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout"><b>Read it as "filling up."</b> Early acini are small and nearly empty (mostly connective tissue around them). As the male ripens, acini grow, connective tissue shrinks, and each acinus fills with sperm — until at Stage 5 the field is large acini packed 75–90% full.</div>
+
+        <figure>
+          <img src="images/geoduck-male-stages.png" alt="Composite of geoduck male gonad histology, stages 1 through 5, each shown at 10x and 40x.">
+          <figcaption><b>Real geoduck male slides, Stages 1–5</b> (10× left, 40× right of each pair). Watch the purple take over: early stages are pale with small, mostly empty acini; by Stage 5 the acini are large and densely filled with banded spermatozoa. Source: Crandall &amp; Roberts.</figcaption>
+        </figure>
+
+        <div class="practice">
+          <div class="ask">Practice — an unlabeled male geoduck slide:</div>
+          <p style="margin:.2em 2px .8em; font-size:.95rem">The acini are large and there is very little connective tissue left. At 40× each acinus looks roughly 80% packed with banded spermatozoa. Stage?</p>
+          <button class="reveal-btn" onclick="revealAns(this)">Reveal answer</button>
+          <div class="answer"><b>Stage 5.</b> "Very little connective tissue, large acini, ~75–90% spermatids" is the Stage 5 signature — a ripe male, ready to spawn.</div>
+        </div>
+
+        <div class="quiz" data-q="mstage">
+          <div class="q"><span class="num">Q</span>Which combination indicates the <b>least</b> mature male gonad?</div>
+          <button class="opt" data-correct="true">Mostly connective tissue, small acini, &lt;5% sperm</button>
+          <button class="opt" data-correct="false">Large acini, little connective tissue, ~85% sperm</button>
+          <button class="opt" data-correct="false">Large acini, ~60% sperm</button>
+          <button class="opt" data-correct="false">Acini ~50% full of sperm</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-male" id="d-male"><label for="d-male">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 8 -->
+    <section id="s-cockle">
+      <div class="inner">
+        <div class="eyebrow">Section 8</div>
+        <h2>The hermaphrodite twist — the basket cockle</h2>
+        <p>Now the exception that makes you a careful reader. The basket cockle (<em class="sci">Clinocardium nuttallii</em>) is a <b>simultaneous hermaphrodite</b>: a single animal carries <b>both</b> male and female tissue at the same time, in separate follicles sitting side by side in the same section.</p>
+
+        <div class="callout warn"><b>Don't panic when you see both.</b> In a cockle, finding oocytes <em>and</em> spermatozoa on one slide is not a mistake, not contamination, and not a mixed-up sample — it's the normal biology. You stage the <b>female follicles</b> and the <b>male follicles separately</b>, then compare them.</div>
+
+        <h3>The cockle 5-grade scale</h3>
+        <p>Lawson &amp; Roberts (following Gallucci &amp; Gallucci 1982) used a single 1–5 grade scale applied to each gonad type. Notice it runs further than the geoduck scheme — it also covers <b>spawned</b> and <b>spent</b> tissue.</p>
+        <div class="tablewrap">
+          <table class="stage">
+            <thead><tr><th>Grade</th><th>Female tissue</th><th>Male tissue</th></tr></thead>
+            <tbody>
+              <tr><td>1<br><span style="font-weight:400;color:var(--ink-soft)">underdeveloped</span></td><td>Oogonia + a few oocytes line the follicle; follicles generally collapsed.</td><td>Spermatogonia and spermatocytes partially line the wall; follicles generally collapsed.</td></tr>
+              <tr><td>2<br><span style="font-weight:400;color:var(--ink-soft)">developing</span></td><td>Rounded and many pear-shaped oocytes attached to the wall; 1–2 detached; follicle walls breaking down so follicles look larger.</td><td>Spermatocytes and spermatids predominate; &lt;⅓ of the follicle filled with spermatozoa.</td></tr>
+              <tr><td>3<br><span style="font-weight:400;color:var(--ink-soft)">ripe</span></td><td>Some oocytes still attached; many now free within the follicle.</td><td>Follicle &gt;⅔ full of spermatozoa, arranged in characteristic bands.</td></tr>
+              <tr><td>4<br><span style="font-weight:400;color:var(--ink-soft)">recently spawned</span></td><td>Occasional free oocyte; many remaining oocytes undergoing karyolysis &amp; cytolysis (breaking down).</td><td>Follicle collapsed with some residual spermatozoa; a few spermatids still on the wall.</td></tr>
+              <tr><td>5<br><span style="font-weight:400;color:var(--ink-soft)">spent</span></td><td colspan="2" style="font-weight:400">Hard to tell the sexes apart. Follicles collapsed; only rare residual eggs or sperm reveal a follicle's sex; pigmented cells present.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>See it on real slides</h3>
+        <p>In these cockle sections the <b>male</b> gonad is circled in white and the <b>female</b> gonad in red — both in the <em>same animal</em>.</p>
+        <div class="cols">
+          <figure style="margin:8px 0"><img src="images/cockle-stage1.png" alt="Cockle stage 1 gonad, underdeveloped, male circled white and female circled red."><figcaption><b>Grade 1 — underdeveloped.</b> Collapsed follicles, sparse cells, lots of pale connective tissue.</figcaption></figure>
+          <figure style="margin:8px 0"><img src="images/cockle-stage2.png" alt="Cockle stage 2 gonad, developing, male circled white and female circled red."><figcaption><b>Grade 2 — developing.</b> Follicles filling; oocytes attached to walls; acini partly filling with sperm.</figcaption></figure>
+        </div>
+        <figure><img src="images/cockle-stage3.png" alt="Cockle stage 3 gonad, developed, male circled white and female circled red."><figcaption><b>Grade 3 — ripe.</b> Female follicle (red) packed with large free oocytes; male follicle (white) more than two-thirds full of banded spermatozoa. Source: Lawson &amp; Roberts, basket-cockle report.</figcaption></figure>
+
+        <h3>Relative maturity — a real finding you can use</h3>
+        <p>Because both sexes sit in one animal, you can ask whether they ripen <em>in step</em>. Lawson &amp; Roberts found that when the two differed, the <b>male gonad was usually ahead of the female</b>, and that larger cockles (&gt;3.5 cm) showed more uniform, predictable maturity between the two. Practical upshot: the female gonad is the more conservative indicator — if the female tissue is ripe, the male almost certainly is too.</p>
+
+        <div class="quiz" data-q="herm1">
+          <div class="q"><span class="num">Q1</span>On a basket cockle slide you clearly see both mature oocytes and bands of spermatozoa in neighboring follicles. The correct interpretation is:</div>
+          <button class="opt" data-correct="false">The sample was contaminated with a second animal</button>
+          <button class="opt" data-correct="true">Normal — the cockle is a simultaneous hermaphrodite with both tissues at once</button>
+          <button class="opt" data-correct="false">The animal is changing sex this season</button>
+          <button class="opt" data-correct="false">A staining error made eggs look like sperm</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="quiz" data-q="herm2">
+          <div class="q"><span class="num">Q2</span>A cockle follicle is collapsed, holds only a few oocytes that are visibly breaking down (karyolysis), with little else. Best grade?</div>
+          <button class="opt" data-correct="false">Grade 1 (underdeveloped)</button>
+          <button class="opt" data-correct="false">Grade 3 (ripe)</button>
+          <button class="opt" data-correct="true">Grade 4 (recently spawned)</button>
+          <button class="opt" data-correct="false">Grade 2 (developing)</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-cockle" id="d-cockle"><label for="d-cockle">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section id="s-caveats">
+      <div class="inner">
+        <div class="eyebrow">Section 9</div>
+        <h2>Cautions &amp; common pitfalls</h2>
+        <p>Histological staging is powerful but human. Keep these in mind so your calls are honest and reproducible.</p>
+
+        <h3>Staging is partly subjective</h3>
+        <p>The cutoffs between stages are drawn by people. Crandall &amp; Roberts explicitly note their stage boundaries were set subjectively. That's normal — but it means you should stage a whole set with the <em>same eyes and same criteria</em>, ideally without knowing which week or treatment a slide came from (to avoid bias), and have a second reader check tricky ones.</p>
+
+        <h3>Know which scheme you're using</h3>
+        <p>A fine-scale scheme (designed to catch small weekly changes) and a broad-scale scheme (immature → ripe → spent) use the same numbers to mean different things. A geoduck "Stage 3" on the fine winter scheme is fairly <em>immature</em>; a "Stage 3" in much of the literature is <em>mature</em>. Never compare stage numbers across schemes without checking the definitions.</p>
+
+        <h3>Fixation and section quality</h3>
+        <p>Poorly fixed tissue can be distorted or unreadable — Crandall &amp; Roberts flagged several specimens as incorrectly fixed and had to set them aside. Before you stage, ask: is this section intact, or am I looking at an artifact (a tear, a fold, shrinkage)? Don't over-interpret damaged tissue.</p>
+
+        <h3>Size and age are clues, not proof</h3>
+        <p>It's tempting to guess ripeness from how big the animal is. In geoduck, Crandall &amp; Roberts found <b>no</b> reliable correlation between weight or length and stage at their fine time scale. In cockle, size was a <em>better</em> predictor (bigger = more developed), but still a tendency, not a guarantee. The slide is the ground truth; morphometrics only support it.</p>
+
+        <div class="callout key"><b>Good practice checklist:</b> stage blind to treatment · apply one consistent scheme · note fixation quality · use a second reader for borderline calls · let the tissue, not the animal's size, make the final call.</div>
+
+        <div class="quiz" data-q="caveat">
+          <div class="q"><span class="num">Q</span>A classmate stages a batch knowing which were "spring-conditioned," and reports those as more advanced. The biggest methodological concern is:</div>
+          <button class="opt" data-correct="true">Possible bias — staging blind to treatment would be more trustworthy</button>
+          <button class="opt" data-correct="false">Nothing; knowing the treatment improves accuracy</button>
+          <button class="opt" data-correct="false">They used the wrong stain</button>
+          <button class="opt" data-correct="false">Histology can't detect maturity at all</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-caveats" id="d-caveats"><label for="d-caveats">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section id="s-capstone">
+      <div class="inner">
+        <div class="eyebrow">Section 10</div>
+        <h2>Putting it together</h2>
+        <p>Here is the whole workflow on one card. Run every new slide through it.</p>
+
+        <figure>
+          <svg class="svgfig" viewBox="0 0 760 430" role="img" aria-label="Decision flow: check tissue quality, then sex, then stage.">
+            <rect width="760" height="430" fill="#fff"/>
+            <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#0a6e7c"/></marker></defs>
+            <!-- step 1 -->
+            <rect x="250" y="14" width="260" height="56" rx="12" fill="var(--sea-light)" stroke="#0a6e7c" stroke-width="1.5"/>
+            <text x="380" y="38" text-anchor="middle" font-size="13.5" font-weight="700" fill="#084e58">1 · Is the section readable?</text>
+            <text x="380" y="56" text-anchor="middle" font-size="11.5" fill="#41545d">Check fixation, tears, folds. If bad → set aside.</text>
+            <line x1="380" y1="70" x2="380" y2="92" stroke="#0a6e7c" stroke-width="2" marker-end="url(#arr)"/>
+            <!-- step 2 -->
+            <rect x="250" y="94" width="260" height="56" rx="12" fill="var(--sea-light)" stroke="#0a6e7c" stroke-width="1.5"/>
+            <text x="380" y="118" text-anchor="middle" font-size="13.5" font-weight="700" fill="#084e58">2 · What's inside the compartments?</text>
+            <text x="380" y="136" text-anchor="middle" font-size="11.5" fill="#41545d">Big pink cells w/ purple nuclei? Dense purple mass?</text>
+            <!-- branch -->
+            <line x1="380" y1="150" x2="380" y2="168" stroke="#0a6e7c" stroke-width="2"/>
+            <line x1="180" y1="168" x2="580" y2="168" stroke="#0a6e7c" stroke-width="2"/>
+            <line x1="180" y1="168" x2="180" y2="188" stroke="#0a6e7c" stroke-width="2" marker-end="url(#arr)"/>
+            <line x1="580" y1="168" x2="580" y2="188" stroke="#0a6e7c" stroke-width="2" marker-end="url(#arr)"/>
+            <!-- female box -->
+            <rect x="60" y="190" width="240" height="74" rx="12" fill="#fdeef4" stroke="#c76a96" stroke-width="1.5"/>
+            <text x="180" y="214" text-anchor="middle" font-size="13" font-weight="700" fill="#b03a68">Oocytes → FEMALE</text>
+            <text x="180" y="233" text-anchor="middle" font-size="11" fill="#8a4a68">Stage by oocyte size +</text>
+            <text x="180" y="249" text-anchor="middle" font-size="11" fill="#8a4a68">follicle vs. connective tissue</text>
+            <!-- male box -->
+            <rect x="460" y="190" width="240" height="74" rx="12" fill="#eaf3fb" stroke="#5f8fc0" stroke-width="1.5"/>
+            <text x="580" y="214" text-anchor="middle" font-size="13" font-weight="700" fill="#2a6098">Spermatozoa → MALE</text>
+            <text x="580" y="233" text-anchor="middle" font-size="11" fill="#3a6a98">Stage by acinus size +</text>
+            <text x="580" y="249" text-anchor="middle" font-size="11" fill="#3a6a98">% filled with sperm</text>
+            <!-- both -->
+            <line x1="180" y1="264" x2="180" y2="300" stroke="#0a6e7c" stroke-width="2"/>
+            <line x1="580" y1="264" x2="580" y2="300" stroke="#0a6e7c" stroke-width="2"/>
+            <line x1="180" y1="300" x2="580" y2="300" stroke="#0a6e7c" stroke-width="2"/>
+            <line x1="380" y1="300" x2="380" y2="320" stroke="#0a6e7c" stroke-width="2" marker-end="url(#arr)"/>
+            <rect x="230" y="322" width="300" height="56" rx="12" fill="#fcf6ea" stroke="#b8791b" stroke-width="1.5"/>
+            <text x="380" y="346" text-anchor="middle" font-size="13" font-weight="700" fill="#8a5a12">Both present in one animal?</text>
+            <text x="380" y="364" text-anchor="middle" font-size="11.5" fill="#7a5a2a">Hermaphrodite (e.g. cockle) — stage each separately.</text>
+            <text x="380" y="404" text-anchor="middle" font-size="11.5" font-style="italic" fill="#41545d">Record: sex · stage · scheme used · section quality.</text>
+          </svg>
+          <figcaption>The staging decision flow. Quality first, then sex, then stage — and note which scheme you applied.</figcaption>
+        </figure>
+
+        <h3>Capstone self-check</h3>
+        <p>Five mixed questions. No peeking at earlier sections first — see how much stuck.</p>
+
+        <div class="quiz" data-q="cap1">
+          <div class="q"><span class="num">1</span>On an H&amp;E slide, which structure will stain the deepest purple?</div>
+          <button class="opt" data-correct="false">The pink cytoplasm of a large oocyte</button>
+          <button class="opt" data-correct="true">A center packed with sperm nuclei</button>
+          <button class="opt" data-correct="false">Empty connective tissue</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="quiz" data-q="cap2">
+          <div class="q"><span class="num">2</span>A geoduck female slide: oocytes ~25 µ, follicles ~250 µ, plenty of connective tissue. Closest stage?</div>
+          <button class="opt" data-correct="true">Stage 2</button>
+          <button class="opt" data-correct="false">Stage 5</button>
+          <button class="opt" data-correct="false">Stage 7</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="quiz" data-q="cap3">
+          <div class="q"><span class="num">3</span>A geoduck male slide: large acini, very little connective tissue, ~85% filled with banded sperm. Stage?</div>
+          <button class="opt" data-correct="false">Stage 1</button>
+          <button class="opt" data-correct="false">Stage 3</button>
+          <button class="opt" data-correct="true">Stage 5</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="quiz" data-q="cap4">
+          <div class="q"><span class="num">4</span>You find eggs and sperm together on one section. Before calling it a hermaphrodite, what should you confirm?</div>
+          <button class="opt" data-correct="true">The species — it's expected in a cockle, but would be unusual in a dioecious geoduck</button>
+          <button class="opt" data-correct="false">Nothing — it's always a hermaphrodite</button>
+          <button class="opt" data-correct="false">That you used eosin only</button>
+          <button class="opt" data-correct="false">The animal's exact weight</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="quiz" data-q="cap5">
+          <div class="q"><span class="num">5</span>A cockle follicle is collapsed with only rare residual gametes and some pigmented cells; sex is hard to call. Grade?</div>
+          <button class="opt" data-correct="false">Grade 2</button>
+          <button class="opt" data-correct="false">Grade 3</button>
+          <button class="opt" data-correct="true">Grade 5 (spent)</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="card" id="scorecard" style="text-align:center; display:none">
+          <div style="font-size:1.05rem; font-weight:700; color:var(--sea-deep)" id="scoreline"></div>
+          <div style="font-size:.92rem; color:var(--ink-soft); margin-top:6px" id="scoremsg"></div>
+        </div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-capstone" id="d-capstone"><label for="d-capstone">Mark this section as done</label></div>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section id="s-glossary">
+      <div class="inner">
+        <div class="eyebrow">Section 11</div>
+        <h2>Glossary &amp; sources</h2>
+
+        <h3>Glossary</h3>
+        <dl class="gloss">
+          <dt>Acinus</dt><dd>Sac-like compartment of the male gonad where sperm develop (plural: acini).</dd>
+          <dt>Connective tissue</dt><dd>Packing tissue between follicles/acini; abundant when immature, scarce when ripe.</dd>
+          <dt>Cytolysis / karyolysis</dt><dd>Breakdown of a cell / its nucleus — seen in spawned, degrading oocytes.</dd>
+          <dt>Dioecious</dt><dd>Having separate sexes; an individual is male or female (e.g., geoduck).</dd>
+          <dt>Eosin</dt><dd>The pink/red H&amp;E dye that stains cytoplasm and connective tissue.</dd>
+          <dt>Follicle</dt><dd>Sac-like compartment of the female gonad where oocytes develop.</dd>
+          <dt>Gametogenesis</dt><dd>Production of gametes — oogenesis (eggs) and spermatogenesis (sperm).</dd>
+          <dt>Gonad</dt><dd>The reproductive tissue; in bivalves it is diffuse, around the visceral mass.</dd>
+          <dt>Hematoxylin</dt><dd>The purple/blue H&amp;E dye that stains nuclei (DNA).</dd>
+          <dt>Lumen</dt><dd>The open central space of a follicle or acinus.</dd>
+          <dt>Oocyte</dt><dd>A developing egg cell; "secondary" (2°) oocytes are the larger, later ones used for sizing.</dd>
+          <dt>Simultaneous hermaphrodite</dt><dd>One animal bearing functional male and female tissue at the same time (e.g., basket cockle).</dd>
+          <dt>Spermatid / spermatozoon</dt><dd>Late-stage / final male gametes; their dense nuclei make ripe acini read solid purple.</dd>
+          <dt>Spent</dt><dd>Post-spawning gonad, largely emptied and collapsed.</dd>
+          <dt>Staging</dt><dd>Assigning a maturity rank to a gonad using defined histological criteria.</dd>
+        </dl>
+
+        <h3>Source reports</h3>
+        <p>This tutorial is built from two Roberts Lab reproductive-maturation studies. The staging tables, criteria, and all histology images come directly from them:</p>
+        <ul>
+          <li><b>Crandall, G., and S. B. Roberts.</b> <em>Characterization of Reproductive Maturation in Geoduck Clams (Panopea generosa).</em> Roberts Lab Current Findings. — the geoduck 7-stage female and 5-stage male schemes and slide images.</li>
+          <li><b>Lawson, D., and S. B. Roberts.</b> <em>Characterization of Reproductive Maturation in the Basket Cockle, Clinocardium nuttallii.</em> Roberts Lab Current Findings. — the 5-grade hermaphrodite scale (after Gallucci &amp; Gallucci 1982), relative-maturity findings, and cockle slide images.</li>
+        </ul>
+        <div class="callout"><b>Want to go deeper?</b> Read the two source reports in full for the sampling design, statistics, and the aquaculture context behind the staging schemes you just learned.</div>
+
+        <div class="done-toggle"><input type="checkbox" class="markdone" data-sec="s-glossary" id="d-glossary"><label for="d-glossary">Mark this section as done</label></div>
+
+        <div class="footer">
+          <p>Self-guided teaching resource · Roberts Lab. Built from the Crandall &amp; Roberts (geoduck) and Lawson &amp; Roberts (basket cockle) reproductive-maturation reports. Histology images © their respective authors, reused here for instruction. This module is standalone and self-contained.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<button class="topbtn" id="topbtn" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  var SECTIONS = ["s-start","s-why","s-biology","s-workflow","s-sexing","s-female","s-male","s-cockle","s-caveats","s-capstone","s-glossary"];
+  var store = {
+    get:function(k){ try{return JSON.parse(localStorage.getItem(k));}catch(e){return null;} },
+    set:function(k,v){ try{localStorage.setItem(k,JSON.stringify(v));}catch(e){} }
+  };
+
+  /* ---------- mobile menu ---------- */
+  var side=document.getElementById('side'), menubtn=document.getElementById('menubtn');
+  menubtn.addEventListener('click',function(){ side.classList.toggle('open'); });
+  side.addEventListener('click',function(e){ if(e.target.classList.contains('navlink')) side.classList.remove('open'); });
+
+  /* ---------- quizzes ---------- */
+  var capAnswered={};
+  document.querySelectorAll('.quiz').forEach(function(quiz){
+    var opts=quiz.querySelectorAll('.opt');
+    var fb=quiz.querySelector('.feedback');
+    var qid=quiz.getAttribute('data-q');
+    var isCap=qid && qid.indexOf('cap')===0;
+    opts.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        if(quiz.dataset.locked) return;
+        quiz.dataset.locked="1";
+        var correct=btn.getAttribute('data-correct')==="true";
+        opts.forEach(function(b){
+          b.disabled=true;
+          if(b.getAttribute('data-correct')==="true") b.classList.add('correct');
+        });
+        if(!correct) btn.classList.add('wrong');
+        fb.classList.add('show', correct?'good':'bad');
+        fb.textContent = correct ? "Correct. " + okMsg(qid) : "Not quite — the highlighted answer is correct. " + okMsg(qid);
+        if(isCap){ capAnswered[qid]=correct; updateScore(); }
+      });
+    });
+  });
+
+  function okMsg(qid){
+    var m={
+      why:"External features don't reveal sex — gonad histology is the reliable method.",
+      bio:"Eggs enlarge and break free as they ripen; sperm do the opposite.",
+      stain:"Sperm are nearly all nucleus, so they grab hematoxylin and read solid purple.",
+      sex1:"Big round pink cells with purple nuclei = oocytes = female.",
+      sex2:"A countless dense purple mass in radial bands = spermatozoa = male.",
+      fstage:"Less connective tissue (more wall-to-wall follicles) means more advanced — toward Stage 7.",
+      mstage:"Small acini in mostly connective tissue with <5% sperm is Stage 1.",
+      herm1:"In a simultaneous hermaphrodite, both tissues in one animal is normal.",
+      herm2:"Collapsed follicle with oocytes breaking down (karyolysis) = recently spawned, Grade 4.",
+      caveat:"Staging blind to treatment guards against unconscious bias.",
+      cap1:"Densely packed sperm nuclei stain the deepest purple.",
+      cap2:"~25 µ oocytes, ~250 µ follicles, ample connective tissue ≈ Stage 2.",
+      cap3:"Large full acini with little connective tissue ≈ Stage 5, a ripe male.",
+      cap4:"It's expected in a cockle but would be unusual in a dioecious geoduck — check the species.",
+      cap5:"Collapsed, only residual gametes, pigmented cells, sex unclear = Grade 5 (spent)."
+    };
+    return m[qid]||"";
+  }
+
+  function updateScore(){
+    var caps=["cap1","cap2","cap3","cap4","cap5"];
+    var answered=caps.filter(function(c){return c in capAnswered;});
+    if(answered.length<caps.length) return;
+    var right=caps.filter(function(c){return capAnswered[c];}).length;
+    var card=document.getElementById('scorecard');
+    card.style.display='block';
+    document.getElementById('scoreline').textContent="Capstone score: "+right+" / 5";
+    var msg = right===5 ? "Excellent — you can read a slide end to end. Try the real images again to lock it in."
+            : right>=3 ? "Solid. Revisit the sections behind any misses and you've got it."
+            : "Good start — rework Sections 5–8 and run the capstone again.";
+    document.getElementById('scoremsg').textContent=msg;
+    card.scrollIntoView({behavior:'smooth',block:'center'});
+  }
+
+  /* ---------- flip cards ---------- */
+  document.querySelectorAll('.flip').forEach(function(f){
+    f.addEventListener('click',function(){ f.classList.toggle('on'); });
+  });
+
+  /* ---------- progress / done ---------- */
+  var done = store.get('bivalveHistoDone') || {};
+  function refreshProgress(){
+    var count=0;
+    SECTIONS.forEach(function(id){
+      var link=document.querySelector('.navlink[href="#'+id+'"]');
+      var cb=document.querySelector('.markdone[data-sec="'+id+'"]');
+      if(done[id]){ count++; if(link)link.classList.add('done'); if(cb)cb.checked=true; }
+      else { if(link)link.classList.remove('done'); }
+    });
+    var pct=Math.round(count/SECTIONS.length*100);
+    document.getElementById('progbar').style.width=pct+'%';
+    document.getElementById('progtext').textContent=count+' of '+SECTIONS.length+' sections marked done';
+  }
+  document.querySelectorAll('.markdone').forEach(function(cb){
+    cb.addEventListener('change',function(){
+      done[cb.getAttribute('data-sec')]=cb.checked;
+      store.set('bivalveHistoDone',done);
+      refreshProgress();
+    });
+  });
+  refreshProgress();
+
+  /* ---------- scroll spy + back-to-top ---------- */
+  var links={}; SECTIONS.forEach(function(id){ links[id]=document.querySelector('.navlink[href="#'+id+'"]'); });
+  var topbtn=document.getElementById('topbtn');
+  var secEls=SECTIONS.map(function(id){return document.getElementById(id);});
+  function onScroll(){
+    var y=window.scrollY+140, cur=SECTIONS[0];
+    secEls.forEach(function(el,i){ if(el && el.offsetTop<=y) cur=SECTIONS[i]; });
+    SECTIONS.forEach(function(id){ if(links[id]) links[id].classList.toggle('active', id===cur); });
+    topbtn.classList.toggle('show', window.scrollY>600);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  topbtn.addEventListener('click',function(){ window.scrollTo({top:0,behavior:'smooth'}); });
+
+  /* expose reveal for inline buttons */
+  window.revealAns=function(btn){
+    var ans=btn.parentElement.querySelector('.answer');
+    ans.classList.add('show');
+    btn.style.display='none';
+  };
+})();
+</script>
+</body>
+</html>
