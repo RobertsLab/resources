@@ -79,7 +79,7 @@
 
 -   [Annotation](bio-Annotation.md)
 
--   [DNA Methylation Analysis](bio_DNA-methylation.md)
+-   [DNA Methylation Analysis](bio_DNA-methylation.md) - Bismark, EpiDiverse, methylKit, and lab examples for bisulfite sequencing workflows.
 
 -   [Gene Expression](bio-Gene-expression.md)
 
