@@ -232,6 +232,7 @@ Deduplication is recommended for whole-genome bisulfite samples, but should not 
 
 ### Bismark Lab Examples
 
+- [sr320/workflow-DNA-methylation](https://github.com/sr320/workflow-DNA-methylation) - end-to-end Roberts Lab WGBS pipeline built around Bismark. It starts with raw reads and covers trimming, alignment, deduplication, methylation extraction, `coverage2cytosine`, reporting, and optional MultiQC summaries. The repository also includes configurable templates, a pre-flight validation script, and downstream R scripts for methylation landscape summaries plus differential methylation analysis with methylKit and DSS.
 - <https://github.com/RobertsLab/code/blob/master/20-bismark.sh>
 - <https://github.com/sr320/paper-oly-mbdbs-gen/blob/master/code/00-Bismark.sh> - processes BS-MBDSeq data from Olympia oysters on Mox. Author: Steven Roberts. ![GitHub last commit](https://img.shields.io/github/last-commit/sr320/paper-oly-mbdbs-gen)
 - <https://raw.githubusercontent.com/laurahspencer/C.magister_methyl-oa/master/scripts/20201214_Cmag_bismark-align.sh> - SLURM script used to process MiSeq data from Dungeness crab on Mox. [Jupyter Notebook with details](https://github.com/laurahspencer/C.magister_methyl-oa/blob/master/notebooks/MBD-01%20Processing%20QC%20MiSeq%20data.ipynb). Author: Laura Spencer, derived from the [MethCompare workflow](https://github.com/hputnam/Meth_Compare). ![GitHub last commit](https://img.shields.io/github/last-commit/laurahspencer/C.magister_methyl-oa)
