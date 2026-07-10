@@ -35,7 +35,23 @@ A more detailed spreadsheet, including IP addresses is below (Google Sheet). You
 
 - [Roberts Lab Computers](https://docs.google.com/spreadsheets/d/1mtIITcjqZVEQtynYZFdOdx51uXTiXP7Jvvzv_SnWCDY/edit?usp=sharing)
 
-### Remote Services
+### Remote Computers
+
+The following are "nodes" or "slices" which we have within the Univ. of Washington's High Performance Computing (HPC) cluster, called "Hyak." The current subset we're a part of is called "Klone." See [the Klone Handbook section on "Adding a User"](https://robertslab.github.io/resources/klone_Adding-a-User/) to request access.
+
+NOTE: All users have access to the checkpoint partition (`ckpt`), but run times are limited to 5hrs and are subject to availability, as the pool of slices in the checkpoint partition are simply idle slices owned by other people.
+
+| ACCOUNT | PARTITION | CPUS | MEMORY | GPUS | STATUS |
+|---|---|---|---|---|---|
+| coenv | compute | 40 | 188G | 0 | TOTAL |
+| coenv | cpu-g2 | 928 | 7305G | 0 | TOTAL |
+| srlab | cpu-g2-mem2x | 32 | 503G | 0 | TOTAL |
+
+**Checkpoint Resources — Idle**
+
+| | CPUS | GPUS |
+|---|---|---|
+| Idle | 8750 | 205 |
 
 
 
