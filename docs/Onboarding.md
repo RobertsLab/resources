@@ -30,6 +30,7 @@ Hands-on, self-paced tutorials to build core skills. Each tracks your progress a
 -   [**The Unix Shell — Bash Tutorial**](../bash-tutorial.html) — navigate the file system, create and manage files, and combine commands with wildcards, redirection, and pipes. Start here if the command line is new to you.
 -   [**Git & GitHub Tutorial**](../github-tutorial.html) — the everyday version-control loop: create a repository, sync with the GitHub Desktop app, make changes, and commit and push (with an advanced command-line section).
 -   [**Agentic AI Bootcamp**](../agentic-ai-bootcamp.html) — get fluent with agentic AI and driving Claude Code, then shape a project that fits the lab's work. See also [Agentic Coding Tools](Agentic-Coding-Tools.md).
+-   [**TUSK**](https://robertslab.github.io/tusk/) — core learning modules covering technical skills (markdown, GitHub, bash, RStudio) alongside conceptual frameworks for marine science research. Work through them in order or use any module on its own.
 
 
 ------------------------------------------------------------------------
