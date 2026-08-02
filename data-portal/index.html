@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roberts Lab Data Portal</title>
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a1a2e; --muted: #5a5a72; --line: #e3e3ee;
+    --accent: #3949ab; --accent-soft: #eef0fb; --chip: #f3f4fa;
+    --ok: #1b7a4b; --ok-bg: #e6f4ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14141f; --fg: #e8e8f0; --muted: #9a9ab0; --line: #2a2a3d;
+      --accent: #8c9eff; --accent-soft: #1e2138; --chip: #1c1c2b;
+      --ok: #5fd398; --ok-bg: #16301f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--fg); background: var(--bg); }
+  header { padding: 22px 24px 0; }
+  h1 { margin: 0 0 2px; font-size: 22px; }
+  .sub { color: var(--muted); font-size: 13px; margin-bottom: 16px; }
+  .tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--line); padding: 0 24px; }
+  .tab { padding: 10px 16px; cursor: pointer; border: none; background: none; color: var(--muted);
+    font-size: 14px; font-weight: 600; border-bottom: 2px solid transparent; }
+  .tab.active { color: var(--accent); border-bottom-color: var(--accent); }
+  main { padding: 18px 24px 60px; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+  input[type=search], select { padding: 8px 11px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg); color: var(--fg); font-size: 14px; }
+  input[type=search] { flex: 1; min-width: 220px; }
+  label.cb { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted);
+    background: var(--chip); padding: 7px 11px; border-radius: 8px; cursor: pointer; }
+  .count { color: var(--muted); font-size: 13px; margin-left: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { position: sticky; top: 0; background: var(--bg); cursor: pointer; user-select: none; white-space: nowrap;
+    font-size: 12px; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); }
+  th:hover { color: var(--accent); }
+  tr:hover td { background: var(--accent-soft); }
+  .sp { font-style: italic; }
+  .chip { display: inline-block; background: var(--chip); border-radius: 6px; padding: 1px 7px; font-size: 12px;
+    color: var(--muted); margin: 1px 0; }
+  .sra { background: var(--ok-bg); color: var(--ok); font-weight: 600; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .dl { font-size: 12px; margin-right: 8px; white-space: nowrap; }
+  .md5 { font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: var(--muted); }
+  .empty { color: var(--muted); padding: 30px; text-align: center; }
+  details.sp-row summary { cursor: pointer; font-size: 15px; font-weight: 600; padding: 10px 0; }
+  details.sp-row { border-bottom: 1px solid var(--line); }
+  .asset { padding: 4px 0 4px 18px; font-size: 13px; }
+  .kindtag { font-size: 11px; color: var(--accent); background: var(--accent-soft); border-radius: 5px;
+    padding: 1px 6px; margin-right: 6px; }
+  footer { padding: 0 24px 30px; color: var(--muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Roberts Lab Data Portal</h1>
+  <div class="sub">An explorable index of the lab's raw sequencing libraries and curated reference genomes.</div>
+</header>
+<div class="tabs">
+  <button class="tab active" data-tab="seq">Sequencing Libraries</button>
+  <button class="tab" data-tab="gen">Reference Genomes</button>
+</div>
+
+<main>
+  <!-- ================= SEQUENCING ================= -->
+  <section id="seq">
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search taxa, experiment, tissue, library, accession…">
+      <select id="taxa"></select>
+      <select id="mol"><option value="">All molecules</option></select>
+      <select id="plat"><option value="">All platforms</option></select>
+      <select id="yr"><option value="">All years</option></select>
+      <label class="cb"><input type="checkbox" id="sraonly"> SRA only</label>
+      <span class="count" id="seqcount"></span>
+    </div>
+    <table id="seqtable">
+      <thead><tr>
+        <th data-k="Primary_taxa">Taxa</th>
+        <th data-k="Library_name">Library</th>
+        <th data-k="Molecule">Mol</th>
+        <th data-k="Platform">Platform</th>
+        <th data-k="Tissue">Tissue</th>
+        <th data-k="year">Year</th>
+        <th data-k="Experiment">Experiment</th>
+        <th data-k="SRA_ID">SRA</th>
+        <th>Data</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    <div class="empty" id="seqempty" hidden>No libraries match these filters.</div>
+  </section>
+
+  <!-- ================= GENOMES ================= -->
+  <section id="gen" hidden>
+    <div class="toolbar">
+      <input type="search" id="gq" placeholder="Search species or asset…">
+      <select id="gkind"><option value="">All asset types</option></select>
+      <span class="count" id="gencount"></span>
+    </div>
+    <div id="genlist"></div>
+    <div class="empty" id="genempty" hidden>No species match.</div>
+  </section>
+</main>
+
+<footer>
+  Built from the Nightingales sequencing sheet and
+  <a href="https://robertslab.github.io/resources/Genomic-Resources/">Genomic Resources</a> handbook page.
+  Regenerate data with <code>python3 build.py</code>.
+</footer>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// ---- tab switching ----
+document.querySelectorAll('.tab').forEach(t => t.onclick = () => {
+  document.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x===t));
+  $('#seq').hidden = t.dataset.tab!=='seq';
+  $('#gen').hidden = t.dataset.tab!=='gen';
+});
+
+// ===================== SEQUENCING =====================
+let SEQ = [], seqSort = {k:'Primary_taxa', dir:1};
+
+function fillSelect(sel, vals, label) {
+  vals.sort();
+  sel.innerHTML = `<option value="">${label}</option>` +
+    vals.map(v => `<option value="${esc(v)}">${esc(v)} </option>`).join('');
+}
+
+function renderSeq() {
+  const q = $('#q').value.toLowerCase().trim();
+  const ftaxa = $('#taxa').value, fmol = $('#mol').value,
+        fplat = $('#plat').value, fyr = $('#yr').value, sraonly = $('#sraonly').checked;
+  let rows = SEQ.filter(r => {
+    if (ftaxa && r.Primary_taxa !== ftaxa) return false;
+    if (fmol && r.Molecule !== fmol) return false;
+    if (fplat && r.Platform !== fplat) return false;
+    if (fyr && r.year !== fyr) return false;
+    if (sraonly && !r.has_sra) return false;
+    if (q) {
+      const hay = [r.Primary_taxa, r.Library_name, r.Experiment, r.Tissue,
+                   r.BriefDesc, r.SRA_ID, r.SeqID].join(' ').toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  const dir = seqSort.dir, k = seqSort.k;
+  rows.sort((a,b) => ((a[k]||'') > (b[k]||'') ? 1 : (a[k]||'') < (b[k]||'') ? -1 : 0) * dir);
+  $('#seqcount').textContent = `${rows.length} of ${SEQ.length} libraries`;
+  $('#seqempty').hidden = rows.length > 0;
+  const tb = $('#seqtable tbody');
+  tb.innerHTML = rows.slice(0, 1500).map(r => {
+    const dl = [];
+    if (r.Read1URL) dl.push(`<a class="dl" href="${esc(r.Read1URL)}">R1↓</a>`);
+    if (r.Read2URL) dl.push(`<a class="dl" href="${esc(r.Read2URL)}">R2↓</a>`);
+    if (r.Read1FastQC) dl.push(`<a class="dl" href="${esc(r.Read1FastQC)}">QC</a>`);
+    const sra = r.SRA_ID
+      ? `<a class="chip sra" href="${esc(r.sra_url)}">${esc(r.SRA_ID)}</a>` : '';
+    return `<tr>
+      <td class="sp">${esc(r.Primary_taxa)}</td>
+      <td>${esc(r.Library_name)}</td>
+      <td>${esc(r.Molecule)}</td>
+      <td>${esc(r.Platform)}${r.Sequencer && r.Sequencer!=='—' ? ' '+esc(r.Sequencer):''}</td>
+      <td>${esc(r.Tissue)}</td>
+      <td>${esc(r.year)}</td>
+      <td>${esc(r.Experiment)}</td>
+      <td>${sra}</td>
+      <td>${dl.join('')}</td>
+    </tr>`;
+  }).join('');
+  if (rows.length > 1500)
+    tb.innerHTML += `<tr><td colspan="9" class="empty">Showing first 1500 — narrow your search to see more.</td></tr>`;
+}
+
+document.querySelectorAll('#seqtable th[data-k]').forEach(th => th.onclick = () => {
+  const k = th.dataset.k;
+  seqSort.dir = (seqSort.k === k) ? -seqSort.dir : 1;
+  seqSort.k = k; renderSeq();
+});
+['#q','#taxa','#mol','#plat','#yr','#sraonly'].forEach(s => $(s).oninput = renderSeq);
+
+// ===================== GENOMES =====================
+let GEN = [];
+function renderGen() {
+  const q = $('#gq').value.toLowerCase().trim(), fk = $('#gkind').value;
+  let list = GEN.map(s => {
+    const assets = s.assets.filter(a => !fk || a.kind === fk);
+    return {...s, _assets: assets};
+  }).filter(s => {
+    if (fk && s._assets.length === 0) return false;
+    if (q) {
+      const hay = (s.species + ' ' + s.assets.map(a=>a.label).join(' ')).toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+  $('#gencount').textContent = `${list.length} species`;
+  $('#genempty').hidden = list.length > 0;
+  $('#genlist').innerHTML = list.map(s => `
+    <details class="sp-row" ${q||fk?'open':''}>
+      <summary class="sp">${esc(s.species)} <span class="chip">${s._assets.length} files</span></summary>
+      ${s._assets.map(a => `<div class="asset">
+        <span class="kindtag">${esc(a.kind)}</span>
+        <a href="${esc(a.url)}">${esc(a.label)}</a>
+        ${a.md5?`<span class="md5">md5:${esc(a.md5)}</span>`:''}
+      </div>`).join('')}
+    </details>`).join('');
+}
+['#gq','#gkind'].forEach(s => $(s).oninput = renderGen);
+
+// ===================== LOAD =====================
+Promise.all([
+  fetch('nightingales.json').then(r=>r.json()),
+  fetch('genomes.json').then(r=>r.json()),
+]).then(([seq, gen]) => {
+  SEQ = seq; GEN = gen;
+  fillSelect($('#taxa'), [...new Set(seq.map(r=>r.Primary_taxa).filter(Boolean))], 'All taxa');
+  fillSelect($('#mol'),  [...new Set(seq.map(r=>r.Molecule).filter(v=>v&&v!=='—'))], 'All molecules');
+  fillSelect($('#plat'), [...new Set(seq.map(r=>r.Platform).filter(v=>v&&v!=='—'))], 'All platforms');
+  fillSelect($('#yr'),   [...new Set(seq.map(r=>r.year).filter(Boolean))], 'All years');
+  fillSelect($('#gkind'),[...new Set(gen.flatMap(s=>s.kinds))], 'All asset types');
+  renderSeq(); renderGen();
+}).catch(e => {
+  $('#seqcount').textContent = 'Failed to load data — serve this folder over http (e.g. python3 -m http.server).';
+});
+</script>
+</body>
+</html>
