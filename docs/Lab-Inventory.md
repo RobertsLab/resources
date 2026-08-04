@@ -2,14 +2,15 @@
 
 ## General
 
-- [Roberts Lab Inventory](https://docs.google.com/spreadsheets/d/11RA_mlLB-3m_GySnTTuDazDdOi0bCxJu2VERuX9Qfx8/edit?usp=sharing) (includes refrigerators and -20C freezers)    
-_See also [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit#gid=0) to confirm existence and location_
+- [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/) (includes refrigerators and -20C freezers)
+
+_See also the [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit#gid=0) to confirm purchase details._
     
-    1. After receipt of new item(s), review the [Roberts Lab Inventory](https://docs.google.com/spreadsheets/d/11RA_mlLB-3m_GySnTTuDazDdOi0bCxJu2VERuX9Qfx8/edit?usp=sharing) _and_ the [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit#gid=0) to see if there's an established location for the item(s).
+    1. After receiving new item(s), review the [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/) to see whether there is an established storage location. Use the [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit#gid=0) to confirm purchase details.
 
     2. If the item(s) have an existing storage location, put the new item(s) in the same location.
 
-    3. If the item(s) _do not_ have an existing storage location, select a storage location, and update both the [Roberts Lab Inventory](https://docs.google.com/spreadsheets/d/11RA_mlLB-3m_GySnTTuDazDdOi0bCxJu2VERuX9Qfx8/edit?usp=sharing) and the [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit#gid=0) with the storage location info.
+    3. If the item(s) _do not_ have an existing storage location, select one and record it in the [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/). Also add the storage location to the [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit#gid=0).
 
 
 ## -80 Freezer

@@ -45,7 +45,7 @@
 
 ## Databases and Catalogs
 
--   [Lab Inventory](Lab-Inventory.md) - Materials, purchasing log, freezer contents, histology samples, primer database.
+-   [Lab Inventory](Lab-Inventory.md) - Inventory guidance and links to the [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/), purchasing log, freezer contents, histology samples, and primer database.
 
 -   [Histology Databank Explorer](histology-explorer/index.html) - Search and browse catalogued histology samples, blocks, slides, and available images.
 

@@ -52,7 +52,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
     4.  Indicate date order was received in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing)
 
-    5.  Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
+    5.  Add the storage location of the item(s) to the appropriate fields in the [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> the [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/).
 
     -   <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
@@ -72,7 +72,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
     -   Each row represents an order submitted to a single vendor; list all items, quantities, and catalogue numbers in a single cell for a given order.
 
-4.  Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
+4.  Add the storage location of the item(s) to the appropriate fields in the [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> the [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/).
 
 -   <em>NOTE:</em> If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
@@ -107,7 +107,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 -   Spreadsheet is organized by date ordered.
 -   Each row represents an order submitted to a single vendor; list all items, quantities, and catalogue numbers in a single cell for a given order.
 
-4.  Add lab storage location of item(s) to appropriate fields in [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> [Roberts Lab Inventory](https://github.com/RobertsLab/onboarding/wiki/Lab-Inventory) Google Sheets.
+4.  Add the storage location of the item(s) to the appropriate fields in the [Roberts Lab Purchasing Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnEMvKz4TX10e69ErOWHv5Jo-ouk6x8/edit?usp=sharing) <em>and</em> the [Roberts Lab Inventory System](https://robertslab.github.io/lab-inventory/).
 
 -   **NOTE**:If a chemical, the chemical also needs to be added to [MyChem inventory](https://mychem.ehs.washington.edu/).
 
@@ -180,5 +180,4 @@ Budget Worktags and Name of Budget to be charged.
 ## Budgets UWFT System 
 
 - [Worktags for Budgets](https://docs.google.com/spreadsheets/d/e/2PACX-1vTQK95v9URRhk6bcU_6hP8dwHV2fKZMEM6ih3uKd31t2GSztvDzo3k0bvBSumFSlzcTcpbCW7UNWwuH/pubhtml?gid=717407882&single=true) ([PDF](https://d.pr/f/oIGpgI))
-
 
