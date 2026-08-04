@@ -15,7 +15,7 @@ The lab must retain all research data, and you are welcome to keep copies of wor
 -   [ ] **Raw data** (sequencing reads, images, instrument output, field/experimental measurements) is on the lab servers and/or in a permanent archive (e.g., [NCBI SRA/GEO](https://www.ncbi.nlm.nih.gov/sra), [OWL/Gannet](Computing-Hardware.md)). Note accession numbers in the relevant repo.
 -   [ ] **Processed/analyzed data** and intermediate files are stored or clearly reproducible from code. Large files belong on lab storage (Gannet/Owl), not in Git — link to them.
 -   [ ] **Metadata** is complete: sample sheets, README files, units, and collection details so someone else can interpret the data without you. See [Data Management](Data-Management.md).
--   [ ] **Physical samples** (extractions, tissues, slides, plates) are labeled and logged in the [Lab Inventory](Lab-Inventory.md) / [Experiment Database](Experiment-Database.md), with freezer/box locations recorded.
+-   [ ] **Physical samples** (extractions, tissues, slides, plates) are labeled and logged in the [Lab Inventory](Lab-Inventory.md), with freezer/box locations recorded.
 -   [ ] **Your personal copy:** export or download any data you are entitled to keep. Confirm with Steven what you may take and in what form.
 
 ## 2. GitHub — transfer ownership, don't take it with you

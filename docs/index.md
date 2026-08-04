@@ -53,8 +53,6 @@
 
 -   [Digital Media](Digital-Media.md) - Where and how to store media including photos, videos and audio.
 
--   [Experiment Database](Experiment-Database.md) - Database of all Roberts Lab experiments.
-
 -   [Genomic Resources](Genomic-Resources.md) - Here we try to compile genomic resources such that they are readily available and somewhat described.
 
 -   [Spotify Playlists](music.md) - Lab-curated Spotify playlists.
