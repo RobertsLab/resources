@@ -47,6 +47,8 @@
 
 -   [Lab Inventory](Lab-Inventory.md) - Materials, purchasing log, freezer contents, histology samples, primer database.
 
+-   [Histology Databank Explorer](histology-explorer/index.html) - Search and browse catalogued histology samples, blocks, slides, and available images.
+
 -   [Pubathon](Pubathon.md) - Annual "pubathon" roster, links to and status of manuscripts.
 
 -   [Digital Media](Digital-Media.md) - Where and how to store media including photos, videos and audio.

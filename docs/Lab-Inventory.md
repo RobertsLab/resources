@@ -25,7 +25,9 @@ _See also [Purchase Log](https://docs.google.com/spreadsheets/d/1DHXiiEzWhh0XHnE
 
 ## Histology 
 
-- [Histology database](https://docs.google.com/spreadsheets/d/1BIbDleJPEiKrmx7JwNIPwg2pM-thuZ39upmenldx4pA/edit#gid=0) _includes information on blocks and slides_
+- [Histology Databank Explorer](histology-explorer/index.html) — search and browse catalogued samples, blocks, slides, and available images.
+
+- [Histology databank Google Sheet](https://docs.google.com/spreadsheets/d/1BIbDleJPEiKrmx7JwNIPwg2pM-thuZ39upmenldx4pA/edit#gid=0) — editable source data, including information on blocks and slides.
 
 ## Primer Databases
 
