@@ -319,6 +319,8 @@ _Taxa Representation in Nightingales_
 
 All images should be stored in the proper species directory at http://owl.fish.washington.edu/hesperornis/
 
+To browse what has already been catalogued, use the [Histology Databank Explorer](histology-explorer/index.html) — it joins the databank sheet to the images on owl so you can search samples by species, project, year, tissue, and researcher, and view the slides. Its "Unmatched images" view lists specimens imaged on owl that have no databank row yet. The Explorer is a snapshot rebuilt from a CSV export of the sheet, so new entries appear only after the next [rebuild](https://github.com/RobertsLab/resources/blob/master/docs/histology-explorer/README.md).
+
 
 
 ---
