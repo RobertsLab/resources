@@ -6,6 +6,36 @@ Below is a list of computing resources we have available, as well as some links 
 
 ---
 
+## Server Status
+
+<table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <thead>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
+  </thead>
+  <tbody>
+    <tr data-host="raven">
+      <td><code>raven.fish.washington.edu</code></td>
+      <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
+      <td class="ss-time">—</td>
+    </tr>
+    <tr data-host="gannet">
+      <td><code>gannet.fish.washington.edu</code></td>
+      <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
+      <td class="ss-time">—</td>
+    </tr>
+    <tr data-host="klone">
+      <td><code>klone.hyak.uw.edu</code></td>
+      <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
+      <td class="ss-time">—</td>
+    </tr>
+  </tbody>
+</table>
+
+Checks run every 10–15 minutes. Hover a status for details. A reading older than 30 minutes is shown as `unknown` rather than as a stale green light.
+
+!!! note
+    A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check [UW-IT Hyak status](https://status.uw.edu/).
+
 ## Accounts
 
 You will need accounts with the following services in order to minimally function in the Roberts Lab:
