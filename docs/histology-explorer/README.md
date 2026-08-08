@@ -43,8 +43,10 @@ histology-explorer/
 
 Many images (all of `O_angasi`, the 2026 geoduck gonad set) are archival **`.tif`** files,
 which browsers cannot display. The explorer shows browser-viewable `.jpg`/`.png` inline and
-offers `.tif` as a download link. A sample with only `.tif` images shows a "TIF only" card.
-To give those real thumbnails, generate `.jpg` derivatives (see next section).
+offers the `.tif` as a download link. For `.tif` files with a generated `.jpg` derivative, the
+derivative is displayed and the original stays downloadable — 44 of the 100 imaged samples
+currently display this way. A `.tif` with no derivative shows a "TIF only" card; to give those
+real thumbnails, generate derivatives (see next section).
 
 ## Generating JPEG derivatives for `.tif` images
 
@@ -76,9 +78,10 @@ updates `build/derivatives_manifest.csv`. Then:
 ## Current coverage (from the last build)
 
 - 1,308 sheet rows → **940 unique samples**
-- **100 samples** have at least one image; **56** have a browser-viewable image
-- **918 image files** indexed; ~651 are "orphans" — imaged on owl but **not yet entered in the sheet**
-  (e.g. `O_angasi` 45–146, `O_lurida` 241–386, the Larken clam set). See `data/qc_report.md`.
+- **100 samples** have at least one image, all of them browser-viewable
+- **918 image files** indexed; **267** matched to a sample and **651** are "orphans" — imaged on owl
+  but **not yet entered in the sheet** (e.g. `O_angasi` 45–146, `O_lurida` 241–386, the Larken clam
+  set). See `data/qc_report.md`.
 
 ## Viewing locally
 
