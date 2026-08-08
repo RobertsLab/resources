@@ -48,29 +48,29 @@ NOTE: All users have access to the checkpoint partition (`ckpt`), but run times 
 | srlab | cpu-g2-mem2x | 32 | 503G | 0 | TOTAL |
 
 
-> [!IMPORTANT]
-> The `coenv` `cpu-g2` is a set of shared resources. We have dedicated access to 32CPUs and 500GB of RAM.
-> If interested in using more than our allocation, you will need to reach out to other PIs to see if you can use some of their allocations.
->
-> #### cpu-g2 (mem2x) Shared Resource Contributions
->
-> | Account                         | CPUs | Memory |
-> |-----------------------------|------|--------|
-> | uwit-cpu-g2-mem2x           | 32   | 490G   |
-> | nrdg-cpu-g2-mem2x           | 32   | 490G   |
-> | psych-cpu-g2-mem2x          | 32   | 490G   |
-> | rheum-cpu-g2-mem2x          | 32   | 490G   |
-> | stf-cpu-g2-mem2x            | 192  | 3010G  |
-> | vsm-cpu-g2-mem2x            | 192  | 3010G  |
-> | comdata-cpu-g2-mem2x        | 32   | 490G   |
-> | stergachislab-cpu-g2-mem2x  | 192  | 3010G  |
-> | radlab-cpu-g2-mem2x         | 32   | 490G   |
-> | carrolllab-cpu-g2-mem2x     | 32   | 490G   |
-> | uwb-cpu-g2-mem2x            | 64   | 994G   |
-> | srlab-cpu-g2-mem2x          | 32   | 490G   |
-> | kawaldorflab-cpu-g2-mem2x   | 32   | 490G   |
-> | astro-cpu-g2-mem2x          | 64   | 994G   |
-> | escience-cpu-g2-mem2x       | 32   | 490G   |
+!!! important
+    The `coenv` `cpu-g2` is a set of shared resources. We have dedicated access to 32CPUs and 500GB of RAM.
+    If interested in using more than our allocation, you will need to reach out to other PIs to see if you can use some of their allocations.
+
+    #### cpu-g2 (mem2x) Shared Resource Contributions
+
+    | Account                         | CPUs | Memory |
+    |-----------------------------|------|--------|
+    | uwit-cpu-g2-mem2x           | 32   | 490G   |
+    | nrdg-cpu-g2-mem2x           | 32   | 490G   |
+    | psych-cpu-g2-mem2x          | 32   | 490G   |
+    | rheum-cpu-g2-mem2x          | 32   | 490G   |
+    | stf-cpu-g2-mem2x            | 192  | 3010G  |
+    | vsm-cpu-g2-mem2x            | 192  | 3010G  |
+    | comdata-cpu-g2-mem2x        | 32   | 490G   |
+    | stergachislab-cpu-g2-mem2x  | 192  | 3010G  |
+    | radlab-cpu-g2-mem2x         | 32   | 490G   |
+    | carrolllab-cpu-g2-mem2x     | 32   | 490G   |
+    | uwb-cpu-g2-mem2x            | 64   | 994G   |
+    | srlab-cpu-g2-mem2x          | 32   | 490G   |
+    | kawaldorflab-cpu-g2-mem2x   | 32   | 490G   |
+    | astro-cpu-g2-mem2x          | 64   | 994G   |
+    | escience-cpu-g2-mem2x       | 32   | 490G   |
 
 **Checkpoint Resources — Idle**
 
