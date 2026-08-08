@@ -1,0 +1,39 @@
+# Outside-the-network half of the server status lights on the Computing
+# Hardware page.
+#
+# This runner can reach gannet (public HTTPS) and klone (public SSH), but NOT
+# raven, which is not in public DNS. Raven is covered by the cron job inside
+# the UW network -- see scripts/README.md. Running both means a dead internal
+# prober does not take all three lights out at once.
+#
+# GitHub's scheduled workflows are best-effort: they are delayed under load and
+# are disabled automatically after 60 days without repo activity. That is why
+# the in-network cron is the primary prober and this is the backstop.
+name: server-status
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: server-status
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Probe public hosts and publish status
+        run: |
+          ./scripts/publish_status.sh \
+            --profile external \
+            --repo "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            --workdir "${RUNNER_TEMP}/server-status"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

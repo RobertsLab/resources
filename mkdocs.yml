@@ -27,6 +27,12 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+extra_css:
+  - stylesheets/server-status.css
+
+extra_javascript:
+  - javascripts/server-status.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details
