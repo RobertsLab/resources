@@ -49,6 +49,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/server-status.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1194,6 +1196,17 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#server-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server Status
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#accounts" class="md-nav__link">
@@ -2740,6 +2753,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#server-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server Status
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#accounts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2907,6 +2931,35 @@
 <p>Using computers is an integral part of Roberts Lab activities. The majority of our projects take on some form of bioinformatics analysis and manipulation of large data sets. Although we don't perform any high level programming, you will need to become familiar with basic command line syntax.</p>
 <p>Below is a list of computing resources we have available, as well as some links to help you begin learning.</p>
 <hr>
+<h2 id="server-status">Server Status</h2>
+<table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <thead>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
+  </thead>
+  <tbody>
+    <tr data-host="raven">
+      <td><code>raven.fish.washington.edu</code></td>
+      <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
+      <td class="ss-time">—</td>
+    </tr>
+    <tr data-host="gannet">
+      <td><code>gannet.fish.washington.edu</code></td>
+      <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
+      <td class="ss-time">—</td>
+    </tr>
+    <tr data-host="klone">
+      <td><code>klone.hyak.uw.edu</code></td>
+      <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
+      <td class="ss-time">—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Checks run every 10–15 minutes. Hover a status for details. A reading older than 30 minutes is shown as <code>unknown</code> rather than as a stale green light.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check <a href="https://status.uw.edu/">UW-IT Hyak status</a>.</p>
+</div>
 <h2 id="accounts">Accounts</h2>
 <p>You will need accounts with the following services in order to minimally function in the Roberts Lab:</p>
 <ul>
@@ -3266,6 +3319,8 @@ If interested in using more than our allocation, you will need to reach out to o
     
     
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../javascripts/server-status.js"></script>
       
     
   </body>

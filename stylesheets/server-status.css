@@ -1,0 +1,49 @@
+/* Status lights for the Computing Hardware page. */
+
+.ss-dot {
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  margin-right: 0.45em;
+  border-radius: 50%;
+  vertical-align: baseline;
+  background: var(--ss-color, #9aa0a6);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12) inset;
+}
+
+.ss-up {
+  --ss-color: #2e9e4f;
+}
+
+.ss-down {
+  --ss-color: #d64545;
+}
+
+.ss-unknown {
+  --ss-color: #9aa0a6;
+}
+
+[data-md-color-scheme="slate"] .ss-up {
+  --ss-color: #4ad07d;
+}
+
+[data-md-color-scheme="slate"] .ss-down {
+  --ss-color: #ff6b6b;
+}
+
+[data-md-color-scheme="slate"] .ss-unknown {
+  --ss-color: #8a8f98;
+}
+
+.ss-label {
+  font-variant-numeric: tabular-nums;
+}
+
+.ss-state {
+  white-space: nowrap;
+}
+
+.ss-time {
+  white-space: nowrap;
+  opacity: 0.75;
+}
