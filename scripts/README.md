@@ -100,7 +100,11 @@ and that the lights on the handbook page go green within a few minutes.
 - GitHub's scheduled workflows are best-effort: delayed under load, minimum
   5-minute interval, and disabled automatically after 60 days without repo
   activity. That is why the in-network cron is primary and the Action is only a
-  backstop.
+  backstop. Measured on this repo, the Action asks for `*/15` but lands every
+  30-71 minutes (median 46). The 90-minute stale threshold in
+  `docs/javascripts/server-status.js` is sized around that; if you tighten it,
+  make sure the in-network cron is actually running first, or the lights will
+  spend most of each cycle showing `unknown`.
 - To add a host: add a probe in `check_servers.py` and a `<tr data-host="...">`
   row in `docs/Computing-Hardware.md`. The JavaScript matches the two by name
   and needs no change.

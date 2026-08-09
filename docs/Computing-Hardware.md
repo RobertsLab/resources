@@ -31,7 +31,7 @@ Below is a list of computing resources we have available, as well as some links 
   </tbody>
 </table>
 
-Checks run every 10–15 minutes. Hover a status for details. A reading older than 30 minutes is shown as `unknown` rather than as a stale green light.
+Checks run automatically — the timestamp shows when each host was last reached. Hover a status for details. A reading older than 90 minutes is shown as `unknown` rather than as a stale green light.
 
 !!! note
     A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check [UW-IT Hyak status](https://status.uw.edu/).
