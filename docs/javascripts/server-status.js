@@ -16,7 +16,14 @@
 (function () {
   "use strict";
 
-  var STALE_MS = 30 * 60 * 1000; // cron runs every ~10 min; 30 min = missed 3
+  // Sized against what the probers actually deliver, not what they ask for.
+  // The GitHub Action requests */15 but is scheduled best-effort: across 20
+  // consecutive runs the observed gaps were 30-71 min (median 46), so every
+  // single interval blew through the original 30 min threshold and the lights
+  // sat at "unknown" most of each cycle. 90 min clears the worst observed gap
+  // with headroom. Once the in-network cron is running every 10 min it becomes
+  // the freshest source and this ceiling stops mattering in practice.
+  var STALE_MS = 90 * 60 * 1000;
   var SOURCES = ["internal.json", "external.json"];
 
   function fetchSource(base, name) {
