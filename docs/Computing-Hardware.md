@@ -10,31 +10,36 @@ Below is a list of computing resources we have available, as well as some links 
 
 <table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
   <thead>
-    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th><th>Disk / CPU</th></tr>
   </thead>
   <tbody>
     <tr data-host="raven">
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td class="ss-stats">—</td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td>—</td>
     </tr>
     <tr data-host="klone">
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td>—</td>
     </tr>
   </tbody>
 </table>
 
 Checks run automatically — the timestamp shows when each host was last reached. Hover a status for details. A reading older than 90 minutes is shown as `unknown` rather than as a stale green light.
 
+Raven's Disk / CPU column comes from a daily snapshot (`df` + CPU load) that raven drops on gannet each morning around 7am, rather than from the live network check — hover it for the per-disk breakdown. It is separate from the status light: the light can be green (RStudio Server answering) while the snapshot itself is stale if the collection cron on raven has stopped.
+
 !!! note
-    A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check [UW-IT Hyak status](https://status.uw.edu/).
+    A green light only means the machine answered on the network. It does not mean Slurm is healthy or that your jobs are running. Free disk space and CPU load are shown separately for raven (see above); gannet and klone don't have an equivalent snapshot. For Hyak-wide outages and maintenance, check [UW-IT Hyak status](https://status.uw.edu/).
 
 ## Accounts
 

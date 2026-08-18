@@ -12,6 +12,12 @@
  *
  * For each host the most recent fresh reading wins. Anything older than
  * STALE_MS is reported as unknown rather than shown as a stale green light.
+ *
+ * Raven also gets a disk/CPU snapshot (doc.raven_stats) parsed by the
+ * checker from a daily log raven drops on gannet's public web root -- see
+ * scripts/README.md. It is generated once a day around 7am, so it is merged
+ * separately from the up/down lights: the freshest *snapshot* wins by its
+ * own "generated" timestamp, not by which prober ran most recently.
  */
 (function () {
   "use strict";
@@ -24,6 +30,12 @@
   // with headroom. Once the in-network cron is running every 10 min it becomes
   // the freshest source and this ceiling stops mattering in practice.
   var STALE_MS = 90 * 60 * 1000;
+
+  // The snapshot regenerates roughly once a day. 30 hours clears a normal
+  // day-to-day slip in when the raven cron fires while still catching a
+  // genuinely stuck job within about a day of it stalling.
+  var STATS_STALE_MS = 30 * 60 * 60 * 1000;
+
   var SOURCES = ["internal.json", "external.json"];
 
   function fetchSource(base, name) {
@@ -56,6 +68,26 @@
           checkedAt: checkedAt
         };
       });
+    });
+    return best;
+  }
+
+  // Picks the newest raven_stats block across sources by its own
+  // "generated" timestamp (when the snapshot was written on raven), not by
+  // which document is freshest -- both probers just relay the same daily
+  // file, so whichever last saw a newer copy of it wins.
+  function mergeRavenStats(docs) {
+    var best = null;
+    docs.forEach(function (doc) {
+      if (!doc || !doc.raven_stats) return;
+      var generatedAt = Date.parse(doc.raven_stats.generated);
+      if (isNaN(generatedAt)) return;
+      if (best && best.generatedAt >= generatedAt) return;
+      best = {
+        cpuPercent: doc.raven_stats.cpu_percent,
+        disks: doc.raven_stats.disks || [],
+        generatedAt: generatedAt
+      };
     });
     return best;
   }
@@ -115,6 +147,47 @@
     stateCell.title = title;
   }
 
+  // Last path segment, e.g. "/home/shared/8TB_HDD_02" -> "8TB_HDD_02".
+  function mountLabel(mount) {
+    var parts = mount.split("/");
+    return parts[parts.length - 1] || mount;
+  }
+
+  function paintStats(row, stats, now) {
+    var cell = row.querySelector(".ss-stats");
+    if (!cell) return;
+
+    if (!stats) {
+      cell.textContent = "—";
+      cell.title = "No disk/CPU snapshot available yet.";
+      return;
+    }
+
+    var worst = null;
+    stats.disks.forEach(function (disk) {
+      if (!worst || disk.use_percent > worst.use_percent) worst = disk;
+    });
+
+    var parts = [];
+    if (stats.cpuPercent != null) parts.push("CPU " + stats.cpuPercent + "%");
+    if (worst) parts.push("disk " + worst.use_percent + "% (" + mountLabel(worst.mount) + ")");
+
+    var stale = now - stats.generatedAt > STATS_STALE_MS;
+    cell.textContent = (parts.length ? parts.join(" · ") : "—") + (stale ? " (stale)" : "");
+    cell.classList.toggle("ss-stats-stale", stale);
+
+    var titleLines = stats.disks.map(function (disk) {
+      return disk.mount + ": " + disk.use_percent + "%";
+    });
+    cell.title =
+      "Daily snapshot from " +
+      new Date(stats.generatedAt).toLocaleString() +
+      (stale
+        ? " — more than 30h old; the snapshot cron on raven may have stopped."
+        : "") +
+      (titleLines.length ? "\n" + titleLines.join("\n") : "");
+  }
+
   function render() {
     var table = document.querySelector("[data-status-base]");
     if (!table) return;
@@ -126,10 +199,13 @@
       })
     ).then(function (docs) {
       var readings = mergeReadings(docs);
+      var ravenStats = mergeRavenStats(docs);
       var now = Date.now();
       var rows = table.querySelectorAll("tr[data-host]");
       Array.prototype.forEach.call(rows, function (row) {
-        paintRow(row, readings[row.getAttribute("data-host")], now);
+        var host = row.getAttribute("data-host");
+        paintRow(row, readings[host], now);
+        if (host === "raven") paintStats(row, ravenStats, now);
       });
     });
   }

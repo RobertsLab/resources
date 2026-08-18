@@ -47,3 +47,13 @@
   white-space: nowrap;
   opacity: 0.75;
 }
+
+.ss-stats {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.ss-stats-stale {
+  opacity: 0.6;
+  font-style: italic;
+}

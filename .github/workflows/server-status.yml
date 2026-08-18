@@ -2,9 +2,11 @@
 # Hardware page.
 #
 # This runner can reach gannet (public HTTPS) and klone (public SSH), but NOT
-# raven, which is not in public DNS. Raven is covered by the cron job inside
-# the UW network -- see scripts/README.md. Running both means a dead internal
-# prober does not take all three lights out at once.
+# raven directly, since raven is not in public DNS. Raven's up/down light is
+# covered by the cron job inside the UW network -- see scripts/README.md.
+# Running both means a dead internal prober does not take all three lights
+# out at once. Raven's disk/CPU snapshot is a separate exception: it is
+# fetched over public HTTPS from gannet, so this runner can see it too.
 #
 # GitHub's scheduled workflows are best-effort: they are delayed under load and
 # are disabled automatically after 60 days without repo activity. That is why

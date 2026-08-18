@@ -16,13 +16,15 @@ Profiles exist because the three hosts are not reachable from the same place:
 that a dead internal prober does not blind us on everything at once.
 
 A green light means the port answered. It says nothing about whether Slurm is
-healthy, disks are full, or anyone's jobs are actually running.
+healthy or anyone's jobs are actually running. Raven's disk space and CPU
+load are reported separately, from a daily snapshot (see fetch_raven_stats).
 
 Stdlib only, Python 3.6+.
 """
 
 import argparse
 import json
+import re
 import socket
 import ssl
 import sys
@@ -30,8 +32,19 @@ import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 
 DEFAULT_TIMEOUT = 8.0
+
+# Raven itself is not in public DNS, but a cron on raven drops a daily
+# df/CPU snapshot on gannet's public web root -- see scripts/README.md. That
+# makes it fetchable over plain HTTPS by both probers, unlike the live TCP
+# check below, which only the internal one can reach.
+RAVEN_STATS_URL = "https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log"
+
+# Each disk line looks like "/dev/sdd1  7.3T  6.3T  602G  92%  /home/shared/...".
+_DISK_LINE = re.compile(r"^(\S+)\s+\S+\s+\S+\s+\S+\s+(\d+)%\s+(\S+)$")
+_PERCENT = re.compile(r"^([\d.]+)%$")
 
 
 def tcp_check(host, port, timeout):
@@ -103,6 +116,61 @@ def check_raven(timeout):
     return result
 
 
+def fetch_raven_stats(timeout):
+    """Parse the daily df/CPU snapshot raven publishes on gannet.
+
+    Returns None if the file cannot be fetched or does not parse -- a
+    missing snapshot should not make the whole check fail, and the front
+    end already treats missing/stale data as "unknown" rather than red.
+    """
+    request = urllib.request.Request(RAVEN_STATS_URL)
+    request.add_header("User-Agent", "robertslab-handbook-status-check")
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            body = response.read().decode("utf-8", "replace")
+            last_modified = response.headers.get("Last-Modified")
+    except (urllib.error.URLError, socket.timeout, OSError):
+        return None
+
+    lines = body.splitlines()
+
+    disks = []
+    for line in lines:
+        match = _DISK_LINE.match(line.strip())
+        if match:
+            disks.append({"mount": match.group(3), "use_percent": int(match.group(2))})
+
+    cpu_percent = None
+    for i, line in enumerate(lines):
+        if line.strip() != "Percent CPUs cranking?":
+            continue
+        for candidate in lines[i + 1:]:
+            candidate = candidate.strip()
+            if not candidate:
+                continue
+            match = _PERCENT.match(candidate)
+            if match:
+                cpu_percent = float(match.group(1))
+            break
+        break
+
+    if not disks and cpu_percent is None:
+        return None
+
+    generated = None
+    if last_modified:
+        try:
+            generated = (
+                parsedate_to_datetime(last_modified)
+                .astimezone(timezone.utc)
+                .strftime("%Y-%m-%dT%H:%M:%SZ")
+            )
+        except (TypeError, ValueError):
+            generated = None
+
+    return {"generated": generated, "cpu_percent": cpu_percent, "disks": disks}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--profile", required=True, choices=["internal", "external"])
@@ -121,6 +189,16 @@ def main():
         "source": args.profile,
         "hosts": hosts,
     }
+
+    # Fetched over public HTTPS (see fetch_raven_stats), so both profiles can
+    # get it. Kept out of "hosts" on purpose: hosts are merged by picking the
+    # freshest *document*, and the external prober can run more often than
+    # the internal cron. If raven_stats lived under hosts["raven"] it would
+    # periodically overwrite a live, accurate up/down reading with one that
+    # carries no port-check result at all.
+    raven_stats = fetch_raven_stats(args.timeout)
+    if raven_stats:
+        document["raven_stats"] = raven_stats
     text = json.dumps(document, indent=2, sort_keys=True)
 
     if args.out:
