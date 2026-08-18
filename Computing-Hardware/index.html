@@ -2959,7 +2959,7 @@
 </table>
 
 <p>Checks run automatically — the timestamp shows when each host was last reached. Hover a status for details. A reading older than 90 minutes is shown as <code>unknown</code> rather than as a stale green light.</p>
-<p>Raven's Disk / CPU column comes from a daily snapshot (<code>df</code> + CPU load) that raven drops on gannet each morning around 7am, rather than from the live network check — hover it for the per-disk breakdown. It is separate from the status light: the light can be green (RStudio Server answering) while the snapshot itself is stale if the collection cron on raven has stopped.</p>
+<p>Raven's Disk / CPU column comes from a <a href="https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log">daily snapshot</a> (<code>df</code> + CPU load) that raven drops on gannet each morning around 7am, rather than from the live network check — hover it for the per-disk breakdown. It is separate from the status light: the light can be green (RStudio Server answering) while the snapshot itself is stale if the collection cron on raven has stopped.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A green light only means the machine answered on the network. It does not mean Slurm is healthy or that your jobs are running. Free disk space and CPU load are shown separately for raven (see above); gannet and klone don't have an equivalent snapshot. For Hyak-wide outages and maintenance, check <a href="https://status.uw.edu/">UW-IT Hyak status</a>.</p>
