@@ -1206,6 +1206,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Server Status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raven-disk-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raven Disk / CPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2761,6 +2778,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Server Status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#raven-disk-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Raven Disk / CPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2934,36 +2968,45 @@
 <h2 id="server-status">Server Status</h2>
 <table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
   <thead>
-    <tr><th>Server</th><th>Status</th><th>Last checked</th><th>Disk / CPU</th></tr>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
   </thead>
   <tbody>
     <tr data-host="raven">
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td class="ss-stats">—</td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td>—</td>
     </tr>
     <tr data-host="klone">
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td>—</td>
     </tr>
   </tbody>
 </table>
 
 <p>Checks run automatically — the timestamp shows when each host was last reached. Hover a status for details. A reading older than 90 minutes is shown as <code>unknown</code> rather than as a stale green light.</p>
-<p>Raven's Disk / CPU column comes from a <a href="https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log">daily snapshot</a> (<code>df</code> + CPU load) that raven drops on gannet each morning around 7am, rather than from the live network check — hover it for the per-disk breakdown. It is separate from the status light: the light can be green (RStudio Server answering) while the snapshot itself is stale if the collection cron on raven has stopped.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A green light only means the machine answered on the network. It does not mean Slurm is healthy or that your jobs are running. Free disk space and CPU load are shown separately for raven (see above); gannet and klone don't have an equivalent snapshot. For Hyak-wide outages and maintenance, check <a href="https://status.uw.edu/">UW-IT Hyak status</a>.</p>
+<p>A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check <a href="https://status.uw.edu/">UW-IT Hyak status</a>.</p>
 </div>
+<h3 id="raven-disk-cpu">Raven Disk / CPU</h3>
+<p class="ss-raven-meta">Loading raven's latest snapshot…</p>
+
+<table data-raven-stats-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <thead>
+    <tr><th>Mount</th><th>Size</th><th>Used</th><th>Available</th><th>% Full</th></tr>
+  </thead>
+  <tbody class="ss-raven-disks">
+    <tr><td colspan="5">Loading…</td></tr>
+  </tbody>
+</table>
+
+<p>This comes from a <a href="https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log">daily snapshot</a> (<code>df</code> plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first.</p>
 <h2 id="accounts">Accounts</h2>
 <p>You will need accounts with the following services in order to minimally function in the Roberts Lab:</p>
 <ul>
