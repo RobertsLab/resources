@@ -46,7 +46,16 @@ under `hosts`), separate from the up/down lights:
 "raven_stats": {
   "generated": "2026-08-18T14:01:02Z",
   "cpu_percent": 0.58,
-  "disks": [{"mount": "/home/shared/8TB_HDD_02", "use_percent": 92}, ...]
+  "disks": [
+    {
+      "filesystem": "/dev/sdd1",
+      "mount": "/home/shared/8TB_HDD_02",
+      "size": "7.3T",
+      "used": "6.3T",
+      "available": "602G",
+      "use_percent": 92
+    }
+  ]
 }
 ```
 
@@ -55,9 +64,16 @@ the freshest whole *document*, and the external prober can run more often
 than the internal cron. If raven_stats lived under `hosts.raven`, an
 external run with no real port-check result would periodically overwrite a
 correct, live up/down reading. Instead, `docs/javascripts/server-status.js`
-merges `raven_stats` on its own `generated` timestamp, and renders it into
-the "Disk / CPU" column next to raven's row — flagged stale if older than 30
-hours, since the snapshot is expected daily.
+merges `raven_stats` on its own `generated` timestamp.
+
+It renders into its own "Raven Disk / CPU" table on the page
+(`[data-raven-stats-base]`, one row per drive, fullest first) rather than a
+column in the status table — the snapshot is daily rather than live, and
+covers only raven, so mixing it into the live up/down table misrepresented
+both. CPU load and the snapshot time go in the `.ss-raven-meta` line above
+the table, flagged stale if the snapshot is older than 30 hours. Drives at
+90%+ full are marked critical and 75%+ warn, in the text as well as the bar
+color.
 
 The branch is rewritten as a single root commit on every run. At one check
 every 10 minutes an append-only branch would add roughly 50,000 commits a year

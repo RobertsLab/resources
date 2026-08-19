@@ -42,8 +42,9 @@ DEFAULT_TIMEOUT = 8.0
 # check below, which only the internal one can reach.
 RAVEN_STATS_URL = "https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log"
 
-# Each disk line looks like "/dev/sdd1  7.3T  6.3T  602G  92%  /home/shared/...".
-_DISK_LINE = re.compile(r"^(\S+)\s+\S+\s+\S+\s+\S+\s+(\d+)%\s+(\S+)$")
+# Each disk line looks like "/dev/sdd1  7.3T  6.3T  602G  92%  /home/shared/...":
+# filesystem, size, used, available, use%, mount point.
+_DISK_LINE = re.compile(r"^(\S+)\s+(\S+)\s+(\S+)\s+(\S+)\s+(\d+)%\s+(\S+)$")
 _PERCENT = re.compile(r"^([\d.]+)%$")
 
 
@@ -138,7 +139,16 @@ def fetch_raven_stats(timeout):
     for line in lines:
         match = _DISK_LINE.match(line.strip())
         if match:
-            disks.append({"mount": match.group(3), "use_percent": int(match.group(2))})
+            disks.append(
+                {
+                    "filesystem": match.group(1),
+                    "size": match.group(2),
+                    "used": match.group(3),
+                    "available": match.group(4),
+                    "use_percent": int(match.group(5)),
+                    "mount": match.group(6),
+                }
+            )
 
     cpu_percent = None
     for i, line in enumerate(lines):

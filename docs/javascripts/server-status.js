@@ -17,7 +17,10 @@
  * checker from a daily log raven drops on gannet's public web root -- see
  * scripts/README.md. It is generated once a day around 7am, so it is merged
  * separately from the up/down lights: the freshest *snapshot* wins by its
- * own "generated" timestamp, not by which prober ran most recently.
+ * own "generated" timestamp, not by which prober ran most recently. It fills
+ * its own table ([data-raven-stats-base], one row per drive) rather than a
+ * column in the status table, since it is daily rather than live and covers
+ * only raven.
  */
 (function () {
   "use strict";
@@ -147,66 +150,136 @@
     stateCell.title = title;
   }
 
-  // Last path segment, e.g. "/home/shared/8TB_HDD_02" -> "8TB_HDD_02".
-  function mountLabel(mount) {
-    var parts = mount.split("/");
-    return parts[parts.length - 1] || mount;
+  // 90%+ is the point where a run writing output can realistically wedge the
+  // disk mid-job, so it gets the loud treatment; 75% is worth noticing.
+  function fullnessClass(usePercent) {
+    if (usePercent >= 90) return "ss-disk-critical";
+    if (usePercent >= 75) return "ss-disk-warn";
+    return "";
   }
 
-  function paintStats(row, stats, now) {
-    var cell = row.querySelector(".ss-stats");
-    if (!cell) return;
+  function cell(row, text, className) {
+    var td = document.createElement("td");
+    td.textContent = text;
+    if (className) td.className = className;
+    row.appendChild(td);
+    return td;
+  }
+
+  function spanRow(tbody, text, columns) {
+    var tr = document.createElement("tr");
+    var td = document.createElement("td");
+    td.colSpan = columns;
+    td.textContent = text;
+    tr.appendChild(td);
+    tbody.appendChild(tr);
+  }
+
+  // Builds the standalone raven disk table plus the CPU/timestamp line above
+  // it. Both are driven by the same daily snapshot, so they share a state:
+  // missing, stale, or current.
+  function paintRavenStats(table, stats, now) {
+    var tbody = table.querySelector(".ss-raven-disks");
+    var meta = document.querySelector(".ss-raven-meta");
+    var columns = table.querySelectorAll("thead th").length || 5;
+
+    if (tbody) tbody.innerHTML = "";
 
     if (!stats) {
-      cell.textContent = "—";
-      cell.title = "No disk/CPU snapshot available yet.";
+      if (meta) {
+        meta.textContent = "No disk/CPU snapshot available yet.";
+        meta.classList.remove("ss-stats-stale");
+      }
+      if (tbody) spanRow(tbody, "No snapshot data.", columns);
       return;
     }
 
-    var worst = null;
-    stats.disks.forEach(function (disk) {
-      if (!worst || disk.use_percent > worst.use_percent) worst = disk;
-    });
-
-    var parts = [];
-    if (stats.cpuPercent != null) parts.push("CPU " + stats.cpuPercent + "%");
-    if (worst) parts.push("disk " + worst.use_percent + "% (" + mountLabel(worst.mount) + ")");
-
     var stale = now - stats.generatedAt > STATS_STALE_MS;
-    cell.textContent = (parts.length ? parts.join(" · ") : "—") + (stale ? " (stale)" : "");
-    cell.classList.toggle("ss-stats-stale", stale);
 
-    var titleLines = stats.disks.map(function (disk) {
-      return disk.mount + ": " + disk.use_percent + "%";
+    if (meta) {
+      var bits = [];
+      if (stats.cpuPercent != null) bits.push("CPU load " + stats.cpuPercent + "%");
+      bits.push(
+        "snapshot from " +
+          new Date(stats.generatedAt).toLocaleString() +
+          " (" +
+          relativeTime(stats.generatedAt, now) +
+          ")"
+      );
+      // The word "stale" carries the meaning; the styling only reinforces it.
+      if (stale) bits.push("stale — the snapshot cron on raven may have stopped");
+      meta.textContent = bits.join(" · ");
+      meta.classList.toggle("ss-stats-stale", stale);
+    }
+
+    if (!tbody) return;
+
+    if (!stats.disks.length) {
+      spanRow(tbody, "Snapshot contained no disk lines.", columns);
+      return;
+    }
+
+    // Fullest first: the whole point of the table is spotting the drive that
+    // is about to run out.
+    var disks = stats.disks.slice().sort(function (a, b) {
+      return b.use_percent - a.use_percent;
     });
-    cell.title =
-      "Daily snapshot from " +
-      new Date(stats.generatedAt).toLocaleString() +
-      (stale
-        ? " — more than 30h old; the snapshot cron on raven may have stopped."
-        : "") +
-      (titleLines.length ? "\n" + titleLines.join("\n") : "");
+
+    disks.forEach(function (disk) {
+      var tr = document.createElement("tr");
+      var mount = cell(tr, disk.mount, "ss-mount");
+      if (disk.filesystem) mount.title = disk.filesystem;
+      cell(tr, disk.size || "—");
+      cell(tr, disk.used || "—");
+      cell(tr, disk.available || "—");
+
+      var pct = document.createElement("td");
+      pct.className = "ss-disk-pct " + fullnessClass(disk.use_percent);
+      var bar = document.createElement("span");
+      bar.className = "ss-bar";
+      var fill = document.createElement("span");
+      fill.className = "ss-bar-fill";
+      fill.style.width = disk.use_percent + "%";
+      bar.appendChild(fill);
+      var label = document.createElement("span");
+      label.className = "ss-bar-label";
+      label.textContent = disk.use_percent + "%";
+      pct.appendChild(bar);
+      pct.appendChild(label);
+      tr.appendChild(pct);
+
+      tbody.appendChild(tr);
+    });
   }
 
   function render() {
-    var table = document.querySelector("[data-status-base]");
-    if (!table) return;
-    var base = table.getAttribute("data-status-base");
+    var statusTable = document.querySelector("[data-status-base]");
+    var ravenTable = document.querySelector("[data-raven-stats-base]");
+    if (!statusTable && !ravenTable) return;
+
+    // Both tables read the same two documents, so fetch once and paint both.
+    var base = statusTable
+      ? statusTable.getAttribute("data-status-base")
+      : ravenTable.getAttribute("data-raven-stats-base");
 
     Promise.all(
       SOURCES.map(function (name) {
         return fetchSource(base, name);
       })
     ).then(function (docs) {
-      var readings = mergeReadings(docs);
-      var ravenStats = mergeRavenStats(docs);
       var now = Date.now();
-      var rows = table.querySelectorAll("tr[data-host]");
-      Array.prototype.forEach.call(rows, function (row) {
-        var host = row.getAttribute("data-host");
-        paintRow(row, readings[host], now);
-        if (host === "raven") paintStats(row, ravenStats, now);
-      });
+
+      if (statusTable) {
+        var readings = mergeReadings(docs);
+        var rows = statusTable.querySelectorAll("tr[data-host]");
+        Array.prototype.forEach.call(rows, function (row) {
+          paintRow(row, readings[row.getAttribute("data-host")], now);
+        });
+      }
+
+      if (ravenTable) {
+        paintRavenStats(ravenTable, mergeRavenStats(docs), now);
+      }
     });
   }
 
