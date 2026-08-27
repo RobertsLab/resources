@@ -106,6 +106,7 @@ nav:
    - 'Databases and Catalogs':
      - Lab Inventory: 'Lab-Inventory.md'
      - Histology Databank Explorer: 'histology-explorer/index.html'
+     - Data Portal: 'data-portal/index.html'
      - Pubathon: 'Pubathon.md'
      - Digital Media: 'Digital-Media.md'
      - Genomic Resources: 'Genomic-Resources.md'
