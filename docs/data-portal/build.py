@@ -19,7 +19,7 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 CSV = HERE / "nightingales.csv"
-GENOMES_MD = HERE.parent / "docs" / "Genomic-Resources.md"
+GENOMES_MD = HERE.parent / "Genomic-Resources.md"
 
 # --- Nightingales -----------------------------------------------------------
 # Keep the fields useful for discovery; drop the verbose internal file paths
