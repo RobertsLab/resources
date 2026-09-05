@@ -1,0 +1,70 @@
+{
+  "checked": "2026-09-05T17:40:52Z",
+  "hosts": {
+    "gannet": {
+      "detail": "HTTP 200",
+      "latency_ms": 69,
+      "up": true
+    },
+    "klone": {
+      "detail": "TCP 22 open",
+      "latency_ms": 23,
+      "up": true
+    }
+  },
+  "raven_stats": {
+    "cpu_percent": 0.85,
+    "disks": [
+      {
+        "available": "1.8T",
+        "filesystem": "/dev/md0",
+        "mount": "/home/shared/16TB_HDD_01",
+        "size": "14T",
+        "use_percent": 88,
+        "used": "12T"
+      },
+      {
+        "available": "2.1T",
+        "filesystem": "/dev/sdc1",
+        "mount": "/home/shared/8TB_HDD_01",
+        "size": "7.3T",
+        "use_percent": 70,
+        "used": "4.8T"
+      },
+      {
+        "available": "601G",
+        "filesystem": "/dev/sdd1",
+        "mount": "/home/shared/8TB_HDD_02",
+        "size": "7.3T",
+        "use_percent": 92,
+        "used": "6.3T"
+      },
+      {
+        "available": "1.7T",
+        "filesystem": "/dev/sde1",
+        "mount": "/media/4TB_JPG_ext",
+        "size": "3.6T",
+        "use_percent": 52,
+        "used": "1.8T"
+      },
+      {
+        "available": "4.4T",
+        "filesystem": "/dev/sdb1",
+        "mount": "/home/shared/8TB_HDD_03",
+        "size": "7.3T",
+        "use_percent": 38,
+        "used": "2.6T"
+      },
+      {
+        "available": "718M",
+        "filesystem": "/dev/sda1",
+        "mount": "/boot/efi",
+        "size": "774M",
+        "use_percent": 8,
+        "used": "56M"
+      }
+    ],
+    "generated": "2026-09-05T14:01:03Z"
+  },
+  "source": "external"
+}
