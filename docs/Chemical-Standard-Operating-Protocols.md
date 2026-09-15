@@ -10,6 +10,8 @@
 
 Full, per-hazard-class UW EH&S-format SOPs (SOP-01 through SOP-15, Rev. 0, September 1, 2026) covering every chemical in the FTR 209/213 MyChem inventory. Each SOP documents engineering controls, PPE, storage, spill response, and waste disposal in more detail than the summaries below; consult it for chemicals flagged as Particularly Hazardous Substances (PHS).
 
+This quick-reference doc and that SOP set are not mirrors of each other — they're kept loosely in sync by [`.github/workflows/sop-sync.yml`](../.github/workflows/sop-sync.yml), which opens a GitHub issue (assigned to Copilot) whenever either side changes, asking for the other to be reviewed.
+
 ---
 
 ### [RNAzol RT](#rnazol_rt)

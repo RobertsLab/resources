@@ -1,0 +1,255 @@
+name: SOP sync check
+
+# These two documents are NOT mirrors of each other:
+#   - docs/Chemical-Standard-Operating-Protocols.md
+#     Informal, per-chemical quick reference (Purpose / Specific Hazards / PPE /
+#     Waste Disposal / Prepared by), one entry per chemical, anchor-linked.
+#   - lab_safety_docs/standard-operating-procedures/SOP-*.docx (+ matching .pdf)
+#     Formal, signed UW EH&S-template SOPs grouped by HAZARD CLASS (SOP-01..15),
+#     covering the FTR 209/213 MyChem inventory. SOP-Coverage-Crosswalk.csv maps
+#     each inventory chemical to its SOP number.
+#
+# This workflow does not try to auto-merge content between them. It detects a
+# real content change on either side, builds a diff/context summary, and files
+# a GitHub issue assigned to Copilot's coding agent so it can draft the
+# corresponding reconciliation as a reviewable PR.
+#
+# Requires: GitHub Copilot coding agent enabled for this repo. If assigning the
+# issue to Copilot fails (e.g. the bot login differs from "copilot"), the
+# workflow logs a warning but still leaves the issue filed for manual triage.
+#
+# Loop guard: reconciliation PRs should be merged with "[sop-sync]" somewhere
+# in the merge commit message (e.g. as part of the PR title) so this workflow
+# doesn't immediately re-open a follow-up issue about the change it was itself
+# asked to produce.
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/Chemical-Standard-Operating-Protocols.md'
+      - 'lab_safety_docs/standard-operating-procedures/SOP-*.docx'
+      - 'lab_safety_docs/standard-operating-procedures/SOP-Coverage-Crosswalk.csv'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  changes:
+    runs-on: ubuntu-latest
+    outputs:
+      md: ${{ steps.filter.outputs.md }}
+      sop: ${{ steps.filter.outputs.sop }}
+      sop_files: ${{ steps.filter.outputs.sop_files }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          list-files: shell
+          filters: |
+            md:
+              - 'docs/Chemical-Standard-Operating-Protocols.md'
+            sop:
+              - 'lab_safety_docs/standard-operating-procedures/SOP-*.docx'
+              - 'lab_safety_docs/standard-operating-procedures/SOP-Coverage-Crosswalk.csv'
+
+  sop-changed:
+    needs: changes
+    if: needs.changes.outputs.sop == 'true' && !contains(github.event.head_commit.message, '[sop-sync]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install pandoc
+        run: sudo apt-get update -qq && sudo apt-get install -y --no-install-recommends pandoc
+
+      - name: Resolve base commit
+        id: base
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            echo "sha=${BEFORE}" >> "$GITHUB_OUTPUT"
+          else
+            echo "sha=$(git rev-list --max-parents=0 HEAD | tail -1)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build content diff for changed SOP files
+        id: diff
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
+          SOP_FILES: ${{ needs.changes.outputs.sop_files }}
+        run: |
+          set -e
+          BODY_FILE=/tmp/sop-diff-body.md
+          : > "$BODY_FILE"
+          CHANGED=false
+
+          for f in $SOP_FILES; do
+            case "$f" in
+              *.docx)
+                echo "### Changed: \`$f\`" >> "$BODY_FILE"
+                NEW_TXT=$(pandoc "$f" -t plain 2>/dev/null || echo "")
+                if git cat-file -e "${BASE_SHA}:${f}" 2>/dev/null; then
+                  git show "${BASE_SHA}:${f}" > /tmp/old.docx
+                  OLD_TXT=$(pandoc /tmp/old.docx -t plain 2>/dev/null || echo "")
+                else
+                  OLD_TXT=""
+                  echo "_(new file)_" >> "$BODY_FILE"
+                fi
+                printf '%s\n' "$OLD_TXT" > /tmp/old.txt
+                printf '%s\n' "$NEW_TXT" > /tmp/new.txt
+                if ! diff -q /tmp/old.txt /tmp/new.txt > /dev/null 2>&1; then
+                  CHANGED=true
+                  {
+                    echo '<details><summary>Text diff (pandoc-extracted, old vs. new)</summary>'
+                    echo ''
+                    echo '```diff'
+                    diff -u /tmp/old.txt /tmp/new.txt || true
+                    echo '```'
+                    echo '</details>'
+                  } >> "$BODY_FILE"
+                else
+                  echo "_(pandoc-extracted text unchanged — looks like a metadata/formatting-only save; no action needed for this file)_" >> "$BODY_FILE"
+                fi
+                echo '' >> "$BODY_FILE"
+                ;;
+              *Crosswalk.csv)
+                echo "### Changed: \`$f\` (chemical → SOP mapping)" >> "$BODY_FILE"
+                CHANGED=true
+                {
+                  echo '```diff'
+                  git diff "${BASE_SHA}" HEAD -- "$f" || true
+                  echo '```'
+                } >> "$BODY_FILE"
+                echo '' >> "$BODY_FILE"
+                ;;
+            esac
+          done
+
+          echo "content_changed=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: File sync issue
+        if: steps.diff.outputs.content_changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "sop-sync" --color "0E8A16" \
+            --description "Chemical quick-reference / formal SOP reconciliation" 2>/dev/null || true
+
+          {
+            echo "A formal SOP in \`lab_safety_docs/standard-operating-procedures/\` changed with a real"
+            echo "content difference (not just a Word metadata touch). Please check whether"
+            echo "\`docs/Chemical-Standard-Operating-Protocols.md\` needs a corresponding update, and open"
+            echo "a PR if so."
+            echo ""
+            echo "**These two documents are not mirrors — read this before editing:**"
+            echo "- \`docs/Chemical-Standard-Operating-Protocols.md\` is an informal, per-chemical quick"
+            echo "  reference: Purpose / Specific Hazards / Personal Protective Equipment / Waste Disposal /"
+            echo "  Prepared by, one entry per chemical name, anchor-linked. Match that existing style."
+            echo "- The SOP set is the formal, signed UW EH&S-template document (Sections 1-12), grouped by"
+            echo "  **hazard class**, not by individual chemical. Use"
+            echo "  \`lab_safety_docs/standard-operating-procedures/SOP-Coverage-Crosswalk.csv\` to see which"
+            echo "  inventory chemicals the changed SOP covers."
+            echo "- Do NOT paste formal SOP section text wholesale into the quick-reference doc. Only carry"
+            echo "  over a change if it actually affects the hazard/PPE/waste-disposal guidance for a"
+            echo "  chemical the quick-reference doc already tracks (update that entry) or newly covers"
+            echo "  (add a new entry in the same style). If nothing in the quick-reference doc is affected,"
+            echo "  close this issue with a comment explaining why — no PR needed."
+            echo "- Title any resulting PR starting with \`[sop-sync]\` so the merge doesn't immediately"
+            echo "  re-trigger a follow-up sync issue on the other side."
+            echo ""
+            cat /tmp/sop-diff-body.md
+          } > /tmp/issue-body.md
+
+          ISSUE_URL=$(gh issue create \
+            --title "SOP change: review Chemical-Standard-Operating-Protocols.md for sync" \
+            --label "sop-sync" \
+            --body-file /tmp/issue-body.md)
+          echo "Created $ISSUE_URL"
+          gh issue edit "$ISSUE_URL" --add-assignee "copilot" || \
+            echo "::warning::Could not auto-assign Copilot (bot login may differ, or Copilot coding agent isn't enabled for this repo). Assign $ISSUE_URL to Copilot manually."
+
+  md-changed:
+    needs: changes
+    if: needs.changes.outputs.md == 'true' && !contains(github.event.head_commit.message, '[sop-sync]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Resolve base commit
+        id: base
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            echo "sha=${BEFORE}" >> "$GITHUB_OUTPUT"
+          else
+            echo "sha=$(git rev-list --max-parents=0 HEAD | tail -1)" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Diff the quick-reference doc
+        id: diff
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
+        run: |
+          git diff "${BASE_SHA}" HEAD -- docs/Chemical-Standard-Operating-Protocols.md > /tmp/md.diff || true
+          if [ -s /tmp/md.diff ]; then
+            echo "has_diff=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_diff=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: File sync issue
+        if: steps.diff.outputs.has_diff == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "sop-sync" --color "0E8A16" \
+            --description "Chemical quick-reference / formal SOP reconciliation" 2>/dev/null || true
+
+          {
+            echo "\`docs/Chemical-Standard-Operating-Protocols.md\` changed. Please check whether the formal"
+            echo "SOP set in \`lab_safety_docs/standard-operating-procedures/\` needs a corresponding update."
+            echo ""
+            echo "**These two documents are not mirrors — read this before editing:**"
+            echo "- The quick-reference doc is informal, one entry per chemical."
+            echo "- The formal SOPs (SOP-01..15, \`.docx\`, UW EH&S template) are grouped by hazard class and"
+            echo "  are **signed, approved documents**. Use"
+            echo "  \`lab_safety_docs/standard-operating-procedures/SOP-Coverage-Crosswalk.csv\` to find which"
+            echo "  SOP number covers the chemical that changed."
+            echo "- **Do not edit the \`.docx\`/\`.pdf\` files directly** — a scripted edit will likely break"
+            echo "  the approval signatures and EH&S formatting. Instead:"
+            echo "  1. Identify the affected SOP-NN via the crosswalk."
+            echo "  2. Add or update a short redline note at"
+            echo "     \`lab_safety_docs/standard-operating-procedures/pending-redlines/SOP-NN.md\`"
+            echo "     describing exactly what text should change and why, citing the relevant section"
+            echo "     number (Sections 1-12 per the UW blank SOP template)."
+            echo "  3. Leave the \`.docx\`/\`.pdf\` themselves untouched — a human applies the redline in Word"
+            echo "     and routes it through the normal approval / re-training process described in the SOP"
+            echo "     README's \"Review cadence\" section."
+            echo "- If the quick-reference change doesn't affect any chemical the SOP set covers (e.g. a"
+            echo "  wording/typo fix, or a chemical outside the FTR 209/213 inventory), close this issue with"
+            echo "  a comment explaining why — no redline needed."
+            echo "- Title any resulting PR starting with \`[sop-sync]\` so the merge doesn't immediately"
+            echo "  re-trigger a follow-up sync issue on the other side."
+            echo ""
+            echo '```diff'
+            cat /tmp/md.diff
+            echo '```'
+          } > /tmp/issue-body.md
+
+          ISSUE_URL=$(gh issue create \
+            --title "Chemical-Standard-Operating-Protocols.md change: review formal SOPs for sync" \
+            --label "sop-sync" \
+            --body-file /tmp/issue-body.md)
+          echo "Created $ISSUE_URL"
+          gh issue edit "$ISSUE_URL" --add-assignee "copilot" || \
+            echo "::warning::Could not auto-assign Copilot (bot login may differ, or Copilot coding agent isn't enabled for this repo). Assign $ISSUE_URL to Copilot manually."

@@ -54,3 +54,12 @@ are worth writing down regardless.
 
 Review annually, and immediately after any incident, near miss, new chemical purchase, or process change.
 Training must be repeated after any revision to SOP content.
+
+## Keeping this in sync with the quick-reference doc
+
+[`docs/Chemical-Standard-Operating-Protocols.md`](../../docs/Chemical-Standard-Operating-Protocols.md)
+is a separate, informal per-chemical quick reference — not a mirror of these SOPs. A change to either
+side triggers [`.github/workflows/sop-sync.yml`](../../.github/workflows/sop-sync.yml), which files a
+GitHub issue (assigned to Copilot) describing what changed and asking for the other side to be checked.
+Proposed SOP text changes land as a redline in [`pending-redlines/`](pending-redlines/) rather than a
+direct `.docx` edit — see that folder's README.
