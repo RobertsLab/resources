@@ -53,6 +53,11 @@ plugins:
         - timestamp
         - message
 
+# Pages built and searchable, but intentionally kept out of the nav
+not_in_nav: |
+  DEI-Resources.md
+  External-Communication-and-Funding.md
+
 nav:
    - Home: 'index.md'
 
@@ -69,9 +74,6 @@ nav:
        - Project Management: 'Project-Management.md'
        - Lab Notebooks: 'Lab-Notebooks.md'
        - Data Management: 'Data-Management.md'
-     - 'Career & community resources':
-       - DEI Resources: 'DEI-Resources.md'
-       - External Communication and Funding: 'External-Communication-and-Funding.md'
 
    - 'Guides':
      - Writing Scientific Manuscripts: 'Writing.md'
