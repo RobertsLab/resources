@@ -8,7 +8,7 @@
 
 ## Initial set up
 
-- Follow UW-IT guide here: [https://hyak.uw.edu/docs/tools/vsc-proxy-jump/](https://hyak.uw.edu/docs/tools/vsc-proxy-jump/)
+- Follow UW-IT guide here: [https://hyak.uw.edu/docs/guides/applications/vscode/proxy-jump](https://hyak.uw.edu/docs/guides/applications/vscode/proxy-jump)
 - An alternative way to using VS code on Klone is through Hyak OnDemand: [https://hyak.uw.edu/docs/ood/vscode](https://hyak.uw.edu/docs/ood/vscode).
 	- Pros: easier to get started
  	- Cons: extensions like GitHub Co-pilot are not freely available or accessible 
@@ -31,7 +31,7 @@
 	- `ctrl + A + D`
 	- Before you do this, you may need to note or copy the node name (e.g. `n3441`) for the next step. If you'll use set-hyak-node.sh in the next step, you do not need to note it.
 5. Set the node in your local `.ssh/klone-node-config` file
-	- This is described in the UW-IT documentation: [https://hyak.uw.edu/docs/tools/vsc-proxy-jump/](https://hyak.uw.edu/docs/tools/vsc-proxy-jump/)
+	- This is described in the UW-IT documentation: [https://hyak.uw.edu/docs/guides/applications/vscode/proxy-jump](https://hyak.uw.edu/docs/guides/applications/vscode/proxy-jump)
 	- You can do this through your command line text editor (e.g. nano, vim). You’ll paste the node name after the `Hostname` field
 	- Alternatively you can use the Run `set-hyak-node.sh` script
 		- `bash set-hyak-node.sh`
