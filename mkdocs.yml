@@ -32,6 +32,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/server-status.js
+  - javascripts/gannet-health.js
 
 markdown_extensions:
   - admonition
@@ -85,6 +86,7 @@ nav:
      - Agentic Coding Tools: 'Agentic-Coding-Tools.md'
      - Code Snippets: 'code_Snippets.md'
      - Computing Hardware: 'Computing-Hardware.md'
+     - Gannet Dashboard: 'Gannet-Dashboard.md'
      - Lab Software: 'Lab-Software.md'
 
      - 'Klone Guides':
