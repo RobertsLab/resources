@@ -113,3 +113,184 @@
   height: 100%;
   background: var(--ss-bar-color, #5b8def);
 }
+
+/* Gannet daily health: status-table cell, summary section, dashboard.
+ * Status colors reuse the ss-* values above; series colors are the
+ * validated categorical slots 1 (blue) and 2 (orange), stepped per scheme.
+ */
+
+.gh-dot-warn {
+  --ss-color: #d99100;
+}
+
+[data-md-color-scheme="slate"] .gh-dot-warn {
+  --ss-color: #f0b429;
+}
+
+.ss-health a {
+  color: inherit;
+}
+
+.md-typeset ul.gh-alerts {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.md-typeset ul.gh-alerts li {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0.3em;
+  padding: 0.35em 0.7em;
+  border-left: 4px solid var(--gh-status, #9aa0a6);
+  background: rgba(128, 128, 128, 0.08);
+  border-radius: 0 0.2em 0.2em 0;
+}
+
+.gh-critical {
+  --gh-status: #d64545;
+}
+
+.gh-warning {
+  --gh-status: #d99100;
+}
+
+.gh-good {
+  --gh-status: #2e9e4f;
+}
+
+[data-md-color-scheme="slate"] .gh-critical {
+  --gh-status: #ff6b6b;
+}
+
+[data-md-color-scheme="slate"] .gh-warning {
+  --gh-status: #f0b429;
+}
+
+[data-md-color-scheme="slate"] .gh-good {
+  --gh-status: #4ad07d;
+}
+
+td.gh-critical {
+  font-weight: 600;
+}
+
+.gh-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.6rem;
+  margin: 1em 0 1.5em;
+}
+
+.gh-tile {
+  padding: 0.6em 0.8em;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-top: 4px solid var(--gh-status, rgba(128, 128, 128, 0.25));
+  border-radius: 0.3em;
+}
+
+.gh-tile-label {
+  font-size: 0.75em;
+  opacity: 0.75;
+  font-family: var(--md-code-font-family, monospace);
+}
+
+.gh-tile-value {
+  font-size: 1.3em;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.gh-tile-sub {
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+
+.gh-note {
+  font-size: 0.8em;
+  opacity: 0.75;
+}
+
+.gh-chart {
+  width: 100%;
+  max-width: 44rem;
+  height: auto;
+  display: block;
+  --gh-s1: #2a78d6;
+  --gh-s2: #eb6834;
+}
+
+[data-md-color-scheme="slate"] .gh-chart,
+[data-md-color-scheme="slate"] .gh-legend {
+  --gh-s1: #3987e5;
+  --gh-s2: #d95926;
+}
+
+.gh-legend {
+  --gh-s1: #2a78d6;
+  --gh-s2: #eb6834;
+  font-size: 0.8em;
+}
+
+.gh-legend-item {
+  margin-right: 1em;
+}
+
+.gh-swatch {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.35em;
+  border-radius: 0.2em;
+  vertical-align: middle;
+}
+
+.gh-swatch.gh-s1 { background: var(--gh-s1); }
+.gh-swatch.gh-s2 { background: var(--gh-s2); }
+
+.gh-grid {
+  stroke: currentColor;
+  stroke-opacity: 0.15;
+}
+
+.gh-ref {
+  stroke: currentColor;
+  stroke-opacity: 0.5;
+  stroke-dasharray: 4 4;
+}
+
+.gh-axis,
+.gh-direct {
+  fill: currentColor;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+
+.gh-axis {
+  fill-opacity: 0.7;
+}
+
+.gh-line {
+  fill: none;
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.gh-line.gh-s1 { stroke: var(--gh-s1); }
+.gh-line.gh-s2 { stroke: var(--gh-s2); }
+
+.gh-point {
+  stroke: var(--md-default-bg-color, #fff);
+  stroke-width: 2;
+}
+
+.gh-point.gh-s1 { fill: var(--gh-s1); }
+.gh-point.gh-s2 { fill: var(--gh-s2); }
+
+.gh-hit {
+  fill: transparent;
+}
+
+.gh-raw pre {
+  font-size: 0.75em;
+}

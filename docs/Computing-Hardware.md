@@ -10,23 +10,26 @@ Below is a list of computing resources we have available, as well as some links 
 
 <table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
   <thead>
-    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th><th>Daily health</th></tr>
   </thead>
   <tbody>
     <tr data-host="raven">
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td><a href="#raven-disk-cpu">disk / CPU below</a></td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td class="ss-health" data-health="gannet" data-dashboard="../Gannet-Dashboard/">loading…</td>
     </tr>
     <tr data-host="klone">
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td><a href="https://status.uw.edu/">UW-IT status</a></td>
     </tr>
   </tbody>
 </table>
@@ -50,6 +53,14 @@ Checks run automatically — the timestamp shows when each host was last reached
 </table>
 
 This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first.
+
+### Gannet Health
+
+<div data-gannet-summary data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <p>Loading gannet's latest health report…</p>
+</div>
+
+Gannet writes a [daily health report](https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt) covering disk and inode use, memory, RAID, services, and kernel errors. See the **[Gannet Dashboard](Gannet-Dashboard.md)** for the full report and day-by-day history.
 
 ## Accounts
 

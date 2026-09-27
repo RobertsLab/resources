@@ -75,6 +75,36 @@ the table, flagged stale if the snapshot is older than 30 hours. Drives at
 90%+ full are marked critical and 75%+ warn, in the text as well as the bar
 color.
 
+## Gannet's daily health report
+
+Gannet runs `gannet_health.sh` once a day and writes the result to
+<https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt>, plus a dated
+copy, `gannet_health_YYYY-MM-DD.txt`, in the same directory. The report covers
+uptime and load, `df` and inode use, memory, RAID (`/proc/mdstat`), services
+and failed systemd units, kernel errors, and a summary of alerts.
+
+Gannet does not send CORS headers, so the page cannot fetch the report itself.
+Instead `check_servers.py` fetches and parses it (`fetch_gannet_stats`) under
+either profile and writes a top-level `gannet_stats` field. It is kept out of
+`hosts` for the same reason as `raven_stats`. The field holds the parsed
+sections, the raw text (`raw`), and a `history` list with one small entry per
+dated report for the last 30 days (load, per-mount use %, alert count). That
+list is built by reading the directory index and fetching each dated file.
+
+`docs/javascripts/gannet-health.js` merges `gannet_stats` on its own
+`generated` timestamp and renders it in three places:
+
+- the **Daily health** cell for gannet in the status table
+  (`[data-health="gannet"]`),
+- the **Gannet Health** section on Computing Hardware
+  (`[data-gannet-summary]`: alerts and the disk table), and
+- the **Gannet Dashboard** page (`docs/Gannet-Dashboard.md`,
+  `[data-gannet-dashboard]`), with the full report and history charts.
+
+A report older than 30 hours is flagged stale. If the report format changes,
+`parse_gannet_report` treats every section as optional, so a partial parse
+still renders.
+
 The branch is rewritten as a single root commit on every run. At one check
 every 10 minutes an append-only branch would add roughly 50,000 commits a year
 to a repo that everyone clones.
@@ -139,8 +169,8 @@ and that the lights on the handbook page go green within a few minutes.
 ## Notes and limits
 
 - A green light means the port answered. It says nothing about Slurm health
-  or whether jobs are running. Raven's disk space and CPU load are covered
-  separately by the snapshot described above; gannet and klone have no
+  or whether jobs are running. Raven's disk space and CPU load, and gannet's daily health
+  report, are covered separately as described above; klone has no
   equivalent.
 - `raw.githubusercontent.com` caches for about 5 minutes, so the page can lag
   the actual check by that much on top of the check interval.
