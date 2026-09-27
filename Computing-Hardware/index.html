@@ -12,7 +12,7 @@
         <link rel="prev" href="../code_Snippets/">
       
       
-        <link rel="next" href="../Lab-Software/">
+        <link rel="next" href="../Gannet-Dashboard/">
       
       
         
@@ -1109,6 +1109,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#gannet-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gannet Health
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1269,6 +1280,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../Gannet-Dashboard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gannet Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Lab-Software/" class="md-nav__link">
         
   
@@ -1305,10 +1344,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
         
           
-          <label class="md-nav__link" for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
             
   
   
@@ -1326,8 +1365,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_6">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_7">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1696,10 +1735,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
         
           
-          <label class="md-nav__link" for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
             
   
   
@@ -1717,8 +1756,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2709,6 +2748,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#gannet-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gannet Health
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2885,23 +2935,26 @@
 <h2 id="server-status">Server Status</h2>
 <table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
   <thead>
-    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th><th>Daily health</th></tr>
   </thead>
   <tbody>
     <tr data-host="raven">
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td><a href="#raven-disk-cpu">disk / CPU below</a></td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td class="ss-health" data-health="gannet" data-dashboard="../Gannet-Dashboard/">loading…</td>
     </tr>
     <tr data-host="klone">
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td><a href="https://status.uw.edu/">UW-IT status</a></td>
     </tr>
   </tbody>
 </table>
@@ -2924,6 +2977,12 @@
 </table>
 
 <p>This comes from a <a href="https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log">daily snapshot</a> (<code>df</code> plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first.</p>
+<h3 id="gannet-health">Gannet Health</h3>
+<div data-gannet-summary data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <p>Loading gannet's latest health report…</p>
+</div>
+
+<p>Gannet writes a <a href="https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt">daily health report</a> covering disk and inode use, memory, RAID, services, and kernel errors. See the <strong><a href="../Gannet-Dashboard/">Gannet Dashboard</a></strong> for the full report and day-by-day history.</p>
 <h2 id="accounts">Accounts</h2>
 <p>You will need accounts with the following services in order to minimally function in the Roberts Lab:</p>
 <ul>
@@ -3285,6 +3344,8 @@ If interested in using more than our allocation, you will need to reach out to o
       <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../javascripts/server-status.js"></script>
+      
+        <script src="../javascripts/gannet-health.js"></script>
       
     
   </body>
