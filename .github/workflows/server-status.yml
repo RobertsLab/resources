@@ -16,6 +16,11 @@ name: server-status
 on:
   schedule:
     - cron: "*/15 * * * *"
+    # Gannet writes its daily health report at 03:00 Pacific. The 15-minute
+    # runs above are often skipped for hours, so add a dedicated run shortly
+    # after to pick up the new report. Cron is UTC, and 11:15 UTC lands after
+    # 03:00 Pacific year-round (04:15 PDT, 03:15 PST).
+    - cron: "15 11 * * *"
   workflow_dispatch:
 
 permissions:
