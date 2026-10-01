@@ -169,6 +169,73 @@
     );
   }
 
+  // Report lines look like "/dev/sda  health=PASSED  temp=32C realloc=0 pending=0";
+  // "?" means smartctl did not report that attribute for the drive.
+  function parseSmartLine(line) {
+    var fields = line.trim().split(/\s+/);
+    if (!fields.length || fields[0].indexOf("/dev/") !== 0) return null;
+    var drive = { device: fields[0] };
+    fields.slice(1).forEach(function (f) {
+      var kv = f.split("=");
+      if (kv.length !== 2) return;
+      var v = kv[1].replace(/C$/, "");
+      drive[kv[0]] = v === "?" || v === "" ? null : v;
+    });
+    return drive;
+  }
+
+  function countCell(value) {
+    if (value == null) return el("td", "gh-muted", "not reported");
+    var n = Number(value);
+    if (isNaN(n)) return el("td", null, value);
+    return el("td", n > 0 ? "gh-critical" : "gh-ok", n > 0 ? "⚠ " + n : "0");
+  }
+
+  function smartSection(parent, lines) {
+    var drives = lines.map(parseSmartLine).filter(Boolean);
+    if (!drives.length) {
+      parent.appendChild(el("pre", null, lines.join("\n")));
+      return;
+    }
+    var failing = drives.filter(function (d) { return d.health && d.health !== "PASSED"; });
+    var missing = drives.filter(function (d) { return d.temp == null && d.realloc == null && d.pending == null; });
+
+    parent.appendChild(
+      el(
+        "p",
+        failing.length ? "gh-critical" : "gh-ok",
+        failing.length
+          ? "✗ " + failing.length + " of " + drives.length + " drives fail their SMART self-check."
+          : "✓ All " + drives.length + " drives pass their SMART self-check."
+      )
+    );
+
+    parent.appendChild(
+      table(
+        ["Drive", "Self-check", "Temperature", "Reallocated sectors", "Pending sectors"],
+        drives.map(function (d) {
+          var h = d.health;
+          var healthCell = el("td", h == null ? "gh-muted" : h === "PASSED" ? "gh-ok" : "gh-critical",
+            h == null ? "not reported" : h === "PASSED" ? "✓ passed" : "✗ " + h.toLowerCase());
+          var temp = d.temp == null ? el("td", "gh-muted", "not reported") : el("td", null, d.temp + " °C");
+          return row([d.device, healthCell, temp, countCell(d.realloc), countCell(d.pending)]);
+        })
+      )
+    );
+
+    var note =
+      "Self-check is the drive's own pass/fail verdict. Reallocated sectors are bad spots the drive " +
+      "has already swapped out; pending sectors are spots it is unsure about. Both should stay at 0, " +
+      "and a rising count is an early sign the drive is wearing out.";
+    if (missing.length) {
+      note +=
+        " " + missing.length + " of " + drives.length + " drives give only the pass/fail verdict " +
+        "(\"not reported\"): the health script found no temperature or sector counts for them, which " +
+        "usually means the drive reports these values under different names or through a RAID controller.";
+    }
+    parent.appendChild(el("p", "gh-note", note));
+  }
+
   // ---- Computing Hardware page -------------------------------------------
 
   function paintHealthCell(cell, stats, now) {
@@ -474,8 +541,8 @@
       logs.appendChild(el("p", "gh-ok", "✓ None."));
     }
     if (stats.smart && stats.smart.length) {
-      logs.appendChild(el("h3", null, "SMART drive health"));
-      logs.appendChild(el("p", null, stats.smart.join(" ")));
+      var smart = section(root, "Drive health (SMART)");
+      smartSection(smart, stats.smart);
     }
 
     if (stats.raw) {
