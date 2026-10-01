@@ -175,6 +175,11 @@ td.gh-critical {
   font-weight: 600;
 }
 
+td.gh-muted {
+  opacity: 0.6;
+  font-style: italic;
+}
+
 .gh-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
