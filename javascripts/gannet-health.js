@@ -303,10 +303,11 @@
   /*
    * Small line chart. series: [{name, cls, points: [{x: index, y, label}]}].
    * yMax fixes the scale (100 for percentages); ref draws a dashed reference
-   * line (e.g. CPU core count for load). One y-axis only.
+   * line (e.g. CPU core count for load). right widens the right margin for
+   * longer direct labels. One y-axis only.
    */
   function lineChart(dates, series, opts) {
-    var W = 640, H = 200, L = 40, R = 90, T = 12, B = 28;
+    var W = 640, H = 200, L = 40, R = opts.right || 90, T = 12, B = 28;
     var yMax = opts.yMax;
     if (yMax == null) {
       yMax = 1;
@@ -350,6 +351,7 @@
       chart.appendChild(t);
     });
 
+    var directLabels = [];
     series.forEach(function (s) {
       var pts = s.points;
       if (pts.length > 1) {
@@ -374,10 +376,18 @@
       // Direct label at the last point so identity is never color alone.
       var last = pts[pts.length - 1];
       if (last) {
-        var lbl = svg("text", { x: x(last.x) + 8, y: y(last.y) + 4, class: "gh-direct" });
+        var lbl = svg("text", { x: x(last.x) + 8, class: "gh-direct" });
         lbl.textContent = s.name + " " + last.label;
         chart.appendChild(lbl);
+        directLabels.push({ node: lbl, y: y(last.y) + 4 });
       }
+    });
+    // Push direct labels apart vertically so lines ending at similar
+    // values do not print on top of each other.
+    directLabels.sort(function (a, b) { return a.y - b.y; });
+    directLabels.forEach(function (d, i) {
+      if (i && d.y < directLabels[i - 1].y + 13) d.y = directLabels[i - 1].y + 13;
+      d.node.setAttribute("y", d.y);
     });
     return chart;
   }
@@ -570,6 +580,9 @@
       if (dashboard) paintDashboard(dashboard, stats, now);
     });
   }
+
+  // Shared with hyak-alloc.js, which loads after this file.
+  window.RobertsLabCharts = { lineChart: lineChart, historyNote: historyNote };
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", render);

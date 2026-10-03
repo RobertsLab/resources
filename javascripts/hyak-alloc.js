@@ -155,6 +155,71 @@
     });
     table.appendChild(tbody);
     container.appendChild(table);
+    paintHistory(container, stats);
+  }
+
+  var SERIES_CLS = ["gh-s1", "gh-s2", "gh-s3"];
+
+  // One chart per resource, one line per partition, as % of that
+  // partition's total. Built from the dated hyakalloc_YYYY-MM-DD.txt copies.
+  function paintHistory(container, stats) {
+    var charts = window.RobertsLabCharts;
+    var history = stats.history || [];
+    if (!charts || !history.length) return;
+
+    var dates = history.map(function (h) { return h.date; });
+    var keys = stats.partitions.map(function (p) {
+      return p.account + "/" + p.partition;
+    });
+
+    function seriesFor(usedKey, totalKey) {
+      return keys.slice(0, SERIES_CLS.length).map(function (key, k) {
+        var pts = [];
+        history.forEach(function (h, i) {
+          var p = h.partitions && h.partitions[key];
+          if (!p || p[usedKey] == null || !p[totalKey]) return;
+          var pct = Math.round((100 * p[usedKey]) / p[totalKey]);
+          // Just the %, so the direct label fits beside the chart; the table
+          // above has the absolute numbers.
+          pts.push({ x: i, y: pct, label: pct + "%" });
+        });
+        // Direct labels use the partition name only; the account is in the
+        // legend and the tooltip.
+        return { name: key.split("/")[1], cls: SERIES_CLS[k], points: pts, key: key };
+      }).filter(function (s) { return s.points.length; });
+    }
+
+    var details = el("details", "hy-history");
+    details.appendChild(el("summary", null, "Usage history"));
+
+    var legendSeries = seriesFor("cpus", "cpus_total");
+    var legend = el("div", "gh-legend");
+    legendSeries.forEach(function (s) {
+      var item = el("span", "gh-legend-item");
+      item.appendChild(el("span", "gh-swatch " + s.cls));
+      item.appendChild(document.createTextNode(s.key));
+      legend.appendChild(item);
+    });
+    details.appendChild(legend);
+
+    [
+      ["CPUs in use", "cpus", "cpus_total"],
+      ["Memory in use", "memory_gb", "memory_total_gb"]
+    ].forEach(function (c) {
+      var series = seriesFor(c[1], c[2]);
+      if (!series.length) return;
+      details.appendChild(el("h4", null, c[0] + " (% of partition)"));
+      details.appendChild(
+        charts.lineChart(dates, series, {
+          yMax: 100,
+          unit: "%",
+          right: 150,
+          label: c[0] + " per partition by day"
+        })
+      );
+    });
+    details.appendChild(charts.historyNote(history));
+    container.appendChild(details);
   }
 
   function render() {
