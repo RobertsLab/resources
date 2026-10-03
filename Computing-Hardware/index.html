@@ -1120,6 +1120,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#klone-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klone Allocation
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2759,6 +2770,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#klone-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Klone Allocation
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -2954,7 +2976,7 @@
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td><a href="https://status.uw.edu/">UW-IT status</a></td>
+      <td><a href="#klone-allocation">allocation below</a></td>
     </tr>
   </tbody>
 </table>
@@ -2983,6 +3005,12 @@
 </div>
 
 <p>Gannet writes a <a href="https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt">daily health report</a> covering disk and inode use, memory, RAID, services, and kernel errors. See the <strong><a href="../Gannet-Dashboard/">Gannet Dashboard</a></strong> for the full report and day-by-day history.</p>
+<h3 id="klone-allocation">Klone Allocation</h3>
+<div data-hyak-alloc data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <p>Loading klone's latest hyakalloc snapshot…</p>
+</div>
+
+<p>This is the output of <a href="https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt"><code>hyakalloc</code></a>, run on klone at 6am each day and picked up here by about 8am. Each row is a partition we can submit to with <code>--account</code> / <code>--partition</code>; the bars show how much of it lab and CoEnv jobs were using at that moment. Partitions at 90%+ in use are marked critical, 75%+ as warnings. <strong>Checkpoint idle</strong> is the number of idle CPUs and GPUs on the <code>ckpt</code> partition across Hyak, available to preemptible jobs. For Hyak-wide outages, check <a href="https://status.uw.edu/">UW-IT status</a>.</p>
 <h2 id="accounts">Accounts</h2>
 <p>You will need accounts with the following services in order to minimally function in the Roberts Lab:</p>
 <ul>
@@ -3346,6 +3374,8 @@ If interested in using more than our allocation, you will need to reach out to o
         <script src="../javascripts/server-status.js"></script>
       
         <script src="../javascripts/gannet-health.js"></script>
+      
+        <script src="../javascripts/hyak-alloc.js"></script>
       
     
   </body>
