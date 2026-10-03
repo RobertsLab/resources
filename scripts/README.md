@@ -118,13 +118,18 @@ dated `hyakalloc_YYYY-MM-DD.txt` copy.
 profile into a top-level `hyak_stats` field, kept out of `hosts` for the same
 reason as `raven_stats`: one entry per account/partition with `total`, `used`
 and `free` CPUs, memory and GPUs, plus the checkpoint idle counts and the raw
-text. The parser splits rows on the `│` column separator, so it depends on
+text. It also carries a `history` list with one entry per dated copy over
+the last 30 days (used and total CPUs and memory per partition, checkpoint
+idle CPUs), built the same way as gannet's. The parser splits rows on the `│` column separator, so it depends on
 hyakalloc's box-drawn table format.
 
 The Action has a dedicated run at 15:00 UTC (08:00 PDT) to pick it up.
 `docs/javascripts/hyak-alloc.js` renders it in the **Klone Allocation**
 section on Computing Hardware (`[data-hyak-alloc]`), flagged stale after 30
-hours. The snapshot reflects the accounts visible to the user who ran it.
+hours, with a collapsible **Usage history** chart per resource. The charts
+reuse the line chart from `gannet-health.js` (exposed as
+`window.RobertsLabCharts`), so `gannet-health.js` must stay listed before
+`hyak-alloc.js` in `mkdocs.yml`. The snapshot reflects the accounts visible to the user who ran it.
 
 The branch is rewritten as a single root commit on every run. At one check
 every 10 minutes an append-only branch would add roughly 50,000 commits a year

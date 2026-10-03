@@ -53,6 +53,7 @@ GANNET_HISTORY_DAYS = 30
 # output here, under a "Generated: ..." line. Klone itself needs Duo for SSH,
 # so nothing outside it can run hyakalloc -- see scripts/README.md.
 HYAK_ALLOC_URL = GANNET_REPORT_DIR + "hyakalloc.txt"
+_DATED_HYAK = re.compile(r'href="(hyakalloc_(\d{4}-\d{2}-\d{2})\.txt)"')
 
 _SECTION = re.compile(r"^==== (.+?) ====$")
 _DATED_REPORT = re.compile(r'href="(gannet_health_(\d{4}-\d{2}-\d{2})\.txt)"')
@@ -480,9 +481,46 @@ def fetch_hyak_stats(timeout):
     except (urllib.error.URLError, socket.timeout, OSError):
         return None
     stats = parse_hyakalloc(body, last_modified)
-    if stats:
-        stats["raw"] = body
+    if not stats:
+        return None
+    stats["raw"] = body
+
+    # One small entry per dated copy, for the history charts. Same 30-day
+    # window and directory-index approach as gannet's history.
+    history = []
+    try:
+        index, _ = _fetch_text(GANNET_REPORT_DIR, timeout)
+        dated = sorted(set(_DATED_HYAK.findall(index)), key=lambda x: x[1])
+    except (urllib.error.URLError, socket.timeout, OSError):
+        dated = []
+    for name, date in dated[-GANNET_HISTORY_DAYS:]:
+        try:
+            text, _ = _fetch_text(GANNET_REPORT_DIR + name, timeout)
+        except (urllib.error.URLError, socket.timeout, OSError):
+            continue
+        parsed = parse_hyakalloc(text)
+        if parsed:
+            history.append(_hyak_history_point(date, parsed))
+    stats["history"] = history
     return stats
+
+
+def _hyak_history_point(date, stats):
+    partitions = {}
+    for p in stats["partitions"]:
+        total, used = p["total"], p.get("used", {})
+        partitions[p["account"] + "/" + p["partition"]] = {
+            "cpus": used.get("cpus"),
+            "cpus_total": total["cpus"],
+            "memory_gb": used.get("memory_gb"),
+            "memory_total_gb": total["memory_gb"],
+        }
+    checkpoint = stats.get("checkpoint") or {}
+    return {
+        "date": date,
+        "partitions": partitions,
+        "checkpoint_idle_cpus": checkpoint.get("idle_cpus"),
+    }
 
 
 def main():

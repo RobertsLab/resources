@@ -223,17 +223,20 @@ td.gh-muted {
   display: block;
   --gh-s1: #2a78d6;
   --gh-s2: #eb6834;
+  --gh-s3: #1b9e77;
 }
 
 [data-md-color-scheme="slate"] .gh-chart,
 [data-md-color-scheme="slate"] .gh-legend {
   --gh-s1: #3987e5;
   --gh-s2: #d95926;
+  --gh-s3: #2bb38c;
 }
 
 .gh-legend {
   --gh-s1: #2a78d6;
   --gh-s2: #eb6834;
+  --gh-s3: #1b9e77;
   font-size: 0.8em;
 }
 
@@ -252,6 +255,7 @@ td.gh-muted {
 
 .gh-swatch.gh-s1 { background: var(--gh-s1); }
 .gh-swatch.gh-s2 { background: var(--gh-s2); }
+.gh-swatch.gh-s3 { background: var(--gh-s3); }
 
 .gh-grid {
   stroke: currentColor;
@@ -283,6 +287,7 @@ td.gh-muted {
 
 .gh-line.gh-s1 { stroke: var(--gh-s1); }
 .gh-line.gh-s2 { stroke: var(--gh-s2); }
+.gh-line.gh-s3 { stroke: var(--gh-s3); }
 
 .gh-point {
   stroke: var(--md-default-bg-color, #fff);
@@ -291,6 +296,7 @@ td.gh-muted {
 
 .gh-point.gh-s1 { fill: var(--gh-s1); }
 .gh-point.gh-s2 { fill: var(--gh-s2); }
+.gh-point.gh-s3 { fill: var(--gh-s3); }
 
 .gh-hit {
   fill: transparent;
@@ -298,4 +304,10 @@ td.gh-muted {
 
 .gh-raw pre {
   font-size: 0.75em;
+}
+
+/* Klone allocation history, collapsed under the table by default. */
+.hy-history summary {
+  cursor: pointer;
+  font-weight: 600;
 }
