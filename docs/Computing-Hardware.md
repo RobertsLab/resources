@@ -68,7 +68,7 @@ Gannet writes a [daily health report](https://gannet.fish.washington.edu/v1_web/
   <p>Loading klone's latest hyakalloc snapshot…</p>
 </div>
 
-This is the output of [`hyakalloc`](https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt), run on klone at 6am each day and picked up here by about 8am. Each row is a partition we can submit to with `--account` / `--partition`; the bars show how much of it lab and CoEnv jobs were using at that moment. Partitions at 90%+ in use are marked critical, 75%+ as warnings. **Checkpoint idle** is the number of idle CPUs and GPUs on the `ckpt` partition across Hyak, available to preemptible jobs. For Hyak-wide outages, check [UW-IT status](https://status.uw.edu/).
+This is the output of [`hyakalloc`](https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt), run on klone at 6am each day and picked up here by about 8am. Each row is a partition we can submit to with `--account` / `--partition`; the bars show how much of it lab and CoEnv jobs were using at that moment. Partitions at 90%+ in use are marked critical, 75%+ as warnings. **Checkpoint idle** is the number of idle CPUs and GPUs on the `ckpt` partition across Hyak, available to preemptible jobs. Open **Usage history** under the table for day-by-day CPU and memory use per partition over the last 30 days, built from the dated `hyakalloc_YYYY-MM-DD.txt` copies. For Hyak-wide outages, check [UW-IT status](https://status.uw.edu/).
 
 ## Accounts
 
