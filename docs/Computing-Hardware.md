@@ -17,7 +17,7 @@ Below is a list of computing resources we have available, as well as some links 
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td><a href="#raven-disk-cpu">disk / CPU below</a></td>
+      <td><a href="#raven-disk-cpu">disk / CPU below</a> · <a href="../Raven-Dashboard/">dashboard</a></td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
@@ -52,7 +52,7 @@ Checks run automatically — the timestamp shows when each host was last reached
   </tbody>
 </table>
 
-This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first.
+This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first. See the **[Raven Dashboard](Raven-Dashboard.md)** for CPU and memory history and who is using raven.
 
 ### Gannet Health
 

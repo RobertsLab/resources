@@ -75,6 +75,28 @@ the table, flagged stale if the snapshot is older than 30 hours. Drives at
 90%+ full are marked critical and 75%+ warn, in the text as well as the bar
 color.
 
+The parser also reads the memory line, the **Winners** list (top 5 accounts
+by summed `%CPU`, with summed `%MEM`), and the top memory processes into
+`raven_stats.memory_percent`, `winners` and `top_memory`.
+
+### Raven history
+
+Raven overwrites `ghr.log` each morning and keeps no dated copies, so the
+probers accumulate the history themselves. When run with `--out`,
+`check_servers.py` also maintains `raven_history.json` next to the output
+file (`update_raven_history`): one entry per snapshot date (CPU, memory,
+per-mount use %, Winners), replaced if the same day is seen again, capped at
+365 days. `publish_status.sh` checks out the `server-status` branch before
+running the checker, so the previous copy is on disk and is carried forward
+when the branch is re-orphaned. Losing that branch loses the history.
+
+The **Raven Dashboard** page (`docs/Raven-Dashboard.md`,
+`docs/javascripts/raven-dashboard.js`, `[data-raven-dashboard]`) reads
+`raven_history.json` plus the latest `raven_stats` and draws CPU/memory over
+time, a per-user grid of appearances in the Winners list, and current
+process and drive tables. It uses the shared line chart from
+`gannet-health.js`.
+
 ## Gannet's daily health report
 
 Gannet runs `gannet_health.sh` once a day and writes the result to

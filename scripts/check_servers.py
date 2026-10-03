@@ -24,6 +24,7 @@ Stdlib only, Python 3.6+.
 
 import argparse
 import json
+import os
 import re
 import socket
 import ssl
@@ -41,6 +42,8 @@ DEFAULT_TIMEOUT = 8.0
 # makes it fetchable over plain HTTPS by both probers, unlike the live TCP
 # check below, which only the internal one can reach.
 RAVEN_STATS_URL = "https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log"
+# A year of daily raven entries is ~1 MB of JSON at most.
+RAVEN_HISTORY_DAYS = 365
 
 # Gannet writes a daily health report (owlshell/gannet_health.sh) to its own
 # public web root: latest.txt plus a dated gannet_health_YYYY-MM-DD.txt copy.
@@ -175,19 +178,43 @@ def fetch_raven_stats(timeout):
                 }
             )
 
-    cpu_percent = None
-    for i, line in enumerate(lines):
-        if line.strip() != "Percent CPUs cranking?":
+    cpu_percent = _single_percent(_raven_block(lines, "Percent CPUs cranking?"))
+    memory_percent = _single_percent(_raven_block(lines, "How much memory being used?"))
+
+    # "user cpu mem%": %CPU and %MEM summed over that user's processes, top 5
+    # by CPU. ps's own header line gets summed in as user "USER"; drop it.
+    winners = []
+    for line in _raven_block(lines, "Winners"):
+        fields = line.split()
+        if len(fields) != 3 or fields[0] == "USER":
             continue
-        for candidate in lines[i + 1:]:
-            candidate = candidate.strip()
-            if not candidate:
-                continue
-            match = _PERCENT.match(candidate)
-            if match:
-                cpu_percent = float(match.group(1))
-            break
-        break
+        try:
+            winners.append(
+                {
+                    "user": fields[0],
+                    "cpu": float(fields[1]),
+                    "mem_percent": float(fields[2].rstrip("%")),
+                }
+            )
+        except ValueError:
+            continue
+
+    # "user<TAB>command<TAB>mem%", top 5 processes by memory.
+    top_memory = []
+    for line in _raven_block(lines, "Where is my Memory?"):
+        fields = line.split("\t")
+        if len(fields) != 3 or fields[0] == "USER":
+            continue
+        try:
+            top_memory.append(
+                {
+                    "user": fields[0],
+                    "command": fields[1],
+                    "mem_percent": float(fields[2].rstrip("%")),
+                }
+            )
+        except ValueError:
+            continue
 
     if not disks and cpu_percent is None:
         return None
@@ -203,7 +230,74 @@ def fetch_raven_stats(timeout):
         except (TypeError, ValueError):
             generated = None
 
-    return {"generated": generated, "cpu_percent": cpu_percent, "disks": disks}
+    return {
+        "generated": generated,
+        "cpu_percent": cpu_percent,
+        "memory_percent": memory_percent,
+        "disks": disks,
+        "winners": winners,
+        "top_memory": top_memory,
+    }
+
+
+def _raven_block(lines, heading):
+    """Non-blank lines after a ghr.log heading, up to the next blank line."""
+    block = []
+    for i, line in enumerate(lines):
+        if line.strip() != heading:
+            continue
+        for candidate in lines[i + 1:]:
+            if not candidate.strip():
+                break
+            block.append(candidate.strip())
+        break
+    return block
+
+
+def _single_percent(block):
+    if block:
+        match = _PERCENT.match(block[0])
+        if match:
+            return float(match.group(1))
+    return None
+
+
+def update_raven_history(path, stats):
+    """Append today's raven snapshot to a JSON history file and return it.
+
+    Raven overwrites ghr.log each morning and keeps no dated copies, so the
+    history has to be accumulated here. The file lives on the server-status
+    branch next to the status documents; publish_status.sh checks out the
+    branch before running us, so the previous run's copy is already on disk.
+    One entry per snapshot date; a re-run on the same day replaces it.
+    """
+    history = []
+    try:
+        with open(path) as handle:
+            history = json.load(handle)
+    except (OSError, ValueError):
+        history = []
+    if not isinstance(history, list):
+        history = []
+
+    if stats.get("generated"):
+        entry = {
+            "date": stats["generated"][:10],
+            "generated": stats["generated"],
+            "cpu_percent": stats.get("cpu_percent"),
+            "memory_percent": stats.get("memory_percent"),
+            "disks": {d["mount"]: d["use_percent"] for d in stats.get("disks", [])},
+            "winners": stats.get("winners", []),
+        }
+        history = [h for h in history if h.get("date") != entry["date"]]
+        history.append(entry)
+        history.sort(key=lambda h: h.get("date", ""))
+        history = history[-RAVEN_HISTORY_DAYS:]
+
+    with open(path, "w") as handle:
+        json.dump(history, handle, indent=1, sort_keys=True)
+        handle.write("\n")
+    return history
 
 
 def _fetch_text(url, timeout):
@@ -551,6 +645,13 @@ def main():
     raven_stats = fetch_raven_stats(args.timeout)
     if raven_stats:
         document["raven_stats"] = raven_stats
+        # Only when publishing: the history file sits next to the --out file
+        # on the server-status branch (see update_raven_history).
+        if args.out:
+            update_raven_history(
+                os.path.join(os.path.dirname(args.out) or ".", "raven_history.json"),
+                raven_stats,
+            )
 
     # Same reasoning as raven_stats: a daily report, merged on its own
     # "generated" timestamp by the page, so it stays out of "hosts".
