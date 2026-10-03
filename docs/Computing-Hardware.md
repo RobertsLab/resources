@@ -29,7 +29,7 @@ Below is a list of computing resources we have available, as well as some links 
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td><a href="https://status.uw.edu/">UW-IT status</a></td>
+      <td><a href="#klone-allocation">allocation below</a></td>
     </tr>
   </tbody>
 </table>
@@ -61,6 +61,14 @@ This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owl
 </div>
 
 Gannet writes a [daily health report](https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt) covering disk and inode use, memory, RAID, services, and kernel errors. See the **[Gannet Dashboard](Gannet-Dashboard.md)** for the full report and day-by-day history.
+
+### Klone Allocation
+
+<div data-hyak-alloc data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <p>Loading klone's latest hyakalloc snapshot…</p>
+</div>
+
+This is the output of [`hyakalloc`](https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt), run on klone at 6am each day and picked up here by about 8am. Each row is a partition we can submit to with `--account` / `--partition`; the bars show how much of it lab and CoEnv jobs were using at that moment. Partitions at 90%+ in use are marked critical, 75%+ as warnings. **Checkpoint idle** is the number of idle CPUs and GPUs on the `ckpt` partition across Hyak, available to preemptible jobs. For Hyak-wide outages, check [UW-IT status](https://status.uw.edu/).
 
 ## Accounts
 

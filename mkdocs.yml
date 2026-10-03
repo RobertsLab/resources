@@ -33,6 +33,7 @@ extra_css:
 extra_javascript:
   - javascripts/server-status.js
   - javascripts/gannet-health.js
+  - javascripts/hyak-alloc.js
 
 markdown_extensions:
   - admonition

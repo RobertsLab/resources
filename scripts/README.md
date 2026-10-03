@@ -105,6 +105,27 @@ A report older than 30 hours is flagged stale. If the report format changes,
 `parse_gannet_report` treats every section as optional, so a partial parse
 still renders.
 
+## Klone's hyakalloc snapshot
+
+Klone requires Duo for SSH, so neither prober can run `hyakalloc` itself.
+Instead a `scrontab` job on klone (as sr320, `--account=srlab
+--partition=ckpt`) runs it at 06:00 Pacific and copies the output, under a
+`Generated: YYYY-MM-DD HH:MM:SS PDT` line, to
+<https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt> plus a
+dated `hyakalloc_YYYY-MM-DD.txt` copy.
+
+`check_servers.py` fetches and parses it (`fetch_hyak_stats`) under either
+profile into a top-level `hyak_stats` field, kept out of `hosts` for the same
+reason as `raven_stats`: one entry per account/partition with `total`, `used`
+and `free` CPUs, memory and GPUs, plus the checkpoint idle counts and the raw
+text. The parser splits rows on the `│` column separator, so it depends on
+hyakalloc's box-drawn table format.
+
+The Action has a dedicated run at 15:00 UTC (08:00 PDT) to pick it up.
+`docs/javascripts/hyak-alloc.js` renders it in the **Klone Allocation**
+section on Computing Hardware (`[data-hyak-alloc]`), flagged stale after 30
+hours. The snapshot reflects the accounts visible to the user who ran it.
+
 The branch is rewritten as a single root commit on every run. At one check
 every 10 minutes an append-only branch would add roughly 50,000 commits a year
 to a repo that everyone clones.
@@ -170,8 +191,8 @@ and that the lights on the handbook page go green within a few minutes.
 
 - A green light means the port answered. It says nothing about Slurm health
   or whether jobs are running. Raven's disk space and CPU load, and gannet's daily health
-  report, are covered separately as described above; klone has no
-  equivalent.
+  report, and klone's hyakalloc snapshot are covered separately as described
+  above.
 - `raw.githubusercontent.com` caches for about 5 minutes, so the page can lag
   the actual check by that much on top of the check interval.
 - GitHub's scheduled workflows are best-effort: delayed under load, minimum
