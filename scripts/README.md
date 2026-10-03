@@ -90,12 +90,12 @@ per-mount use %, Winners), replaced if the same day is seen again, capped at
 running the checker, so the previous copy is on disk and is carried forward
 when the branch is re-orphaned. Losing that branch loses the history.
 
-The **Raven Dashboard** page (`docs/Raven-Dashboard.md`,
-`docs/javascripts/raven-dashboard.js`, `[data-raven-dashboard]`) reads
-`raven_history.json` plus the latest `raven_stats` and draws CPU/memory over
-time, a per-user grid of appearances in the Winners list, and current
-process and drive tables. It uses the shared line chart from
-`gannet-health.js`.
+A collapsible **Usage history** section under the Raven Disk / CPU table
+on Computing Hardware (`docs/javascripts/raven-history.js`,
+`[data-raven-history]`) reads `raven_history.json` plus the latest
+`raven_stats` and draws CPU/memory over time, the latest Winners table, and a
+per-user grid of appearances in the Winners list. It uses the shared line
+chart from `gannet-health.js`.
 
 ## Gannet's daily health report
 
