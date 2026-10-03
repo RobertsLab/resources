@@ -311,3 +311,22 @@ td.gh-muted {
   cursor: pointer;
   font-weight: 600;
 }
+
+/* Raven dashboard: Winners appearance grid. */
+.rv-grid {
+  --rv-on: #2a78d6;
+  --rv-system: #8a8f98;
+}
+
+[data-md-color-scheme="slate"] .rv-grid {
+  --rv-on: #3987e5;
+  --rv-system: #9aa0a6;
+}
+
+.rv-on { fill: var(--rv-on); }
+.rv-on.rv-system { fill: var(--rv-system); }
+
+.rv-off {
+  fill: currentColor;
+  fill-opacity: 0.06;
+}
