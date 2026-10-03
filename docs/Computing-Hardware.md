@@ -17,7 +17,7 @@ Below is a list of computing resources we have available, as well as some links 
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
-      <td><a href="#raven-disk-cpu">disk / CPU below</a> · <a href="../Raven-Dashboard/">dashboard</a></td>
+      <td><a href="#raven-disk-cpu">disk / CPU below</a></td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
@@ -52,7 +52,9 @@ Checks run automatically — the timestamp shows when each host was last reached
   </tbody>
 </table>
 
-This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first. See the **[Raven Dashboard](Raven-Dashboard.md)** for CPU and memory history and who is using raven.
+<div data-raven-history data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status"></div>
+
+This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first. Open **Usage history** below the table for CPU and memory over time and who is using raven (the top 5 accounts by CPU, the **Winners** list, each day). Raven keeps only its latest snapshot, so that history is collected by the status probers one day at a time.
 
 ### Gannet Health
 

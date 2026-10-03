@@ -34,7 +34,7 @@ extra_javascript:
   - javascripts/server-status.js
   - javascripts/gannet-health.js
   - javascripts/hyak-alloc.js
-  - javascripts/raven-dashboard.js
+  - javascripts/raven-history.js
 
 markdown_extensions:
   - admonition
@@ -89,7 +89,6 @@ nav:
      - Code Snippets: 'code_Snippets.md'
      - Computing Hardware: 'Computing-Hardware.md'
      - Gannet Dashboard: 'Gannet-Dashboard.md'
-     - Raven Dashboard: 'Raven-Dashboard.md'
      - Lab Software: 'Lab-Software.md'
 
      - 'Klone Guides':
