@@ -21,6 +21,9 @@ on:
     # after to pick up the new report. Cron is UTC, and 11:15 UTC lands after
     # 03:00 Pacific year-round (04:15 PDT, 03:15 PST).
     - cron: "15 11 * * *"
+    # Klone's hyakalloc snapshot lands on gannet at 06:00 Pacific. 15:00 UTC
+    # is 08:00 PDT (07:00 PST), so it is on the page by about 8am.
+    - cron: "0 15 * * *"
   workflow_dispatch:
 
 permissions:

@@ -49,6 +49,11 @@ GANNET_REPORT_DIR = "https://gannet.fish.washington.edu/v1_web/owlshell/"
 GANNET_LATEST_URL = GANNET_REPORT_DIR + "latest.txt"
 GANNET_HISTORY_DAYS = 30
 
+# A scrontab job on klone runs `hyakalloc` at 06:00 Pacific and copies the
+# output here, under a "Generated: ..." line. Klone itself needs Duo for SSH,
+# so nothing outside it can run hyakalloc -- see scripts/README.md.
+HYAK_ALLOC_URL = GANNET_REPORT_DIR + "hyakalloc.txt"
+
 _SECTION = re.compile(r"^==== (.+?) ====$")
 _DATED_REPORT = re.compile(r'href="(gannet_health_(\d{4}-\d{2}-\d{2})\.txt)"')
 # "/dev/md0  ext4  2.3G  1.7G  535M  76% /" -- df -hT, so there is a type column.
@@ -232,6 +237,27 @@ def _nonblank(lines):
     return [line.strip() for line in lines if line.strip()]
 
 
+def _parse_generated(lines, last_modified=None):
+    """ISO UTC time from a "Generated: 2026-10-03 05:38:45 PDT" line, falling
+    back to the HTTP Last-Modified header."""
+    for line in lines:
+        if line.startswith("Generated:"):
+            stamp = line.split(":", 1)[1].strip()
+            parts = stamp.rsplit(" ", 1)
+            if len(parts) == 2 and parts[1] in _TZ_OFFSETS:
+                stamp = parts[0] + " " + _TZ_OFFSETS[parts[1]]
+            try:
+                return _iso_utc(datetime.strptime(stamp, "%Y-%m-%d %H:%M:%S %z"))
+            except ValueError:
+                break
+    if last_modified:
+        try:
+            return _iso_utc(parsedate_to_datetime(last_modified))
+        except (TypeError, ValueError):
+            pass
+    return None
+
+
 def parse_gannet_report(body, last_modified=None):
     """Parse one gannet_health.sh report into a dict. Returns None if it does
     not look like a report at all.
@@ -243,22 +269,7 @@ def parse_gannet_report(body, last_modified=None):
     if len(sections) < 2:
         return None
 
-    generated = None
-    for line in sections[""]:
-        if line.startswith("Generated:"):
-            stamp = line.split(":", 1)[1].strip()
-            parts = stamp.rsplit(" ", 1)
-            if len(parts) == 2 and parts[1] in _TZ_OFFSETS:
-                stamp = parts[0] + " " + _TZ_OFFSETS[parts[1]]
-            try:
-                generated = _iso_utc(datetime.strptime(stamp, "%Y-%m-%d %H:%M:%S %z"))
-            except ValueError:
-                generated = None
-    if generated is None and last_modified:
-        try:
-            generated = _iso_utc(parsedate_to_datetime(last_modified))
-        except (TypeError, ValueError):
-            pass
+    generated = _parse_generated(sections[""], last_modified)
 
     report = {"generated": generated}
 
@@ -405,6 +416,75 @@ def fetch_gannet_stats(timeout):
     return report
 
 
+def _gigabytes(value):
+    """hyakalloc prints memory as e.g. "7305G"; return the number of GB."""
+    match = re.match(r"^([\d.]+)([KMGT]?)$", value)
+    if not match:
+        return None
+    scale = {"K": 1.0 / 1024 ** 2, "M": 1.0 / 1024, "G": 1, "T": 1024, "": 1}
+    return float(match.group(1)) * scale[match.group(2)]
+
+
+def parse_hyakalloc(body, last_modified=None):
+    """Parse hyakalloc's box-drawn tables. Returns None if no partition rows
+    were found.
+
+    Each partition takes three rows -- TOTAL, USED, FREE -- and only the
+    TOTAL row carries the account and partition names.
+    """
+    partitions = []
+    checkpoint = None
+    current = None
+    for line in body.splitlines():
+        cells = [c.strip() for c in line.split("\u2502")]
+        if len(cells) < 3:
+            continue
+        cells = cells[1:-1]  # drop what lies outside the outer borders
+        if len(cells) == 6 and cells[5] in ("TOTAL", "USED", "FREE"):
+            account, partition, cpus, memory, gpus, kind = cells
+            if kind == "TOTAL" or current is None:
+                current = {"account": account, "partition": partition}
+                partitions.append(current)
+            try:
+                current[kind.lower()] = {
+                    "cpus": int(cpus),
+                    "memory": memory,
+                    "memory_gb": _gigabytes(memory),
+                    "gpus": int(gpus),
+                }
+            except ValueError:
+                continue
+        elif len(cells) == 3 and cells[0] == "Idle:":
+            try:
+                checkpoint = {"idle_cpus": int(cells[1]), "idle_gpus": int(cells[2])}
+            except ValueError:
+                pass
+
+    partitions = [p for p in partitions if "total" in p]
+    if not partitions:
+        return None
+    user = re.search(r"available to user:\s*(\S+)", body)
+    return {
+        "generated": _parse_generated(body.splitlines(), last_modified),
+        "user": user.group(1) if user else None,
+        "partitions": partitions,
+        "checkpoint": checkpoint,
+    }
+
+
+def fetch_hyak_stats(timeout):
+    """Klone's daily hyakalloc snapshot, parsed. None if unavailable, for the
+    same reason as fetch_raven_stats."""
+    try:
+        body, last_modified = _fetch_text(HYAK_ALLOC_URL, timeout)
+    except (urllib.error.URLError, socket.timeout, OSError):
+        return None
+    stats = parse_hyakalloc(body, last_modified)
+    if stats:
+        stats["raw"] = body
+    return stats
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--profile", required=True, choices=["internal", "external"])
@@ -439,6 +519,11 @@ def main():
     gannet_stats = fetch_gannet_stats(args.timeout)
     if gannet_stats:
         document["gannet_stats"] = gannet_stats
+
+    # Same again for klone's daily hyakalloc snapshot.
+    hyak_stats = fetch_hyak_stats(args.timeout)
+    if hyak_stats:
+        document["hyak_stats"] = hyak_stats
     text = json.dumps(document, indent=2, sort_keys=True)
 
     if args.out:
