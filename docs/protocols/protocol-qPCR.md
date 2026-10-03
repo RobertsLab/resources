@@ -8,7 +8,7 @@ Quantitative (real-time) PCR is one of the most-used techniques in the lab, usua
 4. **[Notebook documentation](#part-4-documenting-a-qpcr-run-in-your-lab-notebook)**: what to record for every run, with a template you can copy.
 
 !!! tip "The short version"
-    Every qPCR plate needs: no-template controls (NTCs), technical replicates, and a reference gene. For cDNA you also need a no-RT control. Before you calculate anything, check the curves, the controls, the melt curve (SYBR only), and replicate agreement. Then record your baseline and threshold settings, and any wells you excluded, in your notebook.
+    Every qPCR plate needs: no-template controls (NTCs), technical replicates, and a reference gene. For cDNA you also need a no-RT control. Before you calculate anything, check the curves, the controls, the melt curve (SYBR only), and replicate agreement. Then record your baseline and threshold settings and any wells you excluded in your notebook, along with amplification and melt curve screenshots that show only the wells going forward.
 
 ---
 
@@ -322,7 +322,7 @@ Normalization only works if the reference gene doesn't respond to your treatment
 
 1. Export the results. In CFX Maestro: `Export > Export All Data Sheets` (CSV), or at minimum the **Quantification Cq Results** and, for SYBR, **Melt Curve Peak Results** sheets.
 2. Also export the **raw amplification data** (`Quantification Amplification Results`). MIQE 2.0 encourages sharing raw fluorescence so others can re-analyze it.
-3. Save a screenshot or PDF report of the amplification plot (log view, with threshold) and the melt peaks for each target.
+3. Save screenshots of the amplification plot (log view, with threshold) and the melt peaks for each target. Take a set **before** and a set **after** removing failed wells; see [Required screenshots](#required-screenshots) in Part 4.
 4. Put the `.pcrd`, the exports, and the images in your project repository or data directory ([Data Management](../Data-Management.md)). Link them from your notebook entry.
 
 #### File naming and storage
@@ -429,7 +429,41 @@ Fold change > 1 means higher expression in the treatment than in the control. Fo
 Your notebook entry should let someone else **regenerate your Cq values from the raw file and understand every decision you made**. See [Lab Notebooks](../Lab-Notebooks.md) for general expectations. Copy the template below into your notebook for each plate.
 
 !!! example "What reviewers (and future you) will ask for"
-    The plate layout, primer IDs and sequences, master mix lot, cycling program, **baseline mode, threshold value per target**, which wells were excluded and why, and links to the raw `.pcrd` and exported CSVs.
+    The plate layout, primer IDs and sequences, master mix lot, cycling program, **baseline mode, threshold value per target**, which wells were excluded and why, **screenshots that show which wells went forward**, and links to the raw `.pcrd` and exported CSVs.
+
+### Required screenshots
+
+Every notebook entry must include amplification and melt curve screenshots. Someone reading the entry should be able to see which wells passed QC and went forward to analysis, without opening the `.pcrd` file. For **each target**, take:
+
+| # | Screenshot | Wells displayed | What it shows |
+|---|---|---|---|
+| 1 | Amplification plot, **all wells** (log scale, threshold visible) | Every well for that target, including NTCs and no-RT | The raw run, problems included |
+| 2 | Melt peak plot, **all wells** (SYBR/EvaGreen only) | Same as #1 | Primer-dimers, extra peaks, NTC products |
+| 3 | Amplification plot, **wells passing QC only** | Only wells that go forward to analysis | The data your Cq values come from |
+| 4 | Melt peak plot, **wells passing QC only** (SYBR/EvaGreen only) | Same as #3 | A single peak at the expected Tm in every analyzed well |
+
+Screenshots 3 and 4 are the key ones. Every curve shown should be clean and in its expected place: sigmoidal, overlapping its replicates, and with one melt peak at the expected Tm. A well that is hidden in #3/#4 but visible in #1/#2 should appear in your **Excluded wells** table with a reason. NTC and no-RT wells can be left in #3/#4 if you want to show they stayed flat. Say so in the caption.
+
+**How to make them in CFX Maestro:**
+
+1. On the **Quantification** tab, filter to one target. Switch the amplification plot to `Log Scale` and make sure the threshold line is visible.
+2. Use `Trace Styles` to color wells by sample type or treatment, so controls stand out from samples.
+3. Take screenshots #1 and #2 with all of that target's wells selected.
+4. Hide the failed wells: click them in the well selector next to the plot to deselect them, or exclude them (`Well > Exclude Well(s) from Analysis`). Excluding also removes them from the exported Cq results, so use it for wells that are really out.
+5. Take screenshots #3 and #4.
+6. Save each image by right-clicking the chart and choosing the save or copy image option, or with your operating system's screenshot tool. Include the well selector or a legend in the image when you can, so it's clear which wells are displayed.
+7. Name the images so they sort with the run files, and save them next to the exports:
+
+```
+20261003_SR_qPCR_oyster-heat_HSP70-EF1a_plate1_HSP70_amp_all.png
+20261003_SR_qPCR_oyster-heat_HSP70-EF1a_plate1_HSP70_amp_pass.png
+20261003_SR_qPCR_oyster-heat_HSP70-EF1a_plate1_HSP70_melt_all.png
+20261003_SR_qPCR_oyster-heat_HSP70-EF1a_plate1_HSP70_melt_pass.png
+```
+
+Embed the images in the notebook entry so they display inline, not just as links. Give each a caption that names the target, the threshold value, and which wells are shown.
+
+### Notebook template
 
 ```markdown
 ## qPCR – <project> – <targets> – plate <N>
@@ -474,10 +508,10 @@ Your notebook entry should let someone else **regenerate your Cq values from the
 - [ ] Run completed, plate map verified
 - [ ] Amplification curves: sigmoidal, replicates overlap — notes:
 - [ ] Baseline appropriate — notes:
-- [ ] Threshold in exponential phase for all curves (log view screenshot: <link>)
+- [ ] Threshold in exponential phase for all curves
 - [ ] NTCs: <no amp / Cq values + melt Tm>
 - [ ] No-RT: <no amp / ΔCq vs +RT>
-- [ ] Melt curve: single peak at expected Tm (screenshot: <link>)
+- [ ] Melt curve: single peak at expected Tm in all wells going forward
 - [ ] Technical replicate SD ≤ 0.3 — samples failing:
 - [ ] Cq range acceptable — samples > 35:
 - [ ] Efficiency / standard curve: slope ___, E ___ %, R² ___
@@ -488,6 +522,26 @@ Your notebook entry should let someone else **regenerate your Cq values from the
 | Well | Sample / Target | Reason |
 |---|---|---|
 | B4 | oyster_07 / HSP70 | bubble; jagged curve; 1.2 cycles from other two replicates |
+
+### Amplification and melt curves
+Repeat for each target. "Pass" images show only the wells that go forward to analysis.
+
+**HSP70 (threshold = ___ RFU)**
+
+![HSP70 amplification, all wells (log scale)](<path>/..._HSP70_amp_all.png)
+*All HSP70 wells, including NTC (wells ___) and no-RT (wells ___).*
+
+![HSP70 melt peaks, all wells](<path>/..._HSP70_melt_all.png)
+*All HSP70 wells. Primer-dimer peak at ~__ °C in NTCs; second peak in B4.*
+
+![HSP70 amplification, wells passing QC](<path>/..._HSP70_amp_pass.png)
+*Wells passing QC only (B4 removed; see Excluded wells).*
+
+![HSP70 melt peaks, wells passing QC](<path>/..._HSP70_melt_pass.png)
+*Wells passing QC only: single peak at __ °C.*
+
+**EF1a (threshold = ___ RFU)**
+<same four images>
 
 ### Results summary
 <brief summary, figure, link to analysis script/Rmd>
