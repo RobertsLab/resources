@@ -161,7 +161,9 @@
     var chart = svg("svg", {
       viewBox: "0 0 " + W + " " + H,
       class: "gh-chart rv-grid",
-      style: "max-width:" + Math.max(W, 320) / 16 + "rem",
+      // Draw at natural pixel size (shrinking only on narrow screens), so a
+      // short history doesn't get stretched to the full chart width.
+      style: "width:" + W + "px;max-width:100%;height:auto",
       role: "img",
       "aria-label": "Days each user appeared in raven's Winners list"
     });
