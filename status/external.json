@@ -1,0 +1,482 @@
+{
+  "checked": "2026-10-04T02:40:31Z",
+  "gannet_stats": {
+    "alerts": [
+      {
+        "level": "critical",
+        "message": "disk: /volume2 at 98%"
+      },
+      {
+        "level": "critical",
+        "message": "disk: /volume2/@docker/aufs/mnt/5a456596385953e3ae65f005bd9eb5b70d6b5ad065140b7874cdc7442cd66bbd at 98%"
+      },
+      {
+        "level": "critical",
+        "message": "disk: /volume2/@docker/aufs/mnt/2840c576f08f0ef666d9f21e2b42ee04f16ba59ae38ef51bb2a5b3db1cbb416e at 98%"
+      }
+    ],
+    "changes": [
+      "Compared with usage_2026-10-02.tsv (GB used):",
+      "/                                     2 ->        2  (+0 GB)",
+      "/tmp/SynologyAuthService              1 ->        1  (+0 GB)",
+      "/volume1                          21726 ->    21874  (+148 GB)",
+      "/volume2                         198509 ->   198509  (+0 GB)",
+      "/volume2/@appdata/ContainerManager/all_shares/surveillance    21726 ->    21874  (+148 GB)",
+      "/volume2/@appdata/ContainerManager/all_shares/v1_web    21726 ->    21874  (+148 GB)",
+      "/volume2/@docker/aufs/mnt/2840c576f08f0ef666d9f21e2b42ee04f16ba59ae38ef51bb2a5b3db1cbb416e   198509 ->   198509  (+0 GB)",
+      "/volume2/@docker/aufs/mnt/5a456596385953e3ae65f005bd9eb5b70d6b5ad065140b7874cdc7442cd66bbd   198509 ->   198509  (+0 GB)"
+    ],
+    "cpu_cores": 8,
+    "disks": [
+      {
+        "available": "582M",
+        "filesystem": "/dev/md0",
+        "inode_percent": 31,
+        "mount": "/",
+        "size": "2.3G",
+        "type": "ext4",
+        "use_percent": 74,
+        "used": "1.6G"
+      },
+      {
+        "available": "171T",
+        "filesystem": "/dev/mapper/cachedev_1",
+        "inode_percent": null,
+        "mount": "/volume1",
+        "size": "192T",
+        "type": "btrfs",
+        "use_percent": 12,
+        "used": "22T"
+      },
+      {
+        "available": "5.4T",
+        "filesystem": "/dev/mapper/cachedev_0",
+        "inode_percent": 3,
+        "mount": "/volume2",
+        "size": "200T",
+        "type": "ext4",
+        "use_percent": 98,
+        "used": "194T"
+      }
+    ],
+    "failed_units": [
+      {
+        "description": "HyperBackup-ED's service unit",
+        "unit": "pkgctl-HyperBackup-ED.service"
+      },
+      {
+        "description": "Check Nic on external slot is synology nic but unprobe",
+        "unit": "syno-nic-supported-check.service"
+      }
+    ],
+    "generated": "2026-10-03T10:00:01Z",
+    "history": [
+      {
+        "alerts": 1,
+        "date": "2026-09-27",
+        "disks": {
+          "/": 76,
+          "/volume1": 11,
+          "/volume2": 98
+        },
+        "load": [
+          4.04,
+          4.36,
+          3.94
+        ]
+      },
+      {
+        "alerts": 3,
+        "date": "2026-09-28",
+        "disks": {
+          "/": 76,
+          "/volume1": 11,
+          "/volume2": 98
+        },
+        "load": [
+          1.83,
+          2.18,
+          2.31
+        ]
+      },
+      {
+        "alerts": 3,
+        "date": "2026-09-29",
+        "disks": {
+          "/": 76,
+          "/volume1": 12,
+          "/volume2": 98
+        },
+        "load": [
+          5.62,
+          4.83,
+          4.91
+        ]
+      },
+      {
+        "alerts": 3,
+        "date": "2026-09-30",
+        "disks": {
+          "/": 76,
+          "/volume1": 12,
+          "/volume2": 98
+        },
+        "load": [
+          1.57,
+          1.4,
+          1.41
+        ]
+      },
+      {
+        "alerts": 3,
+        "date": "2026-10-01",
+        "disks": {
+          "/": 76,
+          "/volume1": 12,
+          "/volume2": 98
+        },
+        "load": [
+          1.99,
+          1.72,
+          1.67
+        ]
+      },
+      {
+        "alerts": 3,
+        "date": "2026-10-02",
+        "disks": {
+          "/": 75,
+          "/volume1": 12,
+          "/volume2": 98
+        },
+        "load": [
+          2.6,
+          2.69,
+          2.35
+        ]
+      },
+      {
+        "alerts": 3,
+        "date": "2026-10-03",
+        "disks": {
+          "/": 74,
+          "/volume1": 12,
+          "/volume2": 98
+        },
+        "load": [
+          1.01,
+          1.6,
+          1.73
+        ]
+      }
+    ],
+    "kernel_errors": [],
+    "load": [
+      1.01,
+      1.6,
+      1.73
+    ],
+    "memory": {
+      "mem": {
+        "available": "36Gi",
+        "free": "359Mi",
+        "total": "38Gi",
+        "used": "2.1Gi"
+      },
+      "swap": {
+        "free": "23Gi",
+        "total": "25Gi",
+        "used": "1.6Gi"
+      }
+    },
+    "raid": [
+      {
+        "active": 12,
+        "healthy": true,
+        "level": "raid6",
+        "members": 12,
+        "name": "md3",
+        "state": "active"
+      },
+      {
+        "active": 12,
+        "healthy": true,
+        "level": "raid6",
+        "members": 12,
+        "name": "md4",
+        "state": "active"
+      },
+      {
+        "active": 12,
+        "healthy": true,
+        "level": "raid6",
+        "members": 12,
+        "name": "md2",
+        "state": "active"
+      },
+      {
+        "active": 12,
+        "healthy": true,
+        "level": "raid1",
+        "members": 12,
+        "name": "md1",
+        "state": "active"
+      },
+      {
+        "active": 12,
+        "healthy": true,
+        "level": "raid1",
+        "members": 12,
+        "name": "md0",
+        "state": "active"
+      }
+    ],
+    "raw": "Health report for Gannet\nGenerated: 2026-10-03 03:00:01 PDT\n\n==== Uptime and load ====\n 03:00:01 up 17 days, 15:33,  1 user,  load average: 1.01, 1.60, 1.73 [IO: 0.73, 1.10, 1.23 CPU: 0.28, 0.49, 0.46]\nCPU cores: 8\n\n==== Disk usage ====\nFilesystem             Type   Size  Used Avail Use% Mounted on\n/dev/md0               ext4   2.3G  1.6G  582M  74% /\n/dev/mapper/cachedev_1 btrfs  192T   22T  171T  12% /volume1\n/dev/mapper/cachedev_0 ext4   200T  194T  5.4T  98% /volume2\n/dev/loop0             ext4    27M  770K   24M   4% /tmp/SynologyAuthService\nnone                   aufs   200T  194T  5.4T  98% /volume2/@docker/aufs/mnt/5a456596385953e3ae65f005bd9eb5b70d6b5ad065140b7874cdc7442cd66bbd\nnone                   aufs   200T  194T  5.4T  98% /volume2/@docker/aufs/mnt/2840c576f08f0ef666d9f21e2b42ee04f16ba59ae38ef51bb2a5b3db1cbb416e\n/dev/mapper/cachedev_1 btrfs  192T   22T  171T  12% /volume2/@appdata/ContainerManager/all_shares/v1_web\n/dev/mapper/cachedev_1 btrfs  192T   22T  171T  12% /volume2/@appdata/ContainerManager/all_shares/surveillance\n\n==== Inode usage ====\nFilesystem                 Inodes    IUsed      IFree IUse% Mounted on\n/dev/md0                   155648    48026     107622   31% /\n/dev/mapper/cachedev_1          0        0          0     - /volume1\n/dev/mapper/cachedev_0 3355443200 98263960 3257179240    3% /volume2\n/dev/loop0                   8192       11       8181    1% /tmp/SynologyAuthService\nnone                   3355443200 98263960 3257179240    3% /volume2/@docker/aufs/mnt/5a456596385953e3ae65f005bd9eb5b70d6b5ad065140b7874cdc7442cd66bbd\nnone                   3355443200 98263960 3257179240    3% /volume2/@docker/aufs/mnt/2840c576f08f0ef666d9f21e2b42ee04f16ba59ae38ef51bb2a5b3db1cbb416e\n/dev/mapper/cachedev_1          0        0          0     - /volume2/@appdata/ContainerManager/all_shares/v1_web\n/dev/mapper/cachedev_1          0        0          0     - /volume2/@appdata/ContainerManager/all_shares/surveillance\n\n==== Change since last report ====\nCompared with usage_2026-10-02.tsv (GB used):\n  /                                     2 ->        2  (+0 GB)\n  /tmp/SynologyAuthService              1 ->        1  (+0 GB)\n  /volume1                          21726 ->    21874  (+148 GB)\n  /volume2                         198509 ->   198509  (+0 GB)\n  /volume2/@appdata/ContainerManager/all_shares/surveillance    21726 ->    21874  (+148 GB)\n  /volume2/@appdata/ContainerManager/all_shares/v1_web    21726 ->    21874  (+148 GB)\n  /volume2/@docker/aufs/mnt/2840c576f08f0ef666d9f21e2b42ee04f16ba59ae38ef51bb2a5b3db1cbb416e   198509 ->   198509  (+0 GB)\n  /volume2/@docker/aufs/mnt/5a456596385953e3ae65f005bd9eb5b70d6b5ad065140b7874cdc7442cd66bbd   198509 ->   198509  (+0 GB)\n\n==== Memory ====\n              total        used        free      shared  buff/cache   available\nMem:           38Gi       2.1Gi       359Mi        40Mi        36Gi        36Gi\nSwap:          25Gi       1.6Gi        23Gi\n\n==== RAID status ====\nPersonalities : [raid1] [raid6] [raid5] [raid4] [raidF1] \nmd3 : active raid6 sdc3[18] sda3[12] sdb3[15] sde3[13] sdf3[16] sdi3[14] sdj3[17] sdl3[23] sdk3[20] sdh3[22] sdg3[19] sdd3[21]\n      156211596160 blocks super 1.2 level 6, 64k chunk, algorithm 2 [12/12] [UUUUUUUUUUUU]\n      \nmd4 : active raid6 sdqa3[0] sdtc3[11] sdtb3[10] sdta3[9] sdsc3[8] sdsb3[7] sdsa3[6] sdrc3[5] sdrb3[4] sdra3[3] sdqc3[2] sdqb3[1]\n      156211596160 blocks super 1.2 level 6, 64k chunk, algorithm 2 [12/12] [UUUUUUUUUUUU]\n      \nmd2 : active raid6 sdmc3[13] sdpc3[14] sdpb3[10] sdpa3[9] sdoc3[8] sdob3[7] sdoa3[6] sdnc3[15] sdnb3[4] sdna3[3] sdma3[12] sdmb3[1]\n      156211596160 blocks super 1.2 level 6, 64k chunk, algorithm 2 [12/12] [UUUUUUUUUUUU]\n      \nmd1 : active raid1 sda2[0] sdl2[7] sdk2[8] sdd2[11] sdg2[10] sdh2[9] sdc2[6] sdj2[5] sdi2[4] sdf2[3] sde2[2] sdb2[1]\n      2097088 blocks [12/12] [UUUUUUUUUUUU]\n      \nmd0 : active raid1 sda1[0] sdd1[11] sdg1[10] sdh1[9] sdk1[8] sdl1[7] sdc1[6] sdj1[5] sdi1[4] sdf1[3] sde1[2] sdb1[1]\n      2490176 blocks [12/12] [UUUUUUUUUUUU]\n      \nunused devices: <none>\n\n==== SMART drive health ====\n  /dev/sda     health=PASSED   temp=34C realloc=0 pending=0\n  /dev/sdb     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdc     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdd     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sde     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdf     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdg     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdh     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdi     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdj     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdk     health=PASSED   temp=?C realloc=? pending=?\n  /dev/sdl     health=PASSED   temp=?C realloc=? pending=?\n\n==== Services ====\n  nfs-server   active\n  sshd         active\n\nFailed units:\npkgctl-HyperBackup-ED.service    loaded failed failed HyperBackup-ED's service unit\nsyno-nic-supported-check.service loaded failed failed Check Nic on external slot is synology nic but unprobe\n\n==== Share connections ====\n\n==== Recent kernel errors (last 24h) ====\nNone.\n\n==== Summary ====\n3 alert(s):\n  * CRITICAL disk: /volume2 at 98%\n  * CRITICAL disk: /volume2/@docker/aufs/mnt/5a456596385953e3ae65f005bd9eb5b70d6b5ad065140b7874cdc7442cd66bbd at 98%\n  * CRITICAL disk: /volume2/@docker/aufs/mnt/2840c576f08f0ef666d9f21e2b42ee04f16ba59ae38ef51bb2a5b3db1cbb416e at 98%\n",
+    "services": [
+      {
+        "name": "nfs-server",
+        "state": "active"
+      },
+      {
+        "name": "sshd",
+        "state": "active"
+      }
+    ],
+    "shares": [],
+    "smart": [
+      "/dev/sda     health=PASSED   temp=34C realloc=0 pending=0",
+      "/dev/sdb     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdc     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdd     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sde     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdf     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdg     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdh     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdi     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdj     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdk     health=PASSED   temp=?C realloc=? pending=?",
+      "/dev/sdl     health=PASSED   temp=?C realloc=? pending=?"
+    ],
+    "uptime": "17 days, 15:33"
+  },
+  "hosts": {
+    "gannet": {
+      "detail": "HTTP 200",
+      "latency_ms": 250,
+      "up": true
+    },
+    "klone": {
+      "detail": "TCP 22 open",
+      "latency_ms": 142,
+      "up": true
+    }
+  },
+  "hyak_stats": {
+    "checkpoint": {
+      "idle_cpus": 498,
+      "idle_gpus": 78
+    },
+    "generated": "2026-10-03T13:01:12Z",
+    "history": [
+      {
+        "checkpoint_idle_cpus": 498,
+        "date": "2026-10-03",
+        "partitions": {
+          "coenv/compute": {
+            "cpus": 0,
+            "cpus_total": 40,
+            "memory_gb": 0.0,
+            "memory_total_gb": 188.0
+          },
+          "coenv/cpu-g2": {
+            "cpus": 180,
+            "cpus_total": 928,
+            "memory_gb": 740.0,
+            "memory_total_gb": 7305.0
+          },
+          "srlab/cpu-g2-mem2x": {
+            "cpus": 28,
+            "cpus_total": 32,
+            "memory_gb": 400.0,
+            "memory_total_gb": 503.0
+          }
+        }
+      }
+    ],
+    "partitions": [
+      {
+        "account": "coenv",
+        "free": {
+          "cpus": 40,
+          "gpus": 0,
+          "memory": "188G",
+          "memory_gb": 188.0
+        },
+        "partition": "compute",
+        "total": {
+          "cpus": 40,
+          "gpus": 0,
+          "memory": "188G",
+          "memory_gb": 188.0
+        },
+        "used": {
+          "cpus": 0,
+          "gpus": 0,
+          "memory": "0G",
+          "memory_gb": 0.0
+        }
+      },
+      {
+        "account": "coenv",
+        "free": {
+          "cpus": 748,
+          "gpus": 0,
+          "memory": "6565G",
+          "memory_gb": 6565.0
+        },
+        "partition": "cpu-g2",
+        "total": {
+          "cpus": 928,
+          "gpus": 0,
+          "memory": "7305G",
+          "memory_gb": 7305.0
+        },
+        "used": {
+          "cpus": 180,
+          "gpus": 0,
+          "memory": "740G",
+          "memory_gb": 740.0
+        }
+      },
+      {
+        "account": "srlab",
+        "free": {
+          "cpus": 4,
+          "gpus": 0,
+          "memory": "103G",
+          "memory_gb": 103.0
+        },
+        "partition": "cpu-g2-mem2x",
+        "total": {
+          "cpus": 32,
+          "gpus": 0,
+          "memory": "503G",
+          "memory_gb": 503.0
+        },
+        "used": {
+          "cpus": 28,
+          "gpus": 0,
+          "memory": "400G",
+          "memory_gb": 400.0
+        }
+      }
+    ],
+    "raw": "Generated: 2026-10-03 06:01:12 PDT\n\n       Account resources available to user: sr320\n\u256d\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n\u2502 ACCOUNT \u2502 PARTITION    \u2502 CPUS \u2502 MEMORY \u2502 GPUS \u2502       \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502   coenv \u2502      compute \u2502   40 \u2502   188G \u2502    0 \u2502 TOTAL \u2502\n\u2502         \u2502              \u2502    0 \u2502     0G \u2502    0 \u2502  USED \u2502\n\u2502         \u2502              \u2502   40 \u2502   188G \u2502    0 \u2502  FREE \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502   coenv \u2502       cpu-g2 \u2502  928 \u2502  7305G \u2502    0 \u2502 TOTAL \u2502\n\u2502         \u2502              \u2502  180 \u2502   740G \u2502    0 \u2502  USED \u2502\n\u2502         \u2502              \u2502  748 \u2502  6565G \u2502    0 \u2502  FREE \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502   srlab \u2502 cpu-g2-mem2x \u2502   32 \u2502   503G \u2502    0 \u2502 TOTAL \u2502\n\u2502         \u2502              \u2502   28 \u2502   400G \u2502    0 \u2502  USED \u2502\n\u2502         \u2502              \u2502    4 \u2502   103G \u2502    0 \u2502  FREE \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n Checkpoint Resources\n\u256d\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u256e\n\u2502       \u2502 CPUS \u2502 GPUS \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502 Idle: \u2502  498 \u2502   78 \u2502\n\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u256f\n",
+    "user": "sr320"
+  },
+  "raven_stats": {
+    "cpu_percent": 0.46,
+    "disks": [
+      {
+        "available": "1.8T",
+        "filesystem": "/dev/md0",
+        "mount": "/home/shared/16TB_HDD_01",
+        "size": "14T",
+        "use_percent": 88,
+        "used": "12T"
+      },
+      {
+        "available": "2.1T",
+        "filesystem": "/dev/sdc1",
+        "mount": "/home/shared/8TB_HDD_01",
+        "size": "7.3T",
+        "use_percent": 70,
+        "used": "4.8T"
+      },
+      {
+        "available": "382G",
+        "filesystem": "/dev/sdd1",
+        "mount": "/home/shared/8TB_HDD_02",
+        "size": "7.3T",
+        "use_percent": 95,
+        "used": "6.5T"
+      },
+      {
+        "available": "1.7T",
+        "filesystem": "/dev/sde1",
+        "mount": "/media/4TB_JPG_ext",
+        "size": "3.6T",
+        "use_percent": 52,
+        "used": "1.8T"
+      },
+      {
+        "available": "3.2T",
+        "filesystem": "/dev/sdb1",
+        "mount": "/home/shared/8TB_HDD_03",
+        "size": "7.3T",
+        "use_percent": 54,
+        "used": "3.7T"
+      },
+      {
+        "available": "718M",
+        "filesystem": "/dev/sda1",
+        "mount": "/boot/efi",
+        "size": "774M",
+        "use_percent": 8,
+        "used": "56M"
+      }
+    ],
+    "generated": "2026-10-03T14:01:02Z",
+    "memory_percent": 2.52,
+    "top_memory": [
+      {
+        "command": "/usr/lib/rstudio-server/bin/rsession",
+        "mem_percent": 0.2,
+        "user": "strigg"
+      },
+      {
+        "command": "/usr/lib/rstudio-server/bin/rsession",
+        "mem_percent": 0.2,
+        "user": "mewing0"
+      },
+      {
+        "command": "/usr/lib/rstudio-server/bin/rserver",
+        "mem_percent": 0.0,
+        "user": "rstudio+"
+      },
+      {
+        "command": "/snap/snapd/current/usr/lib/snapd/snapd",
+        "mem_percent": 0.0,
+        "user": "root"
+      }
+    ],
+    "winners": [
+      {
+        "cpu": 12.6,
+        "mem_percent": 0.2,
+        "user": "mewing0"
+      },
+      {
+        "cpu": 4.2,
+        "mem_percent": 0.2,
+        "user": "strigg"
+      },
+      {
+        "cpu": 0.5,
+        "mem_percent": 0.0,
+        "user": "mysql"
+      },
+      {
+        "cpu": 0.3,
+        "mem_percent": 0.0,
+        "user": "root"
+      },
+      {
+        "cpu": 0.1,
+        "mem_percent": 0.0,
+        "user": "rstudio+"
+      }
+    ]
+  },
+  "source": "external"
+}
