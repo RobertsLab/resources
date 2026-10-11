@@ -1,0 +1,371 @@
+[
+ {
+  "cpu_percent": 0.44,
+  "date": "2026-10-02",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-02T14:01:02Z",
+  "memory_percent": 2.38,
+  "winners": [
+   {
+    "cpu": 12.6,
+    "mem_percent": 0.1,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.2,
+    "mem_percent": 0.2,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   },
+   {
+    "cpu": 0.4,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 0.1,
+    "mem_percent": 0.0,
+    "user": "rstudio+"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 0.46,
+  "date": "2026-10-03",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-03T14:01:02Z",
+  "memory_percent": 2.52,
+  "winners": [
+   {
+    "cpu": 12.6,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.2,
+    "mem_percent": 0.2,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   },
+   {
+    "cpu": 0.3,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 0.1,
+    "mem_percent": 0.0,
+    "user": "rstudio+"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 0.48,
+  "date": "2026-10-04",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-04T14:01:03Z",
+  "memory_percent": 2.52,
+  "winners": [
+   {
+    "cpu": 12.6,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.2,
+    "mem_percent": 0.2,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   },
+   {
+    "cpu": 0.3,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 0.1,
+    "mem_percent": 0.0,
+    "user": "rstudio+"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 0.48,
+  "date": "2026-10-05",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-05T14:01:03Z",
+  "memory_percent": 2.54,
+  "winners": [
+   {
+    "cpu": 12.6,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.2,
+    "mem_percent": 0.3,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   },
+   {
+    "cpu": 0.1,
+    "mem_percent": 0.0,
+    "user": "rstudio+"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 0.5,
+  "date": "2026-10-06",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-06T14:01:03Z",
+  "memory_percent": 2.53,
+  "winners": [
+   {
+    "cpu": 300.0,
+    "mem_percent": 0.0,
+    "user": "sr320"
+   },
+   {
+    "cpu": 12.7,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.2,
+    "mem_percent": 0.3,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   },
+   {
+    "cpu": 0.3,
+    "mem_percent": 0.0,
+    "user": "root"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 98.48,
+  "date": "2026-10-07",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-07T14:01:03Z",
+  "memory_percent": 15.73,
+  "winners": [
+   {
+    "cpu": 4942.7,
+    "mem_percent": 67.4,
+    "user": "sr320"
+   },
+   {
+    "cpu": 12.7,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.2,
+    "mem_percent": 0.3,
+    "user": "strigg"
+   },
+   {
+    "cpu": 1.6,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 0.58,
+  "date": "2026-10-08",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 54,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-08T14:01:03Z",
+  "memory_percent": 2.87,
+  "winners": [
+   {
+    "cpu": 12.7,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.3,
+    "mem_percent": 0.3,
+    "user": "strigg"
+   },
+   {
+    "cpu": 2.4,
+    "mem_percent": 0.0,
+    "user": "abigaylf"
+   },
+   {
+    "cpu": 1.2,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 1.1,
+    "mem_percent": 0.1,
+    "user": "sr320"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 2.83,
+  "date": "2026-10-09",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 56,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-09T14:01:03Z",
+  "memory_percent": 2.93,
+  "winners": [
+   {
+    "cpu": 435.6,
+    "mem_percent": 0.1,
+    "user": "sr320"
+   },
+   {
+    "cpu": 12.7,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.3,
+    "mem_percent": 0.3,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.5,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   },
+   {
+    "cpu": 0.4,
+    "mem_percent": 0.0,
+    "user": "root"
+   }
+  ]
+ },
+ {
+  "cpu_percent": 99.6,
+  "date": "2026-10-10",
+  "disks": {
+   "/boot/efi": 8,
+   "/home/shared/16TB_HDD_01": 88,
+   "/home/shared/8TB_HDD_01": 70,
+   "/home/shared/8TB_HDD_02": 95,
+   "/home/shared/8TB_HDD_03": 56,
+   "/media/4TB_JPG_ext": 52
+  },
+  "generated": "2026-10-10T14:01:05Z",
+  "memory_percent": 54.53,
+  "winners": [
+   {
+    "cpu": 5803.7,
+    "mem_percent": 62.6,
+    "user": "sr320"
+   },
+   {
+    "cpu": 99.1,
+    "mem_percent": 0.0,
+    "user": "root"
+   },
+   {
+    "cpu": 13.2,
+    "mem_percent": 0.2,
+    "user": "mewing0"
+   },
+   {
+    "cpu": 4.7,
+    "mem_percent": 0.3,
+    "user": "strigg"
+   },
+   {
+    "cpu": 0.6,
+    "mem_percent": 0.0,
+    "user": "mysql"
+   }
+  ]
+ }
+]
