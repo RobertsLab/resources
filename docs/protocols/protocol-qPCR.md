@@ -8,7 +8,7 @@ Quantitative (real-time) PCR is one of the most-used techniques in the lab, usua
 4. **[Notebook documentation](#part-4-documenting-a-qpcr-run-in-your-lab-notebook)**: what to record for every run, with a template you can copy.
 
 !!! tip "The short version"
-    Every qPCR plate needs: no-template controls (NTCs), technical replicates, and a reference gene. For cDNA you also need a no-RT control. Before you calculate anything, check the curves, the controls, the melt curve (SYBR only), and replicate agreement. Then record your baseline and threshold settings and any wells you excluded in your notebook, along with amplification and melt curve screenshots that show only the wells going forward.
+    Every qPCR plate needs: no-template controls (NTCs), and three technical replicates. Before you analyze any data, check the curves, the controls, the melt curve, and replicate agreement. Record your baseline and threshold settings and any wells you excluded in your notebook, along with amplification and melt curve screenshots that show only the wells going forward.
 
 ---
 
@@ -16,7 +16,7 @@ Quantitative (real-time) PCR is one of the most-used techniques in the lab, usua
 
 ### Measuring PCR as it happens
 
-In end-point PCR you only see the product after 30–40 cycles, once the reaction has plateaued, so the amount of product says little about how much template you started with. qPCR measures fluorescence **at every cycle**. That fluorescence is proportional to the amount of double-stranded product (SYBR/EvaGreen) or to the number of probes cleaved (hydrolysis probes).
+Quantitative PCR measures fluorescence at every cycle. That fluorescence (SYBR/EvaGreen) is proportional to the amount of double-stranded product generated, or to the number of probes cleaved (hydrolysis probes).
 
 In an efficient reaction the product doubles each cycle, so:
 
@@ -70,7 +70,7 @@ Every amplification curve goes through four phases:
 
 The lab's standard mix, **SsoFast EvaGreen Supermix**, uses this chemistry.
 
-- **How it works:** The dye fluoresces strongly only when bound to double-stranded DNA. As amplicon builds up, more dye binds and the signal rises. EvaGreen is a newer dye of the same kind. It inhibits PCR less, so it can be used at a higher, saturating concentration, which gives sharper melt curves.
+- **How it works:** The dye fluoresces strongly only when bound to double-stranded DNA. As amplicon builds up, more dye binds and the signal rises.
 - **The catch:** The dye binds **any** dsDNA: your amplicon, primer-dimers, and off-target products. Specificity comes only from your primers, so **every SYBR/EvaGreen run must end with a melt curve** (see [QC step 6](#step-6-check-the-melt-curve-sybrevagreen-only)).
 - **Melt curve:** After cycling, the instrument slowly heats the products from about 65 °C to 95 °C. Each product denatures ("melts") at a characteristic Tm and the dye is released, so fluorescence drops sharply. Plotted as −d(RFU)/dT, a single specific product gives **one sharp peak**.
 - **Pros:** Cheap, flexible (any primer pair works), and the melt curve tells you about specificity.
