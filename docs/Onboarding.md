@@ -40,7 +40,6 @@ Hands-on, self-paced tutorials to build core skills. Each tracks your progress a
 -   [Computing Best Practices](Computing-Best-Practices.md)
 -   [Writing Scientific Manuscripts](Writing.md)
 -   [Oral Presentations](Oral-Presentations.md)
--   [DEI Resources](DEI-Resources.md)
 -   [External Communication and Funding](External-Communication-and-Funding.md) — conferences, travel awards, fellowships
 -   [How to Grad School (outreach slides)](How-to-Grad-School-Slides.md)
 
