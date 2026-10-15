@@ -2,7 +2,7 @@
 
 The purpose of the lab group is to grow as scientists and as people. Our intent is to maintain an open, welcoming, and communicative environment among all lab members. You are encouraged to approach any member of the lab with questions or issues related to science or otherwise. As the old idiom goes, "there are no stupid questions". It is okay to make mistakes, but it is not okay to hide your mistakes from others - addressing them and learning from them is how we grow as scientists. Similarly, if you disagree with lab members on any issue you are encouraged to engage with them directly.
 
-To foster the intended lab environment, everyone must follow the [Code of Conduct](Code-of-Conduct.md). Lab members are also expected and encouraged to participate in trainings, committees, and self or group education to strive towards a more equitable, inclusive, and just lab and departmental community. See [DEI Resources](DEI-Resources.md) for support at UW and beyond.
+To foster the intended lab environment, everyone must follow the [Code of Conduct](Code-of-Conduct.md). Lab members are also expected and encouraged to participate in trainings, committees, and self or group education to strive towards a supportive lab and departmental community. See [Community and Support Resources](Community-Resources.md) for support at UW and beyond.
 
 All members meet regularly to discuss project progress and to help each other. **Meeting types, cadence, and how to join** are described on the [Lab Communication](Lab-Communication.md#lab-meetings) page (canonical reference).
 
@@ -15,8 +15,6 @@ For planning, tracking, and meeting preparation habits, see [Project Management]
 Utmost importance as you get into research is to communicate issues and challenges early. I will work with you to address these, though often we might find that the most effective solutions are resources outside of the lab.
 
 I will provide honest feedback in an effort to push you to be your best. This will include pushing you to consistently be stepping back to re-evaluate your work in a larger context, and consider areas of improvement.
-
-The predominantly white and cis/het, amongst other factors, community at SAFS may not meet everyone's needs. For this reason, you are encouraged to seek mentorship and community in the way that is best for you.
 
 ## Personnel Expectations
 

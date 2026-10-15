@@ -4,7 +4,7 @@ In our lab we:
 
 - Recognize our differences as strengths
 
-- Promote continuing education in diversity, equity, and inclusion (DEI). See [non-exhaustive list of DEI resources offered by UW and beyond](DEI-Resources.md)
+- Promote continuing education and professional development. See [community and support resources offered by UW and beyond](Community-Resources.md)
 
 - Provide educational and emotional support for each other
 

@@ -40,7 +40,7 @@ Hands-on, self-paced tutorials to build core skills. Each tracks your progress a
 -   [Computing Best Practices](Computing-Best-Practices.md)
 -   [Writing Scientific Manuscripts](Writing.md)
 -   [Oral Presentations](Oral-Presentations.md)
--   [DEI Resources](DEI-Resources.md)
+-   [Community and Support Resources](Community-Resources.md)
 -   [External Communication and Funding](External-Communication-and-Funding.md) — conferences, travel awards, fellowships
 -   [How to Grad School (outreach slides)](How-to-Grad-School-Slides.md)
 
@@ -50,9 +50,9 @@ Hands-on, self-paced tutorials to build core skills. Each tracks your progress a
 
 UW and SAFS have many groups, listservs, and funding channels. **Lab-recommended conferences and fellowships** are maintained in one place: [External Communication and Funding](External-Communication-and-Funding.md).
 
-### DEI
+### Community and support
 
-Non-exhaustive DEI groups and support at UW and beyond: [DEI Resources](DEI-Resources.md).
+Groups and support at UW and beyond: [Community and Support Resources](Community-Resources.md).
 
 ### Listservs
 

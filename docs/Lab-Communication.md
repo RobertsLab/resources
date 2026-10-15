@@ -50,4 +50,4 @@ Current meeting themes and dates are in the sheet below. To **suggest a topic, p
 
 _go [here](https://docs.google.com/spreadsheets/d/1WB87aK0_CHu9mxb5P9nWRH0-LDF15ogf3Ibjoe_cGTQ/edit?usp=sharing) to edit the sheet_
 
-For DEI support resources at UW and beyond (outside of lab meeting agendas), see [DEI Resources](DEI-Resources.md).
+For community and support resources at UW and beyond (outside of lab meeting agendas), see [Community and Support Resources](Community-Resources.md).

@@ -36,22 +36,12 @@
 
 - List of organizations that are striving to bring more diversity to the outdoors. [https://web.archive.org/web/20220523105055/https://www.adventure-journal.com/2020/06/these-orgs-could-use-your-help-to-bring-more-diversity-to-the-outdoors/](https://web.archive.org/web/20220523105055/https://www.adventure-journal.com/2020/06/these-orgs-could-use-your-help-to-bring-more-diversity-to-the-outdoors/)
 
-  - The College of the Environment communities often consist of people who enjoy and spend time in nature. Gatekeeping “outdoorsy-ness” is a serious issue that often excludes women, people of color, lower income individuals, and more. This can often make it difficult to participate in casual conversations at work/school or after-work/weekend activities, which can create a feeling of exclusion from the community as a whole.
-
 ## UW Centers
 
 - Kelly Ethnic Cultural Center. ECC frequently has talks, film showings, and more that are centered around DEI issues or celebrating different cultures. See there website for upcoming events: [https://depts.washington.edu/ecc/event/](https://depts.washington.edu/ecc/event/)
 
 - Center for International Relations & Cultural Leadership Exchange (CIRCLE) [https://www.washington.edu/circle/](https://www.washington.edu/circle/)
      - Events calendar: [https://www.washington.edu/circle/calendar/](https://www.washington.edu/circle/calendar/)
-
-## Indigenous Resources and Land Acknowledgement
-
-- Text your zip code or your city and state (separated by a comma) to (907) 312-5085 and a bot will respond with the names of the Native lands that correspond to that region
-- Duwamish Tribe [Land Acknowledgement](https://www.duwamishtribe.org/land-acknowledgement)
-- âpihtawikosisân [Beyond Territorial Acknowledgements](https://apihtawikosisan.com/2016/09/beyond-territorial-acknowledgments/)
-- U.S. Department of Arts and Culture - [Honor Native Land: 
-A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 
 ## Training & Continuing Education
 
@@ -63,15 +53,3 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 - "Eight tactics to identify and reduce your implicit biases" [https://www.aafp.org/journals/fpm/blogs/inpractice/entry/implicit_bias.html](https://www.aafp.org/journals/fpm/blogs/inpractice/entry/implicit_bias.html)
 
 - Implicit bias test from Harvard: [https://implicit.harvard.edu/implicit/takeatest.html](https://implicit.harvard.edu/implicit/takeatest.html)
-
-## Articles and Reading
-
-- [Interrupting Bias in Academic Settings](https://ncwit.org/resource/biasacademic/) Feb 2017. From the National Center for Women & Information Technology. “Use this resource to help you practice ways to interrupt bias in real-life situations."
-
-- [Black Scientists Call Out Racism in Their Institutions](https://www.theverge.com/21286924/science-racism-strike-stem-black-lives-matter-protests) June 2020. “Black scientists and students are sharing their experiences on Twitter of being dismissed and discriminated against in academia using the hashtag #BlackintheIvory.”
-
-- [The science divide: Why do Latino and black students leave STEM majors at higher rates?](https://wapo.st/3tikMCH) May 2019. “If there’s demonstrated, strong interest in STEM among black and Latino youth, why would you see higher departure rates for these students?” the professor said. “It’s not about interest or academic ability. So what causes this?”
-
-- [Facilitating Critical Conversations With Students [PDF]](https://www.tolerance.org/sites/default/files/2019-12/TT-Lets-Talk-December-2019.pdf) December 2019. “ It’s a conversation that explores the relationships between identity and power, that traces the structures that privilege some at the
-expense of others, that helps students think through the actions they can
-take to create a more just, more equitable, world.”
