@@ -49,9 +49,6 @@ Hands-on, self-paced tutorials to build core skills. Each tracks your progress a
 
 UW and SAFS have many groups, listservs, and funding channels. **Lab-recommended conferences and fellowships** are maintained in one place: [External Communication and Funding](External-Communication-and-Funding.md).
 
-### DEI
-
-Non-exhaustive DEI groups and support at UW and beyond: [DEI Resources](DEI-Resources.md).
 
 ### Listservs
 
