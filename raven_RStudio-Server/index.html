@@ -1679,10 +1679,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#launching-rstudio-from-an-apptainer-container" class="md-nav__link">
+  <a href="#available-containers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Launching RStudio from an Apptainer Container
+        Available containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launching-rstudio-from-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Launching RStudio from a container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-rstudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stopping RStudio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-script-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the script does
       
     </span>
   </a>
@@ -2646,10 +2679,43 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#launching-rstudio-from-an-apptainer-container" class="md-nav__link">
+  <a href="#available-containers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Launching RStudio from an Apptainer Container
+        Available containers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#launching-rstudio-from-a-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Launching RStudio from a container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-rstudio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stopping RStudio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-the-script-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the script does
       
     </span>
   </a>
@@ -2704,38 +2770,46 @@
 <h3 id="logging-in">Logging In</h3>
 <p>Log in with your <em>Raven</em> account credentials.</p>
 <h2 id="2-using-rstudio-via-apptainer-containers">2. Using RStudio via Apptainer Containers</h2>
-<p>Using RStudio via Apptainer containers allows you to run RStudio in an isolated environment and can be useful to switch between different computers (e.g. run stuff on Klone and then switch to Raven later).</p>
-<h3 id="launching-rstudio-from-an-apptainer-container">Launching RStudio from an Apptainer Container</h3>
+<p>Most people should just use the built-in RStudio Server above. Use a container when you need a specific R version or package set, or want the same environment you use on Klone.</p>
+<h3 id="available-containers">Available containers</h3>
+<p>Shared lab containers on Raven are in <code>/home/shared/containers</code>. To see what's there:</p>
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>-lt<span class="w"> </span>/home/shared/containers
+</code></pre></div>
+<h3 id="launching-rstudio-from-a-container">Launching RStudio from a container</h3>
 <ol>
 <li>
 <p>SSH into Raven.</p>
 </li>
 <li>
-<p>Start a <code>screen</code> session (optional, but recommended):</p>
+<p>Start a <code>screen</code> session so RStudio keeps running after you disconnect:</p>
+<div class="highlight"><pre><span></span><code>screen<span class="w"> </span>-S<span class="w"> </span>rstudio
+</code></pre></div>
+</li>
+<li>
+<p>Download the launch script (first time only):</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w"> </span>https://raw.githubusercontent.com/RobertsLab/resources/master/scripts/raven-rstudio.sh
+</code></pre></div>
+</li>
+<li>
+<p>Run it:</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>raven-rstudio.sh
+</code></pre></div>
+<p>By default this uses the newest container in <code>/home/shared/containers</code>. To use a specific container, give its path:</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>raven-rstudio.sh<span class="w"> </span>/home/shared/containers/&lt;container_name&gt;.sif
+</code></pre></div>
+</li>
+<li>
+<p>The script prints a URL (e.g. <code>http://raven.fish.washington.edu:41234</code>), your username, and a one-time password. Open the URL in your browser and log in with those.</p>
+<p>NOTE: You may be prompted with a security warning, since the site uses <code>http</code> instead of <code>https</code>. You can safely ignore this warning and proceed to the site.</p>
+</li>
+<li>
+<p>Detach from <code>screen</code> with <code>Ctrl-a d</code>. Reattach later with <code>screen -r rstudio</code>.</p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span><code>screen<span class="w"> </span>-S<span class="w"> </span>rstudio_session
-</code></pre></div>
-<p>This will allow you to close your SSH session without terminating RStudio.</p>
-<ol>
-<li>Launch the RStudio Apptainer container with port forwarding:</li>
-</ol>
-<div class="highlight"><pre><span></span><code>singularity<span class="w"> </span><span class="nb">exec</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--bind<span class="w"> </span>/tmp:/tmp<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--bind<span class="w"> </span>/home:/home<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--bind<span class="w"> </span>~/rstudio-server/var-lib:/var/lib/rstudio-server<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--bind<span class="w"> </span>~/rstudio-server/var-run:/var/run/rstudio-server<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--bind<span class="w"> </span>~/rstudio-server/tmp:/tmp/rstudio-server<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>&lt;/path/to/your/container&gt;/srlab-R4.4-bioinformatics-container-4743580.sif<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>rserver<span class="w"> </span>--www-port<span class="w"> </span><span class="m">8788</span><span class="w"> </span>--www-address<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--server-user<span class="o">=</span><span class="k">$(</span>whoami<span class="k">)</span>
-</code></pre></div>
-<p>Replace <code>&lt;/path/to/your/container&gt;/</code> with the path to your RStudio Apptainer container file.
-4. Open a web browser on your local machine and navigate to:
-   <a href="http://raven.fish.washington.edu:8788"><code>http://raven.fish.washington.edu:8788</code></a></p>
-<p>NOTE: You may be prompted with a security warning, since the site uses <code>http</code> instead of <code>https</code>. You can safely ignore this warning and proceed to the site.</p>
-<ol>
-<li>Log in with your <em>Raven</em> account credentials.</li>
-</ol></div>
+<h3 id="stopping-rstudio">Stopping RStudio</h3>
+<p>Reattach (<code>screen -r rstudio</code>), press <code>Ctrl-C</code>, then type <code>exit</code> to close the screen session.</p>
+<h3 id="what-the-script-does">What the script does</h3>
+<p><a href="https://github.com/RobertsLab/resources/blob/master/scripts/raven-rstudio.sh"><code>raven-rstudio.sh</code></a> creates private temporary directories (so multiple users don't collide), picks an unused port, generates a password, and starts <code>rserver</code> inside the container with <code>apptainer</code> (or <code>singularity</code> if that's what is installed). See <a href="../klone_containers/">Klone containers</a> for how lab containers are built.</p></div>
 
 
 
