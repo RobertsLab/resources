@@ -76,4 +76,4 @@ Reattach (`screen -r rstudio`), press `Ctrl-C`, then type `exit` to close the sc
 
 ### What the script does
 
-[`raven-rstudio.sh`](https://github.com/RobertsLab/resources/blob/master/scripts/raven-rstudio.sh) creates private temporary directories (so multiple users don't collide), picks an unused port, generates a password, and starts `rserver` inside the container with `apptainer` (or `singularity` if that's what is installed). See [Klone containers](klone_containers.md) for how lab containers are built.
+[`raven-rstudio.sh`](https://github.com/RobertsLab/resources/blob/master/scripts/raven-rstudio.sh) creates private temporary directories (so multiple users don't collide), picks an unused port, generates a password, and starts `rserver` inside the container with `singularity` (or `apptainer` if `singularity` isn't installed). See [Klone containers](klone_containers.md) for how lab containers are built.

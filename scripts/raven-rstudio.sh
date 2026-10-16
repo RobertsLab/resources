@@ -25,13 +25,12 @@ if [[ -z "${SIF}" || ! -f "${SIF}" ]]; then
   exit 1
 fi
 
-# Use apptainer if available, otherwise singularity
-if command -v apptainer >/dev/null 2>&1; then
-  RUNTIME=apptainer
-  ENV_PREFIX=APPTAINERENV_
-elif command -v singularity >/dev/null 2>&1; then
+# Prefer singularity: on Raven (Ubuntu 24.04) unprivileged apptainer fails
+# because AppArmor restricts user namespaces, while singularity works.
+if command -v singularity >/dev/null 2>&1; then
   RUNTIME=singularity
-  ENV_PREFIX=SINGULARITYENV_
+elif command -v apptainer >/dev/null 2>&1; then
+  RUNTIME=apptainer
 else
   echo "Neither apptainer nor singularity found on PATH." 1>&2
   exit 1
@@ -54,10 +53,13 @@ END
 PORT=$(python3 -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()')
 
 PASSWORD=$(openssl rand -base64 15)
-export "${ENV_PREFIX}USER=${USER}"
-export "${ENV_PREFIX}PASSWORD=${PASSWORD}"
-# Do not suspend idle sessions
-export "${ENV_PREFIX}RSTUDIO_SESSION_TIMEOUT=0"
+# Set both prefixes so this works whether singularity is SingularityCE or apptainer
+for ENV_PREFIX in SINGULARITYENV_ APPTAINERENV_; do
+  export "${ENV_PREFIX}USER=${USER}"
+  export "${ENV_PREFIX}PASSWORD=${PASSWORD}"
+  # Do not suspend idle sessions
+  export "${ENV_PREFIX}RSTUDIO_SESSION_TIMEOUT=0"
+done
 
 cat 1>&2 <<END
 
