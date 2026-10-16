@@ -2809,7 +2809,7 @@
 <h3 id="stopping-rstudio">Stopping RStudio</h3>
 <p>Reattach (<code>screen -r rstudio</code>), press <code>Ctrl-C</code>, then type <code>exit</code> to close the screen session.</p>
 <h3 id="what-the-script-does">What the script does</h3>
-<p><a href="https://github.com/RobertsLab/resources/blob/master/scripts/raven-rstudio.sh"><code>raven-rstudio.sh</code></a> creates private temporary directories (so multiple users don't collide), picks an unused port, generates a password, and starts <code>rserver</code> inside the container with <code>apptainer</code> (or <code>singularity</code> if that's what is installed). See <a href="../klone_containers/">Klone containers</a> for how lab containers are built.</p></div>
+<p><a href="https://github.com/RobertsLab/resources/blob/master/scripts/raven-rstudio.sh"><code>raven-rstudio.sh</code></a> creates private temporary directories (so multiple users don't collide), picks an unused port, generates a password, and starts <code>rserver</code> inside the container with <code>singularity</code> (or <code>apptainer</code> if <code>singularity</code> isn't installed). See <a href="../klone_containers/">Klone containers</a> for how lab containers are built.</p></div>
 
 
 
