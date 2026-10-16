@@ -75,7 +75,7 @@
 },
 {
 "label": "BUSCOs",
-"url": "https://robertslab.github.io/sams-notebook/2020/09/18/Assembly-Assessment-BUSCO-C.bairdi-Genome-v1.0-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-09-18-Assembly-Assessment---BUSCO-C.bairdi-Genome-v1.0-on-Mox/index.html",
 "kind": "genome/transcriptome",
 "md5": ""
 },
@@ -111,7 +111,7 @@
 },
 {
 "label": "BUSCOs",
-"url": "https://robertslab.github.io/sams-notebook/2021/03/17/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v4.0-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2021/2021-03-17-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-Transcriptome-v4.0-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -165,7 +165,7 @@
 },
 {
 "label": "Derived from cbai_transcriptome_v3.0.fasta",
-"url": "https://robertslab.github.io/sams-notebook/2020/06/05/Sequence-Extractions-C.bairdi-Transcriptomes-v2.0-and-v3.0-Excluding-Alveolata-with-MEGAN6-on-Swoose.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-06-05-Sequence-Extractions---C.bairdi-Transcriptomes-v2.0-and-v3.0-Excluding-Alveolata-with-MEGAN6-on-Swoose/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -213,7 +213,7 @@
 },
 {
 "label": "BUSCOs",
-"url": "https://robertslab.github.io/sams-notebook/2020/06/05/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v2.1.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-06-05-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-Transcriptome-v2.1/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -237,7 +237,7 @@
 },
 {
 "label": "Derived from cbai_transcriptome_v2.0.fasta",
-"url": "https://robertslab.github.io/sams-notebook/2020/06/05/Sequence-Extractions-C.bairdi-Transcriptomes-v2.0-and-v3.0-Excluding-Alveolata-with-MEGAN6-on-Swoose.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-06-05-Sequence-Extractions---C.bairdi-Transcriptomes-v2.0-and-v3.0-Excluding-Alveolata-with-MEGAN6-on-Swoose/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -249,13 +249,13 @@
 },
 {
 "label": "20200507.C_bairdi.Trinity.fasta",
-"url": "https://robertslab.github.io/sams-notebook/2020/05/02/Transcriptome-Assembly-C.bairdi-All-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-05-02-Transcriptome-Assembly---C.bairdi-All-RNAseq-Data-Without-Taxonomic-Filters-with-Trinity-on-Mox/index.html",
 "kind": "other",
 "md5": "01adbd54298495c147767b19ee5c0de9"
 },
 {
 "label": "BUSCOs",
-"url": "https://robertslab.github.io/sams-notebook/2020/05/08/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-v2.0-Transcriptome.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-05-08-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-v2.0-Transcriptome/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -285,7 +285,7 @@
 },
 {
 "label": "20200527",
-"url": "https://robertslab.github.io/sams-notebook/2020/05/27/Transcriptome-Assembly-C.bairdi-All-Pooled-Arthropoda-only-RNAseq-Data-with-Trinity-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-05-27-Transcriptome-Assembly---C.bairdi-All-Pooled-Arthropoda-only-RNAseq-Data-with-Trinity-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -327,7 +327,7 @@
 },
 {
 "label": "BUSCOs",
-"url": "https://robertslab.github.io/sams-notebook/2020/05/19/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.6.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-05-19-Transcriptome-Assessment---BUSCO-Metazoa-on-C.bairdi-Transcriptome-v1.6/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -387,7 +387,7 @@
 },
 {
 "label": "BUSCOs",
-"url": "https://robertslab.github.io/sams-notebook/2020/02/07/Transcriptome-Assessment-BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-02-07-Transcriptome-Assessment--BUSCO-Metazoa-on-C.bairdi-MEGAN-Transcriptome/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -399,7 +399,7 @@
 },
 {
 "label": "20200122",
-"url": "https://robertslab.github.io/sams-notebook/2020/01/22/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-01-22-Transcriptome-Assembly---C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -656,7 +656,7 @@
 },
 {
 "label": "here",
-"url": "https://robertslab.github.io/sams-notebook/2019/02/21/Data-Management-Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2019/2019-02-21-Data-Management---Create-C.gigas-Bisulfite-Genome-with-Bismark-on-Mox/index.html",
 "kind": "genome/transcriptome",
 "md5": ""
 },
@@ -952,13 +952,13 @@
 },
 {
 "label": "Notebook entry",
-"url": "https://robertslab.github.io/sams-notebook/2021/03/08/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2021/2021-03-08-Transcriptome-Assembly---Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
 {
 "label": "Notebook entry",
-"url": "https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-08-14-Transcriptome-Assessment---BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -970,7 +970,7 @@
 },
 {
 "label": "Notebook entry",
-"url": "https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Annotation-Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-08-14-Transcriptome-Annotation---Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -1000,13 +1000,13 @@
 },
 {
 "label": "Notebook entry",
-"url": "https://robertslab.github.io/sams-notebook/2021/03/08/Transcriptome-Assembly-Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2021/2021-03-08-Transcriptome-Assembly---Hematodinium-Transcriptomes-v1.6-and-v1.7-with-Trinity-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
 {
 "label": "Notebook entry",
-"url": "https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Assessment-BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-08-14-Transcriptome-Assessment---BUSCO-Metazoa-on-Hematodinium-v1.6-v1.7-v2.1-and-v3.1-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -1018,7 +1018,7 @@
 },
 {
 "label": "Notebook entry",
-"url": "https://robertslab.github.io/sams-notebook/2020/08/14/Transcriptome-Annotation-Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-08-14-Transcriptome-Annotation---Hematodinium-Transcriptomes-v1.6-v1.7-v2.1-v3.1-with-DIAMOND-BLASTx-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -1054,7 +1054,7 @@
 },
 {
 "label": "20200330",
-"url": "https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2020/2020-03-31-Transcriptome-Assembly---Hematodinium-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -1366,7 +1366,7 @@
 },
 {
 "label": "FastA file and scaffolds were renamed on 20191105",
-"url": "https://robertslab.github.io/sams-notebook/2019/11/05/Data-Wrangling-Rename-Pgenerosa_v074-Files-and-Scaffolds.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2019/2019-11-05-Data-Wrangling---Rename-Pgenerosa_v074-Files-and-Scaffolds/index.html",
 "kind": "other",
 "md5": "32976550b9030126c07920d5f2db179c"
 },
@@ -1396,7 +1396,7 @@
 },
 {
 "label": "GFF files and scaffolds were renamed on 20191105",
-"url": "https://robertslab.github.io/sams-notebook/2019/11/05/Data-Wrangling-Rename-Pgenerosa_v074-Files-and-Scaffolds.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2019/2019-11-05-Data-Wrangling---Rename-Pgenerosa_v074-Files-and-Scaffolds/index.html",
 "kind": "other",
 "md5": ""
 },
@@ -1570,7 +1570,7 @@
 },
 {
 "label": "here",
-"url": "https://robertslab.github.io/sams-notebook/2018/09/04/transcriptome-assembly-geoduck-rnaseq-data.html",
+"url": "https://robertslab.github.io/sams-notebook/posts/2018/2018-09-04-transcriptome-assembly-geoduck-rnaseq-data/index.html",
 "kind": "other",
 "md5": ""
 },
