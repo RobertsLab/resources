@@ -20,8 +20,6 @@
 
 - College of the Environment Community Equity Initiative: Organizational information [here](https://huskylink.washington.edu/organization/cei) 
 
-- UW Postdoc Diversity Alliance: [https://sites.uw.edu/uwpda](https://sites.uw.edu/uwpda)
-
 - Peaks and professors club: hike with UW faculty members to network while enjoying the outdoors.
      - Facebook page: [https://www.facebook.com/peaksandprofessorsuw/](https://www.facebook.com/peaksandprofessorsuw/)
      - Send a request to join the mailing list: <peaksandprofessorsuw@gmail.com>

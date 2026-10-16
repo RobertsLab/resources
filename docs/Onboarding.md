@@ -60,8 +60,8 @@ If you have trouble joining, email SAFS computing administrator Michael Parker (
 
 ### Undergraduate students
 
--   SAFS: [Research and Internships](https://fish.uw.edu/students/undergraduate-program/research-and-internships/), [Study Abroad](https://fish.uw.edu/students/undergraduate-program/degree-overview-new/study-abroad/), [scholarships and funding](https://fish.uw.edu/students/undergraduate-program/scholarships-funding/)
--   [Undergraduate Research Symposium](https://www.washington.edu/undergradresearch/symposium/)
+-   SAFS: [Research and Internships](https://fish.uw.edu/students/student-and-career-opportunities/), [Study Abroad](https://fish.uw.edu/students/undergraduate-program/degree-overview-new/study-abroad/), [scholarships and funding](https://fish.uw.edu/students/undergraduate-program/scholarships-funding/)
+-   [Undergraduate Research Symposium](https://www.washington.edu/urs/)
 -   [FieldNotes](https://fieldnotesjournal.org/) (CoEnv undergraduate research journal)
 
 ### Graduate students
@@ -75,7 +75,7 @@ Travel and conference awards (CoEnv, Grad School, FINS, etc.) are summarized wit
 
 ### Postdocs
 
--   [UW Office of Postdoctoral Affairs](https://grad.uw.edu/for-students-and-post-docs/office-of-postdoctoral-affairs/) — listserv: email [uwopa\@uw.edu](mailto:uwopa@uw.edu){.email}
+-   [UW Office of Postdoctoral Affairs](https://ap.washington.edu/postdoctoral-scholars/) — listserv: email [uwopa\@uw.edu](mailto:uwopa@uw.edu){.email}
 -   [UW College of the Environment Postdocs](https://environment.uw.edu/research/postdoctoral-fellows/) — listserv [environment_postdocs\@uw.edu](mailto:environment_postdocs@uw.edu){.email}: contact Anthony Salazar ([asalazar\@uw.edu](mailto:asalazar@uw.edu){.email})
 -   [SAFS Postdocs](https://fish.uw.edu/faculty-research/research/postdoctoralscholars/) — listserv [safspostdocs\@uw.edu](mailto:safspostdocs@uw.edu){.email}: [join](http://mailman13.u.washington.edu/mailman/listinfo/safspostdocs)
 
@@ -83,4 +83,4 @@ Travel and conference awards (CoEnv, Grad School, FINS, etc.) are summarized wit
 
 SAFS faculty governance (UW NetID): <https://uwnetid.sharepoint.com/sites/safs/facultygovernance>
 
-Under **Policies**, see salary recovery, teaching buyout, and teaching release. University-wide options include [A/B salary](https://environment.uw.edu/intranet/personnel/academic-human-resources/salary-compensation/ab-salary-retention-adjustment-policy) and [mobile phone reimbursement](https://www.washington.edu/admin/rules/policies/APS/55.01.html) (department policy may apply).
+Under **Policies**, see salary recovery, teaching buyout, and teaching release. University-wide options include [A/B salary](https://ap.washington.edu/ahr/policies/compensation/retention-salary-adjustments/a-b-faculty-retention-salary-policy/) and [mobile phone reimbursement](https://www.washington.edu/admin/rules/policies/APS/55.01.html) (department policy may apply).
