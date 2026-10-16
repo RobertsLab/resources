@@ -49,6 +49,17 @@ provider=sqlite
 directory=/var/lib/rstudio-server
 END
 
+# Wrapper so the R session runs with the host user's name and home directory
+# (otherwise it can default to the container's "rstudio" user and /home/rstudio)
+cat > "${RSTUDIO_TMP}/rsession.sh" <<END
+#!/bin/sh
+export USER=${USER}
+export LOGNAME=${USER}
+export HOME=${HOME}
+exec /usr/lib/rstudio-server/bin/rsession "\${@}"
+END
+chmod +x "${RSTUDIO_TMP}/rsession.sh"
+
 # Pick an unused port so multiple users can run at once
 PORT=$(python3 -c 'import socket; s=socket.socket(); s.bind(("", 0)); print(s.getsockname()[1]); s.close()')
 
@@ -73,10 +84,11 @@ To stop: press Ctrl-C here (or quit RStudio's session first, then Ctrl-C).
 
 END
 
-"${RUNTIME}" exec --cleanenv \
+"${RUNTIME}" exec --cleanenv --home "${HOME}" \
   --bind "${RSTUDIO_TMP}/run:/run" \
   --bind "${RSTUDIO_TMP}/tmp:/tmp" \
   --bind "${RSTUDIO_TMP}/database.conf:/etc/rstudio/database.conf" \
+  --bind "${RSTUDIO_TMP}/rsession.sh:/etc/rstudio/rsession.sh" \
   --bind "${RSTUDIO_TMP}/var/lib/rstudio-server:/var/lib/rstudio-server" \
   "${SIF}" \
   rserver --www-port "${PORT}" \
@@ -85,4 +97,5 @@ END
           --auth-pam-helper-path=pam-helper \
           --auth-timeout-minutes=0 \
           --auth-stay-signed-in-days=30 \
+          --rsession-path=/etc/rstudio/rsession.sh \
           --server-user="${USER}"
