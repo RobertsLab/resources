@@ -26,37 +26,54 @@ Log in with your _Raven_ account credentials.
 
 ## 2. Using RStudio via Apptainer Containers
 
-Using RStudio via Apptainer containers allows you to run RStudio in an isolated environment and can be useful to switch between different computers (e.g. run stuff on Klone and then switch to Raven later).
+Most people should just use the built-in RStudio Server above. Use a container when you need a specific R version or package set, or want the same environment you use on Klone.
 
-### Launching RStudio from an Apptainer Container
+### Available containers
+
+Shared lab containers on Raven are in `/home/shared/containers`. To see what's there:
+
+```bash
+ls -lt /home/shared/containers
+```
+
+### Launching RStudio from a container
 
 1. SSH into Raven.
 
-2. Start a `screen` session (optional, but recommended):
+2. Start a `screen` session so RStudio keeps running after you disconnect:
 
-   ```bash
-   screen -S rstudio_session
-   ```
+    ```bash
+    screen -S rstudio
+    ```
 
-   This will allow you to close your SSH session without terminating RStudio.
+3. Download the launch script (first time only):
 
-3. Launch the RStudio Apptainer container with port forwarding:
+    ```bash
+    curl -O https://raw.githubusercontent.com/RobertsLab/resources/master/scripts/raven-rstudio.sh
+    ```
 
-   ```bash
-   singularity exec \
-     --bind /tmp:/tmp \
-     --bind /home:/home \
-     --bind ~/rstudio-server/var-lib:/var/lib/rstudio-server \
-     --bind ~/rstudio-server/var-run:/var/run/rstudio-server \
-     --bind ~/rstudio-server/tmp:/tmp/rstudio-server \
-     </path/to/your/container>/srlab-R4.4-bioinformatics-container-4743580.sif \
-     rserver --www-port 8788 --www-address 0.0.0.0 --server-user=$(whoami)
-   ```
-   
-   Replace `</path/to/your/container>/` with the path to your RStudio Apptainer container file.
-4. Open a web browser on your local machine and navigate to:
-   [`http://raven.fish.washington.edu:8788`](http://raven.fish.washington.edu:8788)
+4. Run it:
 
-   NOTE: You may be prompted with a security warning, since the site uses `http` instead of `https`. You can safely ignore this warning and proceed to the site.
+    ```bash
+    bash raven-rstudio.sh
+    ```
 
-5. Log in with your _Raven_ account credentials.
+    By default this uses the newest container in `/home/shared/containers`. To use a specific container, give its path:
+
+    ```bash
+    bash raven-rstudio.sh /home/shared/containers/<container_name>.sif
+    ```
+
+5. The script prints a URL (e.g. `http://raven.fish.washington.edu:41234`), your username, and a one-time password. Open the URL in your browser and log in with those.
+
+    NOTE: You may be prompted with a security warning, since the site uses `http` instead of `https`. You can safely ignore this warning and proceed to the site.
+
+6. Detach from `screen` with `Ctrl-a d`. Reattach later with `screen -r rstudio`.
+
+### Stopping RStudio
+
+Reattach (`screen -r rstudio`), press `Ctrl-C`, then type `exit` to close the screen session.
+
+### What the script does
+
+[`raven-rstudio.sh`](https://github.com/RobertsLab/resources/blob/master/scripts/raven-rstudio.sh) creates private temporary directories (so multiple users don't collide), picks an unused port, generates a password, and starts `rserver` inside the container with `apptainer` (or `singularity` if that's what is installed). See [Klone containers](klone_containers.md) for how lab containers are built.
