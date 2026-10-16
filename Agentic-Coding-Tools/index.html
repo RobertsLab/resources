@@ -2529,7 +2529,7 @@
 
 <div><h1 id="agentic-coding-tools-and-ai-assistants">Agentic Coding Tools and AI Assistants</h1>
 <p>AI-powered coding assistants can speed up writing, debugging, and refactoring code. They can also introduce subtle errors, leak context to third-party servers, or push changes in the wrong direction if you are not careful.</p>
-<p>This guide covers tools the lab commonly uses—<strong>GitHub Copilot</strong>, <strong>ChatGPT / Codex</strong>, and <strong>local models (Ollama)</strong>—plus practices that keep agents useful and your work reproducible.</p>
+<p>This guide covers tools the lab commonly uses—<strong>Claude Code</strong>, <strong>GitHub Copilot</strong>, <strong>ChatGPT / Codex</strong>, and <strong>local models (Ollama)</strong>—plus practices that keep agents useful and your work reproducible.</p>
 <p><strong>Related:</strong> <a href="../Computing-Best-Practices/">Computing Best Practices</a> · <a href="../klone_VS-Code/">VS Code on Klone</a></p>
 <div class="admonition tip">
 <p class="admonition-title">New to agentic AI? Start with the Bootcamp</p>
@@ -2651,14 +2651,20 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#claude-code">Claude Code</a></td>
+<td>Terminal, VS Code, desktop app, web</td>
+<td>Repo-wide agentic work: multi-file edits, running and fixing scripts, git workflows</td>
+<td>Yes</td>
+</tr>
+<tr>
 <td><a href="#github-copilot">GitHub Copilot</a></td>
-<td>VS Code, github.dev, GitHub.com</td>
-<td>Tab completion, in-editor chat, issue → PR agent</td>
+<td>VS Code and other IDEs, GitHub.com</td>
+<td>Tab completion, in-editor chat, issue → PR cloud agent</td>
 <td>Yes</td>
 </tr>
 <tr>
 <td><a href="#chatgpt-and-openai-codex">ChatGPT / Codex</a></td>
-<td>Browser, desktop app, terminal CLI</td>
+<td>Browser, desktop app, terminal CLI, IDE extension</td>
 <td>Explaining concepts, one-off scripts, repo-wide tasks via CLI</td>
 <td>Yes</td>
 </tr>
@@ -2696,8 +2702,8 @@
 </thead>
 <tbody>
 <tr>
-<td><code>instructions.md</code> (or <code>AGENTS.md</code>)</td>
-<td>Project goals, conventions, how to run code, what <em>not</em> to touch</td>
+<td><code>CLAUDE.md</code> / <code>AGENTS.md</code> (or <code>.github/copilot-instructions.md</code>)</td>
+<td>Project goals, conventions, how to run code, what <em>not</em> to touch. Claude Code reads <code>CLAUDE.md</code>; Codex reads <code>AGENTS.md</code>; Copilot reads <code>.github/copilot-instructions.md</code> (and <code>AGENTS.md</code>)</td>
 </tr>
 <tr>
 <td><code>tasks.md</code></td>
@@ -2724,37 +2730,68 @@
 <td><strong>Ask</strong> / chat (read-only Q&amp;A)</td>
 </tr>
 <tr>
+<td>Agree on an approach before any files change</td>
+<td><strong>Plan</strong> mode (Copilot Plan, Claude Code plan mode)</td>
+</tr>
+<tr>
 <td>Change a specific function or block</td>
-<td><strong>Edit</strong> / inline edit on a selection</td>
+<td><strong>Inline chat</strong> on a selection (<code>Cmd+I</code> / <code>Ctrl+I</code> in VS Code)</td>
 </tr>
 <tr>
 <td>Multi-step work (tests, refactors, debugging)</td>
-<td><strong>Agent</strong> / coding agent</td>
+<td><strong>Agent</strong> / coding agent (Copilot Agent, Claude Code, Codex)</td>
 </tr>
 <tr>
 <td>An entire GitHub issue implemented as a PR</td>
-<td><strong>Copilot coding agent</strong> on GitHub</td>
+<td><strong>Copilot cloud agent</strong> on GitHub</td>
 </tr>
 </tbody>
 </table>
 <h3 id="watch-usage-limits">Watch usage limits</h3>
-<p>Copilot and ChatGPT plans have monthly or rate limits. Usage often depends on whether you use lightweight <strong>Ask</strong> vs heavier <strong>Agent</strong> modes and which model you select. Check your account dashboard when sessions stop unexpectedly.</p>
+<p>Claude, Copilot, and ChatGPT plans all have usage limits (Copilot now meters chat and agent use in monthly AI Credits). Usage depends heavily on whether you use lightweight <strong>Ask</strong> vs heavier <strong>Agent</strong> sessions and which model you select. Check your account dashboard when sessions stop unexpectedly.</p>
+<hr>
+<h2 id="claude-code">Claude Code</h2>
+<p><a href="https://code.claude.com/docs">Claude Code</a> is Anthropic's agentic coding tool and the one the <a href="../agentic-ai-bootcamp.html">Agentic AI Bootcamp</a> teaches. It works in a project directory: it reads your files, proposes and makes edits, runs commands and scripts, reads the output, and iterates. It runs in the terminal, and also as a VS Code extension, a desktop app, and on the web.</p>
+<h3 id="access">Access</h3>
+<p>Claude Code needs a Claude subscription (Pro, Max, Team, or Enterprise) or API access. <strong>Lab members and program participants: ask your lead before paying for anything</strong>—access is usually provided.</p>
+<h3 id="install">Install</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Native installer (macOS / Linux / WSL)</span>
+curl<span class="w"> </span>-fsSL<span class="w"> </span>https://claude.ai/install.sh<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<span class="c1"># or, with Node.js 18+</span>
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
+</code></pre></div>
+<p>See the <a href="https://code.claude.com/docs/en/setup">setup docs</a> for Windows and other options, which change over time.</p>
+<h3 id="typical-workflow">Typical workflow</h3>
+<ol>
+<li><code>cd</code> into your git repository (on a feature branch)</li>
+<li>Start a session: <code>claude</code></li>
+<li>Describe the task; for anything non-trivial, use <strong>plan mode</strong> (<code>Shift+Tab</code>) so it proposes an approach before touching files</li>
+<li>Approve or decline file edits and commands as it asks—read what it is about to do</li>
+<li>Review <code>git diff</code>, run tests, then commit</li>
+</ol>
+<h3 id="give-it-lasting-context-with-claudemd">Give it lasting context with <code>CLAUDE.md</code></h3>
+<p>A <code>CLAUDE.md</code> file at the repo root is read at the start of every session. Put project goals, directory layout, how to run things, and what not to touch there (see <a href="https://code.claude.com/docs/en/memory">memory docs</a>). Run <code>/init</code> in a session to draft one, then edit it down.</p>
+<h3 id="tips">Tips</h3>
+<ul>
+<li>Start a fresh session (<code>/clear</code>) for each new task; long sessions drift</li>
+<li>It can be confidently wrong—sanity-check numbers, statistics, and biology</li>
+<li>On Klone, run it from a compute node session, not a login node, if it will execute analyses</li>
+</ul>
 <hr>
 <h2 id="github-copilot">GitHub Copilot</h2>
 <p><a href="https://github.com/copilot">GitHub Copilot</a> suggests code as you type and can run conversational or agentic workflows in the editor and on GitHub.com.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <ul>
-<li>GitHub account with Copilot access (<a href="https://education.github.com/">GitHub Education</a> provides free access for many students and educators)</li>
-<li>VS Code or another <a href="https://docs.github.com/en/copilot/managing-copilot/managing-copilot-for-your-enterprise/about-github-copilot-for-business">supported IDE</a></li>
+<li>GitHub account with Copilot access. <a href="https://education.github.com/">GitHub Education</a> gives verified students the free <strong>Copilot Student</strong> plan (unlimited completions, monthly AI Credits for chat/agent use, automatic model selection) and verified teachers free Copilot Pro. A limited <strong>Copilot Free</strong> plan is available to everyone.</li>
+<li>VS Code or another <a href="https://docs.github.com/en/copilot/reference/copilot-feature-matrix">supported IDE</a></li>
 <li>Active internet connection (cloud models)</li>
 </ul>
 <p><strong>Check access:</strong> <a href="https://github.com/copilot">github.com/copilot</a></p>
 <h3 id="setup-in-vs-code">Setup in VS Code</h3>
-<h4 id="1-install-extensions">1. Install extensions</h4>
+<h4 id="1-install-the-extension">1. Install the extension</h4>
 <ol>
 <li>Open VS Code → Extensions (<code>Cmd+Shift+X</code> / <code>Ctrl+Shift+X</code>)</li>
-<li>Install <strong>GitHub Copilot</strong> (by GitHub)</li>
-<li>Install <strong>GitHub Copilot Chat</strong> for Ask / Agent / Edit panels</li>
+<li>Install <strong>GitHub Copilot Chat</strong> (by GitHub). This single extension now provides both inline completions and the chat panel; the separate "GitHub Copilot" extension has been folded into it.</li>
 </ol>
 <h4 id="2-sign-in">2. Sign in</h4>
 <ol>
@@ -2767,19 +2804,25 @@
 <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_gc_content</span><span class="p">(</span>
 </code></pre></div>
 <p>Gray ghost text should appear; accept with <code>Tab</code>, dismiss with <code>Esc</code>.</p>
-<h3 id="ask-edit-and-agent-in-vs-code">Ask, Edit, and Agent in VS Code</h3>
-<p>Copilot Chat exposes three interaction styles:</p>
+<h3 id="ask-plan-and-agent-in-vs-code">Ask, Plan, and Agent in VS Code</h3>
+<p>The Copilot Chat panel has three built-in modes (pick from the dropdown in the chat box), plus inline chat for quick edits:</p>
 <p><strong>Ask</strong> — Chat panel for questions without automatic edits.</p>
 <ul>
 <li>Examples: “What does this function do?”, “Write a regex for valid FASTA headers”</li>
 <li>Copilot explains or suggests snippets; you apply changes manually</li>
 <li>Best for learning and planning</li>
 </ul>
-<p><strong>Edit</strong> — Change selected code from a prompt.</p>
+<p><strong>Plan</strong> — Work out an approach before anything changes.</p>
 <ul>
-<li>Select code → open Edit → e.g. “Convert this loop to vectorized pandas”</li>
+<li>Describe the goal; Copilot researches the code and proposes a step-by-step plan</li>
+<li>Refine the plan, then hand it to Agent to implement</li>
+<li>Best for anything touching more than a file or two</li>
+</ul>
+<p><strong>Inline chat</strong> (<code>Cmd+I</code> / <code>Ctrl+I</code>) — Change selected code from a prompt.</p>
+<ul>
+<li>Select code → inline chat → e.g. “Convert this loop to vectorized pandas”</li>
 <li>Shows a diff; accept or reject</li>
-<li>Best for localized refactors</li>
+<li>Best for localized refactors (this replaces the former Edit mode)</li>
 </ul>
 <p><strong>Agent</strong> — Multi-step, goal-oriented sessions.</p>
 <ul>
@@ -2787,7 +2830,7 @@
 <li>Best for debugging, test runs, and larger refactors</li>
 <li>Use on a branch; review all file changes before commit</li>
 </ul>
-<p><strong>Rule of thumb:</strong> Ask to understand → Edit to change a region → Agent for bigger workflows.</p>
+<p><strong>Rule of thumb:</strong> Ask to understand → Plan to agree on an approach → Agent to make and verify changes (inline chat for small, local edits).</p>
 <h3 id="practical-use-cases-in-the-lab">Practical use cases in the lab</h3>
 <ul>
 <li><strong>Tab completion</strong> while writing R, Python, shell, or Quarto/Rmd</li>
@@ -2801,14 +2844,14 @@
 <ol>
 <li>Open any repository on GitHub</li>
 <li>Press <code>.</code> (period) to open the web VS Code editor, or visit <code>https://github.dev/owner/repo</code></li>
-<li>Use completions and Copilot Chat like desktop VS Code (when your plan includes it)</li>
+<li>Use it for quick browsing and small edits. Extension support in github.dev is limited, so for full Copilot features use desktop VS Code or a Codespace</li>
 </ol>
 <h4 id="code-view-on-githubcom">Code view on GitHub.com</h4>
 <ul>
 <li>Look for the Copilot control in file views for explanations and improvement ideas</li>
 <li>Treat suggestions as starting points, not ground truth</li>
 </ul>
-<h4 id="assign-issues-to-the-copilot-coding-agent">Assign issues to the Copilot coding agent</h4>
+<h4 id="assign-issues-to-the-copilot-cloud-agent">Assign issues to the Copilot cloud agent</h4>
 <p>One of the strongest workflows for repo maintenance:</p>
 <ol>
 <li>Open an issue with clear <strong>background</strong>, <strong>acceptance criteria</strong>, and <strong>files or areas</strong> to touch</li>
@@ -2817,12 +2860,12 @@
 <li>You review the PR; request changes or merge when satisfied</li>
 </ol>
 <p>Write issues the way you would for a human contributor: what “done” looks like, constraints, and test commands if any.</p>
-<p><img alt="Ways to interact with Copilot on GitHub" src="http://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png"></p>
-<p>Official docs: <a href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/assign-copilot-to-an-issue">Assign Copilot to an issue</a></p>
+<p><img alt="Ways to interact with Copilot on GitHub" src="https://gannet.fish.washington.edu/seashell/snaps/Screen20Shot202025-09-0120at2019.04.11.png"></p>
+<p>GitHub now calls this the <strong>Copilot cloud agent</strong> (formerly "coding agent"). Official docs: <a href="https://docs.github.com/en/copilot/how-tos/use-copilot-agents/cloud-agent/start-copilot-sessions">Start Copilot sessions</a></p>
 <h3 id="copilot-on-uw-klone-hpc">Copilot on UW Klone (HPC)</h3>
 <p>Copilot runs in VS Code on <strong>your laptop</strong>, talking to cloud models; compute still runs on Klone when you execute code remotely.</p>
 <p><strong>Recommended:</strong> <a href="../klone_VS-Code/">VS Code on Klone via ProxyJump</a> — connect to a compute node with Remote-SSH so login nodes stay free.</p>
-<p><strong>Note:</strong> Hyak OnDemand VS Code is easier to start but may not support Copilot extensions the same way; see pros/cons in the Klone VS Code guide.</p>
+<p><strong>Alternative:</strong> <a href="https://hyak.uw.edu/ood/apps/vscode/">Hyak OnDemand VS Code</a> is easier to start and is what Hyak recommends over connecting to login nodes, but it uses the Open VSX extension gallery, so Copilot may not be available or may behave differently there; see pros/cons in the Klone VS Code guide.</p>
 <p>Basic Remote-SSH flow:</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># On your laptop: install Remote-SSH in VS Code, configure ProxyJump per UW-IT</span>
 ssh<span class="w"> </span>your_netid@klone.hyak.uw.edu
@@ -2831,13 +2874,13 @@ ssh<span class="w"> </span>your_netid@klone.hyak.uw.edu
 <h3 id="copilot-documentation">Copilot documentation</h3>
 <ul>
 <li><a href="https://docs.github.com/en/copilot">GitHub Copilot documentation</a></li>
-<li><a href="https://code.visualstudio.com/docs/copilot/overview">VS Code Copilot guide</a></li>
-<li><a href="https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/">Prompting best practices (GitHub Blog)</a></li>
+<li><a href="https://code.visualstudio.com/docs/agents/overview">VS Code agents and Copilot guide</a></li>
+<li><a href="https://github.blog/developer-skills/github/how-to-write-better-prompts-for-github-copilot/">Prompting best practices (GitHub Blog)</a></li>
 </ul>
 <hr>
 <h2 id="chatgpt-and-openai-codex">ChatGPT and OpenAI Codex</h2>
 <h3 id="chatgpt-chat">ChatGPT (chat)</h3>
-<p><a href="https://chat.openai.com/">ChatGPT</a> is useful for:</p>
+<p><a href="https://chatgpt.com/">ChatGPT</a> is useful for:</p>
 <ul>
 <li>Explaining algorithms, statistics, or file formats</li>
 <li>Drafting small standalone scripts before moving them into a repo</li>
@@ -2845,7 +2888,7 @@ ssh<span class="w"> </span>your_netid@klone.hyak.uw.edu
 </ul>
 <p><strong>Limitations:</strong> Chat sessions are not tied to your repo unless you upload files or use connectors. It will not run your Klone jobs or know your directory layout unless you provide that context. Always copy final code into GitHub with normal review.</p>
 <h3 id="openai-codex-cli-agent">OpenAI Codex (CLI agent)</h3>
-<p><a href="https://github.com/openai/codex">Codex</a> is a <strong>terminal-based</strong> coding agent (distinct from the older “Codex” API name). It can read and edit files in a project directory, run commands, and work across a repository.</p>
+<p><a href="https://github.com/openai/codex">Codex</a> is OpenAI's coding agent (distinct from the older “Codex” API name). The <strong>CLI</strong> runs in your terminal, reading and editing files in a project directory, running commands, and working across a repository; Codex is also available as an IDE extension and as a cloud agent in ChatGPT.</p>
 <p><strong>Install (examples):</strong></p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@openai/codex
 <span class="c1"># or</span>
@@ -2858,8 +2901,8 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 <li>Describe the task in natural language; approve file and command changes when prompted</li>
 <li>Review <code>git diff</code>, run tests, then commit</li>
 </ol>
-<p>Access is included with many ChatGPT paid plans; see <a href="https://developers.openai.com/codex/cli">Codex CLI documentation</a> for authentication options.</p>
-<p><strong>When to prefer Codex vs Copilot:</strong> Codex is strong when you want a <strong>terminal-first</strong>, repo-wide session without VS Code. Copilot is stronger for <strong>inline completion</strong> and <strong>GitHub-native</strong> issue → PR flows.</p>
+<p>Access is included with many ChatGPT paid plans; see <a href="https://learn.chatgpt.com/docs/codex/cli">Codex CLI documentation</a> for authentication options.</p>
+<p><strong>When to prefer Codex or Claude Code vs Copilot:</strong> Codex and Claude Code are strong when you want a <strong>terminal-first</strong>, repo-wide agent session, with or without VS Code. Copilot is stronger for <strong>inline completion</strong> and <strong>GitHub-native</strong> issue → PR flows.</p>
 <hr>
 <h2 id="ollama-local-models">Ollama (local models)</h2>
 <p>Running models locally keeps prompts on your machine—useful for quick help (regex, bash one-liners, explaining error messages) without sending text to a cloud API.</p>
@@ -2870,7 +2913,7 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 </ol>
 <div class="highlight"><pre><span></span><code>ollama<span class="w"> </span>pull<span class="w"> </span>qwen2.5-coder:7b
 </code></pre></div>
-<p>Smaller models are faster; larger models are better for multi-file reasoning but need more RAM.</p>
+<p>Smaller models are faster; larger models are better for multi-file reasoning but need more RAM. <code>qwen2.5-coder:7b</code> runs on most laptops; the newer <code>qwen3-coder</code> (30B and up) is stronger if you have the memory (~32 GB+).</p>
 <h3 id="use-with-vs-code-continue-extension">Use with VS Code (Continue extension)</h3>
 <p><a href="https://continue.dev/">Continue</a> connects VS Code to Ollama for chat and optional tab completion.</p>
 <ol>
@@ -2879,17 +2922,19 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 <li>Configure Continue to use <code>http://localhost:11434</code> as the Ollama API base</li>
 <li>Select your pulled model in Continue’s model picker</li>
 </ol>
-<p>Example minimal config concept (paths vary by OS; see <a href="https://docs.continue.dev/">Continue docs</a>):</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">"models"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">    </span><span class="p">{</span>
-<span class="w">      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Qwen2.5 Coder"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ollama"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"qwen2.5-coder:7b"</span><span class="p">,</span>
-<span class="w">      </span><span class="nt">"apiBase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://localhost:11434"</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="w">  </span><span class="p">]</span>
-<span class="p">}</span>
+<p>Example minimal <code>config.yaml</code> (in <code>~/.continue/</code> on macOS/Linux, <code>%USERPROFILE%\.continue\</code> on Windows; Continue's YAML config replaces the older <code>config.json</code>, see <a href="https://docs.continue.dev/reference/yaml-migration">Continue docs</a>):</p>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">local-config</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.1</span>
+<span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<span class="nt">models</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Qwen2.5 Coder</span>
+<span class="w">    </span><span class="nt">provider</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ollama</span>
+<span class="w">    </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">qwen2.5-coder:7b</span>
+<span class="w">    </span><span class="nt">apiBase</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://localhost:11434</span>
+<span class="w">    </span><span class="nt">roles</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">chat</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">edit</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autocomplete</span>
 </code></pre></div>
 <h3 id="when-local-models-are-enough">When local models are enough</h3>
 <ul>
@@ -2915,8 +2960,8 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 </thead>
 <tbody>
 <tr>
-<td>ChatGPT / DALL·E</td>
-<td>Good for rough schematics; check <a href="https://openai.com/policies">OpenAI usage policies</a></td>
+<td>ChatGPT Images</td>
+<td>Good for rough schematics (DALL·E has been retired; ChatGPT now uses OpenAI's GPT Image models); check <a href="https://openai.com/policies">OpenAI usage policies</a></td>
 </tr>
 <tr>
 <td>Copilot / VS Code</td>
@@ -2941,15 +2986,15 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 <tbody>
 <tr>
 <td>Fix a failing R script on your laptop</td>
-<td>Copilot <strong>Ask</strong> or <strong>Agent</strong> in VS Code on a branch</td>
+<td><strong>Claude Code</strong> in the repo, or Copilot <strong>Ask</strong> / <strong>Agent</strong> in VS Code, on a branch</td>
 </tr>
 <tr>
 <td>Implement a filed GitHub issue end-to-end</td>
-<td>Assign issue to <strong>Copilot coding agent</strong>, review PR</td>
+<td>Assign issue to <strong>Copilot cloud agent</strong>, review PR</td>
 </tr>
 <tr>
 <td>Explain a Slurm error without leaving the terminal</td>
-<td><strong>Codex</strong> or <strong>ChatGPT</strong> with the job log pasted in</td>
+<td><strong>Claude Code</strong> or <strong>Codex</strong> pointed at the job log</td>
 </tr>
 <tr>
 <td>Quick regex for filenames, no cloud</td>
@@ -2957,7 +3002,7 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 </tr>
 <tr>
 <td>Heavy analysis on Klone</td>
-<td>VS Code Remote-SSH + Copilot on laptop; run jobs on compute node</td>
+<td>VS Code Remote-SSH (or Hyak OnDemand) to a compute node, or Claude Code in a compute-node session; submit big jobs via Slurm</td>
 </tr>
 <tr>
 <td>Figure for a seminar slide (not data)</td>
@@ -2970,6 +3015,7 @@ brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"
 <ul>
 <li><strong>Lab:</strong> <a href="https://github.com/RobertsLab/resources/issues">open a GitHub issue</a> on this handbook repo</li>
 <li><strong>UW Hyak / Klone:</strong> <a href="https://hyak.uw.edu/docs/">Hyak documentation</a> and <a href="https://calendar.washington.edu/sea_uwit-rc">UW-IT office hours</a></li>
+<li><strong>Claude Code:</strong> <a href="https://code.claude.com/docs">Claude Code docs</a> and the <a href="../agentic-ai-bootcamp.html">Agentic AI Bootcamp</a></li>
 <li><strong>Copilot access / education:</strong> <a href="https://education.github.com/">GitHub Education</a></li>
 </ul>
 <p>If something in this page is outdated (models and UIs change quickly), edit the doc via the pencil icon in the handbook or submit a PR.</p>
