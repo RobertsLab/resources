@@ -37,6 +37,7 @@ extra_javascript:
   - javascripts/raven-history.js
 
 markdown_extensions:
+  - attr_list
   - admonition
   - pymdownx.details
   - pymdownx.highlight
@@ -58,7 +59,7 @@ plugins:
 
 # Pages built and searchable, but intentionally kept out of the nav
 not_in_nav: |
-  DEI-Resources.md
+  Community-Resources.md
   External-Communication-and-Funding.md
 
 nav:

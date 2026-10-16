@@ -6,15 +6,15 @@
 
 ### [UW Hazardous Waste Online Collection Request](https://webapps.ehs.washington.edu/chemwaste/index.php)
 
-### [Roberts Lab Chemical SOP Set](../lab_safety_docs/standard-operating-procedures/README.md)
+### [Roberts Lab Chemical SOP Set](https://github.com/RobertsLab/resources/blob/master/lab_safety_docs/standard-operating-procedures/README.md)
 
 Full, per-hazard-class UW EH&S-format SOPs (SOP-01 through SOP-15, Rev. 0, September 1, 2026) covering every chemical in the FTR 209/213 MyChem inventory. Each SOP documents engineering controls, PPE, storage, spill response, and waste disposal in more detail than the summaries below; consult it for chemicals flagged as Particularly Hazardous Substances (PHS).
 
-This quick-reference doc and that SOP set are not mirrors of each other — they're kept loosely in sync by [`.github/workflows/sop-sync.yml`](../.github/workflows/sop-sync.yml), which opens a GitHub issue (assigned to Copilot) whenever either side changes, asking for the other to be reviewed.
+This quick-reference doc and that SOP set are not mirrors of each other — they're kept loosely in sync by [`.github/workflows/sop-sync.yml`](https://github.com/RobertsLab/resources/blob/master/.github/workflows/sop-sync.yml), which opens a GitHub issue (assigned to Copilot) whenever either side changes, asking for the other to be reviewed.
 
 ---
 
-### [RNAzol RT](#rnazol_rt)
+### RNAzol RT {#rnazol_rt}
 
 <em>**Purpose:**</em> RNAzol RT is used for separating RNA from cells.
 
@@ -47,7 +47,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Isopropanol (2-propanol)](#isopropanol)
+### Isopropanol (2-propanol) {#isopropanol}
 
 <em>**Purpose:**</em> Used in the precipitation of nucleic acids.
 
@@ -80,7 +80,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Diethylpyrocarbonate (DEPC)](#depc)
+### Diethylpyrocarbonate (DEPC) {#depc}
 
 <em>**Purpose:**</em> Used as an RNase inhibitor during handling and storage of RNA.
 
@@ -114,7 +114,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [DNAzol](#dnazol)
+### DNAzol {#dnazol}
 
 <em>**Purpose:**</em> DNAzol is used for separating DNA from cells.
 
@@ -145,7 +145,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Ethanol](#ethanol)
+### Ethanol {#ethanol}
 
 <em>**Purpose:**</em> Used in the precipitation of nucleic acids.
 
@@ -177,7 +177,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Phenol:chloroform:IAA (25:24:1)](#phenol_chloroform_IAA)
+### Phenol:chloroform:IAA (25:24:1) {#phenol_chloroform_IAA}
 
 <em>**Purpose:**</em> Used for purification of nucleic acids.
 
@@ -210,7 +210,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Proteinase K](#proteinase_k)
+### Proteinase K {#proteinase_k}
 
 <em>**Purpose:**</em> Enzyme used to degrade proteins during DNA isolation.
 
@@ -235,7 +235,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Resazurin assay](#resazurin-assay)
+### Resazurin assay {#resazurin-assay}
 
 <em>**Personal Protective Equipment:**</em>
 
@@ -269,7 +269,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Sodium acetate](#sodium_acetate)
+### Sodium acetate {#sodium_acetate}
 
 <em>**Purpose:**</em> Used to precipitate nucleic acids.
 
@@ -297,7 +297,7 @@ This quick-reference doc and that SOP set are not mirrors of each other — they
 
 ---
 
-### [Ethidium bromide (EtBr)](#ethidium_bromide)
+### Ethidium bromide (EtBr) {#ethidium_bromide}
 
 <em>**Purpose:**</em> Use for staining nucleic acids in agarose gels.
 
@@ -330,7 +330,7 @@ _NOTE: Disposal instructions are only for dilute EtBr concentrations (< 10ug/L) 
 - Date: 2016-10-24
 
 ---
-### [Qiagen Kits](#qiagen_kits)
+### Qiagen Kits {#qiagen_kits}
 
 <em>**Purpose:**</em> Use for isolation of nucleic acids.
 
@@ -363,7 +363,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Acetonitrile](#acetonitrile)
+### Acetonitrile {#acetonitrile}
 
 <em>**Purpose:**</em> Used as a solvent in molecular biology and analytical procedures.
 
@@ -395,7 +395,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Dimethyl sulfoxide (DMSO)](#dmso)
+### Dimethyl sulfoxide (DMSO) {#dmso}
 
 <em>**Purpose:**</em> Used as a cryoprotectant and as a solvent for dissolving small-molecule stock solutions (e.g., 5-azacytidine, resazurin, serotonin).
 
@@ -428,7 +428,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Chloroform (and chloroform:isoamyl alcohol mixture)](#chloroform)
+### Chloroform (and chloroform:isoamyl alcohol mixture) {#chloroform}
 
 <em>**Purpose:**</em> Used for phase separation during nucleic acid purification (e.g., after TRIzol/TRI Reagent lysis).
 
@@ -463,7 +463,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Formaldehyde solution 37% (formalin)](#formaldehyde)
+### Formaldehyde solution 37% (formalin) {#formaldehyde}
 
 <em>**Purpose:**</em> Used to fix tissue (e.g., 10% neutral buffered formalin diluted from the 37% stock).
 
@@ -497,7 +497,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [TRIzol LS Reagent / TRI Reagent](#trizol_tri_reagent)
+### TRIzol LS Reagent / TRI Reagent {#trizol_tri_reagent}
 
 <em>**Purpose:**</em> Phenol/guanidinium monophase reagents used for RNA/DNA lysis and extraction (same hazard class as [RNAzol RT](#rnazol_rt), above).
 
@@ -531,7 +531,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Guanidinium-based extraction kits (Quick-DNA/RNA kits, PAXgene kits, DNA/RNA Shield)](#guanidinium_kits)
+### Guanidinium-based extraction kits (Quick-DNA/RNA kits, PAXgene kits, DNA/RNA Shield) {#guanidinium_kits}
 
 <em>**Purpose:**</em> Kit lysis/binding buffers used for nucleic acid isolation and sample preservation; contain guanidine salts but no phenol (compare [DNAzol](#dnazol), above).
 
@@ -563,7 +563,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Corrosive acids (sulfuric acid, hydrochloric acid, glacial acetic acid)](#corrosive_acids)
+### Corrosive acids (sulfuric acid, hydrochloric acid, glacial acetic acid) {#corrosive_acids}
 
 <em>**Purpose:**</em> Used for pH adjustment, acid-washing glassware, and as buffer components.
 
@@ -597,7 +597,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Sodium hydroxide](#sodium_hydroxide)
+### Sodium hydroxide {#sodium_hydroxide}
 
 <em>**Purpose:**</em> Used for pH adjustment, RNase decontamination of surfaces, and glassware cleaning.
 
@@ -631,7 +631,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Thiol-reducing and alkylating agents (2-mercaptoethanol, 2-iodoacetamide, TCEP)](#thiol_reducing_agents)
+### Thiol-reducing and alkylating agents (2-mercaptoethanol, 2-iodoacetamide, TCEP) {#thiol_reducing_agents}
 
 <em>**Purpose:**</em> 2-mercaptoethanol (BME) is added to RNA lysis and protein sample buffers as a reducing agent; iodoacetamide is used to alkylate cysteines in proteomics sample prep; TCEP is used for disulfide reduction. (Compare [DEPC](#depc), above - same hazard class.)
 
@@ -665,7 +665,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [5-Azacytidine](#5_azacytidine)
+### 5-Azacytidine {#5_azacytidine}
 
 <em>**Purpose:**</em> DNA methyltransferase inhibitor used in epigenetics experiments; typically dissolved in [DMSO](#dmso).
 
@@ -699,7 +699,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Resazurin sodium salt (powder)](#resazurin_sodium_salt)
+### Resazurin sodium salt (powder) {#resazurin_sodium_salt}
 
 <em>**Purpose:**</em> Dry powder used to prepare stock solutions for the [resazurin viability assay](#resazurin-assay).
 
@@ -730,7 +730,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Reproductive toxicants and bioactive compounds (4-methoxyphenol, serotonin creatinine sulfate, acetylcholine chloride, poly(I:C))](#reproductive_toxicants)
+### Reproductive toxicants and bioactive compounds (4-methoxyphenol, serotonin creatinine sulfate, acetylcholine chloride, poly(I:C)) {#reproductive_toxicants}
 
 <em>**Purpose:**</em> 4-methoxyphenol is a polymerization inhibitor/test compound; serotonin creatinine sulfate induces spawning in bivalves; acetylcholine chloride is used to test cholinergic responses; poly(I:C) is a synthetic double-stranded RNA immune stimulant.
 
@@ -762,7 +762,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Oxidizers and metal compounds (copper(II) nitrate, zirconium oxide beads)](#oxidizers_metal_compounds)
+### Oxidizers and metal compounds (copper(II) nitrate, zirconium oxide beads) {#oxidizers_metal_compounds}
 
 <em>**Purpose:**</em> Copper(II) nitrate is used for trace-metal copper exposure experiments and as an analytical standard; zirconium oxide beads are used dry for bead-beating tissue homogenization.
 
@@ -796,7 +796,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Cell-culture enzymes and antibiotics (Liberase, DNase I, lysyl endopeptidase, HyClone Pen/Strep and Antibiotic/Antimycotic)](#cell_culture_enzymes_antibiotics)
+### Cell-culture enzymes and antibiotics (Liberase, DNase I, lysyl endopeptidase, HyClone Pen/Strep and Antibiotic/Antimycotic) {#cell_culture_enzymes_antibiotics}
 
 <em>**Purpose:**</em> Liberase and lysyl endopeptidase are used for tissue/protein digestion; DNase I is used in extraction and library prep; HyClone Pen/Strep and Antibiotic/Antimycotic solutions are added to cell culture medium. (Compare [Proteinase K](#proteinase_k), above.)
 
@@ -827,7 +827,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Low-hazard buffers, salts, stains, and detergents (EDTA, agarose, IGEPAL CA-630, trypan blue, Brilliant Blue R, bromophenol blue, calcium chloride)](#low_hazard_buffers)
+### Low-hazard buffers, salts, stains, and detergents (EDTA, agarose, IGEPAL CA-630, trypan blue, Brilliant Blue R, bromophenol blue, calcium chloride) {#low_hazard_buffers}
 
 <em>**Purpose:**</em> Common nucleic acid, electrophoresis, and cell culture reagents. An entry of "NOT CLASSIFIED" or "No identified hazard at this time" in MyChem means the hazard field has not been populated, not that the manufacturer has determined the product is non-hazardous - check the SDS before first use of any new kit or reagent in this group.
 
@@ -859,7 +859,7 @@ _NOTE: Do not combine kit reagents with bleach (sodium hypchlorite)!_
 
 ---
 
-### [Compressed carbon dioxide (gas cylinder)](#compressed_co2)
+### Compressed carbon dioxide (gas cylinder) {#compressed_co2}
 
 <em>**Purpose:**</em> Used to control pH/carbonate chemistry in seawater for ocean acidification experiments.
 

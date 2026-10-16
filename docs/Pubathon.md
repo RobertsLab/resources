@@ -40,12 +40,10 @@
 
 10) **Single cell RNA-seq** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)     
-[GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 41) **Manila Clam Priming** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1eJtVsJ7tXpFlP8RmqeQecYmWLiCoKhNxPHc7zgKFlbM/edit)     
-[GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 10) **Diploid and triploid Pacific oysters display different DNA methylation patterns following desiccation stress**  - _Matt_  
@@ -182,7 +180,6 @@
 
 10) **Single cell RNA-seq** - _Mac_    
 [Working Draft](https://docs.google.com/document/d/1csdQ4oxinJBnRMw4RESeTrNBcRPqC_KkIQ2tkWt16i4/edit?usp=sharing)     
-[GitHub](cccc)  
 ![status](https://img.shields.io/badge/pub--a--thon%20status-in%20progress-orange.svg)
 
 

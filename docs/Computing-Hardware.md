@@ -184,7 +184,6 @@ Reproducibility is of the utmost importance to your, and the Roberts Lab, succes
 The easiest and most robust means that we've found to aid in this goal is through the use of a [Jupyter Notebook](http://jupyter.org/). A Jupyter Notebook serves as a substitute for your Terminal (i.e. the place where you normally run your commands) and documents all commands that you run in a given session.
 
 
-- [Review our guide for using Jupyter Notebooks](Jupyter-Notebook-Guide.md)
 
 ## Learning & Other Resources
 

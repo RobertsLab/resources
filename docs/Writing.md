@@ -10,7 +10,7 @@
 
 1. [Why structure matters](#1-why-structure-matters)
 2. [Four principles that govern every part of the paper](#2-four-principles-that-govern-every-part-of-the-paper)
-3. [The anatomy of a paper (IMRaD + Title + Abstract)](#3-the-anatomy-of-a-paper-imrad--title--abstract)
+3. [The anatomy of a paper (IMRaD + Title + Abstract)](#3-the-anatomy-of-a-paper-imrad-title-abstract)
 4. [Title](#4-title)
 5. [Abstract](#5-abstract)
 6. [Introduction](#6-introduction)
@@ -582,19 +582,19 @@ You wrongly assumed your reader knows what you know if any of these are true:
 
 **Primary (highest priority where any conflict arises):**
 
-- Mensh, B., & Kording, K. (2017). *Ten simple rules for structuring papers.* PLOS Computational Biology, 13(9), e1005619. [`readings/Ten Simple Rules Structuring Papers.pdf`](readings/Ten%20Simple%20Rules%20Structuring%20Papers.pdf)
+- Mensh, B., & Kording, K. (2017). *Ten simple rules for structuring papers.* PLOS Computational Biology, 13(9), e1005619. [`readings/Ten Simple Rules Structuring Papers.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/Ten%20Simple%20Rules%20Structuring%20Papers.pdf)
 
 **Section-specific references (consistent guidance integrated):**
 
-- *The Introduction Section* (Heard, *The Scientist's Guide to Writing*) — [`readings/The Introduction Section.pdf`](readings/The%20Introduction%20Section.pdf)
-- *The Methods Section* — [`readings/The Methods Section.pdf`](readings/The%20Methods%20Section.pdf)
-- *The Results Section* — [`readings/The Results Section.pdf`](readings/The%20Results%20Section.pdf)
-- *The Discussion Section* — [`readings/The Discussion Section.pdf`](readings/The%20Discussion%20Section.pdf)
-- *Dealing with Limitations* — [`readings/Dealing with Limitations.pdf`](readings/Dealing%20with%20Limitations.pdf)
-- *Brevity* — [`readings/Brevity.pdf`](readings/Brevity.pdf)
-- *Scientific Writing as Storytelling* — [`readings/Scientific Writing as Storytelling.pdf`](readings/Scientific%20Writing%20as%20Storytelling.pdf)
-- *Reading Scientific Papers* — [`readings/Reading Scientific Papers.pdf`](readings/Reading%20Scientific%20Papers.pdf)
-- *Nature summary paragraph* — [`readings/Nature summary paragraph.pdf`](readings/Nature%20summary%20paragraph.pdf)
+- *The Introduction Section* (Heard, *The Scientist's Guide to Writing*) — [`readings/The Introduction Section.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/The%20Introduction%20Section.pdf)
+- *The Methods Section* — [`readings/The Methods Section.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/The%20Methods%20Section.pdf)
+- *The Results Section* — [`readings/The Results Section.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/The%20Results%20Section.pdf)
+- *The Discussion Section* — [`readings/The Discussion Section.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/The%20Discussion%20Section.pdf)
+- *Dealing with Limitations* — [`readings/Dealing with Limitations.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/Dealing%20with%20Limitations.pdf)
+- *Brevity* — [`readings/Brevity.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/Brevity.pdf)
+- *Scientific Writing as Storytelling* — [`readings/Scientific Writing as Storytelling.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/Scientific%20Writing%20as%20Storytelling.pdf)
+- *Reading Scientific Papers* — [`readings/Reading Scientific Papers.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/Reading%20Scientific%20Papers.pdf)
+- *Nature summary paragraph* — [`readings/Nature summary paragraph.pdf`](https://github.com/sr320/course-fish290-2026/blob/main/readings/Nature%20summary%20paragraph.pdf)
 
 
 ---
