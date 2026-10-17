@@ -82,3 +82,12 @@
 -   [Gene Expression](bio-Gene-expression.md)
 
 -   [Transcriptome Assembly](bio_Transcriptome-assembly.md)
+
+------------------------------------------------------------------------
+
+
+## Recently updated
+
+Pages below were updated most recently in this handbook (refreshed on each site build from git history).
+
+{{ latest_changes }}
