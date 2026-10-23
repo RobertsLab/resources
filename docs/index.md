@@ -13,8 +13,6 @@
 
 **How we work:** [Lab Communication](Lab-Communication.md) · [Project Management](Project-Management.md) · [Lab Notebooks](Lab-Notebooks.md) · [Data Management](Data-Management.md)
 
-**Career & community:** [DEI Resources](DEI-Resources.md) · [External Communication and Funding](External-Communication-and-Funding.md)
-
 ## Guides
 
 -   [Writing Scientific Manuscripts](Writing.md) — structuring and writing papers (reference; use when drafting).

@@ -25,8 +25,8 @@ This is a living document that lists conferences, community outreach, and fundin
 10. Plant and Animal Genome Conference. January, San Diego. 
 
 ### General conference funding for UW Students: 
-- [College of the Environment Student Travel Award](https://environment.uw.edu/students/student-resources/scholarships-funding/student-travel-meeting-fund/): $750 for North America, $1,000 for international. Can only receive once during degree. **Post-docs are eligible.**
-- [UW Graduate School](https://grad.uw.edu/graduate-student-funding/funding-information-for-departments/awards-and-funding-resources/graduate-student-conference-travel-awards/): $300 for domestic, $500 for international.  SAFS provides matching funds.
+- [College of the Environment Student Travel Award](https://environment.uw.edu/students/current-students/scholarships-funding/travel-fund/): $750 for North America, $1,000 for international. Can only receive once during degree. **Post-docs are eligible.**
+- [UW Graduate School](https://grad.uw.edu/funding_posts/graduate-student-conference-presentation-awards/): $300 for domestic, $500 for international.  SAFS provides matching funds.
 - [Fisheries Interdisciplinary Network of Students](https://safsfins.wordpress.com/travel-awards/): Funding for SAFS-affiliated graduate students for travel and/or poster printing and publication costs. Awards preferentially given to individuals who have not received it previously and those that are involved in the department.
 
 ## Posters 

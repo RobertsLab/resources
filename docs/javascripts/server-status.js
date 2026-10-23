@@ -88,6 +88,7 @@
       if (best && best.generatedAt >= generatedAt) return;
       best = {
         cpuPercent: doc.raven_stats.cpu_percent,
+        memoryPercent: doc.raven_stats.memory_percent,
         disks: doc.raven_stats.disks || [],
         generatedAt: generatedAt
       };
@@ -199,6 +200,7 @@
     if (meta) {
       var bits = [];
       if (stats.cpuPercent != null) bits.push("CPU load " + stats.cpuPercent + "%");
+      if (stats.memoryPercent != null) bits.push("memory " + stats.memoryPercent + "%");
       bits.push(
         "snapshot from " +
           new Date(stats.generatedAt).toLocaleString() +

@@ -10,23 +10,26 @@ Below is a list of computing resources we have available, as well as some links 
 
 <table data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
   <thead>
-    <tr><th>Server</th><th>Status</th><th>Last checked</th></tr>
+    <tr><th>Server</th><th>Status</th><th>Last checked</th><th>Daily health</th></tr>
   </thead>
   <tbody>
     <tr data-host="raven">
       <td><code>raven.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td><a href="#raven-disk-cpu">disk / CPU below</a></td>
     </tr>
     <tr data-host="gannet">
       <td><code>gannet.fish.washington.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td class="ss-health" data-health="gannet" data-dashboard="../Gannet-Dashboard/">loading…</td>
     </tr>
     <tr data-host="klone">
       <td><code>klone.hyak.uw.edu</code></td>
       <td class="ss-state"><span class="ss-dot ss-unknown"></span><span class="ss-label">checking…</span></td>
       <td class="ss-time">—</td>
+      <td><a href="#klone-allocation">allocation below</a></td>
     </tr>
   </tbody>
 </table>
@@ -34,7 +37,7 @@ Below is a list of computing resources we have available, as well as some links 
 Checks run automatically — the timestamp shows when each host was last reached. Hover a status for details. A reading older than 90 minutes is shown as `unknown` rather than as a stale green light.
 
 !!! note
-    A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check [UW-IT Hyak status](https://status.uw.edu/).
+    A green light only means the machine answered on the network. It does not mean Slurm is healthy, that there is free disk space, or that your jobs are running. For Hyak-wide outages and maintenance, check [UW-IT service status](https://it.uw.edu/help/servicestatus/) and the [Hyak blog](https://hyak.uw.edu/blog/) for scheduled maintenance.
 
 ### Raven Disk / CPU
 
@@ -49,7 +52,25 @@ Checks run automatically — the timestamp shows when each host was last reached
   </tbody>
 </table>
 
-This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first.
+<div data-raven-history data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status"></div>
+
+This comes from a [daily snapshot](https://gannet.fish.washington.edu/v1_web/owlshell/bu-github/ghr.log) (`df` plus CPU load) that raven writes to gannet each morning around 7am, not from the live network check above — so it can be up to a day old, and it is flagged if the snapshot itself goes stale. Drives are listed fullest first. Open **Usage history** below the table for CPU and memory over time and who is using raven (the top 5 accounts by CPU, the **Winners** list, each day). Raven keeps only its latest snapshot, so that history is collected by the status probers one day at a time.
+
+### Gannet Health
+
+<div data-gannet-summary data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <p>Loading gannet's latest health report…</p>
+</div>
+
+Gannet writes a [daily health report](https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt) covering disk and inode use, memory, RAID, services, and kernel errors. See the **[Gannet Dashboard](Gannet-Dashboard.md)** for the full report and day-by-day history.
+
+### Klone Allocation
+
+<div data-hyak-alloc data-status-base="https://raw.githubusercontent.com/RobertsLab/resources/server-status/status">
+  <p>Loading klone's latest hyakalloc snapshot…</p>
+</div>
+
+This is the output of [`hyakalloc`](https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt), run on klone at 6am each day and picked up here by about 8am. Each row is a partition we can submit to with `--account` / `--partition`; the bars show how much of it lab and CoEnv jobs were using at that moment. Partitions at 90%+ in use are marked critical, 75%+ as warnings. **Checkpoint idle** is the number of idle CPUs and GPUs on the `ckpt` partition across Hyak, available to preemptible jobs. Open **Usage history** under the table for day-by-day CPU and memory use per partition over the last 30 days, built from the dated `hyakalloc_YYYY-MM-DD.txt` copies. For Hyak-wide outages, check [UW-IT status](https://status.uw.edu/).
 
 ## Accounts
 
@@ -163,7 +184,6 @@ Reproducibility is of the utmost importance to your, and the Roberts Lab, succes
 The easiest and most robust means that we've found to aid in this goal is through the use of a [Jupyter Notebook](http://jupyter.org/). A Jupyter Notebook serves as a substitute for your Terminal (i.e. the place where you normally run your commands) and documents all commands that you run in a given session.
 
 
-- [Review our guide for using Jupyter Notebooks](Jupyter-Notebook-Guide.md)
 
 ## Learning & Other Resources
 

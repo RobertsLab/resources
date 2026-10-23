@@ -9,7 +9,7 @@
 ## Initial set up
 
 - Follow UW-IT guide here: [https://hyak.uw.edu/docs/guides/applications/vscode/proxy-jump](https://hyak.uw.edu/docs/guides/applications/vscode/proxy-jump)
-- An alternative way to using VS code on Klone is through Hyak OnDemand: [https://hyak.uw.edu/docs/ood/vscode](https://hyak.uw.edu/docs/ood/vscode).
+- An alternative way to using VS code on Klone is through Hyak OnDemand: [https://hyak.uw.edu/ood/apps/vscode/](https://hyak.uw.edu/ood/apps/vscode/).
 	- Pros: easier to get started
  	- Cons: extensions like GitHub Co-pilot are not freely available or accessible 
 

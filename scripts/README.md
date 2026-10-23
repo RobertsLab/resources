@@ -75,6 +75,84 @@ the table, flagged stale if the snapshot is older than 30 hours. Drives at
 90%+ full are marked critical and 75%+ warn, in the text as well as the bar
 color.
 
+The parser also reads the memory line, the **Winners** list (top 5 accounts
+by summed `%CPU`, with summed `%MEM`), and the top memory processes into
+`raven_stats.memory_percent`, `winners` and `top_memory`.
+
+### Raven history
+
+Raven overwrites `ghr.log` each morning and keeps no dated copies, so the
+probers accumulate the history themselves. When run with `--out`,
+`check_servers.py` also maintains `raven_history.json` next to the output
+file (`update_raven_history`): one entry per snapshot date (CPU, memory,
+per-mount use %, Winners), replaced if the same day is seen again, capped at
+365 days. `publish_status.sh` checks out the `server-status` branch before
+running the checker, so the previous copy is on disk and is carried forward
+when the branch is re-orphaned. Losing that branch loses the history.
+
+A collapsible **Usage history** section under the Raven Disk / CPU table
+on Computing Hardware (`docs/javascripts/raven-history.js`,
+`[data-raven-history]`) reads `raven_history.json` plus the latest
+`raven_stats` and draws CPU/memory over time, the latest Winners table, and a
+per-user grid of appearances in the Winners list. It uses the shared line
+chart from `gannet-health.js`.
+
+## Gannet's daily health report
+
+Gannet runs `gannet_health.sh` once a day and writes the result to
+<https://gannet.fish.washington.edu/v1_web/owlshell/latest.txt>, plus a dated
+copy, `gannet_health_YYYY-MM-DD.txt`, in the same directory. The report covers
+uptime and load, `df` and inode use, memory, RAID (`/proc/mdstat`), services
+and failed systemd units, kernel errors, and a summary of alerts.
+
+Gannet does not send CORS headers, so the page cannot fetch the report itself.
+Instead `check_servers.py` fetches and parses it (`fetch_gannet_stats`) under
+either profile and writes a top-level `gannet_stats` field. It is kept out of
+`hosts` for the same reason as `raven_stats`. The field holds the parsed
+sections, the raw text (`raw`), and a `history` list with one small entry per
+dated report for the last 30 days (load, per-mount use %, alert count). That
+list is built by reading the directory index and fetching each dated file.
+
+`docs/javascripts/gannet-health.js` merges `gannet_stats` on its own
+`generated` timestamp and renders it in three places:
+
+- the **Daily health** cell for gannet in the status table
+  (`[data-health="gannet"]`),
+- the **Gannet Health** section on Computing Hardware
+  (`[data-gannet-summary]`: alerts and the disk table), and
+- the **Gannet Dashboard** page (`docs/Gannet-Dashboard.md`,
+  `[data-gannet-dashboard]`), with the full report and history charts.
+
+A report older than 30 hours is flagged stale. If the report format changes,
+`parse_gannet_report` treats every section as optional, so a partial parse
+still renders.
+
+## Klone's hyakalloc snapshot
+
+Klone requires Duo for SSH, so neither prober can run `hyakalloc` itself.
+Instead a `scrontab` job on klone (as sr320, `--account=srlab
+--partition=ckpt`) runs it at 06:00 Pacific and copies the output, under a
+`Generated: YYYY-MM-DD HH:MM:SS PDT` line, to
+<https://gannet.fish.washington.edu/v1_web/owlshell/hyakalloc.txt> plus a
+dated `hyakalloc_YYYY-MM-DD.txt` copy.
+
+`check_servers.py` fetches and parses it (`fetch_hyak_stats`) under either
+profile into a top-level `hyak_stats` field, kept out of `hosts` for the same
+reason as `raven_stats`: one entry per account/partition with `total`, `used`
+and `free` CPUs, memory and GPUs, plus the checkpoint idle counts and the raw
+text. It also carries a `history` list with one entry per dated copy over
+the last 30 days (used and total CPUs and memory per partition, checkpoint
+idle CPUs), built the same way as gannet's. The parser splits rows on the `│` column separator, so it depends on
+hyakalloc's box-drawn table format.
+
+The Action has a dedicated run at 15:00 UTC (08:00 PDT) to pick it up.
+`docs/javascripts/hyak-alloc.js` renders it in the **Klone Allocation**
+section on Computing Hardware (`[data-hyak-alloc]`), flagged stale after 30
+hours, with a collapsible **Usage history** chart per resource. The charts
+reuse the line chart from `gannet-health.js` (exposed as
+`window.RobertsLabCharts`), so `gannet-health.js` must stay listed before
+`hyak-alloc.js` in `mkdocs.yml`. The snapshot reflects the accounts visible to the user who ran it.
+
 The branch is rewritten as a single root commit on every run. At one check
 every 10 minutes an append-only branch would add roughly 50,000 commits a year
 to a repo that everyone clones.
@@ -139,9 +217,9 @@ and that the lights on the handbook page go green within a few minutes.
 ## Notes and limits
 
 - A green light means the port answered. It says nothing about Slurm health
-  or whether jobs are running. Raven's disk space and CPU load are covered
-  separately by the snapshot described above; gannet and klone have no
-  equivalent.
+  or whether jobs are running. Raven's disk space and CPU load, and gannet's daily health
+  report, and klone's hyakalloc snapshot are covered separately as described
+  above.
 - `raw.githubusercontent.com` caches for about 5 minutes, so the page can lag
   the actual check by that much on top of the check interval.
 - GitHub's scheduled workflows are best-effort: delayed under load, minimum

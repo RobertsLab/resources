@@ -1,7 +1,7 @@
 The first step for being added to the Roberts Lab account is to [submit an issue requesting access](https://github.com/RobertsLab/resources/issues/new). Once you have been added into the UW-IT system (you will notified by a response in the GitHub issue), you can follow the steps below.
 
 
-Taken from [here](http://wiki.cac.washington.edu/display/hyakusers/Hyak+Account+Creation)
+Taken from [here](https://hyak.uw.edu/docs/getting-started/account-creation/)
 
 For the user:
 

@@ -30,7 +30,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
         -   Sam is the only current lab member who has a ProCard.
 
-        -   Obtaining a ProCard requires completing a [University of Washington training course](http://f2.washington.edu/fm/ps/upcoming-events).
+        -   Obtaining a ProCard requires completing a [University of Washington training course](https://finance.uw.edu/ps/resources/procurement-center-excellence-training-and-communication/tutorials).
 
         -   ProCards cannot be used for travel or meal expenses.
 
@@ -98,7 +98,7 @@ Here is the procedure for purchases. Generally, we are shifting to have SAFS adm
 
 ------------------------------------------------------------------------
 
-## [Chem Store](http://depts.washington.edu/chem/facilserv/stockroom/index.html) Purchasing
+## [Chem Store](https://chem.washington.edu/research-services-research-stockroom) Purchasing
 
 1.  [Search the store catalog](https://idp.u.washington.edu/idp/profile/SAML2/Redirect/SSO?execution=e1s1) or just go down to 036 Bagley Hall and ask for your product. If you are off-campus, you must use a VPN such as [Husky OnNet](https://itconnect.uw.edu/connect/uw-networks/about-husky-onnet/use-husky-onnet/) to connect to the UW network.
 2.  They will need to know your lab, your name, and the budget number. They will give you a sales receipt for your purchase, but you don't need to submit this anywhere.

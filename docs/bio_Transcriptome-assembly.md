@@ -89,7 +89,7 @@ export PATH=/home/shared/salmon-1.4.0_linux_x86_64/bin:$PATH
 
 #### Use cases from our lab
 
-- [Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/2020/03/30/Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox.html)
+- [Transcriptome-Assembly-C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/posts/2020/2020-03-30-Transcriptome-Assembly---C.bairdi-with-MEGAN6-Taxonomy-specific-Reads-with-Trinity-on-Mox/index.html)
 
 ### Genome-guided assembly
 
@@ -128,7 +128,7 @@ trinity_out_dir/"${fasta_name}" \
 
 #### Use cases from our lab
 
-- [Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/2022/02/07/Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox.html)
+- [Transcriptome-Assembly-Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox](https://robertslab.github.io/sams-notebook/posts/2022/2022-02-07-Transcriptome-Assembly---Genome-guided-C.virginica-Adult-Gonad-OA-RNAseq-Using-Trinity-on-Mox/index.html)
 
 ## Output files
 

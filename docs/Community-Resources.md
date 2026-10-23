@@ -16,19 +16,9 @@
 
 - GO-MAP: Supporting Graduate Students of Color at the University of Washington [https://grad.uw.edu/equity-inclusion-and-diversity/go-map/](https://grad.uw.edu/equity-inclusion-and-diversity/go-map/)
 
-- SAFS DEI Committee: [https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-equity-inclusion-committee/](https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-equity-inclusion-committee/)
-
-     - SAFS DEI Committee GitHub for suggested action items: [https://github.com/OARS-SAFS/DEI/issues](https://github.com/OARS-SAFS/DEI/issues)
-
-- SAFS DEI Slack channel: [https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg](https://join.slack.com/t/safs-community/shared_invite/zt-uzytnche-1JagEpn8NxUEm6~tTi2izg) (navigate to DEI page) 
-
 - SAFS 360: [https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/](https://fish.uw.edu/about/diversity-equity-and-inclusion/safs-360/)
 
 - College of the Environment Community Equity Initiative: Organizational information [here](https://huskylink.washington.edu/organization/cei) 
-
-- College of the Environment DEI Task Force: [https://environment.uw.edu/about/diversity-equity-inclusion/diversity-equity-and-inclusion-task-force/](https://environment.uw.edu/about/diversity-equity-inclusion/diversity-equity-and-inclusion-task-force/)
-
-- UW Postdoc Diversity Alliance: [https://sites.uw.edu/uwpda](https://sites.uw.edu/uwpda)
 
 - Peaks and professors club: hike with UW faculty members to network while enjoying the outdoors.
      - Facebook page: [https://www.facebook.com/peaksandprofessorsuw/](https://www.facebook.com/peaksandprofessorsuw/)
@@ -55,9 +45,6 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 
 ## Training & Continuing Education
 
-- Various DEI trainings available offered by UW:  [https://hr.uw.edu/diversity/dei-related-trainings/pod-trainings/](https://hr.uw.edu/diversity/dei-related-trainings/pod-trainings/)
-     - These do cost money, but department budget codes are available to offset that cost. If you're interested contact the SAFS administrator Jonas Louie at <jinl@uw.edu> for budget code and sign up information.
-
 - "Strategies to address unconscious bias" [https://diversity.ucsf.edu/resources/strategies-address-unconscious-bias](https://diversity.ucsf.edu/resources/strategies-address-unconscious-bias)
 
 - "Eight tactics to identify and reduce your implicit biases" [https://www.aafp.org/journals/fpm/blogs/inpractice/entry/implicit_bias.html](https://www.aafp.org/journals/fpm/blogs/inpractice/entry/implicit_bias.html)
@@ -68,7 +55,6 @@ A Guide and Call to Acknowledgement](https://usdac.us/nativeland)
 
 - [Interrupting Bias in Academic Settings](https://ncwit.org/resource/biasacademic/) Feb 2017. From the National Center for Women & Information Technology. “Use this resource to help you practice ways to interrupt bias in real-life situations."
 
-- [Black Scientists Call Out Racism in Their Institutions](https://www.theverge.com/21286924/science-racism-strike-stem-black-lives-matter-protests) June 2020. “Black scientists and students are sharing their experiences on Twitter of being dismissed and discriminated against in academia using the hashtag #BlackintheIvory.”
 
 - [The science divide: Why do Latino and black students leave STEM majors at higher rates?](https://wapo.st/3tikMCH) May 2019. “If there’s demonstrated, strong interest in STEM among black and Latino youth, why would you see higher departure rates for these students?” the professor said. “It’s not about interest or academic ability. So what causes this?”
 

@@ -299,10 +299,10 @@ Graduate school can be an amazing journey that:
 - Do I have the academic preparation needed?
 
 ### Resources at University of Washington:
-- **Undergraduate research opportunities**: [SAFS Research and Internships](https://fish.uw.edu/students/undergraduate-program/research-and-internships/)
+- **Undergraduate research opportunities**: [SAFS Research and Internships](https://fish.uw.edu/students/student-and-career-opportunities/)
 - **Graduate program information**: [SAFS Graduate Program](https://fish.uw.edu/students/graduate-program/)
 - **Funding opportunities**: [Scholarships and Funding](https://fish.uw.edu/students/undergraduate-program/scholarships-funding/)
-- **Research symposium**: [Undergraduate Research Symposium](https://www.washington.edu/undergradresearch/symposium/)
+- **Research symposium**: [Undergraduate Research Symposium](https://www.washington.edu/urs/)
 
 ---
 
