@@ -12,7 +12,8 @@
 - To see space and file utilization: `hyakstorage`
 - **Recommended for**: Large software installations (conda/miniforge, Nextflow), analysis environments, shared datasets, and any files that might grow beyond a few GB.
 #### 3. Temporary storage ("Scrubbed")
-- Storage allocation: 200TB (or 200,000,000 files).
+- Storage allocation, _all users combined_: 200TB (or 200,000,000 files).
+- Individual allocation: 5TB
 - Located: `/gscratch/scrubbed/<UW_NetID>`
 - Shared by all Hyak (Klone) users.
 - Files are _automatically deleted_ 30 days after creation.
